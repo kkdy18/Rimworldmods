@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThoughtDef[defName = "AteWithoutTable"]/nullifyingGenes</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThoughtDef[defName = "AteWithoutTable"]</xpath>
+			<value>
+				<nullifyingGenes>
+					<li>Ark_Nature</li>
+				</nullifyingGenes>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThoughtDef[defName = "AteWithoutTable"]/nullifyingGenes</xpath>
+			<value>
+				<li>Ark_Nature</li>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThoughtDef[defName = "SleptOnGround"]/nullifyingGenes</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThoughtDef[defName = "SleptOnGround"]</xpath>
+			<value>
+				<nullifyingGenes>
+					<li>Ark_Nature</li>
+				</nullifyingGenes>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThoughtDef[defName = "SleptOnGround"]/nullifyingGenes</xpath>
+			<value>
+				<li>Ark_Nature</li>
+			</value>
+		</match>
+	</Operation>
+</Patch>

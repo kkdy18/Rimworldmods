@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <GeneDef>
+    <defName>FireAtWill</defName>
+    <label>随意开火</label>
+    <description>该基因的携带者对自己的枪法会有一种迷之自信，扣动扳机让他们感到快乐，至于能不能命中就让上帝来决定吧。</description>
+    <iconPath>UI/Icons/Genes/FireAtWill</iconPath>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <displayCategory>Ark_Fight</displayCategory>
+    <forcedTraits>
+      <li>
+        <def>ShootingAccuracy</def>
+        <degree>-1</degree>
+      </li>
+    </forcedTraits>
+    <modExtensions>
+         <li Class="VanillaGenesExpanded.GeneExtension">
+           <backgroundPathEndogenes>UI/Icons/Genes/Ark_Endogene</backgroundPathEndogenes>
+           <backgroundPathXenogenes>UI/Icons/Genes/Ark_Xenogene</backgroundPathXenogenes>
+         </li>
+    </modExtensions>
+  </GeneDef>
+
+	<GeneDef>
+		<defName>Outspoken</defName>
+		<label>合金脑袋</label>
+		<description>该基因的携带者说话十分坦率，毫无顾忌，容易使其他人感到不满。</description>
+		<iconPath>UI/Icons/Genes/Outspoken</iconPath>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>1</biostatMet>
+		<displayCategory>Ark_Sundries</displayCategory>
+		<forcedTraits>
+			<li>
+				<def>Ark_Outspoken</def>
+			</li>
+		</forcedTraits>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Ark_Endogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>UI/Icons/Genes/Ark_Xenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef Name="Ark_GenderBase" Abstract="True">
+		<displayCategory>Miscellaneous</displayCategory>
+		<exclusionTags>
+			<li>Gender</li>
+		</exclusionTags>
+		<randomChosen>true</randomChosen>
+	</GeneDef>
+
+	<GeneDef ParentName="Ark_GenderBase">
+		<defName>Ark_GAIA</defName>
+		<label>盖亚之躯</label>
+		<description>该基因的显性表达会使携带者成为生理学上的女性，并且身体的物理强度超出常人，这使她们在近身作战中往往能占据显著的优势。</description>
+		<iconPath>UI/Icons/Genes/Ark_GAIA</iconPath>
+		<prerequisite>Ark_Vouivre</prerequisite>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-3</biostatMet>
+		<displayCategory>Ark_Fight</displayCategory>
+		<forcedTraits>
+			<li>
+				<def>Tough</def>
+			</li>
+		</forcedTraits>
+		<statFactors>
+			<MeleeDamageFactor>1.5</MeleeDamageFactor>
+		</statFactors>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Ark_Endogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>UI/Icons/Genes/Ark_Xenogene</backgroundPathXenogenes>
+				<forceFemale>true</forceFemale>
+			</li>
+		</modExtensions>
+	</GeneDef>
+</Defs>

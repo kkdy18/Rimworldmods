@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<TraitDef>
+		<defName>Ark_Outspoken</defName>
+		<commonality>0.7</commonality>
+		<degreeDatas>
+			<li>
+				<label>直言不讳</label>
+				<description>{PAWN_nameDef}说话十分坦率，毫无顾忌，并且很难被改变想法，但{PAWN_possessive}也会为改善这种状况积极地学习。</description>
+				<marketValueFactorOffset>-0.20</marketValueFactorOffset>
+				<statOffsets>
+					<GlobalLearningFactor>0.30</GlobalLearningFactor>
+				</statOffsets>
+				<statFactors>
+					<CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">0.5</CertaintyLossFactor>
+				</statFactors>
+			</li>
+		</degreeDatas>
+		<requiredWorkTags>
+			<li>Social</li>
+		</requiredWorkTags>
+	</TraitDef>
+
+	<TraitDef>
+		<defName>Ark_Trait_Nature</defName>
+		<commonality>0.8</commonality>
+		<degreeDatas>
+			<li>
+				<label>生于自然</label>
+				<description>{PAWN_nameDef}能很好地适应在自然环境中的生活，但{PAWN_possessive}非常不擅长与精密器械打交道并排斥植入假体，也许只是需要一点时间适应？。</description>
+				<skillGains>
+					<li>
+						<key>Construction</key>
+						<value>4</value>
+					</li>
+					<li>
+						<key>Plants</key>
+						<value>4</value>
+					</li>
+					<li>
+						<key>Intellectual</key>
+						<value>-4</value>
+					</li>
+				</skillGains>
+				<statOffsets>
+					<PlantHarvestYield>0.1</PlantHarvestYield>
+					<PlantWorkSpeed>0.1</PlantWorkSpeed>
+				</statOffsets>
+				<statFactors>
+					<MechRepairSpeed>0.1</MechRepairSpeed>
+					<FixBrokenDownBuildingSuccessChance>0.2</FixBrokenDownBuildingSuccessChance>
+				</statFactors>
+			</li>
+		</degreeDatas>
+		<requiredWorkTags>
+			<li>PlantWork</li>
+		</requiredWorkTags>
+		<conflictingTraits>
+			<li>BodyPurist</li>
+			<li>Transhumanist</li>
+		</conflictingTraits>
+	</TraitDef>
+</Defs>

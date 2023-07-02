@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GeneDef ParentName="GeneTailBase">
+		<defName>Ark_VouivreTail1</defName>
+		<label>青色龙尾</label>
+		<description>该基因的携带者脊椎末端延长形成了一根覆盖着鳞片的青色长尾，该器官能在一定程度上辅助行动。</description>
+		<iconPath>UI/Icons/Genes/Ark_VouivreTail1</iconPath>
+		<prerequisite>Ark_Vouivre</prerequisite>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<selectionWeight>0</selectionWeight>
+		<displayCategory>Ark_Tails</displayCategory>
+		<statOffsets>
+			<MoveSpeed>0.2</MoveSpeed>
+		</statOffsets>
+		<graphicData>
+			<graphicPath>Things/Pawn/Humanlike/BodyAttachments/Ark_VouivreTai/Ark_VouivreTail1</graphicPath>
+			<drawScale>2</drawScale>
+			<drawOffsetNorth>(0.0, 0.2, -0.0)</drawOffsetNorth>
+			<drawOffsetSouth>(-0.0, -0.1, -0.0)</drawOffsetSouth>
+			<drawOffsetEast>(-0.0, -0.1, -0.0)</drawOffsetEast>
+		</graphicData>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Ark_Endogenes</backgroundPathEndogenes>
+				<backgroundPathXenogenes>UI/Icons/Genes/Ark_Xenogenes</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+</Defs>

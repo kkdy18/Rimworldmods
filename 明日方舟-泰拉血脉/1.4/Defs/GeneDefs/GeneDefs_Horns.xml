@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GeneDef ParentName="GeneHeadboneBase">
+		<defName>Ark_VouivreHorn1</defName>
+		<label>青色龙角</label>
+		<description>该基因的携带者额头两侧会长出向上弯曲的青色尖角。</description>
+		<iconPath>UI/Icons/Genes/Ark_VouivreHorn1</iconPath>
+		<prerequisite>Ark_Vouivre</prerequisite>
+		<biostatCpx>1</biostatCpx>
+		<selectionWeight>0</selectionWeight>
+		<displayCategory>Ark_Heads</displayCategory>
+		<graphicData>
+			<graphicPath>Things/Pawn/Humanlike/HeadAttachments/Ark_VouivreHorn/Ark_VouivreHorn1</graphicPath>
+			<layer>PostHeadgear</layer>
+		</graphicData>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>尖锐</symbol>
+				</li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li>
+					<symbol>角</symbol>
+				</li>
+			</suffixSymbols>
+		</symbolPack>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Ark_Endogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>UI/Icons/Genes/Ark_Xenogene</backgroundPathXenogenes>
+				<hediffsToBodyParts>
+					<li>
+						<hediff>Ark_HornAttack</hediff>
+						<bodyparts>
+							<li>Head</li>
+						</bodyparts>
+					</li>
+				</hediffsToBodyParts>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="GeneHeadboneBase">
+		<defName>Ark_VouivreHorn2</defName>
+		<label>黑铁龙角</label>
+		<description>该基因的携带者额头两侧会长出向下弯曲的灰色尖角。</description>
+		<iconPath>UI/Icons/Genes/Ark_VouivreHorn2</iconPath>
+		<prerequisite>Ark_Vouivre</prerequisite>
+		<biostatCpx>1</biostatCpx>
+		<selectionWeight>0</selectionWeight>
+		<displayCategory>Ark_Heads</displayCategory>
+		<graphicData>
+			<graphicPath>Things/Pawn/Humanlike/HeadAttachments/Ark_VouivreHorn/Ark_VouivreHorn2</graphicPath>
+			<layer>PostHeadgear</layer>
+		</graphicData>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>尖锐</symbol>
+				</li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li>
+					<symbol>角</symbol>
+				</li>
+			</suffixSymbols>
+		</symbolPack>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Ark_Endogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>UI/Icons/Genes/Ark_Xenogene</backgroundPathXenogenes>
+				<hediffsToBodyParts>
+					<li>
+						<hediff>Ark_HornAttack</hediff>
+						<bodyparts>
+							<li>Head</li>
+						</bodyparts>
+					</li>
+				</hediffsToBodyParts>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="GeneHeadboneBase">
+		<defName>Ark_VouivreHorn3</defName>
+		<label>小龙角</label>
+		<description>该基因的携带者额头两侧会长出小巧的黑色尖角。</description>
+		<iconPath>UI/Icons/Genes/Ark_VouivreHorn3</iconPath>
+		<prerequisite>Ark_Vouivre</prerequisite>
+		<biostatCpx>1</biostatCpx>
+		<selectionWeight>0</selectionWeight>
+		<displayCategory>Ark_Heads</displayCategory>
+		<graphicData>
+			<graphicPath>Things/Pawn/Humanlike/HeadAttachments/Ark_VouivreHorn/Ark_VouivreHorn3</graphicPath>
+			<layer>PostHeadgear</layer>
+		</graphicData>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>尖锐</symbol>
+				</li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li>
+					<symbol>角</symbol>
+				</li>
+			</suffixSymbols>
+		</symbolPack>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Ark_Endogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>UI/Icons/Genes/Ark_Xenogene</backgroundPathXenogenes>
+				<hediffsToBodyParts>
+					<li>
+						<hediff>Ark_HornAttack</hediff>
+						<bodyparts>
+							<li>Head</li>
+						</bodyparts>
+					</li>
+				</hediffsToBodyParts>
+			</li>
+		</modExtensions>
+	</GeneDef>
+</Defs>

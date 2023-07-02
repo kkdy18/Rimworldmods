@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThoughtDef>
+    <defName>RestrainHead</defName>
+    <workerClass>Ark_GSWT.ThoughtWorker_RestrainHead</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <requiredGenes>
+      <li>HeadRestrain</li>
+    </requiredGenes>
+    <stages>
+      <li>
+        <label>头部被遮盖</label>
+        <description>我的头好晕，感觉像被扔进洗衣机转了三天三夜！</description>
+        <baseMoodEffect>-20</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+	<ThoughtDef Abstract="True" Name="BaseSympathy">
+		<durationDays>0.25</durationDays>
+		<stackLimit>1</stackLimit>
+		<showBubble>true</showBubble>
+	</ThoughtDef>
+	
+	<ThoughtDef ParentName="BaseSympathy">
+		<defName>Ark_HappySympathy</defName>
+		<icon>UI\Icons\Bubble\Ark_HappySympathy</icon>
+		<requiredGenes>
+			<li>Ark_Sectator</li>
+		</requiredGenes>
+		<stages>
+			<li>
+				<label>快乐的同胞</label>
+				<description>我感受到了我的同胞的喜悦，我们是一体的。</description>
+				<baseMoodEffect>4</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef ParentName="BaseSympathy">
+		<defName>Ark_SadSympathy</defName>
+		<icon>UI\Icons\Bubble\Ark_SadSympathy</icon>
+		<requiredGenes>
+			<li>Ark_Sectator</li>
+		</requiredGenes>
+		<stages>
+			<li>
+				<label>悲伤的同胞</label>
+				<description>我的同胞的苦痛在我的脑海中回响，如此沉重的感受。</description>
+				<baseMoodEffect>-8</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>Ark_Nature_BodyPart</defName>
+		<workerClass>ThoughtWorker_HasAddedBodyPart</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<requiredTraits>
+			<li>Ark_Trait_Nature</li>
+		</requiredTraits>
+		<stages>
+			<li>
+				<label>自然之躯</label>
+				<description>非自然的造物与我的血肉毫不协调地结合在一起，它在撕扯我的灵魂。</description>
+				<baseMoodEffect>-20</baseMoodEffect>
+			</li>
+			<li>
+				<label>自然之躯（+2）</label>
+				<description>不自然的东西变多了，我对我的身体感到陌生。</description>
+				<baseMoodEffect>-15</baseMoodEffect>
+			</li>
+			<li>
+				<label>自然之躯（+3）</label>
+				<description>第三个……也许我可以试着适应这些人造物？</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+			<li>
+				<label>自然之躯（+4）</label>
+				<description>也只是工具的一种罢了，我能用好它们。</description>
+				<baseMoodEffect>0</baseMoodEffect>
+			</li>
+			<li>
+				<label>自然之躯（+5）</label>
+				<description>人造物也可以承载灵魂，我的身体在与它们和谐共生。</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+			<li>
+				<label>自然之躯（max）</label>
+				<description>我是超级机器人！</description>
+				<baseMoodEffect>20</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

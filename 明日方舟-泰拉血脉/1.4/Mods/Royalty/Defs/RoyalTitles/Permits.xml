@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RoyalTitlePermitDef>
+    <defName>TradeAngel</defName>
+    <label>新拉特兰物资贸易中心欢迎你！</label>
+  </RoyalTitlePermitDef>
+  
+  <RoyalTitlePermitDef Name="Ark_DropResourcesBase" Abstract="True">
+    <workerClass>RoyalTitlePermitWorker_DropResources</workerClass>
+    <faction>NewLaterano</faction>
+    <permitPointCost>1</permitPointCost>
+    <cooldownDays>45</cooldownDays>
+    <usableOnWorldMap>true</usableOnWorldMap>
+    <royalAid>
+      <targetingRange>39.9</targetingRange>
+    </royalAid>
+  </RoyalTitlePermitDef>
+
+	<RoyalTitlePermitDef ParentName="Ark_DropResourcesBase">
+		<defName>PackJumpDrop</defName>
+		<label>空投-跳跃背包</label>
+		<description>一个跳跃背包，能带你迅速远离威胁。\n\n新拉特兰人力有限，没法顾及到大地上所有的苦难，但我们可以给每一位呼救者一根自救的绳子。</description>
+		<minTitle>Believer</minTitle>
+		<uiPosition>(0,0)</uiPosition>
+		<royalAid>
+			<itemsToDrop>
+				<Apparel_PackJump>1</Apparel_PackJump>
+			</itemsToDrop>
+			<favorCost>4</favorCost>
+		</royalAid>
+	</RoyalTitlePermitDef>
+
+	<RoyalTitlePermitDef ParentName="Ark_DropResourcesBase">
+		<defName>PackageDrop</defName>
+		<label>空投-豪华套餐</label>
+		<description>双人份的豪华套餐，附赠餐桌一台，纯手工制作，是简便优雅的一餐的最佳选择，带给你一天的好心情。\n\n为什么要塞一台桌子进去？因为上次有用户反映在地上吃饭根本不优雅。</description>
+		<minTitle>Friar</minTitle>
+		<uiPosition>(0,1)</uiPosition>
+		<royalAid>
+			<itemsToDrop>
+				<PsychiteTea>2</PsychiteTea>
+				<MealLavish>2</MealLavish>
+				<Table1x2c>1</Table1x2c>
+			</itemsToDrop>
+			<favorCost>3</favorCost>
+		</royalAid>
+	</RoyalTitlePermitDef>
+
+	<RoyalTitlePermitDef ParentName="Ark_DropResourcesBase">
+		<defName>FirstAidDrop</defName>
+		<label>空投-急救包</label>
+		<description>由5瓶活力水与5个闪耀世界医药包组成的急救套装，仅建议在陷入险境时使用。</description>
+		<minTitle>Friar</minTitle>
+		<uiPosition>(0,2)</uiPosition>
+		<royalAid>
+			<itemsToDrop>
+				<GoJuice>5</GoJuice>
+				<MedicineUltratech>5</MedicineUltratech>
+			</itemsToDrop>
+			<favorCost>6</favorCost>
+		</royalAid>
+	</RoyalTitlePermitDef>
+
+	<RoyalTitlePermitDef ParentName="Ark_DropResourcesBase">
+		<defName>ResurrectorDrop</defName>
+		<label>空投-二次生命</label>
+		<description>急救与医疗终究是有极限的，我们越是费经心思地回避死亡就越是容易被它追上，所以，放手去干吧！我们已经为你准备好了第二次生命！\n\n复活机械液最好事先安排专人保管，毕竟它没有自动注射功能。</description>
+		<minTitle>GuardKnight</minTitle>
+		<uiPosition>(1,2)</uiPosition>
+		<royalAid>
+			<itemsToDrop>
+				<MechSerumResurrector>1</MechSerumResurrector>
+			</itemsToDrop>
+			<favorCost>12</favorCost>
+		</royalAid>
+	</RoyalTitlePermitDef>
+
+	<RoyalTitlePermitDef>
+		<defName>CannonryCall</defName>
+		<label>支援-炮火打击</label>
+		<description>呼叫距离最近的据点对标记处炮击，执行者们使用率最高的许可。\n\n来自公证所老员工的经验之谈：如果手里点数够多可以试试来个大的。</description>
+		<workerClass>RoyalTitlePermitWorker_OrbitalStrike</workerClass>
+		<minTitle>Friar</minTitle>
+		<faction>NewLaterano</faction>
+		<permitPointCost>1</permitPointCost>
+		<cooldownDays>10</cooldownDays>
+		<uiPosition>(0,3)</uiPosition>
+		<royalAid>
+			<favorCost>1</favorCost>
+			<targetingRange>44.9</targetingRange>
+			<radius>2.9</radius>
+			<explosionRadiusRange>7.9</explosionRadiusRange>
+			<explosionCount>1</explosionCount>
+			<intervalTicks>60</intervalTicks>
+			<warmupTicks>120</warmupTicks>
+		</royalAid>
+	</RoyalTitlePermitDef>
+
+	<RoyalTitlePermitDef>
+		<defName>PerformerCall</defName>
+		<label>支援-执行者</label>
+		<description>呼叫公证所的武力援助，公证所会挑三个执行者投送到你的附近。\n\n执行者的能力有限，摧毁机械集群、对抗帝国兵团之类的任务建议去找教皇厅。</description>
+		<workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+		<minTitle>GuardKnight</minTitle>
+		<faction>NewLaterano</faction>
+		<permitPointCost>1</permitPointCost>
+		<uiPosition>(0,4)</uiPosition>
+		<royalAid>
+			<favorCost>8</favorCost>
+			<pawnKindDef>Ark_Performer</pawnKindDef>
+			<pawnCount>3</pawnCount>
+			<targetingRange>39.9</targetingRange>
+		</royalAid>
+		<cooldownDays>30</cooldownDays>
+	</RoyalTitlePermitDef>
+
+	<RoyalTitlePermitDef>
+		<defName>GunKnightCall</defName>
+		<label>支援-律法制裁</label>
+		<description>主教是律法的延伸，而捍卫律法是铳骑的职责。当你遭遇危险时，请尽管向我们求援，毕竟教宗和枢机们安全的不得了，铳骑团总要找点事干。</description>
+		<workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+		<minTitle>Bishop</minTitle>
+		<faction>NewLaterano</faction>
+		<permitPointCost>1</permitPointCost>
+		<uiPosition>(1,4)</uiPosition>
+		<royalAid>
+			<favorCost>12</favorCost>
+			<pawnKindDef>Ark_GunKnight</pawnKindDef>
+			<pawnCount>8</pawnCount>
+			<targetingRange>39.9</targetingRange>
+		</royalAid>
+		<cooldownDays>30</cooldownDays>
+	</RoyalTitlePermitDef>
+	
+	<RoyalTitlePermitDef>
+		<defName>TransportCall</defName>
+		<label>支援-运输机</label>
+		<description>呼叫一台临时由你调遣的运输机，如果机身上有帝国的标志请不要在意，在分别时提醒驾驶员给运输机重新上漆就好。\n\n什么？又有执行者坐运输机出门被打下来了？我就说工程部那个拆了重装的主意不靠谱！</description>
+		<workerClass>RoyalTitlePermitWorker_CallShuttle</workerClass>
+		<minTitle>GuardKnight</minTitle>
+		<faction>NewLaterano</faction>
+		<permitPointCost>1</permitPointCost>
+		<cooldownDays>15</cooldownDays>
+		<usableOnWorldMap>true</usableOnWorldMap>
+		<uiPosition>(0,5)</uiPosition>
+		<royalAid>
+			<favorCost>6</favorCost>
+			<targetingRange>44.9</targetingRange>
+			<targetingRequireLOS>false</targetingRequireLOS>
+		</royalAid>
+	</RoyalTitlePermitDef>
+
+	<RoyalTitlePermitDef ParentName="Ark_DropResourcesBase">
+		<defName>AntigrainDrop</defName>
+		<label>空投-反粒子</label>
+		<description>用空投舱运输反粒子弹头绝对是一个疯狂的主意，但你永远可以相信新拉特兰的物流，我们有最温柔的分拣人员与最安全的保管设施。\n\n禁止用石头、守护铳或者其他什么东西敲打运输物。</description>
+		<minTitle>GuardKnight</minTitle>
+		<uiPosition>(1,3)</uiPosition>
+		<royalAid>
+			<itemsToDrop>
+				<Shell_AntigrainWarhead>1</Shell_AntigrainWarhead>
+			</itemsToDrop>
+			<favorCost>8</favorCost>
+		</royalAid>
+	</RoyalTitlePermitDef>
+
+	<RoyalTitlePermitDef ParentName="Ark_DropResourcesBase">
+		<defName>PsylinkDrop</defName>
+		<label>空投-启灵</label>
+		<description>新拉特兰从未放弃对“灵能”这种与源石技艺截然不同的技艺的探索，而因不明原因敌视萨科塔的帝国是一个不错的研究对象，放心，研究过程中没有任何无辜者受到伤害。\n\n一个精心包装的启灵装置，送给特别的你:)。</description>
+		<minTitle>Bishop</minTitle>
+		<uiPosition>(0,6)</uiPosition>
+		<royalAid>
+			<itemsToDrop>
+				<Shell_AntigrainWarhead>1</Shell_AntigrainWarhead>
+			</itemsToDrop>
+			<favorCost>12</favorCost>
+		</royalAid>
+	</RoyalTitlePermitDef>
+</Defs>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GeneDef>
+		<defName>Ark_Sectator</defName>
+		<label>萨科塔之心</label>
+		<description>萨科塔血脉的具象，在律法的庇佑下，萨科塔连为一体。</description>
+		<iconPath>UI/Icons/Genes/Ark_Sectator</iconPath>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<displayCategory>Ark_Souls</displayCategory>
+		<missingGeneRomanceChanceFactor>0.5</missingGeneRomanceChanceFactor>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Ark_Endogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>UI/Icons/Genes/Ark_Xenogene</backgroundPathXenogenes>
+				<hediffToWholeBody>Ark_hediff_Sectator</hediffToWholeBody>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Ark_Vouivre</defName>
+		<label>瓦伊凡之心</label>
+		<description>瓦伊凡血脉的具象，强壮的体魄与坚韧的意志，瓦伊凡宛如大地上不动的坚城。</description>
+		<iconPath>UI/Icons/Genes/Ark_Vouivre</iconPath>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-3</biostatMet>
+		<displayCategory>Ark_Souls</displayCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Ark_Endogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>UI/Icons/Genes/Ark_Xenogene</backgroundPathXenogenes>
+				<hediffToWholeBody>Ark_hediff_Vouivre</hediffToWholeBody>
+			</li>
+		</modExtensions>
+	</GeneDef>
+</Defs>
