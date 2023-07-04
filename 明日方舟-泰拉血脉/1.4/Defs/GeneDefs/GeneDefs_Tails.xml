@@ -14,7 +14,7 @@
 			<MoveSpeed>0.2</MoveSpeed>
 		</statOffsets>
 		<graphicData>
-			<graphicPath>Things/Pawn/Humanlike/BodyAttachments/Ark_VouivreTai/Ark_VouivreTail1</graphicPath>
+			<graphicPath>Things/Pawn/Humanlike/BodyAttachments/Ark_VouivreTail/Ark_VouivreTail1</graphicPath>
 			<drawScale>2</drawScale>
 			<drawOffsetNorth>(0.0, 0.2, -0.0)</drawOffsetNorth>
 			<drawOffsetSouth>(-0.0, -0.1, -0.0)</drawOffsetSouth>
@@ -22,8 +22,64 @@
 		</graphicData>
 		<modExtensions>
 			<li Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>UI/Icons/Genes/Ark_Endogenes</backgroundPathEndogenes>
-				<backgroundPathXenogenes>UI/Icons/Genes/Ark_Xenogenes</backgroundPathXenogenes>
+				<backgroundPathEndogenes>UI/Icons/Genes/Ark_Endogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>UI/Icons/Genes/Ark_Xenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="GeneTailBase">
+		<defName>Ark_VouivreTail2</defName>
+		<label>黑铁龙尾</label>
+		<description>该基因的携带者脊椎末端延长形成了一根覆盖着鳞片的灰色长尾，该器官能在一定程度上辅助行动。</description>
+		<iconPath>UI/Icons/Genes/Ark_VouivreTail2</iconPath>
+		<prerequisite>Ark_Vouivre</prerequisite>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<selectionWeight>0</selectionWeight>
+		<displayCategory>Ark_Tails</displayCategory>
+		<statOffsets>
+			<MoveSpeed>0.2</MoveSpeed>
+		</statOffsets>
+		<graphicData>
+			<graphicPath>Things/Pawn/Humanlike/BodyAttachments/Ark_VouivreTail/Ark_VouivreTail2</graphicPath>
+			<drawScale>2</drawScale>
+			<drawOffsetNorth>(0.0, 0.2, -0.0)</drawOffsetNorth>
+			<drawOffsetSouth>(-0.0, -0.1, -0.0)</drawOffsetSouth>
+			<drawOffsetEast>(-0.0, -0.1, -0.0)</drawOffsetEast>
+		</graphicData>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Ark_Endogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>UI/Icons/Genes/Ark_Xenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="GeneTailBase">
+		<defName>Ark_VouivreTail3</defName>
+		<label>翠绿龙尾</label>
+		<description>该基因的携带者脊椎末端延长形成了一根覆盖着鳞片的绿色长尾，该器官能在一定程度上辅助行动。</description>
+		<iconPath>UI/Icons/Genes/Ark_VouivreTail3</iconPath>
+		<prerequisite>Ark_Vouivre</prerequisite>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<selectionWeight>0</selectionWeight>
+		<displayCategory>Ark_Tails</displayCategory>
+		<statOffsets>
+			<MoveSpeed>0.2</MoveSpeed>
+		</statOffsets>
+		<graphicData>
+			<graphicPath>Things/Pawn/Humanlike/BodyAttachments/Ark_VouivreTail/Ark_VouivreTail3</graphicPath>
+			<drawScale>2</drawScale>
+			<drawOffsetNorth>(0.0, 0.2, 0.1)</drawOffsetNorth>
+			<drawOffsetSouth>(-0.0, -0.1, 0.1)</drawOffsetSouth>
+			<drawOffsetEast>(-0.0, 0.2, 0.1)</drawOffsetEast>
+		</graphicData>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Ark_Endogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>UI/Icons/Genes/Ark_Xenogene</backgroundPathXenogenes>
 			</li>
 		</modExtensions>
 	</GeneDef>

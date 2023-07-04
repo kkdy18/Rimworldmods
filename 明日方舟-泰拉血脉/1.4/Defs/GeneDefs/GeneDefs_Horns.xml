@@ -10,6 +10,7 @@
 		<selectionWeight>0</selectionWeight>
 		<displayCategory>Ark_Heads</displayCategory>
 		<graphicData>
+			<drawScale>2</drawScale>
 			<graphicPath>Things/Pawn/Humanlike/HeadAttachments/Ark_VouivreHorn/Ark_VouivreHorn1</graphicPath>
 			<layer>PostHeadgear</layer>
 		</graphicData>
@@ -51,6 +52,7 @@
 		<selectionWeight>0</selectionWeight>
 		<displayCategory>Ark_Heads</displayCategory>
 		<graphicData>
+			<drawScale>2</drawScale>
 			<graphicPath>Things/Pawn/Humanlike/HeadAttachments/Ark_VouivreHorn/Ark_VouivreHorn2</graphicPath>
 			<layer>PostHeadgear</layer>
 		</graphicData>
@@ -92,6 +94,7 @@
 		<selectionWeight>0</selectionWeight>
 		<displayCategory>Ark_Heads</displayCategory>
 		<graphicData>
+			<drawScale>2</drawScale>
 			<graphicPath>Things/Pawn/Humanlike/HeadAttachments/Ark_VouivreHorn/Ark_VouivreHorn3</graphicPath>
 			<layer>PostHeadgear</layer>
 		</graphicData>

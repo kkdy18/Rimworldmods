@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!--萨科塔-->
   <HediffDef>
     <defName>Ark_hediff_Halo</defName>
     <label>光环</label>
@@ -70,7 +71,6 @@
     </stages>
   </HediffDef>
 
-
   <HediffDef>
     <defName>Ark_hediff_Wing</defName>
     <label>光翼</label>
@@ -92,6 +92,7 @@
     </stages>
   </HediffDef>
 
+	<!--瓦伊凡-->
 	<HediffDef>
 		<defName>Ark_hediff_Vouivre</defName>
 		<label>瓦伊凡</label>
@@ -140,7 +141,7 @@
 	<HediffDef>
 		<defName>Ark_TailAttack</defName>
 		<label>鞭尾</label>
-		<description>柔韧而又强壮的长尾，在紧急情况下可以当作武器痛击敌人。</description>
+		<description>柔韧而又粗壮的长尾，在紧急情况下可以当作武器痛击敌人。</description>
 		<hediffClass>HediffWithComps</hediffClass>
 		<scenarioCanAdd>false</scenarioCanAdd>
 		<maxSeverity>1.0</maxSeverity>
@@ -160,5 +161,28 @@
 				</tools>
 			</li>
 		</comps>
+	</HediffDef>
+
+	<!--鬼-->
+	<HediffDef>
+		<defName>Ark_hediff_Oni</defName>
+		<label>鬼</label>
+		<description>智者向内寻求力量，狂躁既能焚尽生命，也能熔铸坚盾。</description>
+		<defaultLabelColor>(1,1,0.5)</defaultLabelColor>
+		<hediffClass>Ark_GSWT.HediffOniBerserk</hediffClass>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<statOffsets>
+					<PainShockThreshold>0.50</PainShockThreshold>
+					<MentalBreakThreshold>-0.15</MentalBreakThreshold>
+				</statOffsets>
+				<statFactors>
+					<StaggerDurationFactor>1.1</StaggerDurationFactor>
+					<IncomingDamageFactor>1.05</IncomingDamageFactor>
+				</statFactors>
+			</li>
+		</stages>
 	</HediffDef>
 </Defs>

@@ -20,11 +20,14 @@
 		<durationDays>0.25</durationDays>
 		<stackLimit>1</stackLimit>
 		<showBubble>true</showBubble>
+		<nullifyingTraits>
+			<li>Psychopath</li>
+		</nullifyingTraits>
 	</ThoughtDef>
 	
 	<ThoughtDef ParentName="BaseSympathy">
 		<defName>Ark_HappySympathy</defName>
-		<icon>UI\Icons\Bubble\Ark_HappySympathy</icon>
+		<icon>UI/Icons/Bubble/Ark_HappySympathy</icon>
 		<requiredGenes>
 			<li>Ark_Sectator</li>
 		</requiredGenes>
@@ -39,7 +42,7 @@
 
 	<ThoughtDef ParentName="BaseSympathy">
 		<defName>Ark_SadSympathy</defName>
-		<icon>UI\Icons\Bubble\Ark_SadSympathy</icon>
+		<icon>UI/Icons/Bubble/Ark_SadSympathy</icon>
 		<requiredGenes>
 			<li>Ark_Sectator</li>
 		</requiredGenes>

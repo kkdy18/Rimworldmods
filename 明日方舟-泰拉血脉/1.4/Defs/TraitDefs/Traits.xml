@@ -6,7 +6,7 @@
 		<degreeDatas>
 			<li>
 				<label>直言不讳</label>
-				<description>{PAWN_nameDef}说话十分坦率，毫无顾忌，并且很难被改变想法，但{PAWN_possessive}也会为改善这种状况积极地学习。</description>
+				<description>{PAWN_nameDef}说话十分坦率，毫无顾忌，并且很难被改变想法，但{PAWN_pronoun}也会为改善这种状况积极地学习。</description>
 				<marketValueFactorOffset>-0.20</marketValueFactorOffset>
 				<statOffsets>
 					<GlobalLearningFactor>0.30</GlobalLearningFactor>
@@ -27,7 +27,7 @@
 		<degreeDatas>
 			<li>
 				<label>生于自然</label>
-				<description>{PAWN_nameDef}能很好地适应在自然环境中的生活，但{PAWN_possessive}非常不擅长与精密器械打交道并排斥植入假体，也许只是需要一点时间适应？。</description>
+				<description>{PAWN_nameDef}能很好地适应在自然环境中的生活，但{PAWN_pronoun}非常不擅长与精密器械打交道并排斥植入假体，也许只是需要一点时间适应？。</description>
 				<skillGains>
 					<li>
 						<key>Construction</key>
@@ -59,5 +59,23 @@
 			<li>BodyPurist</li>
 			<li>Transhumanist</li>
 		</conflictingTraits>
+	</TraitDef>
+
+	<TraitDef>
+		<defName>Ark_Trait_Aggressor</defName>
+		<commonality>0.7</commonality>
+		<degreeDatas>
+			<li>
+				<label>挑衅者</label>
+				<description>{PAWN_nameDef}不屑于躲避敌人的攻击与隐藏自己并且痴迷在战场上横冲直撞收割生命的感觉，因此{PAWN_pronoun}成了医务室的常客。</description>
+				<statOffsets>
+					<MeleeDodgeChance>-10</MeleeDodgeChance>
+					<HuntingStealth>-0.25</HuntingStealth>
+				</statOffsets>
+			</li>
+		</degreeDatas>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
 	</TraitDef>
 </Defs>

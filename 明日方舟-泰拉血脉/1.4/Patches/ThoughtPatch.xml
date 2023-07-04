@@ -37,4 +37,23 @@
 			</value>
 		</match>
 	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThoughtDef[defName = "KilledHumanlikeBloodlust"]/requiredTraits</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThoughtDef[defName = "KilledHumanlikeBloodlust"]</xpath>
+			<value>
+				<requiredTraits>
+					<li>Ark_Trait_Aggressor</li>
+				</requiredTraits>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThoughtDef[defName = "KilledHumanlikeBloodlust"]/requiredTraits</xpath>
+			<value>
+				<li>Ark_Trait_Aggressor</li>
+			</value>
+		</match>
+	</Operation>
 </Patch>

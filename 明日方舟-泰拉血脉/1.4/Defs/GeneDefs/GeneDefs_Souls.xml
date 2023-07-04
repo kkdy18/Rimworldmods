@@ -26,11 +26,39 @@
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>-3</biostatMet>
 		<displayCategory>Ark_Souls</displayCategory>
+		<hediffGiversCannotGive>
+			<li>Carcinoma</li>
+			<li>HeartAttack</li>
+			<li>BadBack</li>
+			<li>Frail</li>
+			<li>Cataract</li>
+			<li>Dementia</li>
+			<li>Alzheimers</li>
+			<li>Asthma</li>
+			<li>HeartArteryBlockage</li>
+		</hediffGiversCannotGive>
 		<modExtensions>
 			<li Class="VanillaGenesExpanded.GeneExtension">
 				<backgroundPathEndogenes>UI/Icons/Genes/Ark_Endogene</backgroundPathEndogenes>
 				<backgroundPathXenogenes>UI/Icons/Genes/Ark_Xenogene</backgroundPathXenogenes>
 				<hediffToWholeBody>Ark_hediff_Vouivre</hediffToWholeBody>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Ark_Oni</defName>
+		<label>鬼之心</label>
+		<description>鬼族血脉的具象，狂躁之心使鬼成为恐惧与暴虐的化身，但鬼族应该拥有更多的选择。</description>
+		<iconPath>UI/Icons/Genes/Ark_Oni</iconPath>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-2</biostatMet>
+		<displayCategory>Ark_Souls</displayCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Ark_Endogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>UI/Icons/Genes/Ark_Xenogene</backgroundPathXenogenes>
+				<hediffToWholeBody>Ark_hediff_Oni</hediffToWholeBody>
 			</li>
 		</modExtensions>
 	</GeneDef>

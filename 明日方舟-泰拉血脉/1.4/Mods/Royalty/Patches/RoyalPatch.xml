@@ -10,18 +10,13 @@
 					<xpath>/Defs/ThingDef[defName = "Wastepack"]/statBases</xpath>
 					<value>
 						<RoyalFavorValue>0.05</RoyalFavorValue>
+						<MarketValue>0.01</MarketValue>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName = "Genepack"]/statBases</xpath>
 					<value>
 						<RoyalFavorValue>1</RoyalFavorValue>
-					</value>
-				</li>
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName = "Wastepack"]/statBases</xpath>
-					<value>
-						<MarketValue>0.01</MarketValue>
 					</value>
 				</li>
 			</operations>

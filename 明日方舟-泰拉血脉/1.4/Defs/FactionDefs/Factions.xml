@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<FactionDef ParentName="OutlanderFactionBase">
+		<defName>DragonHome</defName>
+		<label>龙之乡</label>
+		<classicIdeo>true</classicIdeo>
+		<description>由瓦伊凡组建的松散组织，科技水平大概在工业时代并且热衷在世界各地发展农业，他们虽然有着超出常人的斗志与耐性但从不掠夺他人，对于大部分殖民地来说都是相当优质的贸易合作对象。龙之乡乐意帮助所有受难者但不会接纳瓦伊凡之外的人类，但有传闻说龙之乡的成员中出现过某些外观独特的同行者。</description>
+		<factionIconPath>World/DragonHome</factionIconPath>
+		<pawnSingular>龙人</pawnSingular>
+		<pawnsPlural>龙人</pawnsPlural>
+		<fixedName>龙之乡</fixedName>
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<Ark_WYF>999</Ark_WYF>
+			</xenotypeChances>
+			<warnIfTotalAbove1>false</warnIfTotalAbove1>
+		</xenotypeSet>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<colorSpectrum>
+			<li>(1.0, 1.0, 1.0)</li>
+		</colorSpectrum>
+		<configurationListOrderPriority>10</configurationListOrderPriority>
+	</FactionDef>
+</Defs>

@@ -36,4 +36,28 @@
 			</li>
 		</modExtensions>
 	</GeneDef>
+
+	<GeneDef>
+		<defName>Ark_Aggressor</defName>
+		<label>挑衅者</label>
+		<description>该基因的携带者在心理上抗拒躲避敌人的攻击与隐藏自己并能从杀戮中感到快乐。</description>
+		<iconPath>UI/Icons/Genes/Ark_Aggressor</iconPath>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>1</biostatMet>
+		<displayCategory>Ark_Sundries</displayCategory>
+		<forcedTraits>
+			<li>
+				<def>Ark_Trait_Aggressor</def>
+			</li>
+		</forcedTraits>
+		<exclusionTags>
+			<li>ViolenceDisabled</li>
+		</exclusionTags>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Ark_Endogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>UI/Icons/Genes/Ark_Xenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
 </Defs>
