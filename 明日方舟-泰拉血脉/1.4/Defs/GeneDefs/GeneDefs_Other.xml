@@ -60,4 +60,54 @@
 			</li>
 		</modExtensions>
 	</GeneDef>
+
+	<GeneDef>
+		<defName>Ark_Careless</defName>
+		<label>神经大条</label>
+		<description>该基因的携带者天生性格率直且不擅思考，但这并不是一件坏事。</description>
+		<iconPath>UI/Icons/Genes/Ark_Careless</iconPath>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>3</biostatMet>
+		<displayCategory>Ark_Sundries</displayCategory>
+		<aggroMentalBreakSelectionChanceFactor>4</aggroMentalBreakSelectionChanceFactor>
+		<prisonBreakMTBFactor>0.4</prisonBreakMTBFactor>
+		<forcedTraits>
+			<li>
+				<def>Ark_Trait_Careless</def>
+			</li>
+		</forcedTraits>
+		<exclusionTags>
+			<li>Aggressive</li>
+		</exclusionTags>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Ark_Endogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>UI/Icons/Genes/Ark_Xenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="GeneToxResistBase">
+		<defName>Ark_InhibitingToxic</defName>
+		<label>抑毒之血</label>
+		<description>该基因的携带者的血液中有着大量的特殊解毒蛋白，可以迅速代谢体内的大部分毒素并阻止有害化学物质损伤器官。</description>
+		<iconPath>UI/Icons/Genes/Ark_InhibitingToxic</iconPath>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-3</biostatMet>
+		<prerequisite>Ark_Oni</prerequisite>
+		<displayCategory>Ark_Sundries</displayCategory>
+		<statOffsets>
+			<ToxicResistance>0.75</ToxicResistance>
+		</statOffsets>
+		<hediffGiversCannotGive>
+			<li>ChemicalDamageModerate</li>
+			<li>ChemicalDamageSevere</li>
+		</hediffGiversCannotGive>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Ark_Endogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>UI/Icons/Genes/Ark_Xenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
 </Defs>

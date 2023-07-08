@@ -10,6 +10,7 @@
 				<marketValueFactorOffset>-0.20</marketValueFactorOffset>
 				<statOffsets>
 					<GlobalLearningFactor>0.30</GlobalLearningFactor>
+					<NegotiationAbility>-0.30</NegotiationAbility>
 				</statOffsets>
 				<statFactors>
 					<CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">0.5</CertaintyLossFactor>
@@ -23,7 +24,7 @@
 
 	<TraitDef>
 		<defName>Ark_Trait_Nature</defName>
-		<commonality>0.8</commonality>
+		<commonality>1</commonality>
 		<degreeDatas>
 			<li>
 				<label>生于自然</label>
@@ -77,5 +78,29 @@
 		<requiredWorkTags>
 			<li>Violent</li>
 		</requiredWorkTags>
+	</TraitDef>
+	
+	<TraitDef>
+		<defName>Ark_Trait_Careless</defName>
+		<commonality>1.2</commonality>
+		<degreeDatas>
+			<li>
+				<label>神经大条</label>
+				<description>{PAWN_nameDef}性格率直且不擅思考，工作也很粗心，虽然经常被骗但{PAWN_pronoun}对待别人温和友善。</description>
+				<socialFightChanceFactor>0</socialFightChanceFactor>
+				<statFactors>
+					<WorkSpeedGlobal>1.2</WorkSpeedGlobal>
+					<ConstructSuccessChance>0.5</ConstructSuccessChance>
+					<FixBrokenDownBuildingSuccessChance>0.5</FixBrokenDownBuildingSuccessChance>
+				</statFactors>
+				<statOffsets>
+					<TradePriceImprovement>-0.5</TradePriceImprovement>
+				</statOffsets>
+			</li>
+		</degreeDatas>
+		<conflictingTraits>
+			<li>Cannibal</li>
+			<li>Psychopath</li>
+		</conflictingTraits>
 	</TraitDef>
 </Defs>

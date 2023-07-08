@@ -49,11 +49,14 @@
 	<GeneDef>
 		<defName>Ark_Oni</defName>
 		<label>鬼之心</label>
-		<description>鬼族血脉的具象，狂躁之心使鬼成为恐惧与暴虐的化身，但鬼族应该拥有更多的选择。</description>
+		<description>鬼族血脉的具象，狂躁的本性使鬼成为恐惧与暴虐的化身，但鬼族应该拥有更多的选择。</description>
 		<iconPath>UI/Icons/Genes/Ark_Oni</iconPath>
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>-2</biostatMet>
 		<displayCategory>Ark_Souls</displayCategory>
+		<abilities>
+			<li>Ark_OniBerserk</li>
+		</abilities>
 		<modExtensions>
 			<li Class="VanillaGenesExpanded.GeneExtension">
 				<backgroundPathEndogenes>UI/Icons/Genes/Ark_Endogene</backgroundPathEndogenes>
@@ -62,4 +65,53 @@
 			</li>
 		</modExtensions>
 	</GeneDef>
+
+	<AbilityDef>
+		<defName>Ark_OniBerserk</defName>
+		<label>恶鬼化</label>
+		<description>解放狂涨的杀欲，让嗜血的本能支配自我从而激发超越极限的力量，频繁使用会导致身体负荷过大。</description>
+		<iconPath>UI/Icons/Ability/Ark_OniBerserk</iconPath>
+		<cooldownTicksRange>300</cooldownTicksRange>
+		<displayOrder>200</displayOrder>
+		<aiCanUse>true</aiCanUse>
+		<statBases>
+			<Ability_Duration>126</Ability_Duration>
+			<Ability_EffectRadius>0</Ability_EffectRadius>
+		</statBases>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>0</warmupTime>
+			<range>0</range>
+			<drawAimPie>False</drawAimPie>
+			<requireLineOfSight>False</requireLineOfSight>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+				<canTargetPawns>false</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetAnimals>false</canTargetAnimals>
+				<canTargetHumans>false</canTargetHumans>
+				<canTargetMechs>false</canTargetMechs>
+			</targetParams>
+		</verbProperties>
+		<hotKey>Misc12</hotKey>
+		<warmupStartSound>CombatCommand_Warmup</warmupStartSound>
+		<targetRequired>False</targetRequired>
+		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+		<stunTargetWhileCasting>True</stunTargetWhileCasting>
+		<showPsycastEffects>False</showPsycastEffects>
+		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>Ark_OniBerserk</hediffDef>
+				<onlyApplyToSelf>True</onlyApplyToSelf>
+				<replaceExisting>true</replaceExisting>
+			</li>
+			<li Class = "CompProperties_AbilityGiveMentalState">
+				<compClass>CompAbilityEffect_GiveMentalState</compClass>
+				<stateDef>BerserkTrance</stateDef>
+			</li>
+		</comps>
+	</AbilityDef>
 </Defs>

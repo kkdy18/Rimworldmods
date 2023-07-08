@@ -9,25 +9,24 @@
 		<iconPath>UI/Icons/Xenotypes/Ark_SKT</iconPath>
 		<inheritable>true</inheritable>
 		<genes>
-			<li>Ark_Sectator</li>
 			<li>FireAtWill</li>
+			<li>ShootingFingers</li>
 			<li>MoveSpeed_Slow</li>
 			<li>Mood_Optimist</li>
 			<li>MaxTemp_SmallDecrease</li>
 			<li>FireResistant</li>
 			<li>Aggression_DeadCalm</li>
 			<li>Sleepy</li>
-			<li>Robust</li>
 			<li>Beauty_Pretty</li>
 			<li>Hair_LongOnly</li>
-			<li>Ark_LightWings</li>
+			<li>Ark_Sectator</li>
 			<li>Ark_Halo</li>
+			<li>Ark_LightWings</li>
 			<li>Body_Standard</li>
 			<li>Body_Thin</li>
 			<li>Skin_SheerWhite</li>
 			<li>HeadRestrain</li>
-			<li>ShootingFingers</li>
-			<li>Instability_Major</li>
+			<li>Instability_Mild</li>
 			<li>AptitudeRemarkable_Shooting</li>
 			<li>AptitudePoor_Melee</li>
 			<li>AptitudeStrong_Construction</li>
