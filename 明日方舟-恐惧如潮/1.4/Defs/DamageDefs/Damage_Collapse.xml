@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<DamageDef>
+		<defName>Ark_CollapseCut</defName>
+		<label>坍缩切割</label>
+		<workerClass>DamageWorker_Cut</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>坍缩体切碎了{0}。</deathMessage>
+		<hediff>Cut</hediff>
+		<hediffSkin>Cut</hediffSkin>
+		<hediffSolid>Crack</hediffSolid>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Slice</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+		<overkillPctToDestroyPart>0~0.1</overkillPctToDestroyPart>
+		<additionalHediffs>
+			<li>
+				<hediff>Ark_CollapsePollution</hediff>
+				<severityPerDamageDealt>0.015</severityPerDamageDealt>
+				<victimSeverityScaling>Ark_Volition</victimSeverityScaling>
+				<inverseStatScaling>true</inverseStatScaling>
+				<victimSeverityScalingByInvBodySize>false</victimSeverityScalingByInvBodySize>
+			</li>
+		</additionalHediffs>
+		<cutExtraTargetsCurve>
+			<points>
+				<li>0, 0</li>
+				<li>0.6, 1</li>
+				<li>0.9, 2</li>
+				<li>1, 3</li>
+			</points>
+		</cutExtraTargetsCurve>
+		<cutCleaveBonus>1.4</cutCleaveBonus>
+	</DamageDef>
+
+	<ToolCapacityDef>
+		<defName>Ark_CollapseCut</defName>
+	</ToolCapacityDef>
+
+	<ManeuverDef>
+		<defName>Ark_CollapseCut</defName>
+		<requiredCapacity>Ark_CollapseCut</requiredCapacity>
+		<verb>
+			<verbClass>Verb_MeleeAttackDamage</verbClass>
+			<meleeDamageDef>Ark_CollapseCut</meleeDamageDef>
+		</verb>
+		<logEntryDef>MeleeAttack</logEntryDef>
+		<combatLogRulesHit>Maneuver_Slash_MeleeHit</combatLogRulesHit>
+		<combatLogRulesDeflect>Maneuver_Slash_MeleeDeflect</combatLogRulesDeflect>
+		<combatLogRulesMiss>Maneuver_Slash_MeleeMiss</combatLogRulesMiss>
+		<combatLogRulesDodge>Maneuver_Slash_MeleeDodge</combatLogRulesDodge>
+	</ManeuverDef>
+	
+	<DamageDef>
+		<defName>Ark_CollapseTentacle</defName>
+		<label>虚无之触</label>
+		<workerClass>DamageWorker_Stab</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>虚无穿透了{0}，生命自空洞流尽。</deathMessage>
+		<hediff>Stab</hediff>
+		<hediffSolid>Crack</hediffSolid>
+		<impactSoundType>Slice</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+		<stabChanceOfForcedInternal>0.6</stabChanceOfForcedInternal>
+		<overkillPctToDestroyPart>0.4~1.0</overkillPctToDestroyPart>
+		<additionalHediffs>
+			<li>
+				<hediff>Ark_CollapsePollution</hediff>
+				<severityPerDamageDealt>0.015</severityPerDamageDealt>
+				<victimSeverityScaling>Ark_Volition</victimSeverityScaling>
+				<inverseStatScaling>true</inverseStatScaling>
+				<victimSeverityScalingByInvBodySize>false</victimSeverityScalingByInvBodySize>
+			</li>
+		</additionalHediffs>
+	</DamageDef>
+
+	<ToolCapacityDef>
+		<defName>Ark_CollapseTentacle</defName>
+	</ToolCapacityDef>
+
+	<ManeuverDef>
+		<defName>Ark_CollapseTentacle</defName>
+		<requiredCapacity>Ark_CollapseTentacle</requiredCapacity>
+		<verb>
+			<verbClass>Verb_MeleeAttackDamage</verbClass>
+			<meleeDamageDef>Ark_CollapseTentacle</meleeDamageDef>
+		</verb>
+		<logEntryDef>MeleeAttack</logEntryDef>
+		<combatLogRulesHit>Maneuver_Stab_MeleeHit</combatLogRulesHit>
+		<combatLogRulesDeflect>Maneuver_Stab_MeleeDeflect</combatLogRulesDeflect>
+		<combatLogRulesMiss>Maneuver_Stab_MeleeMiss</combatLogRulesMiss>
+		<combatLogRulesDodge>Maneuver_Stab_MeleeDodge</combatLogRulesDodge>
+	</ManeuverDef>
+</Defs>

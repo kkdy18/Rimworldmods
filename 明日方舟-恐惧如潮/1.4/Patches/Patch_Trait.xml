@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/TraitDef[defName="TooSmart"]/degreeDatas/li[1]/statOffsets</xpath>
+		<value>
+			<Ark_Volition>-0.12</Ark_Volition>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/TraitDef[defName="Pyromaniac"]/degreeDatas/li[1]</xpath>
+		<value>
+			<statOffsets>
+				<Ark_Volition>-0.25</Ark_Volition>
+			</statOffsets>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/TraitDef[defName="TorturedArtist"]/degreeDatas/li[1]</xpath>
+		<value>
+			<statOffsets>
+				<Ark_Volition>-0.15</Ark_Volition>
+			</statOffsets>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/TraitDef[defName="Gourmand"]/degreeDatas/li[1]</xpath>
+		<value>
+			<statOffsets>
+				<Ark_Volition>-0.25</Ark_Volition>
+			</statOffsets>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/TraitDef[defName="Nerves"]/degreeDatas/li[1]/statOffsets</xpath>
+		<value>
+			<Ark_Volition>0.18</Ark_Volition>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/TraitDef[defName="Nerves"]/degreeDatas/li[2]/statOffsets</xpath>
+		<value>
+			<Ark_Volition>0.09</Ark_Volition>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/TraitDef[defName="Nerves"]/degreeDatas/li[3]/statOffsets</xpath>
+		<value>
+			<Ark_Volition>-0.08</Ark_Volition>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/TraitDef[defName="Nerves"]/degreeDatas/li[4]/statOffsets</xpath>
+		<value>
+			<Ark_Volition>-0.15</Ark_Volition>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/TraitDef[defName="Neurotic"]/degreeDatas/li[1]/statOffsets</xpath>
+		<value>
+			<Ark_Volition>-0.08</Ark_Volition>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/TraitDef[defName="Neurotic"]/degreeDatas/li[2]/statOffsets</xpath>
+		<value>
+			<Ark_Volition>-0.14</Ark_Volition>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/TraitDef[defName="Psychopath"]/degreeDatas/li[1]</xpath>
+		<value>
+			<statOffsets>
+				<Ark_Volition>0.15</Ark_Volition>
+			</statOffsets>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/TraitDef[defName="Ascetic"]/degreeDatas/li[1]</xpath>
+		<value>
+			<statOffsets>
+				<Ark_Volition>0.25</Ark_Volition>
+			</statOffsets>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/TraitDef[defName="Wimp"]/degreeDatas/li[1]/statOffsets</xpath>
+		<value>
+			<Ark_Volition>-0.2</Ark_Volition>
+		</value>
+	</Operation>
+</Patch>

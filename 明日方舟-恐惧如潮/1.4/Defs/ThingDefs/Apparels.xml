@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="ApparelNoQualityBase">
+    <defName>Ark_CollapseEye</defName>
+    <label>坍缩之眼</label>
+    <description>邪魔透过这空洞的躯壳窥视现实。</description>
+	  <generateAllowChance>0</generateAllowChance>
+	  <destroyOnDrop>true</destroyOnDrop>
+	  <tradeability>None</tradeability>
+    <graphicData>
+      <texPath>Things/Apparel/Ark_CollapseEye/Ark_Collapser</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	  <tickerType>Normal</tickerType>
+    <statBases>
+      <Mass>0.001</Mass>
+		<Flammability>0</Flammability>
+    </statBases>
+    <apparel>
+		<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+		<countsAsClothingForNudity>false</countsAsClothingForNudity>
+		<careIfWornByCorpse>false</careIfWornByCorpse>
+		<careIfDamaged>false</careIfDamaged>
+		<wearPerDay>0</wearPerDay>
+      <bodyPartGroups>
+        <li>Eyes</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/Ark_CollapseEye/Ark_Collapser</wornGraphicPath>
+      <layers>
+        <li>EyeCover</li>
+      </layers>
+		<tags>
+			<li>Ark_CollapseE</li>
+		</tags>
+    </apparel>
+    <comps>
+      <li Class="CompProperties_CauseHediff_Apparel">
+        <hediff>Ark_CollapseBody</hediff>
+      </li>
+    </comps>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+
+	<ThingDef ParentName="ApparelNoQualityBase">
+		<defName>Ark_MagicBullet</defName>
+		<label>魔弹之痕</label>
+		<description>这枚印有眼睛图案的饰品疑为某种坍缩范式的载体或具象，任何人戴上它都能成为百发百中的神枪手，但与它的来者不拒相反，取下它将会带来厄运。</description>
+		<generateAllowChance>0</generateAllowChance>
+		<tradeability>None</tradeability>
+		<smeltable>false</smeltable>
+		<graphicData>
+			<texPath>Things/Apparel/Ark_MagicBullet/Ark_MagicBullet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<tickerType>Normal</tickerType>
+		<statBases>
+			<Mass>0.001</Mass>
+		</statBases>
+		<apparel>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
+			<careIfDamaged>false</careIfDamaged>
+			<bodyPartGroups>
+				<li>Torso</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/Ark_MagicBullet/Ark_MagicBullet</wornGraphicPath>
+			<layers>
+				<li>Belt</li>
+			</layers>
+		</apparel>
+		<comps>
+			<li Class="CompProperties_CauseHediff_Apparel">
+				<hediff>Ark_CollapseShoot</hediff>
+			</li>
+		</comps>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+	</ThingDef>
+
+	<ThingDef ParentName="ApparelBase">
+		<defName>Ark_ShatteredHelmet</defName>
+		<label>破灭之盔</label>
+		<description>以未知的技术制造的古朴头盔，防护性能相当优秀，其上少见地固化了一种坍缩现象，能让穿戴者以极快的速度行动，无论是坍缩体与否。\n\n戴上头盔本该给人勇气，但这个头盔中只有虚无，其中存在过的信念皆已粉碎消融。</description>
+		<generateAllowChance>0</generateAllowChance>
+		<tradeability>None</tradeability>
+		<smeltable>false</smeltable>
+		<graphicData>
+			<texPath>Things/Apparel/Ark_ShatteredHelmet/Ark_ShatteredHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<WorkToMake>21000</WorkToMake>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>1.5</Mass>
+			<Flammability>0.4</Flammability>
+			<ArmorRating_Sharp>1.06</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.54</ArmorRating_Heat>
+			<Insulation_Cold>4</Insulation_Cold>
+			<Insulation_Heat>2</Insulation_Heat>
+			<EquipDelay>4</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/Ark_ShatteredHelmet/Ark_ShatteredHelmet</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+			<wearPerDay>0</wearPerDay>
+		</apparel>
+		<comps>
+			<li Class="CompProperties_CauseHediff_Apparel">
+				<hediff>Ark_CollapseRun</hediff>
+			</li>
+		</comps>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+	</ThingDef>
+</Defs>

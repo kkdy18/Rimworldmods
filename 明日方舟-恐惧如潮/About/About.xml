@@ -1,0 +1,25 @@
+<ModMetaData>
+	<name>明日方舟-恐惧如潮</name>
+	<author>灰风白茅</author>
+	<supportedVersions>
+		<li>1.4</li>
+	</supportedVersions>
+	<modDependencies>
+		<!--<li>
+			<packageId>gswt.arknighttiesofblood</packageId>
+			<displayName>明日方舟-泰拉血脉</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2997871352</steamWorkshopUrl>
+		</li>-->
+	</modDependencies>
+	<packageId>GSWT.Arknightfearliketide</packageId>
+	<description>
+		[h1]简介：[/h1]
+
+		[b][/b]
+
+		本MOD目前仍在不断更新，尚未测试与其他mod的兼容性，如果出现bug欢迎反馈。
+
+		祝各位游戏愉快o(￣▽￣)ｄ
+
+		suported language:简体中文</description>
+</ModMetaData>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThoughtDef>
+		<defName>Ark_SoakedByBlackRain</defName>
+		<durationDays>0.1</durationDays>
+		<stackLimit>1</stackLimit>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<stages>
+			<li>
+				<label>被黑雨淋湿</label>
+				<description>我∈≯ΣΠ淋雨？为什么┖€�好悲伤……</description>
+				<baseMoodEffect>-20</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>Ark_Thought_CollapseShoot</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>Ark_CollapseShoot</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<stages>
+			<li>
+				<label>魔弹的诅咒</label>
+				<description>它在渴望夺取生命……子弹将贯穿我所爱之人的头颅……不不，我应该瞄准敌人的头颅……我开枪……</description>
+				<baseMoodEffect>-50</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>Ark_Thought_Anti-collapse</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>Ark_Anti-collapse</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<stages>
+			<li>
+				<label>坍缩消退</label>
+				<description>我的头脑从未如此清醒，那些恼人的杂音与黑雾都将滚出我的感知！</description>
+				<baseMoodEffect>6</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

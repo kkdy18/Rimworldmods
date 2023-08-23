@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HediffDef Name="Ark_CollapseFormBase" Abstract="True">
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.75,0.25,0.75)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<maxSeverity>1</maxSeverity>
+		<initialSeverity>1.00</initialSeverity>
+		<alwaysAllowMothball>True</alwaysAllowMothball>
+		<alwaysAllowMothballCached>True</alwaysAllowMothballCached>
+	</HediffDef>
+	<!-- 友方坍缩范式 -->
+	<HediffDef Name="Ark_CollapseHumanBase" ParentName="Ark_CollapseFormBase" Abstract="True">
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.5</severityPerDay>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+	</HediffDef>
+	
+	<HediffDef ParentName="Ark_CollapseHumanBase">
+		<defName>Ark_CollapseHuman</defName>
+		<label>坍缩范式-去量化</label>
+		<description>坍缩使数字这一概念本身变得模糊不清，导致该个体失去了使用数字的能力，这严重干扰了日常的交流与工作。</description>
+		<stages>
+			<li>
+				<statFactors>
+					<ResearchSpeed>0.5</ResearchSpeed>
+				</statFactors>
+				<statOffsets>
+					<GlobalLearningFactor>-0.5</GlobalLearningFactor>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Talking</capacity>
+						<offset>-0.3</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="Ark_CollapseHumanBase">
+		<defName>Ark_CollapseHuman2</defName>
+		<label>坍缩范式-泛社会悖论α</label>
+		<description>坍缩改写了社会的定义，美与丑的概念已经被扭曲，该个体现在在他人的眼中丑陋不堪。</description>
+		<stages>
+			<li>
+				<statOffsets>
+					<PawnBeauty>-4</PawnBeauty>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="Ark_CollapseHumanBase">
+		<defName>Ark_CollapseHuman3</defName>
+		<label>坍缩范式-泛社会悖论β</label>
+		<description>坍缩改写了社会的定义，人类对事物价值的判断遭到扭曲，该个体现在变得身价百倍，对贪婪之徒来说如同行走的金山。</description>
+		<priceOffset>10000</priceOffset>
+		<stages>
+			<li>
+				<statOffsets>
+					<RoyalFavorValue>12</RoyalFavorValue>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="Ark_CollapseHumanBase">
+		<defName>Ark_CollapseHuman4</defName>
+		<label>坍缩范式-超限代谢</label>
+		<description>坍缩扭曲了生物体的新陈代谢，一些不该被细胞利用的重元素成为细胞的组成成分，组织密度异常升高，呼吸作用的速率急速提升产生的能量却不知去了何处。</description>
+		<stages>
+			<li>
+				<hungerRateFactor>5</hungerRateFactor>
+				<foodPoisoningChanceFactor>0</foodPoisoningChanceFactor>
+				<statFactors>
+					<Mass>3</Mass>
+				</statFactors>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<setMax>0.8</setMax>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="Ark_CollapseHumanBase">
+		<defName>Ark_CollapseHuman5</defName>
+		<label>坍缩范式-血液病变</label>
+		<description>坍缩扭曲了血液中某种蛋白质的结构，导致大量异常物质在循环系统中扩散，血细胞数量急剧减少，生物体凝血与清除异物的能力受到抑制。</description>
+		<stages>
+			<li>
+				<totalBleedFactor>2</totalBleedFactor>
+				<statFactors>
+					<ImmunityGainSpeed>0.8</ImmunityGainSpeed>
+					<ToxicResistance>0.5</ToxicResistance>
+				</statFactors>
+				<capMods>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>-0.2</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="Ark_CollapseHumanBase">
+		<defName>Ark_CollapseHuman6</defName>
+		<label>坍缩范式-细胞解离</label>
+		<description>坍缩改写了细胞间的连接方式，让组织细胞相互排斥，生物体抗机械性损伤的能力降低，愈合能力遭到抑制。</description>
+		<stages>
+			<li>
+				<naturalHealingFactor>0.5</naturalHealingFactor>
+				<statFactors>
+					<IncomingDamageFactor>1.25</IncomingDamageFactor>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="Ark_CollapseHumanBase">
+		<defName>Ark_CollapseHuman7</defName>
+		<label>坍缩范式-思维断片</label>
+		<description>坍缩扭曲了该个体的感知，让其频繁进入短暂的感知封闭状态，完成任何行为所需的时间都被延长，个体眼中的世界如网络连接不良的视频一般不断卡顿。</description>
+		<stages>
+			<li>
+				<statFactors>
+					<EatingSpeed>0.5</EatingSpeed>
+				</statFactors>
+				<statOffsets>
+					<MeleeDodgeChance>-5</MeleeDodgeChance>
+					<MeleeHitChance>-5</MeleeHitChance>
+					<ShootingAccuracyPawn>-5</ShootingAccuracyPawn>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>-0.5</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!-- 敌方坍缩范式 -->
+	<HediffDef Name="Ark_CollapseEnemyBase" ParentName="Ark_CollapseFormBase" Abstract="True">
+		<comps>
+			<li Class="Ark_GSWT.HCP_RemoveWhenPlayer"/>
+			<li Class="Ark_GSWT.HCP_Deathrattle">
+				<hediffDef>Ark_CollapseDeath</hediffDef>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>Ark_CollapseDeath</defName>
+		<label>坍缩自湮灭</label>
+		<description>维持该坍缩体存在的坍缩现象突然消退，坍缩体的躯体与现实维度相排斥引发不可逆的崩溃，终结了坍缩体的生命。</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.75,0,0.75)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<lethalSeverity>1</lethalSeverity>
+		<initialSeverity>1.00</initialSeverity>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>
+					<min>1000</min>
+					<max>1000</max>
+				</disappearsAfterTicks>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="Ark_CollapseEnemyBase">
+		<defName>Ark_CollapseEnemy</defName>
+		<label>坍缩范式-非线性移动</label>
+		<description>该坍缩体可以利用被坍缩扭曲的空间高速移动，由于处在异常的空间中，他的行动轨迹在常人看来不连贯也不是直线，难以预测。</description>
+		<stages>
+			<li>
+				<statFactors>
+					<MoveSpeed>1.5</MoveSpeed>
+				</statFactors>
+				<statOffsets>
+					<MeleeDodgeChance>5</MeleeDodgeChance>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="Ark_CollapseFormBase">
+		<defName>Ark_CollapseRun</defName>
+		<label>坍缩范式-泯灭冲锋</label>
+		<description>该坍缩体利用被坍缩扭曲的空间高速移动，与非线性移动的区别是为了获得更高的速度舍弃了安全性，在异常空间穿梭使他的身体结构长期处于不稳定的状态。</description>
+		<stages>
+			<li>
+				<statFactors>
+					<MoveSpeed>2</MoveSpeed>
+					<StaggerDurationFactor>0</StaggerDurationFactor>
+					<IncomingDamageFactor>2</IncomingDamageFactor>
+				</statFactors>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.5</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_RemoveIfApparelDropped" />
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="Ark_CollapseFormBase">
+		<defName>Ark_CollapseShoot</defName>
+		<label>坍缩范式-非线性打击</label>
+		<description>该坍缩体可以利用被坍缩扭曲的空间观察敌人与改变自己的投射物的运动状态，他的射击难以预测，相当致命。</description>
+		<stages>
+			<li>
+				<statFactors>
+					<AimingDelayFactor>0.5</AimingDelayFactor>
+					<ShootingAccuracyPawn>1.5</ShootingAccuracyPawn>
+				</statFactors>
+				<capMods>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>1</offset>
+					</li>
+					<li>
+						<capacity>Talking</capacity>
+						<setMax>0</setMax>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li Class="Ark_GSWT.HCP_Deathrattle">
+				<hediffDef>Ark_CollapseDeath</hediffDef>
+			</li>
+			<li Class="HediffCompProperties_RemoveIfApparelDropped" />
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="Ark_CollapseEnemyBase">
+		<defName>Ark_CollapseEnemy2</defName>
+		<label>坍缩范式-目中无人</label>
+		<description>该坍缩体携带的坍缩现象干扰了一定范围内所有生物的思维认知，使被影响的对象不得不忽视他的存在，他依然拥有可摧毁的实体，但主动攻击他的念头无法产生。\n\n“隐身”能力让这个坍缩体的威胁性极高，但维持大范围的思维认知干扰会带来巨大的负担，或许静观其变会是个好主意。</description>
+		<comps>
+			<li Class="HediffCompProperties">
+				<compClass>HediffComp_Invisibility</compClass>
+			</li>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>
+					<min>7500</min>
+					<max>7500</max>
+				</disappearsAfterTicks>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="Ark_CollapseEnemyBase">
+		<defName>Ark_CollapseEnemy3</defName>
+		<label>坍缩范式-情绪实体</label>
+		<description>该坍缩体有着吸收生物的情绪作为养分强化自身的特性，他不仅拥有物理强度较高的身躯，还能在战斗中吸收敌人的情绪修复损伤。</description>
+		<stages>
+			<li>
+				<statFactors>
+					<IncomingDamageFactor>0.75</IncomingDamageFactor>
+				</statFactors>
+				<statOffsets>
+					<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+				</statOffsets>
+			</li>
+		</stages>
+		<comps>
+			<li Class="AnimalBehaviours.HediffCompProperties_Regeneration">
+				<rateInTicks>50</rateInTicks>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="Ark_CollapseEnemyBase">
+		<defName>Ark_CollapseEnemy4</defName>
+		<label>坍缩范式-气压异常α</label>
+		<description>该坍缩体的本体平平无奇，但伴随他的坍缩现象范围极广，以他为中心100公里以内的气象系统都将遭到扭曲，生成名为“黑雨”的异常现象。</description>
+		<comps>
+			<li Class="AnimalBehaviours.HediffCompProperties_ChangeWeather">
+				<weatherDef>Ark_BlackRain</weatherDef>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="Ark_CollapseEnemyBase">
+		<defName>Ark_CollapseEnemy5</defName>
+		<label>坍缩范式-劣化实体</label>
+		<description>坍缩带来的改变是混沌的，该坍缩体就是比较倒霉的那一类，他的身躯脆弱且无力，无法顺利地进行任何暴力行为。</description>
+		<stages>
+			<li>
+				<statFactors>
+					<IncomingDamageFactor>1.5</IncomingDamageFactor>
+					<MeleeDamageFactor>0.5</MeleeDamageFactor>
+					<AimingDelayFactor>1.5</AimingDelayFactor>
+				</statFactors>
+				<statOffsets>
+					<MeleeDodgeChance>-10</MeleeDodgeChance>
+					<MeleeHitChance>-10</MeleeHitChance>
+					<ShootingAccuracyPawn>-10</ShootingAccuracyPawn>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="Ark_CollapseHumanBase">
+		<defName>Ark_CollapseEnemy6</defName>
+		<label>坍缩范式-实质性坍缩</label>
+		<description>附着在该个体上的坍缩平时不会显现，只会在其生命终结时爆发，留下难以复原的异常空间“国度”，他最好与重要设施和人群保持距离。</description>
+		<comps>
+			<li Class="Ark_GSWT.HCP_Exploder">
+				<damageDef>Ark_CollapseSpace</damageDef>
+				<postExplosionSpawnThingDef>Ark_CollapseSpace</postExplosionSpawnThingDef>
+			</li>
+		</comps>
+	</HediffDef>
+</Defs>

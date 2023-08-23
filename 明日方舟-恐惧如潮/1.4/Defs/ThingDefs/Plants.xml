@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="PlantBase">
+		<defName>Ark_NoRootPlant</defName>
+		<label>无根花</label>
+		<description>不存在根与叶的奇异植物，在任何地方都能生长绽放，仿佛它们扎根于空间本身而非土地。有人说它们自虚无诞生，从虚空吸取养分，是■■用于进入现实的信标……\n\n采收无根花的方法很简单，捏住花朵下细长的茎旋转掰下即可，采收过程十分安全，它们只是一种植物而已，但在摘下它们之前不要做任何多余的事，它们■■■■■■■■</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Beauty>2</Beauty>
+			<BeautyOutdoors>2</BeautyOutdoors>
+			<Nutrition>0.01</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Ark_NoRootPlant</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.2, 0.3, 0.13)</volume>
+				<offset>(-0.03,0,-0.44)</offset>
+			</shadowData>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<ingestible />
+		<plant>
+			<dieIfLeafless>false</dieIfLeafless>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>0</growOptimalGlow>
+			<fertilityMin>0</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>Ark_Essential</harvestedThingDef>
+			<harvestYield>6</harvestYield>
+			<maxMeshCount>4</maxMeshCount>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			</sowTags>
+			<sowMinSkill>10</sowMinSkill>
+			<sowResearchPrerequisites>
+				<li>Ark_NoRootPlant</li>
+			</sowResearchPrerequisites>
+			<topWindExposure>0</topWindExposure>
+			<growDays>6</growDays>
+			<cavePlantWeight>0.33</cavePlantWeight>
+			<visualSizeRange>0.3~0.65</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+			<pollution>Any</pollution>
+		</plant>
+		<comps>
+			<li Class="AK_Industry.TCP_GasEmitter">
+				<gasType>Ark_CollapseSpace</gasType>
+				<HPThreshold>0.5</HPThreshold>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

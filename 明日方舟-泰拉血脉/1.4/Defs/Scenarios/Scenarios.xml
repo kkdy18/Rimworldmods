@@ -162,4 +162,83 @@
     </scenario>
   </ScenarioDef>
 
+	<ScenarioDef>
+		<defName>Ark_TheOniRedemption</defName>
+		<label>鬼的救赎</label>
+		<description>你们曾是鬼狩众的下忍，在一次失败的行动中偶然结识，同样厌倦了无尽头的杀戮的你们一拍即合，在洗劫了主君的密库后逃之夭夭。虽然鬼狩众的怒火仍在追逐着你们，撕扯你们的血肉，但你们第一次对未来充满了期待。</description>
+	<scenario>
+		<summary>两个鬼逃离了自己的过去，踏上旅途，寻求如何摆脱与鬼族生来相伴的暴力与毁灭。</summary>
+		<playerFaction>
+			<def>PlayerFaction</def>
+			<factionDef>PlayerColony</factionDef>
+		</playerFaction>
+		<parts>
+			<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+				<def>ConfigurePawnsXenotypes</def>
+				<pawnChoiceCount>8</pawnChoiceCount>
+				<xenotypeCounts>
+					<li>
+						<count>2</count>
+						<requiredAtStart>True</requiredAtStart>
+						<xenotype>Ark_ONI</xenotype>
+						<allowedDevelopmentalStages>Baby, Child, Adult</allowedDevelopmentalStages>
+					</li>
+				</xenotypeCounts>
+			</li>
+			<li Class="ScenPart_PlayerPawnsArriveMethod">
+				<def>PlayerPawnsArriveMethod</def>
+			</li>
+			<li Class="ScenPart_GameStartDialog">
+				<def>GameStartDialog</def>
+				<text>你们曾是鬼狩众的下忍，在一次失败的行动中偶然结识，同样厌倦了无尽头的杀戮的你们一拍即合，在洗劫了主君的密库后逃之夭夭。虽然鬼狩众的怒火仍在追逐着你们，撕扯你们的血肉，但你们第一次对未来充满了期待。</text>
+				<closeSound>GameStartSting</closeSound>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>Apparel_PlateArmor</thingDef>
+				<stuff>Gold</stuff>
+				<quality>Masterwork</quality>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>MealSurvivalPack</thingDef>
+				<count>20</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>MedicineIndustrial</thingDef>
+				<count>20</count>
+			</li>
+			<li Class="ScenPart_StartingResearch">
+				<def>StartingResearch</def>
+				<project>Smithing</project>
+			</li>
+			<li Class="ScenPart_CreateIncident">
+				<def>CreateIncident</def>
+				<incident>RaidEnemy</incident>
+				<intervalDays>5</intervalDays>
+				<repeat>True</repeat>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>MeleeWeapon_Mace</thingDef>
+				<stuff>Steel</stuff>
+				<quality>Excellent</quality>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>MeleeWeapon_LongSword</thingDef>
+				<stuff>Steel</stuff>
+				<quality>Excellent</quality>
+			</li>
+			<li Class="ScenPart_ScatterThingsNearPlayerStart">
+				<def>ScatterThingsNearPlayerStart</def>
+				<thingDef>Apparel_VisageMask</thingDef>
+				<stuff>Steel</stuff>
+				<count>2</count>
+				<allowRoofed>True</allowRoofed>
+			</li>
+		</parts>
+	</scenario>
+	</ScenarioDef>
 </Defs>

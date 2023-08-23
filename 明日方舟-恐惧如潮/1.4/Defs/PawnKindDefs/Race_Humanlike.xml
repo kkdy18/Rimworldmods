@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--<ThingDef ParentName="Human">
+		<defName>Ark_CollapsePawn</defName>
+		<label>坍缩体</label>
+		<description>于世界各地观测到的异常人形生命体，出现即干涉现实空间基础法则和思维认知。</description>
+		<race>
+			<bloodDef>Ark_BlackBlood</bloodDef>
+		</race>
+		<comps>
+			<li Class="Ark_GSWT.CP_CollapseForm">
+				<hediffs>
+					<li>Ark_CollapseEnemy</li>
+					<li>Ark_CollapseEnemy2</li>
+					<li>Ark_CollapseEnemy3</li>
+					<li>Ark_CollapseEnemy4</li>
+				</hediffs>
+			</li>
+		</comps>
+	</ThingDef>-->
+
+	<ThingDef ParentName="BaseFilth">
+		<defName>Ark_BlackBlood</defName>
+		<label>漆黑血迹</label>
+		<statBases>
+			<Beauty>-50</Beauty>
+			<Cleanliness>-10</Cleanliness>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Filth/Spatter</texPath>
+			<color>(13, 6, 23, 180)</color>
+		</graphicData>
+		<filth>
+			<ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+			<disappearsInDays>1~2</disappearsInDays>
+			<rainWashes>false</rainWashes>
+			<cleaningWorkToReduceThickness>100</cleaningWorkToReduceThickness>
+			<canFilthAttach>true</canFilthAttach>
+			<cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+		</filth>
+	</ThingDef>
+</Defs>

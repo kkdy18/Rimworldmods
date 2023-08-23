@@ -41,7 +41,6 @@
 	<xenotypeSet Inherit="False">
 		<xenotypeChances>
 			<Ark_SKT>0.7</Ark_SKT>
-			<Yttakin>0.1</Yttakin>
 		</xenotypeChances>
 		<warnIfTotalAbove1>false</warnIfTotalAbove1>
 	</xenotypeSet>
@@ -91,19 +90,17 @@
 	  <kindDef>Combat</kindDef>
 	  <options>
 		  <Ark_Cardinal>1</Ark_Cardinal>
-		  <Ark_Performer>3</Ark_Performer>
+		  <Ark_Performer>5</Ark_Performer>
 		  <Ark_Grenadier>1.5</Ark_Grenadier>
-		  <Ark_EMPGrenadier>1.5</Ark_EMPGrenadier>
-		  <Ark_SmokeGrenadier>1.5</Ark_SmokeGrenadier>
-		  <Ark_SoldierLaterano>30</Ark_SoldierLaterano>
+		  <Ark_EMPGrenadier>0.5</Ark_EMPGrenadier>
+		  <Ark_SmokeGrenadier>0.5</Ark_SmokeGrenadier>
+		  <Ark_SoldierLaterano>40</Ark_SoldierLaterano>
 	  </options>
 	  </li>
 	  <li>
 		  <kindDef>Peaceful</kindDef>
 		  <options>
 			  <Ark_Performer>3</Ark_Performer>
-			  <Ark_EMPGrenadier>1.5</Ark_EMPGrenadier>
-			  <Ark_SmokeGrenadier>1.5</Ark_SmokeGrenadier>
 			  <Ark_SoldierLaterano>30</Ark_SoldierLaterano>
 		  </options>
 	  </li>
@@ -119,8 +116,8 @@
 			  <Elephant>1</Elephant>
 		  </carriers>
 		  <guards>
-			  <Ark_Performer>1</Ark_Performer>
-			  <Ark_SmokeGrenadier>1.5</Ark_SmokeGrenadier>
+			  <Ark_Performer>2</Ark_Performer>
+			  <Ark_SmokeGrenadier>1</Ark_SmokeGrenadier>
 			  <Ark_SoldierLaterano>20</Ark_SoldierLaterano>
 		  </guards>
 	  </li>

@@ -22,6 +22,8 @@
 		<li Class="HediffCompProperties_RemoveIfApparelDropped" />
 	</comps>
 	<isBad>false</isBad>
+	<alwaysAllowMothball>True</alwaysAllowMothball>
+	<alwaysAllowMothballCached>True</alwaysAllowMothballCached>
 </HediffDef>
 	
 <HediffDef>
@@ -47,5 +49,7 @@
 		<li Class="HediffCompProperties_RemoveIfApparelDropped" />
 	</comps>
 	<isBad>false</isBad>
+	<alwaysAllowMothball>True</alwaysAllowMothball>
+	<alwaysAllowMothballCached>True</alwaysAllowMothballCached>
 </HediffDef>
 </Defs>

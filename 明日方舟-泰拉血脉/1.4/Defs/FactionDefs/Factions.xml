@@ -17,8 +17,30 @@
 		</xenotypeSet>
 		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
 		<colorSpectrum>
-			<li>(1.0, 1.0, 1.0)</li>
+			<li>(1, 1, 1)</li>
 		</colorSpectrum>
 		<configurationListOrderPriority>10</configurationListOrderPriority>
+	</FactionDef>
+
+	<FactionDef ParentName="PirateBandBase">
+		<defName>Ark_Higashi</defName>
+		<label>鬼狩众</label>
+		<description>打着“复兴东国”的旗号行劫掠之事的一群鬼族，人数众多，凭着鬼族的凶狠无畏在边缘世界独霸一方。</description>
+		<factionIconPath>World/Higashi</factionIconPath>
+		<pawnSingular>恶鬼</pawnSingular>
+		<pawnsPlural>恶鬼</pawnsPlural>
+		<leaderTitle>主君</leaderTitle>
+		<earliestRaidDays>30</earliestRaidDays>
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<Ark_ONI>0.9</Ark_ONI>
+				<Ark_RONI>0.05</Ark_RONI>
+				<Ark_BONI>0.05</Ark_BONI>
+			</xenotypeChances>
+			<warnIfTotalAbove1>false</warnIfTotalAbove1>
+		</xenotypeSet>
+		<colorSpectrum>
+			<li>(1, 1, 1)</li>
+		</colorSpectrum>
 	</FactionDef>
 </Defs>

@@ -41,7 +41,7 @@
 		<label>铳骑萨科塔</label>
 		<description>铳骑萨科塔是新拉特兰最为深邃的秘密之一，他们是维持萨科塔的乐园必需的牺牲。垒砌多少骸骨才能重建一座圣城？流尽多少鲜血才能抵达一座乐园？铳骑知道，铳骑永远知道。</description>
 		<descriptionShort>教宗铳骑是律法之盾，他们的转轮铳将审判一切亵渎律法之物。</descriptionShort>
-		<iconPath>UI/Icons/Xenotypes/Ark_superSKT</iconPath>
+		<iconPath>UI/Icons/Xenotypes/Ark_SKT</iconPath>
 		<inheritable>true</inheritable>
 		<genes>
 			<li>Ark_Sectator</li>
@@ -100,6 +100,110 @@
 			<li>Unstoppable</li>
 			<li>AptitudePoor_Social</li>
 			<li>AptitudePoor_Intellectual</li>
+		</genes>
+	</XenotypeDef>
+
+	<XenotypeDef>
+		<defName>Ark_ONI</defName>
+		<label>鬼</label>
+		<description>鬼族是一种头上长有角的特殊人类，他们相当擅长战斗且精神异常坚韧，恐惧不会在他们的脑中留下痕迹，痛苦也无法击倒他们。鬼的体质也相当奇异，他们对酒精与毒素的承受能力极强，但会因日光照射感到不适。战斗时鬼能够通过解放自己杀戮的本能在战斗中取得优势，但本能也影响到他们的战斗风格，容易受伤与被牵制。</description>
+		<descriptionShort>鬼是值得信赖的战士，但作战时最好看好他们，不然就要找人把他们抬回去了。</descriptionShort>
+		<iconPath>UI/Icons/Xenotypes/Ark_ONI</iconPath>
+		<inheritable>true</inheritable>
+		<genes>
+			<li>WoundHealing_SuperFast</li>
+			<li>Superclotting</li>
+			<li>MaxTemp_SmallIncrease</li>
+			<li>UVSensitivity_Mild</li>
+			<li>MeleeDamage_Strong</li>
+			<li>KillThirst</li>
+			<li>Ark_Oni</li>
+			<li>Ark_OniHorn1</li>
+			<li>Ark_OniHorn3</li>
+			<li>Ark_OniHornFloating2</li>
+			<li>Ark_OniHornFloating</li>
+			<li>Ark_OniHorn2</li>
+			<li>Ark_InhibitingToxic</li>
+			<li>Ark_Aggressor</li>
+			<li>Ark_Careless</li>
+			<li>StrongStomach</li>
+			<li>DarkVision</li>
+			<li>Instability_Major</li>
+			<li>AptitudePoor_Shooting</li>
+			<li>AptitudeRemarkable_Melee</li>
+			<li>AptitudeTerrible_Intellectual</li>
+			<li>AddictionResistant_Alcohol</li>
+		</genes>
+	</XenotypeDef>
+
+	<XenotypeDef>
+		<defName>Ark_RONI</defName>
+		<label>赤鬼</label>
+		<description>赤鬼是鬼的变种之一，他们普遍有着红色的皮肤，特化了身体强度与战斗能力，精神状态也变得更加狂躁。/n/n赤鬼的生命力极其顽强，据说如果不刺穿头颅斩落首级便无法杀死他们。</description>
+		<iconPath>UI/Icons/Xenotypes/Ark_ONI</iconPath>
+		<inheritable>true</inheritable>
+		<genes>
+			<li>Deathless</li>
+			<li>WoundHealing_SuperFast</li>
+			<li>Superclotting</li>
+			<li>PsychicAbility_Deaf</li>
+			<li>MoveSpeed_Quick</li>
+			<li>FireResistant</li>
+			<li>Aggression_HyperAggressive</li>
+			<li>MeleeDamage_Strong</li>
+			<li>KillThirst</li>
+			<li>Robust</li>
+			<li>Pain_Reduced</li>
+			<li>Beauty_VeryUgly</li>
+			<li>Ark_Oni</li>
+			<li>Ark_OniHornFloating</li>
+			<li>Ark_OniHornRed</li>
+			<li>Body_Hulk</li>
+			<li>Hair_SnowWhite</li>
+			<li>Ark_InhibitingToxic</li>
+			<li>Ark_Aggressor</li>
+			<li>Skin_DeepRed</li>
+			<li>Skin_PaleRed</li>
+			<li>StrongStomach</li>
+			<li>Nearsighted</li>
+			<li>DarkVision</li>
+			<li>Instability_Major</li>
+			<li>AptitudeTerrible_Shooting</li>
+			<li>AptitudeRemarkable_Melee</li>
+			<li>AptitudeTerrible_Intellectual</li>
+			<li>AddictionResistant_Alcohol</li>
+		</genes>
+	</XenotypeDef>
+
+	<XenotypeDef>
+		<defName>Ark_BONI</defName>
+		<label>青鬼</label>
+		<description>青鬼是鬼的变种之一，他们普遍有着蓝色的皮肤，特化了精细加工与思维能力。他们精神敏感且性格偏悲观，需要定期摄入精神药物来维持神经系统的正常代谢。/n/n青鬼往往在鬼的群体中担任工匠与研究者的职位，很少出现在战场上。</description>
+		<iconPath>UI/Icons/Xenotypes/Ark_ONI</iconPath>
+		<inheritable>true</inheritable>
+		<genes>
+			<li>WoundHealing_SuperFast</li>
+			<li>Superclotting</li>
+			<li>PsychicAbility_Enhanced</li>
+			<li>MoveSpeed_Slow</li>
+			<li>Mood_Depressive</li>
+			<li>MeleeDamage_Weak</li>
+			<li>Ark_Oni</li>
+			<li>Ark_OniHornFloating</li>
+			<li>Ark_OniHornBlue</li>
+			<li>Body_Thin</li>
+			<li>Hair_SnowWhite</li>
+			<li>Ark_InhibitingToxic</li>
+			<li>Ark_Aggressor</li>
+			<li>Skin_Purple</li>
+			<li>Skin_Blue</li>
+			<li>StrongStomach</li>
+			<li>DarkVision</li>
+			<li>Instability_Major</li>
+			<li>ElongatedFingers</li>
+			<li>AptitudeRemarkable_Crafting</li>
+			<li>AptitudeStrong_Intellectual</li>
+			<li>ChemicalDependency_Psychite</li>
 		</genes>
 	</XenotypeDef>
 </Defs>

@@ -14,7 +14,6 @@
 			</li>
 		</backstoryFiltersOverride>
 		<invNutrition>2.55</invNutrition>
-		<itemQuality>Good</itemQuality>
 		<backstoryCryptosleepCommonality>0.09</backstoryCryptosleepCommonality>
 		<maxGenerationAge>40</maxGenerationAge>
 		<minGenerationAge>14</minGenerationAge>
@@ -32,7 +31,7 @@
 			<li>IndustrialMilitaryBasic</li>
 			<li>IndustrialMilitaryAdvanced</li>
 			<li>SpacerMilitary</li>
-			<li>BeltDefensePop</li>
+			<li>Ark_Belt</li>
 		</apparelTags>
 		<apparelDisallowTags>
 			<li>Western</li>
@@ -49,12 +48,13 @@
 		<race>Human</race>
 		<defaultFactionType>NewLaterano</defaultFactionType>
 		<minTitleRequired>Believer</minTitleRequired>
-		<maxGenerationAge>65</maxGenerationAge>
+		<maxGenerationAge>50</maxGenerationAge>
 		<trader>true</trader>
 		<isFighter>false</isFighter>
 		<backstoryCryptosleepCommonality>0.08</backstoryCryptosleepCommonality>
 		<chemicalAddictionChance>0.1</chemicalAddictionChance>
 		<combatEnhancingDrugsChance>0.15</combatEnhancingDrugsChance>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
 		<invNutrition>2.55</invNutrition>
 		<apparelColor>(250,250,250)</apparelColor>
 		<inventoryOptions>
@@ -106,11 +106,14 @@
 	<PawnKindDef Name="BaseGrenadierLaterano" ParentName="BaseSoldierLaterano" Abstract="True">
 		<combatPower>75</combatPower>
 		<gearHealthRange>0.8~1.8</gearHealthRange>
-		<apparelMoney>1500~2500</apparelMoney>
+		<apparelMoney>1500~3000</apparelMoney>
 		<apparelAllowHeadgearChance>0.1</apparelAllowHeadgearChance>
 		<weaponMoney>900~1000</weaponMoney>
 		<techHediffsMoney>1000~2000</techHediffsMoney>
 		<combatEnhancingDrugsCount>1~2</combatEnhancingDrugsCount>
+		<apparelDisallowTags>
+			<li>SpacerMilitary</li>
+		</apparelDisallowTags>
 		<techHediffsTags>
 			<li>Advanced</li>
 		</techHediffsTags>
@@ -150,14 +153,16 @@
 		<labelPlural>戍卫队</labelPlural>
 		<combatPower>200</combatPower>
 		<gearHealthRange>0.7~2.8</gearHealthRange>
-		<apparelMoney>2000~4000</apparelMoney>
+		<apparelMoney>2000~5000</apparelMoney>
 		<apparelAllowHeadgearChance>0.8</apparelAllowHeadgearChance>
 		<weaponMoney>1200~3200</weaponMoney>
 		<weaponTags>
 			<li>IndustrialGunAdvanced</li>
-			<li>SpacerGun</li>
 			<li>SniperRifle</li>
 		</weaponTags>
+		<apparelRequired>
+			<li>Apparel_AdvancedHelmet</li>
+		</apparelRequired>
 		<techHediffsMoney>2000~3000</techHediffsMoney>
 		<combatEnhancingDrugsChance>0.1</combatEnhancingDrugsChance>
 		<combatEnhancingDrugsCount>0~2</combatEnhancingDrugsCount>
@@ -176,7 +181,7 @@
 
 	<PawnKindDef Abstract="True" Name="Ark_TheLaterano" ParentName="BaseSoldierLaterano">
 		<combatPower>150</combatPower>
-		<apparelMoney>7000~10000</apparelMoney>
+		<apparelMoney>7000~12000</apparelMoney>
 		<chemicalAddictionChance>0.3</chemicalAddictionChance>
 		<initialWillRange>5~7</initialWillRange>
 		<itemQuality>Excellent</itemQuality>

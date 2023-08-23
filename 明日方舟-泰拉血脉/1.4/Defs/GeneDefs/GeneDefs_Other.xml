@@ -16,6 +16,22 @@
 		</modExtensions>
 	</GeneDef>
 
+	<GeneDef ParentName="Ark_GenderBase">
+		<defName>Ark_Female</defName>
+		<label>女性</label>
+		<description>该基因的显性表达会使携带者成为生理学上的女性。</description>
+		<iconPath>UI/Icons/Genes/Ark_Female</iconPath>
+		<biostatCpx>1</biostatCpx>
+		<displayCategory>Ark_Sundries</displayCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Ark_Endogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>UI/Icons/Genes/Ark_Xenogene</backgroundPathXenogenes>
+				<forceFemale>true</forceFemale>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
 	<GeneDef>
 		<defName>Ark_Nature</defName>
 		<label>自然之子</label>

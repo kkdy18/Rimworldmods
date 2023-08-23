@@ -9,10 +9,35 @@
     <defName>Ark_Sectator</defName>
     <label>萨科塔小发明</label>
     <description>在边缘世界生存的萨科塔们创造力的结晶。</description>
-    <baseCost>1000</baseCost>
+    <baseCost>500</baseCost>
     <techLevel>Industrial</techLevel>
     <tab>Ark_ResearchTab</tab>
     <researchViewX>0</researchViewX>
     <researchViewY>0</researchViewY>
   </ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Ark_SectatorCombat</defName>
+		<label>萨科塔作战用装备</label>
+		<description>萨科塔为了更好地利用边缘世界的技术而研发的一系列装备。</description>
+		<baseCost>1000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>Ark_Sectator</li>
+		</prerequisites>
+		<tab>Ark_ResearchTab</tab>
+		<researchViewX>1</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Ark_Oni</defName>
+		<label>鬼之技艺</label>
+		<description>在边缘世界生存的鬼族将东国技艺与当地特色结合的产物。</description>
+		<baseCost>500</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>Ark_ResearchTab</tab>
+		<researchViewX>0</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
 </Defs>

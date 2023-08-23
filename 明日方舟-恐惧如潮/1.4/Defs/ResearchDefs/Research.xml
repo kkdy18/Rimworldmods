@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ResearchTabDef>
+		<defName>Ark_ResearchTab</defName>
+		<label>科创泰拉</label>
+	</ResearchTabDef>
+	
+  <ResearchProjectDef>
+    <defName>Ark_DemonSecret</defName>
+    <label>灾厄之秘</label>
+    <description>坍缩体从何而来？灾厄的本质是什么？你想知道的隐秘都在这里，但是跨过边界就再也无法回头了。\n\n不过就算是一无所知那些东西也不会放过你，欢迎，勇敢的探索者，我们会告诉你如何提炼一种神奇的液体，它将保护你暂时远离坍缩的威胁。</description>
+    <baseCost>404</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Ark_ResearchTab</tab>
+    <researchViewX>13</researchViewX>
+    <researchViewY>3</researchViewY>
+  </ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Ark_NoRootPlant</defName>
+		<label>无根花</label>
+		<description>想要稳定获取虚无要素，种植无根花是个好办法，但这项工作不比猎杀坍缩体安全到哪去，每年沉入亚空间的据点里有47%是因为种植无根花，而被坍缩体攻陷的才占33%，希望你们不会为这项统计贡献新的数据。\n\n话说我们真的是在“种植”无根花吗？无根花可没有种子，我们究竟把什么撒进了土壤或培养槽，又是如何让虚无中开出了花？</description>
+		<baseCost>800</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>Ark_DemonSecret</li>
+		</prerequisites>
+		<tab>Ark_ResearchTab</tab>
+		<researchViewX>14</researchViewX>
+		<researchViewY>1.5</researchViewY>
+	</ResearchProjectDef>
+</Defs>

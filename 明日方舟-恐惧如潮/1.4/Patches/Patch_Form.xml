@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="Human"]</xpath>
+		<value>
+			<comps>
+				<li Class="Ark_GSWT.CP_CollapseForm">
+					<hediffs>
+						<li>Ark_CollapseEnemy</li>
+						<li>Ark_CollapseEnemy2</li>
+						<li>Ark_CollapseEnemy3</li>
+						<li>Ark_CollapseEnemy4</li>
+						<li>Ark_CollapseEnemy5</li>
+						<li>Ark_CollapseEnemy6</li>
+					</hediffs>
+				</li>
+			</comps>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="Human"]/statBases</xpath>
+		<value>
+			<Ark_Volition>0.5</Ark_Volition>
+		</value>
+	</Operation>
+</Patch>

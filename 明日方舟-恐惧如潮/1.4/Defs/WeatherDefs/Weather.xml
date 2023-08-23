@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<WeatherDef>
+		<defName>Ark_BlackRain</defName>
+		<label>黑雨</label>
+		<description>黑色的雨从天空落下，却没有在任何物体上留下痕迹。黑雨熄灭火焰，淋湿雨中的所有生物，它似乎在努力模仿“雨”这一现象。</description>
+		<isBad>false</isBad>
+		<temperatureRange>0~999</temperatureRange>
+		<windSpeedFactor>0.5</windSpeedFactor>
+		<accuracyMultiplier>0.8</accuracyMultiplier>
+		<favorability>VeryBad</favorability>
+		<perceivePriority>1</perceivePriority>
+		<exposedThought>Ark_SoakedByBlackRain</exposedThought>
+		<rainRate>1</rainRate>
+		<moveSpeedMultiplier>0.8</moveSpeedMultiplier>
+		<ambientSounds>
+			<li>Ambient_Rain</li>
+		</ambientSounds>
+		<overlayClasses>
+			<li>WeatherOverlay_Rain</li>
+		</overlayClasses>
+		<commonalityRainfallFactor>
+			<points>
+				<li>(0, 0)</li>
+				<li>(1300, 1)</li>
+				<li>(4000, 3.0)</li>
+			</points>
+		</commonalityRainfallFactor>
+		<!-- Colors are Overcast -->
+		<skyColorsDay>
+			<sky>(0.8,0.8,0.8)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.1,0.1,0.1)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsDay>
+		<skyColorsDusk>
+			<sky>(1,1,1)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.1,0.1,0.1)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsDusk>
+		<skyColorsNightEdge>
+			<sky>(0.35,0.40,0.45)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.1,0.1,0.1)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsNightEdge>
+		<skyColorsNightMid>
+			<sky>(0.35,0.40,0.45)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.1,0.1,0.1)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsNightMid>
+	</WeatherDef>
+</Defs>

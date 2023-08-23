@@ -20,6 +20,8 @@
       <comps>
       <li Class="Ark_GSWT.HCP_MoodAura"/>
     </comps>
+	  <alwaysAllowMothball>True</alwaysAllowMothball>
+	  <alwaysAllowMothballCached>True</alwaysAllowMothballCached>
   </HediffDef>
 
 	<HediffDef>
@@ -40,6 +42,8 @@
 				</capMods>
 			</li>
 		</stages>
+		<alwaysAllowMothball>True</alwaysAllowMothball>
+		<alwaysAllowMothballCached>True</alwaysAllowMothballCached>
 	</HediffDef>
 
   <HediffDef>
@@ -86,6 +90,8 @@
         </statOffsets>
       </li>
     </stages>
+	  <alwaysAllowMothball>True</alwaysAllowMothball>
+	  <alwaysAllowMothballCached>True</alwaysAllowMothballCached>
   </HediffDef>
 
 	<!--瓦伊凡-->
@@ -107,11 +113,13 @@
 				</statOffsets>
 			</li>
 		</stages>
+		<alwaysAllowMothball>True</alwaysAllowMothball>
+		<alwaysAllowMothballCached>True</alwaysAllowMothballCached>
 	</HediffDef>
 
 	<HediffDef>
 		<defName>Ark_HornAttack</defName>
-		<label>犄角</label>
+		<label>角</label>
 		<description>坚硬而又锐利的尖角，在紧急情况下可以当作武器痛击敌人。</description>
 		<hediffClass>HediffWithComps</hediffClass>
 		<scenarioCanAdd>false</scenarioCanAdd>
@@ -131,6 +139,34 @@
 				</tools>
 			</li>
 		</comps>
+		<alwaysAllowMothball>True</alwaysAllowMothball>
+		<alwaysAllowMothballCached>True</alwaysAllowMothballCached>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>Ark_HornAttack2</defName>
+		<label>角</label>
+		<description>不是很适合捅人的坚硬大角，在紧急情况下可以当作武器痛击敌人。</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>角</label>
+						<capacities>
+							<li>Blunt</li>
+						</capacities>
+						<power>18</power>
+						<cooldownTime>2</cooldownTime>
+					</li>
+				</tools>
+			</li>
+		</comps>
+		<alwaysAllowMothball>True</alwaysAllowMothball>
+		<alwaysAllowMothballCached>True</alwaysAllowMothballCached>
 	</HediffDef>
 
 	<HediffDef>
@@ -155,6 +191,8 @@
 				</tools>
 			</li>
 		</comps>
+		<alwaysAllowMothball>True</alwaysAllowMothball>
+		<alwaysAllowMothballCached>True</alwaysAllowMothballCached>
 	</HediffDef>
 
 	<!--鬼-->
@@ -178,6 +216,8 @@
 				</statFactors>
 			</li>
 		</stages>
+		<alwaysAllowMothball>True</alwaysAllowMothball>
+		<alwaysAllowMothballCached>True</alwaysAllowMothballCached>
 	</HediffDef>
 
 	<HediffDef>

@@ -173,7 +173,7 @@
 		<uiPosition>(0,6)</uiPosition>
 		<royalAid>
 			<itemsToDrop>
-				<Shell_AntigrainWarhead>1</Shell_AntigrainWarhead>
+				<PsychicAmplifier>1</PsychicAmplifier>
 			</itemsToDrop>
 			<favorCost>12</favorCost>
 		</royalAid>

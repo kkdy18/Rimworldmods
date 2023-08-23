@@ -69,11 +69,11 @@
 	<AbilityDef>
 		<defName>Ark_OniBerserk</defName>
 		<label>恶鬼化</label>
-		<description>解放狂涨的杀欲，让嗜血的本能支配自我从而激发超越极限的力量，频繁使用会导致身体负荷过大。</description>
+		<description>解放狂涨的杀欲，让嗜血的本能支配自我从而激发超越极限的力量，频繁使用会导致身体负荷过大，危及生命。</description>
 		<iconPath>UI/Icons/Ability/Ark_OniBerserk</iconPath>
 		<cooldownTicksRange>300</cooldownTicksRange>
 		<displayOrder>200</displayOrder>
-		<aiCanUse>true</aiCanUse>
+		<aiCanUse>false</aiCanUse>
 		<statBases>
 			<Ability_Duration>126</Ability_Duration>
 			<Ability_EffectRadius>0</Ability_EffectRadius>

@@ -1,16 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-	<!-- Heads -->
-	<GeneDef Name="Ark_GeneHeadBase" Abstract="True">
-		<biostatCpx>0</biostatCpx>
-		<displayCategory>Ark_Heads</displayCategory>
-		<exclusionTags>
-			<li>Heads</li>
-			<li>Head</li>
-		</exclusionTags>
-	</GeneDef>
-	
 	<!-- Headbone -->
   <GeneDef ParentName="GeneHeadboneBase">
     <defName>Ark_Halo</defName>

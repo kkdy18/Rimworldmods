@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--<Def Class="SCGF.GasDef">
+		<defName>Ark_CollapseSpace</defName>
+		<label>“国度”</label>
+		<color>(0, 0, 0)</color>
+		<dissipationSpeed>1.5</dissipationSpeed>
+		<diffusionThreshold>256</diffusionThreshold>
+		<targetMechs>true</targetMechs>
+		<addsHediffs>
+			<li>
+				<hediff>Ark_CollapseWalk</hediff>
+			</li>
+			<li>
+				<hediff>Ark_CollapsePollution</hediff>
+				<severityGasDensityFactor>0.01</severityGasDensityFactor>
+				<exposureStatFactor>Ark_Volition</exposureStatFactor>
+			</li>
+		</addsHediffs>
+		<immunities>
+			<apparel>
+				<li>Ark_CollapseEye</li>
+			</apparel>
+		</immunities>
+	</Def>-->
+
+		<ThingDef Name="BaseGas" Abstract="True">
+		<thingClass>Gas</thingClass>
+		<label>gas</label>
+		<category>Gas</category>
+		<altitudeLayer>Gas</altitudeLayer>
+		<useHitPoints>false</useHitPoints>
+		<tickerType>Normal</tickerType>
+		<graphicData>
+			<graphicClass>Graphic_Gas</graphicClass>
+			<shaderType>Transparent</shaderType>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef Class="AK_Industry.GasDef" ParentName="BaseGas">
+		<defName>Ark_CollapseSpace</defName>
+		<label>“国度”</label>
+		<graphicData>
+			<texPath>Things/Gas/Puff</texPath>
+			<drawSize>2.5</drawSize>
+			<color>(0, 0, 0,0.5)</color>
+		</graphicData>
+		<thingClass>AK_Industry.Gas</thingClass>
+		<addHediff>Ark_CollapsePollution</addHediff>
+		<hediffAddChance>1.0</hediffAddChance>
+		<hediffSeverity>0.001</hediffSeverity>
+		<resistedBy>Ark_Volition</resistedBy>
+		<gas>
+			<expireSeconds>
+				<min>50000</min>
+				<max>50000</max>
+			</expireSeconds>
+			<rotationSpeed>3</rotationSpeed>
+		</gas>
+	</ThingDef>
+
+	<DamageDef>
+		<defName>Ark_CollapseSpace</defName>
+		<label>空间坍缩</label>
+		<canInterruptJobs>false</canInterruptJobs>
+		<makesBlood>false</makesBlood>
+		<defaultDamage>0</defaultDamage>
+		<explosionCellFleck>BlastExtinguisher</explosionCellFleck>
+		<explosionColorEdge>(0.01, 0.01, 0.01, 0.05)</explosionColorEdge>
+		<harmsHealth>false</harmsHealth>
+		<soundExplosion>Explosion_Smoke</soundExplosion>
+		<combatLogRules>Damage_Smoke</combatLogRules>
+	</DamageDef>
+</Defs>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>Ark_CollapseShiv</defName>
+		<label>歪曲仪刃</label>
+		<description>坍缩体持有的奇特锐器，材质平常，但刃上凝滞着不详的阴影，当刀刃切开血肉，阴影便会趁机流入灵魂。</description>
+		<generateAllowChance>0</generateAllowChance>
+		<tradeability>None</tradeability>
+		<graphicData>
+			<texPath>Things/Weapon/Ark_CollapseShiv</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconScale>1.6</uiIconScale>
+		<techLevel>Neolithic</techLevel>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<costStuffCount>30</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>1800</WorkToMake>
+			<Mass>0.5</Mass>
+		</statBases>
+		<weaponTags>
+			<li>MedievalMeleeBasic</li>
+			<li>NeolithicMeleeBasic</li>
+			<li>Ark_CollapseS</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>染污刀刃</label>
+				<capacities>
+					<li>Ark_CollapseCut</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>1</cooldownTime>
+			</li>
+			<li>
+				<label>刀尖</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>13</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+</Defs>

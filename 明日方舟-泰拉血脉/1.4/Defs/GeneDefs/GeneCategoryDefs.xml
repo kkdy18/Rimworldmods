@@ -27,15 +27,21 @@
 	<GeneCategoryDef>
 		<defName>Ark_Sundries</defName>
 		<label>泰拉基因-杂项</label>
-		<displayPriorityInXenotype>293.36</displayPriorityInXenotype>
+		<displayPriorityInXenotype>280.36</displayPriorityInXenotype>
 		<displayPriorityInGenepack>-108</displayPriorityInGenepack>
 	</GeneCategoryDef>
    <GeneCategoryDef>
         <defName>Ark_Angel</defName>
         <label>萨科塔附件</label>
-        <displayPriorityInXenotype>290.36</displayPriorityInXenotype>
+        <displayPriorityInXenotype>293.36</displayPriorityInXenotype>
         <displayPriorityInGenepack>-108</displayPriorityInGenepack>
    </GeneCategoryDef>
+	<GeneCategoryDef>
+		<defName>Ark_ONI</defName>
+		<label>鬼之角</label>
+		<displayPriorityInXenotype>292.36</displayPriorityInXenotype>
+		<displayPriorityInGenepack>-108</displayPriorityInGenepack>
+	</GeneCategoryDef>
    <GeneCategoryDef>
         <defName>Ark_Fight</defName>
         <label>斗争血脉</label>
