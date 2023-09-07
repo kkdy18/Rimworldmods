@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="ResourceBase">
+		<defName>Ark_GiftofVast</defName>
+		<label>无垠赠礼</label>
+		<description>跨越无垠绽放的花朵，是虚无赠予边界之外的世界的礼物，也是一枚信标。\n\n这枚信标现在似乎仍不完整，它怀抱着使命，等待无尽的时间给出答案，贸然唤醒它只会招来那些空洞的躯壳。</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Ark_GiftofVast</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<thingClass>ThingWithComps</thingClass>
+		<techLevel>Archotech</techLevel>
+		<thingCategories>
+			<li>Artifacts</li>
+		</thingCategories>
+		<tradeTags>
+			<li>Artifact</li>
+		</tradeTags>
+		<thingSetMakerTags>
+			<li>RewardStandardHighFreq</li>
+		</thingSetMakerTags>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<stackLimit>1</stackLimit>
+		<tradeNeverStack>true</tradeNeverStack>
+		<statBases>
+			<Mass>0.001</Mass>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
+			<MarketValue>500</MarketValue>
+		</statBases>
+		<drawGUIOverlay>false</drawGUIOverlay>
+		<comps>
+			<li Class="CompProperties_Usable">
+				<useJob>UseArtifact</useJob>
+				<useLabel>唤醒“信标”</useLabel>
+			</li>
+			<li Class="Ark_GSWT.TCP_DemonRaid" />
+			<li Class="CompProperties_UseEffectArtifact">
+				<sound>PsychicSoothePulserCast</sound>
+			</li>
+			<li Class="CompProperties_UseEffectDestroySelf" />
+		</comps>
+	</ThingDef>
+</Defs>

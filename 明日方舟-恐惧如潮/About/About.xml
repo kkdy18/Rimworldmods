@@ -5,19 +5,18 @@
 		<li>1.4</li>
 	</supportedVersions>
 	<modDependencies>
-		<!--<li>
+		<li>
 			<packageId>gswt.arknighttiesofblood</packageId>
 			<displayName>明日方舟-泰拉血脉</displayName>
 			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2997871352</steamWorkshopUrl>
-		</li>-->
+		</li>
 	</modDependencies>
-	<packageId>GSWT.Arknightfearliketide</packageId>
+	<packageId>GSWT.Arknighttideofhorror</packageId>
 	<description>
 		[h1]简介：[/h1]
+		本模组是以明日方舟中的敌方单位坍缩体与邪魔为核心，融入了边缘世界的要素的游戏拓展。游戏中添加了隐藏派系“邪魔”与丰富的坍缩体敌人，殖民者在对抗丧失人性的坍缩体大军的同时将遭遇来自邪魔的污染与种种诡异的坍缩范式，但人类同样拥有对抗邪魔的手段，例如通过研究解锁抗坍缩药物帮助你清除顽固的邪魔污染。希望各位殖民者能击退虚无之敌，守护人类与文明的尊严。
 
-		[b][/b]
-
-		本MOD目前仍在不断更新，尚未测试与其他mod的兼容性，如果出现bug欢迎反馈。
+		模组仍在不断更新，更多有趣内容将陆续加入，尚未测试与其他mod的兼容性，如果出现bug欢迎反馈。
 
 		祝各位游戏愉快o(￣▽￣)ｄ
 

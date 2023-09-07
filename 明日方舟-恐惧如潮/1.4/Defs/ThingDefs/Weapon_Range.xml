@@ -1,59 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-	<ThingDef ParentName="BaseGun">
-		<defName>Ark_CollapseSplinter</defName>
-		<label>灾异裂片</label>
-		<description>邪魔自行分裂出的碎片，能够使附近的空间坍缩形成名为“国度”的异常现象。</description>
-		<generateAllowChance>0</generateAllowChance>
-		<tradeability>None</tradeability>
-		<smeltable>false</smeltable>
-		<graphicData>
-			<texPath>Things/Apparel/Ark_CollapseSplinter</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<tickerType>Normal</tickerType>
-		<statBases>
-			<Mass>0.001</Mass>
-			<Flammability>0</Flammability>
-			<RangedWeapon_Cooldown>4.5</RangedWeapon_Cooldown>
-		</statBases>
-		<weaponTags>
-			<li>Ark_CollapseG</li>
-		</weaponTags>
-		<verbs>
-			<li>
-				<verbClass>Verb_ShootOneUse</verbClass>
-				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_CollapseSpace</defaultProjectile>
-				<forcedMissRadius>1.9</forcedMissRadius>
-				<warmupTime>3.5</warmupTime>
-				<range>23.9</range>
-				<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
-				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
-				<burstShotCount>3</burstShotCount>
-				<soundCast>Shot_IncendiaryLauncher</soundCast>
-				<soundCastTail>GunTail_Medium</soundCastTail>
-				<muzzleFlashScale>14</muzzleFlashScale>
-				<onlyManualCast>true</onlyManualCast>
-				<stopBurstWithoutLos>false</stopBurstWithoutLos>
-				<targetParams>
-					<canTargetLocations>true</canTargetLocations>
-				</targetParams>
-			</li>
-		</verbs>
-		<tools>
-			<li>
-				<label>裂片</label>
-				<capacities>
-					<li>Ark_CollapseCut</li>
-				</capacities>
-				<power>13</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-		</tools>
-	</ThingDef>
-
 	<ThingDef ParentName="BaseBullet">
 		<defName>Bullet_CollapseSpace</defName>
 		<label>坍缩之囊</label>

@@ -54,6 +54,9 @@
 					<need>Rest</need>
 					<offset>0.4</offset>
 				</li>
+				<li Class="Ark_GSWT.IOD_RemoveHediff">
+					<hediffDef>Ark_CollapsePollution</hediffDef>
+				</li>
 			</outcomeDoers>
 		</ingestible>
 		<comps>
@@ -61,6 +64,85 @@
 				<chemical>Ark_Anti-collapse</chemical>
 				<addictiveness>1.00</addictiveness>
 				<needLevelOffset>0.9</needLevelOffset>
+				<listOrder>1010</listOrder>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="DrugPillBase">
+		<defName>Ark_Anti-collapseDrug</defName>
+		<label>边界药剂</label>
+		<description>将抗坍缩原液与其他助剂以一定比例混合，调配而成的新型抗坍缩药剂，容纳在便于携带且防火耐冲击的自动注射器内。边界药剂与抗坍缩原液相比药效的持续时间较短，但成瘾性几乎为0，只要不在短时间内连续注射便不存在成瘾风险，并且药剂中添加的活力水成分将进一步提升使用者的战斗力。\n\n我们赋予这种药剂“边界”之名，希望它能够拯救更多行走在现实与亚空间的边界上的勇士。</description>
+		<descriptionHyperlinks>
+			<HediffDef>Ark_Anti-collapse</HediffDef>
+			<HediffDef>GoJuiceHigh</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Medicine/Ark_Anti-collapseDrug</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<DeteriorationRate>0.5</DeteriorationRate>
+			<WorkToMake>600</WorkToMake>
+			<MarketValue>60</MarketValue>
+			<Mass>0.01</Mass>
+			<Flammability>0</Flammability>
+		</statBases>
+		<techLevel>Spacer</techLevel>
+		<ingestible>
+			<drugCategory>Hard</drugCategory>
+			<foodType>Processed, Fluid</foodType>
+			<baseIngestTicks>20</baseIngestTicks>
+			<ingestHoldOffsetStanding>
+				<northDefault>
+					<offset>(0.18,0,0)</offset>
+				</northDefault>
+			</ingestHoldOffsetStanding>
+			<ingestSound>Ingest_Inject</ingestSound>
+			<ingestCommandString>注射{0}</ingestCommandString>
+			<ingestReportString>正在注射{0}。</ingestReportString>
+			<useEatingSpeedStat>false</useEatingSpeedStat>
+			<chairSearchRadius>0</chairSearchRadius>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>Ark_Anti-collapse</hediffDef>
+					<severity>0.5</severity>
+					<doToGeneratedPawnIfAddicted>true</doToGeneratedPawnIfAddicted>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>GoJuiceHigh</hediffDef>
+					<severity>0.5</severity>
+				</li>
+				<li Class="IngestionOutcomeDoer_OffsetNeed">
+					<need>Rest</need>
+					<offset>0.4</offset>
+				</li>
+				<li Class="Ark_GSWT.IOD_RemoveHediff">
+					<hediffDef>Ark_CollapsePollution</hediffDef>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<recipeMaker>
+			<researchPrerequisite></researchPrerequisite>
+			<recipeUsers>
+				<li>DrugLab</li>
+			</recipeUsers>
+			<soundWorking>Recipe_Drug</soundWorking>
+		</recipeMaker>
+		<costList>
+			<Ark_Anti-collapseStoste>1</Ark_Anti-collapseStoste>
+			<GoJuice>1</GoJuice>
+			<Beer>1</Beer>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>Ark_Anti-collapse</chemical>
+				<addictiveness>0</addictiveness>
+				<existingAddictionSeverityOffset>0.1</existingAddictionSeverityOffset>
+				<needLevelOffset>0.9</needLevelOffset>
+				<isCombatEnhancingDrug>true</isCombatEnhancingDrug>
 				<listOrder>1010</listOrder>
 			</li>
 		</comps>
@@ -99,6 +181,39 @@
 		</fixedIngredientFilter>
 		<products>
 			<Ark_Anti-collapseStoste>5</Ark_Anti-collapseStoste>
+		</products>
+		<researchPrerequisite>Ark_DemonSecret</researchPrerequisite>
+		<workSkill>Crafting</workSkill>
+		<recipeUsers>
+			<li>BiofuelRefinery</li>
+		</recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>Ark_MakeEssential</defName>
+		<label>虚无要素发酵</label>
+		<description>坍缩恶瘤中含有大量无法解析的异常结构，但我们至少知晓它们的主要成分为虚无要素，打碎这些怪异的瘤子再扔进特制的溶剂里就能提取出不少。</description>
+		<jobString>正在生产虚无要素。</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>600</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Ark_CollapseTumor</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Ark_CollapseTumor</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ark_Essential>20</Ark_Essential>
 		</products>
 		<researchPrerequisite>Ark_DemonSecret</researchPrerequisite>
 		<workSkill>Crafting</workSkill>

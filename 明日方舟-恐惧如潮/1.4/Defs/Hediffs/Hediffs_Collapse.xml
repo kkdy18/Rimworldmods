@@ -14,7 +14,7 @@
 	<HediffDef>
 		<defName>Ark_CollapseBody</defName>
 		<label>坍缩躯壳</label>
-		<description>因邪魔污染异化的人类，自我意识已被彻底抹去，仅存的欲望与智识皆化为邪魔的兵刃。</description>
+		<description>因邪魔污染异化的人类，自我意识被彻底抹去，身躯已成为阴影的容器，一身技艺皆化为邪魔的屠刀。</description>
 		<defaultLabelColor>(0.8,0,0)</defaultLabelColor>
 		<hediffClass>HediffWithComps</hediffClass>
 		<scenarioCanAdd>false</scenarioCanAdd>
@@ -37,6 +37,10 @@
 					<li>
 						<capacity>Moving</capacity>
 						<offset>0.25</offset>
+					</li>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>0.5</offset>
 					</li>
 				</capMods>
 			</li>
@@ -64,8 +68,12 @@
 				</statOffsets>
 				<capMods>
 					<li>
-						<capacity>Consciousness</capacity>
+						<capacity>Moving</capacity>
 						<offset>0.25</offset>
+					</li>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>0.5</offset>
 					</li>
 				</capMods>
 			</li>
@@ -110,11 +118,12 @@
 	<HediffDef>
 		<defName>Ark_CollapsePollution</defName>
 		<label>邪魔污染</label>
-		<description>现实生物与邪魔接触就会累积的不可逆污染。</description>
+		<description>现实生物与邪魔接触就会在精神层面累积的不可逆污染，随着污染加深，被记录为“坍缩范式”的异常现象将会显现。</description>
 		<defaultLabelColor>(0.8,0,0.8)</defaultLabelColor>
 		<hediffClass>HediffWithComps</hediffClass>
 		<isBad>false</isBad>
-		<lethalSeverity>1</lethalSeverity>
+		<lethalSeverity>3</lethalSeverity>
+		<maxSeverity>3</maxSeverity>
 		<makesSickThought>true</makesSickThought>
 		<scenarioCanAdd>true</scenarioCanAdd>
 		<alwaysAllowMothball>True</alwaysAllowMothball>
@@ -126,7 +135,7 @@
 			</li>
 			<li>
 				<label>污染初现</label>
-				<minSeverity>0.04</minSeverity>
+				<minSeverity>0.1</minSeverity>
 				<painOffset>0.05</painOffset>
 				<capMods>
 					<li>
@@ -137,7 +146,7 @@
 			</li>
 			<li>
 				<label>思维侵染</label>
-				<minSeverity>0.2</minSeverity>
+				<minSeverity>0.6</minSeverity>
 				<statOffsets>
 					<MentalBreakThreshold>0.1</MentalBreakThreshold>
 				</statOffsets>
@@ -150,7 +159,7 @@
 			</li>
 			<li>
 				<label>坍缩显化</label>
-				<minSeverity>0.40</minSeverity>
+				<minSeverity>1.5</minSeverity>
 				<statOffsets>
 					<MentalBreakThreshold>0.15</MentalBreakThreshold>
 				</statOffsets>
@@ -186,7 +195,7 @@
 			</li>
 			<li>
 				<label>坍缩深化</label>
-				<minSeverity>0.60</minSeverity>
+				<minSeverity>2</minSeverity>
 				<statOffsets>
 					<MentalBreakThreshold>0.20</MentalBreakThreshold>
 				</statOffsets>
@@ -218,7 +227,7 @@
 			</li>
 			<li>
 				<label>思维混沌</label>
-				<minSeverity>0.85</minSeverity>
+				<minSeverity>2.6</minSeverity>
 				<lifeThreatening>true</lifeThreatening>
 				<deathMtbDays>5</deathMtbDays>
 				<mtbDeathDestroysBrain>true</mtbDeathDestroysBrain>
@@ -246,6 +255,7 @@
 			<li Class="Ark_GSWT.HCP_DeathCall">
 				<SpawnThing>Ark_TaintedGhost</SpawnThing>
 				<DestroyCorpse>false</DestroyCorpse>
+				<NeedSeverity>2.1</NeedSeverity>
 			</li>
 		</comps>
 	</HediffDef>
@@ -253,7 +263,7 @@
 	<ThingDef ParentName="BodyPartBase">
 		<defName>Ark_CollapseTumor</defName>
 		<label>坍缩恶瘤</label>
-		<description>组织细胞在坍缩的影响下以非现实的方式增生形成的类肿瘤衍生物，现在已从患者体内剥离。\n\n这个瘤子恐怕是我们能用来研究坍缩现象的实验材料里最安全的一种了。</description>
+		<description>组织细胞在坍缩的影响下以非现实的方式增生形成的类肿瘤衍生物，现在已从患者体内剥离。\n\n别嫌它恶心，这个瘤子恐怕是我们能用来研究坍缩现象的实验材料里最安全的一种了。(十分抱歉，现阶段这玩意还没有什么实际价值〒▽〒)</description>
 		<descriptionHyperlinks>
 			<RecipeDef>RemoveCollapseTumor</RecipeDef>
 		</descriptionHyperlinks>

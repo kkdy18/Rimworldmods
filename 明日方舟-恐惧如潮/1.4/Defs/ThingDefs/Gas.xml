@@ -24,7 +24,7 @@
 		</immunities>
 	</Def>-->
 
-		<ThingDef Name="BaseGas" Abstract="True">
+	<ThingDef Name="BaseGas" Abstract="True">
 		<thingClass>Gas</thingClass>
 		<label>gas</label>
 		<category>Gas</category>
@@ -58,17 +58,4 @@
 			<rotationSpeed>3</rotationSpeed>
 		</gas>
 	</ThingDef>
-
-	<DamageDef>
-		<defName>Ark_CollapseSpace</defName>
-		<label>空间坍缩</label>
-		<canInterruptJobs>false</canInterruptJobs>
-		<makesBlood>false</makesBlood>
-		<defaultDamage>0</defaultDamage>
-		<explosionCellFleck>BlastExtinguisher</explosionCellFleck>
-		<explosionColorEdge>(0.01, 0.01, 0.01, 0.05)</explosionColorEdge>
-		<harmsHealth>false</harmsHealth>
-		<soundExplosion>Explosion_Smoke</soundExplosion>
-		<combatLogRules>Damage_Smoke</combatLogRules>
-	</DamageDef>
 </Defs>

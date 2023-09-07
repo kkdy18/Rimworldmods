@@ -45,6 +45,9 @@
 		<defName>Ark_MagicBullet</defName>
 		<label>魔弹之痕</label>
 		<description>这枚印有眼睛图案的饰品疑为某种坍缩范式的载体或具象，任何人戴上它都能成为百发百中的神枪手，但与它的来者不拒相反，取下它将会带来厄运。</description>
+		<descriptionHyperlinks>
+			<HediffDef>Ark_CollapseShoot</HediffDef>
+		</descriptionHyperlinks>
 		<generateAllowChance>0</generateAllowChance>
 		<tradeability>None</tradeability>
 		<smeltable>false</smeltable>
@@ -81,6 +84,9 @@
 		<defName>Ark_ShatteredHelmet</defName>
 		<label>破灭之盔</label>
 		<description>以未知的技术制造的古朴头盔，防护性能相当优秀，其上少见地固化了一种坍缩现象，能让穿戴者以极快的速度行动，无论是坍缩体与否。\n\n戴上头盔本该给人勇气，但这个头盔中只有虚无，其中存在过的信念皆已粉碎消融。</description>
+		<descriptionHyperlinks>
+			<HediffDef>Ark_CollapseRun</HediffDef>
+		</descriptionHyperlinks>
 		<generateAllowChance>0</generateAllowChance>
 		<tradeability>None</tradeability>
 		<smeltable>false</smeltable>
@@ -89,7 +95,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
-			<WorkToMake>21000</WorkToMake>
 			<MaxHitPoints>150</MaxHitPoints>
 			<Mass>1.5</Mass>
 			<Flammability>0.4</Flammability>
@@ -113,6 +118,9 @@
 			</defaultOutfitTags>
 			<useDeflectMetalEffect>true</useDeflectMetalEffect>
 			<wearPerDay>0</wearPerDay>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
 		</apparel>
 		<comps>
 			<li Class="CompProperties_CauseHediff_Apparel">

@@ -5,7 +5,7 @@
 		<hediffClass>Hediff_High</hediffClass>
 		<label>抗坍缩活化</label>
 		<labelNoun>抗坍缩活化</labelNoun>
-		<description>抗坍缩剂正随着血液流动附着于全身的神经系统，清除并抵御来自邪魔的影响，同时个体的神经活跃水平提升，思维意识得到增强，对疼痛的感知也变得更敏感。</description>
+		<description>抗坍缩剂正随着血液流动附着于全身的神经系统，清除并抵御来自邪魔的影响，同时个体的神经活跃水平提升，思维意识得到增强，对疼痛的感知也变得更为敏感。</description>
 		<defaultLabelColor>(0.6, 0.6, 1.0)</defaultLabelColor>
 		<scenarioCanAdd>false</scenarioCanAdd>
 		<maxSeverity>1.0</maxSeverity>

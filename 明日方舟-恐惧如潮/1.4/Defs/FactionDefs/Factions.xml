@@ -3,7 +3,7 @@
 	<FactionDef ParentName="FactionBase">
 		<defName>Ark_Demon</defName>
 		<label>邪魔</label>
-		<description>aaa</description>
+		<description>不断侵蚀现实维度的亚空间灾厄，以恐惧为养料，扭曲生物的意识与现实的法则作为武器。驱逐它，或者随世界融于虚无。</description>
 		<factionIconPath>World/Ark_Demon</factionIconPath>
 		<pawnSingular>坍缩体</pawnSingular>
 		<pawnsPlural>坍缩体</pawnsPlural>
@@ -14,7 +14,7 @@
 		<canStageAttacks>true</canStageAttacks>
 		<xenotypeSet Inherit="False">
 			<xenotypeChances>
-				<Dirtmole>0.1</Dirtmole>
+				<Dirtmole>0.05</Dirtmole>
 				<Hussar>0.05</Hussar>
 				<Waster>0.025</Waster>
 				<Pigskin>0.025</Pigskin>
@@ -22,6 +22,7 @@
 				<Impid>0.025</Impid>
 				<Genie>0.025</Genie>
 				<Yttakin>0.025</Yttakin>
+				<Sanguophage>0.05</Sanguophage>
 			</xenotypeChances>
 			<warnIfTotalAbove1>false</warnIfTotalAbove1>
 		</xenotypeSet>
@@ -30,29 +31,30 @@
 				<categories>
 					<li>Outlander</li>
 				</categories>
-				<commonality>0.3</commonality>
+				<commonality>0.4</commonality>
 			</li>
 			<li>
 				<categories>
 					<li>Tribal</li>
 				</categories>
-				<commonality>0.4</commonality>
+				<commonality>0.1</commonality>
 			</li>
 			<li>
 				<categories>
 					<li>Pirate</li>
 				</categories>
-				<commonality>0.3</commonality>
+				<commonality>0.4</commonality>
 			</li>
 		</backstoryFilters>
 		<humanlikeFaction>false</humanlikeFaction>
 		<hidden>true</hidden>
 		<autoFlee>false</autoFlee>
 		<canUseAvoidGrid>false</canUseAvoidGrid>
-		<techLevel>Spacer</techLevel>
+		<techLevel>Ultra</techLevel>
+		<earliestRaidDays>15</earliestRaidDays>
 		<permanentEnemy>true</permanentEnemy>
 		<hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
-		<allowedArrivalTemperatureRange>-100~100</allowedArrivalTemperatureRange>
+		<allowedArrivalTemperatureRange>-200~200</allowedArrivalTemperatureRange>
 		<maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
 		<configurationListOrderPriority>1000</configurationListOrderPriority>
 		<raidCommonalityFromPointsCurve>
@@ -72,12 +74,72 @@
 		</maxPawnCostPerTotalPointsCurve>
 		<pawnGroupMakers>
 			<li>
+				<!-- Normal fights, ranged with melee mix-ins -->
 				<kindDef>Combat</kindDef>
 				<commonality>100</commonality>
 				<options>
-					<Ark_Carcass>40</Ark_Carcass>
+					<Ark_Carcass_Drifter>10</Ark_Carcass_Drifter>
+					<Ark_Carcass_Pirate>10</Ark_Carcass_Pirate>
+					<Ark_Carcass_Grenadier>2</Ark_Carcass_Grenadier>
+					<Ark_Carcass_HeavyArcher>10</Ark_Carcass_HeavyArcher>
+					<Ark_Carcass_Heavy>6</Ark_Carcass_Heavy>
+					<Ark_Carcass_Slasher>3</Ark_Carcass_Slasher>
+					<Ark_ShatteredChampion>5</Ark_ShatteredChampion>
+					<Ark_MagicBulletShooter>5</Ark_MagicBulletShooter>
+					<Ark_Carcass_Elite>10</Ark_Carcass_Elite>
+					<Ark_Carcass_Chief>5</Ark_Carcass_Chief>
+			</options>
+			</li>
+			<li>
+				<!-- Normal fights, melee-only -->
+				<kindDef>Combat</kindDef>
+				<commonality>30</commonality>
+				<disallowedStrategies>
+					<li>Siege</li>
+				</disallowedStrategies>
+				<options>
+					<Ark_Carcass_Drifter>10</Ark_Carcass_Drifter>
+					<Ark_Carcass_Slasher>10</Ark_Carcass_Slasher>
+					<Ark_Carcass_Chief>5</Ark_Carcass_Chief>
+					<Ark_ShatteredChampion>2</Ark_ShatteredChampion>
+				</options>
+			</li>
+			<li>
+				<!-- Normal fights, ranged only -->
+				<kindDef>Combat</kindDef>
+				<commonality>20</commonality>
+				<options>
+					<Ark_Carcass_Pirate>10</Ark_Carcass_Pirate>
+					<Ark_Carcass_Grenadier>2</Ark_Carcass_Grenadier>
+					<Ark_Carcass_HeavyArcher>10</Ark_Carcass_HeavyArcher>
+					<Ark_Carcass_Heavy>6</Ark_Carcass_Heavy>
+					<Ark_MagicBulletShooter>5</Ark_MagicBulletShooter>
+					<Ark_Carcass_Elite>10</Ark_Carcass_Elite>
 				</options>
 			</li>
 		</pawnGroupMakers>
+		<dropPodActive>ActiveDropPodCollapse</dropPodActive>
+		<dropPodIncoming>DropPodIncomingCollapse</dropPodIncoming>
 	</FactionDef>
+
+	<ThingDef ParentName="ActiveDropPod">
+		<defName>ActiveDropPodCollapse</defName>
+		<label>坍缩空投舱</label>
+		<soundOpen>DropPod_Open_Mechanoid</soundOpen>
+		<graphicData>
+			<texPath>Things/Special/DropPodCollapse</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="DropPodIncoming">
+		<defName>DropPodIncomingCollapse</defName>
+		<label>坍缩空投舱</label>
+		<graphicData>
+			<texPath>Things/Special/DropPodCollapse</texPath>
+		</graphicData>
+		<skyfaller>
+			<anticipationSound>DropPod_Fall_Mechanoid</anticipationSound>
+			<impactSound>DropPod_Impact</impactSound>
+		</skyfaller>
+	</ThingDef>
 </Defs>

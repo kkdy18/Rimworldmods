@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-	<Operation Class="PatchOperationAdd">
+<!--	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/ThingDef[defName="Human"]</xpath>
 		<value>
 			<comps>
-				<li Class="Ark_GSWT.CP_CollapseForm">
+				<li Class="Ark_GSWT.TCP_CollapseForm">
 					<hediffs>
 						<li>Ark_CollapseEnemy</li>
 						<li>Ark_CollapseEnemy2</li>
@@ -16,12 +16,19 @@
 				</li>
 			</comps>
 		</value>
-	</Operation>
+	</Operation>-->
 
 	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/ThingDef[defName="Human"]/statBases</xpath>
 		<value>
 			<Ark_Volition>0.5</Ark_Volition>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="Thrumbo"]/statBases</xpath>
+		<value>
+			<Ark_Volition>0.9</Ark_Volition>
 		</value>
 	</Operation>
 </Patch>

@@ -235,10 +235,6 @@
 						<capacity>Sight</capacity>
 						<offset>1</offset>
 					</li>
-					<li>
-						<capacity>Talking</capacity>
-						<setMax>0</setMax>
-					</li>
 				</capMods>
 			</li>
 		</stages>
@@ -253,7 +249,7 @@
 	<HediffDef ParentName="Ark_CollapseEnemyBase">
 		<defName>Ark_CollapseEnemy2</defName>
 		<label>坍缩范式-目中无人</label>
-		<description>该坍缩体携带的坍缩现象干扰了一定范围内所有生物的思维认知，使被影响的对象不得不忽视他的存在，他依然拥有可摧毁的实体，但主动攻击他的念头无法产生。\n\n“隐身”能力让这个坍缩体的威胁性极高，但维持大范围的思维认知干扰会带来巨大的负担，或许静观其变会是个好主意。</description>
+		<description>该坍缩体能够干扰生物的思维认知，使被影响的对象无法察觉他的存在，他依然拥有可摧毁的实体，但主动攻击他的意念无法产生。\n\n“隐身”的坍缩体具备极高的威胁性，但维持大范围的思维认知干扰会带来巨大的负担，或许静观其变会是个好主意。</description>
 		<comps>
 			<li Class="HediffCompProperties">
 				<compClass>HediffComp_Invisibility</compClass>
@@ -291,7 +287,7 @@
 
 	<HediffDef ParentName="Ark_CollapseEnemyBase">
 		<defName>Ark_CollapseEnemy4</defName>
-		<label>坍缩范式-气压异常α</label>
+		<label>坍缩范式-气压异常</label>
 		<description>该坍缩体的本体平平无奇，但伴随他的坍缩现象范围极广，以他为中心100公里以内的气象系统都将遭到扭曲，生成名为“黑雨”的异常现象。</description>
 		<comps>
 			<li Class="AnimalBehaviours.HediffCompProperties_ChangeWeather">
@@ -323,11 +319,23 @@
 	<HediffDef ParentName="Ark_CollapseHumanBase">
 		<defName>Ark_CollapseEnemy6</defName>
 		<label>坍缩范式-实质性坍缩</label>
-		<description>附着在该个体上的坍缩平时不会显现，只会在其生命终结时爆发，留下难以复原的异常空间“国度”，他最好与重要设施和人群保持距离。</description>
+		<description>附着在该个体上的坍缩平时不会显现，只会在其生命终结时爆发，吞噬一定范围的空间并留下难以复原的异常现象“国度”，他最好与重要设施和人群保持距离。</description>
 		<comps>
 			<li Class="Ark_GSWT.HCP_Exploder">
 				<damageDef>Ark_CollapseSpace</damageDef>
 				<postExplosionSpawnThingDef>Ark_CollapseSpace</postExplosionSpawnThingDef>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="Ark_CollapseEnemyBase">
+		<defName>Ark_CollapseEnemy7</defName>
+		<label>坍缩范式-蔓延性坍缩</label>
+		<description>该坍缩体会不断撕裂周遭的空间形成名为“国度”的现象，他在现实的维度上行走，留下蔓延的漆黑伤痕，宛如一条绝望的河流。</description>
+		<comps>
+			<li Class="Ark_GSWT.HCP_ThingProducer">
+				<thingDef>Ark_CollapseSpace</thingDef>
+				<spawnInterval>10</spawnInterval>
 			</li>
 		</comps>
 	</HediffDef>
