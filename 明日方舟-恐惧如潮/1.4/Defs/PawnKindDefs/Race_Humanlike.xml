@@ -5,7 +5,7 @@
 		<label>漆黑血迹</label>
 		<statBases>
 			<Beauty>-50</Beauty>
-			<Cleanliness>-10</Cleanliness>
+			<Cleanliness>0</Cleanliness>
 		</statBases>
 		<graphicData>
 			<texPath>Things/Filth/Spatter</texPath>

@@ -10,11 +10,17 @@
 		<alwaysAllowMothball>True</alwaysAllowMothball>
 		<alwaysAllowMothballCached>True</alwaysAllowMothballCached>
 	</HediffDef>
+	
 	<!-- 友方坍缩范式 -->
+	
 	<HediffDef Name="Ark_CollapseHumanBase" ParentName="Ark_CollapseFormBase" Abstract="True">
 		<comps>
-			<li Class="HediffCompProperties_SeverityPerDay">
-				<severityPerDay>-0.5</severityPerDay>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>True</showRemainingTime>
+				<disappearsAfterTicks>
+					<min>60000</min>
+					<max>60000</max>
+				</disappearsAfterTicks>
 			</li>
 			<li Class="HediffCompProperties_DisappearsOnDeath"/>
 		</comps>
@@ -150,6 +156,7 @@
 	</HediffDef>
 
 	<!-- 敌方坍缩范式 -->
+	
 	<HediffDef Name="Ark_CollapseEnemyBase" ParentName="Ark_CollapseFormBase" Abstract="True">
 		<comps>
 			<li Class="Ark_GSWT.HCP_RemoveWhenPlayer"/>
@@ -170,15 +177,51 @@
 		<isBad>false</isBad>
 		<lethalSeverity>1</lethalSeverity>
 		<initialSeverity>1.00</initialSeverity>
-		<comps>
-			<li Class="HediffCompProperties_Disappears">
-				<disappearsAfterTicks>
-					<min>1000</min>
-					<max>1000</max>
-				</disappearsAfterTicks>
-			</li>
-		</comps>
 	</HediffDef>
+
+	<ThingDef ParentName="BodyPartBase">
+		<defName>Ark_TheForm</defName>
+		<label>终末残篇</label>
+		<description>终末残篇。</description>
+		<techLevel>Ultra</techLevel>
+		<graphicData>
+			<texPath>Things/Item/Health/HealthItem</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
+			<color>(189,169,118)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>50</MarketValue>
+		</statBases>
+		<techHediffsTags>
+			<li>Ark_TheForm</li>
+		</techHediffsTags>
+		<tradeTags>
+			<li>Ark_TheForm</li>
+		</tradeTags>
+	</ThingDef>
+
+	<RecipeDef Name="EJ_SurgeryTheFormBase" ParentName="SurgeryInstallImplantBase" Abstract="True">
+		<jobString>生成坍缩范式。</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Ark_TheForm</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Ark_TheForm</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
 
 	<HediffDef ParentName="Ark_CollapseEnemyBase">
 		<defName>Ark_CollapseEnemy</defName>
@@ -195,6 +238,13 @@
 			</li>
 		</stages>
 	</HediffDef>
+
+	<RecipeDef ParentName="EJ_SurgeryTheFormBase">
+		<defName>EJ_InstallTheForm</defName>
+		<label>生成坍缩范式</label>
+		<description>生成坍缩范式。</description>
+		<addsHediff>Ark_CollapseEnemy</addsHediff>
+	</RecipeDef>
 
 	<HediffDef ParentName="Ark_CollapseFormBase">
 		<defName>Ark_CollapseRun</defName>
@@ -263,6 +313,13 @@
 		</comps>
 	</HediffDef>
 
+	<RecipeDef ParentName="EJ_SurgeryTheFormBase">
+		<defName>EJ_InstallTheForm2</defName>
+		<label>生成坍缩范式</label>
+		<description>生成坍缩范式。</description>
+		<addsHediff>Ark_CollapseEnemy2</addsHediff>
+	</RecipeDef>
+
 	<HediffDef ParentName="Ark_CollapseEnemyBase">
 		<defName>Ark_CollapseEnemy3</defName>
 		<label>坍缩范式-情绪实体</label>
@@ -271,6 +328,7 @@
 			<li>
 				<statFactors>
 					<IncomingDamageFactor>0.75</IncomingDamageFactor>
+					<MeleeDamageFactor>1.25</MeleeDamageFactor>
 				</statFactors>
 				<statOffsets>
 					<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
@@ -285,6 +343,13 @@
 		</comps>
 	</HediffDef>
 
+	<RecipeDef ParentName="EJ_SurgeryTheFormBase">
+		<defName>EJ_InstallTheForm3</defName>
+		<label>生成坍缩范式</label>
+		<description>生成坍缩范式。</description>
+		<addsHediff>Ark_CollapseEnemy3</addsHediff>
+	</RecipeDef>
+
 	<HediffDef ParentName="Ark_CollapseEnemyBase">
 		<defName>Ark_CollapseEnemy4</defName>
 		<label>坍缩范式-气压异常</label>
@@ -295,6 +360,13 @@
 			</li>
 		</comps>
 	</HediffDef>
+
+	<RecipeDef ParentName="EJ_SurgeryTheFormBase">
+		<defName>EJ_InstallTheForm4</defName>
+		<label>生成坍缩范式</label>
+		<description>生成坍缩范式。</description>
+		<addsHediff>Ark_CollapseEnemy4</addsHediff>
+	</RecipeDef>
 
 	<HediffDef ParentName="Ark_CollapseEnemyBase">
 		<defName>Ark_CollapseEnemy5</defName>
@@ -316,8 +388,15 @@
 		</stages>
 	</HediffDef>
 
+	<RecipeDef ParentName="EJ_SurgeryTheFormBase">
+		<defName>EJ_InstallTheForm5</defName>
+		<label>生成坍缩范式</label>
+		<description>生成坍缩范式。</description>
+		<addsHediff>Ark_CollapseEnemy5</addsHediff>
+	</RecipeDef>
+
 	<HediffDef ParentName="Ark_CollapseHumanBase">
-		<defName>Ark_CollapseEnemy6</defName>
+		<defName>Ark_CollapseExploder</defName>
 		<label>坍缩范式-实质性坍缩</label>
 		<description>附着在该个体上的坍缩平时不会显现，只会在其生命终结时爆发，吞噬一定范围的空间并留下难以复原的异常现象“国度”，他最好与重要设施和人群保持距离。</description>
 		<comps>
@@ -327,6 +406,28 @@
 			</li>
 		</comps>
 	</HediffDef>
+
+	<HediffDef ParentName="Ark_CollapseFormBase">
+		<defName>Ark_CollapseEnemy6</defName>
+		<label>坍缩范式-恐惧实体</label>
+		<description>坍缩该坍缩体转化为人类内心最深处的负面情感的化身，扭曲了其生命的存在形式，他在心智的土壤上播洒绝望，死亡不会是他恶行的终点。</description>
+		<comps>
+			<li Class="AnimalBehaviours.HediffCompProperties_ThoughtEffecter">
+				<radius>9</radius>
+				<thoughtDef>Ark_FearEntity</thoughtDef>
+			</li>
+			<li Class="AnimalBehaviours.HediffCompProperties_Resurrect">
+				<livesLeft>3</livesLeft>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<RecipeDef ParentName="EJ_SurgeryTheFormBase">
+		<defName>EJ_InstallTheForm6</defName>
+		<label>生成坍缩范式</label>
+		<description>生成坍缩范式。</description>
+		<addsHediff>Ark_CollapseEnemy6</addsHediff>
+	</RecipeDef>
 
 	<HediffDef ParentName="Ark_CollapseEnemyBase">
 		<defName>Ark_CollapseEnemy7</defName>
@@ -339,4 +440,11 @@
 			</li>
 		</comps>
 	</HediffDef>
+
+	<RecipeDef ParentName="EJ_SurgeryTheFormBase">
+		<defName>EJ_InstallTheForm7</defName>
+		<label>生成坍缩范式</label>
+		<description>生成坍缩范式。</description>
+		<addsHediff>Ark_CollapseEnemy7</addsHediff>
+	</RecipeDef>
 </Defs>

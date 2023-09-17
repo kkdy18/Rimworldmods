@@ -15,6 +15,20 @@
 	</ThoughtDef>
 
 	<ThoughtDef>
+		<defName>Ark_FearEntity</defName>
+		<durationDays>1</durationDays>
+		<stackLimit>3</stackLimit>
+		<stackedEffectMultiplier>1</stackedEffectMultiplier>
+		<stages>
+			<li>
+				<label>直视恐惧实体</label>
+				<description>我的梦魇长出了血肉，在现实中向我走来……</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
 		<defName>Ark_Thought_CollapseShoot</defName>
 		<workerClass>ThoughtWorker_Hediff</workerClass>
 		<hediff>Ark_CollapseShoot</hediff>
@@ -39,7 +53,7 @@
 			<li>
 				<label>坍缩消退</label>
 				<description>我的头脑从未如此清醒，那些恼人的杂音与黑雾都将滚出我的感知！</description>
-				<baseMoodEffect>6</baseMoodEffect>
+				<baseMoodEffect>12</baseMoodEffect>
 			</li>
 		</stages>
 	</ThoughtDef>

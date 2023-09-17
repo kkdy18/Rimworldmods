@@ -216,128 +216,7 @@
 			</xenotypeChances>
 		</xenotypeSet>
 	</PawnKindDef>
-	
-	<!--帝国-->
 
-	<PawnKindDef ParentName="BaseSoldierCollapse" MayRequire="Ludeon.RimWorld.Royalty">
-		<defName>Ark_Carcass_StellicGuard</defName>
-		<label>死寂星尘</label>
-		<combatPower>150</combatPower>
-		<backstoryFiltersOverride>
-			<li>
-				<categories>
-					<li>ImperialFighter</li>
-				</categories>
-			</li>
-		</backstoryFiltersOverride>
-		<itemQuality>Excellent</itemQuality>
-		<weaponMoney>3000~3500</weaponMoney>
-		<weaponTags>
-			<li>SpacerGun</li>
-		</weaponTags>
-		<apparelMoney>7000~10000</apparelMoney>
-		<apparelColor>(150,50,50)</apparelColor>
-		<apparelRequired>
-			<li>Apparel_ArmorHelmetCataphractPrestige</li>
-			<li>Apparel_ArmorCataphractPrestige</li>
-		</apparelRequired>
-		<specificApparelRequirements Inherit="False">
-			<li>
-				<bodyPartGroup>FullHead</bodyPartGroup>
-				<color>(68,68,68)</color>
-			</li>
-			<li>
-				<bodyPartGroup>Torso</bodyPartGroup>
-				<apparelLayer>OnSkin</apparelLayer>
-				<stuff>Hyperweave</stuff>
-			</li>
-			<li>
-				<bodyPartGroup>Legs</bodyPartGroup>
-				<apparelLayer>OnSkin</apparelLayer>
-				<stuff>Hyperweave</stuff>
-			</li>
-		</specificApparelRequirements>
-		<techHediffsMoney>1000~4000</techHediffsMoney>
-		<techHediffsTags>
-			<li>Advanced</li>
-			<li>ImplantEmpireCommon</li>
-			<li>ImplantEmpireRoyal</li>
-		</techHediffsTags>
-		<techHediffsDisallowTags>
-			<li>PainCauser</li>
-		</techHediffsDisallowTags>
-		<techHediffsRequired>
-			<li>BionicEye</li>
-			<li>BionicEye</li>
-			<li>StoneskinGland</li>
-		</techHediffsRequired>
-		<disallowedTraits>
-			<li>Brawler</li>
-			<li>Wimp</li>
-			<li>Nudist</li>
-			<li>BodyPurist</li>
-		</disallowedTraits>
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>11~16</range>
-			</li>
-		</skills>
-		<useFactionXenotypes>false</useFactionXenotypes>
-		<xenotypeSet>
-			<xenotypeChances>
-				<Neanderthal>0.4</Neanderthal>
-				<Genie>0.4</Genie>
-			</xenotypeChances>
-		</xenotypeSet>
-	</PawnKindDef>
-
-	<PawnKindDef ParentName="BaseSoldierCollapse" MayRequire="Ludeon.RimWorld.Royalty">
-		<defName>Ark_Carcass_Bestower</defName>
-		<label>虚无布施</label>
-		<combatPower>50</combatPower>
-		<weaponMoney>99999</weaponMoney>
-		<backstoryFiltersOverride>
-			<li>
-				<categories>
-					<li>ImperialRoyal</li>
-				</categories>
-			</li>
-		</backstoryFiltersOverride>
-		<specificApparelRequirements>
-			<li>
-				<bodyPartGroup>Torso</bodyPartGroup>
-				<requiredTag>RoyalRobe</requiredTag>
-			</li>
-			<li>
-				<bodyPartGroup>UpperHead</bodyPartGroup>
-				<requiredTag>BestowerHood</requiredTag>
-			</li>
-			<li>
-				<bodyPartGroup>Torso</bodyPartGroup>
-				<apparelLayer>OnSkin</apparelLayer>
-				<requiredTag>RoyalTier2</requiredTag>
-			</li>
-			<li>
-				<bodyPartGroup>Legs</bodyPartGroup>
-				<stuff>Hyperweave</stuff>
-			</li>
-		</specificApparelRequirements>
-		<techHediffsMoney>1000~4000</techHediffsMoney>
-		<apparelColor>(150,150,150)</apparelColor>
-		<xenotypeSet>
-			<xenotypeChances>
-				<Baseliner>1</Baseliner>
-			</xenotypeChances>
-		</xenotypeSet>
-		<useFactionXenotypes>false</useFactionXenotypes>
-		<weaponTags Inherit="False">
-			<li>EltexStaff</li>
-		</weaponTags>
-		<minGenerationAge>49</minGenerationAge>
-		<techHediffsMaxAmount>3</techHediffsMaxAmount>
-	</PawnKindDef>
-	
 	<!--特种-->
 
 	<PawnKindDef ParentName="BaseSoldierCollapse">
@@ -367,7 +246,7 @@
 	<PawnKindDef ParentName="BaseSoldierCollapse">
 		<defName>Ark_Carcass_InBlack</defName>
 		<label>无名黑衣</label>
-		<combatPower>70</combatPower>
+		<combatPower>200</combatPower>
 		<backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
 		<backstoryFiltersOverride>
 			<li>
@@ -398,6 +277,12 @@
 		<apparelColor>(58,58,58)</apparelColor>
 		<ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
 		<favoriteColor>(58,58,58)</favoriteColor>
+		<techHediffsMoney>1000~4000</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<techHediffsRequired>
+		</techHediffsRequired>
 		<skills>
 			<li>
 				<skill>Shooting</skill>

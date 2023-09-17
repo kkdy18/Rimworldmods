@@ -1,38 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<IncidentDef>
-		<defName>Ark_SectatorJoin</defName>
-		<label>萨科塔儿童抵达</label>
-		<category>Misc</category>
-		<targetTags>
-			<li>Map_PlayerHome</li>
-		</targetTags>
-		<workerClass>Ark_GSWT.IncidentWorker_Ark_ChildrenJoin</workerClass>
-		<baseChance>0</baseChance>
-	</IncidentDef>
-
-	<IncidentDef>
-		<defName>Ark_VouivreJoin</defName>
-		<label>瓦伊凡儿童抵达</label>
-		<category>Misc</category>
-		<targetTags>
-			<li>Map_PlayerHome</li>
-		</targetTags>
-		<workerClass>Ark_GSWT.IncidentWorker_Ark_Children2Join</workerClass>
-		<baseChance>0</baseChance>
-	</IncidentDef>
-
-	<IncidentDef>
-		<defName>Ark_OniJoin</defName>
-		<label>鬼族儿童抵达</label>
-		<category>Misc</category>
-		<targetTags>
-			<li>Map_PlayerHome</li>
-		</targetTags>
-		<workerClass>Ark_GSWT.IncidentWorker_Ark_Children3Join</workerClass>
-		<baseChance>0</baseChance>
-	</IncidentDef>
-
 	<HistoryEventDef>
 		<defName>Ark_ChildrenReceive</defName>
 		<label>儿童难民转移</label>

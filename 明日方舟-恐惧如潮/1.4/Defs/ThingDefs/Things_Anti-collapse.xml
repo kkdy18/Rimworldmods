@@ -10,6 +10,9 @@
 		<statBases>
 			<MarketValue>1.8</MarketValue>
 		</statBases>
+		<thingCategories>
+			<li>PlantMatter</li>
+		</thingCategories>
 	</ThingDef>
 
 	<ThingDef ParentName="DrugPillBase">
@@ -74,6 +77,7 @@
 		<label>边界药剂</label>
 		<description>将抗坍缩原液与其他助剂以一定比例混合，调配而成的新型抗坍缩药剂，容纳在便于携带且防火耐冲击的自动注射器内。边界药剂与抗坍缩原液相比药效的持续时间较短，但成瘾性几乎为0，只要不在短时间内连续注射便不存在成瘾风险，并且药剂中添加的活力水成分将进一步提升使用者的战斗力。\n\n我们赋予这种药剂“边界”之名，希望它能够拯救更多行走在现实与亚空间的边界上的勇士。</description>
 		<descriptionHyperlinks>
+			<ThingDef>Ark_Anti-collapseStoste</ThingDef>
 			<HediffDef>Ark_Anti-collapse</HediffDef>
 			<HediffDef>GoJuiceHigh</HediffDef>
 		</descriptionHyperlinks>

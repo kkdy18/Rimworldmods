@@ -136,7 +136,9 @@
 			<li>
 				<label>污染初现</label>
 				<minSeverity>0.1</minSeverity>
-				<painOffset>0.05</painOffset>
+				<statOffsets>
+					<MentalBreakThreshold>0.1</MentalBreakThreshold>
+				</statOffsets>
 				<capMods>
 					<li>
 						<capacity>Consciousness</capacity>
@@ -148,7 +150,7 @@
 				<label>思维侵染</label>
 				<minSeverity>0.6</minSeverity>
 				<statOffsets>
-					<MentalBreakThreshold>0.1</MentalBreakThreshold>
+					<MentalBreakThreshold>0.15</MentalBreakThreshold>
 				</statOffsets>
 				<capMods>
 					<li>
@@ -161,7 +163,7 @@
 				<label>坍缩显化</label>
 				<minSeverity>1.5</minSeverity>
 				<statOffsets>
-					<MentalBreakThreshold>0.15</MentalBreakThreshold>
+					<MentalBreakThreshold>0.20</MentalBreakThreshold>
 				</statOffsets>
 				<capMods>
 					<li>
@@ -188,7 +190,7 @@
 					</li>
 					<li Class="HediffGiver_Random">
 						<hediff>Ark_hediff_CollapseTumor</hediff>
-						<mtbDays>10</mtbDays>
+						<mtbDays>5</mtbDays>
 						<canAffectAnyLivePart>true</canAffectAnyLivePart>
 					</li>
 				</hediffGivers>
@@ -197,7 +199,7 @@
 				<label>坍缩深化</label>
 				<minSeverity>2</minSeverity>
 				<statOffsets>
-					<MentalBreakThreshold>0.20</MentalBreakThreshold>
+					<MentalBreakThreshold>0.25</MentalBreakThreshold>
 				</statOffsets>
 				<capMods>
 					<li>
@@ -220,7 +222,7 @@
 					</li>
 					<li Class="HediffGiver_Random">
 						<hediff>Ark_hediff_CollapseTumor</hediff>
-						<mtbDays>5</mtbDays>
+						<mtbDays>2</mtbDays>
 						<canAffectAnyLivePart>true</canAffectAnyLivePart>
 					</li>
 				</hediffGivers>
@@ -239,7 +241,7 @@
 				</capMods>
 				<hediffGivers>
 					<li Class="HediffGiver_Random">
-						<hediff>Ark_CollapseEnemy6</hediff>
+						<hediff>Ark_CollapseExploder</hediff>
 						<mtbDays>0.1</mtbDays>
 					</li>
 				</hediffGivers>
@@ -263,7 +265,7 @@
 	<ThingDef ParentName="BodyPartBase">
 		<defName>Ark_CollapseTumor</defName>
 		<label>坍缩恶瘤</label>
-		<description>组织细胞在坍缩的影响下以非现实的方式增生形成的类肿瘤衍生物，现在已从患者体内剥离。\n\n别嫌它恶心，这个瘤子恐怕是我们能用来研究坍缩现象的实验材料里最安全的一种了。(十分抱歉，现阶段这玩意还没有什么实际价值〒▽〒)</description>
+		<description>组织细胞在坍缩的影响下以非现实的方式增生形成的类肿瘤衍生物，现在已从患者体内剥离。\n\n别嫌它恶心，这个瘤子恐怕是我们能用来研究坍缩现象的实验材料里最安全的一种了。</description>
 		<descriptionHyperlinks>
 			<RecipeDef>RemoveCollapseTumor</RecipeDef>
 		</descriptionHyperlinks>
