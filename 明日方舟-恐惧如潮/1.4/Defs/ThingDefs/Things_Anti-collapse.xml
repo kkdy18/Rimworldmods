@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!--原料-->
+	
 	<ThingDef ParentName="OrganicProductBase">
 		<defName>Ark_Essential</defName>
 		<label>虚无要素</label>
@@ -15,6 +17,67 @@
 		</thingCategories>
 	</ThingDef>
 
+	<ThingDef ParentName="ResourceBase">
+		<defName>Ark_CollapseCube</defName>
+		<label>坍缩方晶</label>
+		<description>拆解被邪魔坍缩改造的机械体所得到的奇异结晶，加工较为困难，如果制成“工具”会展现出多种有悖现实物理法则的特性。\n\n坍缩方晶的生成原理暂且不明，分析结果表明它大量分布在机械类坍缩体的体内，让那些内部结构扭曲得一塌糊涂的废铁奇迹般地活动起来。这种物质也许能帮助我们进一步破解坍缩的奥秘。</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Ark_CollapseCube</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<useHitPoints>false</useHitPoints>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<statBases>
+			<MarketValue>12</MarketValue>
+			<Mass>0.25</Mass>
+			<StuffPower_Armor_Sharp>1.0</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.5</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>2</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>20</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>20</StuffPower_Insulation_Heat>
+			<SharpDamageMultiplier>1.5</SharpDamageMultiplier>
+			<BluntDamageMultiplier>1.5</BluntDamageMultiplier>
+		</statBases>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+		<deepCommonality>1</deepCommonality>
+		<deepCountPerPortion>10</deepCountPerPortion>
+		<deepLumpSizeRange>2~10</deepLumpSizeRange>
+		<burnableByRecipe>false</burnableByRecipe>
+		<smeltable>true</smeltable>
+		<stuffProps>
+			<categories>
+				<li>Metallic</li>
+			</categories>
+			<appearance>Metal</appearance>
+			<commonality>0.05</commonality>
+			<constructEffect>ConstructMetal</constructEffect>
+			<color>(222,144,222)</color>
+			<soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			<statOffsets>
+				<Beauty>10</Beauty>
+			</statOffsets>
+			<statFactors>
+				<MaxHitPoints>2</MaxHitPoints>
+				<WorkToMake>2.5</WorkToMake>
+				<WorkToBuild>2.5</WorkToBuild>
+				<Beauty>2</Beauty>
+				<Flammability>0</Flammability>
+				<DoorOpenSpeed>1.5</DoorOpenSpeed>
+				<MeleeWeapon_CooldownMultiplier>0.5</MeleeWeapon_CooldownMultiplier>
+			</statFactors>
+		</stuffProps>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<allowedArchonexusCount>80</allowedArchonexusCount>
+	</ThingDef>
+
+	<!--制品-->
+	
 	<ThingDef ParentName="DrugPillBase">
 		<defName>Ark_Anti-collapseStoste</defName>
 		<label>抗坍缩原液</label>
@@ -129,7 +192,7 @@
 			</outcomeDoers>
 		</ingestible>
 		<recipeMaker>
-			<researchPrerequisite></researchPrerequisite>
+			<researchPrerequisite>Ark_DemonSecret</researchPrerequisite>
 			<recipeUsers>
 				<li>DrugLab</li>
 			</recipeUsers>
@@ -159,6 +222,8 @@
 		<canBinge>false</canBinge>
 		<generateAddictionGenes>false</generateAddictionGenes>
 	</ChemicalDef>
+
+	<!--生产工艺-->
 
 	<RecipeDef>
 		<defName>Ark_MakeAnti-collapseStoste</defName>

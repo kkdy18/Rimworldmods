@@ -61,8 +61,8 @@
 		<hediffSolid>Crack</hediffSolid>
 		<impactSoundType>Slice</impactSoundType>
 		<armorCategory>Sharp</armorCategory>
-		<stabChanceOfForcedInternal>0.6</stabChanceOfForcedInternal>
-		<overkillPctToDestroyPart>0.4~1.0</overkillPctToDestroyPart>
+		<stabChanceOfForcedInternal>0.8</stabChanceOfForcedInternal>
+		<overkillPctToDestroyPart>0~0.1</overkillPctToDestroyPart>
 		<additionalHediffs>
 			<li>
 				<hediff>Ark_CollapsePollution</hediff>
@@ -84,6 +84,47 @@
 		<verb>
 			<verbClass>Verb_MeleeAttackDamage</verbClass>
 			<meleeDamageDef>Ark_CollapseTentacle</meleeDamageDef>
+		</verb>
+		<logEntryDef>MeleeAttack</logEntryDef>
+		<combatLogRulesHit>Maneuver_Stab_MeleeHit</combatLogRulesHit>
+		<combatLogRulesDeflect>Maneuver_Stab_MeleeDeflect</combatLogRulesDeflect>
+		<combatLogRulesMiss>Maneuver_Stab_MeleeMiss</combatLogRulesMiss>
+		<combatLogRulesDodge>Maneuver_Stab_MeleeDodge</combatLogRulesDodge>
+	</ManeuverDef>
+
+	<DamageDef>
+		<defName>Ark_CollapsePrick</defName>
+		<label>坍缩穿刺</label>
+		<workerClass>DamageWorker_Stab</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>污染的尖刺搅碎了{0}。</deathMessage>
+		<hediff>Stab</hediff>
+		<hediffSolid>Crack</hediffSolid>
+		<impactSoundType>Slice</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+		<stabChanceOfForcedInternal>0.6</stabChanceOfForcedInternal>
+		<overkillPctToDestroyPart>0.4~1.0</overkillPctToDestroyPart>
+		<additionalHediffs>
+			<li>
+				<hediff>Ark_CollapsePollution</hediff>
+				<severityPerDamageDealt>0.015</severityPerDamageDealt>
+				<victimSeverityScaling>Ark_Volition</victimSeverityScaling>
+				<inverseStatScaling>true</inverseStatScaling>
+				<victimSeverityScalingByInvBodySize>false</victimSeverityScalingByInvBodySize>
+			</li>
+		</additionalHediffs>
+	</DamageDef>
+
+	<ToolCapacityDef>
+		<defName>Ark_CollapsePrick</defName>
+	</ToolCapacityDef>
+
+	<ManeuverDef>
+		<defName>Ark_CollapsePrick</defName>
+		<requiredCapacity>Ark_CollapsePrick</requiredCapacity>
+		<verb>
+			<verbClass>Verb_MeleeAttackDamage</verbClass>
+			<meleeDamageDef>Ark_CollapsePrick</meleeDamageDef>
 		</verb>
 		<logEntryDef>MeleeAttack</logEntryDef>
 		<combatLogRulesHit>Maneuver_Stab_MeleeHit</combatLogRulesHit>
@@ -116,5 +157,21 @@
 		<explosionColorEdge>(0.01, 0.01, 0.01)</explosionColorEdge>
 		<soundExplosion>Explosion_Thump</soundExplosion>
 		<combatLogRules>Damage_Bomb</combatLogRules>
+	</DamageDef>
+
+	<DamageDef ParentName="Flame">
+		<defName>Ark_MechFlameShockwave</defName>
+		<label>心灵激波</label>
+		<deathMessage>高能的心灵激波烤焦了{0}。</deathMessage>
+		<externalViolenceForMechanoids>true</externalViolenceForMechanoids>
+		<harmsHealth>false</harmsHealth>
+		<impactSoundType>MechBandShockwave</impactSoundType>
+		<defaultDamage>50</defaultDamage>
+		<explosionSnowMeltAmount>0</explosionSnowMeltAmount>
+		<explosionCenterEffecter>BlastMechBandShockwave</explosionCenterEffecter>
+		<explosionCellEffecter>MechBandElectricityArc</explosionCellEffecter>
+		<explosionCellEffecterChance>0.1</explosionCellEffecterChance>
+		<explosionCellEffecterMaxRadius>10</explosionCellEffecterMaxRadius>
+		<soundExplosion>Explosion_MechBandShockwave</soundExplosion>
 	</DamageDef>
 </Defs>

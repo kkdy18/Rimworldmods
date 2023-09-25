@@ -30,20 +30,9 @@
 			<li>
 				<categories>
 					<li>Outlander</li>
-				</categories>
-				<commonality>0.4</commonality>
-			</li>
-			<li>
-				<categories>
 					<li>Tribal</li>
-				</categories>
-				<commonality>0.1</commonality>
-			</li>
-			<li>
-				<categories>
 					<li>Pirate</li>
 				</categories>
-				<commonality>0.4</commonality>
 			</li>
 		</backstoryFilters>
 		<humanlikeFaction>false</humanlikeFaction>
@@ -81,19 +70,23 @@
 					<Ark_Carcass_Drifter>10</Ark_Carcass_Drifter>
 					<Ark_Carcass_Pirate>10</Ark_Carcass_Pirate>
 					<Ark_Carcass_Grenadier>2</Ark_Carcass_Grenadier>
+					<Ark_MechC_Lancer>2</Ark_MechC_Lancer>
 					<Ark_Carcass_HeavyArcher>10</Ark_Carcass_HeavyArcher>
 					<Ark_Carcass_Heavy>6</Ark_Carcass_Heavy>
 					<Ark_Carcass_Slasher>3</Ark_Carcass_Slasher>
+					<Ark_MechC_Scyther>3</Ark_MechC_Scyther>
 					<Ark_ShatteredChampion>5</Ark_ShatteredChampion>
 					<Ark_MagicBulletShooter>5</Ark_MagicBulletShooter>
 					<Ark_Carcass_Elite>10</Ark_Carcass_Elite>
 					<Ark_Carcass_Chief>5</Ark_Carcass_Chief>
+					<Ark_Carcass_InBlack>2</Ark_Carcass_InBlack>
+					<Ark_MechC_Bestower>5</Ark_MechC_Bestower>
 			</options>
 			</li>
 			<li>
 				<!-- Normal fights, melee-only -->
 				<kindDef>Combat</kindDef>
-				<commonality>30</commonality>
+				<commonality>50</commonality>
 				<disallowedStrategies>
 					<li>Siege</li>
 				</disallowedStrategies>
@@ -101,19 +94,45 @@
 					<Ark_Carcass_Drifter>10</Ark_Carcass_Drifter>
 					<Ark_Carcass_Slasher>10</Ark_Carcass_Slasher>
 					<Ark_Carcass_Chief>5</Ark_Carcass_Chief>
+					<Ark_MechC_Scyther>5</Ark_MechC_Scyther>
+					<Ark_MechC_Tunneler>1</Ark_MechC_Tunneler>
 					<Ark_ShatteredChampion>2</Ark_ShatteredChampion>
 				</options>
 			</li>
 			<li>
 				<!-- Normal fights, ranged only -->
 				<kindDef>Combat</kindDef>
-				<commonality>20</commonality>
+				<commonality>50</commonality>
 				<options>
 					<Ark_Carcass_Pirate>10</Ark_Carcass_Pirate>
 					<Ark_Carcass_Grenadier>2</Ark_Carcass_Grenadier>
 					<Ark_Carcass_HeavyArcher>10</Ark_Carcass_HeavyArcher>
 					<Ark_Carcass_Heavy>6</Ark_Carcass_Heavy>
 					<Ark_MagicBulletShooter>5</Ark_MagicBulletShooter>
+					<Ark_MechC_Lancer>5</Ark_MechC_Lancer>
+					<Ark_MechC_Centipede>2</Ark_MechC_Centipede>
+					<Ark_Carcass_Elite>10</Ark_Carcass_Elite>
+				</options>
+			</li>
+			<li>
+				<!-- 炮灰之海 -->
+				<kindDef>Combat</kindDef>
+				<commonality>20</commonality>
+				<options>
+					<Ark_Carcass_Drifter>10</Ark_Carcass_Drifter>
+					<Ark_MechC_Militor>10</Ark_MechC_Militor>
+				</options>
+			</li>
+			<li>
+				<!-- 英雄无名 -->
+				<kindDef>Combat</kindDef>
+				<commonality>20</commonality>
+				<disallowedStrategies>
+					<li>Siege</li>
+				</disallowedStrategies>
+				<options>
+					<Ark_Carcass_InBlack>5</Ark_Carcass_InBlack>
+					<Ark_ShatteredChampion>5</Ark_ShatteredChampion>
 					<Ark_Carcass_Elite>10</Ark_Carcass_Elite>
 				</options>
 			</li>

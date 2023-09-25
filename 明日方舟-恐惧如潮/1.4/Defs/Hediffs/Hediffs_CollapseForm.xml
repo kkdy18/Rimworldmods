@@ -155,7 +155,7 @@
 		</stages>
 	</HediffDef>
 
-	<!-- 敌方坍缩范式 -->
+	<!-- 敌方人类坍缩范式 -->
 	
 	<HediffDef Name="Ark_CollapseEnemyBase" ParentName="Ark_CollapseFormBase" Abstract="True">
 		<comps>
@@ -179,8 +179,8 @@
 		<initialSeverity>1.00</initialSeverity>
 	</HediffDef>
 
-	<ThingDef ParentName="BodyPartBase">
-		<defName>Ark_TheForm</defName>
+	<ThingDef Name="EJ_TheForm" ParentName="BodyPartBase">
+		<defName>Z_FormOne</defName>
 		<label>终末残篇</label>
 		<description>终末残篇。</description>
 		<techLevel>Ultra</techLevel>
@@ -188,7 +188,7 @@
 			<texPath>Things/Item/Health/HealthItem</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.80</drawSize>
-			<color>(189,169,118)</color>
+			<color>(25,25,25)</color>
 		</graphicData>
 		<statBases>
 			<MarketValue>50</MarketValue>
@@ -207,7 +207,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>Ark_TheForm</li>
+						<li>Z_FormOne</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -215,7 +215,7 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>Ark_TheForm</li>
+				<li>Z_FormOne</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
@@ -338,7 +338,7 @@
 		</stages>
 		<comps>
 			<li Class="AnimalBehaviours.HediffCompProperties_Regeneration">
-				<rateInTicks>50</rateInTicks>
+				<rateInTicks>60</rateInTicks>
 			</li>
 		</comps>
 	</HediffDef>
@@ -430,7 +430,7 @@
 	</RecipeDef>
 
 	<HediffDef ParentName="Ark_CollapseEnemyBase">
-		<defName>Ark_CollapseEnemy7</defName>
+		<defName>Ark_CollapseSpread</defName>
 		<label>坍缩范式-蔓延性坍缩</label>
 		<description>该坍缩体会不断撕裂周遭的空间形成名为“国度”的现象，他在现实的维度上行走，留下蔓延的漆黑伤痕，宛如一条绝望的河流。</description>
 		<comps>
@@ -441,10 +441,146 @@
 		</comps>
 	</HediffDef>
 
-	<RecipeDef ParentName="EJ_SurgeryTheFormBase">
-		<defName>EJ_InstallTheForm7</defName>
+	<HediffDef ParentName="Ark_CollapseEnemyBase">
+		<defName>Ark_CollapseHero</defName>
+		<label>坍缩范式-平凡之人</label>
+		<description>他与他的同伴是一群行走在大地上的凡人，他们曾经对无数即将覆灭的殖民地伸出援手，直到邪魔追上了他。\n\n如今行走在坍缩体中的这个人类谁也不是，他只是一具强大的空壳，渴望着烈火焚尽这副残躯。</description>
+		<stages>
+			<li>
+				<statFactors>
+					<IncomingDamageFactor>0.2</IncomingDamageFactor>
+					<MeleeDamageFactor>2</MeleeDamageFactor>
+					<AimingDelayFactor>0.1</AimingDelayFactor>
+				</statFactors>
+				<statOffsets>
+					<ShootingAccuracyPawn>100</ShootingAccuracyPawn>
+					<ArmorRating_Heat>-3</ArmorRating_Heat>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>1</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartBase">
+		<defName>Z_FormTwo</defName>
+		<label>终末残篇</label>
+		<description>终末残篇。</description>
+		<techLevel>Ultra</techLevel>
+		<graphicData>
+			<texPath>Things/Item/Health/HealthItem</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
+			<color>(25,25,25)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>100</MarketValue>
+		</statBases>
+		<techHediffsTags>
+			<li>Z_FormTwo</li>
+		</techHediffsTags>
+		<tradeTags>
+			<li>Z_FormTwo</li>
+		</tradeTags>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallImplantBase">
+		<defName>EJ_InstallTheFormHero</defName>
 		<label>生成坍缩范式</label>
 		<description>生成坍缩范式。</description>
-		<addsHediff>Ark_CollapseEnemy7</addsHediff>
+		<addsHediff>Ark_CollapseHero</addsHediff>
+		<jobString>生成坍缩范式。</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Z_FormTwo</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Z_FormTwo</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
 	</RecipeDef>
+
+	<!-- 敌方机械坍缩范式 -->
+
+	<HediffDef ParentName="Ark_CollapseFormBase">
+		<defName>Ark_CollapseMechForm</defName>
+		<label>坍缩范式-非线性机动引擎</label>
+		<description>被坍缩污染的机械体发动机在运行时能引发周围的空间规则紊乱，这类机械体可以利用扭曲的空间高速移动并发起精准且凶残的打击。\n\n跑得更快的机械飞螳可不算什么大问题，它们本来就在战场上乱窜，但如果一只甚至更多机械蜈蚣像火车一样向防线冲来呢？</description>
+		<stages>
+			<li>
+				<statFactors>
+					<MoveSpeed>1.5</MoveSpeed>
+				</statFactors>
+				<statOffsets>
+					<MeleeHitChance>10</MeleeHitChance>
+					<ShootingAccuracyPawn>10</ShootingAccuracyPawn>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.25</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="Ark_CollapseFormBase">
+		<defName>Ark_CollapseMechForm2</defName>
+		<label>坍缩范式-情绪吸收合金</label>
+		<description>坍缩重构了机械体的机体部件，这类机械体超过80%的部件由一种不可能存在于现实的合金组成，合金以未知的方式吸收人类生成的名为“情绪”的电信号提高自身强度与自行修复。\n\n我们捕获并拆解了整整两百头能自修复的铁乌龟，得出的结论是那个屁用没有的合金离开活的坍缩体就会分解。</description>
+		<stages>
+			<li>
+				<statFactors>
+					<IncomingDamageFactor>0.75</IncomingDamageFactor>
+				</statFactors>
+			</li>
+		</stages>
+		<comps>
+			<li Class="AnimalBehaviours.HediffCompProperties_Regeneration">
+				<rateInTicks>10</rateInTicks>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="Ark_CollapseFormBase">
+		<defName>Ark_CollapseMechForm3</defName>
+		<label>坍缩范式-超时空火控芯片</label>
+		<description>坍缩在机械体的芯片上刻下被扭曲的物理规律，这类机械体将时间与空间变成了一种可控的条件并运用在火力输出中。\n\n我们认为拥有这个坍缩范式的机械体通过扭曲时间加速自己的武器，从而加快了武器的冷却，但我们不理解操纵时间的力量为什么要用在这种小事上。</description>
+		<stages>
+			<li>
+				<statFactors>
+					<AimingDelayFactor>0.5</AimingDelayFactor>
+					<RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+				</statFactors>
+				<capMods>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>0.5</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+	</HediffDef>
 </Defs>

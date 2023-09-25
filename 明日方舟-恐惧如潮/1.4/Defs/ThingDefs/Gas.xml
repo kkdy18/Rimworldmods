@@ -52,8 +52,8 @@
 		<resistedBy>Ark_Volition</resistedBy>
 		<gas>
 			<expireSeconds>
-				<min>50000</min>
-				<max>50000</max>
+				<min>1000</min>
+				<max>1000</max>
 			</expireSeconds>
 			<rotationSpeed>3</rotationSpeed>
 		</gas>

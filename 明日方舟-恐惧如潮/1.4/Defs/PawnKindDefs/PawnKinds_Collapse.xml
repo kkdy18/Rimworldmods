@@ -159,6 +159,15 @@
 				<range>10~15</range>
 			</li>
 		</skills>
+		<inventoryOptions>
+			<skipChance>0.6</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Ark_GiftofVast</thingDef>
+					<countRange>1</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
 	</PawnKindDef>
 	
 	<!--部落耗材-->
@@ -215,6 +224,15 @@
 				<Neanderthal>1</Neanderthal>
 			</xenotypeChances>
 		</xenotypeSet>
+		<inventoryOptions>
+			<skipChance>0.6</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Ark_GiftofVast</thingDef>
+					<countRange>1</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
 	</PawnKindDef>
 
 	<!--特种-->
@@ -280,8 +298,10 @@
 		<techHediffsMoney>1000~4000</techHediffsMoney>
 		<techHediffsTags>
 			<li>Advanced</li>
+			<li>Z_FormTwo</li>
 		</techHediffsTags>
 		<techHediffsRequired>
+			<li>Z_FormTwo</li>
 		</techHediffsRequired>
 		<skills>
 			<li>

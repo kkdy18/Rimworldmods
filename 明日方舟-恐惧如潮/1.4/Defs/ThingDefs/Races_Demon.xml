@@ -50,7 +50,7 @@
 		</comps>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseDemon">
+<!--	<ThingDef ParentName="BaseDemon">
 		<defName>Ark_NihilityMonster</defName>
 		<label>虚无孽物</label>
 		<description>虚无的种子撒播于现实孵化出的孽物。</description>
@@ -100,7 +100,7 @@
 				</bodyGraphicData>
 			</li>
 		</lifeStages>
-	</PawnKindDef>
+	</PawnKindDef>-->
 
 	<ThingDef ParentName="BaseDemon">
 		<defName>Ark_TaintedGhost</defName>

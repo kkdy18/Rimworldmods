@@ -40,4 +40,19 @@
 			<li Class="CompProperties_UseEffectDestroySelf" />
 		</comps>
 	</ThingDef>
+
+	<ThingDef ParentName="MechResourceBase">
+		<defName>Ark_NoteofBestower</defName>
+		<label>虚无布施的笔记</label>
+		<description>虚无布施身上唯一未被坍缩吞噬的现实物品，其中满是无序扭曲的文字与涂鸦，只是翻阅就会让人头脑发胀。研究它或许能让我们触及邪魔更深层的秘密，也可能让我们长出一只发光的邪魔眼睛去荒野上游荡。</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Ark_NoteofBestower</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>1000</MaxHitPoints>
+			<MarketValue>1000</MarketValue>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+	</ThingDef>
 </Defs>

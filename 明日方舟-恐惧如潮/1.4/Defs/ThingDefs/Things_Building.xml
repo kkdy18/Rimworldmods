@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="BuildingBase">
+		<defName>Ark_AltarofVast</defName>
+		<label>无垠祭坛</label>
+		<description>aaa</description>
+		<graphicData>
+			<texPath>Things/Building/Ark_AltarofVast</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.3</fillPercent>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<buildingTags>
+				<li>Biotech</li>
+			</buildingTags>
+		</building>
+		<designationCategory>Biotech</designationCategory>
+		<uiOrder>2450</uiOrder>
+		<statBases>
+			<MaxHitPoints>404</MaxHitPoints>
+			<WorkToBuild>4040</WorkToBuild>
+			<Mass>44</Mass>
+			<Flammability>0</Flammability>
+		</statBases>
+		<size>(1,1)</size>
+		<costList>
+			<Ark_Essential>100</Ark_Essential>
+			<Ark_GiftofVast>1</Ark_GiftofVast>
+		</costList>
+		<researchPrerequisites>
+			<li>Ark_AltarofVast</li>
+		</researchPrerequisites>
+		<comps>
+			<li Class="CompProperties_Usable">
+				<useJob>TriggerObject</useJob>
+				<useLabel>召唤灭绝炎蜂</useLabel>
+				<useDuration>900</useDuration>
+				<floatMenuFactionIcon>Ark_Demon</floatMenuFactionIcon>
+			</li>
+		</comps>
+		<tickerType>Normal</tickerType>
+		<filthLeaving>Filth_MachineBits</filthLeaving>
+	</ThingDef>
+</Defs>
