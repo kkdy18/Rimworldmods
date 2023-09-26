@@ -35,14 +35,35 @@
 			<li>Ark_AltarofVast</li>
 		</researchPrerequisites>
 		<comps>
-			<li Class="CompProperties_Usable">
-				<useJob>TriggerObject</useJob>
-				<useLabel>召唤灭绝炎蜂</useLabel>
-				<useDuration>900</useDuration>
-				<floatMenuFactionIcon>Ark_Demon</floatMenuFactionIcon>
+			<li Class="Ark_GSWT.TCP_SummonBossGroups">
+				<useDuration>100</useDuration>
+				<costFuel>50</costFuel>
+				<bossGroups>
+					<li>Ark_Incident_Boss</li>
+					<li>Ark_Incident_LittleBeeDeng</li>
+				</bossGroups>
+			</li>
+			<li Class="CompProperties_Refuelable">
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<fuelCapacity>100</fuelCapacity>
+				<fuelFilter>
+				<thingDefs>
+					<li>Silver</li>
+				</thingDefs>
+				</fuelFilter>
+				<initialFuelPercent>1.0</initialFuelPercent>
+				<showAllowAutoRefuelToggle>false</showAllowAutoRefuelToggle>
 			</li>
 		</comps>
 		<tickerType>Normal</tickerType>
 		<filthLeaving>Filth_MachineBits</filthLeaving>
 	</ThingDef>
+		<JobDef>
+			<defName>Ark_Job_UseAltarofVast</defName>
+			<driverClass>Ark_GSWT.JobDriver_UseAlterVast</driverClass>
+			<reportString>Using alter of vast.</reportString>
+			<!--使用招募台-->
+		</JobDef>
+	
+	
 </Defs>

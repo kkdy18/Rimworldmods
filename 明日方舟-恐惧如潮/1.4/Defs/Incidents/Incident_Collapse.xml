@@ -1,12 +1,41 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<Ark_GSWT.Ark_IncidentDef>
-		<defName>Ark_IncidentWorker_Boss</defName>
+		<defName>Ark_Incident_Boss</defName>
 		<label>灭绝炎蜂袭击</label>
 		<targetTags>
 			<li>Map_PlayerHome</li>
 		</targetTags>
-		<workerClass>Ark_GSWT.IncidentWorker_BossCall</workerClass>
+		<workerClass>Ark_GSWT.IncidentWorker_BossComing</workerClass>
+		<letterLabel>灭绝炎蜂袭击</letterLabel>
+		<letterText>逼崽子来喽</letterText>
+		<letterDef>ThreatBig</letterDef>
+		<baseChance>2.7</baseChance>
+		<minRefireDays>0</minRefireDays>
+		<tags>
+			<!--<li>MechanoidShip</li>-->
+		</tags>
+		<refireCheckTags>
+			<!--<li>MechanoidShip</li>-->
+		</refireCheckTags>
+		<category>ThreatBig</category>
+		<pointsScaleable>true</pointsScaleable>
+		<minThreatPoints>400</minThreatPoints>
+		<pawnKind>Ark_MechC_Apocriton</pawnKind>
+		<Soldier>
+			<li>Ark_MechC_Scyther</li>
+			<li>Ark_MechC_Lancer</li>
+			<li>Ark_MechC_Militor</li>
+		</Soldier>
+		<tale>ShipPartCrash</tale>
+	</Ark_GSWT.Ark_IncidentDef>	
+	<Ark_GSWT.Ark_IncidentDef>
+		<defName>Ark_Incident_LittleBeeDeng</defName>
+		<label>小Bee登袭击</label>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>Ark_GSWT.IncidentWorker_BossComing</workerClass>
 		<letterLabel>灭绝炎蜂袭击</letterLabel>
 		<letterText>逼崽子来喽</letterText>
 		<letterDef>ThreatBig</letterDef>
