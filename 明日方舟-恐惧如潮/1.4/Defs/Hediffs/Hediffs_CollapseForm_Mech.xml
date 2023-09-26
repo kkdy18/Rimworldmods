@@ -11,7 +11,7 @@
 	</HediffDef>
 
 	<HediffDef ParentName="Ark_BossHediffBase">
-		<defName>Ark_GiverBestower</defName>
+		<defName>Ark_Giver_Bestower</defName>
 		<label>狂热的布施者</label>
 		<description>他曾目见那无尽虚空背后的真实，发誓尽其一生去将这份喜悦赠予众生。</description>
 		<defaultLabelColor>(1,0.5,0.75)</defaultLabelColor>
@@ -26,13 +26,13 @@
 					<canTargetAnimals>false</canTargetAnimals>
 					<canTargetMechs>false</canTargetMechs>
 				</targetingParameters>
-				<hediff>Ark_CollapsePresent</hediff>
+				<hediff>Ark_Hediff_CollapsePresent</hediff>
 			</li>
 		</comps>
 	</HediffDef>
 
 	<HediffDef ParentName="Ark_BossHediffBase">
-		<defName>Ark_CollapsePresent</defName>
+		<defName>Ark_Hediff_CollapsePresent</defName>
 		<label>虚无馈赠</label>
 		<description>来自虚无的祝福自狂热者的灵魂溢出，流入每一个空洞的躯壳。\n\n所有接近虚无布施的人类坍缩体都受到了未知力量的强化，并且新增在死后引爆自身坍缩形成国度的能力，如果不尽快击杀虚无布施，我们的防线将会迅速崩溃。</description>
 		<defaultLabelColor>(1,0.5,0.75)</defaultLabelColor>
@@ -77,7 +77,7 @@
 	</HediffDef>
 
 	<HediffDef ParentName="Ark_BossHediffResurrect">
-		<defName>Ark_ResurrectApocriton</defName>
+		<defName>Ark_Resurrect_Apocriton</defName>
 		<label>自私的不死者</label>
 		<description>灭绝炎蜂的复活能力只作用于自己而非自己所指挥的机械体，我们把这看作是一种背叛行为，不过机械体明显不会在意人类的道德，而且灭绝炎蜂确实变得更难消灭了。</description>
 		<initialSeverity>4</initialSeverity>
@@ -90,14 +90,14 @@
 		</stages>
 		<comps>
 			<li Class="Ark_GSWT.HCP_BossResurrect">
-				<hediffDef>Ark_ResurrectOverload</hediffDef>
+				<hediffDef>Ark_Resurrect_Overload</hediffDef>
 				<fleck>PsycastPsychicEffect</fleck>
 			</li>
 		</comps>
 	</HediffDef>
 
 	<HediffDef ParentName="Ark_BossHediffResurrect">
-		<defName>Ark_ResurrectOverload</defName>
+		<defName>Ark_Resurrect_Overload</defName>
 		<label>复生过载</label>
 		<description>借助坍缩的影响，灭绝炎蜂能在自己受到本该导致停机的损伤后强行维持系统运行一秒，并趁机过载自我修复系统复活自己，最后利用坍缩抹去过载系统本应产生的损耗。这种行为会不断增加机体的不稳定性，但几乎无代价的系统过载也让灭绝炎蜂的作战能力愈加强大。</description>
 		<stages>

@@ -28,6 +28,8 @@
 		<apparelRequired>
 			<li>Ark_CollapseEye</li>
 		</apparelRequired>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<apparelIgnorePollution>true</apparelIgnorePollution>
 		<techHediffsTags>
 			<li>Ark_TheForm</li>
 		</techHediffsTags>
@@ -315,6 +317,69 @@
 				<Baseliner>1</Baseliner>
 			</xenotypeChances>
 		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="BaseSoldierCollapse">
+		<defName>Ark_Carcass_Mechanitor</defName>
+		<label>械灾者</label>
+		<combatPower>100</combatPower>
+		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Scientist</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<chemicalAddictionChance>0.08</chemicalAddictionChance>
+		<apparelMoney>9000~9000</apparelMoney>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+			<li>IndustrialAdvanced</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>Apparel_ArmorHelmetMechlordHelmet</li>
+			<li>Apparel_MechlordSuit</li>
+			<li>Apparel_CollarShirt</li>
+			<li>Apparel_Pants</li>
+		</apparelRequired>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<weaponMoney>9000~9000</weaponMoney>
+		<weaponTags>
+			<li>Minigun</li>
+		</weaponTags>
+		<itemQuality>Masterwork</itemQuality>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<techHediffsRequired>
+			<li>Mechlink</li>
+		</techHediffsRequired>
+		<biocodeWeaponChance>1</biocodeWeaponChance>
+		<requiredWorkTags>
+			<li>Intellectual</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Recluse>0</Recluse>
+		</forcedTraits>
+		<disallowedTraits>
+			<li>BodyPurist</li>
+		</disallowedTraits>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>15~20</range>
+			</li>
+		</skills>
+		<inventoryOptions>
+			<skipChance>0.6</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Ark_GiftofVast</thingDef>
+					<countRange>1</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="BaseSoldierCollapse">

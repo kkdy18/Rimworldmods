@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<Ark_GSWT.Ark_IncidentDef>
-		<defName>Ark_Incident_Boss</defName>
-		<label>灭绝炎蜂袭击</label>
+		<defName>Ark_IncidentBoss_Apocriton</defName>
+		<label>召唤灭绝炎蜂</label>
 		<targetTags>
 			<li>Map_PlayerHome</li>
 		</targetTags>
 		<workerClass>Ark_GSWT.IncidentWorker_BossComing</workerClass>
-		<letterLabel>灭绝炎蜂袭击</letterLabel>
+		<letterLabel>灭绝炎蜂来袭</letterLabel>
 		<letterText>逼崽子来喽</letterText>
 		<letterDef>ThreatBig</letterDef>
 		<baseChance>2.7</baseChance>
@@ -26,18 +26,20 @@
 			<li>Ark_MechC_Scyther</li>
 			<li>Ark_MechC_Lancer</li>
 			<li>Ark_MechC_Militor</li>
+			<li>Ark_MechC_Centipede</li>
 		</Soldier>
-		<tale>ShipPartCrash</tale>
-	</Ark_GSWT.Ark_IncidentDef>	
+		<tale>Raid</tale>
+	</Ark_GSWT.Ark_IncidentDef>
+
 	<Ark_GSWT.Ark_IncidentDef>
-		<defName>Ark_Incident_LittleBeeDeng</defName>
-		<label>小Bee登袭击</label>
+		<defName>Ark_IncidentBoss_MechDisaster</defName>
+		<label>召唤械灾者</label>
 		<targetTags>
 			<li>Map_PlayerHome</li>
 		</targetTags>
 		<workerClass>Ark_GSWT.IncidentWorker_BossComing</workerClass>
-		<letterLabel>灭绝炎蜂袭击</letterLabel>
-		<letterText>逼崽子来喽</letterText>
+		<letterLabel>械灾者来袭</letterLabel>
+		<letterText>军团！</letterText>
 		<letterDef>ThreatBig</letterDef>
 		<baseChance>2.7</baseChance>
 		<minRefireDays>0</minRefireDays>
@@ -50,12 +52,12 @@
 		<category>ThreatBig</category>
 		<pointsScaleable>true</pointsScaleable>
 		<minThreatPoints>400</minThreatPoints>
-		<pawnKind>Ark_MechC_Apocriton</pawnKind>
+		<pawnKind>Ark_Carcass_Mechanitor</pawnKind>
 		<Soldier>
 			<li>Ark_MechC_Scyther</li>
-			<li>Ark_MechC_Lancer</li>
-			<li>Ark_MechC_Militor</li>
+			<li>Ark_MechC_Centipede</li>
+			<li>Ark_MechC_Tunneler</li>
 		</Soldier>
-		<tale>ShipPartCrash</tale>
+		<tale>Raid</tale>
 	</Ark_GSWT.Ark_IncidentDef>
 </Defs>

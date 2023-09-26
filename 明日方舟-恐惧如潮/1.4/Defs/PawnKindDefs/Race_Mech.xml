@@ -125,7 +125,7 @@
 					<li>Ark_CollapseMechForm</li>
 					<li>Ark_CollapseMechForm2</li>
 					<li>Ark_CollapseEnemy</li>
-					<li>Ark_CollapseEnemy2</li>
+					<li>Ark_CollapseEnemy3</li>
 					<li>Ark_CollapseSpread</li>
 				</hediffs>
 			</li>
@@ -468,7 +468,7 @@
 				<hediffs>
 					<li>Ark_CollapseMechForm</li>
 					<li>Ark_CollapseMechForm2</li>
-					<li>Ark_CollapseSpread</li>
+					<li>Ark_CollapseEnemy3</li>
 				</hediffs>
 			</li>
 		</comps>
@@ -577,7 +577,7 @@
 			</li>
 			<li Class="Ark_GSWT.TCP_CollapseForm">
 				<hediffs>
-					<li>Ark_ResurrectApocriton</li>
+					<li>Ark_Resurrect_Apocriton</li>
 				</hediffs>
 			</li>
 		</comps>
@@ -699,7 +699,7 @@
 			</li>
 			<li Class="Ark_GSWT.TCP_CollapseForm">
 				<hediffs>
-					<li>Ark_GiverBestower</li>
+					<li>Ark_Giver_Bestower</li>
 				</hediffs>
 			</li>
 		</comps>

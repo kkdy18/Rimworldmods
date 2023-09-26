@@ -110,8 +110,8 @@
 			<MoveSpeed>4.04</MoveSpeed>
 			<MarketValue>404</MarketValue>
 			<ArmorRating_Blunt>2</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.5</ArmorRating_Heat>
-			<ArmorRating_Sharp>1.5</ArmorRating_Sharp>
+			<ArmorRating_Heat>0</ArmorRating_Heat>
+			<ArmorRating_Sharp>0.9</ArmorRating_Sharp>
 		</statBases>
 		<tools>
 			<li>

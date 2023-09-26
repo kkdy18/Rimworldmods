@@ -548,9 +548,10 @@
 		<description>坍缩重构了机械体的机体部件，这类机械体超过80%的部件由一种不可能存在于现实的合金组成，合金以未知的方式吸收人类生成的名为“情绪”的电信号提高自身强度与自行修复。\n\n我们捕获并拆解了整整两百头能自修复的铁乌龟，得出的结论是那个屁用没有的合金离开活的坍缩体就会分解。</description>
 		<stages>
 			<li>
-				<statFactors>
-					<IncomingDamageFactor>0.75</IncomingDamageFactor>
-				</statFactors>
+				<statOffsets>
+					<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+				</statOffsets>
 			</li>
 		</stages>
 		<comps>

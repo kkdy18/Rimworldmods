@@ -28,7 +28,7 @@
 		</statBases>
 		<size>(1,1)</size>
 		<costList>
-			<Ark_Essential>100</Ark_Essential>
+			<Uranium>100</Uranium>
 			<Ark_GiftofVast>1</Ark_GiftofVast>
 		</costList>
 		<researchPrerequisites>
@@ -39,8 +39,8 @@
 				<useDuration>100</useDuration>
 				<costFuel>50</costFuel>
 				<bossGroups>
-					<li>Ark_Incident_Boss</li>
-					<li>Ark_Incident_LittleBeeDeng</li>
+					<li>Ark_IncidentBoss_Apocriton</li>
+					<li>Ark_IncidentBoss_MechDisaster</li>
 				</bossGroups>
 			</li>
 			<li Class="CompProperties_Refuelable">
@@ -48,22 +48,18 @@
 				<fuelCapacity>100</fuelCapacity>
 				<fuelFilter>
 				<thingDefs>
-					<li>Silver</li>
+					<li>Ark_Essential</li>
 				</thingDefs>
 				</fuelFilter>
 				<initialFuelPercent>1.0</initialFuelPercent>
 				<showAllowAutoRefuelToggle>false</showAllowAutoRefuelToggle>
 			</li>
 		</comps>
-		<tickerType>Normal</tickerType>
-		<filthLeaving>Filth_MachineBits</filthLeaving>
 	</ThingDef>
+	
 		<JobDef>
 			<defName>Ark_Job_UseAltarofVast</defName>
 			<driverClass>Ark_GSWT.JobDriver_UseAlterVast</driverClass>
 			<reportString>Using alter of vast.</reportString>
-			<!--使用招募台-->
 		</JobDef>
-	
-	
 </Defs>
