@@ -13,7 +13,7 @@
 	<RecipeDef>
 		<defName>Ark_Recipe_SmashMechTriple</defName>
 		<label>三倍叠放拆解机械体</label>
-		<description>aaa</description>
+		<description>传统的机械体拆解方式实在是过于低效，技艺高超的机械师可以同时分解三台机械体而不影响工作速度，三台不是技艺的极限，而是工作台只能放下三台！</description>
 		<jobString>正在拆解机械体。</jobString>
 		<recipeUsers>
 			<li>TableMachining</li>
@@ -64,36 +64,5 @@
 		</skillRequirements>
 	</RecipeDef>
 
-	<RecipeDef ParentName="BaseMechanoidRecipe">
-		<defName>Ark_Recipe_MechCMResurrect</defName>
-		<label>制造坍缩飞螳</label>
-		<description>aaa</description>
-		<recipeUsers>
-			<li>LargeMechGestator</li>
-		</recipeUsers>
-		<ingredients>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Corpse_Ark_MechC_Scyther</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Ark_CollapseCube</li>
-					</thingDefs>
-				</filter>
-				<count>25</count>
-			</li>
-		</ingredients>
-		<products>
-			<Ark_MechC_Scyther>1</Ark_MechC_Scyther>
-		</products>
-		<descriptionHyperlinks>
-			<ThingDef>Ark_MechC_Scyther</ThingDef>
-		</descriptionHyperlinks>
-	</RecipeDef>
+
 </Defs>

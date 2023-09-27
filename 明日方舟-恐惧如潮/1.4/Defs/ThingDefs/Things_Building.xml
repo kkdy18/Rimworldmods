@@ -3,14 +3,14 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>Ark_AltarofVast</defName>
 		<label>无垠祭坛</label>
-		<description>aaa</description>
+		<description>不可触及的花朵仿佛只是一个漂浮在石台上的虚影，但那份现实之外的重量连钢铁都能压碎，信标以虚无的血肉为养料，在不可见的维度扎下根须，只要它发出信号，虚无的代行者便会疯狂地扑向此地。\n\n利用禁忌的技术，我们成功破解了这枚“信标”的部分功能，只要供给足够多的虚无要素再加上特定频率的电刺激，它就能发出我们无法解析的信号，误导那些领袖级别的坍缩体这里……有邪魔在呼唤它们？毕竟我们当中没有坍缩体，没法了解坍缩体究竟从信号里感受到了什么，我们只知道那些来客会在眨眼间赶到，如果不受阻碍它们会抹除一切有形的事物。</description>
 		<graphicData>
 			<texPath>Things/Building/Ark_AltarofVast</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(2,2)</drawSize>
+			<drawSize>(2.5,2.5)</drawSize>
 		</graphicData>
 		<altitudeLayer>Building</altitudeLayer>
-		<passability>PassThroughOnly</passability>
+		<passability>Impassable</passability>
 		<fillPercent>0.3</fillPercent>
 		<building>
 			<ai_chillDestination>false</ai_chillDestination>
@@ -36,12 +36,14 @@
 		</researchPrerequisites>
 		<comps>
 			<li Class="Ark_GSWT.TCP_SummonBossGroups">
-				<useDuration>100</useDuration>
+				<useDuration>200</useDuration>
 				<costFuel>50</costFuel>
 				<bossGroups>
 					<li>Ark_IncidentBoss_Apocriton</li>
 					<li>Ark_IncidentBoss_MechDisaster</li>
 				</bossGroups>
+				<effecterDef>BurnoutMechlinkBoosterUsed</effecterDef>
+				<delayTicks>120</delayTicks>
 			</li>
 			<li Class="CompProperties_Refuelable">
 				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
@@ -51,8 +53,13 @@
 					<li>Ark_Essential</li>
 				</thingDefs>
 				</fuelFilter>
-				<initialFuelPercent>1.0</initialFuelPercent>
+				<initialFuelPercent>0</initialFuelPercent>
 				<showAllowAutoRefuelToggle>false</showAllowAutoRefuelToggle>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>10</glowRadius>
+				<glowColor>(150,150,150,0)</glowColor>
+				<darklightToggle>true</darklightToggle>
 			</li>
 		</comps>
 	</ThingDef>

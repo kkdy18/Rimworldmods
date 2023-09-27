@@ -33,7 +33,7 @@
 	<ResearchProjectDef>
 		<defName>Ark_AltarofVast</defName>
 		<label>无垠信标构建</label>
-		<description>从一个堕落者的笔记中我们意外发现了“信标”的一种使用方法，将机械师的技术与亵渎的仪式结合，我们能够可控地召唤某些坍缩体中类似领袖的强大个体，它们既是灾祸的化身，也是行走的宝藏。</description>
+		<description>从一个堕落者的笔记中我们意外发现了“信标”的一种使用方法，将机械师的技术与亵渎的仪式结合，我们能够可控地召唤坍缩体中类似领袖的强大个体，它们既是灾祸的化身，也是行走的宝藏。</description>
 		<baseCost>1000</baseCost>
 		<techLevel>Industrial</techLevel>
 		<prerequisites>
