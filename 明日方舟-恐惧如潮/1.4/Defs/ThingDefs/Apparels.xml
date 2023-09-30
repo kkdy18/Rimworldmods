@@ -59,6 +59,9 @@
 		<statBases>
 			<Mass>0.001</Mass>
 		</statBases>
+		<thingCategories>
+			<li>ApparelUtility</li>
+		</thingCategories>
 		<apparel>
 			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
 			<countsAsClothingForNudity>false</countsAsClothingForNudity>

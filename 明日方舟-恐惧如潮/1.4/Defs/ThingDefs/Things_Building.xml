@@ -43,7 +43,6 @@
 					<li>Ark_IncidentBoss_MechDisaster</li>
 				</bossGroups>
 				<effecterDef>BurnoutMechlinkBoosterUsed</effecterDef>
-				<delayTicks>120</delayTicks>
 			</li>
 			<li Class="CompProperties_Refuelable">
 				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>

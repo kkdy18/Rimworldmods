@@ -75,4 +75,25 @@
 			</li>
 		</stages>
 	</HediffDef>
+
+	<HediffDef ParentName="Ark_CollapseFormBase">
+		<defName>Ark_Anti-collapseCladding</defName>
+		<label>抗坍缩镀层</label>
+		<description>抗坍缩镀层将持续守护机械体的意识远离邪魔的污染。</description>
+		<defaultLabelColor>(0.6, 0.6, 1.0)</defaultLabelColor>
+		<stages>
+			<li>
+				<statOffsets>
+					<Ark_Volition>2</Ark_Volition>
+					<MechEnergyUsageFactor>-0.1</MechEnergyUsageFactor>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.1</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
 </Defs>

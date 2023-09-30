@@ -6,7 +6,7 @@
 		<scenarioCanAdd>false</scenarioCanAdd>
 		<isBad>false</isBad>
 		<maxSeverity>1</maxSeverity>
-		<initialSeverity>1.00</initialSeverity>
+		<initialSeverity>1</initialSeverity>
 		<alwaysAllowMothball>True</alwaysAllowMothball>
 		<alwaysAllowMothballCached>True</alwaysAllowMothballCached>
 	</HediffDef>
@@ -514,11 +514,18 @@
 		</appliedOnFixedBodyParts>
 	</RecipeDef>
 
-	<!-- 敌方机械坍缩范式 -->
+	<!-- 机械体坍缩范式 -->
 
-	<HediffDef ParentName="Ark_CollapseFormBase">
+	<HediffDef Name="Ark_CollapseMechBase" ParentName="Ark_CollapseFormBase" Abstract="True">
+		<defaultLabelColor>(1,0.25,1)</defaultLabelColor>
+		<comps>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+	</HediffDef>
+	
+	<HediffDef ParentName="Ark_CollapseMechBase">
 		<defName>Ark_CollapseMechForm</defName>
-		<label>坍缩范式-非线性机动引擎</label>
+		<label>坍缩模组-非线性机动引擎</label>
 		<description>被坍缩污染的机械体发动机在运行时能引发周围的空间规则紊乱，这类机械体可以利用扭曲的空间高速移动并发起精准且凶残的打击。\n\n跑得更快的机械飞螳可不算什么大问题，它们本来就在战场上乱窜，但如果一只甚至更多机械蜈蚣像火车一样向防线冲来呢？</description>
 		<stages>
 			<li>
@@ -537,14 +544,11 @@
 				</capMods>
 			</li>
 		</stages>
-		<comps>
-			<li Class="HediffCompProperties_DisappearsOnDeath"/>
-		</comps>
 	</HediffDef>
 
-	<HediffDef ParentName="Ark_CollapseFormBase">
+	<HediffDef ParentName="Ark_CollapseMechBase">
 		<defName>Ark_CollapseMechForm2</defName>
-		<label>坍缩范式-情绪吸收合金</label>
+		<label>坍缩模组-情绪吸收合金</label>
 		<description>坍缩重构了机械体的机体部件，这类机械体超过80%的部件由一种不可能存在于现实的合金组成，合金以未知的方式吸收人类生成的名为“情绪”的电信号提高自身强度与自行修复。\n\n我们捕获并拆解了整整两百头能自修复的铁乌龟，得出的结论是那个屁用没有的合金离开活的坍缩体就会分解。</description>
 		<stages>
 			<li>
@@ -558,14 +562,13 @@
 			<li Class="AnimalBehaviours.HediffCompProperties_Regeneration">
 				<rateInTicks>10</rateInTicks>
 			</li>
-			<li Class="HediffCompProperties_DisappearsOnDeath"/>
 		</comps>
 	</HediffDef>
 
-	<HediffDef ParentName="Ark_CollapseFormBase">
+	<HediffDef ParentName="Ark_CollapseMechBase">
 		<defName>Ark_CollapseMechForm3</defName>
-		<label>坍缩范式-超时空火控芯片</label>
-		<description>坍缩在机械体的芯片上刻下被扭曲的物理规律，这类机械体将时间与空间变成了一种可控的条件并运用在火力输出中。\n\n我们认为拥有这个坍缩范式的机械体通过扭曲时间加速自己的武器，从而加快了武器的冷却，但我们不理解操纵时间的力量为什么要用在这种小事上。</description>
+		<label>坍缩模组-超时空火控芯片</label>
+		<description>坍缩在机械体的芯片上刻下被扭曲的物理规律，这类机械体将时间与空间变成了一种可控的条件并运用在火力输出中。\n\n我们认为这类机械体通过扭曲时间加速自己的武器，从而加快了武器的冷却，但我们不理解操纵时间的力量为什么要用在这种小事上。</description>
 		<stages>
 			<li>
 				<statFactors>
@@ -580,8 +583,18 @@
 				</capMods>
 			</li>
 		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="Ark_CollapseMechBase">
+		<defName>Ark_CollapseMechForm4</defName>
+		<label>坍缩模组-后备隐藏能源</label>
+		<description>被坍缩污染的反应堆不再遵循能量守恒定律，转化时消耗与生成的能量极端失衡，但由于缺乏利用过剩能量的途径，这类机械体的特点只有在损毁时会发生惊人的超级爆炸。\n\n我们用抗坍缩剂中和了邪魔污染，现在这类机械体只会产生符合物理定律的科学爆炸，而不是能把一切炸去亚空间的坍缩与诡异黑雾。\n\n安装该模组的机械体大概率无法回收（尸骨无存），请谨慎选择（炸了不会心疼的）。</description>
 		<comps>
-			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<li Class="Ark_GSWT.HCP_Exploder">
+				<explosiveRadius>11.9</explosiveRadius>
+				<damageDef>BombSuper</damageDef>
+				<explosionSound>Explosion_GiantBomb</explosionSound>
+			</li>
 		</comps>
 	</HediffDef>
 </Defs>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="ResourceBase" Name="Ark_MechModuleBase" Abstract="True">
+		<thingClass>ThingWithComps</thingClass>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<Mass>0.2</Mass>
+			<MarketValue>1200</MarketValue>
+			<DeteriorationRate>2.0</DeteriorationRate>
+			<Flammability>0.2</Flammability>
+		</statBases>
+		<techLevel>Spacer</techLevel>
+		<tradeTags>
+			<li>Ark_MechModule</li>
+		</tradeTags>
+		<thingCategories>
+			<li>Ark_MechModule</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef ParentName="Ark_MechModuleBase">
+		<defName>Ark_MechModule_Scyther</defName>
+		<label>坍缩飞螳模组块</label>
+		<description>aaa</description>
+		<descriptionHyperlinks>
+			<RecipeDef>Ark_InstallMechModule_Scyther</RecipeDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Mech/Ark_MechModule_Scyther</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingDef>
+
+	<RecipeDef ParentName="Ark_InstallMechModuleBase">
+		<defName>Ark_InstallMechModule_Scyther</defName>
+		<label>安装坍缩飞螳模组块</label>
+		<description>安装坍缩飞螳模组块。</description>
+		<descriptionHyperlinks>
+			<ThingDef>Ark_MechModule_Scyther</ThingDef>
+			<HediffDef>Ark_CollapseMechForm</HediffDef>
+		</descriptionHyperlinks>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Ark_MechModule_Scyther</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Ark_MechModule_Scyther</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>MechanicalThoraxCanManipulate</li>
+			<li>MechanicalThorax</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>Ark_CollapseMechForm</addsHediff>
+	</RecipeDef>
+
+	<ThingDef ParentName="Ark_MechModuleBase">
+		<defName>Ark_MechModule_Lancer</defName>
+		<label>坍缩静螳模组块</label>
+		<description>aaa</description>
+		<descriptionHyperlinks>
+			<RecipeDef>Ark_InstallMechModule_Lancer</RecipeDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Mech/Ark_MechModule_Lancer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingDef>
+
+	<RecipeDef ParentName="Ark_InstallMechModuleBase">
+		<defName>Ark_InstallMechModule_Lancer</defName>
+		<label>安装坍缩静螳模组块</label>
+		<description>安装坍缩静螳模组块。</description>
+		<descriptionHyperlinks>
+			<ThingDef>Ark_MechModule_Lancer</ThingDef>
+			<HediffDef>Ark_CollapseMechForm3</HediffDef>
+		</descriptionHyperlinks>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Ark_MechModule_Lancer</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Ark_MechModule_Lancer</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>ArtificialBrain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>Ark_CollapseMechForm3</addsHediff>
+	</RecipeDef>
+
+	<ThingDef ParentName="Ark_MechModuleBase">
+		<defName>Ark_MechModule_Militor</defName>
+		<label>坍缩小蠊模组块</label>
+		<description>aaa</description>
+		<descriptionHyperlinks>
+			<RecipeDef>Ark_InstallMechModule_Militor</RecipeDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Mech/Ark_MechModule_Militor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>800</MarketValue>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef ParentName="Ark_InstallMechModuleBase">
+		<defName>Ark_InstallMechModule_Militor</defName>
+		<label>安装坍缩小蠊模组块</label>
+		<description>安装坍缩小蠊模组块。</description>
+		<descriptionHyperlinks>
+			<ThingDef>Ark_MechModule_Militor</ThingDef>
+			<HediffDef>Ark_CollapseMechForm4</HediffDef>
+		</descriptionHyperlinks>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Ark_MechModule_Militor</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Ark_MechModule_Militor</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Reactor</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>Ark_CollapseMechForm4</addsHediff>
+	</RecipeDef>
+
+	<ThingDef ParentName="Ark_MechModuleBase">
+		<defName>Ark_MechModule_Tunneler</defName>
+		<label>陷落碎岩者模组块</label>
+		<description>aaa</description>
+		<descriptionHyperlinks>
+			<RecipeDef>Ark_InstallMechModule_Tunneler</RecipeDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Mech/Ark_MechModule_Tunneler</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>1500</MarketValue>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef ParentName="Ark_InstallMechModuleBase">
+		<defName>Ark_InstallMechModule_Tunneler</defName>
+		<label>安装陷落碎岩者模组块</label>
+		<description>安装陷落碎岩者模组块。</description>
+		<descriptionHyperlinks>
+			<ThingDef>Ark_MechModule_Tunneler</ThingDef>
+			<HediffDef>Ark_CollapseMechForm2</HediffDef>
+		</descriptionHyperlinks>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Ark_MechModule_Tunneler</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Ark_MechModule_Tunneler</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>MechanicalThoraxCanManipulate</li>
+			<li>MechanicalThorax</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>Ark_CollapseMechForm2</addsHediff>
+	</RecipeDef>
+
+	<ThingDef ParentName="Ark_MechModuleBase">
+		<defName>Ark_MechModule_Apocriton</defName>
+		<label>灭绝炎蜂模组块</label>
+		<description>aaa</description>
+		<descriptionHyperlinks>
+			<RecipeDef>Ark_InstallMechModule_Apocriton</RecipeDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Mech/Ark_MechModule_Apocriton</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>2000</MarketValue>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef ParentName="Ark_InstallMechModuleBase">
+		<defName>Ark_InstallMechModule_Apocriton</defName>
+		<label>安装灭绝炎蜂模组块</label>
+		<description>安装灭绝炎蜂模组块。</description>
+		<descriptionHyperlinks>
+			<ThingDef>Ark_MechModule_Apocriton</ThingDef>
+			<HediffDef>Ark_Resurrect_Apocriton</HediffDef>
+		</descriptionHyperlinks>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Ark_MechModule_Apocriton</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Ark_Anti-collapseStoste</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Ark_MechModule_Apocriton</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>ArtificialBrain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>Ark_Resurrect_Apocriton</addsHediff>
+	</RecipeDef>
+</Defs>
