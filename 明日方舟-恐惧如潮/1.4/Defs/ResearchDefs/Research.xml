@@ -32,8 +32,8 @@
 
 	<ResearchProjectDef>
 		<defName>Ark_AltarofVast</defName>
-		<label>无垠信标构建</label>
-		<description>从一个堕落者的笔记中我们意外发现了“信标”的一种使用方法，将机械师的技术与亵渎的仪式结合，我们能够可控地召唤坍缩体中类似领袖的强大个体，它们既是灾祸的化身，也是行走的宝藏。</description>
+		<label>无垠信标</label>
+		<description>从一个堕落者的笔记中我们意外发现了“信标”的一种使用方法，将机械师的技术与亵渎的仪式结合，我们能可控地召唤坍缩体中类似领袖的强大个体，它们既是灾祸的化身，也是行走的宝藏。</description>
 		<baseCost>1000</baseCost>
 		<techLevel>Industrial</techLevel>
 		<prerequisites>
@@ -45,5 +45,84 @@
 		<tab>Ark_ResearchTab</tab>
 		<researchViewX>7</researchViewX>
 		<researchViewY>3</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Ark_CollapseMechtech</defName>
+		<label>坍缩构造学说</label>
+		<description>邪魔对这个世界的影响正在以失控的速度加深，坍缩开始在无机材料上扩散，创造出危险的坍缩机械与腐化武装。这是人类的危机，但也是人类的机遇，为了不被虚无吞噬，拼命去研究并吸收敌人的力量也是一种出路。\n\n研究该科技将解锁制作与安装机械体模组块的工作。</description>
+		<baseCost>2000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>Ark_DemonSecret</li>
+		</prerequisites>
+		<requiredStudied>
+			<li>Ark_CollapseChip</li>
+		</requiredStudied>
+		<tab>Ark_ResearchTab</tab>
+		<researchViewX>7</researchViewX>
+		<researchViewY>4.5</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Ark_DepravedWeapon</defName>
+		<label>腐化武装</label>
+		<description>aaa</description>
+		<baseCost>200</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>Ark_CollapseMechtech</li>
+		</prerequisites>
+		<tab>Ark_ResearchTab</tab>
+		<researchViewX>8</researchViewX>
+		<researchViewY>4.2</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef ParentName="MechtechBase">
+		<defName>Ark_StandardMechC</defName>
+		<label>坍缩机械-标准</label>
+		<description>利用机械师的技术制造并控制转化为坍缩机械的标准机械体。</description>
+		<baseCost>200</baseCost>
+		<prerequisites>
+			<li>Ark_CollapseMechtech</li>
+			<li>StandardMechtech</li>
+		</prerequisites>
+		<tab>Ark_ResearchTab</tab>
+		<researchViewX>8</researchViewX>
+		<researchViewY>4.8</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="MechtechBase">
+		<defName>Ark_HighMechC</defName>
+		<label>坍缩机械-精锐</label>
+		<description>利用机械师的技术制造并控制转化为坍缩机械的高级机械体，让邪魔的先锋为己所用。</description>
+		<baseCost>600</baseCost>
+		<prerequisites>
+			<li>Ark_CollapseMechtech</li>
+			<li>HighMechtech</li>
+		</prerequisites>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<tab>Ark_ResearchTab</tab>
+		<researchViewX>9</researchViewX>
+		<researchViewY>4.8</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="MechtechBase">
+		<defName>Ark_UltraMechC</defName>
+		<label>坍缩机械-灾厄</label>
+		<description>利用机械师的技术制造并控制转化为坍缩机械的领袖机械体，驾驭昔日灾厄的载体、邪魔意志的延伸。</description>
+		<baseCost>1000</baseCost>
+		<prerequisites>
+			<li>Ark_CollapseMechtech</li>
+			<li>UltraMechtech</li>
+		</prerequisites>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<tab>Ark_ResearchTab</tab>
+		<researchViewX>10</researchViewX>
+		<researchViewY>4.8</researchViewY>
 	</ResearchProjectDef>
 </Defs>

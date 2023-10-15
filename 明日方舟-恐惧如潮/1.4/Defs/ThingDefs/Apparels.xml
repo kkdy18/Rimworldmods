@@ -60,7 +60,7 @@
 			<Mass>0.001</Mass>
 		</statBases>
 		<thingCategories>
-			<li>ApparelUtility</li>
+			<li>Ark_CollapseApparels</li>
 		</thingCategories>
 		<apparel>
 			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
@@ -108,6 +108,9 @@
 			<Insulation_Heat>2</Insulation_Heat>
 			<EquipDelay>4</EquipDelay>
 		</statBases>
+		<thingCategories>
+			<li>Ark_CollapseApparels</li>
+		</thingCategories>
 		<apparel>
 			<bodyPartGroups>
 				<li>FullHead</li>

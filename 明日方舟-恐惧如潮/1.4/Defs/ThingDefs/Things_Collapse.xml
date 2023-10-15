@@ -11,7 +11,7 @@
 		<thingClass>ThingWithComps</thingClass>
 		<techLevel>Archotech</techLevel>
 		<thingCategories>
-			<li>Artifacts</li>
+			<li>Ark_CollapseResources</li>
 		</thingCategories>
 		<tradeTags>
 			<li>Artifact</li>
@@ -41,7 +41,36 @@
 		</comps>
 	</ThingDef>
 
-	<ThingDef ParentName="MechResourceBase">
+	<ThingDef Name="Ark_DamonRemainBase" ParentName="ResourceBase" Abstract="True">
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>10</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<statBases>
+			<MaxHitPoints>1000</MaxHitPoints>
+			<MarketValue>1000</MarketValue>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Mass>1</Mass>
+			<Flammability>0.25</Flammability>
+		</statBases>
+		<intricate>true</intricate>
+		<thingCategories>
+			<li>Ark_CollapseResources</li>
+		</thingCategories>
+		<tradeTags>
+			<li>Ark_DamonRemains</li>
+		</tradeTags>
+		<comps>
+			<li Class="CompProperties_Studiable">
+				<cost>5</cost>
+				<completedLetterTitle>{STUDIER_labelShort}通过调查解锁了技术：{RESEARCH}。</completedLetterTitle>
+				<completedLetterText>通过解析{PARENT_label}，{STUDIER_labelShort}获得了研究{RESEARCH}所必要的前置知识。\n\n你的研究人员现在可以开始研究如何实际运用这项技术。</completedLetterText>
+				<completedLetterDef>PositiveEvent</completedLetterDef>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="Ark_DamonRemainBase">
 		<defName>Ark_NoteofBestower</defName>
 		<label>虚无布施的笔记</label>
 		<description>虚无布施身上唯一未被坍缩吞噬的现实物品，其中满是无序扭曲的文字与涂鸦，只是翻阅就会让人头脑发胀。研究它或许能让我们触及邪魔更深层的秘密，也可能让我们长出一只发光的邪魔眼睛去荒野上游荡。</description>
@@ -49,10 +78,32 @@
 			<texPath>Things/Item/Resource/Ark_NoteofBestower</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="Ark_DamonRemainBase">
+		<defName>Ark_CollapseChip</defName>
+		<label>腐化的指挥官芯片</label>
+		<description>研究灭绝炎蜂的残骸时发现的坍缩现象核心物，被类似生物组织的机械体结构包裹，不采取破坏性手段便无法将其取出。从芯片内解读出的数据相当惊人，这个芯片将为机械师打开通往新世界……不，通往深渊的大门。</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Ark_CollapseChip</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
 		<statBases>
-			<MaxHitPoints>1000</MaxHitPoints>
-			<MarketValue>1000</MarketValue>
-			<DeteriorationRate>0</DeteriorationRate>
+			<MarketValue>3000</MarketValue>
 		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="UnfinishedBase">
+		<defName>Ark_UnfinishedDepravedWeapon</defName>
+		<label>未完成的腐化武装</label>
+		<description>一件未完成的腐化武器。</description>
+		<statBases>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Weapon/Ark_UnfinishedDepravedWeapon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories Inherit="false" />
 	</ThingDef>
 </Defs>

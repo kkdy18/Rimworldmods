@@ -16,7 +16,7 @@
 		</butcherProducts>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseMechanoid" Name="Ark_BaseMechCollapse_L" Abstract="True">
+	<ThingDef ParentName="BaseMechanoid" Name="Ark_BaseMechCollapse_H" Abstract="True">
 		<statBases>
 			<MoveSpeed>2.5</MoveSpeed>
 			<ArmorRating_Blunt>0.22</ArmorRating_Blunt>
@@ -40,7 +40,7 @@
 		</butcherProducts>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseMechanoid" Name="Ark_BaseMechCollapse_S" Abstract="True">
+	<ThingDef ParentName="BaseMechanoid" Name="Ark_BaseMechCollapse_L" Abstract="True">
 		<statBases>
 			<MarketValue>800</MarketValue>
 			<MoveSpeed>3.4</MoveSpeed>
@@ -86,7 +86,7 @@
 	<ThingDef ParentName="Ark_BaseMechCollapse_M">
 		<defName>Ark_MechC_Scyther</defName>
 		<label>坍缩飞螳</label>
-		<description>一种快速、细长的近战特化机械体，已经被邪魔同化。它们的镰刃上流淌着邪魔的污染，再加上坍缩范式的加持它们将在战场上大杀四方。</description>
+		<description>一种快速、细长的近战特化机械体，已经被邪魔腐化。它们的镰刃上流淌着邪魔的污染，再加上坍缩范式的加持它们将在战场上大杀四方。</description>
 		<tools>
 			<li>
 				<label>左镰刃</label>
@@ -172,7 +172,7 @@
 	<ThingDef ParentName="Ark_BaseMechCollapse_M">
 		<defName>Ark_MechC_Lancer</defName>
 		<label>坍缩静螳</label>
-		<description>aaa</description>
+		<description>一种面部安装有巨大的光学传感器的远程战斗机械体，已经被邪魔腐化，装备有腐化标枪。</description>
 		<tools>
 			<li>
 				<label>铁头</label>
@@ -244,10 +244,10 @@
 		</weaponTags>
 	</PawnKindDef>
 
-	<ThingDef ParentName="Ark_BaseMechCollapse_S">
+	<ThingDef ParentName="Ark_BaseMechCollapse_L">
 		<defName>Ark_MechC_Militor</defName>
 		<label>坍缩小蠊</label>
-		<description>aaa</description>
+		<description>一种四尺高的轻型战斗机械体，已经被邪魔腐化，装备有腐化战刀。它们保留了原先低廉的造价和维护费用，并且作战方式变得更加激进。</description>
 		<statBases>
 			<MoveSpeed>3.8</MoveSpeed>
 		</statBases>
@@ -279,7 +279,6 @@
 				<hediffs>
 					<li>Ark_CollapseMechForm</li>
 					<li>Ark_CollapseMechForm2</li>
-					<li>Ark_CollapseMechForm3</li>
 					<li>Ark_CollapseEnemy</li>
 					<li>Ark_CollapseEnemy2</li>
 					<li>Ark_CollapseEnemy3</li>
@@ -317,10 +316,10 @@
 
 	<!--重型机械-->
 
-	<ThingDef ParentName="Ark_BaseMechCollapse_L">
+	<ThingDef ParentName="Ark_BaseMechCollapse_H">
 		<defName>Ark_MechC_Centipede</defName>
 		<label>坍缩蜈蚣</label>
-		<description>一种通过数十条细小的腿爬行的重型作战机械体，已经被邪魔同化。一如既往的重型装甲火力再加上坍缩影响带来的电磁冲击免疫与少量移速提升让它们比以前更难对付。</description>
+		<description>一种通过数十条细小的腿爬行的重型作战机械体，已经被邪魔腐化。一如既往的重型装甲火力再加上坍缩带来的电磁冲击免疫与少量移速提升让它们比以前更难对付。</description>
 		<race>
 			<body>MechanicalCentipede</body>
 			<baseBodySize>3.0</baseBodySize>
@@ -387,10 +386,10 @@
 		<controlGroupPortraitZoom>0.65</controlGroupPortraitZoom>
 	</PawnKindDef>
 
-	<ThingDef ParentName="Ark_BaseMechCollapse_L">
+	<ThingDef ParentName="Ark_BaseMechCollapse_H">
 		<defName>Ark_MechC_Tunneler</defName>
 		<label>陷落碎岩者</label>
-		<description>一种被设计为在偏僻地区采矿用的重型机械体，已经被邪魔同化。它们依然保留着挖掘采矿功能，但现在更多地出现在战场上依靠能量护盾与重型装甲正面向敌人推进，它们的动力爪也被改装成更适合震荡与冲击的模式，可以轻易粉碎矿石或者防御工事。</description>
+		<description>一种被设计为在偏僻地区采矿用的重型机械体，已经被邪魔腐化。它们依然保留着挖掘功能，但现在更多地出现在战场上依靠能量护盾与重型装甲正面向敌人推进，它们的动力爪也被改装成更适合震荡与冲击的模式，可以轻易粉碎顽固的矿石或者人类防御工事。</description>
 		<statBases>
 			<ArmorRating_Blunt>0.40</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.80</ArmorRating_Sharp>
@@ -506,7 +505,10 @@
 	<ThingDef ParentName="Ark_BaseMechCollapse_M">
 		<defName>Ark_MechC_Apocriton</defName>
 		<label>灭绝炎蜂</label>
-		<description>背叛的机械体指挥官，明晰的自我意识与对人类的恨意反而让他成为了机械体中最先投向邪魔的个体，而邪魔的赐福让他得以更好地享受杀戮的乐趣。坍缩将灭绝炎蜂的仇恨之火扭曲为真实的燃烧现象，从而赋予他使用火焰作战的能力，而憎恶毒蜂标志性的复活死亡机械体的能力也被扭曲为作用于自身，并且随着复活次数的累积，灭绝炎蜂过载的系统将持续提升他的机体性能。</description>
+		<description>背叛的机械体指挥官，明晰的自我意识与对人类的恨意反而让他成为了机械体中最先投向邪魔的个体，而邪魔的赐福让他得以更好地享受杀戮的乐趣。坍缩将灭绝炎蜂的仇恨之火扭曲为真实的燃烧现象，从而赋予他使用火焰作战的能力，而憎恶毒蜂标志性的复活死亡机械体的能力也被扭曲为作用于自身。\n\n随着复活次数的累积，灭绝炎蜂过载的系统将持续提升他的机体性能。</description>
+		<descriptionHyperlinks>
+			<ThingDef>Ark_CollapseChip</ThingDef>
+		</descriptionHyperlinks>
 		<statBases>
 			<MarketValue>1600</MarketValue>
 			<MoveSpeed>3.2</MoveSpeed>
@@ -562,6 +564,10 @@
 				</extraMeleeDamages>
 			</li>
 		</tools>
+		<butcherProducts>
+			<Ark_CollapseChip>1</Ark_CollapseChip>
+			<Ark_CollapseCube>100</Ark_CollapseCube>
+		</butcherProducts>
 		<comps>
 			<li Class="CompProperties_Explosive">
 				<wickTicks>0</wickTicks>
@@ -571,6 +577,19 @@
 				<propagationSpeed>0.5</propagationSpeed>
 				<chanceNeverExplodeFromDamage>1</chanceNeverExplodeFromDamage>
 				<extraInspectStringKey>MechStunPulseWarning</extraInspectStringKey>
+			</li>
+			<li Class="CompProperties_ProjectileInterceptor">
+				<radius>2.1</radius>
+				<interceptGroundProjectiles>true</interceptGroundProjectiles>
+				<interceptNonHostileProjectiles>false</interceptNonHostileProjectiles>
+				<interceptOutgoingProjectiles>false</interceptOutgoingProjectiles>
+				<color>(0.8, 0.1, 0.1)</color>
+				<reactivateEffect>BulletShieldGenerator_Reactivate</reactivateEffect>
+				<activeSound>BulletShield_Ambience</activeSound>
+				<hitPoints>300</hitPoints>
+				<hitPointsRestoreInstantlyAfterCharge>true</hitPointsRestoreInstantlyAfterCharge>
+				<disarmedByEmpForTicks>300</disarmedByEmpForTicks>
+				<chargeDurationTicks>600</chargeDurationTicks>
 			</li>
 			<li Class="CompProperties_Effecter">
 				<effecterDef>ApocrionAttached</effecterDef>
@@ -623,7 +642,7 @@
 	<ThingDef ParentName="Ark_BaseMechCollapse_M">
 		<defName>Ark_MechC_Bestower</defName>
 		<label>虚无布施</label>
-		<description>被邪魔转化的帝国布施者，肉体已脱离人类的范畴，经常被大量坍缩体簇拥。由于对邪魔有着相当深入的理解而掌握着危险的力量，出现在袭击殖民地的坍缩体集群中时会显著提高袭击的威胁度。\n\n他曾经为帝国传播荣光，而如今为邪魔播撒虚无，他对帝国的忠诚无可置疑，但当他偶然窥见邪魔的本质的那一刻，他找到了自己真正的信仰。被狂喜淹没的凡人向虚无献上一切，于是凡物升华，从此化为“神”之容器行走世间。</description>
+		<description>被邪魔转化的帝国布施者，肉体已脱离人类的范畴，经常被大量坍缩体簇拥。由于对邪魔有着相当深入的理解而掌握着危险的力量，出现在袭击殖民地的坍缩体集群中时会显著提高袭击的威胁度。\n\n他曾经为帝国传播荣光，而如今为邪魔播撒虚无，他对帝国的忠诚无可置疑，但当他偶然窥见邪魔的本质的那一刻，他找到了自己真正的信仰。被狂喜淹没的凡人向虚无献上一切，从此凡人化为“神”之容器行走世间。</description>
 		<statBases>
 			<MarketValue>1750</MarketValue>
 			<MoveSpeed>4.6</MoveSpeed>

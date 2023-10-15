@@ -518,9 +518,6 @@
 
 	<HediffDef Name="Ark_CollapseMechBase" ParentName="Ark_CollapseFormBase" Abstract="True">
 		<defaultLabelColor>(1,0.25,1)</defaultLabelColor>
-		<comps>
-			<li Class="HediffCompProperties_DisappearsOnDeath"/>
-		</comps>
 	</HediffDef>
 	
 	<HediffDef ParentName="Ark_CollapseMechBase">
@@ -549,7 +546,7 @@
 	<HediffDef ParentName="Ark_CollapseMechBase">
 		<defName>Ark_CollapseMechForm2</defName>
 		<label>坍缩模组-情绪吸收合金</label>
-		<description>坍缩重构了机械体的机体部件，这类机械体超过80%的部件由一种不可能存在于现实的合金组成，合金以未知的方式吸收人类生成的名为“情绪”的电信号提高自身强度与自行修复。\n\n我们捕获并拆解了整整两百头能自修复的铁乌龟，得出的结论是那个屁用没有的合金离开活的坍缩体就会分解。</description>
+		<description>坍缩重构了机械体的机体部件，这类机械体超过80%的部件由一种不可能存在于现实的合金组成，合金以未知的方式吸收人类生成的名为“情绪”的电信号提高结构强度与自行修复。\n\n我们捕获并拆解了整整两百头能自修复的铁乌龟，得出的结论是那个屁用没有的合金离开活的坍缩机械就会分解。</description>
 		<stages>
 			<li>
 				<statOffsets>
@@ -588,13 +585,78 @@
 	<HediffDef ParentName="Ark_CollapseMechBase">
 		<defName>Ark_CollapseMechForm4</defName>
 		<label>坍缩模组-后备隐藏能源</label>
-		<description>被坍缩污染的反应堆不再遵循能量守恒定律，转化时消耗与生成的能量极端失衡，但由于缺乏利用过剩能量的途径，这类机械体的特点只有在损毁时会发生惊人的超级爆炸。\n\n我们用抗坍缩剂中和了邪魔污染，现在这类机械体只会产生符合物理定律的科学爆炸，而不是能把一切炸去亚空间的坍缩与诡异黑雾。\n\n安装该模组的机械体大概率无法回收（尸骨无存），请谨慎选择（炸了不会心疼的）。</description>
+		<description>被坍缩污染的反应堆不再遵循能量守恒定律，转化时消耗与生成的能量极端失衡，但由于缺乏利用过剩能量的途径，这类机械体的特点只有在损毁时会发生惊人的超级爆炸。\n\n我们用抗坍缩剂中和了邪魔污染，现在安装该模组的机械体只会产生符合物理定律的科学爆炸，而不是能把一切炸去亚空间的邪魔坍缩与诡异黑雾。\n\n安装该模组的机械体大概率无法回收（尸骨无存），请谨慎选择（炸了不会心疼的）。</description>
 		<comps>
 			<li Class="Ark_GSWT.HCP_Exploder">
 				<explosiveRadius>11.9</explosiveRadius>
 				<damageDef>BombSuper</damageDef>
 				<explosionSound>Explosion_GiantBomb</explosionSound>
 			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="Ark_CollapseMechBase">
+		<defName>Ark_CollapseMechForm5</defName>
+		<label>坍缩模组-心理学隐身力场</label>
+		<description>坍缩静螳承载的邪魔坍缩性质更倾向于思维干扰而非对射击能力的强化，这一发现引起了我们的重视，在消耗了大量坍缩静螳后研究者成功提取出了那种让坍缩体看不见摸不着的恼人力量。安装该模组的机械体能够可控地发射干扰思维认知的电波，使被影响的对象无法察觉它的存在。</description>
+		<comps>
+			<li Class="HediffCompProperties_GiveAbility">
+				<abilityDefs>
+					<li>Ark_ability_MechInvisibility</li>
+				</abilityDefs>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<AbilityDef>
+		<defName>Ark_ability_MechInvisibility</defName>
+		<label>隐身力场</label>
+		<description>开启力场，准备隐匿行动。</description>
+		<iconPath>Things/Special/Ark_MechInvisibility</iconPath>
+		<cooldownTicksRange>30000</cooldownTicksRange>
+		<displayOrder>200</displayOrder>
+		<aiCanUse>false</aiCanUse>
+		<statBases>
+			<Ability_Duration>100</Ability_Duration>
+			<Ability_EffectRadius>0</Ability_EffectRadius>
+		</statBases>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>0</warmupTime>
+			<range>0</range>
+			<drawAimPie>False</drawAimPie>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+				<canTargetPawns>false</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetAnimals>false</canTargetAnimals>
+			</targetParams>
+		</verbProperties>
+		<hotKey>Misc12</hotKey>
+		<targetRequired>False</targetRequired>
+		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>Ark_hediff_MechInvisibility</hediffDef>
+				<onlyApplyToSelf>True</onlyApplyToSelf>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<HediffDef ParentName="Ark_CollapseFormBase">
+		<defName>Ark_hediff_MechInvisibility</defName>
+		<label>不可视</label>
+		<description>心理学隐身力场已经生效，为了保证模组能长期的稳定的工作，力场的运行时长最好不要超过2小时。</description>
+		<defaultLabelColor>(0.75,0.75,0.75)</defaultLabelColor>
+		<comps>
+			<li Class="HediffCompProperties">
+				<compClass>HediffComp_Invisibility</compClass>
+			</li>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>True</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
 		</comps>
 	</HediffDef>
 </Defs>

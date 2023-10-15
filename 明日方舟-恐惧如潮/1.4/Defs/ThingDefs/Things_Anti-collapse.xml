@@ -13,7 +13,7 @@
 			<MarketValue>1.8</MarketValue>
 		</statBases>
 		<thingCategories>
-			<li>PlantMatter</li>
+			<li>Ark_CollapseResources</li>
 		</thingCategories>
 	</ThingDef>
 

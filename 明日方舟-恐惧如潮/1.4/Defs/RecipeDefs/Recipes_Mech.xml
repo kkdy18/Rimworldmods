@@ -1,272 +1,367 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!--	<RecipeDef Name="BaseMechanoidRecipe" Abstract="True">
-		<jobString>Gestating mech.</jobString>
+	<RecipeDef Name="Ark_BaseMechGestate" Abstract="True">
+		<jobString>正在培育坍缩构造机械体。</jobString>
 		<workAmount>1800</workAmount>
 		<gestationCycles>1</gestationCycles>
-		<formingTicks>120000</formingTicks>
+		<formingTicks>30000</formingTicks>
+		<!-- 0.5 days -->
 		<mechanitorOnlyRecipe>true</mechanitorOnlyRecipe>
 		<workSpeedStat>MechFormingSpeed</workSpeedStat>
 		<soundWorking>MechGestatorCycle_Initiating</soundWorking>
-	</RecipeDef>-->
-
-	<RecipeDef>
-		<defName>Ark_Recipe_SmashMechTriple</defName>
-		<label>三倍叠放拆解机械体</label>
-		<description>传统的机械体拆解方式实在是过于低效，技艺高超的机械师可以同时分解三台机械体而不影响工作速度，三台不是技艺的极限，而是工作台只能放下三台！</description>
-		<jobString>正在拆解机械体。</jobString>
-		<recipeUsers>
-			<li>TableMachining</li>
-		</recipeUsers>
-		<workAmount>300</workAmount>
-		<soundWorking>Recipe_ButcherCorpseMechanoid</soundWorking>
-		<workSpeedStat>ButcheryMechanoidSpeed</workSpeedStat>
-		<workSkill>Crafting</workSkill>
-		<efficiencyStat>ButcheryMechanoidEfficiency</efficiencyStat>
-		<effectWorking>ButcherMechanoid</effectWorking>
-		<uiIconThing>Steel</uiIconThing>
-		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>Corpses</li>
-					</categories>
-				</filter>
-				<count>1</count>
-			</li>
-			<li>
-				<filter>
-					<categories>
-						<li>Corpses</li>
-					</categories>
-				</filter>
-				<count>1</count>
-			</li>
-			<li>
-				<filter>
-					<categories>
-						<li>Corpses</li>
-					</categories>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<specialProducts>
-			<li>Butchery</li>
-		</specialProducts>
-		<fixedIngredientFilter>
-			<categories>
-				<li>CorpsesMechanoid</li>
-			</categories>
-		</fixedIngredientFilter>
-		<skillRequirements>
-			<Crafting>10</Crafting>
-		</skillRequirements>
 	</RecipeDef>
 
-	<RecipeDef Abstract="True" Name="Ark_MakeMechModuleBase">
-		<description>将一只坍缩机械体的能力萃取并封装进一个方盒中，这种神话般的技术自然不可能依靠普通的机械工具实现，这一次我们要撬动坍缩的力量为人类所用，加工前请务必准备足量的抗坍缩剂。\n\n模组块的外壳其实是重铸的机械体残骸，坍缩刚好把它压成了方块的形状，于是研究者将成品命名为模组块。</description>
-		<jobString>正在加工模组块。</jobString>
+	<RecipeDef Name="Ark_CollapseMechGestate_M" ParentName="Ark_BaseMechGestate" Abstract="True">
 		<recipeUsers>
-			<li>FabricationBench</li>
+			<li>LargeMechGestator</li>
 		</recipeUsers>
-		<workAmount>1500</workAmount>
-		<ingredients>
+		<gestationCycles>2</gestationCycles>
+		<researchPrerequisite>Ark_StandardMechC</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef Name="Ark_CollapseMechGestate_H" ParentName="Ark_BaseMechGestate" Abstract="True">
+		<recipeUsers>
+			<li>LargeMechGestator</li>
+		</recipeUsers>
+		<gestationCycles>4</gestationCycles>
+	</RecipeDef>
+
+	<RecipeDef ParentName="Ark_CollapseMechGestate_M">
+		<defName>Ark_CollapseGestate_Scyther</defName>
+		<label>培育坍缩飞螳</label>
+		<description>培育一台坍缩飞螳，邪魔的刀锋。</description>
+		<ingredients Inherit="False">
 			<li>
 				<filter>
-					<categories>
-						<li>Corpses</li>
-					</categories>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
 				</filter>
-				<count>1</count>
+				<count>75</count>
 			</li>
 			<li>
 				<filter>
 					<thingDefs>
-						<li>Ark_CollapseTumor</li>
+						<li>Ark_CollapseCube</li>
 					</thingDefs>
 				</filter>
-				<count>1</count>
+				<count>75</count>
 			</li>
 			<li>
 				<filter>
 					<thingDefs>
-						<li>Ark_Anti-collapseStoste</li>
+						<li>Ark_Essential</li>
 					</thingDefs>
 				</filter>
-				<count>2</count>
+				<count>40</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SubcoreRegular</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
 			</li>
 		</ingredients>
-		<fixedIngredientFilter>
-			<specialFiltersToAllow>
-				<li>AllowCorpsesMechEnemy</li>
-			</specialFiltersToAllow>
-		</fixedIngredientFilter>
-		<forceHiddenSpecialFilters>
-			<li>AllowCorpsesMechEnemy</li>
-		</forceHiddenSpecialFilters>
-		<soundWorking>Recipe_ButcherCorpseMechanoid</soundWorking>
-		<workSpeedStat>ButcheryMechanoidSpeed</workSpeedStat>
-		<workSkill>Crafting</workSkill>
-		<efficiencyStat>ButcheryMechanoidEfficiency</efficiencyStat>
-		<effectWorking>ButcherMechanoid</effectWorking>
-	</RecipeDef>
-
-	<RecipeDef ParentName="Ark_MakeMechModuleBase">
-		<defName>Ark_MakeMechModule_Scyther</defName>
-		<label>加工坍缩飞螳模组块</label>
-		<uiIconThing>Ark_MechModule_Scyther</uiIconThing>
 		<products>
-			<Ark_MechModule_Scyther>1</Ark_MechModule_Scyther>
+			<Ark_MechC_Scyther>1</Ark_MechC_Scyther>
 		</products>
-		<fixedIngredientFilter>
-			<thingDefs>
-				<li>Corpse_Ark_MechC_Scyther</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-	</RecipeDef>
-
-	<RecipeDef ParentName="Ark_MakeMechModuleBase">
-		<defName>Ark_MakeMechModule_Lancer</defName>
-		<label>加工坍缩静螳模组块</label>
-		<uiIconThing>Ark_MechModule_Lancer</uiIconThing>
-		<products>
-			<Ark_MechModule_Lancer>1</Ark_MechModule_Lancer>
-		</products>
-		<fixedIngredientFilter>
-			<thingDefs>
-				<li>Corpse_Ark_MechC_Lancer</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-	</RecipeDef>
-
-	<RecipeDef ParentName="Ark_MakeMechModuleBase">
-		<defName>Ark_MakeMechModule_Militor</defName>
-		<label>加工坍缩小蠊模组块</label>
-		<uiIconThing>Ark_MechModule_Militor</uiIconThing>
-		<products>
-			<Ark_MechModule_Militor>1</Ark_MechModule_Militor>
-		</products>
-		<fixedIngredientFilter>
-			<thingDefs>
-				<li>Corpse_Ark_MechC_Militor</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-	</RecipeDef>
-
-	<RecipeDef ParentName="Ark_MakeMechModuleBase">
-		<defName>Ark_MakeMechModule_Tunneler</defName>
-		<label>加工陷落碎岩者模组块</label>
-		<uiIconThing>Ark_MechModule_Tunneler</uiIconThing>
-		<products>
-			<Ark_MechModule_Tunneler>1</Ark_MechModule_Tunneler>
-		</products>
-		<fixedIngredientFilter>
-			<thingDefs>
-				<li>Corpse_Ark_MechC_Tunneler</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-	</RecipeDef>
-
-	<RecipeDef ParentName="Ark_MakeMechModuleBase">
-		<defName>Ark_MakeMechModule_Apocriton</defName>
-		<label>加工灭绝炎蜂模组块</label>
-		<uiIconThing>Ark_MechModule_Apocriton</uiIconThing>
-		<products>
-			<Ark_MechModule_Apocriton>1</Ark_MechModule_Apocriton>
-		</products>
-		<fixedIngredientFilter>
-			<thingDefs>
-				<li>Corpse_Ark_MechC_Apocriton</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-	</RecipeDef>
-
-	<RecipeDef Abstract="True" Name="Ark_InstallMechModuleBase">
-		<workerClass>Recipe_InstallImplant</workerClass>
-		<workAmount>1500</workAmount>
-		<jobString>正在安装模组块。</jobString>
-		<effectWorking>MechRepairing</effectWorking>
-		<soundWorking>RepairMech_Touch</soundWorking>
-		<workSpeedStat>ButcheryMechanoidSpeed</workSpeedStat>
-		<workSkill>Crafting</workSkill>
-		<workSkillLearnFactor>16</workSkillLearnFactor>
-		<mechanitorOnlyRecipe>true</mechanitorOnlyRecipe>
-		<surgeryOutcomeEffect IsNull="True"/>
-		<skillRequirements>
-			<Crafting>9</Crafting>
-		</skillRequirements>
-		<recipeUsers>
-			<li>Ark_MechC_Scyther</li>
-			<li>Ark_MechC_Lancer</li>
-			<li>Ark_MechC_Militor</li>
-			<li>Ark_MechC_Centipede</li>
-			<li>Ark_MechC_Tunneler</li>
-		</recipeUsers>
-	</RecipeDef>
-
-	<RecipeDef>
-		<defName>Ark_Anti-collapseMechRefit</defName>
-		<label>抗坍缩镀层改装</label>
-		<description>将大量抗坍缩原液注入机械体，浸泡重要部件并形成稳定性极高的镀层，除非机械体受到严重破坏否则无需修补镀层。抗坍缩改装能使机械体的性能轻度提升。</description>
 		<descriptionHyperlinks>
-			<ThingDef>Ark_Anti-collapseStoste</ThingDef>
-			<HediffDef>Ark_Anti-collapseCladding</HediffDef>
+			<ThingDef>Ark_MechC_Scyther</ThingDef>
 		</descriptionHyperlinks>
-		<jobString>正在形成抗坍缩镀层。</jobString>
-		<ingredients>
+	</RecipeDef>
+
+	<RecipeDef ParentName="Ark_CollapseMechGestate_M">
+		<defName>Ark_CollapseGestate_Lancer</defName>
+		<label>培育坍缩静螳</label>
+		<description>培育一台坍缩静螳，邪魔的冷枪手。</description>
+		<ingredients Inherit="False">
 			<li>
 				<filter>
 					<thingDefs>
-						<li>Ark_Anti-collapseStoste</li>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>75</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Ark_CollapseCube</li>
+					</thingDefs>
+				</filter>
+				<count>75</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Ark_Essential</li>
+					</thingDefs>
+				</filter>
+				<count>40</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SubcoreRegular</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<Ark_MechC_Lancer>1</Ark_MechC_Lancer>
+		</products>
+		<descriptionHyperlinks>
+			<ThingDef>Ark_MechC_Lancer</ThingDef>
+		</descriptionHyperlinks>
+	</RecipeDef>
+
+	<RecipeDef ParentName="Ark_BaseMechGestate">
+		<defName>Ark_CollapseGestate_Militor</defName>
+		<label>培育坍缩小蠊</label>
+		<description>培育一台坍缩小蠊，邪魔的炮灰。</description>
+		<recipeUsers>
+			<li>MechGestator</li>
+		</recipeUsers>
+		<researchPrerequisite>Ark_StandardMechC</researchPrerequisite>
+		<ingredients Inherit="False">
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Ark_CollapseCube</li>
 					</thingDefs>
 				</filter>
 				<count>5</count>
 			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SubcoreBasic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<Ark_MechC_Militor>1</Ark_MechC_Militor>
+		</products>
+		<descriptionHyperlinks>
+			<ThingDef>Ark_MechC_Militor</ThingDef>
+		</descriptionHyperlinks>
+	</RecipeDef>
+
+	<RecipeDef ParentName="Ark_CollapseMechGestate_M">
+		<defName>Ark_CollapseGestate_Tunneler</defName>
+		<label>培育陷落碎岩者</label>
+		<description>培育一台陷落碎岩者，邪魔的攻城车。</description>
+		<gestationCycles>3</gestationCycles>
+		<researchPrerequisite>Ark_StandardMechC</researchPrerequisite>
+		<ingredients Inherit="False">
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>150</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Ark_CollapseCube</li>
+					</thingDefs>
+				</filter>
+				<count>75</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Ark_Essential</li>
+					</thingDefs>
+				</filter>
+				<count>40</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SubcoreRegular</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<Ark_MechC_Tunneler>1</Ark_MechC_Tunneler>
+		</products>
+		<descriptionHyperlinks>
+			<ThingDef>Ark_MechC_Tunneler</ThingDef>
+		</descriptionHyperlinks>
+	</RecipeDef>
+
+	<RecipeDef ParentName="Ark_CollapseMechGestate_H">
+		<defName>Ark_CollapseGestate_Centipede</defName>
+		<label>培育坍缩蜈蚣</label>
+		<description>培育一台坍缩蜈蚣，邪魔的移动堡垒。</description>
+		<researchPrerequisite>Ark_HighMechC</researchPrerequisite>
+		<ingredients Inherit="False">
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>250</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Ark_CollapseCube</li>
+					</thingDefs>
+				</filter>
+				<count>100</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Ark_Essential</li>
+					</thingDefs>
+				</filter>
+				<count>80</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SubcoreHigh</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<Ark_MechC_Centipede>1</Ark_MechC_Centipede>
+		</products>
+		<descriptionHyperlinks>
+			<ThingDef>Ark_MechC_Centipede</ThingDef>
+		</descriptionHyperlinks>
+	</RecipeDef>
+
+	<!--坍缩机械Boss-->
+
+	<RecipeDef ParentName="Ark_BaseMechGestate">
+		<defName>Ark_CollapseGestate_Apocriton</defName>
+		<label>培育灭绝炎蜂</label>
+		<description>培育一台灭绝炎蜂，为殖民地冲锋陷阵的好帮手。\n\n理论上如果你正在培育灭绝炎蜂，那你应该已经击败了它与它的原型，恭喜你战胜了这个癫狂的毁灭者，现在给它打上殖民地的印记，让邪魔知道谁才是边缘世界的老大！</description>
+		<recipeUsers>
+			<li>LargeMechGestator</li>
+		</recipeUsers>
+		<gestationCycles>3</gestationCycles>
+		<researchPrerequisite>Ark_UltraMechC</researchPrerequisite>
+		<ingredients Inherit="False">
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Ark_CollapseCube</li>
+					</thingDefs>
+				</filter>
+				<count>200</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Ark_CollapseChip</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>NanostructuringChip</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SubcoreHigh</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<Ark_MechC_Apocriton>1</Ark_MechC_Apocriton>
+		</products>
+		<descriptionHyperlinks>
+			<ThingDef>Ark_MechC_Apocriton</ThingDef>
+		</descriptionHyperlinks>
+	</RecipeDef>
+
+	<RecipeDef Name="Ark_BaseMechResurrect" Abstract="True">
+		<mechResurrection>true</mechResurrection>
+		<workAmount>1800</workAmount>
+		<gestationCycles>1</gestationCycles>
+		<formingTicks>30000</formingTicks>
+		<!-- 0.5 days -->
+		<mechanitorOnlyRecipe>true</mechanitorOnlyRecipe>
+		<workSpeedStat>MechFormingSpeed</workSpeedStat>
+		<soundWorking>MechGestatorCycle_Initiating</soundWorking>
+		<fixedIngredientFilter>
+			<specialFiltersToAllow>
+				<li>AllowCorpsesMechFriendly</li>
+			</specialFiltersToAllow>
+		</fixedIngredientFilter>
+		<forceHiddenSpecialFilters>
+			<li>AllowCorpsesMechFriendly</li>
+		</forceHiddenSpecialFilters>
+	</RecipeDef>
+
+	<RecipeDef ParentName="Ark_BaseMechResurrect">
+		<defName>Ark_CollapseMechResurrect</defName>
+		<label>复活坍缩机械</label>
+		<description>利用坍缩方晶的特性“复活”友方坍缩机械，与其说是复活，不如说是将被放逐的坍缩体重新召唤回现实，非常高效、实惠且环保的技术。</description>
+		<recipeUsers>
+			<li>LargeMechGestator</li>
+		</recipeUsers>
+		<jobString>正在复活坍缩构造机械体。</jobString>
+		<researchPrerequisite>Ark_CollapseMechtech</researchPrerequisite>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Corpses</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Ark_CollapseCube</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>Ark_Anti-collapseStoste</li>
+				<li>Corpse_Ark_MechC_Scyther</li>
+				<li>Corpse_Ark_MechC_Lancer</li>
+				<li>Corpse_Ark_MechC_Centipede</li>
+				<li>Corpse_Ark_MechC_Tunneler</li>
+				<li>Corpse_Ark_MechC_Apocriton</li>
 			</thingDefs>
 		</fixedIngredientFilter>
-		<addsHediff>Ark_Anti-collapseCladding</addsHediff>
-		<appliedOnFixedBodyParts>
-			<li>ArtificialBrain</li>
-		</appliedOnFixedBodyParts>
-		<workerClass>Recipe_InstallImplant</workerClass>
-		<workAmount>2500</workAmount>
-		<effectWorking>MechRepairing</effectWorking>
-		<soundWorking>RepairMech_Touch</soundWorking>
-		<workSpeedStat>ButcheryMechanoidSpeed</workSpeedStat>
-		<workSkill>Crafting</workSkill>
-		<workSkillLearnFactor>0</workSkillLearnFactor>
-		<mechanitorOnlyRecipe>true</mechanitorOnlyRecipe>
-		<surgeryOutcomeEffect IsNull="True"/>
-		<skillRequirements>
-			<Crafting>5</Crafting>
-		</skillRequirements>
-		<recipeUsers>
-			<li>Mech_Militor</li>
-			<li>Mech_Lifter</li>
-			<li>Mech_Constructoid</li>
-			<li>Mech_Fabricor</li>
-			<li>Mech_Agrihand</li>
-			<li>Mech_Cleansweeper</li>
-			<li>Mech_Paramedic</li>
-			<li>Mech_Legionary</li>
-			<li>Mech_Tesseron</li>
-			<li>Mech_Scorcher</li>
-			<li>Mech_Apocriton</li>
-			<li>Mech_Tunneler</li>
-			<li>Mech_Centurion</li>
-			<li>Mech_Warqueen</li>
-			<li>Mech_Diabolus</li>
-			<li>Mech_CentipedeBlaster</li>
-			<li>Mech_CentipedeGunner</li>
-			<li>Mech_CentipedeBurner</li>
-			<li>Mech_Lancer</li>
-			<li>Mech_Scyther</li>
-			<li>Mech_Pikeman</li>
-		</recipeUsers>
 	</RecipeDef>
 </Defs>

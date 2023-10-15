@@ -182,15 +182,15 @@
 					</li>
 					<li Class="HediffGiver_Random">
 						<hediff>Ark_CollapseHuman3</hediff>
-						<mtbDays>0.3</mtbDays>
+						<mtbDays>0.5</mtbDays>
 					</li>
 					<li Class="HediffGiver_Random">
 						<hediff>Ark_CollapseHuman4</hediff>
-						<mtbDays>0.3</mtbDays>
+						<mtbDays>0.7</mtbDays>
 					</li>
 					<li Class="HediffGiver_Random">
 						<hediff>Ark_hediff_CollapseTumor</hediff>
-						<mtbDays>5</mtbDays>
+						<mtbDays>1</mtbDays>
 						<canAffectAnyLivePart>true</canAffectAnyLivePart>
 					</li>
 				</hediffGivers>
@@ -210,19 +210,19 @@
 				<hediffGivers>
 					<li Class="HediffGiver_Random">
 						<hediff>Ark_CollapseHuman5</hediff>
-						<mtbDays>0.3</mtbDays>
+						<mtbDays>0.5</mtbDays>
 					</li>
 					<li Class="HediffGiver_Random">
 						<hediff>Ark_CollapseHuman6</hediff>
-						<mtbDays>0.3</mtbDays>
+						<mtbDays>0.5</mtbDays>
 					</li>
 					<li Class="HediffGiver_Random">
 						<hediff>Ark_CollapseHuman7</hediff>
-						<mtbDays>0.3</mtbDays>
+						<mtbDays>0.5</mtbDays>
 					</li>
 					<li Class="HediffGiver_Random">
 						<hediff>Ark_hediff_CollapseTumor</hediff>
-						<mtbDays>2</mtbDays>
+						<mtbDays>0.3</mtbDays>
 						<canAffectAnyLivePart>true</canAffectAnyLivePart>
 					</li>
 				</hediffGivers>
@@ -271,6 +271,7 @@
 		</descriptionHyperlinks>
 		<techLevel>Archotech</techLevel>
 		<thingCategories>
+			<li>Ark_CollapseResources</li>
 		</thingCategories>
 		<graphicData>
 			<texPath>Things/Item/Health/HealthItem</texPath>

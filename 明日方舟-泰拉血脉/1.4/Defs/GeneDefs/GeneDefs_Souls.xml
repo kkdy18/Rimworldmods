@@ -74,6 +74,8 @@
 		<cooldownTicksRange>300</cooldownTicksRange>
 		<displayOrder>200</displayOrder>
 		<aiCanUse>false</aiCanUse>
+		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
 		<statBases>
 			<Ability_Duration>126</Ability_Duration>
 			<Ability_EffectRadius>0</Ability_EffectRadius>
@@ -83,24 +85,16 @@
 			<warmupTime>0</warmupTime>
 			<range>0</range>
 			<drawAimPie>False</drawAimPie>
-			<requireLineOfSight>False</requireLineOfSight>
 			<targetParams>
 				<canTargetSelf>true</canTargetSelf>
 				<canTargetPawns>false</canTargetPawns>
 				<canTargetBuildings>false</canTargetBuildings>
 				<canTargetAnimals>false</canTargetAnimals>
-				<canTargetHumans>false</canTargetHumans>
-				<canTargetMechs>false</canTargetMechs>
 			</targetParams>
 		</verbProperties>
 		<hotKey>Misc12</hotKey>
-		<warmupStartSound>CombatCommand_Warmup</warmupStartSound>
 		<targetRequired>False</targetRequired>
 		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
-		<stunTargetWhileCasting>True</stunTargetWhileCasting>
-		<showPsycastEffects>False</showPsycastEffects>
-		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
-		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
 		<comps>
 			<li Class="CompProperties_AbilityGiveHediff">
 				<compClass>CompAbilityEffect_GiveHediff</compClass>
@@ -110,8 +104,22 @@
 			</li>
 			<li Class = "CompProperties_AbilityGiveMentalState">
 				<compClass>CompAbilityEffect_GiveMentalState</compClass>
-				<stateDef>BerserkTrance</stateDef>
+				<stateDef>Ark_OniBerserk</stateDef>
 			</li>
 		</comps>
 	</AbilityDef>
+
+	<MentalStateDef ParentName="BaseMentalState">
+		<defName>Ark_OniBerserk</defName>
+		<label>恶鬼狂怒</label>
+		<category>Aggro</category>
+		<nameColor>(1,0,0.5)</nameColor>
+		<baseInspectLine>恶鬼狂怒</baseInspectLine>
+		<stateEffecter>Berserk</stateEffecter>
+		<blockRandomInteraction>true</blockRandomInteraction>
+		<blockNormalThoughts>true</blockNormalThoughts>
+		<recoverFromSleep>false</recoverFromSleep>
+		<recoverFromCollapsingExhausted>false</recoverFromCollapsingExhausted>
+		<allowGuilty>false</allowGuilty>
+	</MentalStateDef>
 </Defs>

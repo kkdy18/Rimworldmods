@@ -1,6 +1,48 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<ThingDef Name="Ark_BaseDepravedWeapons" Abstract="True" ParentName="BaseWeapon">
+		<techLevel>Spacer</techLevel>
+		<smeltable>true</smeltable>
+		<burnableByRecipe>true</burnableByRecipe>
+		<relicChance>1</relicChance>
+		<statBases>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Beauty>10</Beauty>
+			<SellPriceFactor>1.2</SellPriceFactor>
+		</statBases>
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers>
+				<li>FabricationBench</li>
+			</recipeUsers>
+			<unfinishedThingDef>Ark_UnfinishedDepravedWeapon</unfinishedThingDef>
+		</recipeMaker>
+		<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+		<tradeTags>
+			<li>Ark_DepravedWeapons</li>
+		</tradeTags>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Biocodable"/>
+		</comps>
+	</ThingDef>
 
+	<ThingDef Name="Ark_BaseDepravedWeaponsMelee" Abstract="True" ParentName="Ark_BaseDepravedWeapons">
+		<thingCategories>
+			<li>Ark_DepravedWeaponsMelee</li>
+		</thingCategories>
+		<weaponClasses>
+			<li>Melee</li>
+		</weaponClasses>
+	</ThingDef>
+	
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>Ark_CollapseShiv</defName>
 		<label>歪曲仪刃</label>
@@ -23,9 +65,7 @@
 			<Mass>0.5</Mass>
 		</statBases>
 		<weaponTags>
-			<li>MedievalMeleeBasic</li>
-			<li>NeolithicMeleeBasic</li>
-			<li>Ark_CollapseS</li>
+			<li>Ark_CollapseShiv</li>
 		</weaponTags>
 		<tools>
 			<li>

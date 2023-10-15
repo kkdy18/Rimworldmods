@@ -86,6 +86,12 @@
 				<statFactors>
 					<StaggerDurationFactor>0</StaggerDurationFactor>
 				</statFactors>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>1</offset>
+					</li>
+				</capMods>
 			</li>
 		</stages>
 		<comps>
@@ -112,5 +118,14 @@
 				</statFactors>
 			</li>
 		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>True</showRemainingTime>
+				<disappearsAfterTicks>
+					<min>60000</min>
+					<max>60000</max>
+				</disappearsAfterTicks>
+			</li>
+		</comps>
 	</HediffDef>
 </Defs>

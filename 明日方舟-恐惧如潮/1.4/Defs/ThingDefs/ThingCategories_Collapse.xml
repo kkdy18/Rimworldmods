@@ -1,8 +1,47 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<ThingCategoryDef>
-		<defName>Ark_MechModule</defName>
-		<label>机械体模组块</label>
+		<defName>Ark_MechModules</defName>
+		<label>坍缩机械模组块</label>
 		<parent>Items</parent>
 	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>Ark_CollapseResources</defName>
+		<label>坍缩造物</label>
+		<parent>Root</parent>
+		<resourceReadoutRoot>true</resourceReadoutRoot>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>Ark_CollapseApparels</defName>
+		<label>染污遗物</label>
+		<parent>Apparel</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>Ark_DepravedWeapons</defName>
+		<label>腐化武装</label>
+		<parent>Weapons</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>Ark_DepravedWeaponsMelee</defName>
+		<label>近战</label>
+		<parent>Ark_DepravedWeapons</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>Ark_DepravedWeaponsRanged</defName>
+		<label>远程</label>
+		<parent>Ark_DepravedWeapons</parent>
+	</ThingCategoryDef>
+	<!--<tradeTags>
+			<li>Ark_DamonRemains</li>
+			<label>邪魔遗物</label>
+			<li>Ark_MechModules</li>
+			<label>坍缩机械模组块</label>
+			<li>Ark_DepravedWeapons</li>
+			<label>腐化武装</label>
+		</tradeTags>-->
 </Defs>
