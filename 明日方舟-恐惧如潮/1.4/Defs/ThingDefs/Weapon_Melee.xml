@@ -1,89 +1,57 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef Name="Ark_BaseDepravedWeapons" Abstract="True" ParentName="BaseWeapon">
-		<techLevel>Spacer</techLevel>
-		<smeltable>true</smeltable>
-		<burnableByRecipe>true</burnableByRecipe>
-		<relicChance>1</relicChance>
-		<statBases>
-			<DeteriorationRate>0</DeteriorationRate>
-			<Beauty>10</Beauty>
-			<SellPriceFactor>1.2</SellPriceFactor>
-		</statBases>
-		<recipeMaker>
-			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-			<workSkill>Crafting</workSkill>
-			<effectWorking>Smith</effectWorking>
-			<soundWorking>Recipe_Smith</soundWorking>
-			<recipeUsers>
-				<li>FabricationBench</li>
-			</recipeUsers>
-			<unfinishedThingDef>Ark_UnfinishedDepravedWeapon</unfinishedThingDef>
-		</recipeMaker>
-		<inspectorTabs>
-			<li>ITab_Art</li>
-		</inspectorTabs>
-		<tradeTags>
-			<li>Ark_DepravedWeapons</li>
-		</tradeTags>
-		<comps>
-			<li>
-				<compClass>CompQuality</compClass>
-			</li>
-			<li Class="CompProperties_Biocodable"/>
-		</comps>
-	</ThingDef>
-
-	<ThingDef Name="Ark_BaseDepravedWeaponsMelee" Abstract="True" ParentName="Ark_BaseDepravedWeapons">
-		<thingCategories>
-			<li>Ark_DepravedWeaponsMelee</li>
-		</thingCategories>
-		<weaponClasses>
-			<li>Melee</li>
-		</weaponClasses>
-	</ThingDef>
-	
-	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
-		<defName>Ark_CollapseShiv</defName>
-		<label>歪曲仪刃</label>
-		<description>坍缩体持有的奇特锐器，材质平常，但刃上凝滞着不详的阴影，当刀刃切开血肉，阴影便会趁机流入灵魂。</description>
-		<generateAllowChance>0</generateAllowChance>
-		<tradeability>None</tradeability>
+	<ThingDef ParentName="Ark_BaseDepravedWeaponsMelee">
+		<defName>Ark_DepravedMelee_Sabre</defName>
+		<label>腐化战刀</label>
+		<description>浸染阴影的利刃，被它切割的灵魂将承受无法消去的腐蚀。</description>
 		<graphicData>
-			<texPath>Things/Weapon/Ark_CollapseShiv</texPath>
+			<texPath>Things/Weapon/Ark_DepravedMelee_Sabre</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<uiIconScale>1.6</uiIconScale>
-		<techLevel>Neolithic</techLevel>
-		<equippedAngleOffset>-65</equippedAngleOffset>
-		<costStuffCount>30</costStuffCount>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
-		<statBases>
-			<WorkToMake>1800</WorkToMake>
-			<Mass>0.5</Mass>
-		</statBases>
+		<uiIconScale>1.2</uiIconScale>
 		<weaponTags>
-			<li>Ark_CollapseShiv</li>
+			<li>Ark_DepravedMelee_Light</li>
 		</weaponTags>
+		<weaponClasses>
+			<li>MeleePiercer</li>
+		</weaponClasses>
+		<statBases>
+			<WorkToMake>6000</WorkToMake>
+			<Mass>0.8</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MeleeDodgeChance>5</MeleeDodgeChance>
+		</equippedStatOffsets>
+		<equippedAngleOffset>-65</equippedAngleOffset>
 		<tools>
 			<li>
-				<label>染污刀刃</label>
+				<label>刀柄</label>
 				<capacities>
-					<li>Ark_CollapseCut</li>
+					<li>Blunt</li>
 				</capacities>
-				<power>10</power>
+				<power>8</power>
 				<cooldownTime>1</cooldownTime>
 			</li>
 			<li>
-				<label>刀尖</label>
+				<label>腐化刀锋</label>
 				<capacities>
-					<li>Stab</li>
+					<li>Ark_CollapseCut</li>
 				</capacities>
-				<power>13</power>
-				<cooldownTime>2</cooldownTime>
+				<power>20</power>
+				<cooldownTime>1.5</cooldownTime>
+				<armorPenetration>0.2</armorPenetration>
 			</li>
 		</tools>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<displayPriority>904</displayPriority>
+		</recipeMaker>
+		<costList>
+			<Steel>30</Steel>
+			<Ark_CollapseCube>10</Ark_CollapseCube>
+			<Ark_Anti-collapseStoste>1</Ark_Anti-collapseStoste>
+		</costList>
 	</ThingDef>
 </Defs>

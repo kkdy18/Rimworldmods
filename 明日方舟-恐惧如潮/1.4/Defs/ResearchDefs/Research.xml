@@ -50,7 +50,7 @@
 	<ResearchProjectDef>
 		<defName>Ark_CollapseMechtech</defName>
 		<label>坍缩构造学说</label>
-		<description>邪魔对这个世界的影响正在以失控的速度加深，坍缩开始在无机材料上扩散，创造出危险的坍缩机械与腐化武装。这是人类的危机，但也是人类的机遇，为了不被虚无吞噬，拼命去研究并吸收敌人的力量也是一种出路。\n\n研究该科技将解锁制作与安装机械体模组块的工作。</description>
+		<description>邪魔对这个世界的影响正在以失控的速度加深，坍缩开始在无机材料上扩散，创造出危险的坍缩机械与腐化武装。这是人类的危机，但也是人类的机遇，为了不被虚无吞噬，拼命去研究并吸收敌人的力量也是一种出路。\n\n研究该科技将解锁制作与安装机械体模组块等一系列工作。</description>
 		<baseCost>2000</baseCost>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
@@ -59,6 +59,7 @@
 		<requiredStudied>
 			<li>Ark_CollapseChip</li>
 		</requiredStudied>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
 		<tab>Ark_ResearchTab</tab>
 		<researchViewX>7</researchViewX>
 		<researchViewY>4.5</researchViewY>
@@ -67,12 +68,13 @@
 	<ResearchProjectDef>
 		<defName>Ark_DepravedWeapon</defName>
 		<label>腐化武装</label>
-		<description>aaa</description>
-		<baseCost>200</baseCost>
+		<description>腐化武装，与坍缩体一同出现的异常物品，其材质与结构设计上的一致性让我们认为它们有着共同的未知源头。人类已经破解大部分腐化武装的生产工艺，但对所谓“源头”的调查依然是毫无进展。</description>
+		<baseCost>500</baseCost>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
 			<li>Ark_CollapseMechtech</li>
 		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
 		<tab>Ark_ResearchTab</tab>
 		<researchViewX>8</researchViewX>
 		<researchViewY>4.2</researchViewY>

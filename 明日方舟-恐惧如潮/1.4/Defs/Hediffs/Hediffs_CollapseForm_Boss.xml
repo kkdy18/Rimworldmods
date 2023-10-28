@@ -19,7 +19,7 @@
 			<li Class="HediffCompProperties_DisappearsOnDeath"/>
 			<li Class="HediffCompProperties_GiveHediffsInRange">
 				<range>9.9</range>
-				<mote>Mote_CombatCommand</mote>
+				<mote>Ark_Mote_GiverGlory</mote>
 				<hideMoteWhenNotDrafted>true</hideMoteWhenNotDrafted>
 				<targetingParameters>
 					<canTargetBuildings>false</canTargetBuildings>
@@ -62,7 +62,7 @@
 			<li Class="HediffCompProperties_Link">
 				<requireLinkOnOtherPawn>false</requireLinkOnOtherPawn>
 				<maxDistance>10</maxDistance>
-				<customMote>Mote_CombatCommandLinkLine</customMote>
+				<customMote>Ark_Mote_GiverLink</customMote>
 			</li>
 			<li Class="Ark_GSWT.HCP_Exploder">
 				<explosiveRadius>3.9</explosiveRadius>
@@ -71,6 +71,42 @@
 			</li>
 		</comps>
 	</HediffDef>
+
+	<ThingDef ParentName="MoteBase">
+		<defName>Ark_Mote_GiverGlory</defName>
+		<thingClass>MoteAttached</thingClass>
+		<altitudeLayer>LightingOverlay</altitudeLayer>
+		<drawOffscreen>true</drawOffscreen>
+		<mote>
+			<solidTime>9999999</solidTime>
+			<needsMaintenance>true</needsMaintenance>
+		</mote>
+		<graphicData>
+			<graphicClass>Graphic_Mote</graphicClass>
+			<texPath>Things/Special/Ark_Mote_GiverGlory</texPath>
+			<shaderType>MoteGlow</shaderType>
+			<color>(32, 0, 32)</color>
+			<drawSize>20</drawSize>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="MoteBase">
+		<defName>Ark_Mote_GiverLink</defName>
+		<thingClass>MoteDualAttached</thingClass>
+		<altitudeLayer>MoteLow</altitudeLayer>
+		<mote>
+			<fadeInTime>0.1</fadeInTime>
+			<fadeOutTime>0.1</fadeOutTime>
+			<solidTime>999999</solidTime>
+			<needsMaintenance>True</needsMaintenance>
+			<rotateTowardsTarget>True</rotateTowardsTarget>
+			<scaleToConnectTargets>True</scaleToConnectTargets>
+		</mote>
+		<graphicData>
+			<shaderType>MoteGlow</shaderType>
+			<texPath>Things/Special/Ark_Mote_GiverLink</texPath>
+		</graphicData>
+	</ThingDef>
 
 	<HediffDef Name="Ark_BossHediffResurrect" ParentName="Ark_BossHediffBase" Abstract="True">
 		<hediffClass>Ark_GSWT.Hediff_SeverityNum</hediffClass>
@@ -112,7 +148,9 @@
 				<multiplyStatChangesBySeverity>true</multiplyStatChangesBySeverity>
 				<statFactors>
 					<MoveSpeed>1.25</MoveSpeed>
-					<IncomingDamageFactor>1.15</IncomingDamageFactor>
+					<EMPResistance>1.25</EMPResistance>
+					<IncomingDamageFactor>1.2</IncomingDamageFactor>
+					<MeleeDamageFactor>1.2</MeleeDamageFactor>
 					<AimingDelayFactor>0.8</AimingDelayFactor>
 					<RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
 				</statFactors>

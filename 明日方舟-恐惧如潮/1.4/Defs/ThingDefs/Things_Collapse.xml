@@ -103,6 +103,7 @@
 		<graphicData>
 			<texPath>Things/Weapon/Ark_UnfinishedDepravedWeapon</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(0.8,0.8)</drawSize>
 		</graphicData>
 		<stuffCategories Inherit="false" />
 	</ThingDef>

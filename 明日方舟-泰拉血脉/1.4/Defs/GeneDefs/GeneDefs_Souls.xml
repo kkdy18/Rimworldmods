@@ -122,4 +122,34 @@
 		<recoverFromCollapsingExhausted>false</recoverFromCollapsingExhausted>
 		<allowGuilty>false</allowGuilty>
 	</MentalStateDef>
+
+<!--	<EffecterDef>
+		<defName>Berser</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_DrifterEmoteChance</subEffecterClass>
+				<scale>0.5</scale>
+				<chancePerTick>0.02</chancePerTick>
+				<positionRadius>0.3</positionRadius>
+				<moteDef>Mote_BerserkBi</moteDef>
+				<speed>0.18~0.18</speed>
+				<angle>45</angle>
+			</li>
+		</children>
+	</EffecterDef>
+
+	<ThingDef ParentName="MoteBase">
+		<defName>Mote_BerserkBi</defName>
+		<graphicData>
+			<texPath>Things/Mote/aaa</texPath>
+		</graphicData>
+		<thingClass>MoteThrownAttached</thingClass>
+		<altitudeLayer>MetaOverlays</altitudeLayer>
+		<mote>
+			<fadeInTime>0.50</fadeInTime>
+			<solidTime>1</solidTime>
+			<fadeOutTime>1</fadeOutTime>
+			<attachedDrawOffset>(0, 0, 0)</attachedDrawOffset>
+		</mote>
+	</ThingDef>-->
 </Defs>

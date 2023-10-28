@@ -161,7 +161,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
-			<MarketValue>1500</MarketValue>
+			<MarketValue>1350</MarketValue>
 		</statBases>
 	</ThingDef>
 
@@ -208,6 +208,9 @@
 			<texPath>Things/Item/Mech/Ark_MechModule_Centipede</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
+		<statBases>
+			<MarketValue>1500</MarketValue>
+		</statBases>
 	</ThingDef>
 
 	<RecipeDef ParentName="Ark_InstallMechModuleBase">
@@ -238,6 +241,52 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>Ark_CollapseMechForm3</addsHediff>
 	</RecipeDef>
+
+	<ThingDef ParentName="Ark_MechModuleBase">
+		<defName>Ark_MechModule_Paramedic</defName>
+		<label>神秘的模组块</label>
+		<description>封存着未知坍缩模组的数据块，据说模组的原型已经被歼灭，暂时迷失在无垠虚空中。(模组具体效果可以去链接里查看，不用赌运气)</description>
+		<descriptionHyperlinks>
+			<RecipeDef>Ark_InstallMechModule_Paramedic</RecipeDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Mech/Ark_MechModule_Unknown</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>1500</MarketValue>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef ParentName="Ark_InstallMechModuleBase">
+		<defName>Ark_InstallMechModule_Paramedic</defName>
+		<label>安装■■模组块</label>
+		<description>为你的机械体安装未知的坍缩模组。</description>
+		<descriptionHyperlinks>
+			<ThingDef>Ark_MechModule_Paramedic</ThingDef>
+			<HediffDef>Ark_CollapseMechForm6</HediffDef>
+		</descriptionHyperlinks>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Ark_MechModule_Paramedic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Ark_MechModule_Paramedic</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>MechanicalThoraxCanManipulate</li>
+			<li>MechanicalThorax</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>Ark_CollapseMechForm6</addsHediff>
+	</RecipeDef>
 	
 	<!--领袖机械体模组-->
 
@@ -253,7 +302,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
-			<MarketValue>2000</MarketValue>
+			<MarketValue>2500</MarketValue>
 		</statBases>
 	</ThingDef>
 

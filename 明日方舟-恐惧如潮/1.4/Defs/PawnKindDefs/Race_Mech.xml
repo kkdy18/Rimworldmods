@@ -3,7 +3,8 @@
 	<ThingDef ParentName="BaseMechanoidWalker" Name="Ark_BaseMechCollapse_M" Abstract="True">
 		<statBases>
 			<Ark_Volition>1</Ark_Volition>
-			<EMPResistance>1</EMPResistance>
+			<EMPResistance>0.8</EMPResistance>
+			<MechEnergyLossPerHP>0.3</MechEnergyLossPerHP>
 			<WastepacksPerRecharge>0</WastepacksPerRecharge>
 			<WorkSpeedGlobal>1.5</WorkSpeedGlobal>
 		</statBases>
@@ -25,14 +26,14 @@
 			<ControlTakingTime>24</ControlTakingTime>
 			<MechEnergyLossPerHP>0.2</MechEnergyLossPerHP>
 			<Ark_Volition>1</Ark_Volition>
-			<EMPResistance>1</EMPResistance>
+			<EMPResistance>0.9</EMPResistance>
 			<WastepacksPerRecharge>0</WastepacksPerRecharge>
 		</statBases>
 		<race>
 			<intelligence>ToolUser</intelligence>
 			<thinkTreeMain>Mechanoid</thinkTreeMain>
-			<bloodDef>Ark_BlackBlood</bloodDef>
 			<mechWeightClass>Heavy</mechWeightClass>
+			<bloodDef>Ark_BlackBlood</bloodDef>
 		</race>
 		<butcherProducts>
 			<Steel>30</Steel>
@@ -46,11 +47,10 @@
 			<MoveSpeed>3.4</MoveSpeed>
 			<ArmorRating_Blunt>0.10</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.20</ArmorRating_Sharp>
-			<MechEnergyLossPerHP>0.66</MechEnergyLossPerHP>
+			<MechEnergyLossPerHP>0.5</MechEnergyLossPerHP>
 			<Ark_Volition>1</Ark_Volition>
-			<EMPResistance>1</EMPResistance>
+			<EMPResistance>0.75</EMPResistance>
 			<WastepacksPerRecharge>0</WastepacksPerRecharge>
-			<WorkSpeedGlobal>1.5</WorkSpeedGlobal>
 		</statBases>
 		<race>
 			<body>Mech_Light</body>
@@ -77,6 +77,7 @@
 		<allowInMechClusters>false</allowInMechClusters>
 		<minGenerationAge>200</minGenerationAge>
 		<weaponMoney>9999~9999</weaponMoney>
+		<itemQuality>Good</itemQuality>
 		<techHediffsChance>1</techHediffsChance>
 		<techHediffsMoney>9999~9999</techHediffsMoney>
 	</PawnKindDef>
@@ -86,7 +87,7 @@
 	<ThingDef ParentName="Ark_BaseMechCollapse_M">
 		<defName>Ark_MechC_Scyther</defName>
 		<label>坍缩飞螳</label>
-		<description>一种快速、细长的近战特化机械体，已经被邪魔腐化。它们的镰刃上流淌着邪魔的污染，再加上坍缩范式的加持它们将在战场上大杀四方。</description>
+		<description>一种快速、细长的近战特化机械体，已经被邪魔腐化。它们的镰刃上流淌着邪魔的污染，再加上坍缩范式的加持它们将在战场上大杀四方。\n\n坍缩飞螳锋利的镰刃也许可以让它高效地完成某些工作，不过这真的会是个好主意吗？</description>
 		<tools>
 			<li>
 				<label>左镰刃</label>
@@ -110,6 +111,11 @@
 			</li>
 		</tools>
 		<race>
+			<mechEnabledWorkTypes>
+				<li>Hauling</li>
+				<li>PlantCutting</li>
+				<li>Cooking</li>
+			</mechEnabledWorkTypes>
 			<body>Scyther</body>
 			<baseHealthScale>1.32</baseHealthScale>
 			<soundMeleeHitPawn>Pawn_Melee_MechanoidSlash_HitPawn</soundMeleeHitPawn>
@@ -172,7 +178,7 @@
 	<ThingDef ParentName="Ark_BaseMechCollapse_M">
 		<defName>Ark_MechC_Lancer</defName>
 		<label>坍缩静螳</label>
-		<description>一种面部安装有巨大的光学传感器的远程战斗机械体，已经被邪魔腐化，装备有腐化标枪。</description>
+		<description>一种面部安装有巨大的光学传感器的远程战斗机械体，已经被邪魔腐化，装备有“击残者”腐化步枪。</description>
 		<tools>
 			<li>
 				<label>铁头</label>
@@ -240,16 +246,17 @@
 			</li>
 		</lifeStages>
 		<weaponTags>
-			<li>MechanoidGunMedium</li>
+			<li>Ark_DepravedBoltActionRifle</li>
 		</weaponTags>
 	</PawnKindDef>
 
 	<ThingDef ParentName="Ark_BaseMechCollapse_L">
 		<defName>Ark_MechC_Militor</defName>
 		<label>坍缩小蠊</label>
-		<description>一种四尺高的轻型战斗机械体，已经被邪魔腐化，装备有腐化战刀。它们保留了原先低廉的造价和维护费用，并且作战方式变得更加激进。</description>
+		<description>一种四尺高的轻型战斗机械体，已经被邪魔腐化，装备有腐化战刀。它们保留了原先低廉的造价和维护费用，并且作战方式变得更加激进。\n\n由于坍缩的影响，坍缩小蠊普遍具备了它们本不该拥有的智能水平，这让它们可以胜任一些简单的日常工作，或许可以把维护殖民地的繁琐工作交给它们？</description>
 		<statBases>
-			<MoveSpeed>3.8</MoveSpeed>
+			<MoveSpeed>4</MoveSpeed>
+			<WorkSpeedGlobal>2</WorkSpeedGlobal>
 		</statBases>
 		<tools>
 			<li>
@@ -264,6 +271,12 @@
 			</li>
 		</tools>
 		<race>
+			<mechEnabledWorkTypes>
+				<li>Cleaning</li>
+				<li>Hauling</li>
+				<li>Construction</li>
+				<li>Firefighter</li>
+			</mechEnabledWorkTypes>
 			<lifeStageAges>
 				<li>
 					<def>MechanoidFullyFormed</def>
@@ -309,7 +322,7 @@
 			</li>
 		</lifeStages>
 		<weaponTags>
-			<li>MechanoidGunShortRange</li>
+			<li>Ark_DepravedMelee_Light</li>
 		</weaponTags>
 		<controlGroupPortraitZoom>1.8</controlGroupPortraitZoom>
 	</PawnKindDef>
@@ -321,6 +334,10 @@
 		<label>坍缩蜈蚣</label>
 		<description>一种通过数十条细小的腿爬行的重型作战机械体，已经被邪魔腐化。一如既往的重型装甲火力再加上坍缩带来的电磁冲击免疫与少量移速提升让它们比以前更难对付。</description>
 		<race>
+			<mechEnabledWorkTypes>
+				<li>Hauling</li>
+				<li>Cleaning</li>
+			</mechEnabledWorkTypes>
 			<body>MechanicalCentipede</body>
 			<baseBodySize>3.0</baseBodySize>
 			<baseHealthScale>4.32</baseHealthScale>
@@ -381,7 +398,7 @@
 			</li>
 		</lifeStages>
 		<weaponTags>
-			<li>Minigun</li>
+			<li>Ark_CentipedeGun</li>
 		</weaponTags>
 		<controlGroupPortraitZoom>0.65</controlGroupPortraitZoom>
 	</PawnKindDef>
@@ -394,7 +411,7 @@
 			<ArmorRating_Blunt>0.40</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.80</ArmorRating_Sharp>
 			<BandwidthCost>3</BandwidthCost>
-			<WorkSpeedGlobal>2</WorkSpeedGlobal>
+			<WorkSpeedGlobal>3</WorkSpeedGlobal>
 			<EnergyShieldEnergyMax>3</EnergyShieldEnergyMax>
 		</statBases>
 		<race>
@@ -418,6 +435,7 @@
 			<bulletStaggerIgnoreBodySize>true</bulletStaggerIgnoreBodySize>
 			<bulletStaggerEffecterDef>TunnelerSlowedDown</bulletStaggerEffecterDef>
 			<mechEnabledWorkTypes>
+				<li>Hauling</li>
 				<li>Mining</li>
 			</mechEnabledWorkTypes>
 		</race>
@@ -505,15 +523,14 @@
 	<ThingDef ParentName="Ark_BaseMechCollapse_M">
 		<defName>Ark_MechC_Apocriton</defName>
 		<label>灭绝炎蜂</label>
-		<description>背叛的机械体指挥官，明晰的自我意识与对人类的恨意反而让他成为了机械体中最先投向邪魔的个体，而邪魔的赐福让他得以更好地享受杀戮的乐趣。坍缩将灭绝炎蜂的仇恨之火扭曲为真实的燃烧现象，从而赋予他使用火焰作战的能力，而憎恶毒蜂标志性的复活死亡机械体的能力也被扭曲为作用于自身。\n\n随着复活次数的累积，灭绝炎蜂过载的系统将持续提升他的机体性能。</description>
+		<description>背叛的机械体指挥官，明晰的自我意识与对人类的恨意反而让他成为了机械体中最先投向邪魔的个体，而邪魔的赐福让他得以更好地享受杀戮的乐趣。坍缩将灭绝炎蜂的仇恨扭曲为真实的燃烧现象，从而赋予他使用灵能火焰作战的能力。憎恶毒蜂标志性的复活死亡机械体的能力也被扭曲为作用于自身，随着复活次数的累积，灭绝炎蜂过载的系统将持续提升他的机体性能。\n\n灭绝炎蜂对电磁脉冲的抗性较为薄弱，战斗前期可以考虑用EMP打击对其进行压制。</description>
 		<descriptionHyperlinks>
 			<ThingDef>Ark_CollapseChip</ThingDef>
 		</descriptionHyperlinks>
 		<statBases>
 			<MarketValue>1600</MarketValue>
 			<MoveSpeed>3.2</MoveSpeed>
-			<EnergyShieldRechargeRate>1</EnergyShieldRechargeRate>
-			<EnergyShieldEnergyMax>5</EnergyShieldEnergyMax>
+			<EMPResistance>0.5</EMPResistance>
 			<BandwidthCost>2</BandwidthCost>
 			<ControlTakingTime>18</ControlTakingTime>
 			<ArmorRating_Blunt>0.8</ArmorRating_Blunt>
@@ -547,21 +564,15 @@
 		</race>
 		<tools>
 			<li>
-				<label>坍缩熔剑</label>
+				<label>恨火熔剑</label>
 				<capacities>
-					<li>Ark_CollapsePrick</li>
+					<li>Ark_CollapseBurnSpear</li>
 				</capacities>
-				<power>54</power>
-				<cooldownTime>2.7</cooldownTime>
+				<power>30</power>
+				<cooldownTime>2.5</cooldownTime>
+				<armorPenetration>0.9</armorPenetration>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-				<extraMeleeDamages>
-					<li>
-						<def>Flame</def>
-						<amount>10</amount>
-						<chance>0.5</chance>
-					</li>
-				</extraMeleeDamages>
 			</li>
 		</tools>
 		<butcherProducts>
@@ -579,7 +590,7 @@
 				<extraInspectStringKey>MechStunPulseWarning</extraInspectStringKey>
 			</li>
 			<li Class="CompProperties_ProjectileInterceptor">
-				<radius>2.1</radius>
+				<radius>1.5</radius>
 				<interceptGroundProjectiles>true</interceptGroundProjectiles>
 				<interceptNonHostileProjectiles>false</interceptNonHostileProjectiles>
 				<interceptOutgoingProjectiles>false</interceptOutgoingProjectiles>
@@ -588,7 +599,7 @@
 				<activeSound>BulletShield_Ambience</activeSound>
 				<hitPoints>300</hitPoints>
 				<hitPointsRestoreInstantlyAfterCharge>true</hitPointsRestoreInstantlyAfterCharge>
-				<disarmedByEmpForTicks>300</disarmedByEmpForTicks>
+				<disarmedByEmpForTicks>6000</disarmedByEmpForTicks>
 				<chargeDurationTicks>600</chargeDurationTicks>
 			</li>
 			<li Class="CompProperties_Effecter">
@@ -607,7 +618,7 @@
 		<label>灭绝炎蜂</label>
 		<race>Ark_MechC_Apocriton</race>
 		<combatPower>600</combatPower>
-		<maxPerGroup>3</maxPerGroup>
+		<maxPerGroup>1</maxPerGroup>
 		<allowInMechClusters>false</allowInMechClusters>
 		<lifeStages>
 			<li>
@@ -630,7 +641,7 @@
 			</li>
 		</lifeStages>
 		<weaponTags>
-			<li>MechanoidGunToxicNeedle</li>
+			<li>Ark_DepravedBurnSpear</li>
 		</weaponTags>
 		<abilities>
 			<li>LongjumpMech</li>
@@ -642,7 +653,7 @@
 	<ThingDef ParentName="Ark_BaseMechCollapse_M">
 		<defName>Ark_MechC_Bestower</defName>
 		<label>虚无布施</label>
-		<description>被邪魔转化的帝国布施者，肉体已脱离人类的范畴，经常被大量坍缩体簇拥。由于对邪魔有着相当深入的理解而掌握着危险的力量，出现在袭击殖民地的坍缩体集群中时会显著提高袭击的威胁度。\n\n他曾经为帝国传播荣光，而如今为邪魔播撒虚无，他对帝国的忠诚无可置疑，但当他偶然窥见邪魔的本质的那一刻，他找到了自己真正的信仰。被狂喜淹没的凡人向虚无献上一切，从此凡人化为“神”之容器行走世间。</description>
+		<description>被邪魔转化的帝国布施者，肉体已脱离人类的范畴，经常被大量坍缩体簇拥。虚无布施由于对邪魔有着相当深入的理解而掌握着危险的力量，出现在袭击殖民地的坍缩体集群中时会显著提高袭击的威胁度。\n\n他曾经为帝国传播荣光，而如今为邪魔播撒虚无，他对帝国的忠诚无可置疑，但当他偶然窥见邪魔的本质的那一刻，他找到了自己真正的信仰。被狂喜淹没的凡人向虚无献上一切，从此凡人化为“神”之容器行走世间。</description>
 		<statBases>
 			<MarketValue>1750</MarketValue>
 			<MoveSpeed>4.6</MoveSpeed>
@@ -745,6 +756,5 @@
 		<weaponTags>
 			<li>Ark_CollapseStaff</li>
 		</weaponTags>
-		<skipResistant>true</skipResistant>
 	</PawnKindDef>
 </Defs>

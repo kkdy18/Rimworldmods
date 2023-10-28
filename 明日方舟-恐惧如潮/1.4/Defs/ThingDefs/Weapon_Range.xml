@@ -1,79 +1,425 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef ParentName="BaseGun">
-		<defName>Ark_CollapseStaff</defName>
-		<label>恩赐之杖</label>
-		<description>虚无布施以人类的身份行走时曾使用的手杖，注入邪魔的污染后化为了虚无布施播撒“恩赐”的工具。</description>
-		<techLevel>Spacer</techLevel>
+	<ThingDef ParentName="Ark_BaseDepravedWeaponsRanged">
+		<defName>Ark_DepravedRange_Minigun</defName>
+		<label>腐化多管机枪</label>
+		<description>重新设计过的腐化多管机枪，为方便人类使用在原本的结构上进行了改装，性能没有丝毫的缩减，唯一让人不解的是坍缩体的装弹用时总是比我们快50%，非常恼人。</description>
 		<graphicData>
-			<texPath>Things/Weapon/Ark_CollapseStaff</texPath>
+			<texPath>Things/Weapon/Ark_DepravedRange_Minigun</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1.5</drawSize>
+			<drawSize>(1,1.2)</drawSize>
 		</graphicData>
-		<tradeability>None</tradeability>
-		<destroyOnDrop>true</destroyOnDrop>
-		<relicChance>0</relicChance>
-		<equippedAngleOffset>-65</equippedAngleOffset>
-		<statBases>
-			<MarketValue>2000</MarketValue>
-			<Mass>2.6</Mass>
-			<AccuracyTouch>0.60</AccuracyTouch>
-			<AccuracyShort>0.80</AccuracyShort>
-			<AccuracyMedium>0.90</AccuracyMedium>
-			<AccuracyLong>0.92</AccuracyLong>
-			<RangedWeapon_Cooldown>2.1</RangedWeapon_Cooldown>
-		</statBases>
+		<soundInteract>Interact_Rifle</soundInteract>
 		<weaponTags>
-			<li>Ark_CollapseStaff</li>
+			<li>Ark_DepravedMinigun</li>
 		</weaponTags>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<statBases>
+			<WorkToMake>60000</WorkToMake>
+			<Mass>10</Mass>
+			<AccuracyTouch>0.15</AccuracyTouch>
+			<AccuracyShort>0.25</AccuracyShort>
+			<AccuracyMedium>0.25</AccuracyMedium>
+			<AccuracyLong>0.18</AccuracyLong>
+			<RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.25</MoveSpeed>
+			<MeleeDodgeChance>-5</MeleeDodgeChance>
+		</equippedStatOffsets>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Ark_Bullet_CollapseSpace</defaultProjectile>
-				<warmupTime>3.5</warmupTime>
-				<range>23.9</range>
-				<forcedMissRadius>1.9</forcedMissRadius>
-				<soundCast>Shot_IncendiaryLauncher</soundCast>
+				<defaultProjectile>Ark_Bullet_DepravedMini</defaultProjectile>
+				<warmupTime>1</warmupTime>
+				<range>30.9</range>
+				<burstShotCount>75</burstShotCount>
+				<ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+				<soundCast>Shot_Minigun</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
-				<muzzleFlashScale>14</muzzleFlashScale>
-				<targetParams>
-					<canTargetLocations>true</canTargetLocations>
-				</targetParams>
+				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
 		</verbs>
 		<tools>
 			<li>
-				<label>杖头</label>
-				<labelUsedInLogging>false</labelUsedInLogging>
+				<label>枪管</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>12</Crafting>
+			</skillRequirements>
+			<displayPriority>954</displayPriority>
+		</recipeMaker>
+		<costList>
+			<Ark_CollapseChip>1</Ark_CollapseChip>
+			<Ark_CollapseCube>50</Ark_CollapseCube>
+			<Ark_Anti-collapseStoste>4</Ark_Anti-collapseStoste>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Ark_Bullet_DepravedMini</defName>
+		<label>腐化钢芯弹</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_DepravedMini</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>10</damageAmountBase>
+			<speed>70</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="Ark_BaseDepravedWeapons">
+		<defName>Ark_DepravedRange_Minigun_Mech</defName>
+		<label>腐化多管机枪</label>
+		<description>相当危险的腐化武装，比原型射弹量更多，射速更快，并且预热时间相当短，堪称绝对的强大。光是在战场上看见这件武器就能让人不由得祈祷自己的掩体或护盾足够坚挺。</description>
+		<graphicData>
+			<texPath>Things/Weapon/Ark_DepravedRange_Minigun_Mech</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1.5)</drawSize>
+		</graphicData>
+		<tradeability>None</tradeability>
+		<destroyOnDrop>true</destroyOnDrop>
+		<relicChance>0</relicChance>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<weaponTags>
+			<li>Ark_CentipedeGun</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<statBases>
+			<WorkToMake>60000</WorkToMake>
+			<Mass>10</Mass>
+			<AccuracyTouch>0.15</AccuracyTouch>
+			<AccuracyShort>0.25</AccuracyShort>
+			<AccuracyMedium>0.25</AccuracyMedium>
+			<AccuracyLong>0.18</AccuracyLong>
+			<RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<RangedWeapon_Cooldown>-2</RangedWeapon_Cooldown>
+			<MeleeDodgeChance>-5</MeleeDodgeChance>
+		</equippedStatOffsets>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Ark_Bullet_DepravedMini</defaultProjectile>
+				<warmupTime>1</warmupTime>
+				<range>30.9</range>
+				<burstShotCount>75</burstShotCount>
+				<ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+				<soundCast>Shot_Minigun</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>枪管</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<ThingDef ParentName="Ark_BaseDepravedWeaponsRanged">
+		<defName>Ark_DepravedRange_LongRifle</defName>
+		<label>腐化步枪-击残者</label>
+		<description>坍缩静螳统一装备的腐化枪械，原型疑为栓动步枪，能连续射击三次，之后会进入较长的冷却时间，坍缩对其的影响为射击远距离目标时拥有极高的精度，但随着距离缩短射击精度将呈断崖式的下降。\n\n该武器在战场上曾对人类造成毁灭性的打击，它射出的弹雨跨越遥远的距离精准地击碎战士们的头颅或四肢，我们将它命名为“击残者”，希望让这件武器的恶名与应对方式能深刻印入每个人的脑海。</description>
+		<graphicData>
+			<texPath>Things/Weapon/Ark_DepravedRange_LongRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.3</drawSize>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<weaponTags>
+			<li>Ark_DepravedBoltActionRifle</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>LongShots</li>
+		</weaponClasses>
+		<statBases>
+			<WorkToMake>12000</WorkToMake>
+			<Mass>3.5</Mass>
+			<AccuracyTouch>0.1</AccuracyTouch>
+			<AccuracyShort>0.1</AccuracyShort>
+			<AccuracyMedium>0.8</AccuracyMedium>
+			<AccuracyLong>1.5</AccuracyLong>
+			<RangedWeapon_Cooldown>4.5</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Ark_CollapseChip>1</Ark_CollapseChip>
+			<Ark_CollapseCube>30</Ark_CollapseCube>
+			<Ark_Anti-collapseStoste>3</Ark_Anti-collapseStoste>
+		</costList>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>12</Crafting>
+			</skillRequirements>
+			<displayPriority>914</displayPriority>
+		</recipeMaker>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Ark_Bullet_DepravedLong</defaultProjectile>
+				<warmupTime>1.5</warmupTime>
+				<range>45</range>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+				<soundCast>Shot_BoltActionRifle</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>枪管</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Ark_Bullet_DepravedLong</defName>
+		<label>腐化穿甲弹</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_DepravedLong</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>18</damageAmountBase>
+			<stoppingPower>1.5</stoppingPower>
+			<armorPenetrationBase>0.4</armorPenetrationBase>
+			<speed>80</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="Ark_BaseDepravedWeaponsRanged">
+		<defName>Ark_DepravedRange_Autopistol</defName>
+		<label>腐化手枪-无名重锤</label>
+		<description>只有曾为黑衣人的坍缩体才会装备的腐化枪械，坍缩严重扭曲了质量在这件武器上的定义，实战中无论枪械本身还是其射出的子弹都呈现出超出正常状态数倍的质量变化，被这件武器击中（无论近战还是远程）的幸存者普遍用“被重锤砸中”来形容当时的感受。\n\n可能是创造者的慈悲或者其他更加现实的原因，这件武器的射程相当有限，这也意味着一旦进入射程，四舍五入就是枪在顶着你的脑门开火了，所以想要对付它最好乖乖穿上防弹装备，好消息是过大的质量变化使子弹杀伤力剧增但穿透力剧减，子弹刚撞上硬物就会因自身的惯性将自己压碎。</description>
+		<graphicData>
+			<texPath>Things/Weapon/Ark_DepravedRange_Autopistol</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Autopistol</soundInteract>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>12</Crafting>
+			</skillRequirements>
+			<displayPriority>924</displayPriority>
+		</recipeMaker>
+		<weaponTags>
+			<li>Ark_DepravedAutopistol</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>RangedLight</li>
+		</weaponClasses>
+		<statBases>
+			<WorkToMake>15000</WorkToMake>
+			<Mass>1.2</Mass>
+			<AccuracyTouch>1</AccuracyTouch>
+			<AccuracyShort>0.9</AccuracyShort>
+			<AccuracyMedium>0.45</AccuracyMedium>
+			<AccuracyLong>0.35</AccuracyLong>
+			<RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Ark_CollapseChip>1</Ark_CollapseChip>
+			<Ark_CollapseCube>30</Ark_CollapseCube>
+			<Ark_Anti-collapseStoste>3</Ark_Anti-collapseStoste>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Ark_Bullet_DepravedPower</defaultProjectile>
+				<warmupTime>0.3</warmupTime>
+				<range>12.9</range>
+				<soundCast>Shot_Autopistol</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>虚无重锤</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>30</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Ark_Bullet_DepravedPower</defName>
+		<label>腐化重头弹</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_DepravedPower</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>25</damageAmountBase>
+			<stoppingPower>2.5</stoppingPower>
+			<armorPenetrationBase>0</armorPenetrationBase>
+			<speed>50</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="Ark_BaseDepravedWeapons">
+		<defName>Ark_DepravedWeapon_BurnSpear</defName>
+		<label>腐化熔铸长枪</label>
+		<description>灭绝炎蜂所装备的腐化武装，坍缩造就的浸透恨意的灵能火焰缠绕在枪刃之上，炽烈的锋刃足以撕碎燃尽任何一种已知的耐高温材料。该武器的枪杆部件具备吸收与储存热能的特性，可以在战斗中吸收机体的废热并从枪头瞬间释放，形成极度危险的高温焰流。</description>
+		<graphicData>
+			<texPath>Things/Weapon/Ark_DepravedWeapon_BurnSpear</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<equippedAngleOffset>-45</equippedAngleOffset>
+		<equippedDistanceOffset>0</equippedDistanceOffset>
+		<tradeability>None</tradeability>
+		<destroyOnDrop>true</destroyOnDrop>
+		<relicChance>0</relicChance>
+		<weaponTags>
+			<li>Ark_DepravedBurnSpear</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Ranged</li>
+		</weaponClasses>
+		<statBases>
+			<MarketValue>2000</MarketValue>
+			<Mass>4.5</Mass>
+			<AccuracyTouch>0.4</AccuracyTouch>
+			<AccuracyShort>0.5</AccuracyShort>
+			<AccuracyMedium>0.35</AccuracyMedium>
+			<AccuracyLong>0.2</AccuracyLong>
+			<RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_SpewFire</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<warmupTime>0</warmupTime>
+				<range>9.9</range>
+				<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+				<burstShotCount>10</burstShotCount>
+				<soundCast>Shot_MiniFlameblaster</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>枪杆</label>
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
 				<power>12</power>
-				<cooldownTime>2.6</cooldownTime>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>熔铸锋刃</label>
+				<capacities>
+					<li>Ark_CollapseBurnSpear</li>
+				</capacities>
+				<power>30</power>
+				<cooldownTime>2.5</cooldownTime>
+				<armorPenetration>0.9</armorPenetration>
 			</li>
 		</tools>
 	</ThingDef>
-	
-	<ThingDef ParentName="BaseBullet">
-		<defName>Ark_Bullet_CollapseSpace</defName>
-		<label>坍缩之囊</label>
+
+	<ThingDef ParentName="Ark_BaseDepravedWeapons">
+		<defName>Ark_DepravedRange_NhilityCan</defName>
+		<label>虚无容器</label>
+		<description>部分虚无投掷者所装备的诡异爆炸物，腐化的金属球壳下填充着曾经是炸药的污染结晶，激活后将使周围的空间向亚空间坍缩，面对这种针对空间本身的打击，一切在我们的认知中称得上“坚固”的物质结构都将不再可靠。\n\n寻常的火焰不会将这种爆炸物引爆，它们只会在火焰中静静燃烧。</description>
+		<tickerType>Normal</tickerType>
 		<graphicData>
-			<texPath>Things/Projectile/Bullet_CollapseSpace</texPath>
+			<texPath>Things/Weapon/Ark_DepravedRange_NhilityCan</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>TransparentPostLight</shaderType>
-			<color>(250,250,250)</color>
 		</graphicData>
-		<thingClass>Projectile_Explosive</thingClass>
+		<uiIconScale>1.3</uiIconScale>
+		<soundInteract>Interact_Grenade</soundInteract>
+		<statBases>
+			<Mass>1</Mass>
+			<MarketValue>250</MarketValue>
+			<RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+			<WorkToMake>6000</WorkToMake>
+		</statBases>
+		<weaponClasses>
+			<li>Ranged</li>
+		</weaponClasses>
+		<weaponTags>
+			<li>Ark_DepravedGrenade</li>
+		</weaponTags>
+		<thingCategories>
+			<li>Ark_DepravedWeaponsRanged</li>
+		</thingCategories>
+		<verbs>
+			<li>
+				<label>投掷虚无容器</label>
+				<verbClass>Verb_LaunchProjectile</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<range>12.9</range>
+				<forcedMissRadius>1.9</forcedMissRadius>
+				<warmupTime>1.5</warmupTime>
+				<noiseRadius>4</noiseRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>ThrowGrenade</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>Ark_Grenade_NhilityCan</defaultProjectile>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+		<comps Inherit="False">
+			<li Class="CompProperties_Forbiddable"/>
+			<li>
+				<compClass>CompEquippable</compClass>
+			</li>
+			<li Class="CompProperties_Styleable"></li>
+		</comps>
+		<smeltable>false</smeltable>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>Ark_Grenade_NhilityCan</defName>
+		<label>腐化球壳</label>
+		<graphicData>
+			<texPath>Things/Projectile/Ark_Grenade_NhilityCan</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
 		<projectile>
-			<speed>40</speed>
+			<explosionRadius>2</explosionRadius>
 			<damageDef>Ark_CollapseSpace</damageDef>
-			<explosionRadius>3.9</explosionRadius>
-			<ai_IsIncendiary>true</ai_IsIncendiary>
-			<arcHeightFactor>0.2</arcHeightFactor>
-			<shadowSize>0.6</shadowSize>
-			<screenShakeFactor>0.5</screenShakeFactor>
 			<postExplosionSpawnThingDef>Ark_CollapseSpace</postExplosionSpawnThingDef>
+			<explosionDelay>100</explosionDelay>
 		</projectile>
 	</ThingDef>
 </Defs>

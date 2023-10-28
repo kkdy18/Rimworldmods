@@ -52,7 +52,7 @@
 			</li>
 			<li Class="StockGenerator_SingleDef">
 				<thingDef>Beer</thingDef>
-				<totalPriceRange>50~200</totalPriceRange>
+				<countRange>100~200</countRange>
 			</li>
 			<li Class="StockGenerator_Category">
 				<categoryDef>FoodMeals</categoryDef>
@@ -83,6 +83,11 @@
 			<li Class="StockGenerator_Tag">
 				<tradeTag>Artifact</tradeTag>
 				<thingDefCountRange>2~4</thingDefCountRange>
+				<countRange>1~1</countRange>
+			</li>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>Ark_MechModules</tradeTag>
+				<thingDefCountRange>3~6</thingDefCountRange>
 				<countRange>1~1</countRange>
 			</li>
 			<!-- Buying -->

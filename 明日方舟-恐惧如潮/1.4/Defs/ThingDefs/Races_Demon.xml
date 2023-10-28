@@ -13,6 +13,7 @@
 			<Ark_Volition>1</Ark_Volition>
 		</statBases>
 		<race>
+			<fleshType>Ark_Demonoid</fleshType>
 			<bloodDef>Ark_BlackBlood</bloodDef>
 			<useMeatFrom>Human</useMeatFrom>
 			<needsRest>false</needsRest>
@@ -351,4 +352,24 @@
 			<li>ManipulationLimbCore</li>
 		</tags>
 	</BodyPartDef>
+
+	<FleshTypeDef>
+		<defName>Ark_Demonoid</defName>
+		<corpseCategory>CorpsesAnimal</corpseCategory>
+		<damageEffecter>Damage_HitMechanoid</damageEffecter>
+		<genericWounds>
+			<li>
+				<texture>Things/Pawn/Wounds/WoundA</texture>
+				<color>0.5,0.4,0.5</color>
+			</li>
+			<li>
+				<texture>Things/Pawn/Wounds/WoundB</texture>
+				<color>0.5,0.4,0.5</color>
+			</li>
+			<li>
+				<texture>Things/Pawn/Wounds/WoundC</texture>
+				<color>0.5,0.4,0.5</color>
+			</li>
+		</genericWounds>
+	</FleshTypeDef>
 </Defs>

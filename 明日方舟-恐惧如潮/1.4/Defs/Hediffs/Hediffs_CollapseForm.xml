@@ -450,7 +450,6 @@
 				<statFactors>
 					<IncomingDamageFactor>0.2</IncomingDamageFactor>
 					<MeleeDamageFactor>2</MeleeDamageFactor>
-					<AimingDelayFactor>0.1</AimingDelayFactor>
 				</statFactors>
 				<statOffsets>
 					<ShootingAccuracyPawn>100</ShootingAccuracyPawn>
@@ -530,8 +529,10 @@
 					<MoveSpeed>1.5</MoveSpeed>
 				</statFactors>
 				<statOffsets>
-					<MeleeHitChance>10</MeleeHitChance>
-					<ShootingAccuracyPawn>10</ShootingAccuracyPawn>
+					<MechEnergyUsageFactor>0.2</MechEnergyUsageFactor>
+					<MeleeHitChance>5</MeleeHitChance>
+					<MeleeDodgeChance>5</MeleeDodgeChance>
+					<ShootingAccuracyPawn>-5</ShootingAccuracyPawn>
 				</statOffsets>
 				<capMods>
 					<li>
@@ -599,6 +600,13 @@
 		<defName>Ark_CollapseMechForm5</defName>
 		<label>坍缩模组-心理学隐身力场</label>
 		<description>坍缩静螳承载的邪魔坍缩性质更倾向于思维干扰而非对射击能力的强化，这一发现引起了我们的重视，在消耗了大量坍缩静螳后研究者成功提取出了那种让坍缩体看不见摸不着的恼人力量。安装该模组的机械体能够可控地发射干扰思维认知的电波，使被影响的对象无法察觉它的存在。</description>
+		<stages>
+			<li>
+				<statOffsets>
+					<MechEnergyUsageFactor>0.2</MechEnergyUsageFactor>
+				</statOffsets>
+			</li>
+		</stages>
 		<comps>
 			<li Class="HediffCompProperties_GiveAbility">
 				<abilityDefs>
@@ -657,6 +665,26 @@
 				<showRemainingTime>True</showRemainingTime>
 			</li>
 			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="Ark_CollapseMechBase">
+		<defName>Ark_CollapseMechForm6</defName>
+		<label>坍缩模组-内置跳跃弹射器</label>
+		<description>安装该模组的机械体的背后组装出了一台可以用于中距离高速移动的跳跃弹射器。</description>
+		<stages>
+			<li>
+				<statOffsets>
+					<MechEnergyUsageFactor>0.2</MechEnergyUsageFactor>
+				</statOffsets>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_GiveAbility">
+				<abilityDefs>
+					<li>LongjumpMech</li>
+				</abilityDefs>
+			</li>
 		</comps>
 	</HediffDef>
 </Defs>

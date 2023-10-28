@@ -130,7 +130,7 @@
 				<def>StartingResearch</def>
 				<project>Pemmican</project>
 			</li>
-			<li Class="ScenPart_CreateIncident">
+			<li Class="ScenPart_CreateIncident" MayRequire="Ludeon.RimWorld.Ideology">
 				<def>CreateIncident</def>
 				<incident>GauranlenPodSpawn</incident>
 				<intervalDays>3</intervalDays>
@@ -231,7 +231,7 @@
 				<stuff>Steel</stuff>
 				<quality>Excellent</quality>
 			</li>
-			<li Class="ScenPart_ScatterThingsNearPlayerStart">
+			<li Class="ScenPart_ScatterThingsNearPlayerStart" MayRequire="Ludeon.RimWorld.Royalty">
 				<def>ScatterThingsNearPlayerStart</def>
 				<thingDef>Apparel_VisageMask</thingDef>
 				<stuff>Steel</stuff>

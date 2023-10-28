@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <ThingDef ParentName="ApparelBase">
-    <defName>HeavyShieldBelt</defName>
+    <defName>Ark_HeavyPersonalShield</defName>
     <label>萨科塔战术腰带</label>
-    <description>通过解析机械族的重型护盾装置而研发的单人用便携式斥力装置，配有协助换弹的插槽。它能阻挡来自一定距离外的实体投射物与能量攻击并且不会阻碍穿戴者向外开火，但不能抵挡近战攻击。\n\n欢呼吧，我们将开启每个人都能用上能量护盾的美好时代！</description>
+    <description>通过解析机械族的重型护盾装置而研发的单人用便携式斥力装置，配有协助换弹的插槽，能有效缩短穿戴者的射击冷却时间。它能阻挡来自一定距离外的实体投射物与能量攻击并且不会阻碍穿戴者向外开火，但不能抵挡近战攻击。\n\n欢呼吧，我们将开启每个人都能用上能量护盾的美好时代！</description>
     <thingClass>Apparel</thingClass>
     <generateAllowChance>0</generateAllowChance>
     <tradeability>None</tradeability>
     <graphicData>
-      <texPath>Things/Apparel/HeavyPersonalShield</texPath>
+      <texPath>Things/Apparel/Ark_HeavyPersonalShield</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <tickerType>Normal</tickerType>
@@ -49,7 +49,7 @@
       <li>ApparelUtility</li>
     </thingCategories>
 	<equippedStatOffsets>
-		<RangedWeapon_Cooldown>-0.25</RangedWeapon_Cooldown>
+		<RangedWeapon_Cooldown>-1</RangedWeapon_Cooldown>
     </equippedStatOffsets>
     <apparel>
       <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
@@ -78,15 +78,15 @@
   </ThingDef>
 
 	<ThingDef ParentName="ApparelNoQualityBase">
-		<defName>StunGrenadeBelt</defName>
+		<defName>Ark_StunGrenadeBelt</defName>
 		<label>震撼弹挂带</label>
-		<description>绑在腿上的投弹装置，最多可容纳五颗震撼弹，操作简单，效果明显，深受广大萨科塔喜爱。</description>
+		<description>绑在腿上的投弹装置，最多可容纳五颗震撼弹，投出的震撼弹能暂时干扰敌人的行动能力，操作简单，效果明显，深受广大萨科塔喜爱。</description>
 		<tickerType>Normal</tickerType>
 		<thingClass>Apparel</thingClass>
 		<generateAllowChance>0</generateAllowChance>
 		<tradeability>None</tradeability>
 		<graphicData>
-			<texPath>Things/Apparel/StunGrenadeBelt</texPath>
+			<texPath>Things/Apparel/Ark_StunGrenadeBelt</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<uiIconScale>1.3</uiIconScale>
@@ -112,7 +112,7 @@
 			</recipeUsers>
 			<useIngredientsForColor>false</useIngredientsForColor>
 			<skillRequirements>
-				<Crafting>10</Crafting>
+				<Crafting>7</Crafting>
 			</skillRequirements>
 			<displayPriority>300</displayPriority>
 		</recipeMaker>
@@ -132,7 +132,7 @@
 				<li>Belt</li>
 			</layers>
 			<tags>
-				<li>Ark_Belt</li>
+				<li>Ark_GrenadeBelt</li>
 			</tags>
 		</apparel>
 		<verbs>
@@ -150,7 +150,7 @@
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>
 				</targetParams>
-				<defaultProjectile>Proj_StunGrenade</defaultProjectile>
+				<defaultProjectile>Ark_Proj_StunGrenade</defaultProjectile>
 				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
 			</li>
 		</verbs>
@@ -175,7 +175,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BaseGrenadeProjectile">
-		<defName>Proj_StunGrenade</defName>
+		<defName>Ark_Proj_StunGrenade</defName>
 		<label>震撼弹</label>
 		<thingClass>Projectile_Explosive</thingClass>
 		<graphicData>
@@ -187,6 +187,119 @@
 			<speed>24</speed>
 			<explosionRadius>3.5</explosionRadius>
 			<damageDef>Stun</damageDef>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="ApparelNoQualityBase">
+		<defName>Ark_EMPGrenadeBelt</defName>
+		<label>EMP弹挂带</label>
+		<description>绑在腿上的投弹装置，最多可容纳五颗EMP弹，是随时随地引爆电磁脉冲的小帮手，操作简单，效果明显，深受广大萨科塔喜爱。</description>
+		<tickerType>Normal</tickerType>
+		<thingClass>Apparel</thingClass>
+		<generateAllowChance>0</generateAllowChance>
+		<tradeability>None</tradeability>
+		<graphicData>
+			<texPath>Things/Apparel/Ark_EMPGrenadeBelt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconScale>1.3</uiIconScale>
+		<soundInteract>Interact_Grenade</soundInteract>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<Mass>1</Mass>
+			<WorkToMake>14000</WorkToMake>
+		</statBases>
+		<costList>
+			<Steel>45</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
+			<researchPrerequisite>Ark_SectatorCombat</researchPrerequisite>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Machining</soundWorking>
+			<recipeUsers>
+				<li>TableMachining</li>
+			</recipeUsers>
+			<useIngredientsForColor>false</useIngredientsForColor>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<displayPriority>300</displayPriority>
+		</recipeMaker>
+		<thingCategories Inherit="False">
+			<li>ApparelUtility</li>
+		</thingCategories>
+		<apparel>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
+			<careIfDamaged>false</careIfDamaged>
+			<wearPerDay>0</wearPerDay>
+			<bodyPartGroups>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Belt</li>
+			</layers>
+			<tags>
+				<li>Ark_GrenadeBelt</li>
+			</tags>
+		</apparel>
+		<verbs>
+			<li>
+				<label>小心EMP！</label>
+				<verbClass>Verb_LaunchProjectileStatic</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<range>12.9</range>
+				<forcedMissRadius>1.9</forcedMissRadius>
+				<warmupTime>0.5</warmupTime>
+				<noiseRadius>4</noiseRadius>
+				<ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
+				<soundCast>Shot_IncendiaryLauncher</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>Ark_Proj_EMPGrenade</defaultProjectile>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CompProperties_Reloadable">
+				<maxCharges>5</maxCharges>
+				<ammoDef>Steel</ammoDef>
+				<ammoCountPerCharge>25</ammoCountPerCharge>
+				<baseReloadTicks>50</baseReloadTicks>
+				<soundReload>Standard_Reload</soundReload>
+				<hotKey>Misc4</hotKey>
+				<chargeNoun>EMP弹</chargeNoun>
+				<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+			</li>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>2.66</explosiveRadius>
+				<explosiveDamageType>EMP</explosiveDamageType>
+				<requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+			</li>
+		</comps>
+		<smeltable>true</smeltable>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>Ark_Proj_EMPGrenade</defName>
+		<label>EMP弹</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Apparel/EMPGrenade</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(0.7, 0.7)</drawSize>
+		</graphicData>
+		<projectile>
+			<speed>24</speed>
+			<explosionRadius>3.5</explosionRadius>
+			<damageDef>EMP</damageDef>
 		</projectile>
 	</ThingDef>
 

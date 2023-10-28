@@ -24,7 +24,7 @@
 		<defName>Ark_IncidentBoss_Apocriton</defName>
 		<label>召唤灭绝炎蜂</label>
 		<letterLabel>灭绝炎蜂来袭</letterLabel>
-		<letterText>一个由腐化的机械体指挥官带领的集群抵达，准备将此地的人类尽数铲除。曾经统御机群的，如今仍为首领，它们是邪魔的先锋。</letterText>
+		<letterText>一个由腐化的机械体指挥官带领的坍缩机械集群抵达，准备将此地的人类尽数铲除。曾经统御机群的，如今仍为首领，它们是邪魔的先锋。</letterText>
 		<pawnKind>Ark_MechC_Apocriton</pawnKind>
 		<Soldier>
 			<li>Ark_MechC_Scyther</li>

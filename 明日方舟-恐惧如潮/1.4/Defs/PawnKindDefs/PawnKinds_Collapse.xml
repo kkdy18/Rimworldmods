@@ -106,6 +106,7 @@
 		<weaponTags>
 			<li>MedievalMeleeDecent</li>
 			<li>MedievalMeleeAdvanced</li>
+			<li>Ark_DepravedMelee_Light</li>
 		</weaponTags>
 		<inventoryOptions>
 		</inventoryOptions>
@@ -113,7 +114,7 @@
 
 	<PawnKindDef ParentName="BaseSoldierCollapse">
 		<defName>Ark_Carcass_Heavy</defName>
-		<label>重装躯壳</label>
+		<label>无畏躯壳</label>
 		<combatPower>140</combatPower>
 		<gearHealthRange>0.7~3.2</gearHealthRange>
 		<apparelTags>
@@ -129,6 +130,7 @@
 		<weaponTags>
 			<li>GunHeavy</li>
 			<li>GunSingleUse</li>
+			<li>Ark_CentipedeGun</li>
 		</weaponTags>
 	</PawnKindDef>
 
@@ -260,6 +262,7 @@
 		<isGoodBreacher>true</isGoodBreacher>
 		<weaponTags>
 			<li>GrenadeDestructive</li>
+			<li>Ark_DepravedGrenade</li>
 		</weaponTags>
 	</PawnKindDef>
 
@@ -279,9 +282,9 @@
 		</backstoryFiltersOverride>
 		<gearHealthRange>1~1</gearHealthRange>
 		<itemQuality>Good</itemQuality>
-		<weaponMoney>500~500</weaponMoney>
+		<weaponMoney>9000~9000</weaponMoney>
 		<weaponTags>
-			<li>Revolver</li>
+			<li>Ark_DepravedAutopistol</li>
 		</weaponTags>
 		<apparelTags>
 			<li>IndustrialBasic</li>
@@ -346,7 +349,7 @@
 		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
 		<weaponMoney>9000~9000</weaponMoney>
 		<weaponTags>
-			<li>Minigun</li>
+			<li>Ark_CentipedeGun</li>
 		</weaponTags>
 		<itemQuality>Masterwork</itemQuality>
 		<techHediffsTags>
@@ -354,6 +357,8 @@
 		</techHediffsTags>
 		<techHediffsRequired>
 			<li>Mechlink</li>
+			<li>BionicEye</li>
+			<li>BionicEye</li>
 		</techHediffsRequired>
 		<biocodeWeaponChance>1</biocodeWeaponChance>
 		<requiredWorkTags>
@@ -372,7 +377,7 @@
 			</li>
 		</skills>
 		<inventoryOptions>
-			<skipChance>0.6</skipChance>
+			<skipChance>0.5</skipChance>
 			<subOptionsChooseOne>
 				<li>
 					<thingDef>Ark_GiftofVast</thingDef>

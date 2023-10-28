@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef Name="Ark_BaseDepravedWeapons" Abstract="True" ParentName="BaseWeapon">
+		<techLevel>Spacer</techLevel>
+		<smeltable>true</smeltable>
+		<burnableByRecipe>true</burnableByRecipe>
+		<relicChance>1</relicChance>
+		<statBases>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Beauty>10</Beauty>
+			<SellPriceFactor>1.2</SellPriceFactor>
+		</statBases>
+		<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+		<tradeTags>
+			<li>Ark_DepravedWeapons</li>
+		</tradeTags>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Biocodable"/>
+		</comps>
+	</ThingDef>
+
+	<ThingDef Name="Ark_BaseDepravedWeaponsMelee" Abstract="True" ParentName="Ark_BaseDepravedWeapons">
+		<thingCategories>
+			<li>Ark_DepravedWeaponsMelee</li>
+		</thingCategories>
+		<weaponClasses>
+			<li>Melee</li>
+		</weaponClasses>
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers>
+				<li>FabricationBench</li>
+			</recipeUsers>
+			<unfinishedThingDef>Ark_UnfinishedDepravedWeapon</unfinishedThingDef>
+			<researchPrerequisite>Ark_DepravedWeapon</researchPrerequisite>
+		</recipeMaker>
+		<comps>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponMelee</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef Name="Ark_BaseDepravedWeaponsRanged" Abstract="True" ParentName="Ark_BaseDepravedWeapons">
+		<thingCategories>
+			<li>Ark_DepravedWeaponsRanged</li>
+		</thingCategories>
+		<weaponClasses>
+			<li>Ranged</li>
+		</weaponClasses>
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers>
+				<li>FabricationBench</li>
+			</recipeUsers>
+			<unfinishedThingDef>Ark_UnfinishedDepravedWeapon</unfinishedThingDef>
+			<researchPrerequisite>Ark_DepravedWeapon</researchPrerequisite>
+		</recipeMaker>
+		<comps>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponGun</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseGun">
+		<defName>Ark_CollapseStaff</defName>
+		<label>恩赐之杖</label>
+		<description>虚无布施以人类的身份行走时曾使用的手杖，注入邪魔的污染后化为了虚无布施播撒“恩赐”的工具。\n\n虚无布施会用手杖抛射能引发空间坍缩的坍缩之囊，坍缩之囊所引发的坍缩削弱了对现实物质的影响但对空间的扰乱显著增强，影响范围内的生物行动能力将受到极大的限制，被迫留在坍缩爆发的区域中显然不是好事。</description>
+		<techLevel>Spacer</techLevel>
+		<graphicData>
+			<texPath>Things/Weapon/Ark_CollapseStaff</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<tradeability>None</tradeability>
+		<destroyOnDrop>true</destroyOnDrop>
+		<relicChance>0</relicChance>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<statBases>
+			<MarketValue>2000</MarketValue>
+			<Mass>2</Mass>
+			<AccuracyTouch>0.6</AccuracyTouch>
+			<AccuracyShort>0.75</AccuracyShort>
+			<AccuracyMedium>0.8</AccuracyMedium>
+			<AccuracyLong>0.5</AccuracyLong>
+			<RangedWeapon_Cooldown>7</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>Ark_CollapseStaff</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Ark_Bullet_CollapseSpace</defaultProjectile>
+				<warmupTime>3.5</warmupTime>
+				<range>20.9</range>
+				<forcedMissRadius>1.9</forcedMissRadius>
+				<soundCast>Shot_IncendiaryLauncher</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>14</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>杖头</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Ark_Bullet_CollapseSpace</defName>
+		<label>坍缩之囊</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_CollapseSpace</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<color>(250,250,250)</color>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<speed>40</speed>
+			<damageDef>Stun</damageDef>
+			<explosionRadius>3.9</explosionRadius>
+			<arcHeightFactor>0.2</arcHeightFactor>
+			<shadowSize>0.6</shadowSize>
+			<screenShakeFactor>0.5</screenShakeFactor>
+			<postExplosionSpawnThingDef>Ark_CollapseSpace</postExplosionSpawnThingDef>
+		</projectile>
+	</ThingDef>
+</Defs>
