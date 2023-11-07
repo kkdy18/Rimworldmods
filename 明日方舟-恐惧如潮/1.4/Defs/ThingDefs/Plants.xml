@@ -48,8 +48,8 @@
 			<pollution>Any</pollution>
 		</plant>
 		<comps>
-			<li Class="AK_Industry.TCP_GasEmitter">
-				<gasType>Ark_CollapseSpace</gasType>
+			<li Class="MGasEmitter.TCP_GasEmitter">
+				<gasDef>Ark_CollapseSpace</gasDef>
 				<HPThreshold>0.5</HPThreshold>
 			</li>
 		</comps>

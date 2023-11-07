@@ -86,7 +86,7 @@
 		</specificApparelRequirements>
 		<apparelRequired>
 			<li>Ark_CloseEyeshade</li>
-			<li>HeavyShieldBelt</li>
+			<li>Ark_HeavyPersonalShield</li>
 		</apparelRequired>
 		<techHediffsChance>0.15</techHediffsChance>
 		<techHediffsMoney>1000~1800</techHediffsMoney>
@@ -246,7 +246,7 @@
 		<apparelRequired>
 			<li>Apparel_ArmorHelmetCataphractPrestige</li>
 			<li>Apparel_ArmorCataphract</li>
-			<li>HeavyShieldBelt</li>
+			<li>Ark_HeavyPersonalShield</li>
 		</apparelRequired>
 		<techHediffsRequired>
 			<li>BionicEye</li>
@@ -269,7 +269,7 @@
 		<apparelRequired>
 			<li>Apparel_ArmorHelmetCataphractPrestige</li>
 			<li>Apparel_ArmorCataphractPhoenix</li>
-			<li>HeavyShieldBelt</li>
+			<li>Ark_HeavyPersonalShield</li>
 		</apparelRequired>
 		<xenotypeSet>
 			<xenotypeChances>

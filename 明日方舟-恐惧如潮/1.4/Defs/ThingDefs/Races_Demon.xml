@@ -51,58 +51,6 @@
 		</comps>
 	</ThingDef>
 
-<!--	<ThingDef ParentName="BaseDemon">
-		<defName>Ark_NihilityMonster</defName>
-		<label>虚无孽物</label>
-		<description>虚无的种子撒播于现实孵化出的孽物。</description>
-		<statBases>
-			<MoveSpeed>4.04</MoveSpeed>
-			<MarketValue>404</MarketValue>
-			<ArmorRating_Blunt>2</ArmorRating_Blunt>
-			<ArmorRating_Heat>2</ArmorRating_Heat>
-			<ArmorRating_Sharp>0.9</ArmorRating_Sharp>
-		</statBases>
-		<uiIconScale>1.1</uiIconScale>
-		<tools>
-			<li>
-				<label>虚无之触</label>
-				<capacities>
-					<li>Ark_CollapseTentacle</li>
-				</capacities>
-				<power>5</power>
-				<cooldownTime>2</cooldownTime>
-				<armorPenetration>1</armorPenetration>
-				<linkedBodyPartsGroup>Arms</linkedBodyPartsGroup>
-			</li>
-		</tools>
-		<race>
-			<body>Ark_NihilityBody</body>
-			<baseHungerRate>0</baseHungerRate>
-			<baseBodySize>0.8</baseBodySize>
-			<baseHealthScale>1.7</baseHealthScale>
-			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
-			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
-			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
-		</race>
-	</ThingDef>
-
-	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>Ark_NihilityMonster</defName>
-		<label>虚无孽物</label>
-		<race>Ark_NihilityMonster</race>
-		<defaultFactionType>Ark_Demon</defaultFactionType>
-		<combatPower>100</combatPower>
-		<canArriveManhunter>false</canArriveManhunter>
-		<lifeStages>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Demon/Ark_NihilityMonster/Ark_NihilityMonster</texPath>
-					<drawSize>2</drawSize>
-				</bodyGraphicData>
-			</li>
-		</lifeStages>
-	</PawnKindDef>-->
-
 	<ThingDef ParentName="BaseDemon">
 		<defName>Ark_TaintedGhost</defName>
 		<label>污浊残影</label>

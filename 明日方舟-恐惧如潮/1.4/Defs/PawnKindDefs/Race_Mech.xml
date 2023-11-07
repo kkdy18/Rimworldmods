@@ -661,6 +661,7 @@
 			<ArmorRating_Sharp>0.9</ArmorRating_Sharp>
 		</statBases>
 		<race>
+			<fleshType>Ark_Demonoid</fleshType>
 			<body>Human</body>
 			<lifeStageAges Inherit="False">
 				<li>

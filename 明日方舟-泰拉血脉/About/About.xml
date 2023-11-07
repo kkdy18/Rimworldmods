@@ -6,10 +6,8 @@
 	</supportedVersions>
 	<modDependencies>
 		<li>
-			<packageId>brrainz.harmony</packageId>
-			<displayName>Harmony</displayName>
-			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
-			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+			<packageId>GSWT.FrameworkaboutArknights</packageId>
+			<displayName>灰风白茅的明日方舟模组框架</displayName>
 		</li>
 		<li>
 			<packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
@@ -20,7 +18,6 @@
 		<li>
 			<packageId>Ludeon.RimWorld.Biotech</packageId>
 			<displayName>Biotech</displayName>
-			
 		</li>
 	</modDependencies>
 	<packageId>GSWT.Arknighttiesofblood</packageId>

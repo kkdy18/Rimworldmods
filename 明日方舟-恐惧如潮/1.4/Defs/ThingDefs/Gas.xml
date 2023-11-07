@@ -25,7 +25,7 @@
 	</Def>-->
 
 	<ThingDef Name="BaseGas" Abstract="True">
-		<thingClass>Gas</thingClass>
+		<thingClass>MGasEmitter.Gas</thingClass>
 		<label>gas</label>
 		<category>Gas</category>
 		<altitudeLayer>Gas</altitudeLayer>
@@ -37,7 +37,7 @@
 		</graphicData>
 	</ThingDef>
 
-	<ThingDef Class="AK_Industry.GasDef" ParentName="BaseGas">
+	<ThingDef Class="MGasEmitter.GasDef" ParentName="BaseGas">
 		<defName>Ark_CollapseSpace</defName>
 		<label>“国度”</label>
 		<graphicData>
@@ -45,10 +45,10 @@
 			<drawSize>2.5</drawSize>
 			<color>(0, 0, 0,0.5)</color>
 		</graphicData>
-		<thingClass>AK_Industry.Gas</thingClass>
 		<addHediff>Ark_CollapsePollution</addHediff>
 		<hediffAddChance>1.0</hediffAddChance>
-		<hediffSeverity>0.001</hediffSeverity>
+		<interval>600</interval>
+		<hediffSeverity>0.05</hediffSeverity>
 		<resistedBy>Ark_Volition</resistedBy>
 		<gas>
 			<expireSeconds>

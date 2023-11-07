@@ -118,16 +118,39 @@
 				</li>
 			</suffixSymbols>
 		</symbolPack>
+			<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Ark_Endogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>UI/Icons/Genes/Ark_Xenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
 	</GeneDef>
 
 	<!--鬼的角-->
-	<GeneDef ParentName="Ark_HeadboneGeneBase">
+	<GeneDef Name="Ark_OniHornBase" ParentName="Ark_HeadboneGeneBase" Abstract="True">
+		<prerequisite>Ark_Oni</prerequisite>
+		<displayCategory>Ark_OniHorn</displayCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Ark_Endogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>UI/Icons/Genes/Ark_Xenogene</backgroundPathXenogenes>
+				<hediffsToBodyParts>
+					<li>
+						<hediff>Ark_HornAttack</hediff>
+						<bodyparts>
+							<li>Head</li>
+						</bodyparts>
+					</li>
+				</hediffsToBodyParts>
+			</li>
+		</modExtensions>
+	</GeneDef>
+	
+	<GeneDef ParentName="Ark_OniHornBase">
 		<defName>Ark_OniHorn1</defName>
 		<label>夜刃鬼角</label>
 		<description>该基因的携带者头上会长出一对短刃般的漆黑尖角。</description>
 		<iconPath>UI/Icons/Genes/Ark_OniHorn1</iconPath>
-		<prerequisite>Ark_Oni</prerequisite>
-		<displayCategory>Ark_ONI</displayCategory>
 		<graphicData>
 			<graphicPath>Things/Pawn/Humanlike/HeadAttachments/Ark_OniHorn/Ark_OniHorn1</graphicPath>
 		</graphicData>
@@ -143,29 +166,13 @@
 				</li>
 			</suffixSymbols>
 		</symbolPack>
-		<modExtensions>
-			<li Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>UI/Icons/Genes/Ark_Endogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>UI/Icons/Genes/Ark_Xenogene</backgroundPathXenogenes>
-				<hediffsToBodyParts>
-					<li>
-						<hediff>Ark_HornAttack</hediff>
-						<bodyparts>
-							<li>Head</li>
-						</bodyparts>
-					</li>
-				</hediffsToBodyParts>
-			</li>
-		</modExtensions>
 	</GeneDef>
 
-	<GeneDef ParentName="Ark_HeadboneGeneBase">
+	<GeneDef ParentName="Ark_OniHornBase">
 		<defName>Ark_OniHorn2</defName>
 		<label>黑玉鬼角</label>
 		<description>该基因的携带者头上会长出一根挺立的漆黑独角。</description>
 		<iconPath>UI/Icons/Genes/Ark_OniHorn2</iconPath>
-		<prerequisite>Ark_Oni</prerequisite>
-		<displayCategory>Ark_ONI</displayCategory>
 		<graphicData>
 			<graphicPath>Things/Pawn/Humanlike/HeadAttachments/Ark_OniHorn/Ark_OniHorn2</graphicPath>
 		</graphicData>
@@ -181,20 +188,6 @@
 				</li>
 			</suffixSymbols>
 		</symbolPack>
-		<modExtensions>
-			<li Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>UI/Icons/Genes/Ark_Endogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>UI/Icons/Genes/Ark_Xenogene</backgroundPathXenogenes>
-				<hediffsToBodyParts>
-					<li>
-						<hediff>Ark_HornAttack</hediff>
-						<bodyparts>
-							<li>Head</li>
-						</bodyparts>
-					</li>
-				</hediffsToBodyParts>
-			</li>
-		</modExtensions>
 	</GeneDef>
 
 	<GeneDef ParentName="Ark_HeadboneGeneBase">
@@ -203,7 +196,7 @@
 		<description>该基因的携带者头上会长出外观如岩石的一大一小两对角。</description>
 		<iconPath>UI/Icons/Genes/Ark_OniHorn3</iconPath>
 		<prerequisite>Ark_Oni</prerequisite>
-		<displayCategory>Ark_ONI</displayCategory>
+		<displayCategory>Ark_OniHorn</displayCategory>
 		<graphicData>
 			<graphicPath>Things/Pawn/Humanlike/HeadAttachments/Ark_OniHorn/Ark_OniHorn3</graphicPath>
 		</graphicData>
@@ -235,13 +228,11 @@
 		</modExtensions>
 	</GeneDef>
 
-	<GeneDef ParentName="Ark_HeadboneGeneBase">
+	<GeneDef ParentName="Ark_OniHornBase">
 		<defName>Ark_OniHornBlue</defName>
 		<label>青鬼之角</label>
 		<description>该基因的携带者额头会长出一对弯曲的青蓝长角。</description>
 		<iconPath>UI/Icons/Genes/Ark_OniHornBlue</iconPath>
-		<prerequisite>Ark_Oni</prerequisite>
-		<displayCategory>Ark_ONI</displayCategory>
 		<graphicData>
 			<graphicPath>Things/Pawn/Humanlike/HeadAttachments/Ark_OniHorn/Ark_OniHornBlue</graphicPath>
 		</graphicData>
@@ -257,29 +248,13 @@
 				</li>
 			</suffixSymbols>
 		</symbolPack>
-		<modExtensions>
-			<li Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>UI/Icons/Genes/Ark_Endogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>UI/Icons/Genes/Ark_Xenogene</backgroundPathXenogenes>
-				<hediffsToBodyParts>
-					<li>
-						<hediff>Ark_HornAttack</hediff>
-						<bodyparts>
-							<li>Head</li>
-						</bodyparts>
-					</li>
-				</hediffsToBodyParts>
-			</li>
-		</modExtensions>
 	</GeneDef>
 
-	<GeneDef ParentName="Ark_HeadboneGeneBase">
+	<GeneDef ParentName="Ark_OniHornBase">
 		<defName>Ark_OniHornRed</defName>
 		<label>赤鬼之角</label>
 		<description>该基因的携带者额头会长出一对弯曲的火红长角。</description>
 		<iconPath>UI/Icons/Genes/Ark_OniHornRed</iconPath>
-		<prerequisite>Ark_Oni</prerequisite>
-		<displayCategory>Ark_ONI</displayCategory>
 		<graphicData>
 			<graphicPath>Things/Pawn/Humanlike/HeadAttachments/Ark_OniHorn/Ark_OniHornRed</graphicPath>
 		</graphicData>
@@ -295,29 +270,13 @@
 				</li>
 			</suffixSymbols>
 		</symbolPack>
-		<modExtensions>
-			<li Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>UI/Icons/Genes/Ark_Endogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>UI/Icons/Genes/Ark_Xenogene</backgroundPathXenogenes>
-				<hediffsToBodyParts>
-					<li>
-						<hediff>Ark_HornAttack</hediff>
-						<bodyparts>
-							<li>Head</li>
-						</bodyparts>
-					</li>
-				</hediffsToBodyParts>
-			</li>
-		</modExtensions>
 	</GeneDef>
 
-	<GeneDef ParentName="Ark_HeadboneGeneBase">
+	<GeneDef ParentName="Ark_OniHornBase">
 		<defName>Ark_OniHornFloating</defName>
 		<label>石膏之角</label>
 		<description>该基因的携带者额头会长出一对弯曲的角，角会受皮肤色素影响呈现出多样化的色彩。</description>
 		<iconPath>UI/Icons/Genes/Ark_OniHornFloating</iconPath>
-		<prerequisite>Ark_Oni</prerequisite>
-		<displayCategory>Ark_ONI</displayCategory>
 		<graphicData>
 			<graphicPath>Things/Pawn/Humanlike/HeadAttachments/Ark_OniHorn/Ark_OniHornFloating</graphicPath>
 			<colorType>Skin</colorType>
@@ -334,29 +293,13 @@
 				</li>
 			</suffixSymbols>
 		</symbolPack>
-		<modExtensions>
-			<li Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>UI/Icons/Genes/Ark_Endogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>UI/Icons/Genes/Ark_Xenogene</backgroundPathXenogenes>
-				<hediffsToBodyParts>
-					<li>
-						<hediff>Ark_HornAttack</hediff>
-						<bodyparts>
-							<li>Head</li>
-						</bodyparts>
-					</li>
-				</hediffsToBodyParts>
-			</li>
-		</modExtensions>
 	</GeneDef>
 
-	<GeneDef ParentName="Ark_HeadboneGeneBase">
+	<GeneDef ParentName="Ark_OniHornBase">
 		<defName>Ark_OniHornFloating2</defName>
 		<label>琉璃之角</label>
 		<description>该基因的携带者额头会长出一根独角，角会受皮肤色素影响呈现出多样化的色彩。</description>
 		<iconPath>UI/Icons/Genes/Ark_OniHornFloating2</iconPath>
-		<prerequisite>Ark_Oni</prerequisite>
-		<displayCategory>Ark_ONI</displayCategory>
 		<graphicData>
 			<graphicPath>Things/Pawn/Humanlike/HeadAttachments/Ark_OniHorn/Ark_OniHornFloating2</graphicPath>
 			<colorType>Skin</colorType>
@@ -373,19 +316,5 @@
 				</li>
 			</suffixSymbols>
 		</symbolPack>
-		<modExtensions>
-			<li Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>UI/Icons/Genes/Ark_Endogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>UI/Icons/Genes/Ark_Xenogene</backgroundPathXenogenes>
-				<hediffsToBodyParts>
-					<li>
-						<hediff>Ark_HornAttack</hediff>
-						<bodyparts>
-							<li>Head</li>
-						</bodyparts>
-					</li>
-				</hediffsToBodyParts>
-			</li>
-		</modExtensions>
 	</GeneDef>
 </Defs>

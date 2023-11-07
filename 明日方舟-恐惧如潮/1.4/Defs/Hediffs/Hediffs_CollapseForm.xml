@@ -305,6 +305,7 @@
 				<compClass>HediffComp_Invisibility</compClass>
 			</li>
 			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>True</showRemainingTime>
 				<disappearsAfterTicks>
 					<min>7500</min>
 					<max>7500</max>
@@ -401,13 +402,13 @@
 		<description>附着在该个体上的坍缩平时不会显现，只会在其生命终结时爆发，吞噬一定范围的空间并留下难以复原的异常现象“国度”，他最好与重要设施和人群保持距离。</description>
 		<comps>
 			<li Class="Ark_GSWT.HCP_Exploder">
-				<damageDef>Ark_CollapseSpace</damageDef>
-				<postExplosionSpawnThingDef>Ark_CollapseSpace</postExplosionSpawnThingDef>
+				<damage>Ark_CollapseSpace</damage>
+				<SpawnThing>Ark_CollapseSpace</SpawnThing>
 			</li>
 		</comps>
 	</HediffDef>
 
-	<HediffDef ParentName="Ark_CollapseFormBase">
+	<HediffDef ParentName="Ark_CollapseEnemyBase">
 		<defName>Ark_CollapseEnemy6</defName>
 		<label>坍缩范式-恐惧实体</label>
 		<description>坍缩该坍缩体转化为人类内心最深处的负面情感的化身，扭曲了其生命的存在形式，他在心智的土壤上播洒绝望，死亡不会是他恶行的终点。</description>
@@ -415,9 +416,6 @@
 			<li Class="AnimalBehaviours.HediffCompProperties_ThoughtEffecter">
 				<radius>9</radius>
 				<thoughtDef>Ark_FearEntity</thoughtDef>
-			</li>
-			<li Class="AnimalBehaviours.HediffCompProperties_Resurrect">
-				<livesLeft>3</livesLeft>
 			</li>
 		</comps>
 	</HediffDef>
@@ -589,9 +587,9 @@
 		<description>被坍缩污染的反应堆不再遵循能量守恒定律，转化时消耗与生成的能量极端失衡，但由于缺乏利用过剩能量的途径，这类机械体的特点只有在损毁时会发生惊人的超级爆炸。\n\n我们用抗坍缩剂中和了邪魔污染，现在安装该模组的机械体只会产生符合物理定律的科学爆炸，而不是能把一切炸去亚空间的邪魔坍缩与诡异黑雾。\n\n安装该模组的机械体大概率无法回收（尸骨无存），请谨慎选择（炸了不会心疼的）。</description>
 		<comps>
 			<li Class="Ark_GSWT.HCP_Exploder">
-				<explosiveRadius>11.9</explosiveRadius>
-				<damageDef>BombSuper</damageDef>
-				<explosionSound>Explosion_GiantBomb</explosionSound>
+				<Radius>11.9</Radius>
+				<damage>BombSuper</damage>
+				<sound>Explosion_GiantBomb</sound>
 			</li>
 		</comps>
 	</HediffDef>

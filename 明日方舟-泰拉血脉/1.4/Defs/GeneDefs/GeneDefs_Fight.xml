@@ -22,19 +22,64 @@
     </modExtensions>
   </GeneDef>
 
-	<GeneDef>
-		<defName>Outspoken</defName>
-		<label>合金脑袋</label>
-		<description>该基因的携带者说话十分坦率，毫无顾忌，容易使其他人感到不满。</description>
-		<iconPath>UI/Icons/Genes/Outspoken</iconPath>
+	<GeneDef ParentName="GeneHandsBase">
+		<defName>ShootingFingers</defName>
+		<label>手铳大师</label>
+		<description>该基因的携带者有着异常灵活的手指与对铳械与生俱来的天赋，他们只要摸到一把枪就能迅速了解它的性能并将它调整到最适合自己的状态。</description>
+		<iconPath>UI/Icons/Genes/ShootingFingers</iconPath>
+		<prerequisite>Ark_Sectator</prerequisite>
 		<biostatCpx>1</biostatCpx>
-		<biostatMet>1</biostatMet>
-		<displayCategory>Ark_Sundries</displayCategory>
-		<forcedTraits>
-			<li>
-				<def>Ark_Outspoken</def>
+		<biostatMet>-2</biostatMet>
+		<displayCategory>Ark_Fight</displayCategory>
+		<statOffsets>
+			<AimingDelayFactor>-0.25</AimingDelayFactor>
+			<RangedWeapon_Cooldown>-0.1</RangedWeapon_Cooldown>
+			<ShootingAccuracyPawn>5</ShootingAccuracyPawn>
+		</statOffsets>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Ark_Endogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>UI/Icons/Genes/Ark_Xenogene</backgroundPathXenogenes>
 			</li>
-		</forcedTraits>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Ark_gene_FireRoad</defName>
+		<label>灼炎为路</label>
+		<description>aaa</description>
+		<iconPath>UI/Icons/Genes/Ark_FireRoad</iconPath>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-2</biostatMet>
+		<displayCategory>Ark_Fight</displayCategory>
+		<abilities>
+			<li>Ark_FireRoad</li>
+		</abilities>
+		<descriptionHyperlinks>
+			<AbilityDef>Ark_FireRoad</AbilityDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Ark_Endogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>UI/Icons/Genes/Ark_Xenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Ark_gene_FireCurse</defName>
+		<label>燃血咒缚</label>
+		<description>aaa</description>
+		<iconPath>UI/Icons/Genes/Ark_FireCurse</iconPath>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-2</biostatMet>
+		<displayCategory>Ark_Fight</displayCategory>
+		<abilities>
+			<li>Ark_FireCurse</li>
+		</abilities>
+		<descriptionHyperlinks>
+			<AbilityDef>Ark_FireCurse</AbilityDef>
+		</descriptionHyperlinks>
 		<modExtensions>
 			<li Class="VanillaGenesExpanded.GeneExtension">
 				<backgroundPathEndogenes>UI/Icons/Genes/Ark_Endogene</backgroundPathEndogenes>
@@ -44,7 +89,7 @@
 	</GeneDef>
 
 	<GeneDef Name="Ark_GenderBase" Abstract="True">
-		<displayCategory>Miscellaneous</displayCategory>
+		<displayCategory>Ark_Misc</displayCategory>
 		<exclusionTags>
 			<li>Gender</li>
 		</exclusionTags>

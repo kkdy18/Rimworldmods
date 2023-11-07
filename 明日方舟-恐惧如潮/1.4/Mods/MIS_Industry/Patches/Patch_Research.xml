@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ResearchProjectDef[defName = "Ark_DemonSecret"]/researchViewX</xpath>
+		<value>
+			<researchViewX>4</researchViewX>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ResearchProjectDef[defName = "Ark_NoRootPlant"]/researchViewX</xpath>
+		<value>
+			<researchViewX>5</researchViewX>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ResearchProjectDef[defName = "Ark_AltarofVast"]/researchViewX</xpath>
+		<value>
+			<researchViewX>5</researchViewX>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ResearchProjectDef[defName = "Ark_CollapseMechtech"]/researchViewX</xpath>
+		<value>
+			<researchViewX>5</researchViewX>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ResearchProjectDef[defName = "Ark_DepravedWeapon"]/researchViewX</xpath>
+		<value>
+			<researchViewX>6</researchViewX>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ResearchProjectDef[defName = "Ark_StandardMechC"]/researchViewX</xpath>
+		<value>
+			<researchViewX>6</researchViewX>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ResearchProjectDef[defName = "Ark_HighMechC"]/researchViewX</xpath>
+		<value>
+			<researchViewX>7</researchViewX>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ResearchProjectDef[defName = "Ark_UltraMechC"]/researchViewX</xpath>
+		<value>
+			<researchViewX>8</researchViewX>
+		</value>
+	</Operation>
+</Patch>

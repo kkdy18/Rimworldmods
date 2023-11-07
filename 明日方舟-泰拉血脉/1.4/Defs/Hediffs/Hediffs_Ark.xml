@@ -1,13 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<HediffDef Name="Ark_GeneHediffBase" Abstract="True">
+		<hediffClass>HediffWithComps</hediffClass>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<maxSeverity>1</maxSeverity>
+		<initialSeverity>1</initialSeverity>
+		<alwaysAllowMothball>True</alwaysAllowMothball>
+		<alwaysAllowMothballCached>True</alwaysAllowMothballCached>
+	</HediffDef>
+	
 	<!--萨科塔-->
-  <HediffDef>
+  <HediffDef ParentName="Ark_GeneHediffBase">
     <defName>Ark_hediff_Halo</defName>
     <label>光环</label>
     <description>悬浮在头顶的自发光环状物，没有实体，能通过刺激神经组织来增强携带者的心灵敏感性并且让同样拥有光环的个体之间互通情绪，但似乎会导致沟通能力的减弱。</description>
-    <hediffClass>HediffWithComps</hediffClass>
-    <scenarioCanAdd>false</scenarioCanAdd>
-	<isBad>false</isBad>
     <stages>
       <li>
         <statOffsets>
@@ -20,18 +27,13 @@
       <comps>
       <li Class="Ark_GSWT.HCP_MoodAura"/>
     </comps>
-	  <alwaysAllowMothball>True</alwaysAllowMothball>
-	  <alwaysAllowMothballCached>True</alwaysAllowMothballCached>
   </HediffDef>
 
-	<HediffDef>
+	<HediffDef ParentName="Ark_GeneHediffBase">
 		<defName>Ark_hediff_Sectator</defName>
 		<label>萨科塔</label>
 		<description>我们生来就是拉特兰人，无论头顶是光环或是犄角。</description>
 		<defaultLabelColor>(1,1,0.5)</defaultLabelColor>
-		<hediffClass>HediffWithComps</hediffClass>
-		<scenarioCanAdd>false</scenarioCanAdd>
-		<isBad>false</isBad>
 		<stages>
 			<li>
 				<capMods>
@@ -42,18 +44,12 @@
 				</capMods>
 			</li>
 		</stages>
-		<alwaysAllowMothball>True</alwaysAllowMothball>
-		<alwaysAllowMothballCached>True</alwaysAllowMothballCached>
 	</HediffDef>
 
-  <HediffDef>
+  <HediffDef ParentName="Ark_GeneHediffBase">
     <defName>Ark_hediff_disHalo</defName>
     <label>光环阻隔</label>
     <description>大脑与光环之间的物理阻隔引发了异常的脑神经痛，移除阻挡物后症状会自然缓解。</description>
-    <hediffClass>HediffWithComps</hediffClass>
-    <scenarioCanAdd>false</scenarioCanAdd>
-	<maxSeverity>1.0</maxSeverity>
-	<isBad>false</isBad>
 	  <comps>
 		  <li Class="HediffCompProperties_SeverityPerDay">
 			  <severityPerDay>-24</severityPerDay>
@@ -72,17 +68,10 @@
     </stages>
   </HediffDef>
 
-  <HediffDef>
+  <HediffDef ParentName="Ark_GeneHediffBase">
     <defName>Ark_hediff_Wing</defName>
     <label>光翼</label>
     <description>悬浮在背后的自发光片状物，隐约排列出翅膀的模样，不具备飞行的功能但能有效提升携带者的机动能力。</description>
-    <hediffClass>HediffWithComps</hediffClass>
-    <scenarioCanAdd>false</scenarioCanAdd>
-	<isBad>false</isBad>
-    <comps>
-      <li Class="AnimalBehaviours.HediffCompProperties_Floating">
-      </li>
-    </comps>
     <stages>
       <li>
         <statOffsets>
@@ -90,40 +79,34 @@
         </statOffsets>
       </li>
     </stages>
-	  <alwaysAllowMothball>True</alwaysAllowMothball>
-	  <alwaysAllowMothballCached>True</alwaysAllowMothballCached>
+	  <comps>
+		  <li Class="AnimalBehaviours.HediffCompProperties_Floating">
+		  </li>
+	  </comps>
   </HediffDef>
 
 	<!--瓦伊凡-->
-	<HediffDef>
+	<HediffDef ParentName="Ark_GeneHediffBase">
 		<defName>Ark_hediff_Vouivre</defName>
 		<label>瓦伊凡</label>
 		<description>风暴中唯瓦伊凡屹立不倒。</description>
 		<defaultLabelColor>(1,1,0.5)</defaultLabelColor>
-		<hediffClass>HediffWithComps</hediffClass>
-		<scenarioCanAdd>false</scenarioCanAdd>
-		<isBad>false</isBad>
 		<stages>
 			<li>
 				<statOffsets>
 					<MentalBreakThreshold>-0.1</MentalBreakThreshold>
 					<PainShockThreshold>0.25</PainShockThreshold>
-					<CarryingCapacity>+50</CarryingCapacity>
+					<CarryingCapacity>50</CarryingCapacity>
 					<ArrestSuccessChance>0.25</ArrestSuccessChance>
 				</statOffsets>
 			</li>
 		</stages>
-		<alwaysAllowMothball>True</alwaysAllowMothball>
-		<alwaysAllowMothballCached>True</alwaysAllowMothballCached>
 	</HediffDef>
 
-	<HediffDef>
+	<HediffDef ParentName="Ark_GeneHediffBase">
 		<defName>Ark_HornAttack</defName>
 		<label>角</label>
 		<description>坚硬而又锐利的尖角，在紧急情况下可以当作武器痛击敌人。</description>
-		<hediffClass>HediffWithComps</hediffClass>
-		<scenarioCanAdd>false</scenarioCanAdd>
-		<isBad>false</isBad>
 		<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
 		<comps>
 			<li Class="HediffCompProperties_VerbGiver">
@@ -139,17 +122,12 @@
 				</tools>
 			</li>
 		</comps>
-		<alwaysAllowMothball>True</alwaysAllowMothball>
-		<alwaysAllowMothballCached>True</alwaysAllowMothballCached>
 	</HediffDef>
 
-	<HediffDef>
+	<HediffDef ParentName="Ark_GeneHediffBase">
 		<defName>Ark_HornAttack2</defName>
 		<label>角</label>
-		<description>不是很适合捅人的坚硬大角，在紧急情况下可以当作武器痛击敌人。</description>
-		<hediffClass>HediffWithComps</hediffClass>
-		<scenarioCanAdd>false</scenarioCanAdd>
-		<isBad>false</isBad>
+		<description>不是很适合捅人的坚硬大角，但是在紧急情况下也可以当作武器痛击敌人。</description>
 		<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
 		<comps>
 			<li Class="HediffCompProperties_VerbGiver">
@@ -165,45 +143,35 @@
 				</tools>
 			</li>
 		</comps>
-		<alwaysAllowMothball>True</alwaysAllowMothball>
-		<alwaysAllowMothballCached>True</alwaysAllowMothballCached>
 	</HediffDef>
-
-	<HediffDef>
-		<defName>Ark_TailAttack</defName>
-		<label>鞭尾</label>
-		<description>柔韧而又粗壮的长尾，在紧急情况下可以当作武器痛击敌人。</description>
-		<hediffClass>HediffWithComps</hediffClass>
-		<scenarioCanAdd>false</scenarioCanAdd>
-		<isBad>false</isBad>
-		<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
+	
+	<!--德拉克-->
+	<HediffDef ParentName="Ark_GeneHediffBase">
+		<defName>Ark_hediff_FireCurse</defName>
+		<label>焚火缠身</label>
+		<description>aaa</description>
+		<defaultLabelColor>(1,0.5,0)</defaultLabelColor>
+		<stages>
+			<li>
+				<statOffsets>
+					<Flammability>1</Flammability>
+					<ArmorRating_Heat>-1</ArmorRating_Heat>
+				</statOffsets>
+			</li>
+		</stages>
 		<comps>
-			<li Class="HediffCompProperties_VerbGiver">
-				<tools>
-					<li>
-						<label>尾</label>
-						<capacities>
-							<li>Blunt</li>
-						</capacities>
-						<power>12</power>
-						<cooldownTime>1</cooldownTime>
-					</li>
-				</tools>
+			<li Class="Ark_GSWT.HCP_Exploder">
+				<damage>Flame</damage>
 			</li>
 		</comps>
-		<alwaysAllowMothball>True</alwaysAllowMothball>
-		<alwaysAllowMothballCached>True</alwaysAllowMothballCached>
 	</HediffDef>
-
+	
 	<!--鬼-->
-	<HediffDef>
+	<HediffDef ParentName="Ark_GeneHediffBase">
 		<defName>Ark_hediff_Oni</defName>
 		<label>鬼</label>
 		<description>智者向内寻求力量，狂躁既能焚尽生命，也能熔铸坚盾。</description>
 		<defaultLabelColor>(1,1,0.5)</defaultLabelColor>
-		<hediffClass>HediffWithComps</hediffClass>
-		<scenarioCanAdd>false</scenarioCanAdd>
-		<isBad>false</isBad>
 		<stages>
 			<li>
 				<statOffsets>
@@ -216,19 +184,13 @@
 				</statFactors>
 			</li>
 		</stages>
-		<alwaysAllowMothball>True</alwaysAllowMothball>
-		<alwaysAllowMothballCached>True</alwaysAllowMothballCached>
 	</HediffDef>
 
-	<HediffDef>
+	<HediffDef ParentName="Ark_GeneHediffBase">
 		<defName>Ark_OniBerserk</defName>
 		<label>狂怒之鬼</label>
 		<description>嗜血的本能正在支配鬼的自我从而激发出超越人体极限的力量，勉强分辨敌友便是其理智的极限了。</description>
 		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
-		<hediffClass>HediffWithComps</hediffClass>
-		<scenarioCanAdd>false</scenarioCanAdd>
-		<maxSeverity>1.0</maxSeverity>
-		<isBad>false</isBad>
 		<stages>
 			<li>
 				<painFactor>0.5</painFactor>
@@ -256,16 +218,13 @@
 		</comps>
 	</HediffDef>
 
-	<HediffDef>
+	<HediffDef ParentName="Ark_GeneHediffBase">
 		<defName>Ark_OniExhaustion</defName>
 		<label>超限衰竭</label>
 		<description>由于使用超出身体极限的力量而引发的综合症，伴有神经系统损伤、多器官功能障碍等症状，患者需要充分休息等待身体自然恢复，继续压榨身体会使症状加重甚至危及生命。</description>
-		<hediffClass>HediffWithComps</hediffClass>
 		<defaultLabelColor>(0.8, 0.8, 0.35)</defaultLabelColor>
 		<makesSickThought>true</makesSickThought>
 		<initialSeverity>0.4</initialSeverity>
-		<lethalSeverity>1</lethalSeverity>
-		<scenarioCanAdd>false</scenarioCanAdd>
 		<comps>
 			<li Class="HediffCompProperties_SeverityPerDay">
 				<severityPerDay>-0.3</severityPerDay>

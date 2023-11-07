@@ -25,7 +25,7 @@
         <displayPriorityInGenepack>-108</displayPriorityInGenepack>
    </GeneCategoryDef>
 	<GeneCategoryDef>
-		<defName>Ark_Sundries</defName>
+		<defName>Ark_Misc</defName>
 		<label>泰拉基因-杂项</label>
 		<displayPriorityInXenotype>280.36</displayPriorityInXenotype>
 		<displayPriorityInGenepack>-108</displayPriorityInGenepack>
@@ -37,7 +37,7 @@
         <displayPriorityInGenepack>-108</displayPriorityInGenepack>
    </GeneCategoryDef>
 	<GeneCategoryDef>
-		<defName>Ark_ONI</defName>
+		<defName>Ark_OniHorn</defName>
 		<label>鬼之角</label>
 		<displayPriorityInXenotype>292.36</displayPriorityInXenotype>
 		<displayPriorityInGenepack>-108</displayPriorityInGenepack>

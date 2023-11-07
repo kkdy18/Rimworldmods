@@ -10,7 +10,7 @@
 		<requiredCountAtGameStart>1</requiredCountAtGameStart>
 		<fixedName>邪魔</fixedName>
 		<canMakeRandomly>true</canMakeRandomly>
-		<canSiege>true</canSiege>
+		<canSiege>false</canSiege>
 		<canStageAttacks>true</canStageAttacks>
 		<xenotypeSet Inherit="False">
 			<xenotypeChances>

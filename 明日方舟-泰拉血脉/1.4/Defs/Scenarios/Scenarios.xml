@@ -90,9 +90,7 @@
 	<ScenarioDef>
     <defName>Ark_DragonvsWild</defName>
     <label>龙与荒野</label>
-    <description>养生会所的人告诉你那是一台最新款的塑形舱，于是你躺了进去。但当你醒来时已经身在一个急速下降的迫降舱里，你随身的物品全部消失不见。没有装备，没有补给，没有工具，你发誓要干爆所有敢惹你的人的狗头。
-
-		（好消息是可能有和你一样的倒霉蛋被扔到附近）</description>
+    <description>养生会所的人告诉你那是一台最新款的塑形舱，于是你躺了进去。但当你醒来时已经身在一个急速下降的迫降舱里，你随身的物品全部消失不见。没有装备，没有补给，没有工具，你发誓要干爆所有敢惹你的人的狗头。\n\n（好消息是可能有和你一样的倒霉蛋被扔到附近）</description>
     <scenario>
       <summary>赤身裸体，毫无准备。这是极其困难而且不公平的难度，但现在情况有了变化，因为你是一个瓦伊凡！</summary>
       <playerFaction>
@@ -231,7 +229,7 @@
 				<stuff>Steel</stuff>
 				<quality>Excellent</quality>
 			</li>
-			<li Class="ScenPart_ScatterThingsNearPlayerStart" MayRequire="Ludeon.RimWorld.Royalty">
+			<li Class="ScenPart_ScatterThingsNearPlayerStart" MayRequire="Ludeon.RimWorld.Ideology">
 				<def>ScatterThingsNearPlayerStart</def>
 				<thingDef>Apparel_VisageMask</thingDef>
 				<stuff>Steel</stuff>

@@ -1,11 +1,3 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-	<ChildrenReceiveYes>儿童难民转移 (花费: {0}友好度)</ChildrenReceiveYes>
-	<ChildrenReceiveNo>儿童难民转移</ChildrenReceiveNo>
-	<SelectXenotype>请问你要接收什么种族的难民</SelectXenotype>
-	<Sectator>萨科塔</Sectator>
-	<Vouivre>瓦伊凡</Vouivre>
-	<Oni>鬼</Oni>
-	<LetterLabelArkChildrenJoinIn>儿童难民抵达</LetterLabelArkChildrenJoinIn>
-	<LetterArkChildrenJoinIn>难民已经顺利转移至你的殖民地，要善待他/她哦。</LetterArkChildrenJoinIn>
 </LanguageData>

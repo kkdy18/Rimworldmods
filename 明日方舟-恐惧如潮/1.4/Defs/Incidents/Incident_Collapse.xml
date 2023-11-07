@@ -3,6 +3,9 @@
 	<Ark_GSWT.Ark_IncidentDef Name="Ark_IncidentBossBase" Abstract="True">
 		<targetTags>
 			<li>Map_PlayerHome</li>
+			<li>Map_TempIncident</li>
+			<li>Map_Misc</li>
+			<li>Map_RaidBeacon</li>
 		</targetTags>
 		<workerClass>Ark_GSWT.IncidentWorker_BossComing</workerClass>
 		<letterDef>ThreatBig</letterDef>

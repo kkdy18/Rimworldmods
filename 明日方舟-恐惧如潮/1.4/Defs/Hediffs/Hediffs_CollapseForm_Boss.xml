@@ -65,9 +65,9 @@
 				<customMote>Ark_Mote_GiverLink</customMote>
 			</li>
 			<li Class="Ark_GSWT.HCP_Exploder">
-				<explosiveRadius>3.9</explosiveRadius>
-				<damageDef>Ark_CollapseSpace</damageDef>
-				<postExplosionSpawnThingDef>Ark_CollapseSpace</postExplosionSpawnThingDef>
+				<Radius>3.9</Radius>
+				<damage>Ark_CollapseSpace</damage>
+				<SpawnThing>Ark_CollapseSpace</SpawnThing>
 			</li>
 		</comps>
 	</HediffDef>

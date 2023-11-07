@@ -89,7 +89,7 @@
     <description>该基因的携带者的大脑似乎拒绝被遮盖，穿戴帽子或普通的头盔会使他们感到强烈的不适。</description>
     <iconPath>UI/Icons/Genes/HeadRestrain</iconPath>
     <prerequisite>Ark_Sectator</prerequisite>
-    <displayCategory>Miscellaneous</displayCategory>
+    <displayCategory>Ark_Misc</displayCategory>
     <biostatCpx>1</biostatCpx>
     <biostatMet>3</biostatMet>
     <modExtensions>

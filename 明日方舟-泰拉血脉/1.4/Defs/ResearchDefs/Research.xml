@@ -38,6 +38,6 @@
 		<techLevel>Medieval</techLevel>
 		<tab>Ark_ResearchTab</tab>
 		<researchViewX>0</researchViewX>
-		<researchViewY>1</researchViewY>
+		<researchViewY>0.5</researchViewY>
 	</ResearchProjectDef>
 </Defs>

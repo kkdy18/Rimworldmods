@@ -11,16 +11,11 @@
 		<displayPriorityInCategory>2000</displayPriorityInCategory>
 	</StatDef>
 	
-	<HediffDef>
+	<HediffDef ParentName="Ark_CollapseFormBase">
 		<defName>Ark_CollapseBody</defName>
 		<label>坍缩躯壳</label>
 		<description>因邪魔污染异化的人类，自我意识被彻底抹去，身躯已成为阴影的容器，一身技艺皆化为邪魔的屠刀。</description>
 		<defaultLabelColor>(0.8,0,0)</defaultLabelColor>
-		<hediffClass>HediffWithComps</hediffClass>
-		<scenarioCanAdd>false</scenarioCanAdd>
-		<isBad>false</isBad>
-		<alwaysAllowMothball>True</alwaysAllowMothball>
-		<alwaysAllowMothballCached>True</alwaysAllowMothballCached>
 		<stages>
 			<li>
 				<painFactor>0</painFactor>
@@ -50,16 +45,11 @@
 		</disablesNeeds>
 	</HediffDef>
 
-	<HediffDef>
+	<HediffDef ParentName="Ark_CollapseFormBase">
 		<defName>Ark_Collapaal</defName>
 		<label>坍缩体</label>
 		<description>于世界各地观测到的非人生命体，出现即干涉现实空间基础法则和思维认知。</description>
 		<defaultLabelColor>(0.8,0,0)</defaultLabelColor>
-		<hediffClass>HediffWithComps</hediffClass>
-		<scenarioCanAdd>false</scenarioCanAdd>
-		<isBad>false</isBad>
-		<alwaysAllowMothball>True</alwaysAllowMothball>
-		<alwaysAllowMothballCached>True</alwaysAllowMothballCached>
 		<stages>
 			<li>
 				<painFactor>0</painFactor>
@@ -80,54 +70,28 @@
 		</stages>
 	</HediffDef>
 
-	<HediffDef>
-		<defName>Ark_CollapseWalk</defName>
-		<label>亚空间行走</label>
-		<description>此处的空间正在向亚空间坍缩，除了坍缩体没有生命能适应这扭曲的环境，不要在此久留。</description>
+	<HediffDef ParentName="Ark_CollapseFormBase">
+		<defName>Ark_hediff_DemonCapsule</defName>
+		<label>生命登阶</label>
+		<description>aaa</description>
 		<defaultLabelColor>(1,0,0.8)</defaultLabelColor>
-		<hediffClass>HediffWithComps</hediffClass>
-		<scenarioCanAdd>false</scenarioCanAdd>
-		<isBad>false</isBad>
-		<alwaysAllowMothball>True</alwaysAllowMothball>
-		<alwaysAllowMothballCached>True</alwaysAllowMothballCached>
 		<stages>
 			<li>
-				<capMods>
-					<li>
-						<capacity>Moving</capacity>
-						<offset>-0.2</offset>
-					</li>
-					<li>
-						<capacity>Sight</capacity>
-						<offset>-0.2</offset>
-					</li>
-				</capMods>
 			</li>
 		</stages>
 		<comps>
-			<li Class="HediffCompProperties_Disappears">
-				<disappearsAfterTicks>
-					<min>1000</min>
-					<max>2000</max>
-				</disappearsAfterTicks>
-			</li>
-			<li Class="HediffCompProperties_DisappearsOnDeath"/>
 		</comps>
 	</HediffDef>
 
-	<HediffDef>
+	<HediffDef ParentName="Ark_CollapseFormBase">
 		<defName>Ark_CollapsePollution</defName>
 		<label>邪魔污染</label>
 		<description>现实生物与邪魔接触就会在精神层面累积的不可逆污染，随着污染加深，被记录为“坍缩范式”的异常现象将会显现。</description>
 		<defaultLabelColor>(0.8,0,0.8)</defaultLabelColor>
-		<hediffClass>HediffWithComps</hediffClass>
-		<isBad>false</isBad>
 		<lethalSeverity>3</lethalSeverity>
 		<maxSeverity>3</maxSeverity>
 		<makesSickThought>true</makesSickThought>
 		<scenarioCanAdd>true</scenarioCanAdd>
-		<alwaysAllowMothball>True</alwaysAllowMothball>
-		<alwaysAllowMothballCached>True</alwaysAllowMothballCached>
 		<stages>
 			<li>
 				<label>initial</label>
@@ -256,6 +220,7 @@
 		<comps>
 			<li Class="Ark_GSWT.HCP_DeathCall">
 				<SpawnThing>Ark_TaintedGhost</SpawnThing>
+				<Enmity>true</Enmity>
 				<DestroyCorpse>false</DestroyCorpse>
 				<NeedSeverity>2.1</NeedSeverity>
 			</li>
