@@ -43,10 +43,10 @@
 		</race>
 		<receivesSignals>true</receivesSignals>
 		<comps>
-			<li Class="AnimalBehaviours.CompProperties_Floating"/>
-			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
-				<hediffname>Ark_Collapaal</hediffname>
-				<hediffseverity>1</hediffseverity>
+			<li Class="Ark_GSWT.TCP_CollapseForm">
+				<hediffs>
+					<li>Ark_Collapaal</li>
+				</hediffs>
 			</li>
 		</comps>
 	</ThingDef>

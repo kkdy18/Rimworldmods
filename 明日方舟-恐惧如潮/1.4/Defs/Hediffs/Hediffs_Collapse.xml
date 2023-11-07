@@ -220,6 +220,7 @@
 		<comps>
 			<li Class="Ark_GSWT.HCP_DeathCall">
 				<SpawnThing>Ark_TaintedGhost</SpawnThing>
+				<faction>Ark_Demon</faction>
 				<Enmity>true</Enmity>
 				<DestroyCorpse>false</DestroyCorpse>
 				<NeedSeverity>2.1</NeedSeverity>

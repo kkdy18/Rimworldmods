@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!--原料-->
-	
 	<ThingDef ParentName="OrganicProductBase">
 		<defName>Ark_Essential</defName>
 		<label>虚无要素</label>
@@ -76,9 +75,8 @@
 		<allowedArchonexusCount>80</allowedArchonexusCount>
 	</ThingDef>
 
-	<!--制品-->
-	
-	<ThingDef ParentName="DrugPillBase">
+	<!--抗坍缩-->
+	<ThingDef ParentName="DrugBase">
 		<defName>Ark_Anti-collapseStoste</defName>
 		<label>抗坍缩原液</label>
 		<description>由虚无要素提炼得到的神奇液体，成分不可知，对坍缩现象有着强力的祛除效果，是对抗坍缩体的利器。不建议直接服用或注射抗坍缩原液，此行为确实能使人免疫坍缩带来的污染，但会留下难以治愈的后遗症。</description>
@@ -108,6 +106,7 @@
 			<ingestSound>Ingest_Drink</ingestSound>
 			<ingestCommandString>服用{0}</ingestCommandString>
 			<ingestReportString>正在服用{0}。</ingestReportString>
+			<ingestHoldUsesTable>false</ingestHoldUsesTable>
 			<useEatingSpeedStat>false</useEatingSpeedStat>
 			<chairSearchRadius>0</chairSearchRadius>
 			<outcomeDoers>
@@ -135,7 +134,7 @@
 		</comps>
 	</ThingDef>
 
-	<ThingDef ParentName="DrugPillBase">
+	<ThingDef ParentName="DrugBase">
 		<defName>Ark_Anti-collapseDrug</defName>
 		<label>边界药剂</label>
 		<description>将抗坍缩原液与其他助剂以一定比例混合，调配而成的新型抗坍缩药剂，容纳在便于携带且防火耐冲击的自动注射器内。边界药剂与抗坍缩原液相比药效的持续时间较短，但成瘾性几乎为0，只要不在短时间内连续注射便不存在成瘾风险，并且药剂中添加的活力水成分将进一步提升使用者的战斗力。\n\n我们赋予这种药剂“边界”之名，希望它能够拯救更多行走在现实与亚空间的边界上的勇士。</description>
@@ -170,6 +169,7 @@
 			<ingestSound>Ingest_Inject</ingestSound>
 			<ingestCommandString>注射{0}</ingestCommandString>
 			<ingestReportString>正在注射{0}。</ingestReportString>
+			<ingestHoldUsesTable>false</ingestHoldUsesTable>
 			<useEatingSpeedStat>false</useEatingSpeedStat>
 			<chairSearchRadius>0</chairSearchRadius>
 			<outcomeDoers>
@@ -196,7 +196,11 @@
 			<recipeUsers>
 				<li>DrugLab</li>
 			</recipeUsers>
+			<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+			<workSkill>Intellectual</workSkill>
+			<effectWorking>Cook</effectWorking>
 			<soundWorking>Recipe_Drug</soundWorking>
+			<bulkRecipeCount>4</bulkRecipeCount>
 		</recipeMaker>
 		<costList>
 			<Ark_Anti-collapseStoste>1</Ark_Anti-collapseStoste>

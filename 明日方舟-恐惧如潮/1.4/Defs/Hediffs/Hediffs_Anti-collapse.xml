@@ -10,12 +10,6 @@
 		<scenarioCanAdd>false</scenarioCanAdd>
 		<maxSeverity>1.0</maxSeverity>
 		<isBad>false</isBad>
-		<comps>
-			<li Class="HediffCompProperties_SeverityPerDay">
-				<severityPerDay>-1</severityPerDay>
-				<showHoursToRecover>true</showHoursToRecover>
-			</li>
-		</comps>
 		<stages>
 			<li>
 				<painFactor>1.25</painFactor>
@@ -30,6 +24,12 @@
 				</capMods>
 			</li>
 		</stages>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-1</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
 	</HediffDef>
 
 	<NeedDef ParentName="DrugAddictionNeedBase">
@@ -50,6 +50,18 @@
 		<causesNeed>Chemical_Anti-collapse</causesNeed>
 		<stages>
 			<li>
+				<statFactors>
+					<ResearchSpeed>2</ResearchSpeed>
+				</statFactors>
+				<statOffsets>
+					<GlobalLearningFactor>0.5</GlobalLearningFactor>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.05</offset>
+					</li>
+				</capMods>
 			</li>
 			<li>
 				<label>缺乏</label>
@@ -75,6 +87,41 @@
 			</li>
 		</stages>
 	</HediffDef>
+
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>Ark_Cure_StosteAddiction</defName>
+		<label>治愈抗坍缩剂依赖</label>
+		<description>将来自闪耀世界的医用纳米微械注入抗坍缩剂依赖的患者颅腔，纳米微械将清除并填补遭到不可逆转化的神经组织，从而永久治愈患者的抗坍缩剂依赖。该手术相当安全，不会留下任何后遗症。</description>
+		<workerClass>Recipe_RemoveHediff</workerClass>
+		<jobString>正在修复被转化的神经。</jobString>
+		<workAmount>2000</workAmount>
+		<hideBodyPartNames>true</hideBodyPartNames>
+		<isViolation>false</isViolation>
+		<targetsBodyPart>false</targetsBodyPart>
+		<removesHediff>Ark_StosteAddiction</removesHediff>
+		<successfullyRemovedHediffMessage>{0}成功修复了{1}被抗坍缩剂转化的神经系统。</successfullyRemovedHediffMessage>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<recipeUsers>
+			<li>Human</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineUltratech</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+		</fixedIngredientFilter>
+	</RecipeDef>
 
 	<HediffDef ParentName="Ark_CollapseFormBase">
 		<defName>Ark_Anti-collapseCladding</defName>
