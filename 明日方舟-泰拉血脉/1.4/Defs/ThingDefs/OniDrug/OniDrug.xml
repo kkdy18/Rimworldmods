@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="MakeableDrugBase" Name="Ark_OniDrugBase" Abstract="True">
+		<rotatable>false</rotatable>
+		<socialPropernessMatters>false</socialPropernessMatters>
+		<graphicData>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>0.75</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToMake>600</WorkToMake>
+			<MarketValue>40</MarketValue>
+			<Mass>0.1</Mass>
+		</statBases>
+		<techLevel>Industrial</techLevel>
+		<ingestible>
+			<drugCategory>Hard</drugCategory>
+			<foodType>Processed, Fluid</foodType>
+			<baseIngestTicks>80</baseIngestTicks>
+			<ingestSound>Ingest_Inject</ingestSound>
+			<ingestHoldOffsetStanding>
+				<northDefault>
+					<offset>(0.18,0,0)</offset>
+				</northDefault>
+			</ingestHoldOffsetStanding>
+			<ingestCommandString>服下{0}</ingestCommandString>
+			<ingestReportString>正在服下{0}。</ingestReportString>
+			<useEatingSpeedStat>true</useEatingSpeedStat>
+			<chairSearchRadius>0</chairSearchRadius>
+		</ingestible>
+		<recipeMaker>
+			<researchPrerequisite>Ark_OniDrug</researchPrerequisite>
+			<recipeUsers>
+				<li>DrugLab</li>
+			</recipeUsers>
+			<soundWorking>Recipe_Drug</soundWorking>
+		</recipeMaker>
+		<costList>
+			<Wastepack>1</Wastepack>
+			<HemogenPack>1</HemogenPack>
+			<MedicineHerbal>2</MedicineHerbal>
+			<PsychoidLeaves>8</PsychoidLeaves>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<isCombatEnhancingDrug>true</isCombatEnhancingDrug>
+				<listOrder>210</listOrder>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="Ark_OniDrugBase">
+		<defName>Ark_OniDrug_Fire</defName>
+		<label>赤之秘药</label>
+		<description>据说蕴含关于火的真意的鬼族秘药，摄入能加速生物体的新陈代谢与热量的散出，而控制释放的热量，甚至能让皮脂燃烧的技艺，便是被鬼族称为“焚躯”的忍法。</description>
+		<descriptionHyperlinks>
+			<HediffDef>Ark_hediff_OniFire</HediffDef>
+			<HediffDef>Ark_hediff_FireHand</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Drug/Ark_OniDrug_Fire</texPath>
+		</graphicData>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>Ark_hediff_OniFire</hediffDef>
+					<severity>0.4</severity>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>ToxicBuildup</hediffDef>
+					<severity>0.1</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+	</ThingDef>
+
+	<ThingDef ParentName="Ark_OniDrugBase">
+		<defName>Ark_OniDrug_Toxic</defName>
+		<label>青之秘药</label>
+		<description>据说蕴含关于毒的真意的鬼族秘药，摄入能麻痹生物体的痛觉并减缓血液流动，但毒素的腐蚀会使样貌变得相当可怖并且有可能留下永久性的肢体异化，鬼族将这种状态称为忍法“腐身”。</description>
+		<descriptionHyperlinks>
+			<HediffDef>Ark_hediff_OniToxic</HediffDef>
+			<HediffDef>Ark_hediff_ToxicHand</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Drug/Ark_OniDrug_Toxic</texPath>
+		</graphicData>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>Ark_hediff_OniToxic</hediffDef>
+					<severity>0.4</severity>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>ToxicBuildup</hediffDef>
+					<severity>0.1</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+	</ThingDef>
+
+	<ThingDef ParentName="Ark_OniDrugBase">
+		<defName>Ark_OniDrug_Stone</defName>
+		<label>黄之秘药</label>
+		<description>据说蕴含关于岩的真意的鬼族秘药，摄入后生物体会开始生长特殊的生物质结晶，结晶在体表大量积累能显著提高身体强度但会阻碍行动，宛如行走的岩石，鬼族将这种状态称为忍法“移岩”。</description>
+		<descriptionHyperlinks>
+			<HediffDef>Ark_hediff_OniStone</HediffDef>
+			<HediffDef>Ark_hediff_StoneBody</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Drug/Ark_OniDrug_Stone</texPath>
+		</graphicData>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>Ark_hediff_OniStone</hediffDef>
+					<severity>0.4</severity>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>ToxicBuildup</hediffDef>
+					<severity>0.1</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+	</ThingDef>
+
+	<ThingDef ParentName="Ark_OniDrugBase">
+		<defName>Ark_OniDrug_Wind</defName>
+		<label>苍之秘药</label>
+		<description>据说蕴含关于风的真意的鬼族秘药，摄入能刺激生物体的神经，显著提升神经反射，甚至能进入主观缓时的状态，以常人难以做到的移动方式自由行动。“驭风”本不应成为一门独立的忍法，但苍之秘药较高的泛用性与接近于无的副作用让驭风众的地位迅速攀升，成功占据了四大忍法的一席。</description>
+		<descriptionHyperlinks>
+			<HediffDef>Ark_hediff_OniWind</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Drug/Ark_OniDrug_Wind</texPath>
+		</graphicData>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>Ark_hediff_OniWind</hediffDef>
+					<severity>0.4</severity>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>ToxicBuildup</hediffDef>
+					<severity>0.1</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+	</ThingDef>
+</Defs>

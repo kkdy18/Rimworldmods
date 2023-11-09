@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<PawnKindDef Name="Ark_OniBase" Abstract="True">
+		<race>Human</race>
+		<defaultFactionType>Ark_Higashi</defaultFactionType>
+		<chemicalAddictionChance>0.1</chemicalAddictionChance>
+		<invNutrition>2.55</invNutrition>
+		<backstoryCryptosleepCommonality>0.08</backstoryCryptosleepCommonality>
+		<maxGenerationAge>65</maxGenerationAge>
+		<combatEnhancingDrugsChance>0.15</combatEnhancingDrugsChance>
+		<combatEnhancingDrugsCount>0~2</combatEnhancingDrugsCount>
+		<biocodeWeaponChance>0.1</biocodeWeaponChance>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Ark_OniBase" Name="Ark_OniNinjaBase" Abstract="True">
+		<combatPower>140</combatPower>
+		<canBeSapper>true</canBeSapper>
+		<gearHealthRange>0.7~3.2</gearHealthRange>
+		<itemQuality>Good</itemQuality>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+			<li>IndustrialAdvanced</li>
+			<li>IndustrialMilitaryBasic</li>
+			<li>IndustrialMilitaryAdvanced</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>Apparel_ClothMask</li>
+		</apparelRequired>
+		<apparelMoney>500~2000</apparelMoney>
+		<apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+		<techHediffsChance>0.15</techHediffsChance>
+		<techHediffsMoney>700~1200</techHediffsMoney>
+		<techHediffsTags>
+			<li>Simple</li>
+			<li>Advanced</li>
+			<li>ImplantEmpireCommon</li>
+		</techHediffsTags>
+		<techHediffsRequired>
+			<li>DeathAcidifier</li>
+		</techHediffsRequired>
+		<weaponMoney>0</weaponMoney>
+		<weaponTags>
+		</weaponTags>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Ark_ONI>1</Ark_ONI>
+			</xenotypeChances>
+		</xenotypeSet>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>20~40</initialResistanceRange>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Ark_OniNinjaBase">
+		<defName>Ark_OniFire</defName>
+		<label>焚躯众</label>
+		<apparelRequired>
+			<li>Apparel_ShieldBelt</li>
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<bodyPartGroup>Mouth</bodyPartGroup>
+				<color>(250, 90, 90)</color>
+			</li>
+		</specificApparelRequirements>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>8~15</range>
+			</li>
+		</skills>
+		<inventoryOptions>
+			<skipChance>0</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Ark_OniDrug_Fire</thingDef>
+					<countRange>1</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Ark_OniNinjaBase">
+		<defName>Ark_OniToxic</defName>
+		<label>腐身众</label>
+		<apparelRequired>
+			<li>Apparel_ShieldBelt</li>
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<bodyPartGroup>Mouth</bodyPartGroup>
+				<color>(150, 200, 75)</color>
+			</li>
+		</specificApparelRequirements>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>8~15</range>
+			</li>
+		</skills>
+		<inventoryOptions>
+			<skipChance>0</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Ark_OniDrug_Toxic</thingDef>
+					<countRange>1</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Ark_OniNinjaBase">
+		<defName>Ark_OniStone</defName>
+		<label>移岩众</label>
+		<specificApparelRequirements>
+			<li>
+				<bodyPartGroup>Mouth</bodyPartGroup>
+				<color>(250, 200, 0)</color>
+			</li>
+		</specificApparelRequirements>
+		<weaponMoney>1200~1200</weaponMoney>
+		<weaponTags>
+			<li>GunHeavy</li>
+			<li>GunSingleUse</li>
+		</weaponTags>
+		<inventoryOptions>
+			<skipChance>0</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Ark_OniDrug_Stone</thingDef>
+					<countRange>1</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Ark_OniNinjaBase">
+		<defName>Ark_OniWind</defName>
+		<label>驭风众</label>
+		<apparelRequired>
+			<li>Apparel_SmokepopBelt</li>
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<bodyPartGroup>Mouth</bodyPartGroup>
+				<color>(160, 250, 250)</color>
+			</li>
+		</specificApparelRequirements>
+		<weaponMoney>2000~3600</weaponMoney>
+		<weaponTags>
+			<li>Ark_OniSword</li>
+		</weaponTags>
+		<inventoryOptions>
+			<skipChance>0</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Ark_OniDrug_Wind</thingDef>
+					<countRange>1</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="MercenaryEliteTierBase">
+		<defName>Ark_OniPirateBoss</defName>
+		<label>鬼大将</label>
+		<defaultFactionType>Ark_Higashi</defaultFactionType>
+		<factionLeader>true</factionLeader>
+		<canBeSapper>true</canBeSapper>
+		<initialResistanceRange>17~27</initialResistanceRange>
+		<apparelTags Inherit="False">
+			<li>IndustrialBasic</li>
+			<li>IndustrialAdvanced</li>
+			<li>IndustrialMilitaryBasic</li>
+			<li>IndustrialMilitaryAdvanced</li>
+			<li>SpacerMilitary</li>
+		</apparelTags>
+	</PawnKindDef>
+</Defs>

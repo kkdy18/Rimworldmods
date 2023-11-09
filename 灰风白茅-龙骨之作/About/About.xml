@@ -18,6 +18,6 @@
 		<li>Ludeon.RimWorld.Biotech</li>
 		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
 	</loadAfter>
-	<description>我的明日方舟同人模组（目前有泰拉血脉与恐惧如潮）所需的前置，方便玩家对mod的灵活选用。毕竟一个独立mod必须以另一个独立mod作为前置确实有些奇怪。</description>
+	<description>我的明日方舟同人模组（目前有泰拉血脉与恐惧如潮）所需的前置，使mod对代码的调用更加灵活。毕竟一个独立mod必须以另一个独立mod作为前置确实有些奇怪。加入该模组的玩家请麻烦重新订阅原有的我的明日方舟mod避免出现错误，十分感谢你的支持。</description>
 	<packageId>GSWT.FrameworkaboutArknights</packageId>
 </ModMetaData>

@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HediffDef Name="Ark_OniDrugHigh" Abstract="True">
+		<hediffClass>Hediff_High</hediffClass>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<maxSeverity>1</maxSeverity>
+		<alwaysAllowMothball>True</alwaysAllowMothball>
+		<alwaysAllowMothballCached>True</alwaysAllowMothballCached>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-2</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="Ark_OniDrugHigh">
+		<defName>Ark_hediff_OniFire</defName>
+		<label>忍法-焚躯</label>
+		<description>秘药正在该个体的血管中流淌，使组织细胞代谢加速犹如烈火焚身。/n/n听说在“焚躯”的状态下伤口会快速再生，不过想变成不死之身应该是不可能的。</description>
+		<descriptionHyperlinks>
+			<ThingDef>Ark_OniDrug_Fire</ThingDef>
+			<HediffDef>Ark_hediff_FireHand</HediffDef>
+		</descriptionHyperlinks>
+		<defaultLabelColor>(1, 0.3, 0.3)</defaultLabelColor>
+		<stages>
+			<li>
+				<statOffsets>
+					<ComfyTemperatureMin>-100</ComfyTemperatureMin>
+				</statOffsets>
+				<statFactors>
+					<Flammability>0</Flammability>
+				</statFactors>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.2</offset>
+					</li>
+				</capMods>
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>Ark_hediff_FireHand</hediff>
+						<mtbDays>0.2</mtbDays>
+						<partsToAffect>
+							<li>Hand</li>
+						</partsToAffect>
+					</li>
+					<li Class="HediffGiver_Random">
+						<hediff>Ark_BloodDrugPoisoning</hediff>
+						<mtbDays>0.1</mtbDays>
+					</li>
+				</hediffGivers>
+			</li>
+		</stages>
+		<comps>
+			<li Class="Ark_GSWT.HCP_Exploder">
+				<damage>Flame</damage>
+				<Radius>2.9</Radius>
+				<SpawnThing>Filth_Fuel</SpawnThing>
+				<SpawnChance>0.5</SpawnChance>
+			</li>
+			<li Class="AnimalBehaviours.HediffCompProperties_Regeneration">
+				<rateInTicks>60</rateInTicks>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="Ark_GeneHediffBase">
+		<defName>Ark_hediff_FireHand</defName>
+		<label>炎拳</label>
+		<description>货真价实的燃烧之拳，能够点燃被击中的敌人。</description>
+		<descriptionHyperlinks>
+			<HediffDef>Ark_hediff_OniFire</HediffDef>
+		</descriptionHyperlinks>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>炎拳</label>
+						<capacities>
+							<li>Blunt</li>
+						</capacities>
+						<power>9</power>
+						<cooldownTime>1.5</cooldownTime>
+						<extraMeleeDamages>
+							<li>
+								<def>Flame</def>
+								<amount>10</amount>
+								<chance>0.8</chance>
+							</li>
+						</extraMeleeDamages>
+						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+					</li>
+				</tools>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="Ark_OniDrugHigh">
+		<defName>Ark_hediff_OniToxic</defName>
+		<label>忍法-腐身</label>
+		<description>秘药正在该个体的血管中流淌，被毒素腐蚀的血肉正在塑造噩梦般的躯壳。</description>
+		<descriptionHyperlinks>
+			<ThingDef>Ark_OniDrug_Toxic</ThingDef>
+			<HediffDef>Ark_hediff_ToxicHand</HediffDef>
+		</descriptionHyperlinks>
+		<defaultLabelColor>(0, 1, 0.5)</defaultLabelColor>
+		<stages>
+			<li>
+				<painFactor>0</painFactor>
+				<totalBleedFactor>0.1</totalBleedFactor>
+				<statOffsets>
+					<ToxicResistance>1</ToxicResistance>
+					<PawnBeauty>-4</PawnBeauty>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.2</offset>
+					</li>
+				</capMods>
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>Ark_hediff_ToxicHand</hediff>
+						<mtbDays>0.2</mtbDays>
+						<partsToAffect>
+							<li>Hand</li>
+						</partsToAffect>
+					</li>
+					<li Class="HediffGiver_Random">
+						<hediff>Ark_BloodDrugPoisoning</hediff>
+						<mtbDays>0.05</mtbDays>
+					</li>
+				</hediffGivers>
+			</li>
+		</stages>
+		<comps>
+			<li Class="Ark_GSWT.HCP_Exploder">
+				<damage>ToxGas</damage>
+				<Radius>2.9</Radius>
+				<gas>ToxGas</gas>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="Ark_GeneHediffBase">
+		<defName>Ark_hediff_ToxicHand</defName>
+		<label>毒爪</label>
+		<description>淬入剧毒的手指转化为坚硬如铁的利爪，能够洞穿头骨和盔甲，但日常生活就不是很方便了。</description>
+		<descriptionHyperlinks>
+			<HediffDef>Ark_hediff_OniToxic</HediffDef>
+		</descriptionHyperlinks>
+		<stages>
+			<li>
+				<foodPoisoningChanceFactor>3</foodPoisoningChanceFactor>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>-0.15</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>毒爪</label>
+						<capacities>
+							<li>ScratchToxic</li>
+						</capacities>
+						<power>15</power>
+						<armorPenetration>0.3</armorPenetration>
+						<cooldownTime>1.5</cooldownTime>
+						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+						<soundMeleeHit>MeleeHit_BionicSlash</soundMeleeHit>
+						<soundMeleeMiss>MeleeMiss_BionicSlash</soundMeleeMiss>
+					</li>
+				</tools>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="Ark_OniDrugHigh">
+		<defName>Ark_hediff_OniStone</defName>
+		<label>忍法-移岩</label>
+		<description>秘药正在该个体的血管中流淌，有机质结晶正在有序地编织坚硬但又不失柔软的甲胄，它所保护的不止是一层皮肤。</description>
+		<descriptionHyperlinks>
+			<ThingDef>Ark_OniDrug_Stone</ThingDef>
+			<HediffDef>Ark_hediff_StoneBody</HediffDef>
+		</descriptionHyperlinks>
+		<defaultLabelColor>(1, 0.8, 0)</defaultLabelColor>
+		<stages>
+			<li>
+				<statOffsets>
+					<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.6</ArmorRating_Sharp>
+					<ArmorRating_Heat>0.5</ArmorRating_Heat>
+				</statOffsets>
+				<statFactors>
+					<StaggerDurationFactor>0</StaggerDurationFactor>
+					<MoveSpeed>0.3</MoveSpeed>
+				</statFactors>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.2</offset>
+					</li>
+				</capMods>
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>Ark_hediff_StoneBody</hediff>
+						<mtbDays>0.2</mtbDays>
+						<canAffectAnyLivePart>true</canAffectAnyLivePart>
+					</li>
+					<li Class="HediffGiver_Random">
+						<hediff>Ark_BloodDrugPoisoning</hediff>
+						<mtbDays>0.1</mtbDays>
+					</li>
+				</hediffGivers>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="Ark_GeneHediffBase">
+		<defName>Ark_hediff_StoneBody</defName>
+		<label>岩晶鳞</label>
+		<description>生长在器官与骨骼表面的鳞片状细密结晶，强化了生物抗机械损伤能力的同时意外地能提高器官的工作效率。</description>
+		<descriptionHyperlinks>
+			<HediffDef>Ark_hediff_OniStone</HediffDef>
+		</descriptionHyperlinks>
+		<stages>
+			<li>
+				<partEfficiencyOffset>0.1</partEfficiencyOffset>
+				<statOffsets>
+					<IncomingDamageFactor>-0.05</IncomingDamageFactor>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="Ark_OniDrugHigh">
+		<defName>Ark_hediff_OniWind</defName>
+		<label>忍法-驭风</label>
+		<description>秘药正在该个体的血管中流淌，在时间也能被凝滞的世界里，重力只是一副可以轻易挣脱的枷锁。</description>
+		<descriptionHyperlinks>
+			<ThingDef>Ark_OniDrug_Wind</ThingDef>
+		</descriptionHyperlinks>
+		<defaultLabelColor>(0.6, 1, 1)</defaultLabelColor>
+		<stages>
+			<li>
+				<statOffsets>
+					<MeleeHitChance>5</MeleeHitChance>
+					<MeleeDodgeChance>5</MeleeDodgeChance>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.2</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.5</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li Class="AnimalBehaviours.HediffCompProperties_Floating">
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="DiseaseBase">
+		<defName>Ark_BloodDrugPoisoning</defName>
+		<label>秘药中毒溶血症</label>
+		<description>鬼族秘药中的毒素对骨髓造成了永久性的损伤，造血功能接近丧失，血液循环系统的状况正在不断恶化，患者必须定期接受治疗来延续生命。</description>
+		<descriptionHyperlinks>
+			<RecipeDef>Ark_Cure_BloodDrugPoisoning</RecipeDef>
+		</descriptionHyperlinks>
+		<lethalSeverity>1</lethalSeverity>
+		<initialSeverity>0.001</initialSeverity>
+		<makesSickThought>true</makesSickThought>
+		<minSeverity>0.001</minSeverity>
+		<stages>
+			<li>
+				<label>无症状</label>
+			</li>
+			<li>
+				<minSeverity>0.25</minSeverity>
+				<label>轻度</label>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.1</offset>
+					</li>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>-0.1</offset>
+					</li>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>-0.1</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.5</minSeverity>
+				<label>重度</label>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.25</offset>
+					</li>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>-0.2</offset>
+					</li>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>-0.2</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>生命危险</label>
+				<minSeverity>0.85</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.1</setMax>
+					</li>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>-0.5</offset>
+					</li>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>-0.5</offset>
+					</li>
+				</capMods>
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>Carcinoma</hediff>
+						<mtbDays>39</mtbDays>
+						<canAffectAnyLivePart>true</canAffectAnyLivePart>
+					</li>
+				</hediffGivers>
+			</li>
+		</stages>
+		<tendable>true</tendable>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>0.4</severityPerDay>
+			</li>
+			<li Class="HediffCompProperties_TendDuration">
+				<severityPerDayTended>-1</severityPerDayTended>
+				<baseTendDurationHours>24</baseTendDurationHours>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>Ark_Cure_BloodDrugPoisoning</defName>
+		<label>治愈秘药中毒溶血症</label>
+		<description>利用来自闪耀世界的纳米微械修复损伤的骨髓组织，清除残余的毒素，患者将从鬼族秘药造成的后遗症中彻底解脱。</description>
+		<workerClass>Recipe_RemoveHediff</workerClass>
+		<jobString>正在修复损伤的骨髓。</jobString>
+		<workAmount>2000</workAmount>
+		<hideBodyPartNames>true</hideBodyPartNames>
+		<isViolation>false</isViolation>
+		<targetsBodyPart>false</targetsBodyPart>
+		<removesHediff>Ark_BloodDrugPoisoning</removesHediff>
+		<successfullyRemovedHediffMessage>{0}成功治愈了{1}的秘药中毒溶血症。</successfullyRemovedHediffMessage>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<recipeUsers>
+			<li>Human</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineUltratech</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+		</fixedIngredientFilter>
+	</RecipeDef>
+</Defs>

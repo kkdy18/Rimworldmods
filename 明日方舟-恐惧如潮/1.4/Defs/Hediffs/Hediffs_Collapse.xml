@@ -204,9 +204,8 @@
 					</li>
 				</capMods>
 				<hediffGivers>
-					<li Class="HediffGiver_Random">
+					<li Class="HediffGiver_Refresh">
 						<hediff>Ark_CollapseExploder</hediff>
-						<mtbDays>0.05</mtbDays>
 					</li>
 				</hediffGivers>
 				<mentalStateGivers>
@@ -220,13 +219,36 @@
 		<comps>
 			<li Class="Ark_GSWT.HCP_DeathCall">
 				<SpawnThing>Ark_TaintedGhost</SpawnThing>
+<!--				<BornBoss>Ark_MechC_Bestower</BornBoss>
+				<Body>Human</Body>-->
 				<faction>Ark_Demon</faction>
 				<Enmity>true</Enmity>
 				<DestroyCorpse>false</DestroyCorpse>
 				<NeedSeverity>2.1</NeedSeverity>
 			</li>
+			<li Class="Ark_GSWT.HCP_KillEffect">
+				<fleck>Ark_BlackCloud</fleck>
+				<moteCount>6</moteCount>
+				<moteOffsetRange>0.25~0.75</moteOffsetRange>
+				<filth>Ark_BlackBlood</filth>
+				<sound>DeathAcidifier</sound>
+			</li>
 		</comps>
 	</HediffDef>
+
+	<FleckDef ParentName="FleckBase">
+		<defName>Ark_BlackCloud</defName>
+		<graphicData>
+			<texPath>Things/Special/Smoke</texPath>
+			<color>(0, 0, 0)</color>
+			<drawSize>(2.5,2.5)</drawSize>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<fadeInTime>0.50</fadeInTime>
+		<solidTime>3</solidTime>
+		<fadeOutTime>3</fadeOutTime>
+		<growthRate>0.025</growthRate>
+	</FleckDef>
 
 	<ThingDef ParentName="BodyPartBase">
 		<defName>Ark_CollapseTumor</defName>

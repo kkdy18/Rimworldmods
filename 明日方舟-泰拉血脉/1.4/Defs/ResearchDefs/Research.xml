@@ -20,10 +20,11 @@
 		<defName>Ark_SectatorCombat</defName>
 		<label>萨科塔作战用装备</label>
 		<description>萨科塔为了更好地利用边缘世界的技术而研发的一系列装备。</description>
-		<baseCost>1000</baseCost>
+		<baseCost>1500</baseCost>
 		<techLevel>Industrial</techLevel>
 		<prerequisites>
 			<li>Ark_Sectator</li>
+			<li>Machining</li>
 		</prerequisites>
 		<tab>Ark_ResearchTab</tab>
 		<researchViewX>1</researchViewX>
@@ -38,6 +39,21 @@
 		<techLevel>Medieval</techLevel>
 		<tab>Ark_ResearchTab</tab>
 		<researchViewX>0</researchViewX>
+		<researchViewY>0.5</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Ark_OniDrug</defName>
+		<label>鬼族秘药</label>
+		<description>解锁制作一系列鬼族秘药的工艺。鬼族秘药以相当极端的方式压榨服用者的生命潜能从而觉醒特定的超凡力量，带来的副作用普通人几乎无法承受，只有鬼族依靠特殊的体质咽下了这份代价。这也许算得上一种种族性专利保护？\n\n为了充分开发秘药的力量，鬼族围绕每种秘药组建了专业的忍者团体，他们一切作战手段皆是以秘药为核心搭建。</description>
+		<baseCost>1000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>Ark_Oni</li>
+			<li>DrugProduction</li>
+		</prerequisites>
+		<tab>Ark_ResearchTab</tab>
+		<researchViewX>1</researchViewX>
 		<researchViewY>0.5</researchViewY>
 	</ResearchProjectDef>
 </Defs>

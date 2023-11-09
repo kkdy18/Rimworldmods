@@ -25,7 +25,7 @@
 	<FactionDef ParentName="PirateBandBase">
 		<defName>Ark_Higashi</defName>
 		<label>鬼狩众</label>
-		<description>打着“复兴东国”的旗号行劫掠之事的一群鬼族，人数众多，凭着鬼族的凶狠无畏在边缘世界独霸一方。</description>
+		<description>打着“复兴东国”的旗号行劫掠之事的一群鬼族，人数众多，凭着鬼族的凶狠无畏在边缘世界独霸一方。\n\n鬼族的凶残并非鬼狩众唯一的倚仗，有可靠情报表明，一批通过服用秘药战斗，使用名为“忍法”的技艺的鬼族正在迅速崛起，鬼狩众现有四大忍法：焚躯众、腐身众、移岩众、驭风众。</description>
 		<factionIconPath>World/Higashi</factionIconPath>
 		<pawnSingular>恶鬼</pawnSingular>
 		<pawnsPlural>恶鬼</pawnsPlural>
@@ -42,5 +42,98 @@
 		<colorSpectrum>
 			<li>(1, 1, 1)</li>
 		</colorSpectrum>
+		<pawnGroupMakers Inherit="False">
+			<li>
+				<!-- Normal fights, ranged with melee mix-ins -->
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<Drifter>10</Drifter>
+					<Thrasher>3</Thrasher>
+					<Scavenger>10</Scavenger>
+					<Pirate>10</Pirate>
+					<Grenadier_EMP>0.25</Grenadier_EMP>
+					<Grenadier_Smoke>0.25</Grenadier_Smoke>
+					<Grenadier_Destructive>2</Grenadier_Destructive>
+					<Ark_OniFire>10</Ark_OniFire>
+					<Ark_OniToxic>10</Ark_OniToxic>
+					<Ark_OniStone>5</Ark_OniStone>
+					<Ark_OniWind>5</Ark_OniWind>
+					<Ark_OniPirateBoss>5</Ark_OniPirateBoss>
+				</options>
+			</li>
+			<li>
+				<!-- 忍者军团 -->
+				<kindDef>Combat</kindDef>
+				<commonality>30</commonality>
+				<disallowedStrategies>
+					<li>Siege</li>
+				</disallowedStrategies>
+				<options>
+					<Ark_OniFire>10</Ark_OniFire>
+					<Ark_OniToxic>10</Ark_OniToxic>
+					<Ark_OniStone>10</Ark_OniStone>
+					<Ark_OniWind>10</Ark_OniWind>
+					<Ark_OniPirateBoss>5</Ark_OniPirateBoss>
+				</options>
+			</li>
+			<li>
+				<!-- 鬼之报复 -->
+				<kindDef>Combat</kindDef>
+				<commonality>15</commonality>
+				<disallowedStrategies>
+					<li>Siege</li>
+				</disallowedStrategies>
+				<options>
+					<Grenadier_EMP>0.5</Grenadier_EMP>
+					<Grenadier_Smoke>0.5</Grenadier_Smoke>
+					<Grenadier_Destructive>10</Grenadier_Destructive>
+					<Ark_OniFire>10</Ark_OniFire>
+					<Ark_OniToxic>10</Ark_OniToxic>
+					<Ark_OniStone>6</Ark_OniStone>
+				</options>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<Thrasher>3</Thrasher>
+					<Pirate>10</Pirate>
+					<Grenadier_Destructive>2</Grenadier_Destructive>
+					<Ark_OniFire>3</Ark_OniFire>
+					<Ark_OniToxic>6</Ark_OniToxic>
+					<Ark_OniStone>10</Ark_OniStone>
+					<Ark_OniWind>10</Ark_OniWind>
+					<Ark_OniPirateBoss>10</Ark_OniPirateBoss>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Miners</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Miner>1</Miner>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Hunters</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Hunter>1</Hunter>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Loggers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Logger>1</Logger>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Farmers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Farmer>1</Farmer>
+				</options>
+			</li>
+		</pawnGroupMakers>
 	</FactionDef>
 </Defs>

@@ -176,7 +176,15 @@
 		<scenarioCanAdd>false</scenarioCanAdd>
 		<isBad>false</isBad>
 		<lethalSeverity>1</lethalSeverity>
-		<initialSeverity>1.00</initialSeverity>
+		<initialSeverity>1</initialSeverity>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>
+					<min>2500</min>
+					<max>2500</max>
+				</disappearsAfterTicks>
+			</li>
+	</comps>
 	</HediffDef>
 
 	<ThingDef Name="EJ_TheForm" ParentName="BodyPartBase">
