@@ -84,6 +84,21 @@
     </stages>
   </HediffDef>
 
+	<HediffDef ParentName="Ark_GeneHediffBase">
+		<defName>Ark_hediff_FallenPlague</defName>
+		<label>堕天</label>
+		<description>aaa</description>
+		<comps>
+			<li Class="Ark_GSWT.HCP_AddGene">
+				<checkgene>Ark_Sectator</checkgene>
+				<newgenes>
+					<li>FireResistant</li>
+					<li>DarkVision</li>
+				</newgenes>
+			</li>
+		</comps>
+	</HediffDef>
+
 	<!--瓦伊凡-->
 	<HediffDef ParentName="Ark_GeneHediffBase">
 		<defName>Ark_hediff_Vouivre</defName>
@@ -174,7 +189,7 @@
 		<stages>
 			<li>
 				<statOffsets>
-					<PainShockThreshold>0.50</PainShockThreshold>
+					<PainShockThreshold>0.5</PainShockThreshold>
 					<MentalBreakThreshold>-0.15</MentalBreakThreshold>
 				</statOffsets>
 				<statFactors>

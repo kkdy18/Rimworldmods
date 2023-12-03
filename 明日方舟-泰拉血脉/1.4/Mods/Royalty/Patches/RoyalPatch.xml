@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 	<Operation Class="PatchOperationReplace">
-		<xpath>/Defs/ThingDef[defName = "Wastepack"]/statBases</xpath>
+		<xpath>/Defs/ThingDef[defName = "Wastepack"]/statBases/MarketValue</xpath>
 		<value>
-			<statBases>
-				<Beauty>-40</Beauty>
 				<MarketValue>0.01</MarketValue>
-				<Mass>6</Mass>
-				<Flammability>1</Flammability>
-				<DeteriorationRate>4</DeteriorationRate>
-			</statBases>
 		</value>
 	</Operation>
 	

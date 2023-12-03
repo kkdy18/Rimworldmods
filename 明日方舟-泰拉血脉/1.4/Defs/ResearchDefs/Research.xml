@@ -19,7 +19,7 @@
 	<ResearchProjectDef>
 		<defName>Ark_SectatorCombat</defName>
 		<label>萨科塔作战用装备</label>
-		<description>萨科塔为了更好地利用边缘世界的技术而研发的一系列装备。</description>
+		<description>萨科塔为了更好地利用边缘世界的技术而研发的一系列作战装备。</description>
 		<baseCost>1500</baseCost>
 		<techLevel>Industrial</techLevel>
 		<prerequisites>

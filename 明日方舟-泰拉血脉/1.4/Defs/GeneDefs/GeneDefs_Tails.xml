@@ -1,86 +1,96 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<GeneDef ParentName="GeneTailBase">
+	<GeneDef Name="Ark_GeneTailBase" Abstract="True">
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<randomChosen>true</randomChosen>
+		<displayCategory>Ark_Tails</displayCategory>
+		<displayOrderInCategory>50</displayOrderInCategory>
+		<statOffsets>
+			<MoveSpeed>0.1</MoveSpeed>
+		</statOffsets>
+		<graphicData>
+			<drawLoc>Tailbone</drawLoc>
+			<drawScale>1.5</drawScale>
+			<drawOffsetNorth>(0, 0.2, 0)</drawOffsetNorth>
+			<drawOffsetSouth>(0, 0, 0)</drawOffsetSouth>
+			<drawOffsetEast>(0, 0.02, 0)</drawOffsetEast>
+		</graphicData>
+		<exclusionTags>
+			<li>Ark_Tail</li>
+			<li>Tail</li>
+		</exclusionTags>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Ark_Endogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>UI/Icons/Genes/Ark_Xenogene</backgroundPathXenogenes>
+			</li>
+			<li Class="BetterGeneGraphicsFramework.BetterTailRendering" MayRequire="telardo.BetterGeneGraphicsFramework">
+				<disableBodyTypeScaleForAdult>false</disableBodyTypeScaleForAdult>
+				<bodyTypeOffsetNorth>
+					<male>(0,0,0.02)</male>
+					<female>(0,0,-0.02)</female>
+					<hulk>(0,0,-0.09)</hulk>
+					<fat>(0,0,0.07)</fat>
+					<thin>(0,0,-0.03)</thin>
+					<baby>(0,0,0)</baby>
+					<child>(0,0,0.09)</child>
+					<femaleBB>(0,0,0)</femaleBB>
+				</bodyTypeOffsetNorth>
+				<bodyTypeOffsetSouth>
+					<male>(0,0,0)</male>
+					<female>(0,0,0)</female>
+					<hulk>(0,0,-0.07)</hulk>
+					<fat>(0,0,0.03)</fat>
+					<thin>(0,0,-0.05)</thin>
+					<baby>(0,0,0)</baby>
+					<child>(0,0,0)</child>
+					<femaleBB>(0,0,0)</femaleBB>
+				</bodyTypeOffsetSouth>
+				<bodyTypeOffsetEast>
+					<male>(0.03,0,0)</male>
+					<female>(0,0,-0.01)</female>
+					<hulk>(-0.08,0,-0.03)</hulk>
+					<fat>(-0.06,0,0.16)</fat>
+					<thin>(0,0,0)</thin>
+					<baby>(0.02,0,0.1)</baby>
+					<child>(0.07,0,0.13)</child>
+					<femaleBB>(0.01,0,0)</femaleBB>
+				</bodyTypeOffsetEast>
+			</li>
+		</modExtensions>
+	</GeneDef>
+	
+	<GeneDef ParentName="Ark_GeneTailBase">
 		<defName>Ark_VouivreTail1</defName>
 		<label>青色龙尾</label>
 		<description>该基因的携带者脊椎末端延长形成了一根覆盖着鳞片的青色长尾，该器官能在一定程度上辅助行动。</description>
 		<iconPath>UI/Icons/Genes/Ark_VouivreTail1</iconPath>
 		<prerequisite>Ark_Vouivre</prerequisite>
-		<biostatCpx>1</biostatCpx>
-		<biostatMet>-1</biostatMet>
-		<selectionWeight>0</selectionWeight>
-		<displayCategory>Ark_Tails</displayCategory>
-		<statOffsets>
-			<MoveSpeed>0.2</MoveSpeed>
-		</statOffsets>
 		<graphicData>
 			<graphicPath>Things/Pawn/Humanlike/BodyAttachments/Ark_VouivreTail/Ark_VouivreTail1</graphicPath>
-			<drawScale>2</drawScale>
-			<drawOffsetNorth>(0.0, 0.2, -0.0)</drawOffsetNorth>
-			<drawOffsetSouth>(-0.0, -0.1, -0.0)</drawOffsetSouth>
-			<drawOffsetEast>(-0.0, -0.1, -0.0)</drawOffsetEast>
 		</graphicData>
-		<modExtensions>
-			<li Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>UI/Icons/Genes/Ark_Endogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>UI/Icons/Genes/Ark_Xenogene</backgroundPathXenogenes>
-			</li>
-		</modExtensions>
 	</GeneDef>
 
-	<GeneDef ParentName="GeneTailBase">
+	<GeneDef ParentName="Ark_GeneTailBase">
 		<defName>Ark_VouivreTail2</defName>
 		<label>黑铁龙尾</label>
 		<description>该基因的携带者脊椎末端延长形成了一根覆盖着鳞片的灰色长尾，该器官能在一定程度上辅助行动。</description>
 		<iconPath>UI/Icons/Genes/Ark_VouivreTail2</iconPath>
 		<prerequisite>Ark_Vouivre</prerequisite>
-		<biostatCpx>1</biostatCpx>
-		<biostatMet>-1</biostatMet>
-		<selectionWeight>0</selectionWeight>
-		<displayCategory>Ark_Tails</displayCategory>
-		<statOffsets>
-			<MoveSpeed>0.2</MoveSpeed>
-		</statOffsets>
 		<graphicData>
 			<graphicPath>Things/Pawn/Humanlike/BodyAttachments/Ark_VouivreTail/Ark_VouivreTail2</graphicPath>
-			<drawScale>2</drawScale>
-			<drawOffsetNorth>(0.0, 0.2, -0.0)</drawOffsetNorth>
-			<drawOffsetSouth>(-0.0, -0.1, -0.0)</drawOffsetSouth>
-			<drawOffsetEast>(-0.0, -0.1, -0.0)</drawOffsetEast>
 		</graphicData>
-		<modExtensions>
-			<li Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>UI/Icons/Genes/Ark_Endogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>UI/Icons/Genes/Ark_Xenogene</backgroundPathXenogenes>
-			</li>
-		</modExtensions>
 	</GeneDef>
 
-	<GeneDef ParentName="GeneTailBase">
+	<GeneDef ParentName="Ark_GeneTailBase">
 		<defName>Ark_VouivreTail3</defName>
 		<label>翠绿龙尾</label>
 		<description>该基因的携带者脊椎末端延长形成了一根覆盖着鳞片的绿色长尾，该器官能在一定程度上辅助行动。</description>
 		<iconPath>UI/Icons/Genes/Ark_VouivreTail3</iconPath>
 		<prerequisite>Ark_Vouivre</prerequisite>
-		<biostatCpx>1</biostatCpx>
-		<biostatMet>-1</biostatMet>
-		<selectionWeight>0</selectionWeight>
-		<displayCategory>Ark_Tails</displayCategory>
-		<statOffsets>
-			<MoveSpeed>0.2</MoveSpeed>
-		</statOffsets>
 		<graphicData>
 			<graphicPath>Things/Pawn/Humanlike/BodyAttachments/Ark_VouivreTail/Ark_VouivreTail3</graphicPath>
-			<drawScale>2</drawScale>
-			<drawOffsetNorth>(0.0, 0.2, 0.1)</drawOffsetNorth>
-			<drawOffsetSouth>(-0.0, -0.1, 0.1)</drawOffsetSouth>
-			<drawOffsetEast>(-0.0, 0.2, 0.1)</drawOffsetEast>
 		</graphicData>
-		<modExtensions>
-			<li Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>UI/Icons/Genes/Ark_Endogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>UI/Icons/Genes/Ark_Xenogene</backgroundPathXenogenes>
-			</li>
-		</modExtensions>
 	</GeneDef>
 </Defs>

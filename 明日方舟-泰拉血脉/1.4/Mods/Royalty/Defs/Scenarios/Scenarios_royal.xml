@@ -17,7 +17,7 @@
 			  <xenotypeCounts>
 				  <li>
 					  <requiredAtStart>True</requiredAtStart>
-					  <xenotype>Ark_SKT</xenotype>
+					  <xenotype>Ark_xeno_Sectator</xenotype>
 					  <allowedDevelopmentalStages>Baby, Child, Adult</allowedDevelopmentalStages>
 				  </li>
 			  </xenotypeCounts>

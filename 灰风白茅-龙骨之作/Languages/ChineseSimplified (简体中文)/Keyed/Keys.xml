@@ -9,6 +9,8 @@
 	<Oni>鬼</Oni>
 	<LetterLabelArkChildrenJoinIn>儿童难民抵达</LetterLabelArkChildrenJoinIn>
 	<LetterArkChildrenJoinIn>难民已经顺利转移至你的殖民地，要善待他/她哦。</LetterArkChildrenJoinIn>
+
+	<Ark_AddGenes>{0}的体内激活了新的基因：{1}</Ark_AddGenes>
 	<!--邪魔拓展-->
 	<Ark_PawnNull>操作者不存在</Ark_PawnNull>
 	<Ark_NoFuel>需要补充虚无要素</Ark_NoFuel>

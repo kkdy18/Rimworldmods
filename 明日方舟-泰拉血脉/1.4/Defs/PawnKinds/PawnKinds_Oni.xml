@@ -44,7 +44,7 @@
 		<useFactionXenotypes>false</useFactionXenotypes>
 		<xenotypeSet>
 			<xenotypeChances>
-				<Ark_ONI>1</Ark_ONI>
+				<Ark_xeno_Oni>1</Ark_xeno_Oni>
 			</xenotypeChances>
 		</xenotypeSet>
 		<initialWillRange>2~4</initialWillRange>

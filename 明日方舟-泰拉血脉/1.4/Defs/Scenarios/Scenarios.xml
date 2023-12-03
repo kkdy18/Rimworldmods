@@ -18,7 +18,7 @@
 						  <li>
 							  <count>3</count>
 							  <requiredAtStart>True</requiredAtStart>
-							  <xenotype>Ark_SKT</xenotype>
+							  <xenotype>Ark_xeno_Sectator</xenotype>
 							  <allowedDevelopmentalStages>Baby, Child, Adult</allowedDevelopmentalStages>
 						  </li>
 					  </xenotypeCounts>
@@ -104,7 +104,7 @@
 				<xenotypeCounts>
 					<li>
 						<requiredAtStart>True</requiredAtStart>
-						<xenotype>Ark_WYF</xenotype>
+						<xenotype>Ark_xeno_Vouivre</xenotype>
 						<allowedDevelopmentalStages>Baby, Child, Adult</allowedDevelopmentalStages>
 					</li>
 					<li>
@@ -178,7 +178,7 @@
 					<li>
 						<count>2</count>
 						<requiredAtStart>True</requiredAtStart>
-						<xenotype>Ark_ONI</xenotype>
+						<xenotype>Ark_xeno_Oni</xenotype>
 						<allowedDevelopmentalStages>Baby, Child, Adult</allowedDevelopmentalStages>
 					</li>
 				</xenotypeCounts>

@@ -56,6 +56,7 @@
 		<descriptionHyperlinks>
 			<HediffDef>Ark_hediff_OniFire</HediffDef>
 			<HediffDef>Ark_hediff_FireHand</HediffDef>
+			<HediffDef>Ark_BloodDrugPoisoning</HediffDef>
 		</descriptionHyperlinks>
 		<graphicData>
 			<texPath>Things/Item/Drug/Ark_OniDrug_Fire</texPath>
@@ -82,6 +83,7 @@
 		<descriptionHyperlinks>
 			<HediffDef>Ark_hediff_OniToxic</HediffDef>
 			<HediffDef>Ark_hediff_ToxicHand</HediffDef>
+			<HediffDef>Ark_BloodDrugPoisoning</HediffDef>
 		</descriptionHyperlinks>
 		<graphicData>
 			<texPath>Things/Item/Drug/Ark_OniDrug_Toxic</texPath>
@@ -108,6 +110,7 @@
 		<descriptionHyperlinks>
 			<HediffDef>Ark_hediff_OniStone</HediffDef>
 			<HediffDef>Ark_hediff_StoneBody</HediffDef>
+			<HediffDef>Ark_BloodDrugPoisoning</HediffDef>
 		</descriptionHyperlinks>
 		<graphicData>
 			<texPath>Things/Item/Drug/Ark_OniDrug_Stone</texPath>

@@ -4,4 +4,29 @@
 		<defName>Ark_ChildrenReceive</defName>
 		<label>儿童难民转移</label>
 	</HistoryEventDef>
+
+	<IncidentDef Name="Ark_DiseaseIncident" Abstract="True">
+		<workerClass>IncidentWorker_DiseaseHuman</workerClass>
+		<category>DiseaseHuman</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+			<li>Map_TempIncident</li>
+			<li>Map_Misc</li>
+			<li>Map_RaidBeacon</li>
+			<li>Caravan</li>
+		</targetTags>
+		<diseaseVictimFractionRange>0.2~0.5</diseaseVictimFractionRange>
+		<letterDef>NegativeEvent</letterDef>
+	</IncidentDef>
+
+	<IncidentDef ParentName="Ark_DiseaseIncident">
+		<defName>Ark_Disease_FallenPlague</defName>
+		<label>堕天</label>
+		<diseaseIncident>Ark_hediff_FallenPlague</diseaseIncident>
+		<diseasePartsToAffect>
+			<li>Brain</li>
+		</diseasePartsToAffect>
+		<letterLabel>堕天</letterLabel>
+		<letterText>{0}{1}患上了{2}。\n\n确保有病床和医生，使他们得到适当的治疗并尽可能卧床休息。\n\n以下{1}生病了：</letterText>
+	</IncidentDef>
 </Defs>

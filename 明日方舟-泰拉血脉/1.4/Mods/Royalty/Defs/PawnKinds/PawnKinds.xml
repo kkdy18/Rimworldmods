@@ -98,7 +98,7 @@
 		<initialResistanceRange>16~25</initialResistanceRange>
 		<xenotypeSet>
 			<xenotypeChances>
-				<Ark_SKT>1</Ark_SKT>
+				<Ark_xeno_Sectator>1</Ark_xeno_Sectator>
 			</xenotypeChances>
 		</xenotypeSet>
 	</PawnKindDef>
@@ -233,7 +233,7 @@
 		<titleRequired>Friar</titleRequired>
 		<xenotypeSet>
 			<xenotypeChances>
-				<Ark_SKT>1</Ark_SKT>
+				<Ark_xeno_Sectator>1</Ark_xeno_Sectator>
 			</xenotypeChances>
 		</xenotypeSet>
 	</PawnKindDef>
@@ -256,7 +256,7 @@
 		<useFactionXenotypes>false</useFactionXenotypes>
 		<xenotypeSet>
 			<xenotypeChances>
-				<Ark_superSKT>1</Ark_superSKT>
+				<Ark_xeno_SuperSectator>1</Ark_xeno_SuperSectator>
 			</xenotypeChances>
 		</xenotypeSet>
 	</PawnKindDef>
@@ -273,7 +273,7 @@
 		</apparelRequired>
 		<xenotypeSet>
 			<xenotypeChances>
-				<Ark_SKT>1</Ark_SKT>
+				<Ark_xeno_Sectator>1</Ark_xeno_Sectator>
 			</xenotypeChances>
 		</xenotypeSet>
 	</PawnKindDef>
@@ -286,7 +286,7 @@
 		<factionLeader>true</factionLeader>
 		<xenotypeSet>
 			<xenotypeChances>
-				<Ark_SKT>1</Ark_SKT>
+				<Ark_xeno_Sectator>1</Ark_xeno_Sectator>
 			</xenotypeChances>
 		</xenotypeSet>
 	</PawnKindDef>

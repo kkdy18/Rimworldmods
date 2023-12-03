@@ -11,7 +11,7 @@
 		<fixedName>龙之乡</fixedName>
 		<xenotypeSet Inherit="False">
 			<xenotypeChances>
-				<Ark_WYF>999</Ark_WYF>
+				<Ark_xeno_Vouivre>999</Ark_xeno_Vouivre>
 			</xenotypeChances>
 			<warnIfTotalAbove1>false</warnIfTotalAbove1>
 		</xenotypeSet>
@@ -33,10 +33,10 @@
 		<earliestRaidDays>30</earliestRaidDays>
 		<xenotypeSet Inherit="False">
 			<xenotypeChances>
-				<Ark_ONI>0.9</Ark_ONI>
-				<Ark_RONI>0.05</Ark_RONI>
-				<Ark_BONI>0.05</Ark_BONI>
-			</xenotypeChances>
+				<Ark_xeno_Oni>0.9</Ark_xeno_Oni>
+				<Ark_xeno_OniR>0.05</Ark_xeno_OniR>
+				<Ark_xeno_OniB>0.05</Ark_xeno_OniB>
+		</xenotypeChances>
 			<warnIfTotalAbove1>false</warnIfTotalAbove1>
 		</xenotypeSet>
 		<colorSpectrum>

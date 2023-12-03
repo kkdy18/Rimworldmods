@@ -44,7 +44,7 @@
 		</modExtensions>
 	</GeneDef>
 
-	<GeneDef>
+<!--	<GeneDef>
 		<defName>Ark_gene_FireRoad</defName>
 		<label>灼炎为路</label>
 		<description>aaa</description>
@@ -86,7 +86,7 @@
 				<backgroundPathXenogenes>UI/Icons/Genes/Ark_Xenogene</backgroundPathXenogenes>
 			</li>
 		</modExtensions>
-	</GeneDef>
+	</GeneDef>-->
 
 	<GeneDef Name="Ark_GenderBase" Abstract="True">
 		<displayCategory>Ark_Misc</displayCategory>

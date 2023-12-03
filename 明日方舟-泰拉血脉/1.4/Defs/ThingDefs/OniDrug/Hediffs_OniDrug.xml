@@ -18,7 +18,7 @@
 	<HediffDef ParentName="Ark_OniDrugHigh">
 		<defName>Ark_hediff_OniFire</defName>
 		<label>忍法-焚躯</label>
-		<description>秘药正在该个体的血管中流淌，使组织细胞代谢加速犹如烈火焚身。/n/n听说在“焚躯”的状态下伤口会快速再生，不过想变成不死之身应该是不可能的。</description>
+		<description>秘药正在该个体的血管中流淌，使组织细胞代谢加速犹如烈火焚身。\n\n听说在“焚躯”的状态下伤口会快速再生，不过想变成不死之身应该是不可能的。</description>
 		<descriptionHyperlinks>
 			<ThingDef>Ark_OniDrug_Fire</ThingDef>
 			<HediffDef>Ark_hediff_FireHand</HediffDef>
@@ -272,13 +272,15 @@
 		</comps>
 	</HediffDef>
 
-	<HediffDef ParentName="DiseaseBase">
+	<HediffDef>
 		<defName>Ark_BloodDrugPoisoning</defName>
 		<label>秘药中毒溶血症</label>
 		<description>鬼族秘药中的毒素对骨髓造成了永久性的损伤，造血功能接近丧失，血液循环系统的状况正在不断恶化，患者必须定期接受治疗来延续生命。</description>
 		<descriptionHyperlinks>
 			<RecipeDef>Ark_Cure_BloodDrugPoisoning</RecipeDef>
 		</descriptionHyperlinks>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.9, 1.0, 0.35)</defaultLabelColor>
 		<lethalSeverity>1</lethalSeverity>
 		<initialSeverity>0.001</initialSeverity>
 		<makesSickThought>true</makesSickThought>

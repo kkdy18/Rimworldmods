@@ -148,4 +148,58 @@
 			</li>
 		</modExtensions>
 	</GeneDef>
+
+	<GeneDef>
+		<defName>Ark_gene_TragedyBirth</defName>
+		<label>苦难摇篮</label>
+		<description>这份血脉来自彼端一片苦难横行的大地，命运一视同仁地降下不幸，畏惧者不会得到怜悯，抗争者也无法避免毁灭，但脆弱的生命总能在命运的碾压下寻得一丝残酷的希望。</description>
+		<iconPath>UI/Icons/Genes/Ark_TragedyBirth</iconPath>
+		<biostatCpx>7</biostatCpx>
+		<biostatMet>7</biostatMet>
+		<biostatArc>2</biostatArc>
+		<selectionWeight>0</selectionWeight>
+		<displayCategory>Ark_Misc</displayCategory>
+		<displayOrderInCategory>100</displayOrderInCategory>
+		<statOffsets>
+			<PainShockThreshold>-0.2</PainShockThreshold>
+			<MentalBreakThreshold>-0.1</MentalBreakThreshold>
+		</statOffsets>
+		<exclusionTags>
+			<li>Pain</li>
+		</exclusionTags>
+	</GeneDef>
+
+<!--<GeneDef>
+		<defName>Ark_gene_Stranger</defName>
+		<label>异乡人</label>
+		<description>这份血脉来自彼端一片遥远的大地，此端世界与其的距离远比星辰之间的间隔漫长，对于抵达此端的彼端之人来说，故乡已经渺茫。</description>
+		<iconPath>UI/Icons/Genes/Ark_Stranger</iconPath>
+		<biostatCpx>0</biostatCpx>
+		<biostatMet>2</biostatMet>
+		<selectionWeight>0</selectionWeight>
+		<displayCategory>Ark_Misc</displayCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Ark_Endogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>UI/Icons/Genes/Ark_Xenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+	
+	<ThoughtDef>
+		<defName>Ark_StrangerMood</defName>
+		<workerClass>ThoughtWorker_AlwaysActive</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<developmentalStageFilter>Adult</developmentalStageFilter>
+		<requiredGenes>
+			<li>Ark_gene_Stranger</li>
+		</requiredGenes>
+		<stages>
+			<li>
+				<label>异乡人</label>
+				<description>这片大地上是否能容纳我的灵魂？我的家乡又在何处？</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>-->
 </Defs>
