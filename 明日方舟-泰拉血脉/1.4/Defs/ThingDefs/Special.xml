@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="ResourceBase">
+		<defName>Ark_LeakedWastepack</defName>
+		<label>泄漏的有毒垃圾</label>
+		<description>一袋包装被人为破坏的有毒垃圾，其中的有毒废物在非低温环境下将以极快的速度泄漏，某些穷凶极恶的暴徒会通过投放像这样被处理的有毒垃圾来迅速污染一片地区，打击防守方的士气。</description>
+		<graphicData>
+			<texPath>Things/Item/Ark_LeakedWastepack</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>1</stackLimit>
+		<tickerType>Normal</tickerType>
+		<statBases>
+			<Beauty>-40</Beauty>
+			<MaxHitPoints>20</MaxHitPoints>
+			<MarketValue>0</MarketValue>
+			<Mass>3</Mass>
+			<Flammability>1</Flammability>
+			<DeteriorationRate>4</DeteriorationRate>
+		</statBases>
+		<thingCategories>
+			<li>ItemsMisc</li>
+		</thingCategories>
+		<comps>
+			<li Class="CompProperties_Dissolution">
+				<dissolutionAfterDays>1</dissolutionAfterDays>
+				<dissolutinFactorIndoors>0.5</dissolutinFactorIndoors>
+				<dissolutionFactorRain>2</dissolutionFactorRain>
+			</li>
+			<li Class="CompProperties_DissolutionEffectPollution">
+				<cellsToPollutePerDissolution>6</cellsToPollutePerDissolution>
+				<tilePollutionPerDissolution>0.0005</tilePollutionPerDissolution>
+				<!-- 2000 wastepacks fill a tile -->
+				<waterTilePollutionFactor>8</waterTilePollutionFactor>
+			</li>
+			<li>
+				<compClass>CompDissolutionEffect_Goodwill</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

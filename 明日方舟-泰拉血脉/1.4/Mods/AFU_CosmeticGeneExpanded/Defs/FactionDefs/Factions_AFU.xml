@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<FactionDef ParentName="OutlanderFactionBase">
+		<defName>Ark_TerraUnion</defName>
+		<label>流浪泰拉联合</label>
+		<description>由来自名为泰拉的世界的多元人种组成的庞大组织，最早由一群卡特斯与札拉克合作建立，旨在为泰拉失落者提供庇护所，后发展为边缘世界大型农业兼矿业集团。\n\n在流浪泰拉联合可以以相当优惠的价格购买到粮食与各种矿产，他们还为来访者提供相当便宜的化合燃料，不过他们近年来似乎在筹划着什么大事，作战物资的价格被拉高了不少。</description>
+		<factionIconPath>World/Ark_TerraUnion</factionIconPath>
+		<pawnSingular>联合公民</pawnSingular>
+		<pawnsPlural>联合公民</pawnsPlural>
+		<leaderTitle>联合主席</leaderTitle>
+		<fixedName>流浪泰拉联合</fixedName>
+		<allowedCultures Inherit="False">
+			<li>Arknights_TerraUnion</li>
+		</allowedCultures>
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<Ark_xeno_Cautus>0.35</Ark_xeno_Cautus>
+				<Ark_xeno_Zalak>0.35</Ark_xeno_Zalak>
+				<Ark_xeno_Feline>0.1</Ark_xeno_Feline>
+				<Ark_xeno_Vulpo>0.05</Ark_xeno_Vulpo>
+				<Ark_xeno_Vouivre>0.1</Ark_xeno_Vouivre>
+				<Ark_xeno_Oni>0.05</Ark_xeno_Oni>
+			</xenotypeChances>
+			<warnIfTotalAbove1>false</warnIfTotalAbove1>
+		</xenotypeSet>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Tribal</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<colorSpectrum>
+			<li>(0.8, 0.8, 0.8)</li>
+		</colorSpectrum>
+		<classicIdeo>true</classicIdeo>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>10</configurationListOrderPriority>
+		<baseTraderKinds Inherit="False">
+			<li>Ark_Base_TerraUnion</li>
+		</baseTraderKinds>
+	</FactionDef>
+
+	<CultureDef ParentName="Arknights">
+		<defName>Arknights_TerraUnion</defName>
+		<leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">LeaderTitleMaker_TerraUnion</leaderTitleMaker>
+		<styleItemTags>
+			<li>
+				<tag>Punk</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoBeard</tag>
+				<baseWeight>10</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>BeardPunk</tag>
+				<baseWeight>0.1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoTattoo</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>TattooFacePunk</tag>
+				<baseWeight>0.4</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>TattooBodyPunk</tag>
+				<baseWeight>0.4</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+		</styleItemTags>
+	</CultureDef>
+
+	<RulePackDef>
+		<defName>LeaderTitleMaker_TerraUnion</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_leaderTitle->联合主席</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<FactionDef ParentName="PirateBandBase">
+		<defName>Ark_GrayRatPriate</defName>
+		<label>灰鼠氏族</label>
+		<description>由污堕鼠族群转化而来的掠夺者势力，走出了污染废土的他们窥觊并嫉恨着文明世界的富饶，于是他们肆意掠夺，滥杀无辜，用污染涂抹肥沃的土地与安定的家园。灰鼠氏族试图用暴力与毒污同化所有向往文明之人，那么文明必然以剑与火回击。</description>
+		<factionIconPath>World/Ark_GrayRatPriate</factionIconPath>
+		<factionNameMaker>NamerFactionPirateWaster</factionNameMaker>
+		<settlementNameMaker>NamerSettlementPirateWaster</settlementNameMaker>
+		<pawnSingular>灰鼠劫掠者</pawnSingular>
+		<pawnsPlural>灰鼠劫掠者</pawnsPlural>
+		<leaderTitle>纯净先驱</leaderTitle>
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<Ark_xeno_PolluteRat>999</Ark_xeno_PolluteRat>
+			</xenotypeChances>
+		</xenotypeSet>
+		<colorSpectrum Inherit="False">
+			<li>(0.8, 0.8, 0)</li>
+		</colorSpectrum>
+		<pawnGroupMakers Inherit="False">
+			<li>
+				<!-- Normal fights, ranged with melee mix-ins -->
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<Drifter>10</Drifter>
+					<Thrasher>3</Thrasher>
+					<Scavenger>10</Scavenger>
+					<Ark_GrayRat_SpreaderTox>5</Ark_GrayRat_SpreaderTox>
+					<Grenadier_Destructive>0.25</Grenadier_Destructive>
+					<Ark_GrayRat_GunnerTox>10</Ark_GrayRat_GunnerTox>
+					<Ark_GrayRat_SlasherTox>5</Ark_GrayRat_SlasherTox>
+					<Ark_GrayRat_EliteTox>10</Ark_GrayRat_EliteTox>
+					<Ark_GrayRat_PureSaint>3</Ark_GrayRat_PureSaint>
+				</options>
+			</li>
+			<li>
+				<!-- Normal fights, ranged only -->
+				<kindDef>Combat</kindDef>
+				<commonality>30</commonality>
+				<options>
+					<Scavenger>10</Scavenger>
+					<Ark_GrayRat_SpreaderTox>5</Ark_GrayRat_SpreaderTox>
+					<Ark_GrayRat_GunnerTox>10</Ark_GrayRat_GunnerTox>
+					<Ark_GrayRat_EliteTox>10</Ark_GrayRat_EliteTox>
+					<Ark_GrayRat_PureSaint>5</Ark_GrayRat_PureSaint>
+				</options>
+			</li>
+			<li>
+				<!-- 毒灾军团 -->
+				<kindDef>Combat</kindDef>
+				<commonality>20</commonality>
+				<options>
+					<Thrasher>5</Thrasher>
+					<Ark_GrayRat_SpreaderTox>10</Ark_GrayRat_SpreaderTox>
+					<Ark_GrayRat_GunnerTox>10</Ark_GrayRat_GunnerTox>
+					<Ark_GrayRat_SlasherTox>10</Ark_GrayRat_SlasherTox>
+					<Ark_GrayRat_EliteTox>10</Ark_GrayRat_EliteTox>
+					<Ark_GrayRat_PureSaint>5</Ark_GrayRat_PureSaint>
+				</options>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<Thrasher>3</Thrasher>
+					<Ark_GrayRat_SpreaderTox>10</Ark_GrayRat_SpreaderTox>
+					<Ark_GrayRat_GunnerTox>10</Ark_GrayRat_GunnerTox>
+					<Ark_GrayRat_SlasherTox>10</Ark_GrayRat_SlasherTox>
+					<Ark_GrayRat_EliteTox>10</Ark_GrayRat_EliteTox>
+					<Ark_GrayRat_PureSaint>10</Ark_GrayRat_PureSaint>
+				</options>
+			</li>
+		</pawnGroupMakers>
+	</FactionDef>
+</Defs>

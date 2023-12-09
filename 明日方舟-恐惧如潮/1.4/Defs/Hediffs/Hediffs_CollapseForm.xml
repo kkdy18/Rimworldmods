@@ -488,7 +488,7 @@
 		<techHediffsTags>
 			<li>Z_FormTwo</li>
 		</techHediffsTags>
-		<tradeTags>
+		<tradeTags Inherit="False">
 			<li>Z_FormTwo</li>
 		</tradeTags>
 	</ThingDef>
@@ -506,7 +506,7 @@
 						<li>Z_FormTwo</li>
 					</thingDefs>
 				</filter>
-				<count>1</count>
+				<count>100</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>

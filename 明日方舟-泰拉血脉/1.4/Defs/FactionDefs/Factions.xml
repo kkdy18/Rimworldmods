@@ -3,7 +3,6 @@
 	<FactionDef ParentName="OutlanderFactionBase">
 		<defName>DragonHome</defName>
 		<label>龙之乡</label>
-		<classicIdeo>true</classicIdeo>
 		<description>由瓦伊凡组建的松散组织，科技水平大概在工业时代并且热衷在世界各地发展农业，他们虽然有着超出常人的斗志与耐性但从不掠夺他人，对于大部分殖民地来说都是相当优质的贸易合作对象。龙之乡乐意帮助所有受难者但不会接纳瓦伊凡之外的人类，但有传闻说龙之乡的成员中出现过某些外观独特的同行者。</description>
 		<factionIconPath>World/DragonHome</factionIconPath>
 		<pawnSingular>龙人</pawnSingular>
@@ -15,10 +14,11 @@
 			</xenotypeChances>
 			<warnIfTotalAbove1>false</warnIfTotalAbove1>
 		</xenotypeSet>
-		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
 		<colorSpectrum>
 			<li>(1, 1, 1)</li>
 		</colorSpectrum>
+		<requiredCountAtGameStart>0</requiredCountAtGameStart>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
 		<configurationListOrderPriority>10</configurationListOrderPriority>
 	</FactionDef>
 
@@ -39,7 +39,7 @@
 		</xenotypeChances>
 			<warnIfTotalAbove1>false</warnIfTotalAbove1>
 		</xenotypeSet>
-		<colorSpectrum>
+		<colorSpectrum Inherit="False">
 			<li>(1, 1, 1)</li>
 		</colorSpectrum>
 		<pawnGroupMakers Inherit="False">
@@ -66,9 +66,6 @@
 				<!-- 忍者军团 -->
 				<kindDef>Combat</kindDef>
 				<commonality>30</commonality>
-				<disallowedStrategies>
-					<li>Siege</li>
-				</disallowedStrategies>
 				<options>
 					<Ark_OniFire>10</Ark_OniFire>
 					<Ark_OniToxic>10</Ark_OniToxic>
@@ -136,4 +133,35 @@
 			</li>
 		</pawnGroupMakers>
 	</FactionDef>
+
+  <CultureDef Name="Arknights">
+    <defName>Arknights</defName>
+    <label>方舟</label>
+    <description>来自泰拉的异乡人中的异世界文化集合。</description>
+	  <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoAstropolitan</ideoNameMaker>
+	  <deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeityAstropolitan</deityNameMaker>
+	  <deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerAstropolitan</deityTypeMaker>
+	  <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalAstropolitan</festivalNameMaker>
+    <allowedPlaceTags>
+      <li>OriginSpacer</li>
+    </allowedPlaceTags>
+    <iconPath>World/RhodesIsland</iconPath>
+	  <styleItemTags>
+		  <li>
+			  <tag>Urban</tag>
+			  <baseWeight>1</baseWeight>
+			  <weightFactor>1</weightFactor>
+		  </li>
+		  <li>
+			  <tag>NoBeard</tag>
+			  <baseWeight>10</baseWeight>
+			  <weightFactor>1</weightFactor>
+		  </li>
+		  <li>
+			  <tag>NoTattoo</tag>
+			  <baseWeight>1</baseWeight>
+			  <weightFactor>1</weightFactor>
+		  </li>
+	  </styleItemTags>
+  </CultureDef>
 </Defs>

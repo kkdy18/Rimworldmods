@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<PawnKindDef ParentName="MercenaryGunnerBase">
+		<defName>Ark_GrayRat_GunnerTox</defName>
+		<label>灰鼠枪手</label>
+		<defaultFactionType>Ark_GrayRatPriate</defaultFactionType>
+		<initialResistanceRange>6~10</initialResistanceRange>
+		<apparelTags Inherit="False">
+			<li>IndustrialBasic</li>
+			<li>IndustrialAdvanced</li>
+			<li>IndustrialMilitaryBasic</li>
+			<li>IndustrialMilitaryAdvanced</li>
+			<li>BeltDefenseTox</li>
+		</apparelTags>
+		<inventoryOptions>
+			<skipChance>0.5</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Wastepack</thingDef>
+					<countRange>1~5</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="MercenarySlasherBase">
+		<defName>Ark_GrayRat_SlasherTox</defName>
+		<label>灰鼠割喉者</label>
+		<defaultFactionType>Ark_GrayRatPriate</defaultFactionType>
+		<initialResistanceRange>10~16</initialResistanceRange>
+		<apparelRequired Inherit="False">
+			<li>Apparel_PackTox</li>
+		</apparelRequired>
+		<inventoryOptions>
+			<skipChance>0.5</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Wastepack</thingDef>
+					<countRange>1~5</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>4~14</range>
+			</li>
+		</skills>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="MercenaryEliteBase">
+		<defName>Ark_GrayRat_EliteTox</defName>
+		<label>恶名凶鼠</label>
+		<defaultFactionType>Ark_GrayRatPriate</defaultFactionType>
+		<initialResistanceRange>15~23</initialResistanceRange>
+		<apparelTags Inherit="False">
+			<li>IndustrialBasic</li>
+			<li>IndustrialAdvanced</li>
+			<li>IndustrialMilitaryBasic</li>
+			<li>IndustrialMilitaryAdvanced</li>
+			<li>SpacerMilitary</li>
+			<li>BeltDefenseTox</li>
+		</apparelTags>
+		<inventoryOptions>
+			<skipChance>0.5</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Wastepack</thingDef>
+					<countRange>1~5</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>8~14</range>
+			</li>
+		</skills>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="GrenadierBase">
+		<defName>Ark_GrayRat_SpreaderTox</defName>
+		<label>散污突击者</label>
+		<defaultFactionType>Ark_GrayRatPriate</defaultFactionType>
+		<combatPower>110</combatPower>
+		<initialResistanceRange>99~99</initialResistanceRange>
+		<apparelTags Inherit="False">
+			<li>IndustrialBasic</li>
+			<li>IndustrialAdvanced</li>
+			<li>IndustrialMilitaryBasic</li>
+		</apparelTags>
+		<weaponMoney>1200~1200</weaponMoney>
+		<weaponTags>
+			<li>GunHeavy</li>
+			<li>GunSingleUse</li>
+		</weaponTags>
+		<techHediffsRequired>
+			<li>Ark_DeathExploder</li>
+			<li>BionicLeg</li>
+			<li>BionicLeg</li>
+		</techHediffsRequired>
+		<inventoryOptions Inherit="False">
+			<skipChance>0</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Ark_LeakedWastepack</thingDef>
+					<countRange>1~3</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="MercenaryEliteTierBase">
+		<defName>Ark_GrayRat_PureSaint</defName>
+		<label>纯净圣者</label>
+		<defaultFactionType>Ark_GrayRatPriate</defaultFactionType>
+		<factionLeader>true</factionLeader>
+		<initialResistanceRange>30~40</initialResistanceRange>
+		<apparelTags Inherit="False">
+			<li>IndustrialBasic</li>
+			<li>IndustrialAdvanced</li>
+			<li>IndustrialMilitaryBasic</li>
+			<li>IndustrialMilitaryAdvanced</li>
+			<li>SpacerMilitary</li>
+		</apparelTags>
+		<techHediffsRequired>
+			<li>Z_RatSaint</li>
+		</techHediffsRequired>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Ark_xeno_SublimeRat>1</Ark_xeno_SublimeRat>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!--灰鼠特色hediff-->
+	<HediffDef ParentName="ImplantHediffBase">
+		<defName>Ark_Implant_DeathExploder</defName>
+		<label>余烬腺体</label>
+		<labelNoun>余烬腺体</labelNoun>
+		<description>一个已植入并激活的仿生腺体。</description>
+		<descriptionHyperlinks>
+			<ThingDef>Ark_DeathExploder</ThingDef>
+			<RecipeDef>Ark_RemoveDeathExploder</RecipeDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>Ark_DeathExploder</spawnThingOnRemoved>
+		<stages>
+			<li>
+				<painFactor>0</painFactor>
+			</li>
+		</stages>
+		<comps>
+			<li Class="Ark_GSWT.HCP_Exploder">
+				<Radius>4.9</Radius>
+				<damage>Bomb</damage>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartBase">
+		<defName>Ark_DeathExploder</defName>
+		<label>余烬腺体</label>
+		<description>余烬腺体是一种植入脊椎运作的仿生腺体，它会抑制安装者的痛觉，并且在检测到安装者失去生命体征后引爆腺体内储存的高能炸药。\n\n由于用途过于残酷，余烬腺体在各地被禁止生产与使用，但市场上偶尔仍会有些许成品销售，有人说余烬腺体被禁用的真实原因是它极大降低了刺杀活动的成本和难度。</description>
+		<descriptionHyperlinks>
+			<HediffDef>Ark_Implant_DeathExploder</HediffDef>
+			<RecipeDef>Ark_InstallDeathExploder</RecipeDef>
+		</descriptionHyperlinks>
+		<techLevel>Spacer</techLevel>
+		<graphicData>
+			<texPath>Things/Item/Health/HealthItem</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
+			<color>(100,0,0)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>800</MarketValue>
+		</statBases>
+		<thingCategories>
+			<li>BodyPartsBionic</li>
+		</thingCategories>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallImplantBase">
+		<defName>Ark_InstallDeathExploder</defName>
+		<label>植入余烬腺体</label>
+		<description>通过手术植入余烬腺体。</description>
+		<descriptionHyperlinks>
+			<ThingDef>Ark_DeathExploder</ThingDef>
+			<HediffDef>Ark_Implant_DeathExploder</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>正在植入余烬腺体。</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Ark_DeathExploder</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Ark_DeathExploder</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Spine</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>Ark_Implant_DeathExploder</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="SurgeryRemoveImplantBase">
+		<defName>Ark_RemoveDeathExploder</defName>
+		<label>摘除余烬腺体</label>
+		<description>通过手术摘除余烬腺体。</description>
+		<descriptionHyperlinks>
+			<ThingDef>Ark_DeathExploder</ThingDef>
+			<HediffDef>Ark_Implant_DeathExploder</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>正在摘除余烬腺体。</jobString>
+		<removesHediff>Ark_Implant_DeathExploder</removesHediff>
+	</RecipeDef>
+
+	<HediffDef ParentName="Ark_GeneHediffBase">
+		<defName>Ark_Giver_RatSaint</defName>
+		<label>心灵集群</label>
+		<description>净擢鼠使用强大的心灵能力将自己与身边同伴的心灵联结成了一个整体，只有净擢鼠死亡或被俘才能打破这种状态。</description>
+		<defaultLabelColor>(0,0.75,0.75)</defaultLabelColor>
+		<comps>
+			<li Class="Ark_GSWT.HCP_RemoveWhenPlayer"/>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<li Class="HediffCompProperties_GiveHediffsInRange">
+				<range>9.9</range>
+				<mote>Ark_Mote_GiverGloryB</mote>
+				<hideMoteWhenNotDrafted>true</hideMoteWhenNotDrafted>
+				<targetingParameters>
+					<canTargetBuildings>false</canTargetBuildings>
+					<canTargetAnimals>false</canTargetAnimals>
+					<canTargetMechs>false</canTargetMechs>
+				</targetingParameters>
+				<hediff>Ark_Hediff_RatCraze</hediff>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="Ark_GeneHediffBase">
+		<defName>Ark_Hediff_RatCraze</defName>
+		<label>鼠群狂热</label>
+		<description>净擢鼠的心灵力量正在不断刺激该个体的大脑，从而提升战斗意志并形成群体性的战斗狂热。</description>
+		<defaultLabelColor>(0.75,0,0)</defaultLabelColor>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.1</offset>
+					</li>
+				</capMods>
+				<statOffsets>
+					<AimingDelayFactor>-0.4</AimingDelayFactor>
+				</statOffsets>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>false</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<li Class="HediffCompProperties_Link">
+				<requireLinkOnOtherPawn>false</requireLinkOnOtherPawn>
+				<maxDistance>10</maxDistance>
+				<customMote>Ark_Mote_GiverLinkB</customMote>
+			</li>
+		</comps>
+	</HediffDef>
+	
+	<ThingDef ParentName="BodyPartBase">
+		<defName>Z_RatSaint</defName>
+		<label>纯净圣者</label>
+		<description>纯净圣者。</description>
+		<techLevel>Spacer</techLevel>
+		<graphicData>
+			<texPath>Things/Item/Health/HealthItem</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
+			<color>(250,250,250)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>100</MarketValue>
+		</statBases>
+		<tradeTags Inherit="False">
+			<li>Z_RatSaint</li>
+		</tradeTags>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallImplantBase">
+		<defName>EJ_RatSaint</defName>
+		<label>do</label>
+		<description>do.</description>
+		<addsHediff>Ark_Giver_RatSaint</addsHediff>
+		<jobString>do.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Z_RatSaint</li>
+					</thingDefs>
+				</filter>
+				<count>100</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Z_RatSaint</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+</Defs>

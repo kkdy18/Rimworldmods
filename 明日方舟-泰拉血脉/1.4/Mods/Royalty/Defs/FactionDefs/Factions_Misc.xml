@@ -9,6 +9,9 @@
     <pawnsPlural>萨科塔</pawnsPlural>
     <fixedName>新拉特兰</fixedName>
     <leaderTitle>教宗</leaderTitle>
+		<allowedCultures>
+			<li>Arknights_Laterano</li>
+		</allowedCultures>
 	  <royalFavorLabel>圣徒刻印</royalFavorLabel>
 	  <royalFavorIconPath>World/Laterano</royalFavorIconPath>
 	  <royalTitleTags>
@@ -141,4 +144,45 @@
 	  <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
 	  <configurationListOrderPriority>70</configurationListOrderPriority>
   </FactionDef>
+
+	<CultureDef ParentName="Arknights">
+		<defName>Arknights_Laterano</defName>
+		<leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">LeaderTitleMaker_Laterano</leaderTitleMaker>
+		<styleItemTags>
+			<li>
+				<tag>Urban</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoBeard</tag>
+				<baseWeight>10</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>BeardRural</tag>
+				<baseWeight>0.1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>BeardUrban</tag>
+				<baseWeight>0.2</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoTattoo</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+		</styleItemTags>
+	</CultureDef>
+	
+	<RulePackDef>
+		<defName>LeaderTitleMaker_Laterano</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_leaderTitle->教宗</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
 </Defs>

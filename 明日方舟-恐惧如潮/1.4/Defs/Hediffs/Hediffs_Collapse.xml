@@ -255,7 +255,7 @@
 		<label>坍缩恶瘤</label>
 		<description>组织细胞在坍缩的影响下以非现实的方式增生形成的类肿瘤衍生物，现在已从患者体内剥离。\n\n别嫌它恶心，这个瘤子恐怕是我们能用来研究坍缩现象的实验材料里最安全的一种了。</description>
 		<descriptionHyperlinks>
-			<RecipeDef>RemoveCollapseTumor</RecipeDef>
+			<RecipeDef>Ark_RemoveCollapseTumor</RecipeDef>
 		</descriptionHyperlinks>
 		<techLevel>Archotech</techLevel>
 		<thingCategories>
@@ -281,6 +281,7 @@
 		<defaultLabelColor>(0.5,0,0.5)</defaultLabelColor>
 		<descriptionHyperlinks>
 			<ThingDef>Ark_CollapseTumor</ThingDef>
+			<RecipeDef>Ark_RemoveCollapseTumor</RecipeDef>
 		</descriptionHyperlinks>
 		<spawnThingOnRemoved>Ark_CollapseTumor</spawnThingOnRemoved>
 		<stages>
@@ -292,11 +293,10 @@
 	</HediffDef>
 
 	<RecipeDef ParentName="SurgeryRemoveImplantBase">
-		<defName>RemoveCollapseTumor</defName>
+		<defName>Ark_RemoveCollapseTumor</defName>
 		<label>摘除坍缩恶瘤</label>
 		<description>仔细分离异化组织与正常的血肉，将坍缩恶瘤完整取出。</description>
 		<descriptionHyperlinks>
-			<ThingDef>Ark_CollapseTumor</ThingDef>
 			<HediffDef>Ark_hediff_CollapseTumor</HediffDef>
 		</descriptionHyperlinks>
 		<jobString>正在摘除坍缩恶瘤。</jobString>

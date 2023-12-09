@@ -3,7 +3,7 @@
 	<XenotypeDef>
 		<defName>Ark_xeno_Feline</defName>
 		<label>菲林</label>
-		<description>desc</description>
+		<description>菲林是分布广泛的类猫人种，有着天生的矫健身手与清秀外貌，神经组织的特化使他们容易疲惫但对精神药物的耐受性极强。\n\n据说有菲林族建立了相当奇特的奴隶制，被奴役的人不会失去人身自由也不会消极怠工，而且会因被菲林驱使而产生强烈的快感。</description>
 		<iconPath>UI/Icons/Xenotypes/Ark_xeno_Feline</iconPath>
 		<inheritable>true</inheritable>
 		<genes>
@@ -12,6 +12,8 @@
 			<li>MeleeDamage_Strong</li>
 			<li>Sleepy</li>
 			<li>Beauty_Beautiful</li>
+			<li>Body_Standard</li>
+			<li>Body_Thin</li>
 			<li>AFU_HA_CatEar</li>
 			<li>AFU_HA_LoverlyCatEar</li>
 			<li>Ark_gene_TragedyBirth</li>
@@ -26,11 +28,12 @@
 	<XenotypeDef>
 		<defName>Ark_xeno_Cautus</defName>
 		<label>卡特斯</label>
-		<description>desc</description>
+		<description>卡特斯是有着兔类特征的人种，身体素质并不突出但依靠强大的繁殖力与容易填饱的胃支撑起了可观的人口基数，在采矿与种植工作上有着与生俱来的天赋。\n\n卡特斯与札拉克合作建立的流浪泰拉联合目前已提供了整个星球大约50%的粮食产量，这一现状间接打击消减了海盗的整体实力，因为部分海盗发现老老实实与流浪泰拉联合贸易的收益远高于劫掠。</description>
 		<iconPath>UI/Icons/Xenotypes/Ark_xeno_Cautus</iconPath>
 		<inheritable>true</inheritable>
 		<genes>
 			<li>MoveSpeed_Quick</li>
+			<li>Delicate</li>
 			<li>Libido_High</li>
 			<li>Fertile</li>
 			<li>AFU_HA_RabbitEar</li>
@@ -40,14 +43,15 @@
 			<li>AFU_BA_LovelyRabbitTail</li>
 			<li>RobustDigestion</li>
 			<li>AptitudeStrong_Mining</li>
-			<li>AptitudeStrong_Plants</li>
+			<li>AptitudeRemarkable_Plants</li>
+			<li>AddictionResistant_Smokeleaf</li>
 		</genes>
 	</XenotypeDef>
 
 	<XenotypeDef>
 		<defName>Ark_xeno_Vulpo</defName>
 		<label>沃尔珀</label>
-		<description>desc</description>
+		<description>沃尔珀是有着狐类特征的人种，心灵在某种层面上相当敏感，比起争斗更擅长利用姣好的外貌与精妙的言辞和人打好关系。\n\n越来越多的派系开始选择沃尔珀作为商队的代表，谁能拒绝一个摇着毛茸茸大尾巴的漂亮或可爱销售员呢。</description>
 		<iconPath>UI/Icons/Xenotypes/Ark_xeno_Vulpo</iconPath>
 		<inheritable>true</inheritable>
 		<genes>
@@ -69,22 +73,83 @@
 	<XenotypeDef>
 		<defName>Ark_xeno_Zalak</defName>
 		<label>札拉克</label>
-		<description>desc</description>
+		<description>札拉克是有着鼠类特征的人种，身材瘦小而生性活泼，依靠优秀的学习能力与灵巧的双手他们在这个世界上建立起无数座繁荣的殖民地。\n\n札拉克几乎能在绝大部分恶劣环境下扎根立足，即使是人迹罕至的热带雨林也能被改造成札拉克的乐园，据说有人曾在被污染吞没的废土地带目击疑似札拉克的身影。</description>
 		<iconPath>UI/Icons/Xenotypes/Ark_xeno_Zalak</iconPath>
 		<inheritable>true</inheritable>
 		<genes>
 			<li>Immunity_SuperStrong</li>
-			<li>ToxResist_Total</li>
-			<li>FireWeakness</li>
-			<li>Libido_High</li>
+			<li>Mood_Optimist</li>
+			<li>Aggression_Aggressive</li>
 			<li>Fertile</li>
+			<li>Body_Thin</li>
 			<li>AFU_HA_RatEar</li>
 			<li>Ark_gene_TragedyBirth</li>
 			<li>AFU_BA_RatTail</li>
 			<li>StrongStomach</li>
 			<li>Learning_Fast</li>
 			<li>DarkVision</li>
-			<li>Instability_Mild</li>
+			<li>ElongatedFingers</li>
+		</genes>
+	</XenotypeDef>
+
+	<XenotypeDef>
+		<defName>Ark_xeno_PolluteRat</defName>
+		<label>污堕鼠</label>
+		<description>污堕鼠是因族群长年与污染相伴而形成的札拉克变种，与污骸种相似，沉积的有色废物使他们的肤色异于常人且长出了怪异的尖刺，适应了污染环境的内循环系统使他们无惧毒素，畸变的神经组织使他们暴躁悲观且需要不断摄入精神药物。除此之外，污堕鼠族还突变出了包括喷吐酸液在内的种种危险生物特性，他们所组成的劫掠者群体正在不断威胁着边缘世界居民的平静生活。</description>
+		<iconPath>UI/Icons/Xenotypes/Ark_xeno_PolluteRat</iconPath>
+		<inheritable>true</inheritable>
+		<genes>
+			<li>AcidSpray</li>
+			<li>Immunity_SuperStrong</li>
+			<li>WoundHealing_SuperFast</li>
+			<li>Mood_Pessimist</li>
+			<li>ToxResist_Total</li>
+			<li>FireWeakness</li>
+			<li>Aggression_HyperAggressive</li>
+			<li>MeleeDamage_Strong</li>
+			<li>Pain_Reduced</li>
+			<li>Fertile</li>
+			<li>Beauty_VeryUgly</li>
+			<li>AFU_HA_RatEar</li>
+			<li>AFU_HA_SpikedHorn</li>
+			<li>Skin_SlateGray</li>
+			<li>AFU_BA_RatTail</li>
+			<li>StrongStomach</li>
+			<li>DarkVision</li>
+			<li>Instability_Major</li>
+			<li>ElongatedFingers</li>
+			<li>PollutionRush</li>
+			<li>ChemicalDependency_Psychite</li>
+		</genes>
+	</XenotypeDef>
+
+	<XenotypeDef>
+		<defName>Ark_xeno_SublimeRat</defName>
+		<label>净擢鼠</label>
+		<description>净擢鼠是污堕鼠族群中极小概率诞生的不育札拉克变种，生理性别皆为女性，原因不明。净擢鼠的毛发与皮肤中几乎不含色素，体质远不如污堕鼠，但她们没有污堕鼠普遍存在的种种生理隐患，并且天生具备强大的心灵力量。\n\n污堕鼠族将这类个体称为“纯净者”，认为她们是褪去了一切杂质从而获得完美之躯的存在，注定要领导族群走向繁荣，因此净擢鼠虽不擅争斗，但往往能担任污堕鼠的领袖或指挥官。</description>
+		<iconPath>UI/Icons/Xenotypes/Ark_xeno_SublimeRat</iconPath>
+		<inheritable>true</inheritable>
+		<genes>
+			<li>WoundHealing_Slow</li>
+			<li>PsychicAbility_Extreme</li>
+			<li>PsychicBonding</li>
+			<li>MoveSpeed_Slow</li>
+			<li>UVSensitivity_Mild</li>
+			<li>Aggression_DeadCalm</li>
+			<li>MeleeDamage_Weak</li>
+			<li>Sterile</li>
+			<li>Beauty_Pretty</li>
+			<li>Ark_Female</li>
+			<li>Body_Thin</li>
+			<li>AFU_HA_RatEar</li>
+			<li>Hair_SnowWhite</li>
+			<li>Skin_SheerWhite</li>
+			<li>AFU_BA_RatTail</li>
+			<li>StrongStomach</li>
+			<li>Learning_Fast</li>
+			<li>DarkVision</li>
+			<li>ElongatedFingers</li>
+			<li>ChemicalDependency_Psychite</li>
 		</genes>
 	</XenotypeDef>
 </Defs>

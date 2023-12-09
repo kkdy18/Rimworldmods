@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<TraderKindDef>
+		<defName>Ark_Base_TerraUnion</defName>
+		<stockGenerators>
+			<!-- Resources -->
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Silver</thingDef>
+				<countRange>2000~5000</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>ComponentIndustrial</thingDef>
+				<countRange>20~70</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>ComponentSpacer</thingDef>
+				<countRange>1~6</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Steel</thingDef>
+				<countRange>500~800</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>WoodLog</thingDef>
+				<countRange>400~700</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Plasteel</thingDef>
+				<countRange>100~250</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Uranium</thingDef>
+				<countRange>40~200</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Cloth</thingDef>
+				<countRange>400~600</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Gold</thingDef>
+				<countRange>100~200</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Neutroamine</thingDef>
+				<countRange>50~200</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Chemfuel</thingDef>
+				<price>Cheap</price>
+				<countRange>300~500</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Chocolate</thingDef>
+				<countRange>-30~70</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Beer</thingDef>
+				<countRange>-40~100</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>MedicineIndustrial</thingDef>
+				<price>Expensive</price>
+				<countRange>25~50</countRange>
+			</li>
+			<li Class="StockGenerator_Category">
+				<categoryDef>Textiles</categoryDef>
+				<thingDefCountRange>1~2</thingDefCountRange>
+				<totalPriceRange>400~800</totalPriceRange>
+			</li>
+			<li Class="StockGenerator_Category">
+				<categoryDef>ResourcesRaw</categoryDef>
+				<price>Cheap</price>
+				<thingDefCountRange>2~4</thingDefCountRange>
+				<totalPriceRange>400~800</totalPriceRange>
+			</li>
+			<li Class="StockGenerator_Category">
+				<categoryDef>FoodRaw</categoryDef>
+				<excludedCategories>
+					<li>EggsFertilized</li>
+				</excludedCategories>
+				<price>VeryCheap</price>
+				<thingDefCountRange>3~6</thingDefCountRange>
+				<totalPriceRange>800~1600</totalPriceRange>
+			</li>
+			<li Class="StockGenerator_Category">
+				<categoryDef>FoodMeals</categoryDef>
+				<thingDefCountRange>2~2</thingDefCountRange>
+				<countRange>12~50</countRange>
+			</li>
+			<!-- Techprints -->
+			<li Class="StockGenerator_Techprints">
+				<countChances>
+					<li>
+						<count>2</count>
+						<chance>0.5</chance>
+					</li>
+					<li>
+						<count>3</count>
+						<chance>0.5</chance>
+					</li>
+				</countChances>
+			</li>
+			<!-- Implants -->
+			<li Class="StockGenerator_Tag">
+				<tradeTag>TechHediff</tradeTag>
+				<price>Expensive</price>
+				<thingDefCountRange>2~4</thingDefCountRange>
+				<countRange>1~1</countRange>
+			</li>
+			<!-- Genepacks -->
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Genepack</thingDef>
+				<countRange>3~6</countRange>
+			</li>
+			<!-- Buying -->
+			<li Class="StockGenerator_BuyExpensiveSimple" />
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>Art</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>ImplantEmpireCommon</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>ImplantEmpireRoyal</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>MusicalInstrument</tag>
+			</li>
+		</stockGenerators>
+	</TraderKindDef>
+</Defs>

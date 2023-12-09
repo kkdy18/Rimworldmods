@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="MoteBase" Name="Ark_MoteGlory" Abstract="True">
+		<thingClass>MoteAttached</thingClass>
+		<altitudeLayer>LightingOverlay</altitudeLayer>
+		<drawOffscreen>true</drawOffscreen>
+		<mote>
+			<solidTime>9999999</solidTime>
+			<needsMaintenance>true</needsMaintenance>
+		</mote>
+		<graphicData>
+			<graphicClass>Graphic_Mote</graphicClass>
+			<texPath>Things/Special/Ark_Mote_GiverGlory</texPath>
+			<shaderType>MoteGlow</shaderType>
+			<drawSize>20</drawSize>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="Ark_MoteGlory">
+		<defName>Ark_Mote_GiverGlory</defName>
+		<graphicData>
+			<color>(32, 17, 0)</color>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="Ark_MoteGlory">
+		<defName>Ark_Mote_GiverGloryB</defName>
+		<graphicData>
+			<color>(0, 20, 32)</color>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="MoteBase" Name="Ark_MoteLink">
+		<defName>Ark_Mote_GiverLink</defName>
+		<thingClass>MoteDualAttached</thingClass>
+		<altitudeLayer>MoteLow</altitudeLayer>
+		<mote>
+			<fadeInTime>0.1</fadeInTime>
+			<fadeOutTime>0.1</fadeOutTime>
+			<solidTime>999999</solidTime>
+			<needsMaintenance>True</needsMaintenance>
+			<rotateTowardsTarget>True</rotateTowardsTarget>
+			<scaleToConnectTargets>True</scaleToConnectTargets>
+		</mote>
+		<graphicData>
+			<shaderType>MoteGlow</shaderType>
+			<texPath>Things/Special/Ark_Mote_GiverLink</texPath>
+			<color>(200, 0, 200)</color>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="Ark_MoteLink">
+		<defName>Ark_Mote_GiverLinkB</defName>
+		<graphicData>
+			<color>(0, 150, 240)</color>
+		</graphicData>
+	</ThingDef>
+</Defs>

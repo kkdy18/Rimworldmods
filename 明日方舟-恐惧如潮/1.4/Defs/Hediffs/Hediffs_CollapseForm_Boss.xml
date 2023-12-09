@@ -72,42 +72,6 @@
 		</comps>
 	</HediffDef>
 
-	<ThingDef ParentName="MoteBase">
-		<defName>Ark_Mote_GiverGlory</defName>
-		<thingClass>MoteAttached</thingClass>
-		<altitudeLayer>LightingOverlay</altitudeLayer>
-		<drawOffscreen>true</drawOffscreen>
-		<mote>
-			<solidTime>9999999</solidTime>
-			<needsMaintenance>true</needsMaintenance>
-		</mote>
-		<graphicData>
-			<graphicClass>Graphic_Mote</graphicClass>
-			<texPath>Things/Special/Ark_Mote_GiverGlory</texPath>
-			<shaderType>MoteGlow</shaderType>
-			<color>(32, 0, 32)</color>
-			<drawSize>20</drawSize>
-		</graphicData>
-	</ThingDef>
-
-	<ThingDef ParentName="MoteBase">
-		<defName>Ark_Mote_GiverLink</defName>
-		<thingClass>MoteDualAttached</thingClass>
-		<altitudeLayer>MoteLow</altitudeLayer>
-		<mote>
-			<fadeInTime>0.1</fadeInTime>
-			<fadeOutTime>0.1</fadeOutTime>
-			<solidTime>999999</solidTime>
-			<needsMaintenance>True</needsMaintenance>
-			<rotateTowardsTarget>True</rotateTowardsTarget>
-			<scaleToConnectTargets>True</scaleToConnectTargets>
-		</mote>
-		<graphicData>
-			<shaderType>MoteGlow</shaderType>
-			<texPath>Things/Special/Ark_Mote_GiverLink</texPath>
-		</graphicData>
-	</ThingDef>
-
 	<HediffDef Name="Ark_BossHediffResurrect" ParentName="Ark_BossHediffBase" Abstract="True">
 		<hediffClass>Ark_GSWT.Hediff_SeverityNum</hediffClass>
 	</HediffDef>
