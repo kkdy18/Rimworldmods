@@ -33,7 +33,7 @@
 		<techHediffsTags>
 			<li>Ark_TheForm</li>
 		</techHediffsTags>
-		<techHediffsMoney>50~800</techHediffsMoney>
+		<techHediffsMoney>10~800</techHediffsMoney>
 		<techHediffsChance>1</techHediffsChance>
 		<techHediffsMaxAmount>1</techHediffsMaxAmount>
 		<requiredWorkTags>
@@ -300,10 +300,9 @@
 		<apparelColor>(58,58,58)</apparelColor>
 		<ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
 		<favoriteColor>(58,58,58)</favoriteColor>
-		<techHediffsMoney>1000~4000</techHediffsMoney>
+		<techHediffsMoney>500~4000</techHediffsMoney>
 		<techHediffsTags>
 			<li>Advanced</li>
-			<li>Z_FormTwo</li>
 		</techHediffsTags>
 		<techHediffsRequired>
 			<li>Z_FormTwo</li>
@@ -326,7 +325,7 @@
 		<defName>Ark_Carcass_Mechanitor</defName>
 		<label>械灾者</label>
 		<combatPower>100</combatPower>
-		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+		<backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
 		<backstoryFilters>
 			<li>
 				<categories>
@@ -334,7 +333,7 @@
 				</categories>
 			</li>
 		</backstoryFilters>
-		<chemicalAddictionChance>0.08</chemicalAddictionChance>
+		<chemicalAddictionChance>0</chemicalAddictionChance>
 		<apparelMoney>9000~9000</apparelMoney>
 		<apparelTags>
 			<li>IndustrialBasic</li>
@@ -422,12 +421,6 @@
 				<range>10~15</range>
 			</li>
 		</skills>
-		<useFactionXenotypes>false</useFactionXenotypes>
-		<xenotypeSet>
-			<xenotypeChances>
-				<Baseliner>1</Baseliner>
-			</xenotypeChances>
-		</xenotypeSet>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="BaseSoldierCollapse">

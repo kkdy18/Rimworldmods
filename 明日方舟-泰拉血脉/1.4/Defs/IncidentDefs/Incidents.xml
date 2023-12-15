@@ -19,7 +19,7 @@
 		<letterDef>NegativeEvent</letterDef>
 	</IncidentDef>
 
-	<IncidentDef ParentName="Ark_DiseaseIncident">
+<!--	<IncidentDef ParentName="Ark_DiseaseIncident">
 		<defName>Ark_Disease_FallenPlague</defName>
 		<label>堕天</label>
 		<diseaseIncident>Ark_hediff_FallenPlague</diseaseIncident>
@@ -28,5 +28,5 @@
 		</diseasePartsToAffect>
 		<letterLabel>堕天</letterLabel>
 		<letterText>{0}{1}患上了{2}。\n\n确保有病床和医生，使他们得到适当的治疗并尽可能卧床休息。\n\n以下{1}生病了：</letterText>
-	</IncidentDef>
+	</IncidentDef>-->
 </Defs>

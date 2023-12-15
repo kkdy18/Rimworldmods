@@ -11,6 +11,7 @@
 			<WorkToMake>600</WorkToMake>
 			<MarketValue>40</MarketValue>
 			<Mass>0.1</Mass>
+			<FoodPoisonChanceFixedHuman>0.5</FoodPoisonChanceFixedHuman>
 		</statBases>
 		<techLevel>Industrial</techLevel>
 		<ingestible>
@@ -67,11 +68,6 @@
 					<hediffDef>Ark_hediff_OniFire</hediffDef>
 					<severity>0.4</severity>
 				</li>
-				<li Class="IngestionOutcomeDoer_GiveHediff">
-					<hediffDef>ToxicBuildup</hediffDef>
-					<severity>0.1</severity>
-					<divideByBodySize>true</divideByBodySize>
-				</li>
 			</outcomeDoers>
 		</ingestible>
 	</ThingDef>
@@ -93,11 +89,6 @@
 				<li Class="IngestionOutcomeDoer_GiveHediff">
 					<hediffDef>Ark_hediff_OniToxic</hediffDef>
 					<severity>0.4</severity>
-				</li>
-				<li Class="IngestionOutcomeDoer_GiveHediff">
-					<hediffDef>ToxicBuildup</hediffDef>
-					<severity>0.1</severity>
-					<divideByBodySize>true</divideByBodySize>
 				</li>
 			</outcomeDoers>
 		</ingestible>
@@ -121,11 +112,6 @@
 					<hediffDef>Ark_hediff_OniStone</hediffDef>
 					<severity>0.4</severity>
 				</li>
-				<li Class="IngestionOutcomeDoer_GiveHediff">
-					<hediffDef>ToxicBuildup</hediffDef>
-					<severity>0.1</severity>
-					<divideByBodySize>true</divideByBodySize>
-				</li>
 			</outcomeDoers>
 		</ingestible>
 	</ThingDef>
@@ -145,11 +131,6 @@
 				<li Class="IngestionOutcomeDoer_GiveHediff">
 					<hediffDef>Ark_hediff_OniWind</hediffDef>
 					<severity>0.4</severity>
-				</li>
-				<li Class="IngestionOutcomeDoer_GiveHediff">
-					<hediffDef>ToxicBuildup</hediffDef>
-					<severity>0.1</severity>
-					<divideByBodySize>true</divideByBodySize>
 				</li>
 			</outcomeDoers>
 		</ingestible>

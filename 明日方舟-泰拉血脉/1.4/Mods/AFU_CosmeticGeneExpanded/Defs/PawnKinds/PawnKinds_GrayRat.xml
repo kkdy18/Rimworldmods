@@ -176,6 +176,9 @@
 		<statBases>
 			<MarketValue>800</MarketValue>
 		</statBases>
+		<tradeTags>
+			<li>Bionic</li>
+		</tradeTags>
 		<thingCategories>
 			<li>BodyPartsBionic</li>
 		</thingCategories>
@@ -288,11 +291,11 @@
 			<color>(250,250,250)</color>
 		</graphicData>
 		<statBases>
-			<MarketValue>100</MarketValue>
+			<MarketValue>10</MarketValue>
 		</statBases>
-		<tradeTags Inherit="False">
-			<li>Z_RatSaint</li>
-		</tradeTags>
+	  <generateAllowChance>0</generateAllowChance>
+	  <destroyOnDrop>true</destroyOnDrop>
+	  <tradeability>None</tradeability>
 	</ThingDef>
 
 	<RecipeDef ParentName="SurgeryInstallImplantBase">
@@ -308,7 +311,7 @@
 						<li>Z_RatSaint</li>
 					</thingDefs>
 				</filter>
-				<count>100</count>
+				<count>1</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>

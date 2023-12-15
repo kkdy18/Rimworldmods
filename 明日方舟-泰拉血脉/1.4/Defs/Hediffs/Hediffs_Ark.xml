@@ -68,22 +68,6 @@
     </stages>
   </HediffDef>
 
-  <HediffDef ParentName="Ark_GeneHediffBase">
-    <defName>Ark_hediff_Wing</defName>
-    <label>光翼</label>
-    <description>悬浮在背后的自发光片状物，隐约排列出翅膀的模样，不具备飞行的功能但能有效提升携带者的机动能力。</description>
-    <stages>
-      <li>
-		  <capMods>
-			  <li>
-				  <capacity>Moving</capacity>
-				  <offset>0.2</offset>
-			  </li>
-		  </capMods>
-      </li>
-    </stages>
-  </HediffDef>
-
 	<HediffDef ParentName="Ark_GeneHediffBase">
 		<defName>Ark_hediff_FallenPlague</defName>
 		<label>堕天</label>

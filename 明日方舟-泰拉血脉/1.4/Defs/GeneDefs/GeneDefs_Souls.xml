@@ -11,8 +11,8 @@
 		<missingGeneRomanceChanceFactor>0.5</missingGeneRomanceChanceFactor>
 		<modExtensions>
 			<li Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>UI/Icons/Genes/Ark_Endogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>UI/Icons/Genes/Ark_Xenogene</backgroundPathXenogenes>
+				<backgroundPathEndogenes>UI/Icons/Genes/Ark_SoulGene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>UI/Icons/Genes/Ark_SoulGene</backgroundPathXenogenes>
 				<hediffToWholeBody>Ark_hediff_Sectator</hediffToWholeBody>
 			</li>
 		</modExtensions>
@@ -39,8 +39,8 @@
 		</hediffGiversCannotGive>
 		<modExtensions>
 			<li Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>UI/Icons/Genes/Ark_Endogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>UI/Icons/Genes/Ark_Xenogene</backgroundPathXenogenes>
+				<backgroundPathEndogenes>UI/Icons/Genes/Ark_SoulGene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>UI/Icons/Genes/Ark_SoulGene</backgroundPathXenogenes>
 				<hediffToWholeBody>Ark_hediff_Vouivre</hediffToWholeBody>
 			</li>
 		</modExtensions>
@@ -62,8 +62,8 @@
 		</descriptionHyperlinks>
 		<modExtensions>
 			<li Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>UI/Icons/Genes/Ark_Endogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>UI/Icons/Genes/Ark_Xenogene</backgroundPathXenogenes>
+				<backgroundPathEndogenes>UI/Icons/Genes/Ark_SoulGene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>UI/Icons/Genes/Ark_SoulGene</backgroundPathXenogenes>
 				<hediffToWholeBody>Ark_hediff_Oni</hediffToWholeBody>
 			</li>
 		</modExtensions>

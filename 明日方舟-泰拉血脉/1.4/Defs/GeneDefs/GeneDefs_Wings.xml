@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <GeneDef Name="Ark_WingBase" Abstract="True">
-    <displayCategory>Miscellaneous</displayCategory>
+    <displayCategory>Ark_Bodies</displayCategory>
     <exclusionTags>
     <li>Wing</li>
     <li>Wings</li>
+	<li>Ark_Wings</li>
     </exclusionTags>
     <graphicData>
     <drawLoc>Tailbone</drawLoc>
@@ -20,11 +21,10 @@
 	  <prerequisite>Ark_Sectator</prerequisite>
     <biostatCpx>1</biostatCpx>
     <biostatMet>-1</biostatMet>
-    <displayCategory>Ark_Bodies</displayCategory>
-    <selectionWeight>0</selectionWeight>
-    <customEffectDescriptions>
-        <li>有翼者的移动速度将无视地形影响</li>
-    </customEffectDescriptions>
+	  <statOffsets>
+		  <MoveSpeed>0.1</MoveSpeed>
+		  <MeleeDodgeChance>5</MeleeDodgeChance>
+	  </statOffsets>
     <graphicData>
     <graphicPaths>
         <li>Things/Pawn/Humanlike/BodyAttachments/Ark_LightWings/Ark_Wings1</li>
@@ -50,7 +50,6 @@
          <li Class="VanillaGenesExpanded.GeneExtension">
            <backgroundPathEndogenes>UI/Icons/Genes/Ark_Endogene</backgroundPathEndogenes>
            <backgroundPathXenogenes>UI/Icons/Genes/Ark_Xenogene</backgroundPathXenogenes>
-           <hediffToWholeBody>Ark_hediff_Wing</hediffToWholeBody>
          </li>
     </modExtensions>
   </GeneDef>
@@ -63,11 +62,10 @@
 	  <prerequisite>Ark_Sectator</prerequisite>
     <biostatCpx>1</biostatCpx>
     <biostatMet>-1</biostatMet>
-    <displayCategory>Ark_Bodies</displayCategory>
-    <selectionWeight>0</selectionWeight>
-    <customEffectDescriptions>
-        <li>有翼者的移动速度将无视地形影响</li>
-    </customEffectDescriptions>
+	  <statOffsets>
+		  <MoveSpeed>0.1</MoveSpeed>
+		  <MeleeDodgeChance>5</MeleeDodgeChance>
+	  </statOffsets>
     <graphicData>
       <graphicPath>Things/Pawn/Humanlike/BodyAttachments/Ark_LightWings/Ark_BigWings</graphicPath>
     <drawScale>1.8</drawScale>
@@ -79,7 +77,6 @@
          <li Class="VanillaGenesExpanded.GeneExtension">
            <backgroundPathEndogenes>UI/Icons/Genes/Ark_Endogene</backgroundPathEndogenes>
            <backgroundPathXenogenes>UI/Icons/Genes/Ark_Xenogene</backgroundPathXenogenes>
-           <hediffToWholeBody>Ark_hediff_Wing</hediffToWholeBody>
          </li>
     </modExtensions>
   </GeneDef>

@@ -199,14 +199,14 @@
 			<color>(25,25,25)</color>
 		</graphicData>
 		<statBases>
-			<MarketValue>50</MarketValue>
+			<MarketValue>10</MarketValue>
 		</statBases>
 		<techHediffsTags>
 			<li>Ark_TheForm</li>
 		</techHediffsTags>
-		<tradeTags>
-			<li>Ark_TheForm</li>
-		</tradeTags>
+		<generateAllowChance>0</generateAllowChance>
+		<destroyOnDrop>true</destroyOnDrop>
+		<tradeability>None</tradeability>
 	</ThingDef>
 
 	<RecipeDef Name="EJ_SurgeryTheFormBase" ParentName="SurgeryInstallImplantBase" Abstract="True">
@@ -483,14 +483,14 @@
 			<color>(25,25,25)</color>
 		</graphicData>
 		<statBases>
-			<MarketValue>100</MarketValue>
+			<MarketValue>10</MarketValue>
 		</statBases>
 		<techHediffsTags>
 			<li>Z_FormTwo</li>
 		</techHediffsTags>
-		<tradeTags Inherit="False">
-			<li>Z_FormTwo</li>
-		</tradeTags>
+		<generateAllowChance>0</generateAllowChance>
+		<destroyOnDrop>true</destroyOnDrop>
+		<tradeability>None</tradeability>
 	</ThingDef>
 
 	<RecipeDef ParentName="SurgeryInstallImplantBase">
@@ -506,7 +506,7 @@
 						<li>Z_FormTwo</li>
 					</thingDefs>
 				</filter>
-				<count>100</count>
+				<count>1</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
