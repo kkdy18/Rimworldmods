@@ -23,19 +23,21 @@
 				<statOffsets>
 					<PsychicSensitivity>-2</PsychicSensitivity>
 					<Ark_Volition>4.04</Ark_Volition>
+					<ComfyTemperatureMax>50</ComfyTemperatureMax>
+					<ComfyTemperatureMin>-50</ComfyTemperatureMin>
 				</statOffsets>
 				<capMods>
 					<li>
 						<capacity>Consciousness</capacity>
-						<offset>0.25</offset>
+						<offset>0.2</offset>
 					</li>
 					<li>
 						<capacity>Moving</capacity>
-						<offset>0.25</offset>
+						<offset>0.2</offset>
 					</li>
 					<li>
 						<capacity>Sight</capacity>
-						<offset>0.5</offset>
+						<offset>0.2</offset>
 					</li>
 				</capMods>
 			</li>
@@ -269,6 +271,7 @@
 		</graphicData>
 		<statBases>
 			<Mass>6</Mass>
+			<MarketValue>120</MarketValue>
 			<DeteriorationRate>0</DeteriorationRate>
 		</statBases>
 	</ThingDef>

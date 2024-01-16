@@ -14,14 +14,10 @@
 		<canStageAttacks>true</canStageAttacks>
 		<xenotypeSet Inherit="False">
 			<xenotypeChances>
-				<Dirtmole>0.05</Dirtmole>
-				<Hussar>0.05</Hussar>
-				<Waster>0.025</Waster>
-				<Pigskin>0.025</Pigskin>
-				<Neanderthal>0.025</Neanderthal>
-				<Impid>0.025</Impid>
-				<Genie>0.025</Genie>
-				<Yttakin>0.025</Yttakin>
+				<Dirtmole>0.1</Dirtmole>
+				<Waster>0.1</Waster>
+				<Pigskin>0.1</Pigskin>
+				<Yttakin>0.1</Yttakin>
 				<Sanguophage>0.05</Sanguophage>
 			</xenotypeChances>
 			<warnIfTotalAbove1>false</warnIfTotalAbove1>
@@ -30,7 +26,6 @@
 			<li>
 				<categories>
 					<li>Outlander</li>
-					<li>Tribal</li>
 					<li>Pirate</li>
 				</categories>
 			</li>

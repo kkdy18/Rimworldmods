@@ -4,6 +4,7 @@
 		<statBases>
 			<PsychicSensitivity>0</PsychicSensitivity>
 			<ToxicResistance>1</ToxicResistance>
+			<Flammability>2</Flammability>
 			<ComfyTemperatureMax>1000</ComfyTemperatureMax>
 			<ComfyTemperatureMin>-1000</ComfyTemperatureMin>
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
@@ -42,13 +43,7 @@
 			</lifeStageAges>
 		</race>
 		<receivesSignals>true</receivesSignals>
-		<comps>
-			<li Class="Ark_GSWT.TCP_CollapseForm">
-				<hediffs>
-					<li>Ark_Collapaal</li>
-				</hediffs>
-			</li>
-		</comps>
+		<tradeability>None</tradeability>
 	</ThingDef>
 
 	<ThingDef ParentName="BaseDemon">

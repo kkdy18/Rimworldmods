@@ -17,7 +17,6 @@
 		<colorSpectrum>
 			<li>(1, 1, 1)</li>
 		</colorSpectrum>
-		<requiredCountAtGameStart>0</requiredCountAtGameStart>
 		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
 		<configurationListOrderPriority>10</configurationListOrderPriority>
 	</FactionDef>

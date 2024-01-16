@@ -337,7 +337,7 @@
 			<li>
 				<statFactors>
 					<IncomingDamageFactor>0.75</IncomingDamageFactor>
-					<MeleeDamageFactor>1.25</MeleeDamageFactor>
+					<MeleeDamageFactor>1.2</MeleeDamageFactor>
 				</statFactors>
 				<statOffsets>
 					<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
@@ -454,12 +454,12 @@
 		<stages>
 			<li>
 				<statFactors>
-					<IncomingDamageFactor>0.2</IncomingDamageFactor>
-					<MeleeDamageFactor>2</MeleeDamageFactor>
+					<IncomingDamageFactor>0.25</IncomingDamageFactor>
+					<MeleeDamageFactor>1.25</MeleeDamageFactor>
 				</statFactors>
 				<statOffsets>
 					<ShootingAccuracyPawn>100</ShootingAccuracyPawn>
-					<ArmorRating_Heat>-3</ArmorRating_Heat>
+					<Flammability>1</Flammability>
 				</statOffsets>
 				<capMods>
 					<li>
@@ -469,6 +469,13 @@
 				</capMods>
 			</li>
 		</stages>
+		<comps>
+			<li Class="Ark_GSWT.HCP_AddGene">
+				<newgenes>
+					<li>FireWeakness</li>
+				</newgenes>
+			</li>
+		</comps>
 	</HediffDef>
 
 	<ThingDef ParentName="BodyPartBase">

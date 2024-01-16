@@ -13,33 +13,34 @@
 		<equippedAngleOffset>-65</equippedAngleOffset>
 		<soundInteract>Interact_MonoSword</soundInteract>
 		<meleeHitSound>MeleeHit_MonoSword</meleeHitSound>
+		<techLevel>Medieval</techLevel>
+		<relicChance>3</relicChance>
 		<statBases>
-			<MarketValue>2000</MarketValue>
 			<WorkToMake>18000</WorkToMake>
 			<Mass>2</Mass>
 		</statBases>
 		<tools>
 			<li>
-				<label>刀柄</label>
+				<label>刀背</label>
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>12</power>
-				<cooldownTime>1.6</cooldownTime>
+				<power>25</power>
+				<cooldownTime>1</cooldownTime>
 			</li>
 			<li>
 				<label>刀刃</label>
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>25</power>
-				<cooldownTime>2</cooldownTime>
-				<armorPenetration>0.75</armorPenetration>
+				<power>50</power>
+				<cooldownTime>1</cooldownTime>
+				<armorPenetration>0.8</armorPenetration>
 			</li>
 		</tools>
 		<costList>
-			<Steel>100</Steel>
-			<Plasteel>10</Plasteel>
+			<Steel>200</Steel>
+			<Plasteel>50</Plasteel>
 			<Gold>5</Gold>
 		</costList>
 		<recipeMaker>

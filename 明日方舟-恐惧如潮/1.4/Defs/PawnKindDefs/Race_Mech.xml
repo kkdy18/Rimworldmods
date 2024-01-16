@@ -657,6 +657,8 @@
 		<statBases>
 			<MarketValue>1750</MarketValue>
 			<MoveSpeed>4.6</MoveSpeed>
+			<EMPResistance>1</EMPResistance>
+			<PsychicSensitivity>0</PsychicSensitivity>
 			<ArmorRating_Blunt>1.25</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.9</ArmorRating_Sharp>
 		</statBases>

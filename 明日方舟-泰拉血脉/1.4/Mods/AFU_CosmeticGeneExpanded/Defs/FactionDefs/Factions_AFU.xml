@@ -9,6 +9,7 @@
 		<pawnsPlural>联合公民</pawnsPlural>
 		<leaderTitle>联合主席</leaderTitle>
 		<fixedName>流浪泰拉联合</fixedName>
+		<replacesFaction>DragonHome</replacesFaction>
 		<allowedCultures Inherit="False">
 			<li>Arknights_TerraUnion</li>
 		</allowedCultures>
@@ -98,13 +99,14 @@
 		<pawnSingular>灰鼠劫掠者</pawnSingular>
 		<pawnsPlural>灰鼠劫掠者</pawnsPlural>
 		<leaderTitle>纯净先驱</leaderTitle>
+		<replacesFaction>PirateWaster</replacesFaction>
 		<xenotypeSet Inherit="False">
 			<xenotypeChances>
 				<Ark_xeno_PolluteRat>999</Ark_xeno_PolluteRat>
 			</xenotypeChances>
 		</xenotypeSet>
 		<colorSpectrum Inherit="False">
-			<li>(0.8, 0.8, 0)</li>
+			<li>(0.4, 0.5, 0)</li>
 		</colorSpectrum>
 		<pawnGroupMakers Inherit="False">
 			<li>

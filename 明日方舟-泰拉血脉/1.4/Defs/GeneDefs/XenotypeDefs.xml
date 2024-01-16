@@ -135,7 +135,7 @@
 	<XenotypeDef>
 		<defName>Ark_xeno_OniR</defName>
 		<label>赤鬼</label>
-		<description>赤鬼是鬼的变种之一，他们普遍有着红色的皮肤，特化了身体强度与战斗能力，精神状态也变得更加狂躁。/n/n赤鬼的生命力极其顽强，据说如果不刺穿头颅斩落首级便无法杀死他们。</description>
+		<description>赤鬼是鬼的变种之一，他们普遍有着红色的皮肤，特化了身体强度与战斗能力，精神状态也变得更加狂躁。\n\n赤鬼的生命力极其顽强，据说如果不刺穿头颅斩落首级便无法杀死他们。</description>
 		<iconPath>UI/Icons/Xenotypes/Ark_xeno_Oni</iconPath>
 		<inheritable>true</inheritable>
 		<genes>
@@ -174,7 +174,7 @@
 	<XenotypeDef>
 		<defName>Ark_xeno_OniB</defName>
 		<label>青鬼</label>
-		<description>青鬼是鬼的变种之一，他们普遍有着蓝色的皮肤，特化了精细加工与思维能力。他们精神敏感且性格偏悲观，需要定期摄入精神药物来维持神经系统的正常代谢。/n/n青鬼往往在鬼的群体中担任工匠与研究者的职位，很少出现在战场上。</description>
+		<description>青鬼是鬼的变种之一，他们普遍有着蓝色的皮肤，特化了精细加工与思维能力。他们精神敏感且性格偏悲观，需要定期摄入精神药物来维持神经系统的正常代谢。\n\n青鬼往往在鬼的群体中担任工匠与研究者的职位，很少出现在战场上。</description>
 		<iconPath>UI/Icons/Xenotypes/Ark_xeno_Oni</iconPath>
 		<inheritable>true</inheritable>
 		<genes>

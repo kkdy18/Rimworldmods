@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-<HediffDef>
+<HediffDef ParentName="Ark_GeneHediffBase">
 	<defName>CloseYouEyes</defName>
 	<label>安睡时刻</label>
 	<description>闭上眼睛，做个好梦吧，我的小天使~</description>
-	<hediffClass>HediffWithComps</hediffClass>
 	<stages>
 		<li>
 			<statOffsets>
@@ -21,22 +20,21 @@
 	<comps>
 		<li Class="HediffCompProperties_RemoveIfApparelDropped" />
 	</comps>
-	<isBad>false</isBad>
-	<alwaysAllowMothball>True</alwaysAllowMothball>
-	<alwaysAllowMothballCached>True</alwaysAllowMothballCached>
 </HediffDef>
 	
-<HediffDef>
+<HediffDef ParentName="Ark_GeneHediffBase">
 	<defName>OpenYouEyes</defName>
 	<label>清算时刻</label>
 	<description>火力全开！让那些扰人清梦的罪徒领受神恩！地狱是他们唯一的终点站！</description>
-	<hediffClass>HediffWithComps</hediffClass>
 	<stages>
 		<li>
 			<statOffsets>
 				<RestFallRateFactor>0.7</RestFallRateFactor>
-				<AimingDelayFactor>-0.25</AimingDelayFactor>
 			</statOffsets>
+			<statFactors>
+				<AimingDelayFactor>0.5</AimingDelayFactor>
+				<RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+			</statFactors>
 			<capMods>
 				<li>
 					<capacity>Sight</capacity>
@@ -48,8 +46,5 @@
 	<comps>
 		<li Class="HediffCompProperties_RemoveIfApparelDropped" />
 	</comps>
-	<isBad>false</isBad>
-	<alwaysAllowMothball>True</alwaysAllowMothball>
-	<alwaysAllowMothballCached>True</alwaysAllowMothballCached>
 </HediffDef>
 </Defs>

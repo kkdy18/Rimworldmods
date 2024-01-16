@@ -98,7 +98,7 @@
 		<workerClass>DamageWorker_Cut</workerClass>
 		<makesBlood>false</makesBlood>
 		<externalViolence>true</externalViolence>
-		<deathMessage>{0} has been cut to death.</deathMessage>
+		<deathMessage>燃烧的利刃斩断生命，恨火吞没了{0}。</deathMessage>
 		<hediff>Burn</hediff>
 		<hediffSkin>Burn</hediffSkin>
 		<hediffSolid>Crack</hediffSolid>
@@ -166,10 +166,8 @@
 		<label>心灵激波</label>
 		<deathMessage>高能的心灵激波烤焦了{0}。</deathMessage>
 		<externalViolenceForMechanoids>true</externalViolenceForMechanoids>
-		<harmsHealth>false</harmsHealth>
 		<impactSoundType>MechBandShockwave</impactSoundType>
 		<defaultDamage>50</defaultDamage>
-		<explosionSnowMeltAmount>0</explosionSnowMeltAmount>
 		<explosionCenterEffecter>BlastMechBandShockwave</explosionCenterEffecter>
 		<explosionCellEffecter>MechBandElectricityArc</explosionCellEffecter>
 		<explosionCellEffecterChance>0.1</explosionCellEffecterChance>

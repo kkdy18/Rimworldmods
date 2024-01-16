@@ -279,14 +279,15 @@
 	<ThingDef ParentName="BaseBullet">
 		<defName>Ark_Bullet_DepravedPower</defName>
 		<label>腐化重头弹</label>
+		<thingClass>Ark_GSWT.AstableBullet</thingClass>
 		<graphicData>
 			<texPath>Things/Projectile/Bullet_DepravedPower</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>25</damageAmountBase>
-			<stoppingPower>2.5</stoppingPower>
+			<damageAmountBase>30</damageAmountBase>
+			<stoppingPower>5</stoppingPower>
 			<armorPenetrationBase>0</armorPenetrationBase>
 			<speed>50</speed>
 		</projectile>

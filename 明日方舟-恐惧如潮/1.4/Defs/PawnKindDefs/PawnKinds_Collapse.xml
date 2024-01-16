@@ -21,7 +21,8 @@
 		</styleItemTags>
 		<specificApparelRequirements>
 			<li>
-				<bodyPartGroup>Eyes</bodyPartGroup>
+				<bodyPartGroup>Neck</bodyPartGroup>
+				<apparelLayer>Overhead</apparelLayer>
 				<color>(250, 250, 250)</color>
 			</li>
 		</specificApparelRequirements>
@@ -180,6 +181,13 @@
 		<defName>Ark_Carcass_HeavyArcher</defName>
 		<label>染污重弓</label>
 		<combatPower>75</combatPower>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Tribal</li>
+				</categories>
+			</li>
+		</backstoryFilters>
 		<apparelMoney>200~550</apparelMoney>
 		<apparelTags>
 			<li>Neolithic</li>
@@ -206,8 +214,14 @@
 		<defName>Ark_Carcass_Chief</defName>
 		<label>堕落酋长</label>
 		<combatPower>85</combatPower>
-		<maxGenerationAge>999</maxGenerationAge>
-		<itemQuality>Normal</itemQuality>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Tribal</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<itemQuality>Good</itemQuality>
 		<canBeSapper>true</canBeSapper>
 		<apparelMoney>450~750</apparelMoney>
 		<apparelTags>
@@ -297,9 +311,9 @@
 			<li>Apparel_FlakVest</li>
 			<li>Apparel_CowboyHat</li>
 		</apparelRequired>
-		<apparelColor>(58,58,58)</apparelColor>
+		<apparelColor>(60,60,60)</apparelColor>
 		<ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
-		<favoriteColor>(58,58,58)</favoriteColor>
+		<favoriteColor>(60,60,60)</favoriteColor>
 		<techHediffsMoney>500~4000</techHediffsMoney>
 		<techHediffsTags>
 			<li>Advanced</li>
@@ -375,27 +389,24 @@
 				<range>15~20</range>
 			</li>
 		</skills>
-		<inventoryOptions>
-			<skipChance>0.5</skipChance>
-			<subOptionsChooseOne>
-				<li>
-					<thingDef>Ark_GiftofVast</thingDef>
-					<countRange>1</countRange>
-				</li>
-			</subOptionsChooseOne>
-		</inventoryOptions>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Baseliner>1</Baseliner>
+			</xenotypeChances>
+		</xenotypeSet>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="BaseSoldierCollapse">
 		<defName>Ark_ShatteredChampion</defName>
 		<label>破碎斗士</label>
-		<apparelColor>(68,68,68)</apparelColor>
+		<apparelColor>(60,60,60)</apparelColor>
 		<ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
 		<combatPower>150</combatPower>
 		<gearHealthRange>1~1</gearHealthRange>
 		<weaponMoney>1100~2500</weaponMoney>
 		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
-		<apparelMoney>2500~3500</apparelMoney>
+		<apparelMoney>5000~5000</apparelMoney>
 		<weaponTags>
 			<li>MedievalMeleeDecent</li>
 			<li>MedievalMeleeAdvanced</li>
@@ -418,9 +429,16 @@
 		<skills>
 			<li>
 				<skill>Melee</skill>
-				<range>10~15</range>
+				<range>10~20</range>
 			</li>
 		</skills>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Dirtmole>0.3</Dirtmole>
+				<Hussar>0.15</Hussar>
+			</xenotypeChances>
+		</xenotypeSet>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="BaseSoldierCollapse">
@@ -430,7 +448,7 @@
 		<gearHealthRange>0.7~3.2</gearHealthRange>
 		<weaponMoney>1100~2500</weaponMoney>
 		<apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
-		<apparelMoney>1250~2500</apparelMoney>
+		<apparelMoney>2500~3500</apparelMoney>
 		<weaponTags>
 			<li>IndustrialGunAdvanced</li>
 		</weaponTags>
@@ -446,8 +464,15 @@
 		<skills>
 			<li>
 				<skill>Shooting</skill>
-				<range>8~16</range>
+				<range>8~18</range>
 			</li>
 		</skills>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Genie>0.3</Genie>
+				<Hussar>0.15</Hussar>
+			</xenotypeChances>
+		</xenotypeSet>
 	</PawnKindDef>
 </Defs>

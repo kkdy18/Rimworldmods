@@ -5,8 +5,8 @@
     <label>新拉特兰</label>
     <description>新拉特兰是由萨科塔建立的宗教组织，信仰“律法”，组织内的神职人员很少主动传播信仰，也不拒绝外人成为众信徒的一员，他们只是在大陆各处建立据点并发掘古代遗迹，寻觅着“那位机械之神”的痕迹。新拉特兰掌握着强大的军事力量，但这份力量从未用于侵略无辜者，他们在护卫信仰的同时也会顺手清理那些非人的恶意存在与肆意妄为的堕落者。\n\n爱好和平的新拉特兰会对所有心怀善意的旅人敞开大门，他们在建设的是一座能够救赎所有人的地上天国，但是，不要尝试他们的仙人掌挞。</description>
     <factionIconPath>World/Laterano</factionIconPath>
-    <pawnSingular>萨科塔</pawnSingular>
-    <pawnsPlural>萨科塔</pawnsPlural>
+    <pawnSingular>拉特兰公民</pawnSingular>
+    <pawnsPlural>拉特兰公民</pawnsPlural>
     <fixedName>新拉特兰</fixedName>
     <leaderTitle>教宗</leaderTitle>
 		<allowedCultures>
@@ -78,8 +78,19 @@
 	  <baseTraderKinds>
 		  <li>Base_Laterano_Standard</li>
 	  </baseTraderKinds>
+	  <apparelStuffFilter>
+		  <stuffCategoriesToAllow>
+			  <li>Metallic</li>
+			  <li>Fabric</li>
+		  </stuffCategoriesToAllow>
+	  </apparelStuffFilter>
 	  <allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
-	  <raidLootMaker>PirateRaidLootMaker</raidLootMaker>
+	  <raidCommonalityFromPointsCurve>
+		  <points>
+			  <li>(0, 1)</li>
+		  </points>
+	  </raidCommonalityFromPointsCurve>
+	  <raidLootMaker>EmpireRaidLootMaker</raidLootMaker>
 	  <maxPawnCostPerTotalPointsCurve>
 		  <points>
 			  <li>(500, 100)</li>
@@ -138,7 +149,7 @@
 	  </li>
   </pawnGroupMakers>
 	  <disallowedRaidAgeRestrictions>
-		  <li>Children</li>
+		  <li MayRequire="Ludeon.RimWorld.Biotech">Children</li>
 	  </disallowedRaidAgeRestrictions>
 	  <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
 	  <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>

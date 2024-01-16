@@ -7,6 +7,7 @@
 	  <generateAllowChance>0</generateAllowChance>
 	  <destroyOnDrop>true</destroyOnDrop>
 	  <tradeability>None</tradeability>
+	  <useHitPoints>False</useHitPoints>
     <graphicData>
       <texPath>Things/Apparel/Ark_CollapseEye/Ark_Collapser</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -16,21 +17,19 @@
 		<Flammability>0</Flammability>
     </statBases>
     <apparel>
-		<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
-		<countsAsClothingForNudity>false</countsAsClothingForNudity>
-		<careIfWornByCorpse>false</careIfWornByCorpse>
-		<careIfDamaged>false</careIfDamaged>
-		<wearPerDay>0</wearPerDay>
       <bodyPartGroups>
-        <li>Eyes</li>
+        <li>Neck</li>
       </bodyPartGroups>
       <wornGraphicPath>Things/Apparel/Ark_CollapseEye/Ark_Collapser</wornGraphicPath>
       <layers>
-        <li>EyeCover</li>
+        <li>Overhead</li>
       </layers>
 		<tags>
 			<li>Ark_CollapseE</li>
 		</tags>
+		<wearPerDay>0</wearPerDay>
+		<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+		<countsAsClothingForNudity>false</countsAsClothingForNudity>
     </apparel>
     <comps>
       <li Class="CompProperties_CauseHediff_Apparel">
@@ -47,25 +46,20 @@
 		<descriptionHyperlinks>
 			<HediffDef>Ark_CollapseShoot</HediffDef>
 		</descriptionHyperlinks>
-		<generateAllowChance>0</generateAllowChance>
-		<tradeability>None</tradeability>
+		<tradeability>Sellable</tradeability>
 		<smeltable>false</smeltable>
 		<graphicData>
 			<texPath>Things/Apparel/Ark_MagicBullet/Ark_MagicBullet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
+			<MarketValue>500</MarketValue>
 			<Mass>0.001</Mass>
 		</statBases>
 		<thingCategories>
 			<li>Ark_CollapseApparels</li>
 		</thingCategories>
 		<apparel>
-			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
-			<countsAsClothingForNudity>false</countsAsClothingForNudity>
-			<careIfWornByCorpse>true</careIfWornByCorpse>
-			<careIfDamaged>false</careIfDamaged>
-			<wearPerDay>0</wearPerDay>
 			<bodyPartGroups>
 				<li>Torso</li>
 			</bodyPartGroups>
@@ -73,6 +67,13 @@
 			<layers>
 				<li>Belt</li>
 			</layers>
+			<tags>
+				<li>Ark_CollapseApparel</li>
+			</tags>
+			<wearPerDay>0</wearPerDay>
+			<careIfDamaged>false</careIfDamaged>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 		</apparel>
 		<comps>
 			<li Class="CompProperties_CauseHediff_Apparel">
@@ -89,22 +90,26 @@
 		<descriptionHyperlinks>
 			<HediffDef>Ark_CollapseRun</HediffDef>
 		</descriptionHyperlinks>
-		<generateAllowChance>0</generateAllowChance>
-		<tradeability>None</tradeability>
+		<tickerType>Never</tickerType>
+		<tradeability>Sellable</tradeability>
 		<smeltable>false</smeltable>
+		<burnableByRecipe>false</burnableByRecipe>
+		<useHitPoints>False</useHitPoints>
 		<graphicData>
 			<texPath>Things/Apparel/Ark_ShatteredHelmet/Ark_ShatteredHelmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
+		<uiIconScale>1.25</uiIconScale>
 		<statBases>
-			<MaxHitPoints>150</MaxHitPoints>
+			<MarketValue>1000</MarketValue>
 			<Mass>1.5</Mass>
-			<Flammability>0.4</Flammability>
-			<ArmorRating_Sharp>1.06</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.54</ArmorRating_Heat>
-			<Insulation_Cold>4</Insulation_Cold>
-			<Insulation_Heat>2</Insulation_Heat>
+			<Flammability>0</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
+			<ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.7</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.5</ArmorRating_Heat>
+			<Insulation_Cold>20</Insulation_Cold>
+			<Insulation_Heat>10</Insulation_Heat>
 			<EquipDelay>4</EquipDelay>
 		</statBases>
 		<thingCategories>
@@ -118,14 +123,14 @@
 			<layers>
 				<li>Overhead</li>
 			</layers>
-			<defaultOutfitTags>
-				<li>Soldier</li>
-			</defaultOutfitTags>
+			<tags>
+				<li>Ark_CollapseApparel</li>
+			</tags>
 			<useDeflectMetalEffect>true</useDeflectMetalEffect>
 			<wearPerDay>0</wearPerDay>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
 			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
 			<countsAsClothingForNudity>false</countsAsClothingForNudity>
-			<careIfWornByCorpse>false</careIfWornByCorpse>
 		</apparel>
 		<comps>
 			<li Class="CompProperties_CauseHediff_Apparel">
