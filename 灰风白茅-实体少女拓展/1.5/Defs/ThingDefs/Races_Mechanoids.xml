@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BaseMechanoid">
+		<defName>MNS_MissNociosphere</defName>
+		<label>heartmelt girl</label>
+		<description>The bionic mechanoid with the appearance of a human teenage girl is an unexpected product of the nociosphere reconstruction project. The mechanoid is equipped with automatic armament for launching thermal energy bombs and can use energy control techniques from nociosphere to assist in combat. Its composite shell can fully absorb the pain energy leaked from the core and provide reliable cover with excellent defense performance. Note: Using special skills will increase the energy consumption of the Heartmelt Girl, but killing organic creatures can replenish her energy to a certain extent.\n\nOur preliminary hypothesis regarding the appearance of the unknown mechanoid now named "Heartmelt Girl" is that the residual consciousness within the core structure of nociosphere was reawakened in the cultivation chamber and acquired the ability to freely change the body structure. The good news is that this reborn consciousness has no ill intentions towards the colony, and the newly formed mechanoid has demonstrated far superior combat performance than expected. Although her emotional response was a liiiittle unique, we believe there is no need to worry about it.</description>
+		<descriptionHyperlinks>
+			<AbilityDef>MNS_SelfSkip</AbilityDef>
+			<AbilityDef>MNS_MeltdownBombard</AbilityDef>
+			<AbilityDef>MNS_AgonyFlog</AbilityDef>
+			<AbilityDef>MNS_MindMelt</AbilityDef>
+		</descriptionHyperlinks>
+		<uiIconPath>Things/Pawn/Nociosphere/Nociosphere_MenuIcon</uiIconPath>
+		<statBases>
+			<PsychicSensitivity>1</PsychicSensitivity>
+			<ArmorRating_Heat>2</ArmorRating_Heat>
+			<ArmorRating_Blunt>1</ArmorRating_Blunt>
+			<ArmorRating_Sharp>1</ArmorRating_Sharp>
+			<EMPResistance>0.8</EMPResistance>
+			<MoveSpeed>3.2</MoveSpeed>
+			<MarketValue>5000</MarketValue>
+			<BandwidthCost>5</BandwidthCost>
+			<ControlTakingTime>50</ControlTakingTime>
+			<MechEnergyLossPerHP>0.2</MechEnergyLossPerHP>
+			<WastepacksPerRecharge>0</WastepacksPerRecharge>
+			<CaravanRidingSpeedFactor>6</CaravanRidingSpeedFactor>
+		</statBases>
+		<race>
+			<body>MNS_NociosphereNewBody</body>
+			<renderTree>MNS_NociosphereShell</renderTree>
+			<thinkTreeMain>Mechanoid</thinkTreeMain>
+			<baseHealthScale>10</baseHealthScale>
+			<baseBodySize>3.6</baseBodySize>
+			<intelligence>ToolUser</intelligence>
+			<mechWeightClass>UltraHeavy</mechWeightClass>
+			<overrideShouldHaveAbilityTracker>true</overrideShouldHaveAbilityTracker>
+			<lifeStageAges Inherit="False">
+				<li>
+					<def>MNS_EntityGirlFullyFormed</def>
+					<soundCall>Pawn_Nociosphere_Call</soundCall>
+					<soundWounded>Pawn_Nociosphere_Wounded</soundWounded>
+					<soundAttack></soundAttack>
+				</li>
+			</lifeStageAges>
+			<soundMeleeDodge>Pawn_MeleeDodge</soundMeleeDodge>
+		</race>
+		<tools>
+			<li>
+				<label>sphere</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Torso</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+		</tools>
+		<butcherProducts>
+			<Shard>2</Shard>
+			<Steel>200</Steel>
+			<Plasteel>100</Plasteel>
+			<Bioferrite>35</Bioferrite>
+		</butcherProducts>
+		<comps>
+			<li Class="MissNociosphere.TCP_KillingCharge" />
+			<li Class="MissNociosphere.TCP_DraftDeform" />
+			<li Class="CompProperties_TurretGun">
+				<turretDef>MNS_HeatspikeTurret</turretDef>
+				<renderNodeProperties>
+					<li>
+						<nodeClass>PawnRenderNode_TurretGun</nodeClass>
+						<workerClass>PawnRenderNodeWorker_TurretGun</workerClass>
+						<parentTagDef>Body</parentTagDef>
+						<overrideMeshSize>(1, 1)</overrideMeshSize>
+						<baseLayer>-20</baseLayer>
+						<pawnType>Any</pawnType>
+					</li>
+				</renderNodeProperties>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<PawnKindDef ParentName="HeavyMechanoidKind">
+		<defName>MNS_MissNociosphere</defName>
+		<label>heartmelt girl</label>
+		<race>MNS_MissNociosphere</race>
+		<combatPower>2500</combatPower>
+		<canMeleeAttack>false</canMeleeAttack>
+		<immuneToTraps>true</immuneToTraps>
+		<collidesWithPawns>false</collidesWithPawns>
+		<defaultFactionType>PlayerColony</defaultFactionType>
+		<allowInMechClusters>false</allowInMechClusters>
+		<useFixedRotation>true</useFixedRotation>
+		<fixedRotation>South</fixedRotation>
+		<abilities>
+			<li>MNS_SelfSkip</li>
+			<li>MNS_MeltdownBombard</li>
+			<li>MNS_AgonyFlog</li>
+			<li>MNS_MindMelt</li>
+		</abilities>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Nociosphere/Nociosphere_Center</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<drawSize>2</drawSize>
+					<shadowData>
+						<volume>(0.7, 0.8, 0.7)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+	<ThingDef ParentName="BaseWeaponTurret">
+		<defName>MNS_HeatspikeTurret</defName>
+		<label>heatspikes turret</label>
+		<description>desc</description>
+		<tradeability>None</tradeability>
+		<destroyOnDrop>true</destroyOnDrop>
+		<graphicData>
+			<texPath>Things/Item/Artifact/ShardPsychicShockLance/ShardPsychicShockLance</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.1</Mass>
+			<AccuracyTouch>1.0</AccuracyTouch>
+			<AccuracyShort>0.9</AccuracyShort>
+			<AccuracyMedium>0.8</AccuracyMedium>
+			<AccuracyLong>0.75</AccuracyLong>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<defaultProjectile>MNS_bullet_Heatspike</defaultProjectile>
+				<range>34.9</range>
+				<soundCast>Heatspikes_Shot</soundCast>
+				<soundCastTail>Heatspikes_Tail</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+				<defaultCooldownTime>2</defaultCooldownTime>
+				<linkedBodyPartsGroup>Torso</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<burstShotCount>12</burstShotCount>
+				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>MNS_bullet_Heatspike</defName>
+		<label>heatspike shot</label>
+		<graphicData>
+			<texPath>Things/Projectile/MNS_Heatspike</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>EnergyBolt</damageDef>
+			<damageAmountBase>18</damageAmountBase>
+			<speed>90</speed>
+			<bulletChanceToStartFire>1</bulletChanceToStartFire>
+		</projectile>
+	</ThingDef>
+
+	<LifeStageDef>
+		<defName>MNS_EntityGirlFullyFormed</defName>
+		<label>fully-formed</label>
+		<visible>false</visible>
+		<caravanRideable>true</caravanRideable>
+	</LifeStageDef>
+</Defs>

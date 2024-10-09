@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="Nociosphere"]/killedLeavings</xpath>
+		<value>
+			<killedLeavings>
+				<Steel>200</Steel>
+				<Plasteel>75</Plasteel>
+				<ChunkSlagSteel>4</ChunkSlagSteel>
+				<MNS_PainCore>1</MNS_PainCore>
+			</killedLeavings>
+		</value>
+	</Operation>
+</Patch>

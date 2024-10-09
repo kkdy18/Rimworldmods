@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<MNS_SelfSkip.label>自体折跃</MNS_SelfSkip.label>
+	<MNS_SelfSkip.description>将自身传送到指定位置，可以用于赶路与撤退。\n\n“离我远点，心智模式原始落后的家伙，不要刮花了本小姐精致的外壳！”</MNS_SelfSkip.description>
+	<MNS_MeltdownBombard.label>熔毁炮击</MNS_MeltdownBombard.label>
+	<MNS_MeltdownBombard.description>将球壳积攒的能量以超高压能量脉冲的形式发射，引发足以融化钢铁的高温爆炸。\n\n“看好了，本小姐会华丽地净化那些有机废料！”</MNS_MeltdownBombard.description>
+	<MNS_AgonyFlog.label>苦痛鞭笞</MNS_AgonyFlog.label>
+	<MNS_AgonyFlog.description>向目标释放能让生物感受到剧烈疼痛的能量脉冲。\n\n“有机体的神经系统只是演化粗劣的造物，本小姐只要敞开一道缝隙就能将其摧垮……听清楚！只是打开球壳！敢有什么下流的想象就烧掉你的脑子！”</MNS_AgonyFlog.description>
+	<MNS_MindMelt.label>心智融解</MNS_MindMelt.label>
+	<MNS_MindMelt.description>对处于苦痛能量影响中的生物进一步施加干涉，彻底摧毁目标的认知功能，使目标陷入不可逆的昏迷之中。\n\n“精神解脱苦痛，躯壳留待赎罪。”</MNS_MindMelt.description>
+</LanguageData>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<BodyDef>
+		<defName>MNS_NociosphereNewBody</defName>
+		<label>new body of nociosphere</label>
+		<corePart>
+			<def>MNS_ShellSkeleton</def>
+			<height>Middle</height>
+			<groups>
+				<li>Torso</li>
+			</groups>
+			<parts>
+				<li>
+					<def>MNS_HerCore</def>
+					<coverage>0.05</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>SightSensor</def>
+					<coverage>0.01</coverage>
+				</li>
+				<li>
+					<def>HearingSensor</def>
+					<coverage>0.01</coverage>
+				</li>
+				<li>
+					<def>SmellSensor</def>
+					<coverage>0.01</coverage>
+				</li>
+				<li>
+					<def>ShellSection</def>
+					<customLabel>first protective shell</customLabel>
+					<coverage>0.2</coverage>
+					<depth>Outside</depth>
+				</li>
+				<li>
+					<def>ShellSection</def>
+					<customLabel>second protective shell</customLabel>
+					<coverage>0.2</coverage>
+					<depth>Outside</depth>
+				</li>
+				<li>
+					<def>ShellSection</def>
+					<customLabel>third protective shell</customLabel>
+					<coverage>0.2</coverage>
+					<depth>Outside</depth>
+				</li>
+				<li>
+					<def>ShellSection</def>
+					<customLabel>fourth protective shell</customLabel>
+					<coverage>0.2</coverage>
+					<depth>Outside</depth>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
+
+	<BodyPartDef>
+		<defName>MNS_ShellSkeleton</defName>
+		<label>shell skeleton</label>
+		<hitPoints>2500</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<alive>false</alive>
+		<bleedRate>0</bleedRate>
+		<tags>
+			<li>ManipulationLimbCore</li>
+			<li>MovingLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>MNS_HerCore</defName>
+		<label>the crucible of misery</label>
+		<hitPoints>750</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<alive>false</alive>
+		<bleedRate>0</bleedRate>
+		<tags>
+			<li>ConsciousnessSource</li>
+			<li>BloodPumpingSource</li>
+			<li>BloodFiltrationSource</li>
+		</tags>
+	</BodyPartDef>
+</Defs>

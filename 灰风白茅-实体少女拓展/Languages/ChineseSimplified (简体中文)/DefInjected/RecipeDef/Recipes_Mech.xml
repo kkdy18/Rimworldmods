@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<MNS_GestateMissNociosphere.label>重建苦痛之球？</MNS_GestateMissNociosphere.label>
+	<MNS_GestateMissNociosphere.description>培育中的新机械体构造好像和图纸上不太一样……</MNS_GestateMissNociosphere.description>
+	<MNS_GestateMissNociosphere.jobString>重构中……</MNS_GestateMissNociosphere.jobString>
+	<MNS_ResurrectMissNociosphere.label>复活熔心少女</MNS_ResurrectMissNociosphere.label>
+	<MNS_ResurrectMissNociosphere.description>“只是意外……不要太担心本小姐……”</MNS_ResurrectMissNociosphere.description>
+	<MNS_ResurrectMissNociosphere.jobString>修复中……</MNS_ResurrectMissNociosphere.jobString>
+</LanguageData>

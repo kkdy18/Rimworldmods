@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="MNS_MissNociosphere"]/race/renderTree</xpath>
+		<value>
+			<renderTree>MNS_MissNociosphereShell</renderTree>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/PawnKindDef[defName="MNS_MissNociosphere"]/lifeStages/li[1]/bodyGraphicData/texPath</xpath>
+		<value>
+			<texPath>Things/Pawn/MissNociosphere/MissNociosphere</texPath>
+		</value>
+	</Operation>
+</Patch>

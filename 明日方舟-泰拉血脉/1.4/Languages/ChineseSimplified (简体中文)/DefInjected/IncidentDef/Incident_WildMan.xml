@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<WildManWandersIn.letterText>一个长期以来像动物一样生存的{1}游荡到了这个区域，{PAWN_pronoun}叫{0}，令人惊奇的是这个{1}是个瓦伊凡。\n\n你可以尝试去驯化或逮捕[PAWN_objective]，不过你最好谨慎对待天生神力的瓦伊凡。</WildManWandersIn.letterText>
+</LanguageData>

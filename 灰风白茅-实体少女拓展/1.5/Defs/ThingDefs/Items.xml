@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="ResourceBase">
+		<defName>MNS_PainCore</defName>
+		<label>sorrow reactor</label>
+		<description>The core structure of nociosphere, which was accidentally left behind after being destroyed. It is severely damaged, but there is still a weak energy response. The retention of this entity sample is almost an irreproducible miracle, and studying it may bring unexpected gains. If it is directly smashed, rare materials can be recycled, but you'd best not do so.</description>
+		<graphicData>
+			<texPath>Things/Item/MNS_PainCore</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>1</stackLimit>
+		<statBases>
+			<Mass>25</Mass>
+			<MarketValue>2500</MarketValue>
+			<MaxHitPoints>1000</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<intricate>true</intricate>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<genericMarketSellable>false</genericMarketSellable>
+		<thingCategories>
+			<li>ItemsMisc</li>
+		</thingCategories>
+		<hiddenWhileUndiscovered>true</hiddenWhileUndiscovered>
+		<comps>
+			<li Class="MissNociosphere.TCP_DestroyLeave">
+				<leavings>
+					<Shard>2</Shard>
+					<Plasteel>25</Plasteel>
+					<Bioferrite>35</Bioferrite>
+				</leavings>
+			</li>
+			<li Class="MissNociosphere.TCP_OnlyOne" />
+		</comps>
+	</ThingDef>
+</Defs>

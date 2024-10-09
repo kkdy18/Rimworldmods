@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<AbilityDef>
+		<defName>MNS_InvisibleInvasion</defName>
+		<label>invisible invasion</label>
+		<description>desc</description>
+		<iconPath>UI/Abilities/RevenantInvisibility</iconPath>
+		<cooldownTicksRange>1800</cooldownTicksRange>
+		<writeCombatLog>True</writeCombatLog>
+		<targetRequired>false</targetRequired>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<statBases>
+			<Ability_Duration>20</Ability_Duration>
+		</statBases>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<drawAimPie>false</drawAimPie>
+			<requireLineOfSight>false</requireLineOfSight>
+			<nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+			<warmupTime>1</warmupTime>
+			<targetable>false</targetable>
+			<targetParams>
+				<canTargetSelf>True</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>MNS_hediff_InvisibleInvasion</hediffDef>
+				<onlyApplyToSelf>True</onlyApplyToSelf>
+				<replaceExisting>true</replaceExisting>
+			</li>
+			<li Class="CompProperties_AbilityEffecterOnTarget">
+				<effecterDef>VoidTerror_Target</effecterDef>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<AbilityDef>
+		<defName>MNS_RevenantReshape</defName>
+		<label>revenant reshape</label>
+		<description>desc</description>
+		<iconPath>UI/Abilities/RevenantInvisibility</iconPath>
+		<cooldownTicksRange>60000</cooldownTicksRange>
+		<writeCombatLog>True</writeCombatLog>
+		<targetRequired>false</targetRequired>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<statBases>
+			<Ability_Duration>60</Ability_Duration>
+		</statBases>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<drawAimPie>false</drawAimPie>
+			<requireLineOfSight>false</requireLineOfSight>
+			<nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+			<warmupTime>1</warmupTime>
+			<targetable>false</targetable>
+			<targetParams>
+				<canTargetSelf>True</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>MNS_hediff_RevenantReshape</hediffDef>
+				<onlyApplyToSelf>True</onlyApplyToSelf>
+				<replaceExisting>true</replaceExisting>
+			</li>
+			<li Class="CompProperties_AbilityFleckOnTarget">
+				<fleckDef>PsycastPsychicEffect</fleckDef>
+			</li>
+		</comps>
+	</AbilityDef>
+	
+	<AbilityDef>
+		<defName>MNS_DarkBurst</defName>
+		<label>dark burst</label>
+		<description>desc</description>
+		<jobDef>CastAbilityOnThingWithoutWeapon</jobDef>
+		<iconPath>UI/Abilities/FireBurst</iconPath>
+		<cooldownTicksRange>10000</cooldownTicksRange>
+		<aiCanUse>true</aiCanUse>
+		<ai_SearchAOEForTargets>true</ai_SearchAOEForTargets>
+		<targetRequired>false</targetRequired>
+		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+		<showCastingProgressBar>true</showCastingProgressBar>
+		<warmupStartSound>FoamSpray_Warmup</warmupStartSound>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupEffecter>MNS_effect_DarkBurst</warmupEffecter>
+			<warmupTime>3</warmupTime>
+			<soundCast>FoamSpray_Resolve</soundCast>
+			<requireLineOfSight>false</requireLineOfSight>
+			<range>9.9</range>
+			<drawAimPie>false</drawAimPie>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="MissNociosphere.ACP_Burst">
+				<radius>9.9</radius>
+				<damageType>MNS_damage_DarkCorrosion</damageType>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<EffecterDef>
+		<defName>MNS_effect_DarkBurst</defName>
+		<maintainTicks>180</maintainTicks>
+		<children>
+			<!-- EARLY DRIPS, STARTING AT FOOT -->
+			<li>
+				<subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+				<fleckDef>RevenantDeathDrip1</fleckDef>
+				<lifespanMaxTicks>90</lifespanMaxTicks>
+				<burstCount>1~2</burstCount>
+				<chancePerTick>0.05</chancePerTick>
+				<spawnLocType>OnSource</spawnLocType>
+				<positionRadius>0.15</positionRadius>
+				<scale>0.5</scale>
+				<rotation>0</rotation>
+				<rotationRate>0</rotationRate>
+				<absoluteAngle>True</absoluteAngle>
+				<positionOffset>(0, 0, -1)</positionOffset>
+				<angle>0</angle>
+				<fleckUsesAngleForVelocity>false</fleckUsesAngleForVelocity>
+				<speed>0</speed>
+			</li>
+			<!-- MID DRIPS, STARTING AT MID_SECTION -->
+			<li>
+				<subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+				<fleckDef>RevenantDeathDrip2</fleckDef>
+				<initialDelayTicks>60</initialDelayTicks>
+				<lifespanMaxTicks>180</lifespanMaxTicks>
+				<burstCount>3~6</burstCount>
+				<chancePerTick>0.1</chancePerTick>
+				<spawnLocType>OnSource</spawnLocType>
+				<positionRadius>0.22</positionRadius>
+				<scale>0.5</scale>
+				<rotation>0</rotation>
+				<rotationRate>0</rotationRate>
+				<absoluteAngle>True</absoluteAngle>
+				<positionOffset>(0, 0, -1)</positionOffset>
+				<angle>0</angle>
+				<fleckUsesAngleForVelocity>false</fleckUsesAngleForVelocity>
+				<speed>0</speed>
+			</li>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerTriggeredDelayed</subEffecterClass>
+				<fleckDef>RevenantDeathPuddle</fleckDef>
+				<burstCount>1</burstCount>
+				<initialDelayTicks>20</initialDelayTicks>
+				<spawnLocType>OnSource</spawnLocType>
+				<positionRadius>0</positionRadius>
+				<scale>0.5</scale>
+				<rotation>0~360</rotation>
+				<rotationRate>0</rotationRate>
+				<absoluteAngle>True</absoluteAngle>
+				<positionOffset>(0, 0, -0.75)</positionOffset>
+				<angle>0</angle>
+				<fleckUsesAngleForVelocity>false</fleckUsesAngleForVelocity>
+				<speed>0</speed>
+			</li>
+		</children>
+	</EffecterDef>
+
+	<AbilityDef>
+		<defName>MNS_PsychicSlash</defName>
+		<label>psychic slash</label>
+		<description>desc</description>
+		<iconPath>UI/Abilities/RevenantInvisibility</iconPath>
+		<charges>2</charges>
+		<cooldownTicksRange>5000</cooldownTicksRange>
+		<writeCombatLog>true</writeCombatLog>
+		<cooldownPerCharge>true</cooldownPerCharge>
+		<stunTargetWhileCasting>true</stunTargetWhileCasting>
+		<moteOffsetAmountTowardsTarget>0.5</moteOffsetAmountTowardsTarget>
+		<warmupMote>Mote_HoraxSmallSpellWarmup</warmupMote>
+		<warmupEffecter>HoraxianAbilityCasting</warmupEffecter>
+		<warmupSound>AnomalyAbilityWarmup</warmupSound>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>2</warmupTime>
+			<range>7.9</range>
+			<drawAimPie>true</drawAimPie>
+			<requireLineOfSight>true</requireLineOfSight>
+			<drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+			<targetParams>
+				<canTargetBuildings>false</canTargetBuildings>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="MissNociosphere.ACP_PsychicSlash" />
+		</comps>
+	</AbilityDef>
+</Defs>

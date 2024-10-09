@@ -116,6 +116,7 @@
 						</capacities>
 						<power>18</power>
 						<cooldownTime>2</cooldownTime>
+						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
 					</li>
 				</tools>
 			</li>
@@ -137,6 +138,7 @@
 						</capacities>
 						<power>18</power>
 						<cooldownTime>2</cooldownTime>
+						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
 					</li>
 				</tools>
 			</li>

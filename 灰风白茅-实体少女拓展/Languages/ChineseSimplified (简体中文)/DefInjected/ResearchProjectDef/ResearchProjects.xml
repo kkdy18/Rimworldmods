@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<MNS_ControlledNociosphere.label>可控苦痛之球</MNS_ControlledNociosphere.label>
+	<MNS_ControlledNociosphere.description>深入分析苦痛之球的结构，围绕破损的核心设计一套重构方案，制造一种以苦痛之球为原型的强大机械体。</MNS_ControlledNociosphere.description>
+	<MNS_ControlledNociosphere.generalRules.rulesStrings>
+		<li>subject->苦痛之球</li>
+		<li>subject_story->于苦痛之球的袭击中幸存</li>
+		<li>subject_story->伪装潜入崇拜苦痛之球的邪教调查</li>
+		<li>subject_story->在一座闪耀都市的残骸中发现了休眠的苦痛之球</li>
+		<li>subject_story->在安全距离观察未活化的苦痛之球</li>
+		<li>subject_gerund->重建苦痛之球</li>
+	</MNS_ControlledNociosphere.generalRules.rulesStrings>
+</LanguageData>

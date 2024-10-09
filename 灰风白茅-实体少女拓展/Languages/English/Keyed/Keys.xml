@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<MNS_AbilityEnergyCost>Energy cost</MNS_AbilityEnergyCost>
+	<MNS_AbilityDisabledNoColonyMech>{0_labelShort}is not mechanoid belongs to colony.</MNS_AbilityDisabledNoColonyMech>
+	<MNS_AbilityDisabledNoMechEnergy>{0_labelShort}dose not have enough energy or energy is not available.</MNS_AbilityDisabledNoMechEnergy>
+
+	<MNS_Setting>Entity Girls Expanded</MNS_Setting>
+	<MNS_ShowShell_Title>Show the dynamic shell of heartmelt girl in game(After modification, the game needs to be restarted)</MNS_ShowShell_Title>
+
+	<MNS_KillANociosphere>You can rest now, my fellow</MNS_KillANociosphere>
+
+	<MNS_EnergyGet>I have received your pain</MNS_EnergyGet>
+	<MNS_EnergyGet2>Have more energy always good</MNS_EnergyGet2>
+
+	<MNS_SelfSkipApply>This is the way I should move</MNS_SelfSkipApply>
+	<MNS_SelfSkipApply2>Is this also a part of tactics?</MNS_SelfSkipApply2>
+	<MNS_AgonyFlogApply>Feel the real pain</MNS_AgonyFlogApply>
+	<MNS_AgonyFlogApply2>This shell is not just protecting me</MNS_AgonyFlogApply2>
+</LanguageData>

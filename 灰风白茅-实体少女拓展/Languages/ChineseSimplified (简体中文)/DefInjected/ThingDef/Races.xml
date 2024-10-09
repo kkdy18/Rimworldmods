@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<MNS_MissNociosphere.label>熔心少女</MNS_MissNociosphere.label>
+	<MNS_MissNociosphere.description>拥有人类少女外观的仿生机械体，是苦痛之球重构项目的意外产物。该机械体装备有发射热能弹的自动武装并且能够使用来自苦痛之球的能量操控技艺辅助作战，而它的复合材料球壳能完全吸收核心泄露出的苦痛能量，也能凭借优秀的防御性能提供可靠的掩护。注：使用特殊技艺会加剧熔心少女的能量消耗，但击杀有机生物能够为她补充一定的能量。\n\n“居然浪费物资修复你们的敌人，你们真是一群奇怪的有机体。这次就放过你们，反正你们迟早会被其他家伙干掉吧。什么？这幅身体的能量竟如此匮乏！那个……出于本小姐的仁慈之心，等等！别走！我们可以先签个契约，只要你们保证能量供应我什么活都能干！”\n\n对于现命名为熔心少女的未知机械体的出现，我们的初步猜想为苦痛之球核心结构内的残存意识在培育仓内被重新唤醒并掌握了自由改变躯体结构的能力。好消息是这个重生的意识对殖民地并无恶意，并且新生的机械体表现出了远超预期的作战性能。虽然她表现出的情绪反应略显别致，但我们认为这无需担心。</MNS_MissNociosphere.description>
+
+	<MNS_HeatspikeTurret.label>全自动热能武装</MNS_HeatspikeTurret.label>
+
+	<MNS_bullet_Heatspike.label>热能刺弹</MNS_bullet_Heatspike.label>
+	<MNS_bullet_Meltdown.label>高能熔毁弹</MNS_bullet_Meltdown.label>
+</LanguageData>

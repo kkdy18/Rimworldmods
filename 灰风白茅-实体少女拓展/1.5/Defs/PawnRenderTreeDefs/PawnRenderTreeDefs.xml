@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<PawnRenderTreeDef>
+		<defName>MNS_NociosphereShell</defName>
+		<root Class="PawnRenderNodeProperties_Parent">
+			<debugLabel>Root</debugLabel>
+			<tagDef>Root</tagDef>
+			<children>
+				<li>
+					<debugLabel>Body</debugLabel>
+					<tagDef>Body</tagDef>
+					<nodeClass>PawnRenderNode_AnimalPart</nodeClass>
+					<children>
+						<li Class="MissNociosphere.PRNP_MissNociosphere">
+							<debugLabel>Shell_A</debugLabel>
+							<texPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellA</texPath>
+							<maskPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellA_Mask</maskPath>
+							<baseLayer>4</baseLayer>
+							<offset>0.5,1.75</offset>
+							<children>
+								<li Class="PawnRenderNodeProperties_NociosphereSegmentOutline">
+									<texPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellA_Outline</texPath>
+								</li>
+							</children>
+						</li>
+						<li Class="MissNociosphere.PRNP_MissNociosphere">
+							<debugLabel>Shell_B</debugLabel>
+							<texPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellB</texPath>
+							<maskPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellB_Mask</maskPath>
+							<baseLayer>4</baseLayer>
+							<offset>-0.5,1.75</offset>
+							<children>
+								<li Class="PawnRenderNodeProperties_NociosphereSegmentOutline">
+									<texPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellB_Outline</texPath>
+								</li>
+							</children>
+						</li>
+						<li Class="MissNociosphere.PRNP_MissNociosphere">
+							<debugLabel>Shell_C</debugLabel>
+							<texPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellC</texPath>
+							<maskPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellC_Mask</maskPath>
+							<baseLayer>6</baseLayer>
+							<offset>-0.25,0.75</offset>
+							<children>
+								<li Class="PawnRenderNodeProperties_NociosphereSegmentOutline">
+									<texPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellC_Outline</texPath>
+								</li>
+							</children>
+						</li>
+						<li Class="MissNociosphere.PRNP_MissNociosphere">
+							<debugLabel>Shell_D</debugLabel>
+							<texPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellD</texPath>
+							<maskPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellD_Mask</maskPath>
+							<baseLayer>6</baseLayer>
+							<offset>0.25,0.75</offset>
+							<children>
+								<li Class="PawnRenderNodeProperties_NociosphereSegmentOutline">
+									<texPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellD_Outline</texPath>
+								</li>
+							</children>
+						</li>
+						<li Class="MissNociosphere.PRNP_MissNociosphere">
+							<debugLabel>Shell_E</debugLabel>
+							<texPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellE</texPath>
+							<maskPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellE_Mask</maskPath>
+							<baseLayer>3</baseLayer>
+							<offset>-2.25,-1</offset>
+							<children>
+								<li Class="PawnRenderNodeProperties_NociosphereSegmentOutline">
+									<texPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellE_Outline</texPath>
+								</li>
+							</children>
+						</li>
+						<li Class="MissNociosphere.PRNP_MissNociosphere">
+							<debugLabel>Shell_F</debugLabel>
+							<texPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellF</texPath>
+							<maskPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellF_Mask</maskPath>
+							<baseLayer>3</baseLayer>
+							<offset>2.25,-1</offset>
+							<children>
+								<li Class="PawnRenderNodeProperties_NociosphereSegmentOutline">
+									<texPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellF_Outline</texPath>
+								</li>
+							</children>
+						</li>
+						<li Class="MissNociosphere.PRNP_MissNociosphere">
+							<debugLabel>Shell_G</debugLabel>
+							<texPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellG</texPath>
+							<maskPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellG_Mask</maskPath>
+							<baseLayer>4</baseLayer>
+							<offset>-1,-0.6</offset>
+							<children>
+								<li Class="PawnRenderNodeProperties_NociosphereSegmentOutline">
+									<texPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellG_Outline</texPath>
+								</li>
+							</children>
+						</li>
+						<li Class="MissNociosphere.PRNP_MissNociosphere">
+							<debugLabel>Shell_H</debugLabel>
+							<texPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellH</texPath>
+							<maskPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellH_Mask</maskPath>
+							<baseLayer>4</baseLayer>
+							<offset>1,-0.6</offset>
+							<children>
+								<li Class="PawnRenderNodeProperties_NociosphereSegmentOutline">
+									<texPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellH_Outline</texPath>
+								</li>
+							</children>
+						</li>
+						<li Class="MissNociosphere.PRNP_MissNociosphere">
+							<debugLabel>Shell_I</debugLabel>
+							<texPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellI</texPath>
+							<maskPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellI_Mask</maskPath>
+							<baseLayer>10</baseLayer>
+							<offset>0,-0.5</offset>
+							<children>
+								<li Class="PawnRenderNodeProperties_NociosphereSegmentOutline">
+									<texPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellI_Outline</texPath>
+								</li>
+							</children>
+						</li>
+						<li Class="MissNociosphere.PRNP_MissNociosphere">
+							<debugLabel>Shell_J</debugLabel>
+							<texPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellJ</texPath>
+							<maskPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellJ_Mask</maskPath>
+							<baseLayer>2</baseLayer>
+							<offset>-1.25,-1.55</offset>
+							<children>
+								<li Class="PawnRenderNodeProperties_NociosphereSegmentOutline">
+									<texPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellJ_Outline</texPath>
+								</li>
+							</children>
+						</li>
+						<li Class="MissNociosphere.PRNP_MissNociosphere">
+							<debugLabel>Shell_K</debugLabel>
+							<texPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellK</texPath>
+							<maskPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellK_Mask</maskPath>
+							<baseLayer>2</baseLayer>
+							<offset>1.25,-1.55</offset>
+							<children>
+								<li Class="PawnRenderNodeProperties_NociosphereSegmentOutline">
+									<texPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellK_Outline</texPath>
+								</li>
+							</children>
+						</li>
+						<li Class="MissNociosphere.PRNP_MissNociosphere">
+							<debugLabel>Shell_L</debugLabel>
+							<texPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellL</texPath>
+							<maskPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellL_Mask</maskPath>
+							<baseLayer>2</baseLayer>
+							<offset>-0.25,-1.65</offset>
+							<children>
+								<li Class="PawnRenderNodeProperties_NociosphereSegmentOutline">
+									<texPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellL_Outline</texPath>
+								</li>
+							</children>
+						</li>
+						<li Class="MissNociosphere.PRNP_MissNociosphere">
+							<debugLabel>Shell_M</debugLabel>
+							<texPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellM</texPath>
+							<maskPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellM_Mask</maskPath>
+							<baseLayer>2</baseLayer>
+							<offset>0.25,-1.65</offset>
+							<children>
+								<li Class="PawnRenderNodeProperties_NociosphereSegmentOutline">
+									<texPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellM_Outline</texPath>
+								</li>
+							</children>
+						</li>
+						<li Class="MissNociosphere.PRNP_MissNociosphere">
+							<debugLabel>Shell_N</debugLabel>
+							<texPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellN</texPath>
+							<baseLayer>0</baseLayer>
+							<offset>0,-1.75</offset>
+							<children>
+								<li Class="PawnRenderNodeProperties_NociosphereSegmentOutline">
+									<texPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellN_Outline</texPath>
+								</li>
+							</children>
+						</li>
+					</children>
+				</li>
+			</children>
+		</root>
+	</PawnRenderTreeDef>
+	
+	<PawnRenderTreeDef>
+		<defName>MNS_MissNociosphereShell</defName>
+		<root Class="PawnRenderNodeProperties_Parent">
+			<debugLabel>Root</debugLabel>
+			<tagDef>Root</tagDef>
+			<children>
+				<li>
+					<debugLabel>Body</debugLabel>
+					<tagDef>Body</tagDef>
+					<nodeClass>PawnRenderNode_AnimalPart</nodeClass>
+					<children>
+						<li Class="MissNociosphere.PRNP_MissNociosphere">
+							<debugLabel>Shell_A</debugLabel>
+							<texPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellA_Outline</texPath>
+							<maskPath></maskPath>
+							<baseLayer>-5</baseLayer>
+							<offset>0.5,1.75</offset>
+							<children>
+								<li Class="PawnRenderNodeProperties_NociosphereSegmentOutline">
+									<texPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellA</texPath>
+									<baseLayer>-4</baseLayer>
+								</li>
+							</children>
+						</li>
+						<li Class="MissNociosphere.PRNP_MissNociosphere">
+							<debugLabel>Shell_B</debugLabel>
+							<texPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellB_Outline</texPath>
+							<maskPath></maskPath>
+							<baseLayer>-5</baseLayer>
+							<offset>-0.5,1.75</offset>
+							<children>
+								<li Class="PawnRenderNodeProperties_NociosphereSegmentOutline">
+									<texPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellB</texPath>
+									<baseLayer>-4</baseLayer>
+								</li>
+							</children>
+						</li>
+						<li Class="MissNociosphere.PRNP_MissNociosphere">
+							<debugLabel>Shell_C</debugLabel>
+							<texPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellC_Outline</texPath>
+							<maskPath></maskPath>
+							<baseLayer>-5</baseLayer>
+							<offset>-0.25,0.75</offset>
+							<children>
+								<li Class="PawnRenderNodeProperties_NociosphereSegmentOutline">
+									<texPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellC</texPath>
+								</li>
+							</children>
+						</li>
+						<li Class="MissNociosphere.PRNP_MissNociosphere">
+							<debugLabel>Shell_D</debugLabel>
+							<texPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellD_Outline</texPath>
+							<maskPath></maskPath>
+							<baseLayer>-5</baseLayer>
+							<offset>0.25,0.75</offset>
+							<children>
+								<li Class="PawnRenderNodeProperties_NociosphereSegmentOutline">
+									<texPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellD</texPath>
+								</li>
+							</children>
+						</li>
+						<li Class="MissNociosphere.PRNP_MissNociosphere">
+							<debugLabel>Shell_E</debugLabel>
+							<texPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellE</texPath>
+							<maskPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellE_Mask</maskPath>
+							<baseLayer>3</baseLayer>
+							<offset>-2.25,-1</offset>
+							<children>
+								<li Class="PawnRenderNodeProperties_NociosphereSegmentOutline">
+									<texPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellE_Outline</texPath>
+								</li>
+							</children>
+						</li>
+						<li Class="MissNociosphere.PRNP_MissNociosphere">
+							<debugLabel>Shell_F</debugLabel>
+							<texPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellF</texPath>
+							<maskPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellF_Mask</maskPath>
+							<baseLayer>3</baseLayer>
+							<offset>2.25,-1</offset>
+							<children>
+								<li Class="PawnRenderNodeProperties_NociosphereSegmentOutline">
+									<texPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellF_Outline</texPath>
+								</li>
+							</children>
+						</li>
+						<li Class="MissNociosphere.PRNP_MissNociosphere">
+							<debugLabel>Shell_G</debugLabel>
+							<texPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellG</texPath>
+							<maskPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellG_Mask</maskPath>
+							<baseLayer>4</baseLayer>
+							<offset>-1,-0.6</offset>
+							<children>
+								<li Class="PawnRenderNodeProperties_NociosphereSegmentOutline">
+									<texPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellG_Outline</texPath>
+								</li>
+							</children>
+						</li>
+						<li Class="MissNociosphere.PRNP_MissNociosphere">
+							<debugLabel>Shell_H</debugLabel>
+							<texPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellH</texPath>
+							<maskPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellH_Mask</maskPath>
+							<baseLayer>4</baseLayer>
+							<offset>1,-0.6</offset>
+							<children>
+								<li Class="PawnRenderNodeProperties_NociosphereSegmentOutline">
+									<texPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellH_Outline</texPath>
+								</li>
+							</children>
+						</li>
+						<li Class="MissNociosphere.PRNP_MissNociosphere">
+							<debugLabel>Shell_I</debugLabel>
+							<texPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellI_Outline</texPath>
+							<maskPath></maskPath>
+							<baseLayer>-5</baseLayer>
+							<offset>0,-0.5</offset>
+							<children>
+								<li Class="PawnRenderNodeProperties_NociosphereSegmentOutline">
+									<texPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellI</texPath>
+									<baseLayer>-1</baseLayer>
+								</li>
+							</children>
+						</li>
+						<li Class="MissNociosphere.PRNP_MissNociosphere">
+							<debugLabel>Shell_J</debugLabel>
+							<texPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellJ</texPath>
+							<maskPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellJ_Mask</maskPath>
+							<baseLayer>2</baseLayer>
+							<offset>-1.25,-1.55</offset>
+							<children>
+								<li Class="PawnRenderNodeProperties_NociosphereSegmentOutline">
+									<texPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellJ_Outline</texPath>
+								</li>
+							</children>
+						</li>
+						<li Class="MissNociosphere.PRNP_MissNociosphere">
+							<debugLabel>Shell_K</debugLabel>
+							<texPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellK</texPath>
+							<maskPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellK_Mask</maskPath>
+							<baseLayer>2</baseLayer>
+							<offset>1.25,-1.55</offset>
+							<children>
+								<li Class="PawnRenderNodeProperties_NociosphereSegmentOutline">
+									<texPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellK_Outline</texPath>
+								</li>
+							</children>
+						</li>
+						<li Class="MissNociosphere.PRNP_MissNociosphere">
+							<debugLabel>Shell_L</debugLabel>
+							<texPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellL</texPath>
+							<maskPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellL_Mask</maskPath>
+							<baseLayer>2</baseLayer>
+							<offset>-0.25,-1.65</offset>
+							<children>
+								<li Class="PawnRenderNodeProperties_NociosphereSegmentOutline">
+									<texPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellL_Outline</texPath>
+								</li>
+							</children>
+						</li>
+						<li Class="MissNociosphere.PRNP_MissNociosphere">
+							<debugLabel>Shell_M</debugLabel>
+							<texPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellM</texPath>
+							<maskPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellM_Mask</maskPath>
+							<baseLayer>2</baseLayer>
+							<offset>0.25,-1.65</offset>
+							<children>
+								<li Class="PawnRenderNodeProperties_NociosphereSegmentOutline">
+									<texPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellM_Outline</texPath>
+								</li>
+							</children>
+						</li>
+						<li Class="MissNociosphere.PRNP_MissNociosphere">
+							<debugLabel>Shell_N</debugLabel>
+							<texPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellN</texPath>
+							<baseLayer>0</baseLayer>
+							<offset>0,-1.75</offset>
+							<children>
+								<li Class="PawnRenderNodeProperties_NociosphereSegmentOutline">
+									<texPath>Things/Pawn/Nociosphere/Shell/Nociosphere_ShellN_Outline</texPath>
+								</li>
+							</children>
+						</li>
+					</children>
+				</li>
+			</children>
+		</root>
+	</PawnRenderTreeDef>
+</Defs>

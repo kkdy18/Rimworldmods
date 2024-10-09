@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<MNS_AbilityEnergyCost>能量消耗</MNS_AbilityEnergyCost>
+	<MNS_AbilityDisabledNoColonyMech>{0_labelShort}不是归属于殖民地的机械体。</MNS_AbilityDisabledNoColonyMech>
+	<MNS_AbilityDisabledNoMechEnergy>{0_labelShort}没有足够的能量或能量不可用。</MNS_AbilityDisabledNoMechEnergy>
+
+	<MNS_Setting>实体少女拓展</MNS_Setting>
+	<MNS_ShowShell_Title>在游戏中显示熔心少女的动态外壳（修改后需重启游戏）</MNS_ShowShell_Title>
+
+	<MNS_KillANociosphere>你可以休息了，我的同胞</MNS_KillANociosphere>
+	
+	<MNS_EnergyGet>你的苦痛，我收到了</MNS_EnergyGet>
+	<MNS_EnergyGet2>能量多一点总是好的</MNS_EnergyGet2>
+
+	<MNS_SelfSkipApply>这才是本小姐应有的移动方式</MNS_SelfSkipApply>
+	<MNS_SelfSkipApply2>这也是战术的一部分？</MNS_SelfSkipApply2>
+	<MNS_AgonyFlogApply>感受真实的痛苦吧</MNS_AgonyFlogApply>
+	<MNS_AgonyFlogApply2>这外壳可不只是在保护我</MNS_AgonyFlogApply2>
+</LanguageData>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef Name="MNS_MechanitorImplantBase" ParentName="MechanitorImplantCraftableBase" Abstract="True">
+		<graphicData>
+			<color>(100, 80, 80)</color>
+		</graphicData>
+		<recipeMaker Inherit="false">
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<unfinishedThingDef>UnfinishedHealthItemGhoul</unfinishedThingDef>
+			<recipeUsers>
+				<li>BioferriteShaper</li>
+			</recipeUsers>
+			<displayPriority>650</displayPriority>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="MNS_MechanitorImplantBase">
+		<defName>MNS_ShardNode</defName>
+		<label>shard node</label>
+		<description>An implant which increases a mechanitor's bandwidth and the psychic sensitivity by transforming shards into backup nodes. However, excessive linking of shards will increase the workload on the mechanitor's brain and may impair the cognitive ability.\n\nIt can be self-installed without surgery.\n\nThis implant can be installed up to 9 times to increase its effect.</description>
+		<descriptionHyperlinks>
+			<HediffDef>MNS_ShardNodeImplant</HediffDef>
+		</descriptionHyperlinks>
+		<statBases>
+			<MaxInstallCount>9</MaxInstallCount>
+		</statBases>
+		<costList>
+			<SignalChip>1</SignalChip>
+			<Bioferrite>10</Bioferrite>
+			<Shard>1</Shard>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>HighMechtech</researchPrerequisite>
+		</recipeMaker>
+		<comps>
+			<li Class="CompProperties_Usable">
+				<compClass>CompUsableImplant</compClass>
+				<useJob>UseItem</useJob>
+				<useLabel>Implant shard node</useLabel>
+				<userMustHaveHediff>MechlinkImplant</userMustHaveHediff>
+			</li>
+			<li Class="CompProperties_UseEffectInstallImplant">
+				<hediffDef>MNS_ShardNodeImplant</hediffDef>
+				<bodyPart>Brain</bodyPart>
+				<canUpgrade>true</canUpgrade>
+				<maxSeverity>9</maxSeverity>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<HediffDef ParentName="MNS_HediffBase">
+		<defName>MNS_ShardNodeImplant</defName>
+		<label>shard node</label>
+		<description>An implant which increases a mechanitor's bandwidth and the psychic sensitivity.\n\nThis implant can be installed up to 9 times to increase its effect, but excessive implantation may impair the cognitive ability of the mechanitor. </description>
+		<hediffClass>Hediff_Level</hediffClass>
+		<descriptionHyperlinks>
+			<ThingDef>MNS_ShardNode</ThingDef>
+		</descriptionHyperlinks>
+		<defaultLabelColor>(1, 0.5, 0.8)</defaultLabelColor>
+		<priceImpact>true</priceImpact>
+		<minSeverity>0</minSeverity>
+		<maxSeverity>9</maxSeverity>
+		<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+		<levelIsQuantity>true</levelIsQuantity>
+		<duplicationAllowed>false</duplicationAllowed>
+		<stages>
+			<li>
+				<minSeverity>1</minSeverity>
+				<statOffsets>
+					<MechBandwidth>10</MechBandwidth>
+					<PsychicSensitivity>0.1</PsychicSensitivity>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>2</minSeverity>
+				<statOffsets>
+					<MechBandwidth>20</MechBandwidth>
+					<PsychicSensitivity>0.2</PsychicSensitivity>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>3</minSeverity>
+				<statOffsets>
+					<MechBandwidth>30</MechBandwidth>
+					<PsychicSensitivity>0.3</PsychicSensitivity>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>4</minSeverity>
+				<statOffsets>
+					<MechBandwidth>40</MechBandwidth>
+					<PsychicSensitivity>0.5</PsychicSensitivity>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>5</minSeverity>
+				<statOffsets>
+					<MechBandwidth>50</MechBandwidth>
+					<PsychicSensitivity>0.7</PsychicSensitivity>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>6</minSeverity>
+				<statOffsets>
+					<MechBandwidth>60</MechBandwidth>
+					<PsychicSensitivity>0.9</PsychicSensitivity>
+					<MentalBreakThreshold>0.1</MentalBreakThreshold>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>7</minSeverity>
+				<statOffsets>
+					<MechBandwidth>70</MechBandwidth>
+					<PsychicSensitivity>1.2</PsychicSensitivity>
+					<MentalBreakThreshold>0.2</MentalBreakThreshold>
+				</statOffsets>
+				<statFactors>
+					<ResearchSpeed>0.5</ResearchSpeed>
+				</statFactors>
+				<capMods>
+					<li>
+						<capacity>Talking</capacity>
+						<offset>-0.1</offset>
+					</li>
+					<li>
+						<capacity>Hearing</capacity>
+						<offset>-0.1</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>8</minSeverity>
+				<statOffsets>
+					<MechBandwidth>80</MechBandwidth>
+					<PsychicSensitivity>1.5</PsychicSensitivity>
+					<MentalBreakThreshold>0.3</MentalBreakThreshold>
+				</statOffsets>
+				<statFactors>
+					<ResearchSpeed>0.5</ResearchSpeed>
+				</statFactors>
+				<capMods>
+					<li>
+						<capacity>Talking</capacity>
+						<offset>-0.5</offset>
+					</li>
+					<li>
+						<capacity>Hearing</capacity>
+						<offset>-0.5</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>9</minSeverity>
+				<opinionOfOthersFactor>0</opinionOfOthersFactor>
+				<statOffsets>
+					<MechBandwidth>90</MechBandwidth>
+					<PsychicSensitivity>1.8</PsychicSensitivity>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Talking</capacity>
+						<setMax>0</setMax>
+					</li>
+					<li>
+						<capacity>Hearing</capacity>
+						<setMax>0</setMax>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+</Defs>

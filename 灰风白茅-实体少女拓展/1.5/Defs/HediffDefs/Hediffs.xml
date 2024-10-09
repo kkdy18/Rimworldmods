@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HediffDef Name="MNS_HediffBase" Abstract="True">
+		<hediffClass>HediffWithComps</hediffClass>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<maxSeverity>1</maxSeverity>
+		<initialSeverity>1</initialSeverity>
+		<alwaysAllowMothball>True</alwaysAllowMothball>
+		<alwaysAllowMothballCached>True</alwaysAllowMothballCached>
+	</HediffDef>
+
+	<HediffDef ParentName="MNS_HediffBase">
+		<defName>MNS_hediff_AgonyFlog</defName>
+		<label>agony flog</label>
+		<description>The painful energy pulse is affecting the nerves, causing severe pain and mental disorders.</description>
+		<stages>
+			<li>
+				<painOffset>0.4</painOffset>
+				<statOffsets>
+					<PsychicSensitivity>1</PsychicSensitivity>
+					<MentalBreakThreshold>0.5</MentalBreakThreshold>
+				</statOffsets>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="MNS_HediffBase">
+		<defName>MNS_hediff_MindMelt</defName>
+		<label>mind melt</label>
+		<description>The brain of this organism has suffered irreversible damage, with cognitive function nearing loss. Eternal slumber is its only outcome.</description>
+		<defaultLabelColor>(1, 0.5, 0.8)</defaultLabelColor>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.2</setMax>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="MNS_HediffBase">
+		<defName>MNS_hediff_InvisibleInvasion</defName>
+		<label>invisible invasion</label>
+		<description>desc</description>
+		<everCurableByItem>false</everCurableByItem>
+		<stages>
+			<li>
+				<statFactors>
+					<MoveSpeed>2</MoveSpeed>
+					<StaggerDurationFactor>0</StaggerDurationFactor>
+					<MeleeCooldownFactor>0.5</MeleeCooldownFactor>
+				</statFactors>
+				<statOffsets>
+					<MoveSpeed>2</MoveSpeed>
+				</statOffsets>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Invisibility">
+				<visibleToPlayer>true</visibleToPlayer>
+			</li>
+			<li Class="HediffCompProperties_Effecter">
+				<stateEffecter>DeathRefusalAvailable</stateEffecter>
+			</li>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>True</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="MNS_HediffBase">
+		<defName>MNS_hediff_RevenantReshape</defName>
+		<label>revenant reshape</label>
+		<description>desc</description>
+		<everCurableByItem>false</everCurableByItem>
+		<stages>
+			<li>
+				<regeneration>3000</regeneration>
+				<statFactors>
+					<IncomingDamageFactor>0.5</IncomingDamageFactor>
+				</statFactors>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Effecter">
+				<stateEffecter>MNS_effect_Cure</stateEffecter>
+			</li>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>True</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+	</HediffDef>
+
+	<EffecterDef>
+		<defName>MNS_effect_Cure</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+				<fleckDef>MNS_Cure</fleckDef>
+				<burstCount>1</burstCount>
+				<chancePeriodTicks>120</chancePeriodTicks>
+				<chancePerTick>1</chancePerTick>
+				<rotation>-150~150</rotation>
+				<rotationRate>0</rotationRate>
+				<positionRadius>0.04</positionRadius>
+				<positionOffset>(0, 0, -0.15)</positionOffset>
+				<useTargetABodyAngle>true</useTargetABodyAngle>
+				<scale>0.25~0.4</scale>
+				<color>(1, 1, 1, 0.6)</color>
+				<fleckUsesAngleForVelocity>false</fleckUsesAngleForVelocity>
+				<spawnLocType>OnSource</spawnLocType>
+			</li>
+		</children>
+	</EffecterDef>
+
+	<FleckDef ParentName="FleckBase_Thrown">
+		<defName>MNS_Cure</defName>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<fadeInTime>1</fadeInTime>
+		<solidTime>0</solidTime>
+		<fadeOutTime>1</fadeOutTime>
+		<growthRate>0</growthRate>
+		<useAttachLink>True</useAttachLink>
+		<attachedToHead>True</attachedToHead>
+		<graphicData>
+			<texPath>Things/Mote/MNS_Cure</texPath>
+			<graphicClass>Graphic_Fleck</graphicClass>
+			<shaderType>MoteGlow</shaderType>
+			<shaderParameters>
+				<_Color2>(1, 1, 1, 0.5)</_Color2>
+				<_Interval>0.1</_Interval>
+			</shaderParameters>
+			<drawSize>(6, 6)</drawSize>
+		</graphicData>
+	</FleckDef>
+</Defs>

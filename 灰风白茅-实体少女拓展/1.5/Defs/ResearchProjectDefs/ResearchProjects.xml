@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ResearchProjectDef>
+		<defName>MNS_ControlledNociosphere</defName>
+		<label>controlled nociosphere</label>
+		<description>Thoroughly analyze the structure of the nociosphere, design a reconstruction plan around the damaged core, and create a powerful mechanoid based on the nociosphere.</description>
+		<tab>Anomaly</tab>
+		<prerequisites>
+			<li>InsanityWeaponry</li>
+			<li>HighMechtech</li>
+		</prerequisites>
+		<knowledgeCost>40</knowledgeCost>
+		<knowledgeCategory>Advanced</knowledgeCategory>
+		<researchViewX>5.5</researchViewX>
+		<researchViewY>3.4</researchViewY>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->nociosphere</li>
+				<li>subject_story->survived a nociosphere assault</li>
+				<li>subject_story->disguised and sneaked into a cult that worships nociosphere</li>
+				<li>subject_story->found a dormant nociosphere in the ruins of a sparking city</li>
+				<li>subject_story->observed inactive nociosphere from a safe distance</li>
+				<li>subject_gerund->reconstructing nociosphere</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+</Defs>

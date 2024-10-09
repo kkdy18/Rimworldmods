@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<DamageDef ParentName="CutBase">
+		<defName>MNS_damage_EntitySlash</defName>
+		<label>幽魂斩</label>
+		<damageEffecter>MNS_Impact_SLASH</damageEffecter>
+	</DamageDef>
+
+	<ToolCapacityDef>
+		<defName>MNS_EntitySlash</defName>
+		<label>幽魂斩</label>
+	</ToolCapacityDef>
+
+	<ManeuverDef>
+		<defName>MNS_EntitySlash</defName>
+		<requiredCapacity>MNS_EntitySlash</requiredCapacity>
+		<verb>
+			<verbClass>Verb_MeleeAttackDamage</verbClass>
+			<meleeDamageDef>MNS_damage_EntitySlash</meleeDamageDef>
+		</verb>
+		<logEntryDef>MeleeAttack</logEntryDef>
+		<combatLogRulesHit>Maneuver_Slash_MeleeHit</combatLogRulesHit>
+		<combatLogRulesDeflect>Maneuver_Slash_MeleeDeflect</combatLogRulesDeflect>
+		<combatLogRulesMiss>Maneuver_Slash_MeleeMiss</combatLogRulesMiss>
+		<combatLogRulesDodge>Maneuver_Slash_MeleeDodge</combatLogRulesDodge>
+	</ManeuverDef>
+
+	<ThingDef ParentName="MoteBase">
+		<defName>MNS_mote_SLASH</defName>
+		<graphicData>
+			<texPath>Things/Mote/MNS_SLASH</texPath>
+			<shaderType>Mote</shaderType>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<solidTime>0</solidTime>
+			<fadeInTime>0</fadeInTime>
+			<fadeOutTime>0.4</fadeOutTime>
+		</mote>
+	</ThingDef>
+
+	<EffecterDef>
+		<defName>MNS_Impact_SLASH</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+				<moteDef>MNS_mote_SLASH</moteDef>
+				<positionRadius>0</positionRadius>
+				<burstCount>1</burstCount>
+				<scale>1~1.5</scale>
+				<spawnLocType>OnSource</spawnLocType>
+				<speed>0</speed>
+				<angle>0~359</angle>
+			</li>
+		</children>
+	</EffecterDef>
+
+	<DamageDef>
+		<defName>MNS_damage_DarkCorrosion</defName>
+		<label>腐蚀黑血</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<hasForcefulImpact>false</hasForcefulImpact>
+		<makesBlood>false</makesBlood>
+		<canInterruptJobs>false</canInterruptJobs>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has burned to death.</deathMessage>
+		<hediff>AcidBurn</hediff>
+		<armorCategory>Heat</armorCategory>
+		<minDamageToFragment>15</minDamageToFragment>
+		<defaultDamage>150</defaultDamage>
+		<plantDamageFactor>4</plantDamageFactor>
+		<corpseDamageFactor>2</corpseDamageFactor>
+		<defaultArmorPenetration>1.5</defaultArmorPenetration>
+		<explosionHeatEnergyPerCell>0</explosionHeatEnergyPerCell>
+		<explosionCellFleck>BlastExtinguisher</explosionCellFleck>
+		<explosionColorCenter>(0.2, 0.2, 0.2)</explosionColorCenter>
+		<explosionColorEdge>(0.2, 0.2, 0.2)</explosionColorEdge>
+		<soundExplosion>Explosion_FirefoamPopper</soundExplosion>
+		<canUseDeflectMetalEffect>false</canUseDeflectMetalEffect>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+		<impactSoundType>Toxic</impactSoundType>
+		<damageEffecter>MNS_Impact_DarkCorrosion</damageEffecter>
+	</DamageDef>
+
+	<EffecterDef>
+		<defName>MNS_Impact_DarkCorrosion</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+				<moteDef>Mote_ToxicDamage</moteDef>
+				<positionRadius>0.1</positionRadius>
+				<burstCount>3</burstCount>
+				<scale>1~1.4</scale>
+				<color>(0.2,0.2,0.2,1)</color>
+				<spawnLocType>OnSource</spawnLocType>
+			</li>
+		</children>
+	</EffecterDef>
+</Defs>

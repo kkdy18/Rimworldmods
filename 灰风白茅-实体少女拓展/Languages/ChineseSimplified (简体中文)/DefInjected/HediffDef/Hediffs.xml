@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<MNS_hediff_AgonyFlog.label>苦痛鞭笞</MNS_hediff_AgonyFlog.label>
+	<MNS_hediff_AgonyFlog.description>苦痛能量脉冲正在影响神经异常放电，从而造成剧烈的疼痛与精神失常。</MNS_hediff_AgonyFlog.description>
+	<MNS_hediff_MindMelt.label>心智融解</MNS_hediff_MindMelt.label>
+	<MNS_hediff_MindMelt.description>该生物的大脑遭到了不可逆的损伤，认知功能接近丧失，永恒的沉睡是其唯一的结局。</MNS_hediff_MindMelt.description>
+
+	<MNS_ShardNodeImplant.label>碎片节点</MNS_ShardNodeImplant.label>
+	<MNS_ShardNodeImplant.description>一种可以增加机械师的带宽与心灵敏感度的植入物，这种植入物最多可以安装9次以加强其效果，但植入过多可能会对机械师的认知能力造成损害。</MNS_ShardNodeImplant.description>
+</LanguageData>

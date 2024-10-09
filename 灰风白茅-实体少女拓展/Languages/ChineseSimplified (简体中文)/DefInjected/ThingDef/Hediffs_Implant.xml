@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<MNS_ShardNode.label>碎片节点</MNS_ShardNode.label>
+	<MNS_ShardNode.description>一种通过将暗黑超凡碎片改造为备用节点来增加机械师的带宽与心灵敏感度的植入物，但过多地链接碎片会加剧机械师大脑的负荷，可能损害其认知能力。\n\n试试一次性往脑子里塞九个碎片？我想你以后再也不用担心人际交往的问题了。\n\n这种植入物可以不用手术直接安装。\n\n这种植入物最多可以安装9次以加强其效果。</MNS_ShardNode.description>
+	<MNS_ShardNode.comps.CompUsableImplant.useLabel>植入碎片节点</MNS_ShardNode.comps.CompUsableImplant.useLabel>
+</LanguageData>

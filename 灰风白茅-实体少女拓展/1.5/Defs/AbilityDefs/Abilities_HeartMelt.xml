@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<AbilityDef>
+		<defName>MNS_SelfSkip</defName>
+		<label>self skip</label>
+		<category MayRequire="Ludeon.RimWorld.Royalty">Skip</category>
+		<description>Teleporting oneself to a target destination. It can be used for traveling and retreating.\n\n"Stay away from me. Those with primitive mental mode should not scratch my delicate shell!"</description>
+		<iconPath>UI/Abilities/MNS_SelfSkip</iconPath>
+		<showPsycastEffects>false</showPsycastEffects>
+		<cooldownTicksRange>300</cooldownTicksRange>
+		<aiCanUse>false</aiCanUse>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<verbProperties>
+			<verbClass>Verb_EntitySkip</verbClass>
+			<range>0.9</range>
+			<warmupTime>0.5</warmupTime>
+			<ai_IsWeapon>false</ai_IsWeapon>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+				<canTargetBuildings>false</canTargetBuildings>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="MissNociosphere.ACP_MechEnergyCost">
+				<energyCost>0.1</energyCost>
+			</li>
+			<li Class="CompProperties_AbilityTeleport">
+				<compClass>CompAbilityEffect_Teleport</compClass>
+				<destination>Selected</destination>
+				<requiresLineOfSight>false</requiresLineOfSight>
+				<range>26.9</range>
+				<clamorType>Ability</clamorType>
+				<clamorRadius>10</clamorRadius>
+				<destClamorType>Ability</destClamorType>
+				<destClamorRadius>10</destClamorRadius>
+				<maxBodySize>10</maxBodySize>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<AbilityDef>
+		<defName>MNS_MeltdownBombard</defName>
+		<label>meltdown bombardment</label>
+		<description>Releasing the energy accumulated in the sphere shell in the form of ultra-high-power energy pulses, triggering a high-temperature explosion capable of melting steel.\n\n"Be careful, I will beautifully purify those organic wastes."</description>
+		<iconPath>UI/Abilities/MNS_MeltdownBombard</iconPath>
+		<writeCombatLog>True</writeCombatLog>
+		<showPsycastEffects>False</showPsycastEffects>
+		<cooldownTicksRange>900</cooldownTicksRange>
+		<verbProperties>
+			<verbClass>Verb_AbilityShoot</verbClass>
+			<defaultProjectile>MNS_bullet_Meltdown</defaultProjectile>
+			<range>24.9</range>
+			<warmupTime>2.5</warmupTime>
+			<muzzleFlashScale>9</muzzleFlashScale>
+			<burstShotCount>1</burstShotCount>
+			<accuracyTouch>1</accuracyTouch>
+			<accuracyShort>1</accuracyShort>
+			<accuracyMedium>1</accuracyMedium>
+			<accuracyLong>1</accuracyLong>
+			<beamTargetsGround>true</beamTargetsGround>
+			<soundAiming>FleshmelterBolt_Charging</soundAiming>
+			<ai_IsWeapon>false</ai_IsWeapon>
+			<ai_ProjectileLaunchingIgnoresMeleeThreats>true</ai_ProjectileLaunchingIgnoresMeleeThreats>
+			<aimingLineMote>Mote_FleshmelterBolt_Aim</aimingLineMote>
+			<aimingChargeMote>Mote_FleshmelterBolt_Charge</aimingChargeMote>
+			<aimingChargeMoteOffset>1.07</aimingChargeMoteOffset>
+			<aimingLineMoteFixedLength>15.9</aimingLineMoteFixedLength>
+			<aimingTargetMote>Mote_FleshmelterBolt_Target</aimingTargetMote>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+		</verbProperties>
+		<comps>
+		</comps>
+	</AbilityDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>MNS_bullet_Meltdown</defName>
+		<label>meltdown shot</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/FleshmelterBolt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>Mote</shaderType>
+			<drawSize>(1.5, 3)</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>NociosphereVaporize</damageDef>
+			<damageAmountBase>150</damageAmountBase>
+			<speed>75</speed>
+			<soundAmbient>FleshmelterBolt_Launch</soundAmbient>
+			<explosionRadius>4.9</explosionRadius>
+			<screenShakeFactor>1.25</screenShakeFactor>
+			<explosionChanceToStartFire>0</explosionChanceToStartFire>
+		</projectile>
+	</ThingDef>
+
+	<AbilityDef>
+		<defName>MNS_AgonyFlog</defName>
+		<label>agony flog</label>
+		<description>Releasing energy pulses towards the target that can make the organism feel intense pain.</description>
+		<iconPath>UI/Abilities/MNS_AgonyFlog</iconPath>
+		<writeCombatLog>True</writeCombatLog>
+		<showPsycastEffects>False</showPsycastEffects>
+		<cooldownTicksRange>360</cooldownTicksRange>
+		<statBases>
+			<Ability_EffectRadius>2.9</Ability_EffectRadius>
+		</statBases>
+		<warmupEffecter>HoraxianSpellLight_Warmup</warmupEffecter>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<defaultProjectile>Bullet_FleshmelterBolt</defaultProjectile>
+			<range>24.9</range>
+			<warmupTime>1.0</warmupTime>
+			<soundCast>AgonyPulse_Cast</soundCast>
+			<ai_IsWeapon>false</ai_IsWeapon>
+			<ai_ProjectileLaunchingIgnoresMeleeThreats>true</ai_ProjectileLaunchingIgnoresMeleeThreats>
+		</verbProperties>
+		<comps>
+			<li Class="MissNociosphere.ACP_MechEnergyCost">
+				<energyCost>0.1</energyCost>
+			</li>
+			<li Class="MissNociosphere.ACP_GiveHediffOrganic">
+				<durationSecondsOverride>250</durationSecondsOverride>
+				<replaceExisting>true</replaceExisting>
+				<hediffDef>MNS_hediff_AgonyFlog</hediffDef>
+				<onlyBrain>true</onlyBrain>
+				<ignoreSelf>true</ignoreSelf>
+				<severity>1</severity>
+			</li>
+			<li Class="CompProperties_AbilityFleckOnTarget">
+				<fleckDef>PsycastPsychicEffect</fleckDef>
+			</li>
+			<li Class="CompProperties_AbilityEffecterOnTarget">
+				<effecterDef>AgonyPulseExplosion</effecterDef>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<AbilityDef>
+		<defName>MNS_MindMelt</defName>
+		<label>mind melt</label>
+		<description>Interfering with organisms under the influence of pain energy, completely destroys the cognitive function of the target, causing an irreversible coma.</description>
+		<iconPath>UI/Abilities/MNS_MindMelt</iconPath>
+		<charges>2</charges>
+		<cooldownTicksRange>10000</cooldownTicksRange>
+		<writeCombatLog>true</writeCombatLog>
+		<cooldownPerCharge>true</cooldownPerCharge>
+		<sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>0.5</warmupTime>
+			<range>17.9</range>
+			<drawAimPie>true</drawAimPie>
+			<requireLineOfSight>true</requireLineOfSight>
+			<drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+			<soundCast>VoidTerrorCast</soundCast>
+			<targetParams>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetMechs>false</canTargetMechs>
+				<neverTargetIncapacitated>true</neverTargetIncapacitated>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="MissNociosphere.ACP_MechEnergyCost">
+				<energyCost>0.2</energyCost>
+			</li>
+			<li Class="MissNociosphere.ACP_MindMelt" />
+			<li Class="CompProperties_AbilityConnectingFleckLine">
+				<fleckDef>PsycastPsychicLine</fleckDef>
+			</li>
+			<li Class="CompProperties_AbilityEffecterOnTarget">
+				<effecterDef>VoidTerror_Target</effecterDef>
+			</li>
+		</comps>
+	</AbilityDef>
+</Defs>
