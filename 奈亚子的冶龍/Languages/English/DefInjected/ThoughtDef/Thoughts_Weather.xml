@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<!-- EN: 透骨严寒 -->
+	<NY_thougth_ColdWind.stages.0.label>bone-deep cold</NY_thougth_ColdWind.stages.0.label>
+	<!-- EN: 这阴冷的天气真是难熬。 -->
+	<NY_thougth_ColdWind.stages.0.description>The cold weather was a hell to endure.</NY_thougth_ColdWind.stages.0.description>
+
+	<!-- EN: 干渴 -->
+	<NY_thougth_Drought.stages.0.label>thirst</NY_thougth_Drought.stages.0.label>
+	<!-- EN: 空气实在太干燥了，身体感觉像一块挤干的海绵。 -->
+	<NY_thougth_Drought.stages.0.description>The dry air is turning me int a raisin.</NY_thougth_Drought.stages.0.description>
+
+</LanguageData>

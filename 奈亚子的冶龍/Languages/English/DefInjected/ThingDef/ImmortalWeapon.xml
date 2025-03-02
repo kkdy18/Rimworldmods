@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<!-- EN: 星芒剑气 -->
+	<NY_bullet_StarSwordAir.label>celestial slash</NY_bullet_StarSwordAir.label>
+
+	<!-- EN: 琉璃诛邪戟 -->
+	<NY_DragonEvilKiller.label>evil's bane halberd</NY_DragonEvilKiller.label>
+	<!-- EN: 传说古时常有铁甲邪祟、铜皮恶兽横行，伤人性命，毁人钱粮，有奇人以异铁铸神兵，扫净邪祟恶兽，使万民得以安居乐业。冶龍工匠们根据记载重铸了那件诛邪利器，希望邪祟恶兽归来之日，仍有勇士能执此神兵保卫一方。\n\n琉璃光寒诛邪戟，玄铁铸就白刃利。\n斩尽世间腌臜事，一扫不公立正气。 -->
+	<NY_DragonEvilKiller.description>The weapon used in the legend to slay the possessed armors and copper beasts which haunted the empire. This one is a modern recreation.</NY_DragonEvilKiller.description>
+	<!-- EN: 戟柄 -->
+	<NY_DragonEvilKiller.tools.0.label>shaft</NY_DragonEvilKiller.tools.0.label>
+	<!-- EN: 戟尖 -->
+	<NY_DragonEvilKiller.tools.1.label>point</NY_DragonEvilKiller.tools.1.label>
+
+	<!-- EN: 凤翎碧璃切 -->
+	<NY_DragonFeatherSwordGreen.label>jade feather sword</NY_DragonFeatherSwordGreen.label>
+	<!-- EN: 碧血铸剑凤翎扬，削铁如泥刃寒光。\n琉璃碧刃映日月，透骨锋芒胜冰霜。 -->
+	<NY_DragonFeatherSwordGreen.description>The legendary sword that is said to cut through steel as if it was tofu. This one is a modern recreation.</NY_DragonFeatherSwordGreen.description>
+	<!-- EN: 刀柄 -->
+	<NY_DragonFeatherSwordGreen.tools.0.label>handle</NY_DragonFeatherSwordGreen.tools.0.label>
+	<!-- EN: 凤鸣尖 -->
+	<NY_DragonFeatherSwordGreen.tools.1.label>point</NY_DragonFeatherSwordGreen.tools.1.label>
+	<!-- EN: 碧璃刃 -->
+	<NY_DragonFeatherSwordGreen.tools.2.label>blade</NY_DragonFeatherSwordGreen.tools.2.label>
+
+	<!-- EN: 凰羽赤铁斩 -->
+	<NY_DragonFeatherSwordRed.label>phoenix feather sword</NY_DragonFeatherSwordRed.label>
+	<!-- EN: 赤铁铸剑凰羽名，挥舞凤鸣震天庭。\n斩敌血溅化羽飞，赤光映羽舞翩跹。 -->
+	<NY_DragonFeatherSwordRed.description>The legendary sword said to be able to send enemy's blood flying. This one is a modern recreation.</NY_DragonFeatherSwordRed.description>
+	<!-- EN: 刀柄 -->
+	<NY_DragonFeatherSwordRed.tools.0.label>handle</NY_DragonFeatherSwordRed.tools.0.label>
+	<!-- EN: 赤羽刃 -->
+	<NY_DragonFeatherSwordRed.tools.1.label>blade</NY_DragonFeatherSwordRed.tools.1.label>
+
+	<!-- EN: 揽星截月 -->
+	<NY_DragonStarSword.label>celestial sword</NY_DragonStarSword.label>
+	<!-- EN: 依据冶龍神话传说中关于星宿的记载而铸造的神兵，挥剑可唤出星芒剑气镇杀纠结成群之敌。\n\n二十八宿铸神剑，星缀月染剑光藏。\n出鞘星河闪耀时，剑气恢弘断云空。\n星宿神力凝月刃，月华流转映星芒。\n挥剑可揽天上月，众星随舞灿苍穹。 -->
+	<NY_DragonStarSword.description>The legendary sword said to made of stars, capable of launching its slash at enemies. This one is a modern recreation.</NY_DragonStarSword.description>
+	<!-- EN: 剑柄 -->
+	<NY_DragonStarSword.tools.0.label>handle</NY_DragonStarSword.tools.0.label>
+	<!-- EN: 剑刃 -->
+	<NY_DragonStarSword.tools.1.label>blade</NY_DragonStarSword.tools.1.label>
+
+	<!-- EN: 三尖两刃刀 -->
+	<NY_DragonThreePoint.label>three pointed spear</NY_DragonThreePoint.label>
+	<!-- EN: 以冶龍神话传说中的二郎神将所持兵刃为原型而铸造的神兵，蕴含破邪除祟之威能。\n\n宝刀本是仙家兵，三界往来任纵横。\n体按阴阳分天地，光夺魂魄欺日星。\n劈开桃岭三千丈，奠定周基八百冬。\n老君当日炉中锻，号作三尖两刃锋。 -->
+	<NY_DragonThreePoint.description>The spear wielded by the warrior deity of er lang, said to be able to slay evil beings in one hit. This one is a modern recreation.</NY_DragonThreePoint.description>
+	<!-- EN: 刀柄 -->
+	<NY_DragonThreePoint.tools.0.label>shaft</NY_DragonThreePoint.tools.0.label>
+	<!-- EN: 刀尖 -->
+	<NY_DragonThreePoint.tools.1.label>point</NY_DragonThreePoint.tools.1.label>
+
+</LanguageData>

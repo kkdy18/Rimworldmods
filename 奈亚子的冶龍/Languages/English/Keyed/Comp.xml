@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<NY_NotFitBody>Unfit for current body</NY_NotFitBody>
+	<NY_RemoveOverriddenGene>Genes conflicted with loong genes in {PAWN} and was dissolved:</NY_RemoveOverriddenGene>
+
+	<NY_GhoulDragonGrow>Ghoul loong organs grown on {PAWN}:</NY_GhoulDragonGrow>
+	<NY_RemoveFromGhoulDragon>{HEDIFF} was rejected by {PAWN}'s body.</NY_RemoveFromGhoulDragon>
+
+	<NY_MessageMakeMilk>{PAWN} collected some ambergris.</NY_MessageMakeMilk>
+	<NY_DaysLeft>days until next ambergris excretion.</NY_DaysLeft>
+	<NY_NoMilk>Ambergris excretion ceased.</NY_NoMilk>
+</LanguageData>

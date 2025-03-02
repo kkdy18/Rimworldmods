@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!--移除仿生眼贴图-->
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/HediffDef[defName="BionicEye"]/renderNodeProperties</xpath>
+		<value>
+			<renderNodeProperties></renderNodeProperties>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/HediffDef[defName="ArchotechEye"]/renderNodeProperties</xpath>
+		<value>
+			<renderNodeProperties></renderNodeProperties>
+		</value>
+	</Operation>
+</Patch>

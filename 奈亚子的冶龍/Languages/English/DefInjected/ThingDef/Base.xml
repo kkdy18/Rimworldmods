@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<!-- EN: 梅花白刃 -->
+	<NY_PlumBlossomSword.label>plum blosson sword</NY_PlumBlossomSword.label>
+	<!-- EN: desc -->
+	<NY_PlumBlossomSword.description>desc(sic)</NY_PlumBlossomSword.description>
+	<!-- EN: 白梅斩 -->
+	<NY_PlumBlossomSword.tools.0.label>white blossom slash</NY_PlumBlossomSword.tools.0.label>
+
+</LanguageData>

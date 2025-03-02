@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<!-- EN: 冶龍技艺 -->
+	<ForgingDragonResearchTab.label>smelt loong</ForgingDragonResearchTab.label>
+	<!-- EN: 治龙是一种拥有传说中名为龙的生物的生物特征的人类分支，她们在遥远的故乡发展出了治雕特色的帝制文明与冶炼铸造技术。 -->
+	<ForgingDragonResearchTab.generalDescription>Unique technologies used by loongs</ForgingDragonResearchTab.generalDescription>
+	<!-- EN: 冶龍技艺 -->
+	<ForgingDragonResearchTab.generalTitle>loong</ForgingDragonResearchTab.generalTitle>
+
+</LanguageData>

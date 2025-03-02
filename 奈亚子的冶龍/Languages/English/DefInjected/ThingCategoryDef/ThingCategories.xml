@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<!-- EN: 冶龍盔袍 -->
+	<NY_DragonApparel.label>loong apparels</NY_DragonApparel.label>
+
+	<!-- EN: 冶龍甲胄 -->
+	<NY_DragonArmor.label>loong armors</NY_DragonArmor.label>
+
+	<!-- EN: 冶龍常服 -->
+	<NY_DragonCloth.label>loong clothes</NY_DragonCloth.label>
+
+	<!-- EN: 冶龍饮食 -->
+	<NY_DragonFood.label>loong cuisine</NY_DragonFood.label>
+
+	<!-- EN: 冶龍华饰 -->
+	<NY_DragonHeadDress.label>loong jewelry</NY_DragonHeadDress.label>
+
+	<!-- EN: 冶龍果蔬 -->
+	<NY_DragonPlantRaw.label>loong food ingredients</NY_DragonPlantRaw.label>
+
+	<!-- EN: 冶龍百兵 -->
+	<NY_DragonWeapon.label>loong weapons</NY_DragonWeapon.label>
+
+	<!-- EN: 金铁破敌 -->
+	<NY_DragonWeaponMelee.label>loong melee weapons</NY_DragonWeaponMelee.label>
+
+	<!-- EN: 制胜百里 -->
+	<NY_DragonWeaponRanged.label>loong ranged weapons</NY_DragonWeaponRanged.label>
+
+	<!-- EN: 冶龍珍材 -->
+	<NY_Resources.label>loong resources</NY_Resources.label>
+
+</LanguageData>

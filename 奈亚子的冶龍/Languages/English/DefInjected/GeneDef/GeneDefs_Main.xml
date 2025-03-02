@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<!-- EN: 青花瓷龙 -->
+	<NY_gene_ForgingDragonBW.label>porcelain loong</NY_gene_ForgingDragonBW.label>
+	<!-- EN: 决定冶龍亚种青花瓷种的性状的核心基因。\n\n冶龍的体内有着一类独特的生长发育调控基因，它们也导致了冶龍的单性别族群以及冶龍后代会完全遗传母亲基因等现象的形成，该基因在冶龍漫长的演化中不断迭代，最终变得极度稳定，任何与其相斥的基因都会被其无效化。 -->
+	<NY_gene_ForgingDragonBW.description>The centerpiece of a porcelain loong's genetic sequence.\n\nA spectrum of growth regulation genes exists in loong's cells. These genes are responsible for their monosex colonies and the complete inheritance of mother's genes among loong offsprings. As a result of loong's continued evolution these genes has stablized and any conflicting genes will be disabled.</NY_gene_ForgingDragonBW.description>
+
+	<!-- EN: 纯种龙 -->
+	<NY_gene_ForgingDragonCB.label>pureblood loong</NY_gene_ForgingDragonCB.label>
+	<!-- EN: 决定冶龍纯种的性状的核心基因。\n\n冶龍的体内有着一类独特的生长发育调控基因，它们也导致了冶龍的单性别族群以及冶龍后代会完全遗传母亲基因等现象的形成，该基因在冶龍漫长的演化中不断迭代，最终变得极度稳定，任何与其相斥的基因都会被其无效化。 -->
+	<NY_gene_ForgingDragonCB.description>The centerpiece of a pureblood loong's genetic sequence.\n\nA spectrum of growth regulation genes exists in loong's cells. These genes are responsible for their monosex colonies and the complete inheritance of mother's genes among loong offsprings. As a result of loong's continued evolution these genes has stablized and any conflicting genes will be disabled.</NY_gene_ForgingDragonCB.description>
+
+	<!-- EN: 尸龙身 -->
+	<NY_gene_ForgingDragonGhoul.label>ghouloong</NY_gene_ForgingDragonGhoul.label>
+	<!-- EN: 冶龍被转化为食尸鬼后激活的隐性基因。 -->
+	<NY_gene_ForgingDragonGhoul.description>The hidden gene activated when a loong was ghoulfied.</NY_gene_ForgingDragonGhoul.description>
+
+	<!-- EN: 龙角青 -->
+	<NY_gene_ForgingDragonHornBW.label>azure horns</NY_gene_ForgingDragonHornBW.label>
+	<!-- EN: 青花瓷种冶龍会长出宛如青色陶瓷的龙角，由于青花瓷种冶龍的基因丰富度较低这种角几乎不存在变种。 -->
+	<NY_gene_ForgingDragonHornBW.description>The ceramic-like textured horns unique to porcelain loongs. Due to the low genetic variety of porcelain loongs, no other varieties are found.</NY_gene_ForgingDragonHornBW.description>
+
+	<!-- EN: 龙角翠 -->
+	<NY_gene_ForgingDragonHornCB.label>green horns</NY_gene_ForgingDragonHornCB.label>
+	<!-- EN: 纯种冶龍会长出各种各样的角，比如绿中透黄的琉璃角，华丽精美的珍珠角，似乎还有一种生姜角，但最好别当着冶龍的面提这个称谓，她们不喜欢，相当不喜欢。 -->
+	<NY_gene_ForgingDragonHornCB.description>The horns of pureblood loongs. There're many varieties of horns amid the purebloods, to name a few, the glassy horns with a trace of yellow in a green horn, glorious pearl horns, and there're a so-called ginger horn but don't you dare say that to a loong.</NY_gene_ForgingDragonHornCB.description>
+
+	<!-- EN: 龙角红 -->
+	<NY_gene_ForgingDragonHornPC.label>crimson horns</NY_gene_ForgingDragonHornPC.label>
+	<!-- EN: 剪纸种冶龍的角细看有淡淡的花纹，非常漂亮，虽然变种不多，但也是冶龍的龙角选美中的有力竞争者。 -->
+	<NY_gene_ForgingDragonHornPC.description>The horns of papercut loongs. They're beautiful and decorated with subtle patterns, but there aren't a lot of varieties.</NY_gene_ForgingDragonHornPC.description>
+
+	<!-- EN: 龙角玉 -->
+	<NY_gene_ForgingDragonHornWJ.label>jade horns</NY_gene_ForgingDragonHornWJ.label>
+	<!-- EN: 白玉种冶龍的角摸起来冰冰的，质感与色泽如玉石一般，不像寻常的角质。 -->
+	<NY_gene_ForgingDragonHornWJ.description>The horns of white jade loongs. They have an icy, slippery texture akin to that of jade.</NY_gene_ForgingDragonHornWJ.description>
+
+	<!-- EN: 龙涎香 -->
+	<NY_gene_ForgingDragonMilk.label>ambergris excrement</NY_gene_ForgingDragonMilk.label>
+	<!-- EN: 成年冶龍会分泌一种名为龙涎香的乳汁，据说有着特殊的香气，是世间少有的珍馐。 -->
+	<NY_gene_ForgingDragonMilk.description>The customarily misnamed "ambergris" is actually the excrement of adult loongs. They are said to produce a special aroma and is a treasured food ingredient.</NY_gene_ForgingDragonMilk.description>
+
+	<!-- EN: 剪纸龙 -->
+	<NY_gene_ForgingDragonPC.label>papercut loong</NY_gene_ForgingDragonPC.label>
+	<!-- EN: 决定冶龍亚种剪纸种的性状的核心基因。\n\n冶龍的体内有着一类独特的生长发育调控基因，它们也导致了冶龍的单性别族群以及冶龍后代会完全遗传母亲基因等现象的形成，该基因在冶龍漫长的演化中不断迭代，最终变得极度稳定，任何与其相斥的基因都会被其无效化。 -->
+	<NY_gene_ForgingDragonPC.description>The centerpiece of a papercut loong's genetic sequence.\n\nA spectrum of growth regulation genes exists in loong's cells. These genes are responsible for their monosex colonies and the complete inheritance of mother's genes among loong offsprings. As a result of loong's continued evolution these genes has stablized and any conflicting genes will be disabled.</NY_gene_ForgingDragonPC.description>
+
+	<!-- EN: 龙尾青 -->
+	<NY_gene_ForgingDragonTailBW.label>azure tail</NY_gene_ForgingDragonTailBW.label>
+	<!-- EN: 青花瓷种冶龍会长出一根柔中带刚的青蓝色大尾巴，摸起来冰冰的，夏天可以抱着睡觉。 -->
+	<NY_gene_ForgingDragonTailBW.description>The tail of porcelain loongs. They're miraculously soft but hard, and chilly to touch. It might be a good idea to sleep during the summer with one of this between your arms.</NY_gene_ForgingDragonTailBW.description>
+
+	<!-- EN: 龙尾翠 -->
+	<NY_gene_ForgingDragonTailCB.label>green tail</NY_gene_ForgingDragonTailCB.label>
+	<!-- EN: 纯种冶龍会长出一根粗壮的翠绿色大尾巴，肌肉发达的尾巴如果甩到人身上大概会筋断骨折。 -->
+	<NY_gene_ForgingDragonTailCB.description>The thick and muscular tail of a pureblood loong. Strong enough to break a few bones if it hits somebody.</NY_gene_ForgingDragonTailCB.description>
+
+	<!-- EN: 龙尾红 -->
+	<NY_gene_ForgingDragonTailPC.label>crimson tail</NY_gene_ForgingDragonTailPC.label>
+	<!-- EN: 剪纸种冶龍会长出生有薄膜状组织的红色尾巴，尾巴上类似剪纸的结构是人为修剪的结果，据说在冶龍的故乡存在和理发师类似的职业剪尾师。 -->
+	<NY_gene_ForgingDragonTailPC.description>The red tail of a papercut loong. A membrane structure extends from the tail, which is artificially tailored. It was said there're tail barbers that styles them.</NY_gene_ForgingDragonTailPC.description>
+
+	<!-- EN: 龙尾玉 -->
+	<NY_gene_ForgingDragonTailWJ.label>jade tail</NY_gene_ForgingDragonTailWJ.label>
+	<!-- EN: 白玉种冶龍的尾巴与纯种冶龍的尾巴相似，但尾巴的鳞片颜色偏白并且长着洁白的毛。 -->
+	<NY_gene_ForgingDragonTailWJ.description>The tail of a white jade loong. Similar to that of a pureblood, but white in color.</NY_gene_ForgingDragonTailWJ.description>
+
+	<!-- EN: 白玉龙 -->
+	<NY_gene_ForgingDragonWJ.label>jade loong</NY_gene_ForgingDragonWJ.label>
+	<!-- EN: 决定冶龍亚种白玉种的性状的核心基因。\n\n冶龍的体内有着一类独特的生长发育调控基因，它们也导致了冶龍的单性别族群以及冶龍后代会完全遗传母亲基因等现象的形成，该基因在冶龍漫长的演化中不断迭代，最终变得极度稳定，任何与其相斥的基因都会被其无效化。 -->
+	<NY_gene_ForgingDragonWJ.description>The centerpiece of a white jade loong's genetic sequence.\n\nA spectrum of growth regulation genes exists in loong's cells. These genes are responsible for their monosex colonies and the complete inheritance of mother's genes among loong offsprings. As a result of loong's continued evolution these genes has stablized and any conflicting genes will be disabled.</NY_gene_ForgingDragonWJ.description>
+
+	<!-- EN: 避火龙鳞 -->
+	<NY_gene_LoongFireResistant.label>fireproof scales</NY_gene_LoongFireResistant.label>
+	<!-- EN: 据说纯种冶龍的皮肤表面覆盖着细密的透明鳞片，隔热效果良好的龙鳞结合特殊的阻燃分泌物保护着冶龍的身体免受火焰伤害。 -->
+	<NY_gene_LoongFireResistant.description>Fine transparent scales covered the skin of a pureblood loong. They're not flammable and highly resistant to heat, protecting a pureblood from fire.</NY_gene_LoongFireResistant.description>
+
+</LanguageData>

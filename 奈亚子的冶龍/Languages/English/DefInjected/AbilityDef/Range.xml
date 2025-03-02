@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<!-- EN: 风暴召来 -->
+	<NY_ability_SpawnTornado.label>storm summon</NY_ability_SpawnTornado.label>
+	<!-- EN: 以芭蕉扇长时间搅动气流引发龙卷风，这种做法相当危险并且控制风暴的反作用力对神兵造成的损伤需要漫长的时间修复，请谨慎使用。 -->
+	<NY_ability_SpawnTornado.description>Summon a tornado from repeated swings, exhausting the weapon and need a long time to recover.</NY_ability_SpawnTornado.description>
+
+</LanguageData>

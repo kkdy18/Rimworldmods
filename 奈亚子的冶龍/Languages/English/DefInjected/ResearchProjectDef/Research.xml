@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<!-- EN: 凡品兵器 -->
+	<ForgingDragonCommonWeapon.label>common loong weapons</ForgingDragonCommonWeapon.label>
+	<!-- EN: 解锁锻造冶龍凡品兵器的技术，铸刀与制弓是冶龍工匠们的基础工作，她们的辛勤工作支撑起了强盛的冶龍兵团。 -->
+	<ForgingDragonCommonWeapon.description>Enables the production of common loong weaponries, the foundation of loong armies.</ForgingDragonCommonWeapon.description>
+	<!-- EN:
+    <li>subject->凡品兵器</li>
+    <li>subject_story->于袭击中近距离观察了冶龍士兵的武器</li>
+    <li>subject_gerund->锻造凡品兵器</li>
+  -->
+	<ForgingDragonCommonWeapon.generalRules.rulesStrings>
+		<li>subject->common loong weapons</li>
+		<li>subject_story->examined loong infantry's weapon closely during a raid</li>
+		<li>subject_gerund->forging common loong weapons</li>
+	</ForgingDragonCommonWeapon.generalRules.rulesStrings>
+
+	<!-- EN: 冶龍华饰 -->
+	<ForgingDragonHeadDress.label>loong headdress</ForgingDragonHeadDress.label>
+	<!-- EN: 解锁制作冶龍饰品的技术，冶龍的饰品并没有什么实用性，但出人意料的耐磨损，冶龍中家境略好的爱美者会购置一两件随时佩戴。 -->
+	<ForgingDragonHeadDress.description>Enables the production of decorative loong headdresses. Rather useless but surprisingly durable.</ForgingDragonHeadDress.description>
+	<!-- EN:
+    <li>subject->冶龍华饰</li>
+    <li>subject_story->沉迷于冶龍制作的华丽饰品，不辞辛苦向冶龍工匠请教</li>
+    <li>subject_gerund->制作冶龍华饰</li>
+  -->
+	<ForgingDragonHeadDress.generalRules.rulesStrings>
+		<li>subject->loong headdress</li>
+		<li>subject_story->enchanted by elaborate headdresses loongs wear, and learned the making of them from an experienced craftloong</li>
+		<li>subject_gerund->crafting loong headdress</li>
+	</ForgingDragonHeadDress.generalRules.rulesStrings>
+
+	<!-- EN: 仙品兵器 -->
+	<ForgingDragonImmortalWeapon.label>legendary loong weapons</ForgingDragonImmortalWeapon.label>
+	<!-- EN: 解锁锻造冶龍仙品兵器的技术，解密名为“神珍铁”的神秘金属与堪比闪耀科技造物的冶龍神兵，冶龍工匠以铸造神兵为毕生追求，只是摸一下神珍铁的机会就足够让她们打到头破血流。 -->
+	<ForgingDragonImmortalWeapon.description>Enables the production of legendary loong weapons, deciphering the secret behind the immortalite, a mysterious material, and the legendary weapons made of it.</ForgingDragonImmortalWeapon.description>
+	<!-- EN:
+    <li>subject->仙品兵器</li>
+    <li>subject_story->被冶龍绑架并折磨三个月，在盆骨粉碎性骨折的情况下侥幸逃出并窃取到了某种性质极为奇异的金属</li>
+    <li>subject_story->秘密潜入冶龍严密看守的据点窥探到一件拥有神奇伟力的冶龍兵器，但被四只冶龍强者抓住并遭受名为“终极侮辱”的酷刑</li>
+    <li>subject_gerund->锻造仙品兵器</li>
+  -->
+	<ForgingDragonImmortalWeapon.generalRules.rulesStrings>
+		<li>subject->legendary loong weapons</li>
+		<li>subject_story->was kidnapped by loongs and underwent three months of "torture", and narrowly escaped with the secret of legendary weapons, at the cost of cracked pelvis</li>
+		<li>subject_story->tried to infiltrate a heavily guarded loong installation to seek for the secret of legendary weapons, but was found out by four strong loongs and was "ultimately humilated"</li>
+		<li>subject_gerund->forging legendary weapons</li>
+	</ForgingDragonImmortalWeapon.generalRules.rulesStrings>
+
+	<!-- EN: 冶龍兵甲 -->
+	<ForgingDragonSoldierApparel.label>loong armor</ForgingDragonSoldierApparel.label>
+	<!-- EN: 解锁锻造冶龍常规甲胄的技术，冶龍的甲胄轻便与坚固兼具，实用性较高，可惜冶龍与寻常人类的体型差异过大，即使缴获也没法穿戴。 -->
+	<ForgingDragonSoldierApparel.description>Enables the production of loong armors. The body of loong is too different from baseliner to be used by them.</ForgingDragonSoldierApparel.description>
+	<!-- EN:
+    <li>subject->冶龍兵甲</li>
+    <li>subject_story->在一场战斗中缴获了数件精良的冶龍甲胄，但因为没有人穿的下只好扔进熔炼炉</li>
+    <li>subject_gerund->锻造冶龍兵甲</li>
+  -->
+	<ForgingDragonSoldierApparel.generalRules.rulesStrings>
+		<li>subject->loong armor</li>
+		<li>subject_story->salvaged several loong armors from a raid, but nobody could make use of them and was ultimately melted</li>
+		<li>subject_gerund->making loong armor</li>
+	</ForgingDragonSoldierApparel.generalRules.rulesStrings>
+
+	<!-- EN: 炼龙之始 -->
+	<ForgingDragonStarting.label>smelts of loongs</ForgingDragonStarting.label>
+	<!-- EN: 解锁冶龍加工稀有材料的技术，它是冶龍锻造之术的起点与基石。\n\n你知道吗，烹饪与冶炼的技艺也是相通的。 -->
+	<ForgingDragonStarting.description>Enables the production of several materials used by loongs, as well as their cuisine.</ForgingDragonStarting.description>
+	<!-- EN:
+    <li>subject->冶龍珍材</li>
+    <li>subject_story->窃取了冶龍的生产工艺与配方，后被四只穿着很少布的冶龍强者抓走，消失在一片热带雨林中</li>
+    <li>subject_gerund->加工冶龍珍材</li>
+  -->
+	<ForgingDragonStarting.generalRules.rulesStrings>
+		<li>subject->materials of loong</li>
+		<li>subject_story->stole the recipes loongs used</li>
+		<li>subject_gerund->processing material</li>
+	</ForgingDragonStarting.generalRules.rulesStrings>
+
+	<!-- EN: 上品兵器 -->
+	<ForgingDragonSuperiorWeapon.label>superior loong weapon</ForgingDragonSuperiorWeapon.label>
+	<!-- EN: 解锁锻造冶龍上品兵器的技术，更进一步的冶龍工匠将得到锻造长柄武器与研读冶龍传说的资格，但她们尚不了解这些传说中蕴含的力量。 -->
+	<ForgingDragonSuperiorWeapon.description>Enables the production of superior loong weapons, and taking a glance into the legendary powers.</ForgingDragonSuperiorWeapon.description>
+	<!-- EN:
+    <li>subject->上品兵器</li>
+    <li>subject_story->在一场战斗中缴获了数件精良的冶龍兵器</li>
+    <li>subject_gerund->锻造上品兵器</li>
+  -->
+	<ForgingDragonSuperiorWeapon.generalRules.rulesStrings>
+		<li>subject->superior loong weapons</li>
+		<li>subject_story->captured several exquisite loong weapons in battle</li>
+		<li>subject_gerund->forging superior weapons</li>
+	</ForgingDragonSuperiorWeapon.generalRules.rulesStrings>
+
+</LanguageData>

@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HediffDef Name="NY_MealHediffBase" ParentName="NY_HediffBase" Abstract="True">
+		<defaultLabelColor>(1,0.8,0.5)</defaultLabelColor>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-3</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="NY_MealHediffBase">
+		<defName>NY_hediff_MealLavishHigh</defName>
+		<label>饱腹振奋</label>
+		<description>升高的血糖与美妙的用餐体验使人精神振奋。</description>
+		<stages>
+			<li>
+				<statFactors>
+					<MoveSpeed>1.2</MoveSpeed>
+					<RestFallRateFactor>0.8</RestFallRateFactor>
+				</statFactors>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.2</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.2</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="NY_MealHediffBase">
+		<defName>NY_hediff_Dumpling</defName>
+		<label>美食力量（饺子）</label>
+		<description>饺子填饱了胃，人充满了力量。</description>
+		<stages>
+			<li>
+				<statFactors>
+					<MeleeDamageFactor>1.1</MeleeDamageFactor>
+				</statFactors>
+				<statOffsets>
+					<MeleeHitChance>5</MeleeHitChance>
+					<MeleeDodgeChance>5</MeleeDodgeChance>
+					<ShootingAccuracyPawn>5</ShootingAccuracyPawn>
+					<AimingDelayFactor>-0.2</AimingDelayFactor>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="NY_MealHediffBase">
+		<defName>NY_hediff_ChickenwithMushroom</defName>
+		<label>美食力量（小鸡炖蘑菇）</label>
+		<description>温热多汁的肉与菌菇驱散了寒意，也赶走了一部分“冷却”，蛤蛤。</description>
+		<stages>
+			<li>
+				<statFactors>
+					<MeleeCooldownFactor>0.75</MeleeCooldownFactor>
+					<RangedWeapon_Cooldown>0.75</RangedWeapon_Cooldown>
+				</statFactors>
+				<statOffsets>
+					<ComfyTemperatureMin>-25</ComfyTemperatureMin>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="NY_MealHediffBase">
+		<defName>NY_hediff_FishFlavoured</defName>
+		<label>美食力量（鱼香肉丝）</label>
+		<description>鱼香强化了视力，它并非真实，反而让人多了一丝坚强。</description>
+		<stages>
+			<li>
+				<painFactor>0.5</painFactor>
+				<statFactors>
+					<MeleeHitChance>1.5</MeleeHitChance>
+					<MeleeDodgeChance>1.5</MeleeDodgeChance>
+					<ShootingAccuracyPawn>1.5</ShootingAccuracyPawn>
+				</statFactors>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.2</offset>
+					</li>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>0.25</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="NY_MealHediffBase">
+		<defName>NY_hediff_LeekwithEgg</defName>
+		<label>美食力量（韭菜炒蛋）</label>
+		<description>韭菜与蛋都是富含生命力的食物，吃下它们的人自然能获得生命的祝福。</description>
+		<stages>
+			<li>
+				<painFactor>0.5</painFactor>
+				<totalBleedFactor>0.5</totalBleedFactor>
+				<statFactors>
+					<ImmunityGainSpeed>2</ImmunityGainSpeed>
+					<InjuryHealingFactor>2</InjuryHealingFactor>
+				</statFactors>
+				<statOffsets>
+					<ToxicResistance>1</ToxicResistance>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.2</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.25</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="NY_MealHediffBase">
+		<defName>NY_hediff_GreenPepper</defName>
+		<label>美食力量（青椒炒肉）</label>
+		<description>青椒炒肉非常下饭，吃饱后身体也变得更加强壮了，不过好像有点太饱了。</description>
+		<stages>
+			<li>
+				<painFactor>0.5</painFactor>
+				<hungerRateFactor>0.8</hungerRateFactor>
+				<statFactors>
+					<MoveSpeed>0.8</MoveSpeed>
+					<MeleeDamageFactor>1.2</MeleeDamageFactor>
+				</statFactors>
+				<statOffsets>
+					<ArmorRating_Blunt>0.6</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.6</ArmorRating_Sharp>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.2</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="NY_MealHediffBase">
+		<defName>NY_hediff_MapoTofu</defName>
+		<label>美食力量（麻婆豆腐）</label>
+		<description>麻婆豆腐实在太美味了，仿佛大脑都要被融化了，也许不是仿佛？</description>
+		<stages>
+			<li>
+				<painFactor>0.1</painFactor>
+				<blocksMentalBreaks>true</blocksMentalBreaks>
+				<statOffsets>
+					<Flammability>-1</Flammability>
+					<ComfyTemperatureMax>10</ComfyTemperatureMax>
+					<ComfyTemperatureMin>-10</ComfyTemperatureMin>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.3</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<disablesNeeds>
+			<li>Beauty</li>
+			<li>Comfort</li>
+		</disablesNeeds>
+	</HediffDef>
+
+	<HediffDef ParentName="NY_HediffBase">
+		<defName>NY_hediff_EatLotusRoot</defName>
+		<label>吃藕——丑</label>
+		<description>因为吃藕而被诅咒听上去很扯淡，但现在它确实发生了，到底是你运气不好还是你真的吃了很多藕？</description>
+		<stages>
+			<li>
+				<statOffsets>
+					<PawnBeauty>-2</PawnBeauty>
+				</statOffsets>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-1</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="NY_HediffBase">
+		<defName>NY_hediff_RandomShreds</defName>
+		<label>命运所“丝”</label>
+		<description>既然选择了这盘菜，那就看看你会迎接何种命运吧。</description>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-3</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+			<li Class="HediffCompProperties_GiveRandomSituationalThought">
+				<thoughtDefs>
+					<li>NY_RandomMood_Potato</li>
+					<li>NY_RandomMood_Both</li>
+					<li>NY_RandomMood_Ginger</li>
+				</thoughtDefs>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="NY_HediffBase">
+		<defName>NY_hediff_PlumJuice</defName>
+		<label>饮用酸梅汤</label>
+		<description>天气炎热，来一杯酸梅汤，清热消暑，缓解疲劳。</description>
+		<defaultLabelColor>(240,181,154)</defaultLabelColor>
+		<stages>
+			<li>
+				<painFactor>0.9</painFactor>
+				<statOffsets>
+					<ComfyTemperatureMax>10</ComfyTemperatureMax>
+				</statOffsets>
+				<statFactors>
+					<RestFallRateFactor>0.8</RestFallRateFactor>
+				</statFactors>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-6</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="NY_HediffBase">
+		<defName>NY_hediff_PlumGingerTea</defName>
+		<label>饮用话梅姜奶</label>
+		<description>天气寒冷，来一杯话梅姜奶，祛除寒气，思维活络。</description>
+		<defaultLabelColor>(240,181,154)</defaultLabelColor>
+		<stages>
+			<li>
+				<statOffsets>
+					<ComfyTemperatureMin>-10</ComfyTemperatureMin>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<postFactor>1.05</postFactor>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.1</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-3</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+	</HediffDef>
+</Defs>

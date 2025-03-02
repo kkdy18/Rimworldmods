@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<FacialAnimation.EmotionTypeDef>
+		<defName>SmeltedLoong_Emotion_Normal</defName>
+		<texPath>Things/Pawn/SmeltedLoong/Emotions/Normal</texPath>
+		<raceName>SmeltedLoong</raceName>
+		<shader>Map/Transparent</shader>
+	</FacialAnimation.EmotionTypeDef>
+</Defs>

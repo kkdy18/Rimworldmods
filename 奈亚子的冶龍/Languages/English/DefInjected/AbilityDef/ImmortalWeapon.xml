@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<!-- EN: 星芒神剑 -->
+	<NY_ability_StarSwordAir.label>celestial slash</NY_ability_StarSwordAir.label>
+	<!-- EN: 凝聚心神，自剑尖放出蕴含星宿神力的剑气，目标及目标周边一切事物都将遭到剑气打击。 -->
+	<NY_ability_StarSwordAir.description>Unleash a compressed slash with the power of stars, damage the target and everything around it.</NY_ability_StarSwordAir.description>
+
+	<!-- EN: 星落剑雨 -->
+	<NY_ability_StarSwordRain.label>celestial rain</NY_ability_StarSwordRain.label>
+	<!-- EN: 一次放出五道蕴含星宿神力的剑气，剑气如雨，此招式对神器消耗较大因此不能连续使用。 -->
+	<NY_ability_StarSwordRain.description>Projecting five slashed at once, exausting the weapon and need time to recover.</NY_ability_StarSwordRain.description>
+
+</LanguageData>

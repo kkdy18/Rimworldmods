@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--基础模板-->
+
+	<GeneDef Name="NY_DragonBodyGene" Abstract="True">
+		<descriptionHyperlinks>
+			<ThingDef>Meat_ForgingDragon</ThingDef>
+			<ThingDef>Leather_ForgingDragon</ThingDef>
+		</descriptionHyperlinks>
+		<biostatCpx>0</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<statFactors>
+			<Fertility>0.02</Fertility>
+			<LifespanFactor>6.25</LifespanFactor>
+		</statFactors>
+		<selectionWeight>0</selectionWeight>
+		<tattoosVisible>false</tattoosVisible>
+		<displayOrderInCategory>1</displayOrderInCategory>
+		<displayCategory>ForgingDragonGene</displayCategory>
+		<skinColorOverride>(250, 250, 250)</skinColorOverride>
+		<bodyType>Standard</bodyType>
+		<beardTagFilter>
+			<whitelist>true</whitelist>
+			<tags>
+				<li>NoBeard</li>
+			</tags>
+		</beardTagFilter>
+		<hairTagFilter>
+			<whitelist>true</whitelist>
+			<tags>
+				<li>ForgingDragonHair</li>
+			</tags>
+		</hairTagFilter>
+		<exclusionTags>
+			<li>Jaw</li>
+			<li>Fur</li>
+			<li>Nose</li>
+			<li>HairStyle</li>
+			<li>HeadType</li>
+			<li>BodyType</li>
+			<li>SkinColorOverride</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef ParentName="GeneHeadboneBase" Name="NY_DragonHornGene" Abstract="True">
+		<biostatCpx>0</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<selectionWeight>0</selectionWeight>
+		<displayOrderInCategory>2</displayOrderInCategory>
+		<displayCategory>ForgingDragonGene</displayCategory>
+		<randomChosen>true</randomChosen>
+		<exclusionTags>
+			<li>Horn</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef Name="NY_DragonTailGene" Abstract="True">
+		<biostatCpx>0</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<selectionWeight>0</selectionWeight>
+		<displayOrderInCategory>3</displayOrderInCategory>
+		<displayCategory>ForgingDragonGene</displayCategory>
+		<randomChosen>true</randomChosen>
+		<exclusionTags>
+			<li>Tail</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<!--冶龍基因-->
+
+	<GeneDef ParentName="NY_DragonBodyGene">
+		<defName>NY_gene_ForgingDragonBW</defName>
+		<label>青花瓷龙</label>
+		<description>决定冶龍亚种青花瓷种的性状的核心基因。\n\n冶龍的体内有着一类独特的生长发育调控基因，它们也导致了冶龍的单性别族群以及冶龍后代会完全遗传母亲基因等现象的形成，该基因在冶龍漫长的演化中不断迭代，最终变得极度稳定，任何与其相斥的基因都会被其无效化。</description>
+		<descriptionHyperlinks>
+			<HediffDef>NY_hediff_ForgingDragonBW</HediffDef>
+			<TraitDef>NY_trait_SkinBW</TraitDef>
+		</descriptionHyperlinks>
+		<iconPath>UI/Genes/NY_ForgingDragon</iconPath>
+		<biostatCpx>3</biostatCpx>
+		<biostatMet>4</biostatMet>
+		<statOffsets>
+			<ComfyTemperatureMin>-18</ComfyTemperatureMin>
+			<ComfyTemperatureMax>174</ComfyTemperatureMax>
+		</statOffsets>
+		<forcedHeadTypes>
+			<li>ForgingDragonHeadBW</li>
+			<li>ForgingDragonHeadBW_A</li>
+			<li>ForgingDragonHeadBW_B</li>
+			<li>ForgingDragonHeadBW_C</li>
+		</forcedHeadTypes>
+		<forcedTraits>
+			<li>
+				<def>NY_trait_SkinBW</def>
+			</li>
+		</forcedTraits>
+		<modExtensions>
+			<li Class="ForgingDragon.DragonGene">
+				<forceFemale>true</forceFemale>
+				<GhoulDragon>true</GhoulDragon>
+				<hediff>NY_hediff_ForgingDragonBW</hediff>
+				<customMeat>Meat_ForgingDragon</customMeat>
+				<customLeather>Leather_ForgingDragon</customLeather>
+				<forcedBodyTypeBaby>ForgingDragonBodyBaby</forcedBodyTypeBaby>
+				<forcedBodyTypeChild>ForgingDragonBodyBW_Child</forcedBodyTypeChild>
+				<forcedBodyType>ForgingDragonBodyBW</forcedBodyType>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="NY_DragonHornGene">
+		<defName>NY_gene_ForgingDragonHornBW</defName>
+		<label>龙角青</label>
+		<description>青花瓷种冶龍会长出宛如青色陶瓷的龙角，由于青花瓷种冶龍的基因丰富度较低这种角几乎不存在变种。</description>
+		<iconPath>UI/Genes/NY_DragonHorn</iconPath>
+		<prerequisite>NY_gene_ForgingDragonBW</prerequisite>
+		<renderNodeProperties>
+			<li>
+				<texPath>Things/Pawn/HeadAttachments/ForgingDragonHornBW</texPath>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<parentTagDef>Head</parentTagDef>
+				<colorType>Custom</colorType>
+				<useSkinShader>false</useSkinShader>
+				<visibleFacing>
+					<li>East</li>
+					<li>South</li>
+					<li>West</li>
+					<li>North</li>
+				</visibleFacing>
+				<drawData>
+					<defaultData>
+						<layer>71</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>49</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+
+	<GeneDef ParentName="NY_DragonTailGene">
+		<defName>NY_gene_ForgingDragonTailBW</defName>
+		<label>龙尾青</label>
+		<description>青花瓷种冶龍会长出一根柔中带刚的青蓝色大尾巴，摸起来冰冰的，夏天可以抱着睡觉。</description>
+		<iconPath>UI/Genes/NY_DragonTail</iconPath>
+		<prerequisite>NY_gene_ForgingDragonBW</prerequisite>
+		<minAgeActive>3</minAgeActive>
+		<modExtensions>
+			<li Class="ForgingDragon.DragonGene">
+				<hediff>NY_hediff_DragonTailBW</hediff>
+				<bodyPart>Spine</bodyPart>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="NY_DragonBodyGene">
+		<defName>NY_gene_ForgingDragonCB</defName>
+		<label>纯种龙</label>
+		<description>决定冶龍纯种的性状的核心基因。\n\n冶龍的体内有着一类独特的生长发育调控基因，它们也导致了冶龍的单性别族群以及冶龍后代会完全遗传母亲基因等现象的形成，该基因在冶龍漫长的演化中不断迭代，最终变得极度稳定，任何与其相斥的基因都会被其无效化。</description>
+		<descriptionHyperlinks>
+			<HediffDef>NY_hediff_ForgingDragonCB</HediffDef>
+			<AbilityDef>NY_ability_LoongFireSpew</AbilityDef>
+			<AbilityDef>NY_ability_LoongFrenzy</AbilityDef>
+		</descriptionHyperlinks>
+		<iconPath>UI/Genes/NY_ForgingDragon</iconPath>
+		<biostatCpx>3</biostatCpx>
+		<biostatMet>4</biostatMet>
+		<statOffsets>
+			<ComfyTemperatureMin>-26</ComfyTemperatureMin>
+			<ComfyTemperatureMax>14</ComfyTemperatureMax>
+			<MaxNutrition>0.5</MaxNutrition>
+		</statOffsets>
+		<forcedHeadTypes>
+			<li>ForgingDragonHeadCB</li>
+			<li>ForgingDragonHeadCB_A</li>
+			<li>ForgingDragonHeadCB_B</li>
+			<li>ForgingDragonHeadCB_C</li>
+		</forcedHeadTypes>
+		<forcedTraits>
+			<li>
+				<def>Tough</def>
+			</li>
+		</forcedTraits>
+		<abilities>
+			<li>NY_ability_LoongFireSpew</li>
+			<li>NY_ability_LoongFrenzy</li>
+		</abilities>
+		<!--<renderNodeProperties>
+			<li Class="ForgingDragon.PawnRenderNodeProperties_Emoticon">
+				<debugLabel></debugLabel>
+				<defaultEmoticon>Things/Pawn/Emoticons/ForgingDragonCB/normal</defaultEmoticon>
+				<blinkEmoticon>Things/Pawn/Emoticons/ForgingDragonCB/close</blinkEmoticon>
+				<overrideMeshSize>1</overrideMeshSize>
+				<drawSize>1.45</drawSize>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<useRottenColor>true</useRottenColor>
+				<useSkinShader>true</useSkinShader>
+				<baseLayer>55</baseLayer>
+			</li>
+		</renderNodeProperties>-->
+		<modExtensions>
+			<li Class="ForgingDragon.DragonGene">
+				<forceFemale>true</forceFemale>
+				<GhoulDragon>true</GhoulDragon>
+				<hediff>NY_hediff_ForgingDragonCB</hediff>
+				<customMeat>Meat_ForgingDragon</customMeat>
+				<customLeather>Leather_ForgingDragon</customLeather>
+				<forcedBodyTypeBaby>ForgingDragonBodyBaby</forcedBodyTypeBaby>
+				<forcedBodyTypeChild>ForgingDragonBodyCB_Child</forcedBodyTypeChild>
+				<forcedBodyType>ForgingDragonBodyCB</forcedBodyType>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="NY_DragonHornGene">
+		<defName>NY_gene_ForgingDragonHornCB</defName>
+		<label>龙角翠</label>
+		<description>纯种冶龍会长出各种各样的角，比如绿中透黄的琉璃角，华丽精美的珍珠角，似乎还有一种生姜角，但最好别当着冶龍的面提这个称谓，她们不喜欢，相当不喜欢。</description>
+		<iconPath>UI/Genes/NY_DragonHorn</iconPath>
+		<prerequisite>NY_gene_ForgingDragonCB</prerequisite>
+		<renderNodeProperties>
+			<li>
+				<texPaths>
+					<li>Things/Pawn/HeadAttachments/NY_LoongHornCB/ForgingDragonHornCB</li>
+					<li>Things/Pawn/HeadAttachments/NY_LoongHornCB/ForgingDragonHornCB1</li>
+					<li>Things/Pawn/HeadAttachments/NY_LoongHornCB/ForgingDragonHornCB2</li>
+				</texPaths>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<parentTagDef>Head</parentTagDef>
+				<colorType>Custom</colorType>
+				<useSkinShader>false</useSkinShader>
+				<visibleFacing>
+					<li>East</li>
+					<li>South</li>
+					<li>West</li>
+					<li>North</li>
+				</visibleFacing>
+				<drawData>
+					<defaultData>
+						<layer>71</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>49</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+
+	<GeneDef ParentName="NY_DragonTailGene">
+		<defName>NY_gene_ForgingDragonTailCB</defName>
+		<label>龙尾翠</label>
+		<description>纯种冶龍会长出一根粗壮的翠绿色大尾巴，肌肉发达的尾巴如果甩到人身上大概会筋断骨折。</description>
+		<iconPath>UI/Genes/NY_DragonTail</iconPath>
+		<prerequisite>NY_gene_ForgingDragonCB</prerequisite>
+		<minAgeActive>3</minAgeActive>
+		<modExtensions>
+			<li Class="ForgingDragon.DragonGene">
+				<hediff>NY_hediff_DragonTailCB</hediff>
+				<bodyPart>Spine</bodyPart>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="NY_DragonBodyGene">
+		<defName>NY_gene_ForgingDragonWJ</defName>
+		<label>白玉龙</label>
+		<description>决定冶龍亚种白玉种的性状的核心基因。\n\n冶龍的体内有着一类独特的生长发育调控基因，它们也导致了冶龍的单性别族群以及冶龍后代会完全遗传母亲基因等现象的形成，该基因在冶龍漫长的演化中不断迭代，最终变得极度稳定，任何与其相斥的基因都会被其无效化。</description>
+		<descriptionHyperlinks>
+			<HediffDef>NY_hediff_ForgingDragonWJ</HediffDef>
+			<TraitDef>NY_trait_EyeWJ</TraitDef>
+			<AbilityDef>NY_ability_LoongSmoke</AbilityDef>
+		</descriptionHyperlinks>
+		<iconPath>UI/Genes/NY_ForgingDragon</iconPath>
+		<biostatCpx>3</biostatCpx>
+		<biostatMet>4</biostatMet>
+		<statOffsets>
+			<ComfyTemperatureMin>-21</ComfyTemperatureMin>
+			<ComfyTemperatureMax>14</ComfyTemperatureMax>
+		</statOffsets>
+		<forcedHeadTypes>
+			<li>ForgingDragonHeadWJ</li>
+			<li>ForgingDragonHeadWJ_A</li>
+			<li>ForgingDragonHeadWJ_B</li>
+			<li>ForgingDragonHeadWJ_C</li>
+		</forcedHeadTypes>
+		<forcedTraits>
+			<li>
+				<def>NY_trait_EyeWJ</def>
+			</li>
+		</forcedTraits>
+		<abilities>
+			<li>NY_ability_LoongSmoke</li>
+		</abilities>
+		<modExtensions>
+			<li Class="ForgingDragon.DragonGene">
+				<forceFemale>true</forceFemale>
+				<GhoulDragon>true</GhoulDragon>
+				<hediff>NY_hediff_ForgingDragonWJ</hediff>
+				<customMeat>Meat_ForgingDragon</customMeat>
+				<customLeather>Leather_ForgingDragon</customLeather>
+				<forcedBodyTypeBaby>ForgingDragonBodyBaby</forcedBodyTypeBaby>
+				<forcedBodyTypeChild>ForgingDragonBodyWJ_Child</forcedBodyTypeChild>
+				<forcedBodyType>ForgingDragonBodyWJ</forcedBodyType>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="NY_DragonHornGene">
+		<defName>NY_gene_ForgingDragonHornWJ</defName>
+		<label>龙角玉</label>
+		<description>白玉种冶龍的角摸起来冰冰的，质感与色泽如玉石一般，不像寻常的角质。</description>
+		<iconPath>UI/Genes/NY_DragonHorn</iconPath>
+		<prerequisite>NY_gene_ForgingDragonWJ</prerequisite>
+		<renderNodeProperties>
+			<li>
+				<texPath>Things/Pawn/HeadAttachments/ForgingDragonHornWJ</texPath>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<parentTagDef>Head</parentTagDef>
+				<colorType>Custom</colorType>
+				<useSkinShader>false</useSkinShader>
+				<visibleFacing>
+					<li>East</li>
+					<li>South</li>
+					<li>West</li>
+					<li>North</li>
+				</visibleFacing>
+				<drawData>
+					<defaultData>
+						<layer>71</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>49</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+
+	<GeneDef ParentName="NY_DragonTailGene">
+		<defName>NY_gene_ForgingDragonTailWJ</defName>
+		<label>龙尾玉</label>
+		<description>白玉种冶龍的尾巴与纯种冶龍的尾巴相似，但尾巴的鳞片颜色偏白并且长着洁白的毛。</description>
+		<iconPath>UI/Genes/NY_DragonTail</iconPath>
+		<prerequisite>NY_gene_ForgingDragonWJ</prerequisite>
+		<minAgeActive>3</minAgeActive>
+		<modExtensions>
+			<li Class="ForgingDragon.DragonGene">
+				<hediff>NY_hediff_DragonTailWJ</hediff>
+				<bodyPart>Spine</bodyPart>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="NY_DragonBodyGene">
+		<defName>NY_gene_ForgingDragonPC</defName>
+		<label>剪纸龙</label>
+		<description>决定冶龍亚种剪纸种的性状的核心基因。\n\n冶龍的体内有着一类独特的生长发育调控基因，它们也导致了冶龍的单性别族群以及冶龍后代会完全遗传母亲基因等现象的形成，该基因在冶龍漫长的演化中不断迭代，最终变得极度稳定，任何与其相斥的基因都会被其无效化。</description>
+		<descriptionHyperlinks>
+			<HediffDef>NY_hediff_ForgingDragonPC</HediffDef>
+			<TraitDef>NY_trait_BeautyPC</TraitDef>
+		</descriptionHyperlinks>
+		<iconPath>UI/Genes/NY_ForgingDragon</iconPath>
+		<biostatCpx>3</biostatCpx>
+		<biostatMet>4</biostatMet>
+		<preventPermanentWounds>true</preventPermanentWounds>
+		<statOffsets>
+			<ComfyTemperatureMin>-26</ComfyTemperatureMin>
+			<ComfyTemperatureMax>14</ComfyTemperatureMax>
+		</statOffsets>
+		<forcedHeadTypes>
+			<li>ForgingDragonHeadPC</li>
+			<li>ForgingDragonHeadPC_A</li>
+			<li>ForgingDragonHeadPC_B</li>
+			<li>ForgingDragonHeadPC_C</li>
+		</forcedHeadTypes>
+		<forcedTraits>
+			<li>
+				<def>NY_trait_BeautyPC</def>
+			</li>
+		</forcedTraits>
+		<modExtensions>
+			<li Class="ForgingDragon.DragonGene">
+				<forceFemale>true</forceFemale>
+				<GhoulDragon>true</GhoulDragon>
+				<hediff>NY_hediff_ForgingDragonPC</hediff>
+				<customMeat>Meat_ForgingDragon</customMeat>
+				<customLeather>Leather_ForgingDragon</customLeather>
+				<forcedBodyTypeBaby>ForgingDragonBodyBaby</forcedBodyTypeBaby>
+				<forcedBodyTypeChild></forcedBodyTypeChild>
+				<forcedBodyType>ForgingDragonBodyPC</forcedBodyType>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="NY_DragonHornGene">
+		<defName>NY_gene_ForgingDragonHornPC</defName>
+		<label>龙角红</label>
+		<description>剪纸种冶龍的角细看有淡淡的花纹，非常漂亮，虽然变种不多，但也是冶龍的龙角选美中的有力竞争者。</description>
+		<iconPath>UI/Genes/NY_DragonHorn</iconPath>
+		<prerequisite>NY_gene_ForgingDragonPC</prerequisite>
+		<renderNodeProperties>
+			<li>
+				<texPath>Things/Pawn/HeadAttachments/ForgingDragonHornPC</texPath>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<parentTagDef>Head</parentTagDef>
+				<colorType>Custom</colorType>
+				<useSkinShader>false</useSkinShader>
+				<visibleFacing>
+					<li>East</li>
+					<li>South</li>
+					<li>West</li>
+					<li>North</li>
+				</visibleFacing>
+				<drawData>
+					<defaultData>
+						<layer>71</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>49</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+
+	<GeneDef ParentName="NY_DragonTailGene">
+		<defName>NY_gene_ForgingDragonTailPC</defName>
+		<label>龙尾红</label>
+		<description>剪纸种冶龍会长出生有薄膜状组织的红色尾巴，尾巴上类似剪纸的结构是人为修剪的结果，据说在冶龍的故乡存在和理发师类似的职业剪尾师。</description>
+		<iconPath>UI/Genes/NY_DragonTail</iconPath>
+		<prerequisite>NY_gene_ForgingDragonPC</prerequisite>
+		<minAgeActive>3</minAgeActive>
+		<modExtensions>
+			<li Class="ForgingDragon.DragonGene">
+				<hediff>NY_hediff_DragonTailPC</hediff>
+				<bodyPart>Spine</bodyPart>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>NY_gene_ForgingDragonMilk</defName>
+		<label>龙涎香</label>
+		<description>成年冶龍会分泌一种名为龙涎香的乳汁，据说有着特殊的香气，是世间少有的珍馐。</description>
+		<iconPath>Things/Item/NY_DragonMilk/NY_DragonMilk_c</iconPath>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<displayOrderInCategory>4</displayOrderInCategory>
+		<displayCategory>ForgingDragonGene</displayCategory>
+		<minAgeActive>13</minAgeActive>
+		<exclusionTags>
+		</exclusionTags>
+		<modExtensions>
+			<li Class="ForgingDragon.DragonGene">
+				<hediff>NY_hediff_DragonMilk</hediff>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>NY_gene_LoongFireResistant</defName>
+		<label>避火龙鳞</label>
+		<description>据说纯种冶龍的皮肤表面覆盖着细密的透明鳞片，隔热效果良好的龙鳞结合特殊的阻燃分泌物保护着冶龍的身体免受火焰伤害。</description>
+		<iconPath>UI/Genes/NY_LoongFireResistant</iconPath>
+		<biostatCpx>3</biostatCpx>
+		<biostatMet>-4</biostatMet>
+		<displayOrderInCategory>4</displayOrderInCategory>
+		<displayCategory>ForgingDragonGene</displayCategory>
+		<statFactors>
+			<Flammability>0</Flammability>
+		</statFactors>
+		<statOffsets>
+			<ArmorRating_Heat>2</ArmorRating_Heat>
+		</statOffsets>
+		<exclusionTags>
+			<li>FireDamage</li>
+		</exclusionTags>
+	</GeneDef>
+	
+	<!--食尸鬼基因-->
+	<GeneDef>
+		<defName>NY_gene_ForgingDragonGhoul</defName>
+		<label>尸龙身</label>
+		<description>冶龍被转化为食尸鬼后激活的隐性基因。</description>
+		<descriptionHyperlinks>
+			<HediffDef MayRequire="Ludeon.RimWorld.Anomaly">NY_hediff_GhoulDragon</HediffDef>
+		</descriptionHyperlinks>
+		<iconPath>UI/Genes/NY_GhoulDragon</iconPath>
+		<displayOrderInCategory>1</displayOrderInCategory>
+		<displayCategory>ForgingDragonGene</displayCategory>
+		<canGenerateInGeneSet>false</canGenerateInGeneSet>
+		<selectionWeight>0</selectionWeight>
+		<biostatCpx>0</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<renderNodeProperties>
+			<li>
+				<texPaths>
+					<li>Things/Pawn/HeadAttachments/ForgingDragonHornGhoul</li>
+				</texPaths>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<parentTagDef>Head</parentTagDef>
+				<colorType>Custom</colorType>
+				<useSkinShader>false</useSkinShader>
+				<visibleFacing>
+					<li>East</li>
+					<li>South</li>
+					<li>West</li>
+					<li>North</li>
+				</visibleFacing>
+				<drawData>
+					<defaultData>
+						<layer>71</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>49</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+		<exclusionTags>
+			<li>Horn</li>
+			<li>Tail</li>
+		</exclusionTags>
+		<modExtensions>
+			<li Class="ForgingDragon.DragonGene">
+				<hediff MayRequire="Ludeon.RimWorld.Anomaly">NY_hediff_GhoulDragon</hediff>
+			</li>
+		</modExtensions>
+	</GeneDef>
+</Defs>

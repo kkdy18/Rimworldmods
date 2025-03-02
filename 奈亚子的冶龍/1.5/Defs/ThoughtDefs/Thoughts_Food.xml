@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThoughtDef>
+		<defName>NY_DrinkDragonMilk</defName>
+		<durationDays>0.5</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			<li>
+				<label>喝了龙涎香</label>
+				<description>一股奇特的奶香。</description>
+				<baseMoodEffect>4</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>NY_AteForgingDragonMeat</defName>
+		<showBubble>true</showBubble>
+		<icon>Things/Mote/ThoughtSymbol/Food</icon>
+		<durationDays>7</durationDays>
+		<nullifyingTraits>
+			<li>Cannibal</li>
+		</nullifyingTraits>
+		<nullifyingHediffs>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">Inhumanized</li>
+		</nullifyingHediffs>
+		<stages>
+			<li>
+				<label>吃了冶龍肉</label>
+				<description>我能听到那些死去的冶龍恶毒的诅咒，血肉被吞食的怨恨永不终结。</description>
+				<baseMoodEffect>-20</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>NY_ForgingDragonMeatIngredient</defName>
+		<showBubble>true</showBubble>
+		<icon>Things/Mote/ThoughtSymbol/Food</icon>
+		<durationDays>3</durationDays>
+		<nullifyingHediffs>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">Inhumanized</li>
+		</nullifyingHediffs>
+		<stages>
+			<li>
+				<label>吃了烹饪过的冶龍肉</label>
+				<description>她们的肉被烹饪之后居然有些美味多汁，但我还是有点反胃。</description>
+				<baseMoodEffect>-2</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>NY_EatRawPlum</defName>
+		<durationDays>0.1</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			<li>
+				<label>吃了新鲜梅子</label>
+				<description>栓栓的梅子，好次。</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>NY_EatPreservedPlum</defName>
+		<durationDays>0.5</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			<li>
+				<label>吃了话梅</label>
+				<description>酸甜可口，果肉紧致，超好吃。</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>NY_EatRawGinger</defName>
+		<durationDays>0.1</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			<li>
+				<label>吃了生姜</label>
+				<description>好辣，感觉像在嚼树枝，我们就不能吃点正常植物吗？</description>
+				<baseMoodEffect>-4</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>NY_RandomMood_Potato</defName>
+		<workerClass>ThoughtWorker_HediffThoughtRandom</workerClass>
+		<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+		<hediff>NY_hediff_RandomShreds</hediff>
+		<labelInBracketsExtraForHediff>土豆丝</labelInBracketsExtraForHediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>吃了一盘土豆丝</label>
+				<description>土豆丝的味道很不错，而且我没吃到姜，完美！</description>
+				<baseMoodEffect>4</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>NY_RandomMood_Both</defName>
+		<workerClass>ThoughtWorker_HediffThoughtRandom</workerClass>
+		<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+		<hediff>NY_hediff_RandomShreds</hediff>
+		<labelInBracketsExtraForHediff>双丝</labelInBracketsExtraForHediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>吃到土豆丝里的姜丝</label>
+				<description>当我咬到某种坚韧的事物时，嘴里弥漫开的姜味让我明白为时已晚。</description>
+				<baseMoodEffect>-4</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>NY_RandomMood_Ginger</defName>
+		<workerClass>ThoughtWorker_HediffThoughtRandom</workerClass>
+		<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+		<hediff>NY_hediff_RandomShreds</hediff>
+		<labelInBracketsExtraForHediff>姜丝</labelInBracketsExtraForHediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>吃了一盘姜丝</label>
+				<description>不是，为什么这里有一盘没有土豆的姜丝。</description>
+				<baseMoodEffect>-14</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>NY_EatMapoTofu</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>NY_hediff_MapoTofu</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+		<stages>
+			<li>
+				<label>吃了麻婆豆腐</label>
+				<description>好辣，好好吃……</description>
+				<baseMoodEffect>30</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>NY_DrinkPlumJuice</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>NY_hediff_PlumJuice</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<stages>
+			<li>
+				<label>喝了酸梅汤</label>
+				<description>只嚷干喝，要吃酸梅汤！</description>
+				<baseMoodEffect>8</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>NY_DrinkPlumGingerTea</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>NY_hediff_PlumGingerTea</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<stages>
+			<li>
+				<label>喝了话梅姜奶</label>
+				<description>全身都热乎起来了！</description>
+				<baseMoodEffect>12</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<!-- EN: 冶龍新家园 -->
+	<NY_ForgingDragonPlayer.label>loong's new nest</NY_ForgingDragonPlayer.label>
+	<!-- EN: 因种种原因脱离了族群寻找新生活的冶龍们。 -->
+	<NY_ForgingDragonPlayer.description>Loongs left their previous societies for a new life.</NY_ForgingDragonPlayer.description>
+	<!-- EN: leader -->
+	<NY_ForgingDragonPlayer.leaderTitle>leader</NY_ForgingDragonPlayer.leaderTitle>
+	<!-- EN: 拓乡者 -->
+	<NY_ForgingDragonPlayer.pawnSingular>explorer</NY_ForgingDragonPlayer.pawnSingular>
+	<!-- EN: 拓乡者们 -->
+	<NY_ForgingDragonPlayer.pawnsPlural>explorers</NY_ForgingDragonPlayer.pawnsPlural>
+
+	<!-- EN: 冶龍寻圣盟 -->
+	<NY_ForgingDragonUnion.label>Loyal union of loong</NY_ForgingDragonUnion.label>
+	<!-- EN: 为寻找所谓“圣旨”来到边缘世界的冶龍所组成的松散联盟，对外态度并不友好，虽然组织混乱，科技落后，但冶龍优秀的个体素质与生产能力结合冶龍文明的深厚底蕴依然支撑起了一个不可轻视的庞然大物。 -->
+	<NY_ForgingDragonUnion.description>A loose organization united by the shared goal of searching for the "emperor's command".They're unfriendly to outsiders, their organization is disarranged, their technology is outdated, but these shortcomings are overcame by their cultural heritages, the superior individual strength of loongs, and the productivity derived from it.</NY_ForgingDragonUnion.description>
+	<!-- EN: 寻圣盟 -->
+	<NY_ForgingDragonUnion.fixedName>Loyal union of loong</NY_ForgingDragonUnion.fixedName>
+	<!-- EN: 盟主 -->
+	<NY_ForgingDragonUnion.leaderTitle>union leader</NY_ForgingDragonUnion.leaderTitle>
+	<!-- EN: 冶龍 -->
+	<NY_ForgingDragonUnion.pawnSingular>loong</NY_ForgingDragonUnion.pawnSingular>
+	<!-- EN: 冶龍 -->
+	<NY_ForgingDragonUnion.pawnsPlural>loongs</NY_ForgingDragonUnion.pawnsPlural>
+
+</LanguageData>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<!-- EN: 离群冶龍 -->
+	<NY_DragonAlone.label>stray loong</NY_DragonAlone.label>
+
+	<!-- EN: 两脚阉羊 -->
+	<NY_DragonSlaveHuman.label>castrated slave</NY_DragonSlaveHuman.label>
+
+	<!-- EN: 罪身冶龍 -->
+	<NY_ForgingDragonSinner.label>enslaved sinner</NY_ForgingDragonSinner.label>
+
+</LanguageData>

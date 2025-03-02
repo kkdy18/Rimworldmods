@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<TraderKindDef>
+		<defName>NY_Base_ForgingDragon</defName>
+		<stockGenerators>
+			<!-- Resources -->
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Silver</thingDef>
+				<countRange>2000~5000</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>WoodLog</thingDef>
+				<countRange>400~700</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Cloth</thingDef>
+				<countRange>400~600</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Gold</thingDef>
+				<countRange>100~200</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>MedicineHerbal</thingDef>
+				<countRange>25~50</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>NY_ImmortalIron</thingDef>
+				<price>Exorbitant</price>
+				<countRange>1~2</countRange>
+			</li>
+			<li Class="StockGenerator_Category">
+				<categoryDef>NY_Resources</categoryDef>
+				<excludedThingDefs>
+					<li>NY_ImmortalIron</li>
+				</excludedThingDefs>
+				<thingDefCountRange>2~3</thingDefCountRange>
+				<totalPriceRange>200~600</totalPriceRange>
+			</li>
+			<li Class="StockGenerator_Category">
+				<categoryDef>ResourcesRaw</categoryDef>
+				<price>Cheap</price>
+				<thingDefCountRange>1~3</thingDefCountRange>
+				<totalPriceRange>400~800</totalPriceRange>
+			</li>
+			<li Class="StockGenerator_Category">
+				<categoryDef>ResourcesRaw</categoryDef>
+				<price>Expensive</price>
+				<thingDefCountRange>2~4</thingDefCountRange>
+				<totalPriceRange>400~800</totalPriceRange>
+			</li>
+			<li Class="StockGenerator_Category">
+				<categoryDef>Textiles</categoryDef>
+				<thingDefCountRange>1~2</thingDefCountRange>
+				<totalPriceRange>400~800</totalPriceRange>
+			</li>
+			<li Class="StockGenerator_Category">
+				<categoryDef>FoodRaw</categoryDef>
+				<excludedCategories>
+					<li>EggsFertilized</li>
+				</excludedCategories>
+				<thingDefCountRange>3~6</thingDefCountRange>
+				<totalPriceRange>800~1600</totalPriceRange>
+			</li>
+			<li Class="StockGenerator_Category">
+				<categoryDef>NY_DragonPlantRaw</categoryDef>
+				<thingDefCountRange>1~3</thingDefCountRange>
+				<totalPriceRange>800~1600</totalPriceRange>
+			</li>
+			<li Class="StockGenerator_Category">
+				<categoryDef>NY_DragonFood</categoryDef>
+				<thingDefCountRange>4~5</thingDefCountRange>
+				<totalPriceRange>800~1600</totalPriceRange>
+			</li>
+			<!-- Weapons -->
+			<li Class="StockGenerator_MarketValue">
+				<tradeTag>ForgingDragonWeapon</tradeTag>
+				<countRange>3~6</countRange>
+			</li>
+			<!-- Slaves -->
+			<li Class="ForgingDragon.StockGenerator_SlavesofDragon">
+				<countRange>5~9</countRange>
+				<slaveKindDef>NY_DragonSlaveHuman</slaveKindDef>
+			</li>
+			<!-- Animals -->
+			<li Class="StockGenerator_Animals">
+				<tradeTagsSell>
+					<li>AnimalFarm</li>
+					<li>AnimalPet</li>
+				</tradeTagsSell>
+				<tradeTagsBuy>
+					<li>AnimalUncommon</li>
+					<li>AnimalExotic</li>
+				</tradeTagsBuy>
+				<kindCountRange>2~4</kindCountRange>
+				<countRange>3~8</countRange>
+				<createMatingPair>
+					<li>AnimalFarm</li>
+				</createMatingPair>
+			</li>
+			<!-- Buildings -->
+			<li Class="StockGenerator_MarketValue">
+				<tradeTag>Art</tradeTag>
+				<countRange>3~4</countRange>
+			</li>
+			
+			<li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
+				<thingDef>ArchiteCapsule</thingDef>
+				<countRange>2~8</countRange>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
+				<thingDef>DeathrestCapacitySerum</thingDef>
+				<countRange>2~4</countRange>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly" Class="StockGenerator_SingleDef">
+				<thingDef>Apparel_CultistMask</thingDef>
+				<countRange>1~2</countRange>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly" Class="StockGenerator_SingleDef">
+				<thingDef>Apparel_CeremonialCultistMask</thingDef>
+				<countRange>1~2</countRange>
+			</li>
+
+			<!-- Buying -->
+			<li Class="StockGenerator_BuyExpensiveSimple" />
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>Art</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>ImplantEmpireCommon</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>ImplantEmpireRoyal</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>MusicalInstrument</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>UtilitySpecial</tag>
+			</li>
+			<li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly">
+				<thingDef>Shell_Deadlife</thingDef>
+			</li>
+			<li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly">
+				<thingDef>VoidSculpture</thingDef>
+			</li>
+			<li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly">
+				<thingDef>Shard</thingDef>
+			</li>
+			<li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly">
+				<thingDef>Bioferrite</thingDef>
+			</li>
+			<li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly">
+				<thingDef>RevenantSpine</thingDef>
+			</li>
+		</stockGenerators>
+	</TraderKindDef>
+</Defs>

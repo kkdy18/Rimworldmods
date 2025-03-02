@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<FacialAnimation.FaceAnimationDef>
+		<defName>Goto_SmeltedLoong</defName>
+		<raceName>SmeltedLoong</raceName>
+		<animationFrames>
+			<li>
+				<duration>1</duration>
+				<mouthShapeDef>normal</mouthShapeDef>
+				<headOffset>(0.0,0,-0.0025)</headOffset>
+			</li>
+		</animationFrames>
+		<targetJobs>
+			<li>Goto</li>
+		</targetJobs>
+		<priority>10300</priority>
+	</FacialAnimation.FaceAnimationDef>
+</Defs>

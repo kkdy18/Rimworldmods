@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<!-- EN: 冶龍鳞 -->
+	<Leather_ForgingDragon.label>loong scale</Leather_ForgingDragon.label>
+	<!-- EN: 冶龍的软鳞，处理过后可以当作皮革使用。 -->
+	<Leather_ForgingDragon.description>The soft scale of loong, can be used as a leathery material.</Leather_ForgingDragon.description>
+
+	<!-- EN: 冶龍肉 -->
+	<Meat_ForgingDragon.label>loong meat</Meat_ForgingDragon.label>
+	<!-- EN: 冶龍的血肉，它最好不要出现在餐桌上。\n\n冶龍仍是人类的一支，但她们的生物特性确实已经与智人相去甚远，对于人类，她们究竟是陌路相逢的同胞还是似曾相识的异类。 -->
+	<Meat_ForgingDragon.description>The flesh and meat of loong, a terrifying sight on the dining table.</Meat_ForgingDragon.description>
+
+	<!-- EN: 精血 -->
+	<NY_BloodEssence.label>blood essence</NY_BloodEssence.label>
+	<!-- EN: 血本源于先天之精，而生成于后天饮食水谷，在冶龍的理论中，精血是一切血肉生物的生命精华，可用于成就不可思议的功业，但精血的获取必然伴随生命的衰亡，难道大功业与血海杀孽必然是一体两面？ -->
+	<NY_BloodEssence.description>The essence of life, can be used in miraculous crafts.</NY_BloodEssence.description>
+
+	<!-- EN: 碧琉璃 -->
+	<NY_GreenGlaze.label>green glaze</NY_GreenGlaze.label>
+	<!-- EN: 以翡翠为原料，由冶龍技术高温烧制而成的一种稀有装饰品，色彩流云漓彩，质地晶莹剔透，对冶龍来说是那不是宝石但胜过一切宝石的珍宝。 -->
+	<NY_GreenGlaze.description>An decorative material created by heating jade in a klin. Vibrant in color and transparet in texture, this material is prized among loongs.</NY_GreenGlaze.description>
+
+	<!-- EN: 神珍铁 -->
+	<NY_ImmortalIron.label>immortalite</NY_ImmortalIron.label>
+	<!-- EN: 被冶龍严密保管的奇特金属，是名为“神兵”的战略武器的核心素材。神珍铁的物理性质与寻常金属相差极大，一般情况下无法用于神兵以外的物品的制作。 -->
+	<NY_ImmortalIron.description>An exotic metallic material, considered as top secret by loongs and used in their legendary weapons. This material requires specialized processing which seldom fits in other recipes.</NY_ImmortalIron.description>
+
+	<!-- EN: 藕丝绢 -->
+	<NY_LotusRootSilk.label>lotus root silk</NY_LotusRootSilk.label>
+	<!-- EN: 以冶龍莲藕中的特殊纤维为原料织成的洁白织物，质地坚韧且有冬暖夏凉，水火不侵的神奇特性。\n\n藕丝绢的产量始终是供不应求，冶龍们在留下种植粮食作物的土地后渴望在触手可及的一切土地种满冶龍莲，有智者曾预言这种狂热终会孕育出毁灭大地的灾厄“藕丝之灾”，千年之前匠人在藕丝绢中掺入棉丝制出了更多的藕丝绢抑制了这份狂热，百年之前开拓者揭示了大地之外星辰的本质，希望用无限的土地将那灾厄推延至无穷远的未来。 -->
+	<NY_LotusRootSilk.description>A white textile made from the fiber within lotus roots. It is strong and insulating against code and heat.\n\nLow production rate and high demand caused ancient loongs to turn every patch of ground into lotus fields, until the technique of blending cotton was invented.</NY_LotusRootSilk.description>
+
+	<!-- EN: 赤炼铁 -->
+	<NY_RedIron.label>bloodsteel</NY_RedIron.label>
+	<!-- EN: 使用冶龍技术冶炼出的奇特红色金属。采用冶龍的说法，这种金属蕴含杀伐之气，用来锻造武器能让武器的刃更加锋利。 -->
+	<NY_RedIron.description>Steel infused with blood essence. It was said to be a bloodlust material and makes sharper blades.</NY_RedIron.description>
+
+	<!-- EN: 精炼铁 -->
+	<NY_RefinedIron.label>refined steel</NY_RefinedIron.label>
+	<!-- EN: 寻常钢铁经过冶龍技术冶炼后所得到的性能更加优秀的金属材料。冶龍将边缘世界常用的钢铁材料称为凡铁，她们一般不屑于直接使用凡铁锻造。 -->
+	<NY_RefinedIron.description>A refined material better than common steel.</NY_RefinedIron.description>
+
+</LanguageData>

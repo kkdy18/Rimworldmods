@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<!-- EN: 冶龍菜•凤栖木 -->
+	<NY_MealChickenwithMushroom.label>chicken mushroom bouillon</NY_MealChickenwithMushroom.label>
+	<!-- EN: 鸡肉与干香菇同炖是人间少有的鲜美，吸饱汤汁的粉条更是诱人，这道菜曾名“小鸡炖蘑菇”，传入冶龍皇室后化鸡为凤，化蘑为木，赐名“凤栖木”。不过现在的烹饪者往往条件有限，鸡肉与香菇不常有，因此这道菜更多时候会变成各种肉类与未知菌类的乱炖，但小鸡炖蘑菇始终如一，温暖着人们的心和胃。 -->
+	<NY_MealChickenwithMushroom.description>Traditionally a soup of chicken and shiitake mushroom, though due to ingredient availability in rimworld, the meat and mushroom used varies.</NY_MealChickenwithMushroom.description>
+
+	<!-- EN: 冶龍饺子 -->
+	<NY_MealDumpling.label>loong dumplings</NY_MealDumpling.label>
+	<!-- EN: 用面皮包裹着混合着肉与素食的馅，不管蘸醋还是辣椒油都很美味的饺子，如果作战前吃上一顿能让人充满力量。\n\n包饺子？饺子饺子饺饺子，饺子！ -->
+	<NY_MealDumpling.description>Meat and vegetable wrapped in dumpling skin and boiled. Paired with vinegar or chili oil dip sauce. A famous loong cook declared it takes meat and vegetable to make best dumplings, so vegetarian and meat only dumplings dropped out of favor.</NY_MealDumpling.description>
+
+	<!-- EN: 冶龍菜•鱼香肉丝 -->
+	<NY_MealFishFlavoured.label>fishy flavored meat strips</NY_MealFishFlavoured.label>
+	<!-- EN: 滑嫩的里脊肉丝搭配木耳与竹笋丝，加入泡椒、葱、姜、蒜、醋等调料大火翻炒，造就一道酸辣咸鲜的鱼香肉丝。这道菜并不含鱼，但冶龍大厨巧妙的调味为它平添了一丝美妙的鱼香。\n\n这道菜肴仍在冶龍的保密配方列表中，私自烹饪将遭到严厉的处罚。 -->
+	<NY_MealFishFlavoured.description>Thin tender strips of meat, coupled with wood ear and bamboo shots. Stir-fried with prickled chili peppers, spring onions, gingers and garlics, resulting a dish with rich flavors akin to fish.\n\nThe recipe is a union classified secret.</NY_MealFishFlavoured.description>
+
+	<!-- EN: 冶龍菜•青椒炒肉 -->
+	<NY_MealGreenPepper.label>green pepper meat fry</NY_MealGreenPepper.label>
+	<!-- EN: 青椒与猪肉切丝爆炒而成，青椒的辣与油脂的香能迅速勾起食欲，这是冶龍战士最爱的菜肴之一，只要挑上一小撮就能吃下一大碗米饭。\n\n这道菜肴仍在冶龍的保密配方列表中，私自烹饪将遭到严厉的处罚。 -->
+	<NY_MealGreenPepper.description>Stir-fried green pepper and meat, goes well with a bowl of rice.\n\nThe recipe is a union classified secret.</NY_MealGreenPepper.description>
+
+	<!-- EN: 冶龍菜•炖血金 -->
+	<NY_MealLavish_Meat.label>braised meat chunks</NY_MealLavish_Meat.label>
+	<!-- EN: 肥而不腻，香甜可口的红烧五花肉，曾是冶龍的皇家名菜，搭配刚蒸好的大米饭是慰藉肉体与灵魂的绝世佳肴。据说是冶龍家乡的一位著名诗人发明的菜肴。 -->
+	<NY_MealLavish_Meat.description>A chunk of (hopefully normal) meat braised in spices. Fat was reduced from lard resulting a soft but not overwhelmingly oily taste.</NY_MealLavish_Meat.description>
+
+	<!-- EN: 冶龍菜•翻翠玉 -->
+	<NY_MealLavish_Veg.label>vegetable stir-fry</NY_MealLavish_Veg.label>
+	<!-- EN: 色泽鲜亮，口感爽脆的清炒绿叶菜，曾是冶龍的皇家名菜，如果用动物油脂炒制会风味更佳。 -->
+	<NY_MealLavish_Veg.description>A simple dish made of stir-fried vegetale. Vibrant in color and crispy in texture. Traditionally made from leaf vegetables, though due to ingredient availability in rimworld, stir-fried potatos or even strawberries are not something unheard of.</NY_MealLavish_Veg.description>
+
+	<!-- EN: 冶龍菜•韭菜炒蛋 -->
+	<NY_MealLeekwithEgg.label>chives egg stir-fry</NY_MealLeekwithEgg.label>
+	<!-- EN: 脆爽的韭菜混合打散的鸡蛋快速翻炒而成，韭菜炒蛋便是如此朴实的菜肴，但简单的烹饪方式有时更能激发食材本身的鲜美风味。\n\n这道菜肴仍在冶龍的保密配方列表中，私自烹饪将遭到严厉的处罚。 -->
+	<NY_MealLeekwithEgg.description>Short strips of chives blended into whipped egg, then poured into a hot wok and rapidly stir-fried.\n\nThe recipe is a union classified secret.</NY_MealLeekwithEgg.description>
+
+	<!-- EN: 冶龍菜•凉拌藕片 -->
+	<NY_MealLotusRootSlices.label>lotus root salad</NY_MealLotusRootSlices.label>
+	<!-- EN: 脆爽开胃的凉拌莲藕片，冶龍需要大量种植莲藕来制取藕丝绢，偶尔也会以莲藕为食，凉拌是常见的做法。\n\n据说冶龍藕中隐藏着某种罕见的诅咒，会诅咒食用者变得丑陋，好在这种诅咒对人体无害并且会迅速消散，也许这是所谓神明开的小玩笑？ -->
+	<NY_MealLotusRootSlices.description>A salad made from parboiled lotus root slices, and various condiments. A byproduct of lotus fiber industry. Some prefered it sweet, others prefered it spicy.\n\nIt was said to contain a small curse that holes in the lotus roots are turned into consumer's pores for a short duration. A joke of archotech maybe?</NY_MealLotusRootSlices.description>
+
+	<!-- EN: 冶龍菜•麻婆豆腐 -->
+	<NY_MealMapoTofu.label>mapo tofu</NY_MealMapoTofu.label>
+	<!-- EN: 加入豆瓣酱、肉末烹制的烫口豆腐，麻辣鲜香的豆腐入口即化，令人直呼畅快。由于加入了冶龍的秘制调料，这道菜甚至会直接融化食客的精神，让他们沉浸在无尽的幸福之中，而能够面不改色地吃完这一盘麻婆豆腐的人被冶龍尊称为“麻辣仙人”。\n\n这道菜肴据说烹饪略有难度，但在冶龍们的印象中母亲总是会做麻婆豆腐。（话说冶龍的文化里真的会有父亲这个概念吗）\n\n这道菜肴仍在冶龍的保密配方列表中，私自烹饪将遭到严厉的处罚。 -->
+	<NY_MealMapoTofu.description>Tofu braised in broad-bean sauce and mince. It has a tender texture which can be broken down with tongues.\n\nThe recipe is a union classified secret.</NY_MealMapoTofu.description>
+
+	<!-- EN: 冶龍菜•土豆丝炒姜丝 -->
+	<NY_MealRandomShreds.label>potato ginger strip stir-fry</NY_MealRandomShreds.label>
+	<!-- EN: 土豆与生姜切成长短粗细相近的丝混合翻炒，成品浑然一体，这道菜的出处无从考据，但它的恶名已经远扬，它是不会给人带来幸福的菜肴，但总有怪人想要从一盘土豆丝炒姜丝中窥见命运的车辙。 -->
+	<NY_MealRandomShreds.description>Potato and ginger cut into similar sized strips and then stir-fried. One cannot tell the ginger strips apart from potato. This dish is usually used for pranks, though some believe it reveals a glimpse of fate.</NY_MealRandomShreds.description>
+
+</LanguageData>

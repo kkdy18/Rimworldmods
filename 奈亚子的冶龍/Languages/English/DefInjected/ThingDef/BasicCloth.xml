@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<!-- EN: 冶龍风马面裙 -->
+	<NY_ForgingDragonSkirtA.label>loong dress</NY_ForgingDragonSkirtA.label>
+	<!-- EN: 冶龍的经典服饰，素雅的贴身衣裙。\n\n轻纱飘逸，马面风姿，裙舞飞扬，优雅尽显。 -->
+	<NY_ForgingDragonSkirtA.description>A traditional outfit of loong, a plain long dress. (definately not pun intended)</NY_ForgingDragonSkirtA.description>
+
+	<!-- EN: 冶龍风旗袍 -->
+	<NY_ForgingDragonSkirtB.label>loong cheongsam</NY_ForgingDragonSkirtB.label>
+	<!-- EN: 冶龍的经典服饰，绣有鳞纹的华美旗袍。\n\n鱼鳞珍锦，旗袍流光，细腻华美，东方神韵。 -->
+	<NY_ForgingDragonSkirtB.description>A traditional outfit of loong, a cheongsam with scale patterns.</NY_ForgingDragonSkirtB.description>
+
+	<!-- EN: 冶龍风薄纱旗袍 -->
+	<NY_ForgingDragonSkirtC.label>loong thin cheongsam</NY_ForgingDragonSkirtC.label>
+	<!-- EN: 冶龍的创新服饰，为了使服装呈现出薄雾般的质感对面料的要求较为苛刻，保温效果也自然略有欠缺。\n\n蝉翼薄纱，轻若云烟，旗袍风韵，典雅飘逸。 -->
+	<NY_ForgingDragonSkirtC.description>An innovation on tradition, the thinner texture require extra work and impedes cold insulation.</NY_ForgingDragonSkirtC.description>
+
+	<!-- EN: 冶龍风儿童薄纱裙 -->
+	<NY_ForgingDragonSkirtChild.label>loong children's dress</NY_ForgingDragonSkirtChild.label>
+	<!-- EN: 冶龍儿童的经典服饰，贴心的匠人会为不同种族的小冶龍绣上不同的花纹。 -->
+	<NY_ForgingDragonSkirtChild.description>A traditional outfit for young loongs. Different patterns are available for different subspecies.</NY_ForgingDragonSkirtChild.description>
+
+</LanguageData>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<!-- EN: 冶龍铸台 -->
+	<NY_TableCrafting.label>loong forgery</NY_TableCrafting.label>
+	<!-- EN: 冶龍们用于加工各种稀有材料与锻造神兵利器的工作台。\n\n禁止在铸台上吃饭！禁止用铸台加热食物！也禁止拿走铸台上的工具！ -->
+	<NY_TableCrafting.description>The workbench used by loongs to craft most things.\n\nEating on the forgery is prohibited! Don't cook with it either! And put the tools back to where the were!</NY_TableCrafting.description>
+
+	<!-- EN: 冶龍柴火灶 -->
+	<NY_TableFurnace.label>loong stove</NY_TableFurnace.label>
+	<!-- EN: 以木柴为燃料的灶台，冶龍们坚信只有用这样的柴火灶才能做出最正宗的冶龍菜。 -->
+	<NY_TableFurnace.description>A wood-fueled stove. It was believed to be the crucial part of loong cuisine。</NY_TableFurnace.description>
+
+	<!-- EN: 冶龍纺车 -->
+	<NY_TableWeaving.label>loong spinning wheel</NY_TableWeaving.label>
+	<!-- EN: 以古老的纺线纺纱设备为原型，经过冶龍代代改良，如今能完成纺线、织布、缝纫等多种工作的多功能生产设备。 -->
+	<NY_TableWeaving.description>An ancient prodution tool, enhanced to be capable of weaving cloth and sewing.</NY_TableWeaving.description>
+
+</LanguageData>

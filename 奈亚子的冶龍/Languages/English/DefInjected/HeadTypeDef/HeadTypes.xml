@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<!-- EN: 青花瓷01 -->
+	<ForgingDragonHeadBW.label>porcelain01</ForgingDragonHeadBW.label>
+
+	<!-- EN: 青花瓷02 -->
+	<ForgingDragonHeadBW_A.label>porcelain02</ForgingDragonHeadBW_A.label>
+
+	<!-- EN: 青花瓷03 -->
+	<ForgingDragonHeadBW_B.label>porcelain03</ForgingDragonHeadBW_B.label>
+
+	<!-- EN: 青花瓷04 -->
+	<ForgingDragonHeadBW_C.label>porcelain04</ForgingDragonHeadBW_C.label>
+
+	<!-- EN: 纯种01 -->
+	<ForgingDragonHeadCB.label>pureblood01</ForgingDragonHeadCB.label>
+
+	<!-- EN: 纯种02 -->
+	<ForgingDragonHeadCB_A.label>pureblood02</ForgingDragonHeadCB_A.label>
+
+	<!-- EN: 纯种03 -->
+	<ForgingDragonHeadCB_B.label>pureblood03</ForgingDragonHeadCB_B.label>
+
+	<!-- EN: 纯种04 -->
+	<ForgingDragonHeadCB_C.label>pureblood04</ForgingDragonHeadCB_C.label>
+
+	<!-- EN: 纯种(空) -->
+	<ForgingDragonHeadCB_Empty.label>poreblood(blank)</ForgingDragonHeadCB_Empty.label>
+
+	<!-- EN: 食尸鬼 -->
+	<ForgingDragonHeadGhoul.label>ghoul</ForgingDragonHeadGhoul.label>
+
+	<!-- EN: 剪纸01 -->
+	<ForgingDragonHeadPC.label>papercut01</ForgingDragonHeadPC.label>
+
+	<!-- EN: 剪纸02 -->
+	<ForgingDragonHeadPC_A.label>papercut02</ForgingDragonHeadPC_A.label>
+
+	<!-- EN: 剪纸03 -->
+	<ForgingDragonHeadPC_B.label>papercut03</ForgingDragonHeadPC_B.label>
+
+	<!-- EN: 剪纸04 -->
+	<ForgingDragonHeadPC_C.label>papercut04</ForgingDragonHeadPC_C.label>
+
+	<!-- EN: 冶龍头骨 -->
+	<ForgingDragonHeadSkull.label>loong skull</ForgingDragonHeadSkull.label>
+
+	<!-- EN: 白玉01 -->
+	<ForgingDragonHeadWJ.label>white jade01</ForgingDragonHeadWJ.label>
+
+	<!-- EN: 白玉02 -->
+	<ForgingDragonHeadWJ_A.label>white jade02</ForgingDragonHeadWJ_A.label>
+
+	<!-- EN: 白玉03 -->
+	<ForgingDragonHeadWJ_B.label>white jade03</ForgingDragonHeadWJ_B.label>
+
+	<!-- EN: 白玉04 -->
+	<ForgingDragonHeadWJ_C.label>white jade04</ForgingDragonHeadWJ_C.label>
+
+</LanguageData>

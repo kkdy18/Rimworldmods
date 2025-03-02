@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<!-- EN: 龙涎香 -->
+	<NY_DragonMilk.label>ambergris</NY_DragonMilk.label>
+	<!-- EN: 拥有特殊香味的冶龍乳汁，收集了满满一瓶。龙涎香蕴含着丰富的营养成分，直接饮用或当作配料都很合适。 -->
+	<NY_DragonMilk.description>The customarily misnamed "ambergris" is actually the excrement (read: milk) of adult loongs. Highly nutritious and flaverful, it makes good condiment and also suitable for direct consumption.</NY_DragonMilk.description>
+	<!-- EN: 饮用{0} -->
+	<NY_DragonMilk.ingestible.ingestCommandString>drink {0}</NY_DragonMilk.ingestible.ingestCommandString>
+	<!-- EN: 正在饮用{0}。 -->
+	<NY_DragonMilk.ingestible.ingestReportString>drinking {0}.</NY_DragonMilk.ingestible.ingestReportString>
+
+	<!-- EN: 冶龍姜 -->
+	<NY_plant_Ginger.label>loonginger</NY_plant_Ginger.label>
+	<!-- EN: 从冶龍家乡带至边缘世界的品种，不适合作为主食但肥厚的根茎有刺激性的香味，可以作为烹饪配料。 -->
+	<NY_plant_Ginger.description>A species of ginger brought to rimworld by loongs. Unsuitable for direct consumption, but it is a good condiment.</NY_plant_Ginger.description>
+
+	<!-- EN: 冶龍莲 -->
+	<NY_plant_Lotus.label>loontus root</NY_plant_Lotus.label>
+	<!-- EN: 从冶龍家乡带至边缘世界的品种，基因似乎被修改过，能够在陆地上生长，其根茎富含淀粉和某种特殊纤维，而冶龍掌握着大量提取这种纤维并编织成名为“藕丝绢”的优质织物的技术。 -->
+	<NY_plant_Lotus.description>A species of lotus that is genetically modified to grow on soil. Its root is rich in starch and fiber, and loongs held the techniques to weave them into silk.</NY_plant_Lotus.description>
+
+	<!-- EN: 冶龍梅树 -->
+	<NY_plant_PlumTree.label>plum tree</NY_plant_PlumTree.label>
+	<!-- EN: 从冶龍家乡带至边缘世界的品种，它能结出酸甜的果实并且采摘过后依然能继续结果，因此深受冶龍喜爱，远行者总是会在新家园种下一棵梅树，期望它能成为美好生活的起点。 -->
+	<NY_plant_PlumTree.description>A species of plum tree, will continue to grow after harvest. Loongs often plant a plum tree at their new home, marking the start of a new life.</NY_plant_PlumTree.description>
+
+	<!-- EN: 话梅姜奶 -->
+	<NY_PlumGingerTea.label>plum ginger milktea</NY_PlumGingerTea.label>
+	<!-- EN: 在冶龍奶中加入话梅与姜汁煮制而成的香醇饮品，风味独特且有暖胃养颜的功效，是冶龍们冬日的最爱。 -->
+	<NY_PlumGingerTea.description>A thick and aromatic drink, made from boiling plum and ginger in ambergris (read: loong milk). It's said to be able to warn one up in the winter.</NY_PlumGingerTea.description>
+	<!-- EN: 饮用{0} -->
+	<NY_PlumGingerTea.ingestible.ingestCommandString>drink {0}</NY_PlumGingerTea.ingestible.ingestCommandString>
+	<!-- EN: 正在饮用{0}。 -->
+	<NY_PlumGingerTea.ingestible.ingestReportString>drinking {0}.</NY_PlumGingerTea.ingestible.ingestReportString>
+
+	<!-- EN: 酸梅汤 -->
+	<NY_PlumJuice.label>plum juice</NY_PlumJuice.label>
+	<!-- EN: 用冶龍话梅搭配莓果煮制而成的清凉饮品，酸甜可口，炎炎夏日喝上一杯便能消解暑气与疲劳，当然天气不热也可以喝。 -->
+	<NY_PlumJuice.description>A refreshing drink made from boiling plum with berries then let it cool down. It's said to be able to cool one down in the summer.</NY_PlumJuice.description>
+	<!-- EN: 饮用{0} -->
+	<NY_PlumJuice.ingestible.ingestCommandString>drink {0}</NY_PlumJuice.ingestible.ingestCommandString>
+	<!-- EN: 正在饮用{0}。 -->
+	<NY_PlumJuice.ingestible.ingestReportString>drinking {0}</NY_PlumJuice.ingestible.ingestReportString>
+
+	<!-- EN: 冶龍话梅 -->
+	<NY_PreservedPlum.label>preserved plums</NY_PreservedPlum.label>
+	<!-- EN: 用盐与糖腌制而成的干梅果，风味极佳且可以储存很久，据说名字的由来是古时冶龍指挥官长期说话口干舌燥，不便饮水就在舌下含一颗干梅，如今远行在外的冶龍也喜欢揣上几颗打发平淡的旅途。 -->
+	<NY_PreservedPlum.description>A preserved fruit made with salt and sugar, tastes good and lasts long.</NY_PreservedPlum.description>
+
+	<!-- EN: 冶龍生姜 -->
+	<NY_RawGinger.label>loonginger</NY_RawGinger.label>
+	<!-- EN: 冶龍姜成熟的根茎，有芳香及辛辣味，是冶龍烹饪常用的配料，不包括土豆丝炒姜丝，那个不是给正常人吃的。 -->
+	<NY_RawGinger.description>Often simply called ginger, it is the mature root of loonginger plant. Spicy in taste, it makes a common condiment in dishes.</NY_RawGinger.description>
+
+	<!-- EN: 冶龍藕 -->
+	<NY_RawLotusRoot.label>loontus root</NY_RawLotusRoot.label>
+	<!-- EN: 冶龍莲的根茎，富含淀粉，口感很脆，不过冶龍们更多用它来生产藕丝绢。 -->
+	<NY_RawLotusRoot.description>The swollen roots of loontus plants, it is rich in starch and fiber, while having a plain but crispy taste. It is also used in the production of lotus root silk.</NY_RawLotusRoot.description>
+
+	<!-- EN: 冶龍梅 -->
+	<NY_RawPlum.label>plum</NY_RawPlum.label>
+	<!-- EN: 冶龍梅树的果实，生吃就很美味，也可以腌制成冶龍喜爱的小零食冶龍话梅，进一步制成多种饮料。 -->
+	<NY_RawPlum.description>The fruit of a plum tree, can be directly eaten, made into preserves and various drinks.</NY_RawPlum.description>
+
+</LanguageData>

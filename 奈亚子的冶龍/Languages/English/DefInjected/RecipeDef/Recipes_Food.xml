@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<!-- EN: 烹饪凤栖木 -->
+	<NY_CookMealChickenwithMushroom.label>cook chicken mushroom bouillon</NY_CookMealChickenwithMushroom.label>
+	<!-- EN: 小鸡炖蘑菇就是这道菜的本质，虽然肉不一定是鸡肉，菇不一定是香菇，但食材与名字会变，人们对美食的热爱不变。 -->
+	<NY_CookMealChickenwithMushroom.description>Traditionally a soup of chicken and shiitake mushroom, though due to ingredient availability in rimworld, the meat and mushroom used varies.</NY_CookMealChickenwithMushroom.description>
+	<!-- EN: 正在炖煮肉与菌菇。 -->
+	<NY_CookMealChickenwithMushroom.jobString>boiling chicken mushroom bouillon</NY_CookMealChickenwithMushroom.jobString>
+
+	<!-- EN: 烹饪凤栖木 x10 -->
+	<NY_CookMealChickenwithMushroomTen.label>cook chicken mushroom bouillon x10</NY_CookMealChickenwithMushroomTen.label>
+	<!-- EN: 小鸡炖蘑菇就是这道菜的本质，虽然肉不一定是鸡肉，菇不一定是香菇，但食材与名字会变，人们对美食的热爱不变。 -->
+	<NY_CookMealChickenwithMushroomTen.description>Traditionally a soup of chicken and shiitake mushroom, though due to ingredient availability in rimworld, the meat and mushroom used varies.</NY_CookMealChickenwithMushroomTen.description>
+	<!-- EN: 正在炖煮肉与菌菇。 -->
+	<NY_CookMealChickenwithMushroomTen.jobString>boiling chicken mushroom bouillon</NY_CookMealChickenwithMushroomTen.jobString>
+
+	<!-- EN: 烹饪冶龍饺子 -->
+	<NY_CookMealDumpling.label>cook loong dumplings</NY_CookMealDumpling.label>
+	<!-- EN: 冶龍饺子的创始人坚信荤与素的平衡才能创造出最美味的饺子，因此纯素馅和纯肉馅的饺子目前是不存在了。 -->
+	<NY_CookMealDumpling.description>A famous loong cook declared it takes meat and vegetable to make best dumplings, so vegetarian and meat only dumplings dropped out of favor.</NY_CookMealDumpling.description>
+	<!-- EN: 动物蛋白与脂肪 -->
+	<NY_CookMealDumpling.ingredients.0.filter.customSummary>meat and fat</NY_CookMealDumpling.ingredients.0.filter.customSummary>
+	<!-- EN: 正在包饺子煮饺子。 -->
+	<NY_CookMealDumpling.jobString>making and boiling dumplings.</NY_CookMealDumpling.jobString>
+
+	<!-- EN: 烹饪冶龍饺子 x10 -->
+	<NY_CookMealDumplingTen.label>cook loong dumplings x10</NY_CookMealDumplingTen.label>
+	<!-- EN: 冶龍饺子的创始人坚信荤与素的平衡才能创造出最美味的饺子，因此纯素馅和纯肉馅的饺子目前是不存在了。 -->
+	<NY_CookMealDumplingTen.description>A famous loong cook declared it takes meat and vegetable to make best dumplings, so vegetarian and meat only dumplings dropped out of favor.</NY_CookMealDumplingTen.description>
+	<!-- EN: 动物蛋白与脂肪 -->
+	<NY_CookMealDumplingTen.ingredients.0.filter.customSummary>meat and fat</NY_CookMealDumplingTen.ingredients.0.filter.customSummary>
+	<!-- EN: 正在包饺子煮饺子。 -->
+	<NY_CookMealDumplingTen.jobString>making and boiling dumplings.</NY_CookMealDumplingTen.jobString>
+
+	<!-- EN: 烹饪炖血金 -->
+	<NY_CookMealLavish_Meat.label>cook braised meat chunks</NY_CookMealLavish_Meat.label>
+	<!-- EN: 只有素食者才会拒绝一碗世间极品的红烧肉，当然，这碗红烧肉的原料最好是正经肉。肉总是千篇一律的蛋白质与脂肪的结合，如果在取材上即兴发挥恐怕成果会一路奔向深渊。 -->
+	<NY_CookMealLavish_Meat.description>A chunk of (hopefully normal) meat braised in spices. Only a vegan can say no to it.</NY_CookMealLavish_Meat.description>
+	<!-- EN: 正在炖煮肉块。 -->
+	<NY_CookMealLavish_Meat.jobString>braising meat chunks.</NY_CookMealLavish_Meat.jobString>
+
+	<!-- EN: 烹饪炖血金 x10 -->
+	<NY_CookMealLavish_MeatTen.label>cook braised meat x10</NY_CookMealLavish_MeatTen.label>
+	<!-- EN: 只有素食者才会拒绝一碗世间极品的红烧肉，当然，这碗红烧肉的原料最好是正经肉。肉总是千篇一律的蛋白质与脂肪的结合，如果在取材上即兴发挥恐怕成果会一路奔向深渊。 -->
+	<NY_CookMealLavish_MeatTen.description>A chunk of (hopefully normal) meat braised in spices. Only a vegan can say no to it.</NY_CookMealLavish_MeatTen.description>
+	<!-- EN: 正在炖煮肉块。 -->
+	<NY_CookMealLavish_MeatTen.jobString>braising meat chunks.</NY_CookMealLavish_MeatTen.jobString>
+
+	<!-- EN: 烹饪翻翠玉 -->
+	<NY_CookMealLavish_Veg.label>cook vegetable stir-fry</NY_CookMealLavish_Veg.label>
+	<!-- EN: 虽然按常理这道菜必须用绿叶菜制作，但实际操作中烹饪者的就地取材与即兴发挥也值得期待，“翻土豆”“翻草莓”大家也不是没有品鉴过。 -->
+	<NY_CookMealLavish_Veg.description>Traditionally made from leaf vegetables, though due to ingredient availability in rimworld, stir-fried potatos or even strawberries are not something unheard of.</NY_CookMealLavish_Veg.description>
+	<!-- EN: 正在翻炒菜蔬。 -->
+	<NY_CookMealLavish_Veg.jobString>stir-frying vegetable.</NY_CookMealLavish_Veg.jobString>
+
+	<!-- EN: 烹饪翻翠玉 x10 -->
+	<NY_CookMealLavish_VegTen.label>cook vegetable stir-fry x10</NY_CookMealLavish_VegTen.label>
+	<!-- EN: 虽然按常理这道菜必须用绿叶菜制作，但实际操作中烹饪者的就地取材与即兴发挥也值得期待，“翻土豆”“翻草莓”大家也不是没有品鉴过。 -->
+	<NY_CookMealLavish_VegTen.description>Traditionally made from leaf vegetables, though due to ingredient availability in rimworld, stir-fried potatos or even strawberries are not something unheard of.</NY_CookMealLavish_VegTen.description>
+	<!-- EN: 正在翻炒菜蔬。 -->
+	<NY_CookMealLavish_VegTen.jobString>stir-frying vegetable.</NY_CookMealLavish_VegTen.jobString>
+
+	<!-- EN: 烹饪凉拌藕片 -->
+	<NY_CookMealLotusRootSlices.label>make lotus root salad</NY_CookMealLotusRootSlices.label>
+	<!-- EN: 做法简单，材料也很简单的凉拌菜，吃腻了莲藕味的营养膏的冶龍种莲人创造了它。 -->
+	<NY_CookMealLotusRootSlices.description>A salad made from parboiled lotus root slices, and various condiments. Some prefered it sweet, others prefered it spicy.</NY_CookMealLotusRootSlices.description>
+	<!-- EN: 正在将莲藕切片焯水。 -->
+	<NY_CookMealLotusRootSlices.jobString>slicing and boilling lotus root.</NY_CookMealLotusRootSlices.jobString>
+
+	<!-- EN: 烹饪凉拌藕片 x10 -->
+	<NY_CookMealLotusRootSlicesTen.label>make lotus root salad x10</NY_CookMealLotusRootSlicesTen.label>
+	<!-- EN: 做法简单，材料也很简单的凉拌菜，吃腻了莲藕味的营养膏的冶龍种莲人创造了它。 -->
+	<NY_CookMealLotusRootSlicesTen.description>A salad made from parboiled lotus root slices, and various condiments. Some prefered it sweet, others prefered it spicy.</NY_CookMealLotusRootSlicesTen.description>
+	<!-- EN: 正在将莲藕切片焯水。 -->
+	<NY_CookMealLotusRootSlicesTen.jobString>slicing and boilling lotus root.</NY_CookMealLotusRootSlicesTen.jobString>
+
+	<!-- EN: 烹饪土豆丝炒姜丝 x10 -->
+	<NY_CookMealRandomShreds.label>cook potato ginger strip stir-fry x10</NY_CookMealRandomShreds.label>
+	<!-- EN: 土豆与生姜切丝再下锅翻炒，做法非常简单但骇人听闻，无法想象这道菜肴要怀抱着何种心情去制作。\n\n为了进一步增加这道菜的随机性，烹饪者现在会一次性烹饪十份的量的食材，出锅再分作十份，土豆丝与姜丝的分布将出现更加鲜明的差异，食客也将要面临更大的挑战。 -->
+	<NY_CookMealRandomShreds.description>Cut potatoes and gingers into thing slices and stir-fry it. A simple yet dreaded dish intended for pranking.\n\nTen serves are made to ensure random distribution of potato and ginger.</NY_CookMealRandomShreds.description>
+	<!-- EN: 正在切丝与翻炒。 -->
+	<NY_CookMealRandomShreds.jobString>slicing and frying potato and ginger.</NY_CookMealRandomShreds.jobString>
+
+	<!-- EN: 制作话梅姜奶 x10 -->
+	<NY_CookPlumGingerTea.label>make plum ginger milktea x10</NY_CookPlumGingerTea.label>
+	<!-- EN: 制作十份话梅姜奶。 -->
+	<NY_CookPlumGingerTea.description>Make 10 serves of plum ginger milktea</NY_CookPlumGingerTea.description>
+	<!-- EN: 正在煮话梅姜奶。 -->
+	<NY_CookPlumGingerTea.jobString>Boiling plum ginger milktea.</NY_CookPlumGingerTea.jobString>
+
+	<!-- EN: 制作酸梅汤 x10 -->
+	<NY_CookPlumJuice.label>make plum juice x10</NY_CookPlumJuice.label>
+	<!-- EN: 制作十份酸梅汤。 -->
+	<NY_CookPlumJuice.description>Make 10 serves of plum juice</NY_CookPlumJuice.description>
+	<!-- EN: 正在煮酸梅汤。 -->
+	<NY_CookPlumJuice.jobString>making plum juice.</NY_CookPlumJuice.jobString>
+
+	<!-- EN: 腌制冶龍话梅 -->
+	<NY_CookPreservedPlum.label>preserve plums</NY_CookPreservedPlum.label>
+	<!-- EN: 用盐与糖将新鲜梅果腌制成干果。 -->
+	<NY_CookPreservedPlum.description>Preserve plums with salt and sugar.</NY_CookPreservedPlum.description>
+	<!-- EN: 正在腌制话梅。 -->
+	<NY_CookPreservedPlum.jobString>preserving plums.</NY_CookPreservedPlum.jobString>
+
+</LanguageData>

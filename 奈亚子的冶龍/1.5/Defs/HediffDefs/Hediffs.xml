@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HediffDef Name="NY_HediffBase" Abstract="True">
+		<hediffClass>HediffWithComps</hediffClass>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<maxSeverity>1</maxSeverity>
+		<initialSeverity>1</initialSeverity>
+		<everCurableByItem>false</everCurableByItem>
+		<alwaysAllowMothball>True</alwaysAllowMothball>
+		<alwaysAllowMothballCached>True</alwaysAllowMothballCached>
+	</HediffDef>
+
+	<!--伤害类-->
+	<HediffDef ParentName="NY_HediffBase">
+		<defName>NY_hediff_EvilBreak</defName>
+		<label>破邪</label>
+		<description>该生物被神兵判定为非人，神兵的力量正在使其变得脆弱。</description>
+		<defaultLabelColor>(251,255,205)</defaultLabelColor>
+		<stages>
+			<li>
+				<statOffsets>
+					<IncomingDamageFactor>1</IncomingDamageFactor>
+				</statOffsets>
+				<damageFactors>
+					<Flame>2</Flame>
+					<Burn>2</Burn>
+				</damageFactors>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-1</severityPerDay>
+			</li>
+			<li Class="ForgingDragon.HCP_HumanImmune" />
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="NY_HediffBase">
+		<defName>NY_hediff_EvilTone</defName>
+		<label>魔音乱魂</label>
+		<description>诡异的魔音在脑海中回荡，试图撬开精神意志的缝隙。</description>
+		<hediffClass>ForgingDragon.Hediff_SeverityNum</hediffClass>
+		<defaultLabelColor>(0.8, 0.8, 0.8)</defaultLabelColor>
+		<minSeverity>0</minSeverity>
+		<maxSeverity>9</maxSeverity>
+		<stages>
+			<li>
+				<statFactors>
+					<MoveSpeed>0.75</MoveSpeed>
+				</statFactors>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>True</showRemainingTime>
+				<disappearsAfterTicks>
+					<min>5000</min>
+					<max>10000</max>
+				</disappearsAfterTicks>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<li Class="HediffCompProperties_Effecter">
+				<stateEffecter>NY_effecter_EvilTone</stateEffecter>
+			</li>
+			<li Class="ForgingDragon.HCP_MentalBreak" />
+		</comps>
+	</HediffDef>
+
+	<!--杂项-->
+	<HediffDef ParentName="NY_HediffBase">
+		<defName>NY_hediff_KidneyOverdraft</defName>
+		<label>肾透支</label>
+		<description>作为奴隶能活到被冶龍贩卖究竟是一种幸运还是不幸？总之这个人的灵魂或者别的什么都已经被榨干了，需要时间来治愈他麻木的精神。</description>
+		<defaultLabelColor>(0.8, 0.8, 0.35)</defaultLabelColor>
+		<everCurableByItem>true</everCurableByItem>
+		<stages>
+			<li>
+				<opinionOfOthersFactor>0</opinionOfOthersFactor>
+				<statOffsets>
+					<SlaveSuppressionOffset>1</SlaveSuppressionOffset>
+					<MentalBreakThreshold>0.2</MentalBreakThreshold>
+				</statOffsets>
+				<statFactors>
+					<Fertility>0</Fertility>
+				</statFactors>
+				<mentalStateGivers>
+					<li>
+						<mentalState>Wander_OwnRoom</mentalState>
+						<mtbDays>5</mtbDays>
+					</li>
+				</mentalStateGivers>
+			</li>
+		</stages>
+		<disablesNeeds>
+			<li>Outdoors</li>
+		</disablesNeeds>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.1</severityPerDay>
+				<showDaysToRecover>true</showDaysToRecover>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="NY_HediffBase">
+		<defName>NY_hediff_ForgingDragonSinner</defName>
+		<label>罪不可恕</label>
+		<description>这个冶龍大概是背上了不可饶恕的罪责，最后被迫放弃了自己的一切，沦为同胞售卖的商品。</description>
+		<defaultLabelColor>(0.8, 0, 0)</defaultLabelColor>
+		<priceOffset>1000</priceOffset>
+		<aptitudes>
+			<Melee>-12</Melee>
+			<Shooting>-12</Shooting>
+			<Social>-12</Social>
+			<Crafting>-12</Crafting>
+		</aptitudes>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>True</showRemainingTime>
+				<disappearsAfterTicks>
+					<min>120000</min>
+					<max>120000</max>
+				</disappearsAfterTicks>
+			</li>
+			<li Class="ForgingDragon.HCP_SinnerTraits">
+				<traits>
+					<li>Asexual</li>
+					<li>Gay</li>
+					<li>CreepyBreathing</li>
+					<li>Gourmand</li>
+					<li>Pyromaniac</li>
+				</traits>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<!--技能类-->
+	<HediffDef ParentName="NY_HediffBase">
+		<defName>NY_hediff_LoongFrenzy</defName>
+		<label>龙血迸发</label>
+		<description>狂暴的血流使身体素质显著提升，但这种状态下心脏的负荷极高，为保护生命安全无法长时间维持。</description>
+		<defaultLabelColor>(0.8, 0.3, 0.3)</defaultLabelColor>
+		<stages>
+			<li>
+				<painFactor>0.5</painFactor>
+				<statFactors>
+					<MoveSpeed>1.5</MoveSpeed>
+					<MeleeCooldownFactor>0.75</MeleeCooldownFactor>
+				</statFactors>
+				<statOffsets>
+					<MoveSpeed>2</MoveSpeed>
+				</statOffsets>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<li Class="HediffCompProperties_Effecter">
+				<stateEffecter>NY_effecter_LoongFrenzy</stateEffecter>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="NY_HediffBase">
+		<defName>NY_hediff_LoongSmoke</defName>
+		<label>吞云吐雾</label>
+		<description>烟雾释放中。</description>
+		<defaultLabelColor>(0.5, 0.8, 0.7)</defaultLabelColor>
+		<comps>
+			<li Class="ForgingDragon.HCP_ReleaseGas">
+				<gasType>BlindSmoke</gasType>
+				<cellsToFill>15</cellsToFill>
+				<durationSeconds>15</durationSeconds>
+				<period>5</period>
+			</li>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<li Class="HediffCompProperties_Effecter">
+				<stateEffecter>NY_effecter_SmokeReleasing</stateEffecter>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<!--基因-->
+
+	<HediffDef ParentName="NY_HediffBase">
+		<defName>NY_hediff_DragonMilk</defName>
+		<label>龙涎香分泌</label>
+		<description>成年的冶龍会不断分泌储存富含营养成分的乳汁，冶龍会定期自行收集这些乳汁，但在营养不良或某些特殊情况下乳汁会停止分泌。</description>
+		<comps>
+			<li Class="ForgingDragon.HCP_Milk">
+				<thing>NY_DragonMilk</thing>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="NY_HediffBase">
+		<defName>NY_hediff_ForgingDragonBW</defName>
+		<label>青花瓷龙</label>
+		<description>靛角银发蔚蓝眼，白瓷塑身气血娇，温婉流转贤妻样，庖厨针线过常人。</description>
+		<defaultLabelColor>(75,160,255)</defaultLabelColor>
+		<stages>
+		</stages>
+		<comps>
+			<li Class="ForgingDragon.HCP_ForeverGene">
+				<VIGene>NY_gene_ForgingDragonBW</VIGene>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="NY_HediffBase">
+		<defName>NY_hediff_ForgingDragonCB</defName>
+		<label>纯种龙</label>
+		<description>青角素发琉璃眼，力拔山兮气盖世，身流精粹真龙血，叱咤风云震神州。</description>
+		<defaultLabelColor>(70,255,170)</defaultLabelColor>
+		<stages>
+		</stages>
+		<comps>
+			<li Class="ForgingDragon.HCP_ForeverGene">
+				<VIGene>NY_gene_ForgingDragonCB</VIGene>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="NY_HediffBase">
+		<defName>NY_hediff_ForgingDragonWJ</defName>
+		<label>白玉龙</label>
+		<description>青角白发浅碧瞳，箭无虚发智无穷。灵机一动风云变，傲立尘寰傲苍穹。</description>
+		<defaultLabelColor>(175,210,190)</defaultLabelColor>
+		<stages>
+		</stages>
+		<comps>
+			<li Class="ForgingDragon.HCP_ForeverGene">
+				<VIGene>NY_gene_ForgingDragonWJ</VIGene>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="NY_HediffBase">
+		<defName>NY_hediff_ForgingDragonPC</defName>
+		<label>剪纸龙</label>
+		<description>红角红瞳剪纸裳，妙语如珠韵悠扬。艺绘丹青惊四座，纸龍绝色舞霓裳。</description>
+		<defaultLabelColor>(210,100,110)</defaultLabelColor>
+		<stages>
+		</stages>
+		<comps>
+			<li Class="ForgingDragon.HCP_ForeverGene">
+				<VIGene>NY_gene_ForgingDragonPC</VIGene>
+			</li>
+			<li Class="ForgingDragon.HCP_ThoughtBeauty" />
+		</comps>
+	</HediffDef>
+	
+	<HediffDef ParentName="NY_HediffBase">
+		<defName>NY_hediff_DragonTailCB</defName>
+		<label>翠绿龙尾</label>
+		<description>一根粗壮的翠绿色大尾巴，肌肉发达的尾巴如果甩到人身上大概会筋断骨折。</description>
+		<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+		<renderNodeProperties>
+			<li>
+				<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+				<texPath>Things/Pawn/BodyAttachments/ForgingDragonTailCB</texPath>
+				<parentTagDef>Body</parentTagDef>
+				<useRottenColor>true</useRottenColor>
+				<useSkinShader>false</useSkinShader>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<shaderTypeDef>CutoutComplex</shaderTypeDef>
+				<visibleFacing>
+					<li>East</li>
+					<li>North</li>
+					<li>West</li>
+					<li>South</li>
+				</visibleFacing>
+				<drawData>
+					<defaultData>
+						<layer>-2</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>90</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</HediffDef>
+
+	<HediffDef ParentName="NY_HediffBase">
+		<defName>NY_hediff_DragonTailBW</defName>
+		<label>青蓝龙尾</label>
+		<description>一根柔中带刚的青蓝色大尾巴，摸起来冰冰的，夏天可以抱着睡觉。</description>
+		<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+		<renderNodeProperties>
+			<li>
+				<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+				<texPath>Things/Pawn/BodyAttachments/ForgingDragonTailBW</texPath>
+				<parentTagDef>Body</parentTagDef>
+				<useRottenColor>true</useRottenColor>
+				<useSkinShader>false</useSkinShader>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<shaderTypeDef>CutoutComplex</shaderTypeDef>
+				<visibleFacing>
+					<li>East</li>
+					<li>North</li>
+					<li>West</li>
+					<li>South</li>
+				</visibleFacing>
+				<drawData>
+					<defaultData>
+						<layer>-2</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>90</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</HediffDef>
+	
+	<HediffDef ParentName="NY_HediffBase">
+		<defName>NY_hediff_GhoulDragonTail</defName>
+		<label>鬼龙尾</label>
+		<description>鬼魅般的灰色长尾，如泥鳅一般滑溜。</description>
+		<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+		<stages>
+			<li>
+				<statOffsets>
+					<MeleeDodgeChance>10</MeleeDodgeChance>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.25</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<renderNodeProperties>
+			<li>
+				<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+				<texPath>Things/Pawn/BodyAttachments/ForgingDragonTailGhoul</texPath>
+				<parentTagDef>Body</parentTagDef>
+				<useRottenColor>true</useRottenColor>
+				<useSkinShader>false</useSkinShader>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<shaderTypeDef>CutoutComplex</shaderTypeDef>
+				<visibleFacing>
+					<li>East</li>
+					<li>North</li>
+					<li>West</li>
+					<li>South</li>
+				</visibleFacing>
+				<drawData>
+					<defaultData>
+						<layer>-2</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>90</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</HediffDef>
+
+	<HediffDef ParentName="NY_HediffBase">
+		<defName>NY_hediff_DragonTailWJ</defName>
+		<label>玉润龙尾</label>
+		<description>一根白里透青的玉色大尾巴，尾巴末端有一撮白毛，白玉种冶龍们非常看重这个地方，最柔顺最洁白的毛甚至可以让面相普通的冶龍评上最美小姐。</description>
+		<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+		<renderNodeProperties>
+			<li>
+				<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+				<texPath>Things/Pawn/BodyAttachments/ForgingDragonTailWJ</texPath>
+				<parentTagDef>Body</parentTagDef>
+				<useRottenColor>true</useRottenColor>
+				<useSkinShader>false</useSkinShader>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<shaderTypeDef>CutoutComplex</shaderTypeDef>
+				<visibleFacing>
+					<li>East</li>
+					<li>North</li>
+					<li>West</li>
+					<li>South</li>
+				</visibleFacing>
+				<drawData>
+					<defaultData>
+						<layer>-2</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>90</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</HediffDef>
+
+	<HediffDef ParentName="NY_HediffBase">
+		<defName>NY_hediff_DragonTailPC</defName>
+		<label>纸艺龙尾</label>
+		<description>一根极具观赏性的红色大尾巴，尾巴末端的薄膜和人类的指甲一样可以修剪，剪纸种冶龍们会经常修剪自己的尾巴，用于彰显自己的美丽。</description>
+		<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+		<renderNodeProperties>
+			<li>
+				<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+				<texPath>Things/Pawn/BodyAttachments/ForgingDragonTailPC</texPath>
+				<parentTagDef>Body</parentTagDef>
+				<useRottenColor>true</useRottenColor>
+				<useSkinShader>false</useSkinShader>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<shaderTypeDef>CutoutComplex</shaderTypeDef>
+				<visibleFacing>
+					<li>East</li>
+					<li>North</li>
+					<li>West</li>
+					<li>South</li>
+				</visibleFacing>
+				<drawData>
+					<defaultData>
+						<layer>-2</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>90</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</HediffDef>
+</Defs>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<FacialAnimation.FaceAnimationDef>
+		<!-- 驚恐逃跑 -->
+		<defName>FleeAndCower_Axolotl</defName>
+		<raceName>Axolotl</raceName>
+		<animationFrames>
+			<li>
+				<duration>1</duration>
+				<browShapeDef>s-shaped</browShapeDef>
+				<emotionShapeDef>gloomy</emotionShapeDef>
+			</li>
+		</animationFrames>
+		<targetJobs>
+			<li>FleeAndCower</li>
+			<li>FleeAndCowerShort</li>
+		</targetJobs>
+		<priority>10200</priority>
+	</FacialAnimation.FaceAnimationDef>
+</Defs>

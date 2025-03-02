@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<!-- EN: 葫芦火 -->
+	<NY_ability_GourdFire.label>firegourd</NY_ability_GourdFire.label>
+	<!-- EN: 猛拍葫芦喷出毒火热油，烧出一条火路宽又长。 -->
+	<NY_ability_GourdFire.description>Set fire over a long area.</NY_ability_GourdFire.description>
+
+</LanguageData>

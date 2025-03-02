@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ScenarioDef>
+		<defName>NY_PeacefulLife</defName>
+		<label>心中的桃花源</label>
+		<description>你们四位只是冶龍中相互照应的小人物，寻圣盟驻地内愈加紧张的气氛与日夜不息的铸造坊让你们意识到战争的临近，上一次战争留下的累累尸骨尚未被大地消磨殆尽，你们不想成为填入其中的新骨骸，于是在一个暴风骤雨的夜晚，你们背上仓促换来的物资与兵刃逃入夜色。昔日的仇敌不会网开一面，同胞亦不会原谅你们的背叛，你们只能拼劲全力在这个恶劣的世界生存下去，也许终有一日你们会找到属于自己的桃花源。</description>
+		<scenario>
+			<summary>四个冶龍逃离族群，踏上未知的旅途。</summary>
+			<playerFaction>
+				<def>PlayerFaction</def>
+				<factionDef>NY_ForgingDragonPlayer</factionDef>
+			</playerFaction>
+			<parts>
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+					<def>ConfigurePawnsXenotypes</def>
+					<pawnChoiceCount>4</pawnChoiceCount>
+					<xenotypeCounts>
+						<li>
+							<count>1</count>
+							<requiredAtStart>True</requiredAtStart>
+							<xenotype>NY_ForgingDragonCB</xenotype>
+							<allowedDevelopmentalStages>Child, Adult</allowedDevelopmentalStages>
+						</li>
+						<li>
+							<count>1</count>
+							<requiredAtStart>True</requiredAtStart>
+							<xenotype>NY_ForgingDragonBW</xenotype>
+							<allowedDevelopmentalStages>Child, Adult</allowedDevelopmentalStages>
+						</li>
+						<li>
+							<count>1</count>
+							<requiredAtStart>True</requiredAtStart>
+							<xenotype>NY_ForgingDragonWJ</xenotype>
+							<allowedDevelopmentalStages>Child, Adult</allowedDevelopmentalStages>
+						</li>
+						<li>
+							<count>1</count>
+							<requiredAtStart>True</requiredAtStart>
+							<xenotype>NY_ForgingDragonPC</xenotype>
+							<allowedDevelopmentalStages>Child, Adult</allowedDevelopmentalStages>
+						</li>
+					</xenotypeCounts>
+				</li>
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+					<def>PlayerPawnsArriveMethod</def>
+				</li>
+				<li Class="ScenPart_GameStartDialog">
+					<def>GameStartDialog</def>
+					<text>赶路多日的你们在一片荒地上停下了脚步，某种直觉告诉你们这里或许是重新开始的好地方。</text>
+					<closeSound>GameStartSting</closeSound>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Silver</thingDef>
+					<count>2000</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Pemmican</thingDef>
+					<count>400</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>NY_PreservedPlum</thingDef>
+					<count>80</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MedicineHerbal</thingDef>
+					<count>20</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>WoodLog</thingDef>
+					<count>300</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Steel</thingDef>
+					<count>300</count>
+				</li>
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>Smithing</project>
+				</li>
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>ForgingDragonStarting</project>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>NY_DragonKnife</thingDef>
+					<stuff>NY_RefinedIron</stuff>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>NY_DragonBow</thingDef>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>NY_DragonFlyNeedle</thingDef>
+				</li>
+				<li Class="ScenPart_PawnFilter_Age">
+					<def>PawnFilter_Age</def>
+					<allowedAgeRange>15~21</allowedAgeRange>
+				</li>
+			</parts>
+		</scenario>
+	</ScenarioDef>
+
+	<ScenarioDef>
+		<defName>NY_ReturnOrdinary</defName>
+		<label>归于平凡</label>
+		<description>你曾经背负宏大的使命自故乡出发，跨越星海来到这片大地去追寻那决定众生众业的“圣旨”，但是征战永无止境，骨与血的磨盘碾碎了你所有的同伴，也磨灭了你的斗志，“圣旨”却始终遥不可及。你厌倦了，如今你只想逃离战场，逃离“圣旨”，逃离寻圣盟，也许你会死于仇敌的冷枪、同胞的斧刃，如野兽般腐烂在荒野或沼泽中，但在结局到来之前你会永远抗争，也许路途的终点真的会有一块平静安宁的土地为你而留。</description>
+		<scenario>
+			<summary>一位老兵舍弃了出发时的使命，平静的生活是她如今唯一的愿望。</summary>
+			<playerFaction>
+				<def>PlayerFaction</def>
+				<factionDef>NY_ForgingDragonPlayer</factionDef>
+			</playerFaction>
+			<parts>
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+					<def>ConfigurePawnsXenotypes</def>
+					<pawnChoiceCount>1</pawnChoiceCount>
+					<xenotypeCounts>
+						<li>
+							<count>1</count>
+							<xenotype>NY_ForgingDragonCB</xenotype>
+							<allowedDevelopmentalStages>Adult</allowedDevelopmentalStages>
+						</li>
+					</xenotypeCounts>
+				</li>
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+					<def>PlayerPawnsArriveMethod</def>
+				</li>
+				<li Class="ScenPart_GameStartDialog">
+					<def>GameStartDialog</def>
+					<text>出逃的决定有些过于任性，你几乎只带了自己的兵甲佩刀，在战场上你也许是所向披靡的战神，但现在你的敌人只有饥饿与孤独。</text>
+					<closeSound>GameStartSting</closeSound>
+				</li>
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>Smithing</project>
+				</li>
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>ForgingDragonStarting</project>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>NY_BrassIronSwordB</thingDef>
+					<quality>Excellent</quality>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>NY_ForgingDragonIronHat</thingDef>
+					<quality>Excellent</quality>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>NY_ForgingDragonCicadaArmor</thingDef>
+					<quality>Excellent</quality>
+				</li>
+				<li Class="ScenPart_PawnFilter_Age">
+					<def>PawnFilter_Age</def>
+					<allowedAgeRange>25~34</allowedAgeRange>
+				</li>
+			</parts>
+		</scenario>
+	</ScenarioDef>
+</Defs>

@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<!-- EN: 提炼精血 -->
+	<NY_MakeBloodEssence.label>extract blood essence</NY_MakeBloodEssence.label>
+	<!-- EN: 从冶龍的血肉中提炼出生命的精华。\n\n使用冶龍的血肉恐怕不利于殖民者的心理健康，我们有必要寻找更合适的替代品。 -->
+	<NY_MakeBloodEssence.description>Extracting loong blood essence from loong flesh. \n\nDoing so can be mentally taxing.</NY_MakeBloodEssence.description>
+	<!-- EN: 提炼中。 -->
+	<NY_MakeBloodEssence.jobString>extracting blood essence</NY_MakeBloodEssence.jobString>
+
+	<!-- EN: 加工碧琉璃 -->
+	<NY_MakeGreenGlaze.label>produce green glaze </NY_MakeGreenGlaze.label>
+	<!-- EN: 粉碎大量翡翠并进行煅烧，烧制出最为纯粹的碧琉璃。 -->
+	<NY_MakeGreenGlaze.description>Pulverize jade and then heat them to create green glaze.</NY_MakeGreenGlaze.description>
+	<!-- EN: 加工中。 -->
+	<NY_MakeGreenGlaze.jobString>producing green glaze.</NY_MakeGreenGlaze.jobString>
+
+	<!-- EN: 编织藕丝绢 -->
+	<NY_MakeLotusRootSilk.label>weave lotus root silk</NY_MakeLotusRootSilk.label>
+	<!-- EN: 从冶龍藕中提取纤维并与棉线混织制成洁白坚韧的藕丝绢。 -->
+	<NY_MakeLotusRootSilk.description>Extract fibers from lotus root then interweave it with cotton to form lotus root silk.</NY_MakeLotusRootSilk.description>
+	<!-- EN: 编织中。 -->
+	<NY_MakeLotusRootSilk.jobString>weaving lotus root silk.</NY_MakeLotusRootSilk.jobString>
+
+	<!-- EN: 冶炼赤炼铁 -->
+	<NY_MakeRedIron.label>smelt bloodsteel</NY_MakeRedIron.label>
+	<!-- EN: 将凡铁重炼并融入精血，以血炼铁将得到充满杀伐之气的赤炼铁。 -->
+	<NY_MakeRedIron.description>Infusing blood essence into steel to form bloodsteel, a material excel at making bladearms.</NY_MakeRedIron.description>
+	<!-- EN: 冶炼中。 -->
+	<NY_MakeRedIron.jobString>smelting bloodsteel.</NY_MakeRedIron.jobString>
+
+	<!-- EN: 冶炼赤炼铁 x10 -->
+	<NY_MakeRedIronTen.label>smelt bloodsteel x10</NY_MakeRedIronTen.label>
+	<!-- EN: 将凡铁重炼并融入精血，以血炼铁将得到充满杀伐之气的赤炼铁。 -->
+	<NY_MakeRedIronTen.description>Infusing blood essence into steel to form bloodsteel, a material excel at making bladearms.</NY_MakeRedIronTen.description>
+	<!-- EN: 冶炼中。 -->
+	<NY_MakeRedIronTen.jobString>smelting bloodsteel.</NY_MakeRedIronTen.jobString>
+
+	<!-- EN: 冶炼精炼铁 -->
+	<NY_MakeRefinedIron.label>refine steel</NY_MakeRefinedIron.label>
+	<!-- EN: 高温冶炼去除凡铁中的杂质得到更为精良的精炼铁。 -->
+	<NY_MakeRefinedIron.description>refine normal steel through heat and forging.</NY_MakeRefinedIron.description>
+	<!-- EN: 冶炼中。 -->
+	<NY_MakeRefinedIron.jobString>refining steel.</NY_MakeRefinedIron.jobString>
+
+	<!-- EN: 冶炼精炼铁 x10 -->
+	<NY_MakeRefinedIronTen.label>refine steel x10</NY_MakeRefinedIronTen.label>
+	<!-- EN: 高温冶炼去除凡铁中的杂质得到更为精良的精炼铁。 -->
+	<NY_MakeRefinedIronTen.description>refine normal steel through heat and forging.</NY_MakeRefinedIronTen.description>
+	<!-- EN: 冶炼中。 -->
+	<NY_MakeRefinedIronTen.jobString>refining steel.</NY_MakeRefinedIronTen.jobString>
+
+</LanguageData>

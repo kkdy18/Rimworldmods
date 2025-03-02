@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<!-- EN: 冶龍婴儿 -->
+	<ForgingDragonBodyBaby.label>baby loong</ForgingDragonBodyBaby.label>
+
+	<!-- EN: 青花瓷 -->
+	<ForgingDragonBodyBW.label>baby porcelain loong</ForgingDragonBodyBW.label>
+
+	<!-- EN: 幼年青花瓷 -->
+	<ForgingDragonBodyBW_Child.label>child porcelain loong</ForgingDragonBodyBW_Child.label>
+
+	<!-- EN: 纯种 -->
+	<ForgingDragonBodyCB.label>pureblood loong</ForgingDragonBodyCB.label>
+
+	<!-- EN: 幼年纯种 -->
+	<ForgingDragonBodyCB_Child.label>baby pureblood loong</ForgingDragonBodyCB_Child.label>
+
+	<!-- EN: 食尸鬼 -->
+	<ForgingDragonBodyGhoul.label>ghoul loong</ForgingDragonBodyGhoul.label>
+
+	<!-- EN: 剪纸 -->
+	<ForgingDragonBodyPC.label>papercut loong</ForgingDragonBodyPC.label>
+
+	<!-- EN: 幼年剪纸 -->
+	<ForgingDragonBodyPC_Child.label>child papercut loong</ForgingDragonBodyPC_Child.label>
+
+	<!-- EN: 白玉 -->
+	<ForgingDragonBodyWJ.label>white jade loong</ForgingDragonBodyWJ.label>
+
+	<!-- EN: 幼年白玉 -->
+	<ForgingDragonBodyWJ_Child.label>child white jade loong</ForgingDragonBodyWJ_Child.label>
+
+</LanguageData>

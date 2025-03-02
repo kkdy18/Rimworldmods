@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<DamageDef>
+		<defName>NY_damage_EvilBreak</defName>
+		<label>破邪</label>
+		<workerClass>DamageWorker_Stab</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0}被刺死。</deathMessage>
+		<hediff>Stab</hediff>
+		<hediffSolid>Crack</hediffSolid>
+		<impactSoundType>Slice</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+		<stabChanceOfForcedInternal>0.6</stabChanceOfForcedInternal>
+		<overkillPctToDestroyPart>0.4~1.0</overkillPctToDestroyPart>
+		<additionalHediffs>
+			<li>
+				<hediff>NY_hediff_EvilBreak</hediff>
+				<severityPerDamageDealt>0.015</severityPerDamageDealt>
+				<victimSeverityScalingByInvBodySize>false</victimSeverityScalingByInvBodySize>
+			</li>
+		</additionalHediffs>
+		<applyAdditionalHediffsIfHuntingForFood>false</applyAdditionalHediffsIfHuntingForFood>
+	</DamageDef>
+
+	<ToolCapacityDef>
+		<defName>NY_EvilBreak</defName>
+		<label>破邪</label>
+	</ToolCapacityDef>
+
+	<ManeuverDef>
+		<defName>NY_EvilBreak</defName>
+		<requiredCapacity>NY_EvilBreak</requiredCapacity>
+		<verb>
+			<verbClass>Verb_MeleeAttackDamage</verbClass>
+			<meleeDamageDef>NY_damage_EvilBreak</meleeDamageDef>
+		</verb>
+		<logEntryDef>MeleeAttack</logEntryDef>
+		<combatLogRulesHit>Maneuver_Stab_MeleeHit</combatLogRulesHit>
+		<combatLogRulesDeflect>Maneuver_Stab_MeleeDeflect</combatLogRulesDeflect>
+		<combatLogRulesMiss>Maneuver_Stab_MeleeMiss</combatLogRulesMiss>
+		<combatLogRulesDodge>Maneuver_Stab_MeleeDodge</combatLogRulesDodge>
+	</ManeuverDef>
+
+	<!--剑闪1-->
+	<DamageDef ParentName="CutBase">
+		<defName>NY_SlashCut</defName>
+		<label>赤羽斩</label>
+		<damageEffecter>NY_effect_FeatherSword</damageEffecter>
+	</DamageDef>
+
+	<ToolCapacityDef>
+		<defName>NY_SlashCut</defName>
+		<label>赤羽斩</label>
+	</ToolCapacityDef>
+
+	<ManeuverDef>
+		<defName>NY_SlashCut</defName>
+		<requiredCapacity>NY_SlashCut</requiredCapacity>
+		<verb>
+			<verbClass>Verb_MeleeAttackDamage</verbClass>
+			<meleeDamageDef>NY_SlashCut</meleeDamageDef>
+		</verb>
+		<logEntryDef>MeleeAttack</logEntryDef>
+		<combatLogRulesHit>Maneuver_Slash_MeleeHit</combatLogRulesHit>
+		<combatLogRulesDeflect>Maneuver_Slash_MeleeDeflect</combatLogRulesDeflect>
+		<combatLogRulesMiss>Maneuver_Slash_MeleeMiss</combatLogRulesMiss>
+		<combatLogRulesDodge>Maneuver_Slash_MeleeDodge</combatLogRulesDodge>
+	</ManeuverDef>
+
+	<EffecterDef>
+		<defName>NY_effect_FeatherSword</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+				<moteDef>NY_mote_FeatherOne</moteDef>
+				<positionRadius>0</positionRadius>
+				<burstCount>3~5</burstCount>
+				<scale>0.5~1</scale>
+				<spawnLocType>OnSource</spawnLocType>
+				<speed>1.55</speed>
+				<angle>0~359</angle>
+				<rotationRate>-5~40</rotationRate>
+			</li>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+				<moteDef>NY_mote_FeatherThree</moteDef>
+				<positionRadius>0</positionRadius>
+				<burstCount>1~3</burstCount>
+				<scale>0.25~0.45</scale>
+				<spawnLocType>OnSource</spawnLocType>
+				<speed>1.55</speed>
+				<angle>0~359</angle>
+				<rotationRate>-5~40</rotationRate>
+			</li>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+				<moteDef>NY_mote_SwordSlashRed</moteDef>
+				<positionRadius>0</positionRadius>
+				<burstCount>1</burstCount>
+				<scale>1~1.5</scale>
+				<spawnLocType>OnSource</spawnLocType>
+				<speed>0</speed>
+				<angle>0~359</angle>
+			</li>
+		</children>
+	</EffecterDef>
+
+	<ThingDef ParentName="MoteBase">
+		<defName>NY_mote_SwordSlashRed</defName>
+		<graphicData>
+			<texPath>Things/Mote/NY_SwordSlash</texPath>
+			<shaderType>Mote</shaderType>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<solidTime>0</solidTime>
+			<fadeInTime>0</fadeInTime>
+			<fadeOutTime>0.4</fadeOutTime>
+		</mote>
+	</ThingDef>
+
+	<ThingDef ParentName="MoteBase">
+		<defName>NY_mote_FeatherOne</defName>
+		<graphicData>
+			<texPath>Things/Mote/NY_FeatherOne</texPath>
+			<shaderType>Mote</shaderType>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<solidTime>0</solidTime>
+			<fadeInTime>0.2</fadeInTime>
+			<fadeOutTime>1.2</fadeOutTime>
+		</mote>
+	</ThingDef>
+
+	<ThingDef ParentName="MoteBase">
+		<defName>NY_mote_FeatherThree</defName>
+		<graphicData>
+			<texPath>Things/Mote/NY_FeatherThree</texPath>
+			<shaderType>Mote</shaderType>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<solidTime>0</solidTime>
+			<fadeInTime>0.2</fadeInTime>
+			<fadeOutTime>1.2</fadeOutTime>
+		</mote>
+	</ThingDef>
+
+	<!--剑闪2-->
+	<DamageDef>
+		<defName>NY_StarSword</defName>
+		<label>星宿剑</label>
+		<workerClass>DamageWorker_Stab</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0}被星宿化作的辉刃贯穿。</deathMessage>
+		<hediff>Stab</hediff>
+		<hediffSolid>Crack</hediffSolid>
+		<impactSoundType>Slice</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+		<stabChanceOfForcedInternal>0.6</stabChanceOfForcedInternal>
+		<overkillPctToDestroyPart>0.4~1.0</overkillPctToDestroyPart>
+		<damageEffecter>NY_effect_StarSword</damageEffecter>
+	</DamageDef>
+
+	<ToolCapacityDef>
+		<defName>NY_StarSword</defName>
+		<label>星宿剑</label>
+	</ToolCapacityDef>
+
+	<ManeuverDef>
+		<defName>NY_StarSword</defName>
+		<requiredCapacity>NY_StarSword</requiredCapacity>
+		<verb>
+			<verbClass>Verb_MeleeAttackDamage</verbClass>
+			<meleeDamageDef>NY_StarSword</meleeDamageDef>
+		</verb>
+		<logEntryDef>MeleeAttack</logEntryDef>
+		<combatLogRulesHit>Maneuver_Stab_MeleeHit</combatLogRulesHit>
+		<combatLogRulesDeflect>Maneuver_Stab_MeleeDeflect</combatLogRulesDeflect>
+		<combatLogRulesMiss>Maneuver_Stab_MeleeMiss</combatLogRulesMiss>
+		<combatLogRulesDodge>Maneuver_Stab_MeleeDodge</combatLogRulesDodge>
+	</ManeuverDef>
+
+	<EffecterDef>
+		<defName>NY_effect_StarSword</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+				<moteDef>NY_mote_StarA</moteDef>
+				<positionRadius>0</positionRadius>
+				<burstCount>1~2</burstCount>
+				<scale>0.4~0.8</scale>
+				<spawnLocType>OnSource</spawnLocType>
+				<speed>1.5</speed>
+				<angle>0~359</angle>
+				<rotationRate>-5~40</rotationRate>
+			</li>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+				<moteDef>NY_mote_StarB</moteDef>
+				<positionRadius>0</positionRadius>
+				<burstCount>1~2</burstCount>
+				<scale>0.4~0.8</scale>
+				<spawnLocType>OnSource</spawnLocType>
+				<speed>1.5</speed>
+				<angle>0~359</angle>
+				<rotationRate>-5~40</rotationRate>
+			</li>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+				<moteDef>NY_mote_StarC</moteDef>
+				<positionRadius>0</positionRadius>
+				<burstCount>1~2</burstCount>
+				<scale>0.4~0.8</scale>
+				<spawnLocType>OnSource</spawnLocType>
+				<speed>1.5</speed>
+				<angle>0~359</angle>
+				<rotationRate>-5~40</rotationRate>
+			</li>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+				<moteDef>NY_mote_StarSword</moteDef>
+				<positionRadius>0</positionRadius>
+				<burstCount>1</burstCount>
+				<scale>1~1.5</scale>
+				<spawnLocType>OnSource</spawnLocType>
+				<speed>0</speed>
+				<angle>0~359</angle>
+			</li>
+		</children>
+	</EffecterDef>
+
+	<ThingDef ParentName="MoteBase" Name="NY_MoteGlow" Abstract="True">
+		<altitudeLayer>Darkness</altitudeLayer>
+		<graphicData>
+			<shaderType>MoteGlow</shaderType>
+			<drawSize>(2, 2)</drawSize>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="NY_MoteGlow">
+		<defName>NY_mote_StarSword</defName>
+		<graphicData>
+			<texPath>Things/Mote/NY_StarSword</texPath>
+		</graphicData>
+		<mote>
+			<solidTime>0</solidTime>
+			<fadeInTime>0</fadeInTime>
+			<fadeOutTime>0.4</fadeOutTime>
+		</mote>
+	</ThingDef>
+
+	<ThingDef ParentName="NY_MoteGlow">
+		<defName>NY_mote_StarA</defName>
+		<graphicData>
+			<texPath>Things/Mote/NY_StarA</texPath>
+		</graphicData>
+		<mote>
+			<solidTime>0</solidTime>
+			<fadeInTime>0.2</fadeInTime>
+			<fadeOutTime>1.2</fadeOutTime>
+		</mote>
+	</ThingDef>
+
+	<ThingDef ParentName="NY_MoteGlow">
+		<defName>NY_mote_StarB</defName>
+		<graphicData>
+			<texPath>Things/Mote/NY_StarB</texPath>
+		</graphicData>
+		<mote>
+			<solidTime>0</solidTime>
+			<fadeInTime>0.2</fadeInTime>
+			<fadeOutTime>1.2</fadeOutTime>
+		</mote>
+	</ThingDef>
+
+	<ThingDef ParentName="NY_MoteGlow">
+		<defName>NY_mote_StarC</defName>
+		<graphicData>
+			<texPath>Things/Mote/NY_StarC</texPath>
+		</graphicData>
+		<mote>
+			<solidTime>0</solidTime>
+			<fadeInTime>0.2</fadeInTime>
+			<fadeOutTime>1.2</fadeOutTime>
+		</mote>
+	</ThingDef>
+</Defs>

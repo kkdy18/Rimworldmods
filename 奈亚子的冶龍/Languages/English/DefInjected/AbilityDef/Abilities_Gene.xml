@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<!-- EN: 青龙吹火 -->
+	<NY_ability_LoongFireSpew.label>fire breath</NY_ability_LoongFireSpew.label>
+	<!-- EN: 纯种冶龍所掌握的天赋神通，可以喷出蔓延极远的烈焰灼烧敌人。 -->
+	<NY_ability_LoongFireSpew.description>Spraying a long plume of fire toward the target, an ability wielded by purebloods.</NY_ability_LoongFireSpew.description>
+
+	<!-- EN: 龙脊穿心 -->
+	<NY_ability_LoongFrenzy.label>bloodburst</NY_ability_LoongFrenzy.label>
+	<!-- EN: 纯种冶龍所掌握的特殊战斗技巧，通过刺激脊髓神经与加速血液流动激发潜能，在短时间内获得狂暴的力量。 -->
+	<NY_ability_LoongFrenzy.description>The special ability of purebloods, stimulating their bloodflow and gaining a frenzy of strength.</NY_ability_LoongFrenzy.description>
+
+	<!-- EN: 玉龙生烟 -->
+	<NY_ability_LoongSmoke.label>smoke breath</NY_ability_LoongSmoke.label>
+	<!-- EN: 白玉种冶龍所掌握的天赋神通，可以在行动的同时释放大量烟雾遮蔽身形。 -->
+	<NY_ability_LoongSmoke.description>Continuously release smoke in the air to cover the caster, an ability wielded by white jades.</NY_ability_LoongSmoke.description>
+
+</LanguageData>

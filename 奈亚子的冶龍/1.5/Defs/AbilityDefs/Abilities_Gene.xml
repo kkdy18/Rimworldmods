@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<AbilityDef>
+		<defName>NY_ability_LoongFrenzy</defName>
+		<label>龙脊穿心</label>
+		<description>纯种冶龍所掌握的特殊战斗技巧，通过刺激脊髓神经与加速血液流动激发潜能，在短时间内获得狂暴的力量。</description>
+		<iconPath>UI/Abilities/NY_LoongFrenzy</iconPath>
+		<cooldownTicksRange>60000</cooldownTicksRange>
+		<hostile>false</hostile>
+		<groupAbility>true</groupAbility>
+		<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+		<aiCanUse>true</aiCanUse>
+		<ai_IsOffensive>true</ai_IsOffensive>
+		<targetRequired>false</targetRequired>
+		<statBases>
+			<Ability_Duration>30</Ability_Duration>
+		</statBases>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<drawAimPie>false</drawAimPie>
+			<requireLineOfSight>false</requireLineOfSight>
+			<nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+			<targetable>false</targetable>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>NY_hediff_LoongFrenzy</hediffDef>
+				<onlyApplyToSelf>True</onlyApplyToSelf>
+				<replaceExisting>true</replaceExisting>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<EffecterDef>
+		<defName>NY_effecter_LoongFrenzy</defName>
+		<offsetMode>Free</offsetMode>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+				<fleckDef>NY_fleck_RedAura</fleckDef>
+				<ticksBetweenMotes>30</ticksBetweenMotes>
+				<burstCount>1</burstCount>
+				<spawnLocType>OnSource</spawnLocType>
+				<positionRadius>0</positionRadius>
+				<scale>1</scale>
+				<rotation>0~0</rotation>
+				<rotationRate>0</rotationRate>
+				<absoluteAngle>True</absoluteAngle>
+				<angle>0</angle>
+				<fleckUsesAngleForVelocity>false</fleckUsesAngleForVelocity>
+				<speed>0</speed>
+			</li>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+				<scale>0.4</scale>
+				<ticksBetweenMotes>50</ticksBetweenMotes>
+				<rotation>0</rotation>
+				<rotationRate>0</rotationRate>
+				<positionRadius>0</positionRadius>
+				<fleckDef>NY_fleck_RedBit</fleckDef>
+				<attachToSpawnThing>true</attachToSpawnThing>
+				<absoluteAngle>True</absoluteAngle>
+				<fleckUsesAngleForVelocity>false</fleckUsesAngleForVelocity>
+				<spawnLocType>OnSource</spawnLocType>
+				<positionOffset>(0, 0, 1)</positionOffset>
+				<speed>0</speed>
+				<angle>0</angle>
+			</li>
+		</children>
+	</EffecterDef>
+
+	<FleckDef ParentName="FleckBase_Thrown">
+		<defName>NY_fleck_RedAura</defName>
+		<graphicData>
+			<texPath>Things/Mote/NY_StressAura</texPath>
+			<shaderType>Mote</shaderType>
+			<renderInstanced>false</renderInstanced>
+			<color>(0.7, 0, 0, 0.5)</color>
+			<drawSize>(0.5, 0.5)</drawSize>
+			<graphicClass>Graphic_FleckPulse</graphicClass>
+		</graphicData>
+		<altitudeLayer>MoteLow</altitudeLayer>
+		<fadeInTime>0.1</fadeInTime>
+		<solidTime>1.1</solidTime>
+		<fadeOutTime>0.2</fadeOutTime>
+		<useAttachLink>true</useAttachLink>
+		<scalers>
+			<li>
+				<scaleTime>2</scaleTime>
+				<scaleAmt>5</scaleAmt>
+				<curve>
+					<points>
+						<li>(0, 0.8)</li>
+						<li>(0.1, 0.88)</li>
+						<li>(0.2, 0.99)</li>
+						<li>(0.3, 0.98)</li>
+						<li>(0.4, 0.91)</li>
+						<li>(0.5, 0.81)</li>
+						<li>(0.6, 0.83)</li>
+						<li>(0.7, 0.95)</li>
+						<li>(0.8, 0.99)</li>
+						<li>(0.9, 0.93)</li>
+						<li>(1, 0.83)</li>
+					</points>
+				</curve>
+			</li>
+		</scalers>
+	</FleckDef>
+
+	<FleckDef ParentName="FleckBase_Thrown">
+		<defName>NY_fleck_RedBit</defName>
+		<graphicData>
+			<texPath>Things/Mote/NY_RageSpeedBit</texPath>
+			<renderInstanced>true</renderInstanced>
+			<shaderParameters>
+				<_Color2>(0.55, 0, 0, 1)</_Color2>
+			</shaderParameters>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<fadeInTime>0.1</fadeInTime>
+		<solidTime>0.8</solidTime>
+		<fadeOutTime>0.2</fadeOutTime>
+		<useAttachLink>true</useAttachLink>
+		<scalers>
+			<li>
+				<scaleTime>1.6</scaleTime>
+				<scaleAmt>1.1</scaleAmt>
+				<curve>
+					<points>
+						<li>(0, 0.8)</li>
+						<li>(0.2, 1.0)</li>
+						<!-- 快速上升 -->
+						<li>(0.4, 0.9)</li>
+						<!-- 快速下降 -->
+						<li>(0.6, 0.85)</li>
+						<!-- 缓慢上升 -->
+						<li>(0.8, 0.95)</li>
+						<!-- 再次上升 -->
+						<li>(1, 0.8)</li>
+						<!-- 回到初始值 -->
+					</points>
+				</curve>
+			</li>
+		</scalers>
+	</FleckDef>
+
+	<AbilityDef>
+		<defName>NY_ability_LoongSmoke</defName>
+		<label>玉龙生烟</label>
+		<description>白玉种冶龍所掌握的天赋神通，可以在行动的同时释放大量烟雾遮蔽身形。</description>
+		<iconPath>UI/Abilities/NY_LoongSmoke</iconPath>
+		<cooldownTicksRange>120000</cooldownTicksRange>
+		<!-- 两天 -->
+		<hostile>false</hostile>
+		<groupAbility>true</groupAbility>
+		<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+		<aiCanUse>true</aiCanUse>
+		<ai_IsOffensive>true</ai_IsOffensive>
+		<targetRequired>false</targetRequired>
+		<statBases>
+			<Ability_Duration>15</Ability_Duration>
+		</statBases>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<drawAimPie>false</drawAimPie>
+			<requireLineOfSight>false</requireLineOfSight>
+			<nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+			<targetable>false</targetable>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>NY_hediff_LoongSmoke</hediffDef>
+				<onlyApplyToSelf>True</onlyApplyToSelf>
+				<replaceExisting>true</replaceExisting>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<EffecterDef>
+		<defName>NY_effecter_SmokeReleasing</defName>
+		<children>
+			<!-- <li> -->
+				<!-- <subEffecterClass>SubEffecter_Sustainer</subEffecterClass> -->
+				<!-- <soundDef>GasReleasing</soundDef> -->
+			<!-- </li> -->
+			<li>
+				<subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+				<positionRadius>0.3</positionRadius>
+				<fleckDef>NY_fleck_SmokeReleasing</fleckDef>
+				<chancePerTick>0.1</chancePerTick>
+				<scale>0.5~1</scale>
+				<spawnLocType>OnSource</spawnLocType>
+			</li>
+		</children>
+	</EffecterDef>
+
+	<FleckDef ParentName="FleckBase_Thrown">
+		<defName>NY_fleck_SmokeReleasing</defName>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<fadeInTime>0.3</fadeInTime>
+		<solidTime>0</solidTime>
+		<fadeOutTime>0.3</fadeOutTime>
+		<growthRate>0.8</growthRate>
+		<acceleration>(0, 0, 2)</acceleration>
+		<graphicData>
+			<texPath>Things/Gas/GasCloudThickA</texPath>
+			<shaderType>TransparentPostLight</shaderType>
+			<color>(128, 128, 128, 128)</color>
+		</graphicData>
+	</FleckDef>
+
+	<AbilityDef>
+		<defName>NY_ability_LoongFireSpew</defName>
+		<label>青龙吹火</label>
+		<description>纯种冶龍所掌握的天赋神通，可以喷出蔓延极远的烈焰灼烧敌人。</description>
+		<iconPath>UI/Abilities/NY_LoongFireSpew</iconPath>
+		<cooldownTicksRange>180000</cooldownTicksRange>
+		<aiCanUse>true</aiCanUse>
+		<ai_IsIncendiary>true</ai_IsIncendiary>
+		<sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
+		<warmupStartSound>FireSpew_Warmup</warmupStartSound>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>23.9</range>
+			<warmupTime>1</warmupTime>
+			<soundCast>FireSpew_Resolve</soundCast>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityFireSpew">
+				<range>23.9</range>
+				<lineWidthEnd>5</lineWidthEnd>
+				<filthDef>Filth_FlammableBile</filthDef>
+				<effecterDef>Fire_Spew</effecterDef>
+				<canHitFilledCells>true</canHitFilledCells>
+			</li>
+		</comps>
+	</AbilityDef>
+</Defs>

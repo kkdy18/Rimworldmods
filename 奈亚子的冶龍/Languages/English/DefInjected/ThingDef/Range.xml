@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<!-- EN: 翡翠琉璃弓 -->
+	<NY_DragonBow.label>loong jade bow</NY_DragonBow.label>
+	<!-- EN: 以碧琉璃装饰的长弓，强韧的弓身弓弦足以承受冶龍射手在一瞬射出三箭，传说有射艺精湛者能使三箭齐中一点，以后者之箭头劈入前者之箭尾。 -->
+	<NY_DragonBow.description>A long loong bow decorated with green glaze, capable of withstanding the stress of shooting three arrows at once. It's said that the best archer could land successive shots into the previous arrow's shaft.</NY_DragonBow.description>
+	<!-- EN: 弓背 -->
+	<NY_DragonBow.tools.0.label>arm</NY_DragonBow.tools.0.label>
+	<!-- EN: 翡翠琉璃弓 -->
+	<NY_DragonBow.verbs.Verb_Shoot.label>loong jade bow</NY_DragonBow.verbs.Verb_Shoot.label>
+
+	<!-- EN: 连珠箭 -->
+	<NY_DragonBowArrow.label>cascade arrow</NY_DragonBowArrow.label>
+
+	<!-- EN: 黄金丝绸扇 -->
+	<NY_DragonFan.label>loong silk fan</NY_DragonFan.label>
+	<!-- EN: 饰以黄金与碧琉璃的巨扇，冶龍工匠的巧妙设计使其能够汇聚风力释放宛如无形之刃的“神风”撕裂敌人，不过若是被敌人近身就算是所谓神风也是难以施展。 -->
+	<NY_DragonFan.description>Huge fan decorate with gold and green glaze, accumulates wind and projects a wind blade at enemies.</NY_DragonFan.description>
+	<!-- EN: 扇骨 -->
+	<NY_DragonFan.tools.0.label>fan</NY_DragonFan.tools.0.label>
+	<!-- EN: 黄金丝绸扇 -->
+	<NY_DragonFan.verbs.Verb_Shoot.label>loong silk fan</NY_DragonFan.verbs.Verb_Shoot.label>
+
+	<!-- EN: 神风 -->
+	<NY_DragonFanWind.label>wind blade</NY_DragonFanWind.label>
+
+	<!-- EN: 冶龍飞针 -->
+	<NY_DragonFlyNeedle.label>loong thrown needle</NY_DragonFlyNeedle.label>
+	<!-- EN: 精炼铁打制的长针，运用恰当的手法投掷就能成为伤敌的利器，全力投出甚至足以击穿甲胄。 -->
+	<NY_DragonFlyNeedle.description>Long needle made of refined steel, with the right way of throwing it can harm enemies and even pierce armor.</NY_DragonFlyNeedle.description>
+	<!-- EN: 针尖 -->
+	<NY_DragonFlyNeedle.tools.0.label>point</NY_DragonFlyNeedle.tools.0.label>
+	<!-- EN: 冶龍飞针 -->
+	<NY_DragonFlyNeedle.verbs.Verb_Shoot.label>loong needle</NY_DragonFlyNeedle.verbs.Verb_Shoot.label>
+
+	<!-- EN: 精钢长针 -->
+	<NY_DragonNeedle.label>loong needle</NY_DragonNeedle.label>
+
+	<!-- EN: 跃音阮 -->
+	<NY_DragonPipa.label>loong pipa</NY_DragonPipa.label>
+	<!-- EN: 看上去平平无奇的乐器，一旦拨动丝弦就能激发断水裂石的慷慨之音。它并非乐器，并非武器，而是“龙之喉舌”所持的身份凭证，这些冶龍肩负着为族群发声的职责，游走于战场与谈判场之上。 -->
+	<NY_DragonPipa.description>A traditional string instrument weaponized, the tones it makes can even break stones. These weapons are the symbol of "loong's mouthpieces", a group of loongs that speaks for the union, on battlefields and during negotiations.</NY_DragonPipa.description>
+	<!-- EN: 琴箱 -->
+	<NY_DragonPipa.tools.0.label>soundbox</NY_DragonPipa.tools.0.label>
+	<!-- EN: 跃音阮 -->
+	<NY_DragonPipa.verbs.Verb_Shoot.label>loong pipa</NY_DragonPipa.verbs.Verb_Shoot.label>
+
+	<!-- EN: 追魂铃 -->
+	<NY_LoongBell.label>loong enchanted bell</NY_LoongBell.label>
+	<!-- EN: 冶龍之中名为乐师的秘密部队所使用的武器，外观像一串铃铛，发射能够引起物体共振破坏其结构的定向音波杀伤目标，这件武器特化了攻击频率。\n\n冶龍乐师的武器内部存在着用冶龍工艺加工出的微小共鸣结构，能在攻击时释放次声波干扰敌人，通过扰乱神经系统之类的途径削弱敌人的行动能力，严重时可以引发精神失常，冶龍们将这种攻击手段称为“魔音”。 -->
+	<NY_LoongBell.description>A weapon used by the "orchestra" special forces in the form af a string of bells, increasing its attack frequency. Its directed sound wave can damage enemies, and the infrasound it caused, or "enchanted tones" as loongs call it, disturbs enemy nerval systems, weakening them and even causing mental disorders.</NY_LoongBell.description>
+	<!-- EN: 铃铛 -->
+	<NY_LoongBell.tools.0.label>bell</NY_LoongBell.tools.0.label>
+	<!-- EN: 追魂铃 -->
+	<NY_LoongBell.verbs.Verb_Shoot.label>loong enchanted bell</NY_LoongBell.verbs.Verb_Shoot.label>
+
+	<!-- EN: 追魂之音 -->
+	<NY_LoongBellTone.label>enchanted tone</NY_LoongBellTone.label>
+
+	<!-- EN: 断魂笛 -->
+	<NY_LoongFlute.label>loong enchanted flute</NY_LoongFlute.label>
+	<!-- EN: 冶龍之中名为乐师的秘密部队所使用的武器，外观像一根长笛，发射能够引起物体共振破坏其结构的定向音波杀伤目标，这件武器特化了射程与杀伤力。\n\n冶龍乐师的武器内部存在着用冶龍工艺加工出的微小共鸣结构，能在攻击时释放次声波干扰敌人，通过扰乱神经系统之类的途径削弱敌人的行动能力，严重时可以引发精神失常，冶龍们将这种攻击手段称为“魔音”。 -->
+	<NY_LoongFlute.description>A weapon used by the "orchestra" special forces in the form of a flute, increasing its range and damage. Its directed sound wave can damage enemies, and the infrasound it caused, or "enchanted tones" as loongs call it, disturbs enemy nerval systems, weakening them and even causing mental disorders.</NY_LoongFlute.description>
+	<!-- EN: 笛管 -->
+	<NY_LoongFlute.tools.0.label>pipe</NY_LoongFlute.tools.0.label>
+	<!-- EN: 断魂笛 -->
+	<NY_LoongFlute.verbs.Verb_Shoot.label>loong enchanted flute</NY_LoongFlute.verbs.Verb_Shoot.label>
+
+	<!-- EN: 断魂之音 -->
+	<NY_LoongFluteTone.label>enchanted tone</NY_LoongFluteTone.label>
+
+	<!-- EN: 神风芭蕉扇 -->
+	<NY_LoongPalmLeafFan.label>zephyr fan</NY_LoongPalmLeafFan.label>
+	<!-- EN: 以冶龍神话传说中的法宝为原型设计的神兵，神珍铁的奇异性质将原本汇聚风力释放“神风”的构造进一步强化，挥扇发射的不再是风刃而是由暴风压缩而成的风团，不稳定的风团会在爆发的瞬间切割周遭物体，造成大范围的破坏。\n\n据记载，如果不断挥扇搅动气流却不发射，汇聚的风暴将会产生新的变化。 -->
+	<NY_LoongPalmLeafFan.description>Legendary weapon of wind, this weapon can accumulate a storm, projecting a ball of compressed air instead of a mere wind blade. Upon impact it destablizes and sending wind blades all over the area. It is said if the storm is allowed to accumulate further, it'll unleash even more powerful force.</NY_LoongPalmLeafFan.description>
+	<!-- EN: 呼扇 -->
+	<NY_LoongPalmLeafFan.tools.0.label>fan</NY_LoongPalmLeafFan.tools.0.label>
+	<!-- EN: 神风芭蕉扇 -->
+	<NY_LoongPalmLeafFan.verbs.Verb_Shoot.label>zephyr fan</NY_LoongPalmLeafFan.verbs.Verb_Shoot.label>
+
+	<!-- EN: 裂帛之音 -->
+	<NY_PipaWave.label>impact tone</NY_PipaWave.label>
+
+	<!-- EN: 暴虐阴风 -->
+	<NY_SuperFanWind.label>storm sphere</NY_SuperFanWind.label>
+
+	<!-- EN: 破灭龙吟 -->
+	<NY_SuperPipaWave.label>devastation tone</NY_SuperPipaWave.label>
+
+	<!-- EN: 龍啸琵琶 -->
+	<NY_TrueLoongPipa.label>dragonroar pipa</NY_TrueLoongPipa.label>
+	<!-- EN: 形似乐器的神兵，神珍铁锻造的弦线能将微小的震动放大为强烈的激波，伴随着清脆的琵琶声，巨大的能量将如怒龙呼啸粉碎任何物理结构，驾驭神兵者随性的弹奏将成为敌人的葬歌。\n\n只有冶龍的血脉才能承载这件神兵的力量，外族贸然使用只会被暴乱的龙吟撕碎。 -->
+	<NY_TrueLoongPipa.description>Legendary weapon in the form of a pipa, a traditional string instrument. Its immortalite strings greatly escalated the strength of shockwave, brining destruction to anything in the way.\n\nOnly loongs can control this weapon, others will get themselves devastated too.</NY_TrueLoongPipa.description>
+	<!-- EN: 龙威拒斥 -->
+	<NY_TrueLoongPipa.tools.0.label>soundbox</NY_TrueLoongPipa.tools.0.label>
+	<!-- EN: 龍啸琵琶 -->
+	<NY_TrueLoongPipa.verbs.Verb_Shoot.label>dragonroar pipa</NY_TrueLoongPipa.verbs.Verb_Shoot.label>
+
+</LanguageData>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingCategoryDef>
+		<defName>NY_Resources</defName>
+		<label>冶龍珍材</label>
+		<parent>Root</parent>
+		<resourceReadoutRoot>true</resourceReadoutRoot>
+		<iconPath>UI/ThingCategories/NY_Resources</iconPath>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>NY_DragonWeapon</defName>
+		<label>冶龍百兵</label>
+		<parent>Weapons</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>NY_DragonWeaponMelee</defName>
+		<label>金铁破敌</label>
+		<parent>NY_DragonWeapon</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>NY_DragonWeaponRanged</defName>
+		<label>制胜百里</label>
+		<parent>NY_DragonWeapon</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>NY_DragonApparel</defName>
+		<label>冶龍盔袍</label>
+		<parent>Apparel</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>NY_DragonCloth</defName>
+		<label>冶龍常服</label>
+		<parent>NY_DragonApparel</parent>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>NY_DragonArmor</defName>
+		<label>冶龍甲胄</label>
+		<parent>NY_DragonApparel</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>NY_BlackBirdArmor</defName>
+		<label>玄鸟卫禁军甲胄</label>
+		<parent>NY_DragonArmor</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>NY_DragonHeadDress</defName>
+		<label>冶龍华饰</label>
+		<parent>NY_DragonApparel</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>NY_DragonFood</defName>
+		<label>冶龍饮食</label>
+		<parent>Foods</parent>
+		<resourceReadoutRoot>true</resourceReadoutRoot>
+		<iconPath>UI/ThingCategories/NY_DragonFood</iconPath>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>NY_DragonPlantRaw</defName>
+		<label>冶龍果蔬</label>
+		<parent>PlantFoodRaw</parent>
+		<iconPath>UI/ThingCategories/NY_DragonPlantRaw</iconPath>
+	</ThingCategoryDef>
+</Defs>

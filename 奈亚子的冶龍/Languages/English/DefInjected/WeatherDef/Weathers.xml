@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<!-- EN: 风寒天 -->
+	<NY_ColdWindy.label>cold windy</NY_ColdWindy.label>
+	<!-- EN: 阴沉的大风天气，带来阵阵寒意。 -->
+	<NY_ColdWindy.description>Chilly windy days.</NY_ColdWindy.description>
+
+	<!-- EN: 晴燥天 -->
+	<NY_DroughtClear.label>dry clear</NY_DroughtClear.label>
+	<!-- EN: 高温、干燥的天气，让人精神不振。 -->
+	<NY_DroughtClear.description>Hot and dry days.</NY_DroughtClear.description>
+
+</LanguageData>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<!-- EN: 破邪 -->
+	<NY_damage_EvilBreak.label>evil bane</NY_damage_EvilBreak.label>
+	<!-- EN: {0}被刺死。 -->
+	<NY_damage_EvilBreak.deathMessage>{0} was exorcized.</NY_damage_EvilBreak.deathMessage>
+
+	<!-- EN: 赤羽斩 -->
+	<NY_SlashCut.label>phoenix slash</NY_SlashCut.label>
+	<!-- EN: {0} has been cut to death. -->
+	<NY_SlashCut.deathMessage>{0} has been cut to death.</NY_SlashCut.deathMessage>
+
+	<!-- EN: 星宿剑 -->
+	<NY_StarSword.label>celestial slash</NY_StarSword.label>
+	<!-- EN: {0}被星宿化作的辉刃贯穿。 -->
+	<NY_StarSword.deathMessage>{0} was pierced by the blade of stars.</NY_StarSword.deathMessage>
+
+</LanguageData>

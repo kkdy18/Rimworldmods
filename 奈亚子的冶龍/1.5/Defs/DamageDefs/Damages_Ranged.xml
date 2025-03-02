@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<DamageDef Name="NY_SoundDamageBase">
+		<defName>NY_damage_Resonance</defName>
+		<label>共振</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0}的生命在乐声中悄然破碎。</deathMessage>
+		<hediff>Crack</hediff>
+		<hediffSolid>Crack</hediffSolid>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Bullet</impactSoundType>
+		<buildingDamageFactorImpassable>15</buildingDamageFactorImpassable>
+		<buildingDamageFactorPassable>7.5</buildingDamageFactorPassable>
+		<isRanged>true</isRanged>
+		<makesAnimalsFlee>true</makesAnimalsFlee>
+	</DamageDef>
+
+	<DamageDef ParentName="NY_SoundDamageBase">
+		<defName>NY_damage_EvilTone</defName>
+		<label>乱魂魔音</label>
+		<additionalHediffs>
+			<li>
+				<hediff>NY_hediff_EvilTone</hediff>
+				<severityFixed>1</severityFixed>
+			</li>
+		</additionalHediffs>
+		<applyAdditionalHediffsIfHuntingForFood>false</applyAdditionalHediffsIfHuntingForFood>
+		<impactSoundType>Bullet</impactSoundType>
+		<damageEffecter>NY_effect_MusicNote</damageEffecter>
+	</DamageDef>
+
+	<EffecterDef>
+		<defName>NY_effect_MusicNote</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+				<moteDef>NY_mote_MusicNote</moteDef>
+				<positionRadius>0</positionRadius>
+				<burstCount>3~5</burstCount>
+				<scale>0.1~0.4</scale>
+				<spawnLocType>OnSource</spawnLocType>
+				<speed>1.5</speed>
+				<angle>0~359</angle>
+				<rotationRate>-5~40</rotationRate>
+			</li>
+		</children>
+	</EffecterDef>
+
+	<ThingDef ParentName="NY_MoteGlow">
+		<defName>NY_mote_MusicNote</defName>
+		<graphicData>
+			<texPath>Things/Mote/NY_MusicNote</texPath>
+		</graphicData>
+		<mote>
+			<solidTime>0</solidTime>
+			<fadeInTime>0.2</fadeInTime>
+			<fadeOutTime>1.2</fadeOutTime>
+		</mote>
+	</ThingDef>
+
+	<EffecterDef>
+		<defName>NY_effecter_EvilTone</defName>
+		<offsetMode>Free</offsetMode>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+				<scale>0.3</scale>
+				<ticksBetweenMotes>50</ticksBetweenMotes>
+				<rotation>0</rotation>
+				<rotationRate>0</rotationRate>
+				<positionRadius>0</positionRadius>
+				<fleckDef>NY_fleck_EvilTone</fleckDef>
+				<attachToSpawnThing>true</attachToSpawnThing>
+				<absoluteAngle>True</absoluteAngle>
+				<fleckUsesAngleForVelocity>false</fleckUsesAngleForVelocity>
+				<spawnLocType>OnSource</spawnLocType>
+				<positionOffset>(0, 0, 1)</positionOffset>
+				<speed>0</speed>
+				<angle>0</angle>
+			</li>
+		</children>
+	</EffecterDef>
+
+	<FleckDef ParentName="FleckBase_Thrown">
+		<defName>NY_fleck_EvilTone</defName>
+		<graphicData>
+			<texPath>Things/Mote/NY_EvilTone</texPath>
+			<renderInstanced>true</renderInstanced>
+			<shaderParameters>
+				<_Color2>(1, 1, 1, 1)</_Color2>
+			</shaderParameters>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<fadeInTime>0.1</fadeInTime>
+		<solidTime>0.8</solidTime>
+		<fadeOutTime>0.2</fadeOutTime>
+		<useAttachLink>true</useAttachLink>
+		<scalers>
+			<li>
+				<scaleTime>1.6</scaleTime>
+				<scaleAmt>1.1</scaleAmt>
+				<curve>
+					<points>
+						<li>(0, 0.8)</li>
+						<li>(0.2, 1.0)</li>
+						<!-- 快速上升 -->
+						<li>(0.4, 0.9)</li>
+						<!-- 快速下降 -->
+						<li>(0.6, 0.85)</li>
+						<!-- 缓慢上升 -->
+						<li>(0.8, 0.95)</li>
+						<!-- 再次上升 -->
+						<li>(1, 0.8)</li>
+						<!-- 回到初始值 -->
+					</points>
+				</curve>
+			</li>
+		</scalers>
+	</FleckDef>
+	
+	<DamageDef>
+		<defName>NY_damage_ShockWave</defName>
+		<label>激波</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>强烈的压缩波撕碎一切，{0}四分五裂。</deathMessage>
+		<hediff>Cut</hediff>
+		<hediffSolid>Crack</hediffSolid>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Slice</impactSoundType>
+		<buildingDamageFactorImpassable>15</buildingDamageFactorImpassable>
+		<buildingDamageFactorPassable>7.5</buildingDamageFactorPassable>
+		<isRanged>true</isRanged>
+		<makesAnimalsFlee>true</makesAnimalsFlee>
+		<damageEffecter>NY_effect_ShockCut</damageEffecter>
+	</DamageDef>
+
+	<EffecterDef>
+		<defName>NY_effect_ShockCut</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+				<moteDef>NY_mote_ShockCut</moteDef>
+				<positionRadius>0</positionRadius>
+				<burstCount>1</burstCount>
+				<scale>1~1.5</scale>
+				<spawnLocType>OnSource</spawnLocType>
+				<speed>0</speed>
+				<angle>0~359</angle>
+			</li>
+		</children>
+	</EffecterDef>
+
+	<ThingDef ParentName="MoteBase">
+		<defName>NY_mote_ShockCut</defName>
+		<graphicData>
+			<texPath>Things/Mote/NY_ShockCut</texPath>
+			<shaderType>Mote</shaderType>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<solidTime>0</solidTime>
+			<fadeInTime>0</fadeInTime>
+			<fadeOutTime>0.4</fadeOutTime>
+		</mote>
+	</ThingDef>
+
+	<DamageDef>
+		<defName>NY_damage_WindCut</defName>
+		<label>风刃</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>狂乱的疾风将{0}斩杀。</deathMessage>
+		<hediff>Cut</hediff>
+		<hediffSolid>Crack</hediffSolid>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Tornado</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+		<overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+		<isRanged>true</isRanged>
+		<makesAnimalsFlee>true</makesAnimalsFlee>
+	</DamageDef>
+
+	<DamageDef>
+		<defName>NY_damage_SuperFanWind</defName>
+		<label>暴虐阴风</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<isExplosive>true</isExplosive>
+		<deathMessage>{0}卷入暴虐的阴风化为血雾。</deathMessage>
+		<hediff>Scratch</hediff>
+		<hediffSolid>Crack</hediffSolid>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Tornado</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+		<minDamageToFragment>15</minDamageToFragment>
+		<defaultDamage>50</defaultDamage>
+		<defaultStoppingPower>0.5</defaultStoppingPower>
+		<defaultArmorPenetration>0.10</defaultArmorPenetration>
+		<plantDamageFactor>4</plantDamageFactor>
+		<corpseDamageFactor>0.5</corpseDamageFactor>
+		<explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+		<explosionHeatEnergyPerCell>0</explosionHeatEnergyPerCell>
+		<explosionCellFleck></explosionCellFleck>
+		<soundExplosion></soundExplosion>
+		<combatLogRules>Damage_Bomb</combatLogRules>
+		<damageEffecter>NY_effect_ShockCut</damageEffecter>
+	</DamageDef>
+
+	<DamageDef>
+		<defName>NY_damage_StarSwordAir</defName>
+		<label>星芒剑气</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<isExplosive>true</isExplosive>
+		<deathMessage>{0}被闪耀的剑气绞碎。</deathMessage>
+		<hediff>Cut</hediff>
+		<hediffSolid>Crack</hediffSolid>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Slice</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+		<minDamageToFragment>15</minDamageToFragment>
+		<defaultDamage>50</defaultDamage>
+		<defaultStoppingPower>0.5</defaultStoppingPower>
+		<defaultArmorPenetration>0.10</defaultArmorPenetration>
+		<plantDamageFactor>4</plantDamageFactor>
+		<corpseDamageFactor>0.5</corpseDamageFactor>
+		<explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+		<explosionHeatEnergyPerCell>0</explosionHeatEnergyPerCell>
+		<explosionCellFleck></explosionCellFleck>
+		<soundExplosion></soundExplosion>
+		<combatLogRules>Damage_Bomb</combatLogRules>
+		<damageEffecter>NY_effect_StarSword</damageEffecter>
+	</DamageDef>
+</Defs>

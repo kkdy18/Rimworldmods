@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <FacialAnimation.HeadTypeDef>
+	  <defName>SmeltedLoong_Head</defName>
+	  <texPath>Things/Pawn/SmeltedLoong/Heads_Blank/LoongHead1</texPath>
+	  <shader>Map/CutoutSkin</shader>
+      <shaderColorOverride>Map/CutoutSkinOverride</shaderColorOverride>
+	  <raceName>SmeltedLoong</raceName> 
+  </FacialAnimation.HeadTypeDef>  
+</Defs>

@@ -1,0 +1,79 @@
+<ModMetaData>
+	<name>中式龙娘——冶龍 SMELTED LOONG</name>
+	<author>奈亚子，灰风白茅</author>
+	<supportedVersions>
+		<li>1.5</li>
+	</supportedVersions>
+	<modDependencies>
+		<li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+		</li>
+		<li>
+			<packageId>Ludeon.RimWorld.Biotech</packageId>
+			<displayName>Biotech</displayName>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>Ludeon.RimWorld.Biotech</li>
+	</loadAfter>
+	<packageId>NY.SmeltedLoong</packageId>
+	<description>
+		[h1][b]种族介绍[/b][/h1]
+		治龙是一种拥有传说中名为龙的生物的生物特征的人类分支，她们在遥远的故乡发展出了治雕特色的帝制文明与冶炼铸造技术，她们的族群中只有女性，因此需要和其他种族的男性结合来繁衍后代。
+
+		[h2][b]冶龍纯种[/b][/h2]
+		[h3]青角素发琉璃眼，力拔山兮气盖世 身流精粹真龙血，叱咤风云震神州[/h3]
+
+		冶龍中占比最大的种族，自称是血统最纯正的冶龍，特征是绿色的尾巴与眼睛。纯种龙有着相当强壮坚韧的身躯，是天生的战士，性欲旺盛但依然人丁稀少。据记载她们会集群袭击荒野中独立弱小的殖民地，掠走钱财食粮以及年轻男子。
+
+		[h2][b]青花瓷种族[/b][/h2]
+		[h3]靛角银发蔚蓝眼，白瓷塑身气血娇 温婉流转贤妻样,庖厨针线过常人[/h3]
+
+		治龍中的一支亚种，特征是蓝色的尾巴和眼睛，还有洁白光滑的皮肤。青花瓷龙的肉体相当脆弱，但她们的手指相当灵活，能高效地完成各种高精度工作。这个种族中诞生了许多著名工匠，治龍战士宁愿牺牲自己也要保护她们，不过学艺不精的家伙还是会被扔上战场。传说青花瓷龙的先祖曾与神明交易，她们为寻求登峰造极的技术向神明祈祷，神明满足了她们的请求，但代价是她们的血肉从此如陶瓷一般脆弱。
+
+
+		[h1][b]武器介绍[/b][/h1]
+		[h1][b]龙娘的武器有三个分类 凡品 精品 仙品 [/b][/h1]
+
+		[h2]凡品 ：[/h2]钢铁木棍就能制作，虽有打杀能力，相比那精品却还是差许
+
+		[h2]精品 ：[/h2]是龙娘部队的列装武器，威力可怖，碰一下削骨连肉，挨一下筋骨寸断
+
+		[h2]仙品 ：[/h2]每一位龙娘的毕生追求，最恐怖的威力，最巧妙的神通
+
+
+		[h1][b]问答[/b][/h1]
+
+		问：支持CE吗
+		答：no 编程没有时间，而且弹药类型很复杂不知道怎么做，如果有人提供思路请联系我
+
+		问：可以穿原版衣服吗
+		答：可以用mod强穿，但是画了腿，可能会有穿出去的问题
+
+		问：动态表情
+		答：没画 wwww
+
+		问：食尸鬼，蹒跚怪？
+		答：做了！！！僵尸龙娘！QwQ
+
+		[h1][b]特别鸣谢：[/b][/h1]
+		我们团队深表感激，感谢社区的创作者和热情的玩家对冶龍族项目的贡献。没有大家的共同努力，这个项目不可能如此成功。
+		我们对您的支持感到非常振奋，它激励我们不断前进。
+		我们诚挚邀请大家加入[h2]我们的QQ群，群号为776966930[/h2]
+
+
+		[h1][b]制作人员[/b][/h1]
+		奈亚：美术设计 内容构思
+
+		灰风白茅：编程 数值 文案
+
+		[h1][b]感谢：[/b][/h1]
+		画了QQ人和封面的柰子学姐——鹤年
+		螈神的编程，可爱美少女的咨询——八云
+		美术借鉴参考——堂丸，易青
+		每一位谏言的群u
+	</description>
+</ModMetaData>

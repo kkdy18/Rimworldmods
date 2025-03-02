@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<TraderKindDef>
+		<defName>NY_Caravan_ForgingDragon_Anything</defName>
+		<label>寻圣采买商</label>
+		<stockGenerators>
+			<!-- Resources -->
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Silver</thingDef>
+				<countRange>750~1200</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Pemmican</thingDef>
+				<countRange>250~300</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>MedicineHerbal</thingDef>
+				<countRange>10~50</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Dye</thingDef>
+				<countRange>20~30</countRange>
+			</li>
+			<li Class="StockGenerator_Category">
+				<categoryDef>Textiles</categoryDef>
+				<thingDefCountRange>2~2</thingDefCountRange>
+				<totalPriceRange>200~600</totalPriceRange>
+			</li>
+			<li Class="StockGenerator_Category">
+				<categoryDef>NY_DragonFood</categoryDef>
+				<thingDefCountRange>2~5</thingDefCountRange>
+				<totalPriceRange>400~800</totalPriceRange>
+			</li>
+			<!-- Drugs -->
+			<li Class="StockGenerator_Category">
+				<categoryDef>Drugs</categoryDef>
+				<maxTechLevelGenerate>Neolithic</maxTechLevelGenerate>
+			</li>
+			<!-- Weapons -->
+			<li Class="StockGenerator_MarketValue">
+				<tradeTag>WeaponRanged</tradeTag>
+				<countRange>4~4</countRange>
+			</li>
+			<li Class="StockGenerator_Category">
+				<categoryDef>WeaponsMelee</categoryDef>
+				<thingDefCountRange>4~4</thingDefCountRange>
+				<countRange>1~1</countRange>
+			</li>
+			<!-- Apparel -->
+			<li Class="StockGenerator_MarketValue">
+				<tradeTag>Armor</tradeTag>
+				<countRange>5~5</countRange>
+			</li>
+			<!-- Genepacks -->
+			<li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
+				<thingDef>Genepack</thingDef>
+				<countRange>2~4</countRange>
+			</li>
+			<!-- Buying -->
+			<li Class="StockGenerator_BuyExpensiveSimple" />
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>Art</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>HiTechArmor</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>MusicalInstrument</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>Drugs</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>HoraxWeapon</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>ImplantEmpireCommon</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>ImplantEmpireRoyal</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>PsylinkNeuroformer</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>ExoticBuilding</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>UtilitySpecial</tag>
+			</li>
+			<li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly">
+				<thingDef>Shell_Deadlife</thingDef>
+			</li>
+			<li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly">
+				<thingDef>VoidSculpture</thingDef>
+			</li>
+			<li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly">
+				<thingDef>Shard</thingDef>
+			</li>
+			<li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly">
+				<thingDef>Bioferrite</thingDef>
+			</li>
+			<li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly">
+				<thingDef>RevenantSpine</thingDef>
+			</li>
+		</stockGenerators>
+	</TraderKindDef>
+
+	<TraderKindDef>
+		<defName>NY_Visitor_ForgingDragon</defName>
+		<label>游商货郎</label>
+		<stockGenerators>
+			<!-- Resources -->
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Silver</thingDef>
+				<countRange>100~300</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>ComponentIndustrial</thingDef>
+				<countRange>-2~5</countRange>
+			</li>
+			<li Class="StockGenerator_Category">
+				<categoryDef>NY_DragonFood</categoryDef>
+				<thingDefCountRange>1~2</thingDefCountRange>
+				<totalPriceRange>100~200</totalPriceRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>NY_DragonMilk</thingDef>
+				<countRange>3~6</countRange>
+			</li>
+			<!-- Drugs -->
+			<li Class="StockGenerator_Category">
+				<categoryDef>Drugs</categoryDef>
+				<thingDefCountRange>0~2</thingDefCountRange>
+				<totalPriceRange>100~300</totalPriceRange>
+			</li>
+			<!-- Weapons -->
+			<li Class="StockGenerator_MarketValue">
+				<tradeTag>ForgingDragonWeapon</tradeTag>
+				<countRange>0~1</countRange>
+			</li>
+			<!-- Buying -->
+			<li Class="StockGenerator_BuyExpensiveSimple" />
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>Art</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>MusicalInstrument</tag>
+			</li>
+		</stockGenerators>
+	</TraderKindDef>
+
+	<TraderKindDef>
+		<defName>NY_Caravan_ForgingDragon_Slaver</defName>
+		<label>贩羊人</label>
+		<stockGenerators>
+			<!-- Resources -->
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Silver</thingDef>
+				<countRange>750~1200</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Pemmican</thingDef>
+				<countRange>250~300</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>MedicineHerbal</thingDef>
+				<countRange>10~50</countRange>
+			</li>
+			<!-- Drugs -->
+			<li Class="StockGenerator_Category">
+				<categoryDef>Drugs</categoryDef>
+				<maxTechLevelGenerate>Neolithic</maxTechLevelGenerate>
+			</li>
+			<!-- Slaves -->
+			<li Class="ForgingDragon.StockGenerator_SlavesofDragon">
+				<countRange>3~6</countRange>
+				<slaveKindDef>NY_DragonSlaveHuman</slaveKindDef>
+			</li>
+			<li Class="ForgingDragon.StockGenerator_SlavesofDragon">
+				<countRange>2~4</countRange>
+				<slaveKindDef>NY_ForgingDragonSinner</slaveKindDef>
+			</li>
+			<!-- Animals -->
+			<li Class="StockGenerator_Animals">
+				<tradeTagsSell>
+					<li>AnimalFighter</li>
+				</tradeTagsSell>
+				<tradeTagsBuy>
+					<li>AnimalUncommon</li>
+					<li>AnimalExotic</li>
+				</tradeTagsBuy>
+				<kindCountRange>1~2</kindCountRange>
+				<countRange>1~3</countRange>
+			</li>
+			<!-- Buying -->
+			<li Class="StockGenerator_BuyExpensiveSimple" />
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>Art</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>HiTechArmor</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>MusicalInstrument</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>Drugs</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>HoraxWeapon</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>ImplantEmpireCommon</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>ImplantEmpireRoyal</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>PsylinkNeuroformer</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>ExoticBuilding</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>UtilitySpecial</tag>
+			</li>
+			<li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly">
+				<thingDef>Shell_Deadlife</thingDef>
+			</li>
+			<li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly">
+				<thingDef>VoidSculpture</thingDef>
+			</li>
+			<li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly">
+				<thingDef>Shard</thingDef>
+			</li>
+			<li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly">
+				<thingDef>Bioferrite</thingDef>
+			</li>
+			<li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly">
+				<thingDef>RevenantSpine</thingDef>
+			</li>
+		</stockGenerators>
+	</TraderKindDef>
+</Defs>

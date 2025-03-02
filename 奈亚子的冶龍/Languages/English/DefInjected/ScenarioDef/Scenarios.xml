@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<!-- EN: 心中的桃花源 -->
+	<NY_PeacefulLife.label>our own paradise</NY_PeacefulLife.label>
+	<!-- EN: 你们四位只是冶龍中相互照应的小人物，寻圣盟驻地内愈加紧张的气氛与日夜不息的铸造坊让你们意识到战争的临近，上一次战争留下的累累尸骨尚未被大地消磨殆尽，你们不想成为填入其中的新骨骸，于是在一个暴风骤雨的夜晚，你们背上仓促换来的物资与兵刃逃入夜色。昔日的仇敌不会网开一面，同胞亦不会原谅你们的背叛，你们只能拼劲全力在这个恶劣的世界生存下去，也许终有一日你们会找到属于自己的桃花源。 -->
+	<NY_PeacefulLife.description>You are four close friends in a loong union settlement. Escalating tension within the settlement, and non-stopping work in the forges made you suspect the coming of war. Scars of previous wars on the society are not healed yet and you are keen not to be a part of new scars.Finally, in a stormy night, you and your friends escaped the settlement with stashed food and weapons.\n\nLoong's enemies won't spare you for being deserters, and for the same reason the loongs won't pardon you either. You're on your own, making your own little paradise amid this cruel, unforgiving world.</NY_PeacefulLife.description>
+	<!-- EN: 你们四位只是冶龍中相互照应的小人物，寻圣盟驻地内愈加紧张的气氛与日夜不息的铸造坊让你们意识到战争的临近，上一次战争留下的累累尸骨尚未被大地消磨殆尽，你们不想成为填入其中的新骨骸，于是在一个暴风骤雨的夜晚，你们背上仓促换来的物资与兵刃逃入夜色。昔日的仇敌不会网开一面，同胞亦不会原谅你们的背叛，你们只能拼劲全力在这个恶劣的世界生存下去，也许终有一日你们会找到属于自己的桃花源。 -->
+	<NY_PeacefulLife.scenario.description>You are four close friends in a loong union settlement. Escalating tension within the settlement, and non-stopping work in the forges made you suspect the coming of war. Scars of previous wars on the society are not healed yet and you are keen not to be a part of new scars.Finally, in a stormy night, you and your friends escaped the settlement with stashed food and weapons.\n\nLoong's enemies won't spare you for being deserters, and for the same reason the loongs won't pardon you either. You're on your own, making your own little paradise amid this cruel, unforgiving world.</NY_PeacefulLife.scenario.description>
+	<!-- EN: 心中的桃花源 -->
+	<NY_PeacefulLife.scenario.name>our own paradize</NY_PeacefulLife.scenario.name>
+	<!-- EN: 四个冶龍逃离族群，踏上未知的旅途。 -->
+	<NY_PeacefulLife.scenario.summary>Four loongs escaped their settlements and looking for a new life.</NY_PeacefulLife.scenario.summary>
+
+	<!-- EN: 归于平凡 -->
+	<NY_ReturnOrdinary.label>lone loong deserter</NY_ReturnOrdinary.label>
+	<!-- EN: 你曾经背负宏大的使命自故乡出发，跨越星海来到这片大地去追寻那决定众生众业的“圣旨”，但是征战永无止境，骨与血的磨盘碾碎了你所有的同伴，也磨灭了你的斗志，“圣旨”却始终遥不可及。你厌倦了，如今你只想逃离战场，逃离“圣旨”，逃离寻圣盟，也许你会死于仇敌的冷枪、同胞的斧刃，如野兽般腐烂在荒野或沼泽中，但在结局到来之前你会永远抗争，也许路途的终点真的会有一块平静安宁的土地为你而留。 -->
+	<NY_ReturnOrdinary.description>You're once one of the countless loongs, leaving home planets in the search of "emperor's command" which is said to be able to settle all conflicts. The search and the war of it, turned out to be endless. The grinder of war reduced all your comrades to dust, and so does your passion, yet no trace of the so called emperor's command is found.\n\nAnd now you're tired of it, escaping the war and the duties and the union.</NY_ReturnOrdinary.description>
+	<!-- EN: 你曾经背负宏大的使命自故乡出发，跨越星海来到这片大地去追寻那决定众生众业的“圣旨”，但是征战永无止境，骨与血的磨盘碾碎了你所有的同伴，也磨灭了你的斗志，“圣旨”却始终遥不可及。你厌倦了，如今你只想逃离战场，逃离“圣旨”，逃离寻圣盟，也许你会死于仇敌的冷枪、同胞的斧刃，如野兽般腐烂在荒野或沼泽中，但在结局到来之前你会永远抗争，也许路途的终点真的会有一块平静安宁的土地为你而留。 -->
+	<NY_ReturnOrdinary.scenario.description>You're once one of the countless loongs, leaving home planets in the search of "emperor's command" which is said to be able to settle all conflicts. The search and the war of it, turned out to be endless. The grinder of war reduced all your comrades to dust, and so does your passion, yet no trace of the so called emperor's command is found.\n\nAnd now you're tired of it, escaping the war and the duties and the union.</NY_ReturnOrdinary.scenario.description>
+	<!-- EN: 归于平凡 -->
+	<NY_ReturnOrdinary.scenario.name>lone loong deserter</NY_ReturnOrdinary.scenario.name>
+	<!-- EN: 一位老兵舍弃了出发时的使命，平静的生活是她如今唯一的愿望。 -->
+	<NY_ReturnOrdinary.scenario.summary>A loong veteran deserted her duty. A peaceful life is all she wanted now.</NY_ReturnOrdinary.scenario.summary>
+
+</LanguageData>

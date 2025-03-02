@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<WeatherDef>
+		<defName>NY_DroughtClear</defName>
+		<label>晴燥天</label>
+		<isBad>true</isBad>
+		<description>高温、干燥的天气，让人精神不振。</description>
+		<accuracyMultiplier>0.8</accuracyMultiplier>
+		<moveSpeedMultiplier>0.8</moveSpeedMultiplier>
+		<weatherThought>NY_thougth_Drought</weatherThought>
+		<favorability>Bad</favorability>
+		<perceivePriority>1</perceivePriority>
+		<temperatureRange>0~999</temperatureRange>
+		<ambientSounds>
+			<li>Ambient_Wind_Clear</li>
+		</ambientSounds>
+		<!-- Colors are Clear -->
+		<skyColorsDay>
+			<sky>(0.95,0.82,0.65)</sky>
+			<!-- 褪色沙黄色，强烈日照 -->
+			<shadow>(0.88,0.78,0.68)</shadow>
+			<!-- 干燥土地投影 -->
+			<overlay>(0.85,0.70,0.55)</overlay>
+			<!-- 沙尘覆盖效果 -->
+			<saturation>0.75</saturation>
+			<!-- 降低饱和度表现褪色 -->
+		</skyColorsDay>
+		<skyColorsDusk>
+			<sky>(1.00,0.55,0.35)</sky>
+			<!-- 灼烧橙红色 -->
+			<shadow>(0.90,0.65,0.50)</shadow>
+			<!-- 长阴影加强炎热感 -->
+			<overlay>(0.75,0.50,0.40)</overlay>
+			<!-- 悬浮沙尘效果 -->
+			<saturation>0.85</saturation>
+			<!-- 增强黄昏对比 -->
+		</skyColorsDusk>
+		<skyColorsNightEdge>
+			<sky>(0.35,0.40,0.45)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.5,0.5,0.5)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsNightEdge>
+		<skyColorsNightMid>
+			<sky>(0.35,0.40,0.45)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.5,0.5,0.5)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsNightMid>
+	</WeatherDef>
+	
+	<WeatherDef>
+		<defName>NY_ColdWindy</defName>
+		<label>风寒天</label>
+		<isBad>true</isBad>
+		<description>阴沉的大风天气，带来阵阵寒意。</description>
+		<windSpeedFactor>1.5</windSpeedFactor>
+		<windSpeedOffset>1.25</windSpeedOffset>
+		<accuracyMultiplier>0.8</accuracyMultiplier>
+		<moveSpeedMultiplier>0.8</moveSpeedMultiplier>
+		<weatherThought>NY_thougth_ColdWind</weatherThought>
+		<favorability>Bad</favorability>
+		<perceivePriority>1</perceivePriority>
+		<temperatureRange>-999~15</temperatureRange>
+		<ambientSounds>
+			<li>Ambient_Wind_Fog</li>
+		</ambientSounds>
+		<!-- Colors are Overcast -->
+		<skyColorsDay>
+			<sky>(0.8,0.8,0.8)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.7,0.7,0.7)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsDay>
+		<skyColorsDusk>
+			<sky>(1,1,1)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.6,0.6,0.6)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsDusk>
+		<skyColorsNightEdge>
+			<sky>(0.35,0.40,0.45)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.5,0.5,0.5)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsNightEdge>
+		<skyColorsNightMid>
+			<sky>(0.35,0.40,0.45)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.5,0.5,0.5)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsNightMid>
+	</WeatherDef>
+</Defs>

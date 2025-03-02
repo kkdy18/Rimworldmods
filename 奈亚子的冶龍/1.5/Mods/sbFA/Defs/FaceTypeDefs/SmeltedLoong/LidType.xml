@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<FacialAnimation.LidTypeDef>
+		<defName>SmeltedLoong_Lid_Normal1</defName>
+		<texPath>Things/Pawn/SmeltedLoong/Lids/Normal1</texPath>
+		<shader>Map/Transparent</shader>
+		<raceName>SmeltedLoong</raceName>
+	</FacialAnimation.LidTypeDef>
+</Defs>

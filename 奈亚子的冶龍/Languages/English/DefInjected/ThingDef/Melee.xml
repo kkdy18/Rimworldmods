@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<!-- EN: 黄铜白铁剑 -->
+	<NY_BrassIronSwordA.label>loong sword</NY_BrassIronSwordA.label>
+	<!-- EN: 冶龍工匠自民间传说中复现的奇特兵器，兵器本身并不存在什么超凡的力量，但使用者似乎能从中悟出一套提高行动能力的步法。 -->
+	<NY_BrassIronSwordA.description>An ancient blade weapon design of loong. Its distribution of mass helps with wielder's steps.</NY_BrassIronSwordA.description>
+	<!-- EN: 剑柄 -->
+	<NY_BrassIronSwordA.tools.0.label>handle</NY_BrassIronSwordA.tools.0.label>
+	<!-- EN: 剑尖 -->
+	<NY_BrassIronSwordA.tools.1.label>point</NY_BrassIronSwordA.tools.1.label>
+	<!-- EN: 剑刃 -->
+	<NY_BrassIronSwordA.tools.2.label>blade</NY_BrassIronSwordA.tools.2.label>
+
+	<!-- EN: 黄铜白铁斩刀 -->
+	<NY_BrassIronSwordB.label>loong saber</NY_BrassIronSwordB.label>
+	<!-- EN: 冶龍工匠自民间传说中复现的奇特兵器，兵器本身并不存在什么超凡的力量，但使用者似乎能从中悟出一套提高行动能力的步法。 -->
+	<NY_BrassIronSwordB.description>An ancient blade weapon design of loong. Its distribution of mass helps with wielder's steps.</NY_BrassIronSwordB.description>
+	<!-- EN: 刀柄 -->
+	<NY_BrassIronSwordB.tools.0.label>handle</NY_BrassIronSwordB.tools.0.label>
+	<!-- EN: 刀尖 -->
+	<NY_BrassIronSwordB.tools.1.label>point</NY_BrassIronSwordB.tools.1.label>
+	<!-- EN: 刀刃 -->
+	<NY_BrassIronSwordB.tools.2.label>blade</NY_BrassIronSwordB.tools.2.label>
+
+	<!-- EN: 戟 -->
+	<NY_DragonHalberd.label>loong halberd</NY_DragonHalberd.label>
+	<!-- EN: 由冶龍工匠精心设计的长柄三刃兵器，头部由直刃与两个侧刃组成，即可直刺也可横砍，因其用法多变且外形独特常被冶龍战士青睐。 -->
+	<NY_DragonHalberd.description>Polearm made of a spearhead and two blades on the sides.</NY_DragonHalberd.description>
+	<!-- EN: 戟柄 -->
+	<NY_DragonHalberd.tools.0.label>shaft</NY_DragonHalberd.tools.0.label>
+	<!-- EN: 戟尖 -->
+	<NY_DragonHalberd.tools.1.label>point</NY_DragonHalberd.tools.1.label>
+	<!-- EN: 戟刃 -->
+	<NY_DragonHalberd.tools.2.label>blade</NY_DragonHalberd.tools.2.label>
+
+	<!-- EN: 八斩刀 -->
+	<NY_DragonKnife.label>loong dagger</NY_DragonKnife.label>
+	<!-- EN: 来自冶龍家乡的护手短刀，乃是防身与近身搏杀的利器。 -->
+	<NY_DragonKnife.description>A short and agile self defense weapon.</NY_DragonKnife.description>
+	<!-- EN: 刀刃 -->
+	<NY_DragonKnife.tools.0.label>blade</NY_DragonKnife.tools.0.label>
+	<!-- EN: 刀尖 -->
+	<NY_DragonKnife.tools.1.label>point</NY_DragonKnife.tools.1.label>
+
+	<!-- EN: 大刀 -->
+	<NY_DragonLongHandledSword.label>loong cleaver</NY_DragonLongHandledSword.label>
+	<!-- EN: 由冶龍工匠精心设计的长柄大刀，劈砍时气势惊人，传说中的大将善使此刀将身披重甲的敌将一刀两断。 -->
+	<NY_DragonLongHandledSword.description>A heavy polearm with a large blade, said to be able to cut a person in half.</NY_DragonLongHandledSword.description>
+	<!-- EN: 刀柄 -->
+	<NY_DragonLongHandledSword.tools.0.label>shaft</NY_DragonLongHandledSword.tools.0.label>
+	<!-- EN: 刀刃 -->
+	<NY_DragonLongHandledSword.tools.1.label>blade</NY_DragonLongHandledSword.tools.1.label>
+
+	<!-- EN: 长柄斧 -->
+	<NY_DragonPoleaxe.label>loong poleaxe</NY_DragonPoleaxe.label>
+	<!-- EN: 由冶龍工匠精心设计的长柄大斧，武器本身较为沉重难以灵活使用，但斧刃的杀伤力不可小觑。 -->
+	<NY_DragonPoleaxe.description>A battleaxe with long handle. Clumbersome but devastating.</NY_DragonPoleaxe.description>
+	<!-- EN: 斧柄 -->
+	<NY_DragonPoleaxe.tools.0.label>shaft</NY_DragonPoleaxe.tools.0.label>
+	<!-- EN: 斧刃 -->
+	<NY_DragonPoleaxe.tools.1.label>blade</NY_DragonPoleaxe.tools.1.label>
+
+	<!-- EN: 槊 -->
+	<NY_DragonSpear.label>loong spear</NY_DragonSpear.label>
+	<!-- EN: 由冶龍工匠精心设计的长柄矛，只适合用于刺击，因为训练与维护相对方便所以经常列装于军队。 -->
+	<NY_DragonSpear.description>A long loong spear. Only suitable for stabbing and thus requires less training, which makes it the standard issued weapon of loong armies.</NY_DragonSpear.description>
+	<!-- EN: 槊柄 -->
+	<NY_DragonSpear.tools.0.label>shaft</NY_DragonSpear.tools.0.label>
+	<!-- EN: 槊头 -->
+	<NY_DragonSpear.tools.1.label>point</NY_DragonSpear.tools.1.label>
+
+	<!-- EN: 陌刀 -->
+	<NY_DragonSword.label>loong shortsword</NY_DragonSword.label>
+	<!-- EN: 来自冶龍家乡的长刀，形制更适合劈砍而非刺击，是冶龍民兵常用的兵器。 -->
+	<NY_DragonSword.description>An short but agile sword, commonly used by loong militias.</NY_DragonSword.description>
+	<!-- EN: 刀刃 -->
+	<NY_DragonSword.tools.0.label>blade</NY_DragonSword.tools.0.label>
+
+</LanguageData>

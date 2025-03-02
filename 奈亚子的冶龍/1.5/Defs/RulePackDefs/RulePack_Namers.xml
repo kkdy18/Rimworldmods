@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<RulePackDef>
+		<defName>ForgingDragonNamerPerson</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[firstName] [lastName]</li>
+				<li>r_name->[firstName] '[nickName]' [lastName]</li>
+
+				<li>firstName->[firstname]</li>
+
+				<li>nickName->[nickname]</li>
+
+				<li>lastName->[lastname]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>firstname->Names_ForgingDragon/ForgingDragon_First</li>
+				<li>lastname->Names_ForgingDragon/ForgingDragon_Last</li>
+				<li>nickname->Names_ForgingDragon/ForgingDragon_Nick</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+</Defs>

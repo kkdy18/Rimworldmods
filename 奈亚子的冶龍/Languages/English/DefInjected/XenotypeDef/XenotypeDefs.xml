@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<!-- EN: 冶龍青花瓷种 -->
+	<NY_ForgingDragonBW.label>porcelain loong</NY_ForgingDragonBW.label>
+	<!-- EN: 冶龍中的一支亚种，特征是蓝色的尾巴、角和眼睛，还有洁白光滑的皮肤。青花瓷种冶龍的肉体相当脆弱，但她们的手指相当灵活，能高效地完成各种高精度工作。这个种族中诞生了许多著名工匠，冶龍战士宁愿牺牲自己也要保全她们，不过学艺不精的家伙还是会被扔上战场。传说青花瓷种冶龍的先祖曾与纯种冶龍无异，她们为寻求非凡的力量向神明祈祷，神明满足了她们的渴求，但代价是她们的血肉从此如陶瓷一般脆弱。\n\n冶龍是一种拥有传说中名为龙的生物的生物特征的人类分支，她们在遥远的故乡发展出了冶龍特色的帝制文明与冶炼铸造技术，她们的族群中只有女性，因此需要和其他种族的男性结合来繁育后代。\n\n靛角银发蔚蓝眼，白瓷塑身气血娇，温婉流转贤妻样，庖厨针线过常人。 -->
+	<NY_ForgingDragonBW.description>A subspecies of loong, the porcelain loongs are characterized by their blue tails, horns and eyes, as well as their snow white skin. They lacked physical durability but excel at crafts. Procelains are known for famous craftloongs, though the unskilled ones still have to fight for a living.\n\nThe myths say they was once purebloods, and their current form was the result of praying for extraordinary abilities, at the price of fragility.\n\nThe smelt loong, or loong for short, is a humanoid xenotype bearing the name of a legendary creature, once created an imperial culture and advanced metallurgy in a distant world. Only female loongs exist, making them dependent on males of other xenotypes to reproduce.</NY_ForgingDragonBW.description>
+
+	<!-- EN: 冶龍纯种 -->
+	<NY_ForgingDragonCB.label>pureblood loong</NY_ForgingDragonCB.label>
+	<!-- EN: 冶龍中占比最大的种族，自称是血统最纯正的冶龍，特征是绿色的尾巴与眼睛。纯种冶龍有着相当强壮坚韧的身躯，是天生的战士，性欲旺盛但依然人丁稀少，据记载她们会集群袭击荒野中独立弱小的殖民地，掠走钱财食粮以及年轻男子。\n\n冶龍是一种拥有传说中名为龙的生物的生物特征的人类分支，她们在遥远的故乡发展出了冶龍特色的帝制文明与冶炼铸造技术，她们的族群中只有女性，因此需要和其他种族的男性结合来繁育后代。\n\n青角素发琉璃眼，力拔山兮气盖世，身流精粹真龙血，叱咤风云震神州。 -->
+	<NY_ForgingDragonCB.description>The majority of loongs. Self-proclaimed as the purest of loongs. They have green tails and eyes. The purebloods exhibits extraordinary durability and strength, as well as their libido, which somehow doesn't helped with their population. These loongs are known for raiding independent settlements for wealth, resources and males.\n\nThe smelt loong, or loong for short, is a humanoid xenotype bearing the name of a legendary creature, once created an imperial culture and advanced metallurgy in a distant world. Only female loongs exist, making them dependent on males of other xenotypes to reproduce.</NY_ForgingDragonCB.description>
+
+	<!-- EN: 冶龍剪纸种 -->
+	<NY_ForgingDragonPC.label>papercut loong</NY_ForgingDragonPC.label>
+	<!-- EN: 冶龍中的一支亚种，特征是红色的尾巴、角和眼睛，还有皮肤与尾巴上精美的花纹。剪纸种冶龍目前与青花瓷种同样稀少，相比青花瓷种她们更加擅长艺术创作与社会交际方面的工作，感性与善解人意是对她们常见的评价。她们皮肤上复杂的花纹是色素沉着与皮下某种纤维生长共同作用的结果，这种纤维能在出现外伤时帮助伤口快速止血，并且同样大量存在于尾巴上的薄膜组织中，但易燃性的纤维也让她们更加容易受到严重烧伤。剪纸种冶龍似乎在情爱方面相当积极，但从人数上看，这份积极并没有为冶龍族群的壮大做出多少贡献。\n\n冶龍是一种拥有传说中名为龙的生物的生物特征的人类分支，她们在遥远的故乡发展出了冶龍特色的帝制文明与冶炼铸造技术，她们的族群中只有女性，因此需要和其他种族的男性结合来繁育后代。\n\n红角红瞳剪纸裳，妙语如珠韵悠扬。艺绘丹青惊四座，纸龍绝色舞霓裳。 -->
+	<NY_ForgingDragonPC.description>A subspecies of loong, with read tails and horns and eyes. Exquisite patterns decorates their skin and tails. As rare as porcelains, the papercuts are great artist and negotiators, having the reputation of being kind and compassionate. A unique kind of fiber grows under their skins, giving the patterns and the ability to rapidly stop bleeding, while makes them vulnerable to fire. Papercuts are also known to be passionate in loving, which, yet again, didn't yield much fruit.\n\nThe smelt loong, or loong for short, is a humanoid xenotype bearing the name of a legendary creature, once created an imperial culture and advanced metallurgy in a distant world. Only female loongs exist, making them dependent on males of other xenotypes to reproduce.</NY_ForgingDragonPC.description>
+
+	<!-- EN: 冶龍白玉种 -->
+	<NY_ForgingDragonWJ.label>white jade loong</NY_ForgingDragonWJ.label>
+	<!-- EN: 冶龍中占比第二大的种族，外貌与纯种冶龍相近，据说也是血缘上最接近纯种冶龍的亚种。白玉种冶龍拥有超凡的视力与过人的智力，她们往往是冶龍族群中受人尊敬的天才，担任着重要的职务，如战场上的狙击手或指挥官、据点中的科研者。不过白玉种冶龍的智慧似乎也带来了一些麻烦，她们在繁育后代方面的缺乏积极性正在成为冶龍族群的时代性难题。\n\n冶龍是一种拥有传说中名为龙的生物的生物特征的人类分支，她们在遥远的故乡发展出了冶龍特色的帝制文明与冶炼铸造技术，她们的族群中只有女性，因此需要和其他种族的男性结合来繁育后代。\n\n青角白发浅碧瞳，箭无虚发智无穷。灵机一动风云变，傲立尘寰傲苍穹。 -->
+	<NY_ForgingDragonWJ.description>The second most populous subspicies of loong. Similar to purebloods in their looks and bloodline, they possess talents in their sight and brainpower. White jades usually fills the position of commanders, researchers or snipers. The problem, however, is their lack of sexual drive.\n\nThe smelt loong, or loong for short, is a humanoid xenotype bearing the name of a legendary creature, once created an imperial culture and advanced metallurgy in a distant world. Only female loongs exist, making them dependent on males of other xenotypes to reproduce.</NY_ForgingDragonWJ.description>
+
+</LanguageData>

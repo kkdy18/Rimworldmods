@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<!-- EN: 霜灾 -->
+	<NY_ForgingDragon_ColdFreeze.label>freeze snap</NY_ForgingDragon_ColdFreeze.label>
+	<!-- EN: 霜灾 -->
+	<NY_ForgingDragon_ColdFreeze.letterLabel>freeze snap</NY_ForgingDragon_ColdFreeze.letterLabel>
+
+	<!-- EN: 风霜过境 -->
+	<NY_ForgingDragon_ColdSnap.label>convective cold snap</NY_ForgingDragon_ColdSnap.label>
+	<!-- EN: 风霜过境 -->
+	<NY_ForgingDragon_ColdSnap.letterLabel>convective cold snap</NY_ForgingDragon_ColdSnap.letterLabel>
+
+	<!-- EN: 旱灾 -->
+	<NY_ForgingDragon_Drought.label>drought</NY_ForgingDragon_Drought.label>
+	<!-- EN: 旱灾 -->
+	<NY_ForgingDragon_Drought.letterLabel>drought</NY_ForgingDragon_Drought.letterLabel>
+
+	<!-- EN: 龙王煮雨 -->
+	<NY_ForgingDragon_HotRain.label>rain season</NY_ForgingDragon_HotRain.label>
+	<!-- EN: 龙王煮雨 -->
+	<NY_ForgingDragon_HotRain.letterLabel>rain season</NY_ForgingDragon_HotRain.letterLabel>
+
+</LanguageData>

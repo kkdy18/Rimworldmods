@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<!-- EN: 龙之喉舌 -->
+	<NY_DragonLeader.label>the mouthpiece of loong</NY_DragonLeader.label>
+
+	<!-- EN: 冶龍乐师 -->
+	<NY_DragonMusician.label>loong musician</NY_DragonMusician.label>
+	<!-- EN: 冶龍乐师 -->
+	<NY_DragonMusician.labelPlural>loong musicians</NY_DragonMusician.labelPlural>
+
+	<!-- EN: 冶龍擒火者 -->
+	<NY_DragonSoldierFire.label>loong fireweaver</NY_DragonSoldierFire.label>
+	<!-- EN: 冶龍擒火者 -->
+	<NY_DragonSoldierFire.labelPlural>loong fireweavers</NY_DragonSoldierFire.labelPlural>
+
+	<!-- EN: 冶龍玄甲 -->
+	<NY_DragonSoldierHeavy.label>loong armorclad</NY_DragonSoldierHeavy.label>
+	<!-- EN: 冶龍玄甲 -->
+	<NY_DragonSoldierHeavy.labelPlural>loong armorclads</NY_DragonSoldierHeavy.labelPlural>
+
+	<!-- EN: 冶龍步兵 -->
+	<NY_DragonSoldierMelee.label>loong infantry</NY_DragonSoldierMelee.label>
+	<!-- EN: 冶龍步兵 -->
+	<NY_DragonSoldierMelee.labelPlural>loong infantries</NY_DragonSoldierMelee.labelPlural>
+
+	<!-- EN: 冶龍射手 -->
+	<NY_DragonSoldierShoot.label>loong sharpshooter</NY_DragonSoldierShoot.label>
+	<!-- EN: 冶龍射手 -->
+	<NY_DragonSoldierShoot.labelPlural>loong sharpshooters</NY_DragonSoldierShoot.labelPlural>
+
+	<!-- EN: 皇商主事 -->
+	<NY_DragonTrader.label>royal merchant</NY_DragonTrader.label>
+
+</LanguageData>

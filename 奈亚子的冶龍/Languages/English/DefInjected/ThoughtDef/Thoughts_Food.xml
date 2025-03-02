@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<!-- EN: 吃了冶龍肉 -->
+	<NY_AteForgingDragonMeat.stages.0.label>consumed raw loong meat</NY_AteForgingDragonMeat.stages.0.label>
+	<!-- EN: 我能听到那些死去的冶龍恶毒的诅咒，血肉被吞食的怨恨永不终结。 -->
+	<NY_AteForgingDragonMeat.stages.0.description>The curse of deceased loongs echos.</NY_AteForgingDragonMeat.stages.0.description>
+
+	<!-- EN: 喝了龙涎香 -->
+	<NY_DrinkDragonMilk.stages.0.label>consumed ambergris</NY_DrinkDragonMilk.stages.0.label>
+	<!-- EN: 一股奇特的奶香。 -->
+	<NY_DrinkDragonMilk.stages.0.description>It's milk aroma was spectacular.</NY_DrinkDragonMilk.stages.0.description>
+
+	<!-- EN: 喝了话梅姜奶 -->
+	<NY_DrinkPlumGingerTea.stages.0.label>consumed plum ginger milktea</NY_DrinkPlumGingerTea.stages.0.label>
+	<!-- EN: 全身都热乎起来了！ -->
+	<NY_DrinkPlumGingerTea.stages.0.description>My body is warming up!</NY_DrinkPlumGingerTea.stages.0.description>
+
+	<!-- EN: 喝了酸梅汤 -->
+	<NY_DrinkPlumJuice.stages.0.label>consumed plum juice</NY_DrinkPlumJuice.stages.0.label>
+	<!-- EN: 只嚷干喝，要吃酸梅汤！ -->
+	<NY_DrinkPlumJuice.stages.0.description>My body cooled down!</NY_DrinkPlumJuice.stages.0.description>
+
+	<!-- EN: 吃了麻婆豆腐 -->
+	<NY_EatMapoTofu.stages.0.label>consumed mapo tofu</NY_EatMapoTofu.stages.0.label>
+	<!-- EN: 好辣，好好吃…… -->
+	<NY_EatMapoTofu.stages.0.description>Spicy and tender, yummy.</NY_EatMapoTofu.stages.0.description>
+
+	<!-- EN: 吃了话梅 -->
+	<NY_EatPreservedPlum.stages.0.label>consumed preserved plums</NY_EatPreservedPlum.stages.0.label>
+	<!-- EN: 酸甜可口，果肉紧致，超好吃。 -->
+	<NY_EatPreservedPlum.stages.0.description>It's sweet and sour.</NY_EatPreservedPlum.stages.0.description>
+
+	<!-- EN: 吃了生姜 -->
+	<NY_EatRawGinger.stages.0.label>consumed ginger</NY_EatRawGinger.stages.0.label>
+	<!-- EN: 好辣，感觉像在嚼树枝，我们就不能吃点正常植物吗？ -->
+	<NY_EatRawGinger.stages.0.description>So spicy it burns my throat! Can we find something else to eat?</NY_EatRawGinger.stages.0.description>
+
+	<!-- EN: 吃了新鲜梅子 -->
+	<NY_EatRawPlum.stages.0.label>consumed fresh plums</NY_EatRawPlum.stages.0.label>
+	<!-- EN: 栓栓的梅子，好次。 -->
+	<NY_EatRawPlum.stages.0.description>It's sour and refreshing.</NY_EatRawPlum.stages.0.description>
+
+	<!-- EN: 吃了烹饪过的冶龍肉 -->
+	<NY_ForgingDragonMeatIngredient.stages.0.label>consumed cooked loong meat</NY_ForgingDragonMeatIngredient.stages.0.label>
+	<!-- EN: 她们的肉被烹饪之后居然有些美味多汁，但我还是有点反胃。 -->
+	<NY_ForgingDragonMeatIngredient.stages.0.description>It's surprisingly tender and juice. But the thought of eating them makes me want to throw up.</NY_ForgingDragonMeatIngredient.stages.0.description>
+
+	<!-- EN: 双丝 -->
+	<NY_RandomMood_Both.labelInBracketsExtraForHediff>potato strips with ginger</NY_RandomMood_Both.labelInBracketsExtraForHediff>
+	<!-- EN: 吃到土豆丝里的姜丝 -->
+	<NY_RandomMood_Both.stages.0.label>consumed potato strips with ginger</NY_RandomMood_Both.stages.0.label>
+	<!-- EN: 当我咬到某种坚韧的事物时，嘴里弥漫开的姜味让我明白为时已晚。 -->
+	<NY_RandomMood_Both.stages.0.description>It's too late when the spicy taste is felt.</NY_RandomMood_Both.stages.0.description>
+
+	<!-- EN: 姜丝 -->
+	<NY_RandomMood_Ginger.labelInBracketsExtraForHediff>ginger strips</NY_RandomMood_Ginger.labelInBracketsExtraForHediff>
+	<!-- EN: 吃了一盘姜丝 -->
+	<NY_RandomMood_Ginger.stages.0.label>consumed ginger strips</NY_RandomMood_Ginger.stages.0.label>
+	<!-- EN: 不是，为什么这里有一盘没有土豆的姜丝。 -->
+	<NY_RandomMood_Ginger.stages.0.description>Not even a single trace of potato was found.</NY_RandomMood_Ginger.stages.0.description>
+
+	<!-- EN: 土豆丝 -->
+	<NY_RandomMood_Potato.labelInBracketsExtraForHediff>potato strips</NY_RandomMood_Potato.labelInBracketsExtraForHediff>
+	<!-- EN: 吃了一盘土豆丝 -->
+	<NY_RandomMood_Potato.stages.0.label>cosumed potato strips</NY_RandomMood_Potato.stages.0.label>
+	<!-- EN: 土豆丝的味道很不错，而且我没吃到姜，完美！ -->
+	<NY_RandomMood_Potato.stages.0.description>The potato strips tasted great with the flavor of ginger, without actually biting a ginger strip.</NY_RandomMood_Potato.stages.0.description>
+
+</LanguageData>

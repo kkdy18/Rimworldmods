@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<TraitDef>
+		<defName>NY_trait_SkinBW</defName>
+		<commonality>0</commonality>
+		<degreeDatas>
+			<li>
+				<label>肤若青花</label>
+				<description>{PAWN_nameDef}的皮肤有着瓷器般的质感，洁白光滑且生有青蓝色的美丽花纹，但这样的皮肤也像瓷器一般脆弱，{PAWN_nameDef}会更容易受伤，更容易被疼痛击倒。</description>
+				<socialFightChanceFactor>0</socialFightChanceFactor>
+				<statFactors>
+					<FilthRate>0</FilthRate>
+					<Flammability>0</Flammability>
+					<WorkSpeedGlobal>1.2</WorkSpeedGlobal>
+					<IncomingDamageFactor>1.25</IncomingDamageFactor>
+				</statFactors>
+				<statOffsets>
+					<PawnBeauty>2</PawnBeauty>
+					<PainShockThreshold>-0.3</PainShockThreshold>
+				</statOffsets>
+			</li>
+		</degreeDatas>
+		<conflictingTraits>
+			<li>Brawler</li>
+			<li>Beauty</li>
+		</conflictingTraits>
+	</TraitDef>
+
+	<TraitDef>
+		<defName>NY_trait_EyeWJ</defName>
+		<commonality>0</commonality>
+		<degreeDatas>
+			<li>
+				<label>玉目无暇</label>
+				<description>{PAWN_nameDef}的智慧与{PAWN_possessive}眼神一样锐利且纯净，宛如美玉的眼睛帮助着{PAWN_pronoun}射杀敌人，破解难题。</description>
+				<statFactors>
+					<RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
+					<CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">0.5</CertaintyLossFactor>
+				</statFactors>
+				<statOffsets>
+					<HackingSpeed>0.5</HackingSpeed>
+					<StudyEfficiency MayRequire="Ludeon.RimWorld.Anomaly">0.5</StudyEfficiency>
+					<AimingDelayFactor>-0.2</AimingDelayFactor>
+					<ShootingAccuracyPawn>10</ShootingAccuracyPawn>
+					<GlobalLearningFactor>0.25</GlobalLearningFactor>
+				</statOffsets>
+				<skillGains>
+					<Shooting>5</Shooting>
+				</skillGains>
+				<marketValueFactorOffset>0.5</marketValueFactorOffset>
+			</li>
+		</degreeDatas>
+		<conflictingTraits>
+			<li>Brawler</li>
+			<li>Nerves</li>
+			<li>SlowLearner</li>
+		</conflictingTraits>
+	</TraitDef>
+
+	<TraitDef>
+		<defName>NY_trait_BeautyPC</defName>
+		<commonality>0</commonality>
+		<degreeDatas>
+			<li>
+				<label>纸花之美</label>
+				<description>{PAWN_nameDef}有着美丽的外貌与通晓人心的智慧，这使得{PAWN_pronoun}能够处理好各种社交事务。其次{PAWN_pronoun}对自己肌肤漂亮的花纹十分自信，渴望着展示自己的身体。</description>
+				<statFactors>
+					<CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">0.5</CertaintyLossFactor>
+					<SocialIdeoSpreadFrequencyFactor MayRequire="Ludeon.RimWorld.Ideology">2</SocialIdeoSpreadFrequencyFactor>
+				</statFactors>
+				<statOffsets>
+					<PainShockThreshold>-0.3</PainShockThreshold>
+					<NegotiationAbility>0.15</NegotiationAbility>
+					<ArrestSuccessChance>0.25</ArrestSuccessChance>
+					<TradePriceImprovement>0.15</TradePriceImprovement>
+					<ConversionPower MayRequire="Ludeon.RimWorld.Ideology">0.25</ConversionPower>
+				</statOffsets>
+				<skillGains>
+					<Social>5</Social>
+				</skillGains>
+				<marketValueFactorOffset>0.5</marketValueFactorOffset>
+			</li>
+		</degreeDatas>
+		<requiredWorkTags>
+			<li>Social</li>
+		</requiredWorkTags>
+		<conflictingTraits>
+			<li>Beauty</li>
+			<li>Brawler</li>
+			<li>Abrasive</li>
+			<li>Psychopath</li>
+		</conflictingTraits>
+	</TraitDef>
+</Defs>

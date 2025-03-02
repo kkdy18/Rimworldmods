@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<!-- EN: 美食力量（小鸡炖蘑菇） -->
+	<NY_hediff_ChickenwithMushroom.label>strength of chicken mushroom bouillon</NY_hediff_ChickenwithMushroom.label>
+	<!-- EN: 温热多汁的肉与菌菇驱散了寒意，也赶走了一部分“冷却”，蛤蛤。 -->
+	<NY_hediff_ChickenwithMushroom.description>The blend of meat and mushroom repelled coldness and "cool"down.</NY_hediff_ChickenwithMushroom.description>
+
+	<!-- EN: 美食力量（饺子） -->
+	<NY_hediff_Dumpling.label>strength of dumplings</NY_hediff_Dumpling.label>
+	<!-- EN: 饺子填饱了胃，人充满了力量。 -->
+	<NY_hediff_Dumpling.description>It takes a full stomach to work or fight.</NY_hediff_Dumpling.description>
+
+	<!-- EN: 吃藕——丑 -->
+	<NY_hediff_EatLotusRoot.label>pores in face</NY_hediff_EatLotusRoot.label>
+	<!-- EN: 因为吃藕而被诅咒听上去很扯淡，但现在它确实发生了，到底是你运气不好还是你真的吃了很多藕？ -->
+	<NY_hediff_EatLotusRoot.description>It might sound ridiculous eating lotus roots turns their holes into pores on your face, but, urh, here it is.\n\n(PS. No pun jokes please it give me headaches)</NY_hediff_EatLotusRoot.description>
+
+	<!-- EN: 美食力量（鱼香肉丝） -->
+	<NY_hediff_FishFlavoured.label>strength of fishy meat stir-fry</NY_hediff_FishFlavoured.label>
+	<!-- EN: 鱼香强化了视力，它并非真实，反而让人多了一丝坚强。 -->
+	<NY_hediff_FishFlavoured.description>Everything feels fishy now, so better be extra careful.</NY_hediff_FishFlavoured.description>
+
+	<!-- EN: 美食力量（青椒炒肉） -->
+	<NY_hediff_GreenPepper.label>strength of green pepper meat fry</NY_hediff_GreenPepper.label>
+	<!-- EN: 青椒炒肉非常下饭，吃饱后身体也变得更加强壮了，不过好像有点太饱了。 -->
+	<NY_hediff_GreenPepper.description>A fulfilling meal makes one feel stonger, but the stomach is a bit overfilled.</NY_hediff_GreenPepper.description>
+
+	<!-- EN: 美食力量（韭菜炒蛋） -->
+	<NY_hediff_LeekwithEgg.label>strength of chives egg stir-fry</NY_hediff_LeekwithEgg.label>
+	<!-- EN: 韭菜与蛋都是富含生命力的食物，吃下它们的人自然能获得生命的祝福。 -->
+	<NY_hediff_LeekwithEgg.description>Chives are known for growing fast, and eggs are cradles of life. The lifeforce is enhanced.</NY_hediff_LeekwithEgg.description>
+
+	<!-- EN: 美食力量（麻婆豆腐） -->
+	<NY_hediff_MapoTofu.label>strength of mapo tofu</NY_hediff_MapoTofu.label>
+	<!-- EN: 麻婆豆腐实在太美味了，仿佛大脑都要被融化了，也许不是仿佛？ -->
+	<NY_hediff_MapoTofu.description>So soft and tender, the brain is almost turned into tofu, literally.</NY_hediff_MapoTofu.description>
+
+	<!-- EN: 饱腹振奋 -->
+	<NY_hediff_MealLavishHigh.label>full belly</NY_hediff_MealLavishHigh.label>
+	<!-- EN: 升高的血糖与美妙的用餐体验使人精神振奋。 -->
+	<NY_hediff_MealLavishHigh.description>Increased blood sugar and concert of flavors on the tastebuds excites.</NY_hediff_MealLavishHigh.description>
+
+	<!-- EN: 饮用话梅姜奶 -->
+	<NY_hediff_PlumGingerTea.label>plum ginger milktea</NY_hediff_PlumGingerTea.label>
+	<!-- EN: 天气寒冷，来一杯话梅姜奶，祛除寒气，思维活络。 -->
+	<NY_hediff_PlumGingerTea.description>The warm milk tea keeps cold out.</NY_hediff_PlumGingerTea.description>
+
+	<!-- EN: 饮用酸梅汤 -->
+	<NY_hediff_PlumJuice.label>plum juice</NY_hediff_PlumJuice.label>
+	<!-- EN: 天气炎热，来一杯酸梅汤，清热消暑，缓解疲劳。 -->
+	<NY_hediff_PlumJuice.description>The sour plum juice keeps one cool.</NY_hediff_PlumJuice.description>
+
+	<!-- EN: 命运所“丝” -->
+	<NY_hediff_RandomShreds.label>strips of fate</NY_hediff_RandomShreds.label>
+	<!-- EN: 既然选择了这盘菜，那就看看你会迎接何种命运吧。 -->
+	<NY_hediff_RandomShreds.description>A glimpse into fate, from the dreaded dish.</NY_hediff_RandomShreds.description>
+
+</LanguageData>

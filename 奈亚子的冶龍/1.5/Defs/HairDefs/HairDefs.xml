@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <StyleItemCategoryDef>
+    <defName>NY_ForgingDragonHair</defName>
+    <label>冶龍</label>
+  </StyleItemCategoryDef>
+
+	<HairDef>
+		<defName>NY_ForgingDragonHair01</defName>
+		<label>ForgingDragon01</label>
+		<styleGender>Female</styleGender>
+		<texPath>Things/Pawn/Hairs/DragonHair01</texPath>
+		<category>NY_ForgingDragonHair</category>
+		<styleTags>
+			<li>ForgingDragonHair</li>
+		</styleTags>
+	</HairDef>
+
+	<HairDef>
+		<defName>NY_ForgingDragonHair02</defName>
+		<label>ForgingDragon02</label>
+		<styleGender>Female</styleGender>
+		<texPath>Things/Pawn/Hairs/DragonHair02</texPath>
+		<category>NY_ForgingDragonHair</category>
+		<styleTags>
+			<li>ForgingDragonHair</li>
+		</styleTags>
+	</HairDef>
+
+	<HairDef>
+		<defName>NY_ForgingDragonHair03</defName>
+		<label>ForgingDragon03</label>
+		<styleGender>Female</styleGender>
+		<texPath>Things/Pawn/Hairs/DragonHair03</texPath>
+		<category>NY_ForgingDragonHair</category>
+		<styleTags>
+			<li>ForgingDragonHair</li>
+		</styleTags>
+	</HairDef>
+
+	<HairDef>
+		<defName>NY_ForgingDragonHair04</defName>
+		<label>ForgingDragon04</label>
+		<styleGender>Female</styleGender>
+		<texPath>Things/Pawn/Hairs/DragonHair04</texPath>
+		<category>NY_ForgingDragonHair</category>
+		<styleTags>
+			<li>ForgingDragonHair</li>
+		</styleTags>
+	</HairDef>
+
+	<HairDef>
+		<defName>NY_ForgingDragonHair05</defName>
+		<label>ForgingDragon05</label>
+		<styleGender>Female</styleGender>
+		<texPath>Things/Pawn/Hairs/DragonHair05</texPath>
+		<category>NY_ForgingDragonHair</category>
+		<styleTags>
+			<li>ForgingDragonHair</li>
+		</styleTags>
+	</HairDef>
+
+	<HairDef>
+		<defName>NY_ForgingDragonHair06</defName>
+		<label>ForgingDragon06</label>
+		<styleGender>Female</styleGender>
+		<texPath>Things/Pawn/Hairs/DragonHair06</texPath>
+		<category>NY_ForgingDragonHair</category>
+		<styleTags>
+			<li>ForgingDragonHair</li>
+		</styleTags>
+	</HairDef>
+
+	<HairDef>
+		<defName>NY_ForgingDragonHair07</defName>
+		<label>ForgingDragon07</label>
+		<styleGender>Female</styleGender>
+		<texPath>Things/Pawn/Hairs/DragonHair07</texPath>
+		<category>NY_ForgingDragonHair</category>
+		<styleTags>
+			<li>ForgingDragonHair</li>
+		</styleTags>
+	</HairDef>
+
+	<HairDef>
+		<defName>NY_ForgingDragonHair08</defName>
+		<label>ForgingDragon08</label>
+		<styleGender>Female</styleGender>
+		<texPath>Things/Pawn/Hairs/DragonHair08</texPath>
+		<category>NY_ForgingDragonHair</category>
+		<styleTags>
+			<li>ForgingDragonHair</li>
+		</styleTags>
+	</HairDef>
+
+	<HairDef>
+		<defName>NY_ForgingDragonHair09</defName>
+		<label>ForgingDragon09</label>
+		<styleGender>Female</styleGender>
+		<texPath>Things/Pawn/Hairs/DragonHair09</texPath>
+		<category>NY_ForgingDragonHair</category>
+		<styleTags>
+			<li>ForgingDragonHair</li>
+		</styleTags>
+	</HairDef>
+
+	<HairDef>
+		<defName>NY_ForgingDragonHair10</defName>
+		<label>ForgingDragon10</label>
+		<styleGender>Female</styleGender>
+		<texPath>Things/Pawn/Hairs/DragonHair10</texPath>
+		<category>NY_ForgingDragonHair</category>
+		<styleTags>
+			<li>ForgingDragonHair</li>
+		</styleTags>
+	</HairDef>
+</Defs>

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<FactionDef ParentName="FactionBase">
+		<defName>NY_ForgingDragonUnion</defName>
+		<label>冶龍寻圣盟</label>
+		<description>为寻找所谓“圣旨”来到边缘世界的冶龍所组成的松散联盟，对外态度并不友好，虽然组织混乱，科技落后，但冶龍优秀的个体素质与生产能力结合冶龍文明的深厚底蕴依然支撑起了一个不可轻视的庞然大物。</description>
+		<factionIconPath>UI/World/NY_ForgingDragonUnion</factionIconPath>
+		<techLevel>Industrial</techLevel>
+		<pawnSingular>冶龍</pawnSingular>
+		<pawnsPlural>冶龍</pawnsPlural>
+		<leaderTitle>盟主</leaderTitle>
+		<fixedName>寻圣盟</fixedName>
+		<allowedCultures Inherit="False">
+			<li>NY_ForgingDragonCulture</li>
+		</allowedCultures>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">MaleSupremacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">HighLife</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Animist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+		</disallowedMemes>
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<NY_ForgingDragonCB>0.4</NY_ForgingDragonCB>
+				<NY_ForgingDragonWJ>0.4</NY_ForgingDragonWJ>
+				<NY_ForgingDragonBW>0.1</NY_ForgingDragonBW>
+				<NY_ForgingDragonPC>0.1</NY_ForgingDragonPC>
+			</xenotypeChances>
+		</xenotypeSet>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Outlander</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<caravanTraderKinds>
+			<li>NY_Caravan_ForgingDragon_Anything</li>
+			<li>NY_Caravan_ForgingDragon_Slaver</li>
+		</caravanTraderKinds>
+		<visitorTraderKinds>
+			<li>NY_Visitor_ForgingDragon</li>
+		</visitorTraderKinds>
+		<baseTraderKinds>
+			<li>NY_Base_ForgingDragon</li>
+		</baseTraderKinds>
+		<raidLootMaker>NY_ForgingDragonRaidLootMaker</raidLootMaker>
+		<pawnGroupMakers Inherit="False">
+			<li>
+				<kindDef>Combat</kindDef>
+				<options>
+					<NY_DragonSoldierMelee>40</NY_DragonSoldierMelee>
+					<NY_DragonSoldierShoot>20</NY_DragonSoldierShoot>
+					<NY_DragonSoldierFire>5</NY_DragonSoldierFire>
+					<NY_DragonSoldierHeavy>10</NY_DragonSoldierHeavy>
+					<NY_DragonMusician>5</NY_DragonMusician>
+					<NY_DragonLeader>1</NY_DragonLeader>
+				</options>
+			</li>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<NY_DragonSoldierMelee>30</NY_DragonSoldierMelee>
+					<NY_DragonSoldierShoot>30</NY_DragonSoldierShoot>
+					<NY_DragonSoldierHeavy>20</NY_DragonSoldierHeavy>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<NY_DragonTrader>1</NY_DragonTrader>
+				</traders>
+				<carriers>
+					<Muffalo>6</Muffalo>
+					<Dromedary>5</Dromedary>
+					<Alpaca>2</Alpaca>
+					<Elephant>1</Elephant>
+				</carriers>
+				<guards>
+					<NY_DragonSoldierMelee>20</NY_DragonSoldierMelee>
+					<NY_DragonSoldierShoot>20</NY_DragonSoldierShoot>
+					<NY_DragonSoldierHeavy>10</NY_DragonSoldierHeavy>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<NY_DragonSoldierMelee>40</NY_DragonSoldierMelee>
+					<NY_DragonSoldierShoot>50</NY_DragonSoldierShoot>
+					<NY_DragonSoldierFire>10</NY_DragonSoldierFire>
+					<NY_DragonSoldierHeavy>40</NY_DragonSoldierHeavy>
+					<NY_DragonLeader>10</NY_DragonLeader>
+				</options>
+			</li>
+		</pawnGroupMakers>
+		<colorSpectrum>
+			<li>(104, 153, 130)</li>
+		</colorSpectrum>
+		<disallowedRaidAgeRestrictions>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Children</li>
+		</disallowedRaidAgeRestrictions>
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(0, 100)</li>
+				<li>(500, 120)</li>
+				<li>(1000, 200)</li>
+				<li>(1500, 500)</li>
+				<li>(2000, 1000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+		<canSiege>false</canSiege>
+		<naturalEnemy>true</naturalEnemy>
+		<canStageAttacks>true</canStageAttacks>
+		<canMakeRandomly>true</canMakeRandomly>
+		<canUseAvoidGrid>true</canUseAvoidGrid>
+		<humanlikeFaction>true</humanlikeFaction>
+		<listOrderPriority>27</listOrderPriority>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<settlementGenerationWeight>1</settlementGenerationWeight>
+		<maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>70</configurationListOrderPriority>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
+		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+		<allowedArrivalTemperatureRange>-80~90</allowedArrivalTemperatureRange>
+		<fixedIdeo>true</fixedIdeo>
+		<ideoName>真龙永存</ideoName>
+		<ideoDescription>
+			在遥远的过去最初的真龙&lt;color=#D09B61FF&gt;陈梓&lt;/color&gt;诞下了九个子嗣，她们各自为政，建立了自己的国家，但是孩子们分到的土地各不相同，有的贫瘠有的富饶。
+			争斗便开始了&lt;color=#D09B61FF&gt;陈梓&lt;/color&gt;不忍心看见孩子们自相残杀，出面阻止九子之首向母亲索求力量以平息姐妹们的争斗，慈悲的母神允许了，遂强大的纯种龙降世，恐怖的压制能力很快就平息姐妹们的战争。
+			再后来，姐妹们都像大姐一样和母亲&lt;color=#D09B61FF&gt;陈梓&lt;/color&gt;索取力量，但是最初的真龙以及累了，她回到了远在另一个星系的母星去见爱人。将自己的力量交给了执政的大姐。
+			大姐即位了真龙之后，也给予了姐妹们子嗣的力量，但是也付出了相应的限制，心灵手巧的青花瓷将永远无法上战场，能说会道的剪纸将会一辈子不能靠近火焰。
+		</ideoDescription>
+		<deityPresets>
+			<li>
+				<nameType>
+					<name>陈梓</name>
+					<type>第一真龙</type>
+				</nameType>
+				<gender>Female</gender>
+				<iconPath>UI/Deities/DeityGeneric</iconPath>
+			</li>
+			<li>
+				<nameType>
+					<name>灰风</name>
+					<type>帷幕后的造物主</type>
+				</nameType>
+				<iconPath>UI/Deities/DeityGeneric</iconPath>
+			</li>
+		</deityPresets>
+		<forcedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_TheistEmbodied</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+		</forcedMemes>
+		<requiredPreceptsOnly>true</requiredPreceptsOnly>
+	</FactionDef>
+
+	<CultureDef Name="ForgingDragon">
+		<defName>NY_ForgingDragonCulture</defName>
+		<label>冶龍</label>
+		<description>冶龍的文化形态。</description>
+		<ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoAstropolitan</ideoNameMaker>
+		<deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeityAstropolitan</deityNameMaker>
+		<deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerAstropolitan</deityTypeMaker>
+		<leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">LeaderTitleMaker_Astropolitan</leaderTitleMaker>
+		<festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalAstropolitan</festivalNameMaker>
+		<allowedPlaceTags>
+			<li>OriginSpacer</li>
+		</allowedPlaceTags>
+		<iconPath>UI/World/NY_ForgingDragonUnion</iconPath>
+		<styleItemTags>
+			<li>
+				<tag>ForgingDragonHair</tag>
+				<baseWeight>10</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoBeard</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoTattoo</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+		</styleItemTags>
+	</CultureDef>
+
+	<ThingSetMakerDef>
+		<defName>NY_ForgingDragonRaidLootMaker</defName>
+		<root Class="ThingSetMaker_MarketValue">
+			<fixedParams>
+				<filter>
+					<thingDefs>
+						<li>NY_RefinedIron</li>
+						<li>NY_RedIron</li>
+						<li>NY_GreenGlaze</li>
+						<li>NY_LotusRootSilk</li>
+						<li>NY_DragonMilk</li>
+						<li>NY_PlumJuice</li>
+						<li>NY_PlumGingerTea</li>
+						<li>NY_PreservedPlum</li>
+					</thingDefs>
+				</filter>
+			</fixedParams>
+		</root>
+	</ThingSetMakerDef>
+
+	<FactionDef ParentName="FactionBase">
+		<defName>NY_ForgingDragonPlayer</defName>
+		<label>冶龍新家园</label>
+		<description>因种种原因脱离了族群寻找新生活的冶龍们。</description>
+		<isPlayer>true</isPlayer>
+		<basicMemberKind>NY_DragonAlone</basicMemberKind>
+		<pawnSingular>拓乡者</pawnSingular>
+		<pawnsPlural>拓乡者们</pawnsPlural>
+		<techLevel>Industrial</techLevel>
+		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+		<allowedCultures>
+			<li>NY_ForgingDragonCulture</li>
+		</allowedCultures>
+		<factionIconPath>UI/World/NY_ForgingDragonUnion</factionIconPath>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Offworld</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<startingResearchTags>
+			<li>ClassicStart</li>
+		</startingResearchTags>
+		<startingTechprintsResearchTags>
+			<li>ClassicStart</li>
+			<li>ClassicStartTechprints</li>
+		</startingTechprintsResearchTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Cloth</li>
+			</thingDefs>
+		</apparelStuffFilter>
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<NY_ForgingDragonCB>0.4</NY_ForgingDragonCB>
+				<NY_ForgingDragonWJ>0.4</NY_ForgingDragonWJ>
+				<NY_ForgingDragonBW>0.1</NY_ForgingDragonBW>
+				<NY_ForgingDragonPC>0.1</NY_ForgingDragonPC>
+			</xenotypeChances>
+		</xenotypeSet>
+	</FactionDef>
+</Defs>

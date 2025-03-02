@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<NY_NotFitBody>不适合当前身型。</NY_NotFitBody>
+	<NY_RemoveOverriddenGene>有基因与{PAWN}的冶龍基因发生冲突而被分解：</NY_RemoveOverriddenGene>
+
+	<NY_GhoulDragonGrow>{PAWN}生长出了新的鬼龙器官：</NY_GhoulDragonGrow>
+	<NY_RemoveFromGhoulDragon>{HEDIFF} 受排异反应影响从{PAWN}的血肉中剥离。</NY_RemoveFromGhoulDragon>
+	
+	<NY_MessageMakeMilk>{PAWN}分泌并收集了一些龙涎香。</NY_MessageMakeMilk>
+	<NY_DaysLeft>天后产出龙涎香。</NY_DaysLeft>
+	<NY_NoMilk>龙涎香停止分泌。</NY_NoMilk>
+</LanguageData>

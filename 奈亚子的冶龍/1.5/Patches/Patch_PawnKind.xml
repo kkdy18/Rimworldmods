@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!--禁止黑衣人变成龙娘-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/PawnKindDef[defName="StrangerInBlack"]</xpath>
+		<value>
+			<useFactionXenotypes>false</useFactionXenotypes>
+		</value>
+	</Operation>
+</Patch>

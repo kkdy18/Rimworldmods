@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<!-- EN: 红绳铜钱面 -->
+	<NY_CopperMask.label>copper coin mask</NY_CopperMask.label>
+	<!-- EN: 冶龍工匠设计的特色饰品，不一定实用但绝对好看，并且由于不需要什么功能性，严谨的匠人们把心思都花在了如何让饰品坚固耐用上。 -->
+	<NY_CopperMask.description>A decorational headdress, made to be extra durable because it sucks to have your favourite jewelry broken.</NY_CopperMask.description>
+
+	<!-- EN: 征战铁兽面 -->
+	<NY_ForgingDragonIconMask.label>beast mask</NY_ForgingDragonIconMask.label>
+	<!-- EN: 精炼铁打造的兽形面具，进一步保护了冶龍战士的面部，同时狰狞的兽面能够威吓敌人。 -->
+	<NY_ForgingDragonIconMask.description>A metallic mask made to resemble a beast's head. Provide protection and scares your enemy to hell.</NY_ForgingDragonIconMask.description>
+
+	<!-- EN: 征战铁锥帽 -->
+	<NY_ForgingDragonIronHat.label>cone cap of war</NY_ForgingDragonIronHat.label>
+	<!-- EN: 精炼铁打制的冶龍专用头盔，为冶龍的角留出了空间，宽大坚硬的帽檐能有效保护战士们的脑袋。\n\n玄铁铸就，坚不可摧，护各将士，征战四方。 -->
+	<NY_ForgingDragonIronHat.description>A helmet with horn-holes, shelding warrior's heads from blades.</NY_ForgingDragonIronHat.description>
+
+	<!-- EN: 牡丹金针簪 -->
+	<NY_GoldenHairpin.label>golden hairpin</NY_GoldenHairpin.label>
+	<!-- EN: 冶龍工匠设计的特色饰品，不一定实用但绝对好看，并且由于不需要什么功能性，严谨的匠人们把心思都花在了如何让饰品坚固耐用上。 -->
+	<NY_GoldenHairpin.description>A decorational headdress, made to be extra durable because it sucks to have your favourite jewelry broken.</NY_GoldenHairpin.description>
+
+	<!-- EN: 铜钱流苏坠 -->
+	<NY_TasselEarrings.label>tassel earrings</NY_TasselEarrings.label>
+	<!-- EN: 冶龍工匠设计的特色饰品，不一定实用但绝对好看，并且由于不需要什么功能性，严谨的匠人们把心思都花在了如何让饰品坚固耐用上。 -->
+	<NY_TasselEarrings.description>A decorational headdress, made to be extra durable because it sucks to have your favourite jewelry broken.</NY_TasselEarrings.description>
+
+</LanguageData>

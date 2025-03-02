@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ShellaBackgrounds.Shella_BackgroundDef>
+		<defName>NY_BlueLoong</defName>
+		<backgroundPath>UI/World/NY_Background_BlueLoong</backgroundPath>
+		<isDLC>false</isDLC>
+		<modIdentifier>NY.SmeltedLoong</modIdentifier>
+	</ShellaBackgrounds.Shella_BackgroundDef>
+</Defs>

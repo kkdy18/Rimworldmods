@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <FacialAnimation.EyeballTypeDef>
+    <defName>SmeltedLoong_Eye_Normal1</defName>
+	<altMaskPath>Things/Pawn/SmeltedLoong/Eyes/Common</altMaskPath>
+    <texPath>Things/Pawn/SmeltedLoong/Eyes/Normal</texPath>  
+    <shader>Map/CutoutSkinOverlay</shader>
+	<raceName>SmeltedLoong</raceName> 
+    <minColor>RGB(255,255,255)</minColor>
+    <maxColor>RGB(255,255,255)</maxColor>
+  </FacialAnimation.EyeballTypeDef>
+</Defs>

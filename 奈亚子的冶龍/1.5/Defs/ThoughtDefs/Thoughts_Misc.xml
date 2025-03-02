@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThoughtDef>
+		<defName>NY_thought_BeautyPC</defName>
+		<durationDays>0.1</durationDays>
+		<requiredTraits>
+			<li>NY_trait_BeautyPC</li>
+		</requiredTraits>
+		<stages>
+			<li>
+				<label>展示自我</label>
+				<description>我现在没有丝毫的羞耻感，我希望所有人都能欣赏我精致的身体并从中获得美的享受。</description>
+				<baseMoodEffect>30</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>NY_thought_BeautyLookPC</defName>
+		<showBubble>true</showBubble>
+		<durationDays>1</durationDays>
+		<nullifyingTraits>
+			<li>NY_trait_BeautyPC</li>
+		</nullifyingTraits>
+		<nullifyingHediffs>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">Inhumanized</li>
+		</nullifyingHediffs>
+		<stages>
+			<li>
+				<label>美丽的纸花之躯</label>
+				<description>我刚才看见天仙从我面前走过，美，妙不可言。</description>
+				<baseMoodEffect>10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>
