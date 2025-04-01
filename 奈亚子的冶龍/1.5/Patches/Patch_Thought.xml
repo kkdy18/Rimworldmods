@@ -6,4 +6,12 @@
 			<li>NY_trait_BeautyPC</li>
 		</value>
 	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThoughtDef[defName="AteWithoutTable"]/nullifyingTraits</xpath>
+		<value>
+			<li>NY_trait_ToughGP</li>
+			<li>NY_trait_ToughMC</li>
+		</value>
+	</Operation>
 </Patch>

@@ -3,9 +3,9 @@
 	<ScenarioDef>
 		<defName>NY_PeacefulLife</defName>
 		<label>心中的桃花源</label>
-		<description>你们四位只是冶龍中相互照应的小人物，寻圣盟驻地内愈加紧张的气氛与日夜不息的铸造坊让你们意识到战争的临近，上一次战争留下的累累尸骨尚未被大地消磨殆尽，你们不想成为填入其中的新骨骸，于是在一个暴风骤雨的夜晚，你们背上仓促换来的物资与兵刃逃入夜色。昔日的仇敌不会网开一面，同胞亦不会原谅你们的背叛，你们只能拼劲全力在这个恶劣的世界生存下去，也许终有一日你们会找到属于自己的桃花源。</description>
+		<description>你们几位只是冶龍中相互照应的小人物，寻圣盟驻地内愈加紧张的气氛与日夜不息的铸造坊让你们意识到战争的临近，上一次战争留下的累累尸骨尚未被大地消磨殆尽，你们不想成为填入其中的新骨骸，于是在一个暴风骤雨的夜晚，你们背上仓促换来的物资与兵刃逃入夜色。昔日的仇敌不会网开一面，同胞亦不会原谅你们的背叛，你们只能拼劲全力在这个恶劣的世界生存下去，也许终有一日你们会找到属于自己的桃花源。</description>
 		<scenario>
-			<summary>四个冶龍逃离族群，踏上未知的旅途。</summary>
+			<summary>追求平静生活的冶龍们逃离族群，踏上未知的旅途。</summary>
 			<playerFaction>
 				<def>PlayerFaction</def>
 				<factionDef>NY_ForgingDragonPlayer</factionDef>
@@ -13,30 +13,37 @@
 			<parts>
 				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
 					<def>ConfigurePawnsXenotypes</def>
-					<pawnChoiceCount>4</pawnChoiceCount>
+					<pawnChoiceCount>6</pawnChoiceCount>
 					<xenotypeCounts>
 						<li>
 							<count>1</count>
-							<requiredAtStart>True</requiredAtStart>
+							<!--<requiredAtStart>True</requiredAtStart>-->
 							<xenotype>NY_ForgingDragonCB</xenotype>
 							<allowedDevelopmentalStages>Child, Adult</allowedDevelopmentalStages>
 						</li>
 						<li>
 							<count>1</count>
-							<requiredAtStart>True</requiredAtStart>
 							<xenotype>NY_ForgingDragonBW</xenotype>
 							<allowedDevelopmentalStages>Child, Adult</allowedDevelopmentalStages>
 						</li>
 						<li>
 							<count>1</count>
-							<requiredAtStart>True</requiredAtStart>
 							<xenotype>NY_ForgingDragonWJ</xenotype>
 							<allowedDevelopmentalStages>Child, Adult</allowedDevelopmentalStages>
 						</li>
 						<li>
 							<count>1</count>
-							<requiredAtStart>True</requiredAtStart>
 							<xenotype>NY_ForgingDragonPC</xenotype>
+							<allowedDevelopmentalStages>Child, Adult</allowedDevelopmentalStages>
+						</li>
+						<li>
+							<count>1</count>
+							<xenotype>NY_ForgingDragonGP</xenotype>
+							<allowedDevelopmentalStages>Child, Adult</allowedDevelopmentalStages>
+						</li>
+						<li>
+							<count>1</count>
+							<xenotype>NY_ForgingDragonMC</xenotype>
 							<allowedDevelopmentalStages>Child, Adult</allowedDevelopmentalStages>
 						</li>
 					</xenotypeCounts>
@@ -57,12 +64,12 @@
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
 					<thingDef>Pemmican</thingDef>
-					<count>400</count>
+					<count>600</count>
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
 					<thingDef>NY_PreservedPlum</thingDef>
-					<count>80</count>
+					<count>100</count>
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
@@ -102,7 +109,7 @@
 				</li>
 				<li Class="ScenPart_PawnFilter_Age">
 					<def>PawnFilter_Age</def>
-					<allowedAgeRange>15~21</allowedAgeRange>
+					<allowedAgeRange>15~25</allowedAgeRange>
 				</li>
 			</parts>
 		</scenario>
@@ -135,7 +142,7 @@
 				</li>
 				<li Class="ScenPart_GameStartDialog">
 					<def>GameStartDialog</def>
-					<text>出逃的决定有些过于任性，你几乎只带了自己的兵甲佩刀，在战场上你也许是所向披靡的战神，但现在你的敌人只有饥饿与孤独。</text>
+					<text>出逃的决定有些过于任性，你几乎只带了自己的兵甲佩刀，在战场上你也许是所向披靡的战神，但现在你的敌人只有饥饿与孤独。\n\n当你稍作歇息时，一头落单的梼杌战兽突然出现在你的视线中，它也发现了你，它也许和你一样厌倦了寻圣盟，不管怎样，它现在接纳了你。</text>
 					<closeSound>GameStartSting</closeSound>
 				</li>
 				<li Class="ScenPart_StartingResearch">
@@ -164,6 +171,12 @@
 				<li Class="ScenPart_PawnFilter_Age">
 					<def>PawnFilter_Age</def>
 					<allowedAgeRange>25~34</allowedAgeRange>
+				</li>
+				<li Class="ScenPart_StartingAnimal">
+					<def>StartingAnimal</def>
+					<animalKind>NY_animal_TaoWu</animalKind>
+					<bondToRandomPlayerPawnChance>1</bondToRandomPlayerPawnChance>
+					<count>1</count>
 				</li>
 			</parts>
 		</scenario>

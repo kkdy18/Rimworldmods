@@ -20,6 +20,7 @@
 		</statBases>
 		<weaponTags>
 			<li>NY_DragonWeaponRanged</li>
+			<li>NY_DragonWeaponRanged_Needle</li>
 		</weaponTags>
 		<weaponClasses>
 			<li>RangedLight</li>
@@ -85,7 +86,7 @@
 			<li>RangedLight</li>
 		</weaponClasses>
 		<costList>
-			<Woody>20</Woody>
+			<WoodLog>20</WoodLog>
 			<NY_GreenGlaze>20</NY_GreenGlaze>
 		</costList>
 		<recipeMaker>

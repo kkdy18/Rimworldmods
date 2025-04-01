@@ -39,6 +39,26 @@
 	</GameConditionDef>
 
 	<GameConditionDef>
+		<defName>NY_ForgingDragon_Sandstorm</defName>
+		<conditionClass>ForgingDragon.GameCondition_DragonWeather</conditionClass>
+		<label>沙尘暴</label>
+		<description>狂风席卷，黄沙蔽日，只要走出门耳朵和鼻孔就会被沙子填满。</description>
+		<endMessage>风暴开始停息，没有风那些沙尘也只能乖乖落回大地。</endMessage>
+		<letterText>风暴即将到来，但这次的风里似乎多出一丝令人不安的黄色。</letterText>
+		<letterDef>NegativeEvent</letterDef>
+		<canBePermanent>true</canBePermanent>
+		<allowUnderground>false</allowUnderground>
+		<pennedAnimalsSeekShelter>true</pennedAnimalsSeekShelter>
+		<weatherDef>NY_Sandstorm</weatherDef>
+		<temperatureOffset>10</temperatureOffset>
+		<exclusiveConditions>
+			<li>NY_ForgingDragon_HotRain</li>
+			<li>NY_ForgingDragon_ColdSnap</li>
+			<li>NY_ForgingDragon_ColdFreeze</li>
+		</exclusiveConditions>
+	</GameConditionDef>
+
+	<GameConditionDef>
 		<defName>NY_ForgingDragon_ColdSnap</defName>
 		<conditionClass>ForgingDragon.GameCondition_DragonWeather</conditionClass>
 		<label>平流寒害</label>
@@ -54,6 +74,7 @@
 			<li>HeatWave</li>
 			<li>NY_ForgingDragon_HotRain</li>
 			<li>NY_ForgingDragon_Drought</li>
+			<li>NY_ForgingDragon_Sandstorm</li>
 		</exclusiveConditions>
 	</GameConditionDef>
 
@@ -74,6 +95,47 @@
 			<li>HeatWave</li>
 			<li>NY_ForgingDragon_HotRain</li>
 			<li>NY_ForgingDragon_Drought</li>
+			<li>NY_ForgingDragon_Sandstorm</li>
+		</exclusiveConditions>
+	</GameConditionDef>
+
+	<GameConditionDef>
+		<defName>NY_ForgingDragon_Snowstorm</defName>
+		<conditionClass>ForgingDragon.GameCondition_DragonWeather</conditionClass>
+		<label>雪暴</label>
+		<description>无穷无尽的暴雪倾入这片土地，视野里白茫茫的一片，仿佛一座苍白的坟墓。</description>
+		<endMessage>风暴开始停息，阳光终会穿透这片令人窒息的白幕。</endMessage>
+		<letterText>雪花纷纷扬扬地落下，但强风正在把这些白色的精灵变为埋葬一切的白潮。</letterText>
+		<letterDef>NegativeEvent</letterDef>
+		<canBePermanent>true</canBePermanent>
+		<allowUnderground>false</allowUnderground>
+		<pennedAnimalsSeekShelter>true</pennedAnimalsSeekShelter>
+		<weatherDef>NY_Snowstorm</weatherDef>
+		<temperatureOffset>-30</temperatureOffset>
+		<exclusiveConditions>
+			<li>HeatWave</li>
+			<li>NY_ForgingDragon_HotRain</li>
+			<li>NY_ForgingDragon_Drought</li>
+			<li>NY_ForgingDragon_Sandstorm</li>
+		</exclusiveConditions>
+	</GameConditionDef>
+
+	<GameConditionDef>
+		<defName>NY_ForgingDragon_Thunderstorm</defName>
+		<conditionClass>ForgingDragon.GameCondition_DragonWeather</conditionClass>
+		<label>雷暴</label>
+		<description>闪电不断从天空砸下，鞭笞大地，躲在遮蔽下是此时最好的选择。</description>
+		<endMessage>不再有电光划破天空，令人安心的宁静。</endMessage>
+		<letterText>乌云缓慢飘来，自远处回荡的雷鸣仿佛某种巨兽的咆哮。</letterText>
+		<letterDef>NegativeEvent</letterDef>
+		<canBePermanent>true</canBePermanent>
+		<allowUnderground>false</allowUnderground>
+		<pennedAnimalsSeekShelter>true</pennedAnimalsSeekShelter>
+		<weatherDef>NY_Thunderstorm</weatherDef>
+		<temperatureOffset>10</temperatureOffset>
+		<exclusiveConditions>
+			<li>NY_ForgingDragon_Drought</li>
+			<li>NY_ForgingDragon_Sandstorm</li>
 		</exclusiveConditions>
 	</GameConditionDef>
 </Defs>

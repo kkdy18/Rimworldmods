@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<BackstoryDef Name="NY_BaseLoongBackStory" Abstract="True">
+		<shuffleable>true</shuffleable>
+		<disallowedTraits>
+			<Gay />
+			<Wimp />
+			<Beauty />
+			<Nudist />
+			<Asexual />
+			<Gourmand />
+			<Pyromaniac />
+			<BodyPurist />
+			<DislikesMen />
+			<DislikesWomen />
+		</disallowedTraits>
+		<spawnCategories>
+			<li>NY_LoongCivilian</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef Name="NY_BetterLoongBackStory" Abstract="True">
+		<shuffleable>true</shuffleable>
+		<disallowedTraits>
+			<Gay />
+			<Wimp />
+			<Beauty />
+			<Nudist />
+			<Asexual />
+			<Gourmand />
+			<Pyromaniac />
+			<BodyPurist />
+			<DislikesMen />
+			<DislikesWomen />
+		</disallowedTraits>
+		<spawnCategories>
+			<li>NY_LoongElite</li>
+		</spawnCategories>
+	</BackstoryDef>
+</Defs>

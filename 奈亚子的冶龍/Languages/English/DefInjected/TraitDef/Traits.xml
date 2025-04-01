@@ -13,7 +13,7 @@
 
 	<!-- EN: 肤若青花 -->
 	<NY_trait_SkinBW.degreeDatas.0.label>skin of porcelain</NY_trait_SkinBW.degreeDatas.0.label>
-	<!-- EN: {PAWN_nameDef}的皮肤有着瓷器般的质感，洁白光滑且生有青蓝色的美丽花纹，但这样的皮肤也像瓷器一般脆弱，{PAWN_nameDef}会更容易受伤，更容易被疼痛击倒。 -->
-	<NY_trait_SkinBW.degreeDatas.0.description>{PAWN_nameDef} was born with a skin that looks like porcelain, touches like one, and as fragile as one. {PAWN_nameDef} is more prone to damages and pain shocks.</NY_trait_SkinBW.degreeDatas.0.description>
+	<!-- EN: {PAWN_nameDef}的皮肤有着瓷器般的质感，洁白光滑且生有青蓝色的美丽花纹，但这样的皮肤也像瓷器一般脆弱，{PAWN_nameDef}会更容易受伤。 -->
+	<NY_trait_SkinBW.degreeDatas.0.description>{PAWN_nameDef} was born with a skin that looks like porcelain, touches like one, and as fragile as one. {PAWN_pronoun} is more prone to damages.</NY_trait_SkinBW.degreeDatas.0.description>
 
 </LanguageData>

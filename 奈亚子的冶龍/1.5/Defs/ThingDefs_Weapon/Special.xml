@@ -27,6 +27,7 @@
 			<displayPriority>1271.4</displayPriority>
 		</recipeMaker>
 		<weaponTags>
+			<li>NY_DragonWeaponRanged</li>
 		</weaponTags>
 		<thingCategories>
 			<li>NY_DragonWeaponRanged</li>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<IncidentCategoryDef>
-		<defName>NY_ForgingDragon</defName>
+		<defName>NY_ForgingDragon_Weather</defName>
 	</IncidentCategoryDef>
 
 	<IncidentDef>
 		<defName>NY_ForgingDragon_HotRain</defName>
 		<label>龙王煮雨</label>
-		<category>NY_ForgingDragon</category>
+		<category>NY_ForgingDragon_Weather</category>
 		<targetTags>
 			<li>Map_PlayerHome</li>
 		</targetTags>
@@ -21,13 +21,13 @@
 		<disabledWhen>
 			<extremeWeatherIncidentsDisabled>true</extremeWeatherIncidentsDisabled>
 		</disabledWhen>
-		<durationDays>10~15</durationDays>
+		<durationDays>5~10</durationDays>
 	</IncidentDef>
 
 	<IncidentDef>
 		<defName>NY_ForgingDragon_Drought</defName>
 		<label>旱灾</label>
-		<category>NY_ForgingDragon</category>
+		<category>NY_ForgingDragon_Weather</category>
 		<targetTags>
 			<li>Map_PlayerHome</li>
 		</targetTags>
@@ -41,13 +41,33 @@
 		<disabledWhen>
 			<extremeWeatherIncidentsDisabled>true</extremeWeatherIncidentsDisabled>
 		</disabledWhen>
-		<durationDays>10~15</durationDays>
+		<durationDays>5~10</durationDays>
+	</IncidentDef>
+
+	<IncidentDef>
+		<defName>NY_ForgingDragon_Sandstorm</defName>
+		<label>龙王扫尘</label>
+		<category>NY_ForgingDragon_Weather</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>IncidentWorker_HeatWave</workerClass>
+		<gameCondition>NY_ForgingDragon_Sandstorm</gameCondition>
+		<letterLabel>龙王扫尘</letterLabel>
+		<letterDef>NegativeEvent</letterDef>
+		<baseChance>0.5</baseChance>
+		<earliestDay>1</earliestDay>
+		<minRefireDays>1</minRefireDays>
+		<disabledWhen>
+			<extremeWeatherIncidentsDisabled>true</extremeWeatherIncidentsDisabled>
+		</disabledWhen>
+		<durationDays>1~7</durationDays>
 	</IncidentDef>
 
 	<IncidentDef>
 		<defName>NY_ForgingDragon_ColdSnap</defName>
 		<label>风霜过境</label>
-		<category>NY_ForgingDragon</category>
+		<category>NY_ForgingDragon_Weather</category>
 		<targetTags>
 			<li>Map_PlayerHome</li>
 		</targetTags>
@@ -61,13 +81,13 @@
 		<disabledWhen>
 			<extremeWeatherIncidentsDisabled>true</extremeWeatherIncidentsDisabled>
 		</disabledWhen>
-		<durationDays>10~20</durationDays>
+		<durationDays>5~10</durationDays>
 	</IncidentDef>
 
 	<IncidentDef>
 		<defName>NY_ForgingDragon_ColdFreeze</defName>
 		<label>霜灾</label>
-		<category>NY_ForgingDragon</category>
+		<category>NY_ForgingDragon_Weather</category>
 		<targetTags>
 			<li>Map_PlayerHome</li>
 		</targetTags>
@@ -76,6 +96,46 @@
 		<letterLabel>霜灾</letterLabel>
 		<letterDef>NegativeEvent</letterDef>
 		<baseChance>0.5</baseChance>
+		<earliestDay>1</earliestDay>
+		<minRefireDays>1</minRefireDays>
+		<disabledWhen>
+			<extremeWeatherIncidentsDisabled>true</extremeWeatherIncidentsDisabled>
+		</disabledWhen>
+		<durationDays>1~7</durationDays>
+	</IncidentDef>
+
+	<IncidentDef>
+		<defName>NY_ForgingDragon_Snowstorm</defName>
+		<label>雪暴咆哮</label>
+		<category>NY_ForgingDragon_Weather</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>IncidentWorker_MakeGameCondition</workerClass>
+		<gameCondition>NY_ForgingDragon_Snowstorm</gameCondition>
+		<letterLabel>雪暴咆哮</letterLabel>
+		<letterDef>NegativeEvent</letterDef>
+		<baseChance>0.5</baseChance>
+		<earliestDay>1</earliestDay>
+		<minRefireDays>1</minRefireDays>
+		<disabledWhen>
+			<extremeWeatherIncidentsDisabled>true</extremeWeatherIncidentsDisabled>
+		</disabledWhen>
+		<durationDays>1~7</durationDays>
+	</IncidentDef>
+
+	<IncidentDef>
+		<defName>NY_ForgingDragon_Thunderstorm</defName>
+		<label>龙王震怒</label>
+		<category>NY_ForgingDragon_Weather</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>IncidentWorker_MakeGameCondition</workerClass>
+		<gameCondition>NY_ForgingDragon_Thunderstorm</gameCondition>
+		<letterLabel>龙王震怒</letterLabel>
+		<letterDef>NegativeEvent</letterDef>
+		<baseChance>0.2</baseChance>
 		<earliestDay>1</earliestDay>
 		<minRefireDays>1</minRefireDays>
 		<disabledWhen>

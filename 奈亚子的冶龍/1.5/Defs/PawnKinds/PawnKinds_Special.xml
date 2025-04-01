@@ -29,11 +29,11 @@
 		<label>罪身冶龍</label>
 		<defaultFactionType>NY_ForgingDragonUnion</defaultFactionType>
 		<maxGenerationAge>84</maxGenerationAge>
-		<minGenerationAge>14</minGenerationAge>
+		<minGenerationAge>24</minGenerationAge>
 		<backstoryFiltersOverride Inherit="False">
 			<li>
 				<categories>
-					<li>Outlander</li>
+					<li>NY_LoongCivilian</li>
 				</categories>
 			</li>
 		</backstoryFiltersOverride>
@@ -48,9 +48,9 @@
 		<useFactionXenotypes>false</useFactionXenotypes>
 		<xenotypeSet Inherit="False">
 			<xenotypeChances>
-				<NY_ForgingDragonCB>0.6</NY_ForgingDragonCB>
-				<NY_ForgingDragonBW>0.2</NY_ForgingDragonBW>
-				<NY_ForgingDragonPC>0.2</NY_ForgingDragonPC>
+				<NY_ForgingDragonCB>0.4</NY_ForgingDragonCB>
+				<NY_ForgingDragonBW>0.3</NY_ForgingDragonBW>
+				<NY_ForgingDragonPC>0.3</NY_ForgingDragonPC>
 			</xenotypeChances>
 		</xenotypeSet>
 	</PawnKindDef>
@@ -80,5 +80,74 @@
 			<li>Poor</li>
 			<li>Simple</li>
 		</techHediffsTags>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<xenotypeSet>
+			<xenotypeChances>
+				<NY_ForgingDragonCB>0.3</NY_ForgingDragonCB>
+				<NY_ForgingDragonWJ>0.3</NY_ForgingDragonWJ>
+				<NY_ForgingDragonBW>0.2</NY_ForgingDragonBW>
+				<NY_ForgingDragonPC>0.2</NY_ForgingDragonPC>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef Name="NY_DragonVillager" ParentName="NY_BaseDragon" Abstract="True">
+		<isFighter>false</isFighter>
+		<itemQuality>Good</itemQuality>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>NY_LoongCivilian</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<initialResistanceRange>5~15</initialResistanceRange>
+		<chemicalAddictionChance>0</chemicalAddictionChance>
+		<combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
+		<combatEnhancingDrugsCount>0</combatEnhancingDrugsCount>
+		<gearHealthRange>0.6~1</gearHealthRange>
+		<weaponMoney>500~1200</weaponMoney>
+		<weaponTags>
+			<li>NY_DragonWeaponRanged</li>
+		</weaponTags>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelMoney>700~1500</apparelMoney>
+		<apparelTags>
+			<li>NY_DragonHeadDress</li>
+			<li>BeltDefensePop</li>
+		</apparelTags>
+		<techHediffsChance>0.15</techHediffsChance>
+		<techHediffsMoney>700~1200</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+			<li>ImplantEmpireCommon</li>
+		</techHediffsTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="NY_DragonVillager">
+		<defName>NY_DragonFarmer</defName>
+		<label>冶龍农官</label>
+		<labelPlural>冶龍农官</labelPlural>
+		<combatPower>30</combatPower>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<xenotypeSet>
+			<xenotypeChances>
+				<NY_ForgingDragonGP>1</NY_ForgingDragonGP>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="NY_DragonVillager">
+		<defName>NY_DragonCrafter</defName>
+		<label>冶龍工匠</label>
+		<labelPlural>冶龍工匠</labelPlural>
+		<combatPower>30</combatPower>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<xenotypeSet>
+			<xenotypeChances>
+				<NY_ForgingDragonBW>1</NY_ForgingDragonBW>
+			</xenotypeChances>
+		</xenotypeSet>
 	</PawnKindDef>
 </Defs>

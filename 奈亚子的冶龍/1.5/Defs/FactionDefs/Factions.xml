@@ -25,16 +25,15 @@
 		</disallowedMemes>
 		<xenotypeSet Inherit="False">
 			<xenotypeChances>
-				<NY_ForgingDragonCB>0.4</NY_ForgingDragonCB>
+				<NY_ForgingDragonCB>0.5</NY_ForgingDragonCB>
 				<NY_ForgingDragonWJ>0.4</NY_ForgingDragonWJ>
-				<NY_ForgingDragonBW>0.1</NY_ForgingDragonBW>
-				<NY_ForgingDragonPC>0.1</NY_ForgingDragonPC>
+				<NY_ForgingDragonMC>0.1</NY_ForgingDragonMC>
 			</xenotypeChances>
 		</xenotypeSet>
 		<backstoryFilters>
 			<li>
 				<categories>
-					<li>Outlander</li>
+					<li>NY_LoongCivilian</li>
 				</categories>
 			</li>
 		</backstoryFilters>
@@ -52,21 +51,51 @@
 		<pawnGroupMakers Inherit="False">
 			<li>
 				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
 				<options>
-					<NY_DragonSoldierMelee>40</NY_DragonSoldierMelee>
-					<NY_DragonSoldierShoot>20</NY_DragonSoldierShoot>
-					<NY_DragonSoldierFire>5</NY_DragonSoldierFire>
-					<NY_DragonSoldierHeavy>10</NY_DragonSoldierHeavy>
+					<NY_DragonLeader>5</NY_DragonLeader>
 					<NY_DragonMusician>5</NY_DragonMusician>
-					<NY_DragonLeader>1</NY_DragonLeader>
+					<NY_DragonGroupHealer>20</NY_DragonGroupHealer>
+					<NY_DragonSoldierMelee>30</NY_DragonSoldierMelee>
+					<NY_DragonSoldierShoot>30</NY_DragonSoldierShoot>
+					<NY_DragonSoldierHeavy>10</NY_DragonSoldierHeavy>
+					<NY_DragonSoldierFire>5</NY_DragonSoldierFire>
+					<NY_animal_TaoWu>2.5</NY_animal_TaoWu>
+				</options>
+			</li>
+			<li>
+				<!--疫病袭击-天花-->
+				<kindDef>Combat</kindDef>
+				<commonality>20</commonality>
+				<maxTotalPoints>4000</maxTotalPoints>
+				<disallowedStrategies>
+					<li>ImmediateAttackFriendly</li>
+				</disallowedStrategies>
+				<options>
+					<NY_DragonSoldierMelee_Smallpox>50</NY_DragonSoldierMelee_Smallpox>
+					<NY_DragonInfectedFighter_Smallpox>10</NY_DragonInfectedFighter_Smallpox>
+				</options>
+			</li>
+			<li>
+				<!--疫病袭击-风寒-->
+				<kindDef>Combat</kindDef>
+				<commonality>20</commonality>
+				<maxTotalPoints>4000</maxTotalPoints>
+				<disallowedStrategies>
+					<li>ImmediateAttackFriendly</li>
+				</disallowedStrategies>
+				<options>
+					<NY_DragonSoldierMelee_Cold>50</NY_DragonSoldierMelee_Cold>
+					<NY_DragonInfectedFighter_Cold>10</NY_DragonInfectedFighter_Cold>
 				</options>
 			</li>
 			<li>
 				<kindDef>Peaceful</kindDef>
 				<options>
+					<NY_DragonFarmer>10</NY_DragonFarmer>
+					<NY_DragonCrafter>10</NY_DragonCrafter>
 					<NY_DragonSoldierMelee>30</NY_DragonSoldierMelee>
 					<NY_DragonSoldierShoot>30</NY_DragonSoldierShoot>
-					<NY_DragonSoldierHeavy>20</NY_DragonSoldierHeavy>
 				</options>
 			</li>
 			<li>
@@ -75,12 +104,12 @@
 					<NY_DragonTrader>1</NY_DragonTrader>
 				</traders>
 				<carriers>
-					<Muffalo>6</Muffalo>
-					<Dromedary>5</Dromedary>
-					<Alpaca>2</Alpaca>
-					<Elephant>1</Elephant>
+					<NY_animal_TaoWu>5</NY_animal_TaoWu>
 				</carriers>
 				<guards>
+					<NY_DragonFarmer>10</NY_DragonFarmer>
+					<NY_DragonCrafter>10</NY_DragonCrafter>
+					<NY_DragonGroupHealer>10</NY_DragonGroupHealer>
 					<NY_DragonSoldierMelee>20</NY_DragonSoldierMelee>
 					<NY_DragonSoldierShoot>20</NY_DragonSoldierShoot>
 					<NY_DragonSoldierHeavy>10</NY_DragonSoldierHeavy>
@@ -89,11 +118,12 @@
 			<li>
 				<kindDef>Settlement</kindDef>
 				<options>
+					<NY_DragonLeader>10</NY_DragonLeader>
+					<NY_DragonMusician>20</NY_DragonMusician>
+					<NY_DragonGroupHealer>20</NY_DragonGroupHealer>
 					<NY_DragonSoldierMelee>40</NY_DragonSoldierMelee>
 					<NY_DragonSoldierShoot>50</NY_DragonSoldierShoot>
-					<NY_DragonSoldierFire>10</NY_DragonSoldierFire>
 					<NY_DragonSoldierHeavy>40</NY_DragonSoldierHeavy>
-					<NY_DragonLeader>10</NY_DragonLeader>
 				</options>
 			</li>
 		</pawnGroupMakers>
@@ -106,10 +136,9 @@
 		<maxPawnCostPerTotalPointsCurve>
 			<points>
 				<li>(0, 100)</li>
-				<li>(500, 120)</li>
 				<li>(1000, 200)</li>
-				<li>(1500, 500)</li>
-				<li>(2000, 1000)</li>
+				<li>(2500, 300)</li>
+				<li>(5000, 500)</li>
 			</points>
 		</maxPawnCostPerTotalPointsCurve>
 		<canSiege>false</canSiege>
@@ -233,7 +262,7 @@
 		<backstoryFilters>
 			<li>
 				<categories>
-					<li>Offworld</li>
+					<li>NY_LoongCivilian</li>
 				</categories>
 			</li>
 		</backstoryFilters>
@@ -249,13 +278,5 @@
 				<li>Cloth</li>
 			</thingDefs>
 		</apparelStuffFilter>
-		<xenotypeSet Inherit="False">
-			<xenotypeChances>
-				<NY_ForgingDragonCB>0.4</NY_ForgingDragonCB>
-				<NY_ForgingDragonWJ>0.4</NY_ForgingDragonWJ>
-				<NY_ForgingDragonBW>0.1</NY_ForgingDragonBW>
-				<NY_ForgingDragonPC>0.1</NY_ForgingDragonPC>
-			</xenotypeChances>
-		</xenotypeSet>
 	</FactionDef>
 </Defs>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<FacialAnimation.EyeballColorDef>
+		<defName>NY_EyeColor_CB</defName>
+		<geneDef>NY_gene_ForgingDragonCB</geneDef>
+		<eyeballColor>RGB(128,231,140)</eyeballColor>
+	</FacialAnimation.EyeballColorDef>
+
+	<FacialAnimation.EyeballColorDef>
+		<defName>NY_EyeColor_BW</defName>
+		<geneDef>NY_gene_ForgingDragonBW</geneDef>
+		<eyeballColor>RGB(77,195,201)</eyeballColor>
+	</FacialAnimation.EyeballColorDef>
+
+	<FacialAnimation.EyeballColorDef>
+		<defName>NY_EyeColor_WJ</defName>
+		<geneDef>NY_gene_ForgingDragonWJ</geneDef>
+		<eyeballColor>RGB(210,250,201)</eyeballColor>
+	</FacialAnimation.EyeballColorDef>
+
+	<FacialAnimation.EyeballColorDef>
+		<defName>NY_EyeColor_PC</defName>
+		<geneDef>NY_gene_ForgingDragonPC</geneDef>
+		<eyeballColor>RGB(226,102,110)</eyeballColor>
+	</FacialAnimation.EyeballColorDef>
+
+	<FacialAnimation.EyeballColorDef>
+		<defName>NY_EyeColor_GP</defName>
+		<geneDef>NY_gene_ForgingDragonGP</geneDef>
+		<eyeballColor>RGB(128,231,140)</eyeballColor>
+	</FacialAnimation.EyeballColorDef>
+
+	<FacialAnimation.EyeballColorDef>
+		<defName>NY_EyeColor_MC</defName>
+		<geneDef>NY_gene_ForgingDragonMC</geneDef>
+		<eyeballColor>RGB(210,250,201)</eyeballColor>
+	</FacialAnimation.EyeballColorDef>
+</Defs>

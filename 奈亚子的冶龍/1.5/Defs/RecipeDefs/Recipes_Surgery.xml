@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<RecipeDef Name="NY_SurgeryRemovePartBase" ParentName="SurgeryFlesh" Abstract="True">
+		<workerClass>ForgingDragon.Recipe_LoongSurgery</workerClass>
+		<workAmount>2500</workAmount>
+		<isViolation>true</isViolation>
+		<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+		<skillRequirements>
+			<Medicine>5</Medicine>
+		</skillRequirements>
+		<recipeUsers>
+			<li>Human</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">CreepJoiner</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+		</fixedIngredientFilter>
+	</RecipeDef>
+
+	<HediffDef ParentName="NY_HediffBase">
+		<defName>NY_hediff_LoongSurgery</defName>
+		<label>LoongSurgery</label>
+		<description>desc</description>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+			</li>
+		</stages>
+		<comps>
+			<li Class="ForgingDragon.HCP_CheckGene" />
+		</comps>
+	</HediffDef>
+	
+	
+</Defs>

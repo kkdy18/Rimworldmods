@@ -3,22 +3,39 @@
 	<StorytellerDef ParentName="BaseStoryteller">
 		<defName>NY_ForgingDragonOne</defName>
 		<label>龍嗣—绿烟萝</label>
-		<description>绿烟萝来自真龙后代的一个分支，她的性格嚣张跋扈，在她眼里似乎没有什么是她不能掌控的，如果由她来讲述故事，永不间断的恶劣天气与自然灾害就会在你的坟前肆虐不止。</description>
+		<description>冶龍绿烟萝来自真龙后代的一个分支，她的性格嚣张跋扈，无论是天灾、战争或是瘟疫，在她眼里没有什么是她不能掌控的。如果由她来讲述故事，永不间断的恶劣天气与自然灾害就会在你的坟前肆虐不止。</description>
 		<portraitLarge>UI/Storytellers/Dragon</portraitLarge>
 		<portraitTiny>UI/Storytellers/DragonTiny</portraitTiny>
-		<listOrder>0</listOrder>
+		<listOrder>50</listOrder>
 		<comps>
 			<!-- Intro -->
 			<li Class="StorytellerCompProperties_ClassicIntro"/>
 			<!-- Home threats -->
+			<li Class="StorytellerCompProperties_CategoryMTB">
+				<category>NY_ForgingDragon_Weather</category>
+				<allowedTargetTags>
+					<li>Map_PlayerHome</li>
+				</allowedTargetTags>
+				<minDaysPassed>1.5</minDaysPassed>
+				<mtbDays>4</mtbDays>
+			</li>
+			<li Class="StorytellerCompProperties_CategoryMTB">
+				<category>NY_ForgingDragon_Disease</category>
+				<allowedTargetTags>
+					<li>Caravan</li>
+					<li>Map_PlayerHome</li>
+				</allowedTargetTags>
+				<minDaysPassed>9</minDaysPassed>
+				<mtbDays>4</mtbDays>
+			</li>
 			<li Class="StorytellerCompProperties_OnOffCycle">
 				<category>ThreatBig</category>
-				<minDaysPassed>11.0</minDaysPassed>
-				<onDays>4.6</onDays>
-				<offDays>6.0</offDays>
-				<minSpacingDays>1.9</minSpacingDays>
+				<minDaysPassed>6.0</minDaysPassed>
+				<onDays>2.5</onDays>
+				<offDays>3.0</offDays>
+				<minSpacingDays>0.5</minSpacingDays>
 				<numIncidentsRange>1~2</numIncidentsRange>
-				<forceRaidEnemyBeforeDaysPassed>20</forceRaidEnemyBeforeDaysPassed>
+				<forceRaidEnemyBeforeDaysPassed>15</forceRaidEnemyBeforeDaysPassed>
 				<disallowedTargetTags>
 					<li>Map_RaidBeacon</li>
 				</disallowedTargetTags>
@@ -30,10 +47,9 @@
 				<parms>
 					<allowedThreats>Raids</allowedThreats>
 					<onDays>1.0</onDays>
-					<offDays>0.5</offDays>
+					<offDays>1.0</offDays>
 					<minSpacingDays>0.04</minSpacingDays>
-					<numIncidentsRange>1~2</numIncidentsRange>
-					<minThreatPoints>500</minThreatPoints>
+					<numIncidentsRange>1~4</numIncidentsRange>
 				</parms>
 			</li>
 			<li Class="StorytellerCompProperties_OnOffCycle">
@@ -57,14 +73,6 @@
 				</allowedTargetTags>
 				<minDaysPassed>5</minDaysPassed>
 				<mtbDays>4.8</mtbDays>
-			</li>
-			<li Class="StorytellerCompProperties_CategoryMTB">
-				<category>NY_ForgingDragon</category>
-				<allowedTargetTags>
-					<li>Map_PlayerHome</li>
-				</allowedTargetTags>
-				<minDaysPassed>1</minDaysPassed>
-				<mtbDays>4</mtbDays>
 			</li>
 			<li Class="StorytellerCompProperties_ShipChunkDrop"/>
 			<li Class="StorytellerCompProperties_Disease">

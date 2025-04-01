@@ -50,6 +50,14 @@
 					<li>ForgingDragonHeadPC_A</li>
 					<li>ForgingDragonHeadPC_B</li>
 					<li>ForgingDragonHeadPC_C</li>
+					<li>ForgingDragonHeadGP</li>
+					<li>ForgingDragonHeadGP_A</li>
+					<li>ForgingDragonHeadGP_B</li>
+					<li>ForgingDragonHeadGP_C</li>
+					<li>ForgingDragonHeadMC</li>
+					<li>ForgingDragonHeadMC_A</li>
+					<li>ForgingDragonHeadMC_B</li>
+					<li>ForgingDragonHeadMC_C</li>
 					<li>ForgingDragonHeadSkull</li>
 				</allowedHeadTypes>
 			</li>
@@ -256,6 +264,14 @@
 					<li>ForgingDragonHeadPC_A</li>
 					<li>ForgingDragonHeadPC_B</li>
 					<li>ForgingDragonHeadPC_C</li>
+					<li>ForgingDragonHeadGP</li>
+					<li>ForgingDragonHeadGP_A</li>
+					<li>ForgingDragonHeadGP_B</li>
+					<li>ForgingDragonHeadGP_C</li>
+					<li>ForgingDragonHeadMC</li>
+					<li>ForgingDragonHeadMC_A</li>
+					<li>ForgingDragonHeadMC_B</li>
+					<li>ForgingDragonHeadMC_C</li>
 					<li>ForgingDragonHeadSkull</li>
 				</allowedHeadTypes>
 			</li>

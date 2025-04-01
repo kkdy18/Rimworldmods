@@ -27,4 +27,32 @@
 			</li>
 		</stages>
 	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>NY_thougth_Sandstorm</defName>
+		<durationDays>0.1</durationDays>
+		<stackLimit>1</stackLimit>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<stages>
+			<li>
+				<label>浑身沙</label>
+				<description>头发和身上沾满了沙子，好难受。</description>
+				<baseMoodEffect>-3</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>NY_thougth_Snowstorm</defName>
+		<durationDays>0.1</durationDays>
+		<stackLimit>1</stackLimit>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<stages>
+			<li>
+				<label>暴雪扑面</label>
+				<description>脸就像埋在雪里一样，我的鼻子还在吗？</description>
+				<baseMoodEffect>-3</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
 </Defs>

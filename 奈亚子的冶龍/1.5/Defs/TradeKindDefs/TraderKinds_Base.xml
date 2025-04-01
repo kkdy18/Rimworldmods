@@ -85,18 +85,10 @@
 			<!-- Animals -->
 			<li Class="StockGenerator_Animals">
 				<tradeTagsSell>
-					<li>AnimalFarm</li>
-					<li>AnimalPet</li>
+					<li>NY_LoongAnimalFighter</li>
 				</tradeTagsSell>
-				<tradeTagsBuy>
-					<li>AnimalUncommon</li>
-					<li>AnimalExotic</li>
-				</tradeTagsBuy>
-				<kindCountRange>2~4</kindCountRange>
-				<countRange>3~8</countRange>
-				<createMatingPair>
-					<li>AnimalFarm</li>
-				</createMatingPair>
+				<kindCountRange>1~1</kindCountRange>
+				<countRange>1~2</countRange>
 			</li>
 			<!-- Buildings -->
 			<li Class="StockGenerator_MarketValue">

@@ -42,9 +42,6 @@
 			<tags>
 				<li>NY_DragonCloth_Soldier</li>
 			</tags>
-			<defaultOutfitTags>
-				<li>Soldier</li>
-			</defaultOutfitTags>
 			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
 			<wornGraphicPath>Things/Apparel/NY_SoldierCloth/NY_SoldierCloth</wornGraphicPath>
 		</apparel>
@@ -111,9 +108,6 @@
 			<tags>
 				<li>NY_DragonCloth_Soldier</li>
 			</tags>
-			<defaultOutfitTags>
-				<li>Soldier</li>
-			</defaultOutfitTags>
 			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
 			<wornGraphicPath>Things/Apparel/NY_SoldierClothPlus/NY_SoldierClothPlus</wornGraphicPath>
 		</apparel>
@@ -177,10 +171,6 @@
 			<tags>
 				<li>NY_DragonCloth</li>
 			</tags>
-			<defaultOutfitTags>
-				<li>Worker</li>
-				<li>Soldier</li>
-			</defaultOutfitTags>
 			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
 			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
 			<wornGraphicPath>Things/Apparel/NY_CloakGreen/NY_CloakGreen</wornGraphicPath>
@@ -246,12 +236,8 @@
 				<li>Shell</li>
 			</layers>
 			<tags>
-				<li>NY_DragonCloth_Soldier</li>
+				<li>NY_DragonCloth_CloakGray</li>
 			</tags>
-			<defaultOutfitTags>
-				<li>Worker</li>
-				<li>Soldier</li>
-			</defaultOutfitTags>
 			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
 			<wornGraphicPath>Things/Apparel/NY_CloakGray/NY_CloakGray</wornGraphicPath>
 		</apparel>
@@ -302,8 +288,8 @@
 		<equippedStatOffsets>
 			<FilthRate>-2</FilthRate>
 			<MedicalTendSpeed>0.5</MedicalTendSpeed>
-			<MedicalTendQuality>0.3</MedicalTendQuality>
-			<MedicalSurgerySuccessChance>0.2</MedicalSurgerySuccessChance>
+			<MedicalTendQuality>0.1</MedicalTendQuality>
+			<MedicalSurgerySuccessChance>0.25</MedicalSurgerySuccessChance>
 		</equippedStatOffsets>
 		<thingCategories Inherit="false">
 			<li>NY_DragonApparel</li>
@@ -322,9 +308,6 @@
 			<tags>
 				<li>NY_DragonCloth_Uniform</li>
 			</tags>
-			<defaultOutfitTags>
-				<li>Worker</li>
-			</defaultOutfitTags>
 			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
 			<wornGraphicPath>Things/Apparel/NY_DoctorCoat/NY_DoctorCoat</wornGraphicPath>
 		</apparel>

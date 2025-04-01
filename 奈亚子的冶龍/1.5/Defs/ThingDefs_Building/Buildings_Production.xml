@@ -66,9 +66,10 @@
 	<ThingDef ParentName="BenchBase">
 		<defName>NY_TableFurnace</defName>
 		<label>冶龍柴火灶</label>
-		<description>以木柴为燃料的灶台，冶龍们坚信只有用这样的柴火灶才能做出最正宗的冶龍菜。</description>
+		<description>以木柴为燃料的灶台，冶龍们坚信只有用这样的柴火灶才能做出最正宗的冶龍菜。\n\n&lt;color=#FFCC66&gt;&lt;i&gt;游荡在外的冶龍看见故乡熟悉的炊烟，或许会前往寻求一丝希望。&lt;/i&gt;&lt;/color&gt;</description>
 		<thingClass>Building_WorkTable_HeatPush</thingClass>
 		<drawerType>MapMeshAndRealTime</drawerType>
+		<tickerType>Normal</tickerType>
 		<graphicData>
 			<texPath>Things/Building/NY_TableFurnace/NY_TableFurnace</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -115,19 +116,28 @@
 		</building>
 		<comps>
 			<li Class="CompProperties_Refuelable">
-				<fuelConsumptionRate>80.0</fuelConsumptionRate>
-				<fuelCapacity>50.0</fuelCapacity>
+				<fuelConsumptionRate>10</fuelConsumptionRate>
+				<fuelCapacity>50</fuelCapacity>
 				<fuelFilter>
 					<thingDefs>
 						<li>WoodLog</li>
 					</thingDefs>
 				</fuelFilter>
-				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<initialFuelPercent>0.2</initialFuelPercent>
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 			</li>
 			<li Class="CompProperties_HeatPusher">
 				<compClass>CompHeatPusherPowered</compClass>
-				<heatPerSecond>4</heatPerSecond>
+				<heatPushMaxTemperature>28</heatPushMaxTemperature>
+				<heatPerSecond>20</heatPerSecond>
+			</li>
+			<li Class="ForgingDragon.TCP_JoinPawn">
+				<pawnKind>NY_DragonAlone</pawnKind>
+			</li>
+			<li Class="CompProperties_FireOverlay">
+				<fireSize>0.4</fireSize>
+				<offset>(0,-1,0)</offset>
+				<offsetNorth>(-0.3,0,-0.4)</offsetNorth>
 			</li>
 		</comps>
 		<researchPrerequisites>

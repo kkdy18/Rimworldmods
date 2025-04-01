@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<PawnKindDef ParentName="NY_DragonSoldierMelee">
+		<defName>NY_DragonSoldierMelee_Smallpox</defName>
+		<label>染疫冶龍步兵</label>
+		<labelPlural>染疫冶龍步兵</labelPlural>
+		<gearHealthRange>0.6~1</gearHealthRange>
+		<chemicalAddictionChance>0.8</chemicalAddictionChance>
+		<combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
+		<startingHediffs>
+			<li>
+				<def>NY_hediff_Smallpox</def>
+				<severity>0.1</severity>
+			</li>
+		</startingHediffs>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="NY_DragonSoldierMelee">
+		<defName>NY_DragonSoldierMelee_Cold</defName>
+		<label>染疫冶龍步兵</label>
+		<labelPlural>染疫冶龍步兵</labelPlural>
+		<gearHealthRange>0.6~1</gearHealthRange>
+		<chemicalAddictionChance>0.8</chemicalAddictionChance>
+		<combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
+		<startingHediffs>
+			<li>
+				<def>NY_hediff_Cold</def>
+				<severity>0.1</severity>
+			</li>
+		</startingHediffs>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="NY_DragonPowerFighter" Name="NY_DragonInfectedFighter" Abstract="True">
+		<combatPower>120</combatPower>
+		<gearHealthRange>0.6~1</gearHealthRange>
+		<forceDeathOnDowned>true</forceDeathOnDowned>
+		<chemicalAddictionChance>0.8</chemicalAddictionChance>
+		<combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>NY_LoongCivilian</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelTags>
+			<li>NY_DragonCloth_Soldier</li>
+			<li>BeltDefense</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>NY_ForgingDragonIconMask</li>
+			<li>NY_ForgingDragonCloakGray</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>NY_DragonWeaponMelee_Special</li>
+		</weaponTags>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>9~12</range>
+			</li>
+		</skills>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<xenotypeSet>
+			<xenotypeChances>
+				<NY_ForgingDragonWJ>0.5</NY_ForgingDragonWJ>
+				<NY_ForgingDragonMC>0.5</NY_ForgingDragonMC>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="NY_DragonInfectedFighter">
+		<defName>NY_DragonInfectedFighter_Smallpox</defName>
+		<label>冶龍天花疫鬼</label>
+		<labelPlural>冶龍天花疫鬼</labelPlural>
+		<startingHediffs>
+			<li>
+				<def>NY_hediff_Smallpox</def>
+				<severity>0.1</severity>
+			</li>
+		</startingHediffs>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="NY_DragonInfectedFighter">
+		<defName>NY_DragonInfectedFighter_Cold</defName>
+		<label>冶龍风寒疫鬼</label>
+		<labelPlural>冶龍风寒疫鬼</labelPlural>
+		<startingHediffs>
+			<li>
+				<def>NY_hediff_Cold</def>
+				<severity>0.1</severity>
+			</li>
+		</startingHediffs>
+	</PawnKindDef>
+</Defs>

@@ -40,4 +40,33 @@
 			<NY_plant_Ginger>0.05</NY_plant_Ginger>
 		</value>
 	</Operation>
+
+	<!--让梼杌能随商队进入地图-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<success>Invert</success>
+				<xpath>Defs/BiomeDef/allowedPackAnimals</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/BiomeDef</xpath>
+				<value>
+					<allowedPackAnimals>
+					</allowedPackAnimals>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/BiomeDef/allowedPackAnimals</xpath>
+				<value>
+					<li>NY_animal_TaoWu</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
 </Patch>

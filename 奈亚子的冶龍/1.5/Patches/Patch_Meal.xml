@@ -4,6 +4,7 @@
 		<xpath>/Defs/RecipeDef[defName="Make_Pemmican"]/defaultIngredientFilter/disallowedThingDefs</xpath>
 		<value>
 			<li>Meat_ForgingDragon</li>
+			<li>NY_RawGinger</li>
 		</value>
 	</Operation>
 
@@ -11,6 +12,7 @@
 		<xpath>/Defs/RecipeDef[defName="Make_PemmicanBulk"]/defaultIngredientFilter/disallowedThingDefs</xpath>
 		<value>
 			<li>Meat_ForgingDragon</li>
+			<li>NY_RawGinger</li>
 		</value>
 	</Operation>
 
@@ -18,6 +20,7 @@
 		<xpath>/Defs/RecipeDef[@Name="CookMealBase"]/defaultIngredientFilter/disallowedThingDefs</xpath>
 		<value>
 			<li>Meat_ForgingDragon</li>
+			<li>NY_RawGinger</li>
 		</value>
 	</Operation>
 </Patch>

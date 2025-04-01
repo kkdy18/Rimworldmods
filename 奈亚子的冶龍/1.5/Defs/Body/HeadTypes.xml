@@ -207,6 +207,110 @@
 			<li Class="ForgingDragon.DragonGeneBody" />
 		</modExtensions>
 	</HeadTypeDef>
+
+	<HeadTypeDef>
+		<defName>ForgingDragonHeadGP</defName>
+		<label>青植01</label>
+		<requiredGenes>
+			<li>NY_gene_ForgingDragonGP</li>
+		</requiredGenes>
+		<graphicPath>Things/Pawn/Heads/ChunZhong/ForgingDragonHeadCB</graphicPath>
+		<gender>None</gender>
+		<modExtensions>
+			<li Class="ForgingDragon.DragonGeneBody" />
+		</modExtensions>
+	</HeadTypeDef>
+
+	<HeadTypeDef>
+		<defName>ForgingDragonHeadGP_A</defName>
+		<label>青植02</label>
+		<requiredGenes>
+			<li>NY_gene_ForgingDragonGP</li>
+		</requiredGenes>
+		<graphicPath>Things/Pawn/Heads/ChunZhong/ForgingDragonHeadCB1</graphicPath>
+		<gender>None</gender>
+		<modExtensions>
+			<li Class="ForgingDragon.DragonGeneBody" />
+		</modExtensions>
+	</HeadTypeDef>
+
+	<HeadTypeDef>
+		<defName>ForgingDragonHeadGP_B</defName>
+		<label>青植03</label>
+		<requiredGenes>
+			<li>NY_gene_ForgingDragonGP</li>
+		</requiredGenes>
+		<graphicPath>Things/Pawn/Heads/ChunZhong/ForgingDragonHeadCB2</graphicPath>
+		<gender>None</gender>
+		<modExtensions>
+			<li Class="ForgingDragon.DragonGeneBody" />
+		</modExtensions>
+	</HeadTypeDef>
+
+	<HeadTypeDef>
+		<defName>ForgingDragonHeadGP_C</defName>
+		<label>青植04</label>
+		<requiredGenes>
+			<li>NY_gene_ForgingDragonGP</li>
+		</requiredGenes>
+		<graphicPath>Things/Pawn/Heads/ChunZhong/ForgingDragonHeadCB3</graphicPath>
+		<gender>None</gender>
+		<modExtensions>
+			<li Class="ForgingDragon.DragonGeneBody" />
+		</modExtensions>
+	</HeadTypeDef>
+
+	<HeadTypeDef>
+		<defName>ForgingDragonHeadMC</defName>
+		<label>孔雀石01</label>
+		<requiredGenes>
+			<li>NY_gene_ForgingDragonMC</li>
+		</requiredGenes>
+		<graphicPath>Things/Pawn/Heads/BaiYu/ForgingDragonHeadWJ</graphicPath>
+		<gender>None</gender>
+		<modExtensions>
+			<li Class="ForgingDragon.DragonGeneBody" />
+		</modExtensions>
+	</HeadTypeDef>
+
+	<HeadTypeDef>
+		<defName>ForgingDragonHeadMC_A</defName>
+		<label>孔雀石02</label>
+		<requiredGenes>
+			<li>NY_gene_ForgingDragonMC</li>
+		</requiredGenes>
+		<graphicPath>Things/Pawn/Heads/BaiYu/ForgingDragonHeadWJ1</graphicPath>
+		<gender>None</gender>
+		<modExtensions>
+			<li Class="ForgingDragon.DragonGeneBody" />
+		</modExtensions>
+	</HeadTypeDef>
+
+	<HeadTypeDef>
+		<defName>ForgingDragonHeadMC_B</defName>
+		<label>孔雀石03</label>
+		<requiredGenes>
+			<li>NY_gene_ForgingDragonMC</li>
+		</requiredGenes>
+		<graphicPath>Things/Pawn/Heads/BaiYu/ForgingDragonHeadWJ2</graphicPath>
+		<gender>None</gender>
+		<modExtensions>
+			<li Class="ForgingDragon.DragonGeneBody" />
+		</modExtensions>
+	</HeadTypeDef>
+
+	<HeadTypeDef>
+		<defName>ForgingDragonHeadMC_C</defName>
+		<label>孔雀石04</label>
+		<requiredGenes>
+			<li>NY_gene_ForgingDragonMC</li>
+		</requiredGenes>
+		<graphicPath>Things/Pawn/Heads/BaiYu/ForgingDragonHeadWJ3</graphicPath>
+		<gender>None</gender>
+		<modExtensions>
+			<li Class="ForgingDragon.DragonGeneBody" />
+		</modExtensions>
+	</HeadTypeDef>
 	
 	<!--特殊-->
 	<HeadTypeDef>

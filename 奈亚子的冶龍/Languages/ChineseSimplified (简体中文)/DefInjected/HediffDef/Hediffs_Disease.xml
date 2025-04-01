@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<NY_hediff_Smallpox.stages.minor.label>高烧</NY_hediff_Smallpox.stages.minor.label>
+
+	<NY_hediff_Smallpox.stages.major.label>红疹发作</NY_hediff_Smallpox.stages.major.label>
+
+	<NY_hediff_Smallpox.stages.extreme.label>全身脓疱</NY_hediff_Smallpox.stages.extreme.label>
+
+	<NY_hediff_Cold.stages.minor.label>鼻塞</NY_hediff_Cold.stages.minor.label>
+
+	<NY_hediff_Cold.stages.major.label>头痛发热</NY_hediff_Cold.stages.major.label>
+
+	<NY_hediff_Cold.stages.serious.label>剧烈咳嗽</NY_hediff_Cold.stages.serious.label>
+
+	<NY_hediff_Cold.stages.extreme.label>代谢紊乱</NY_hediff_Cold.stages.extreme.label>
+
+	<NY_hediff_Cholera.stages.minor.label>反胃</NY_hediff_Cholera.stages.minor.label>
+
+	<NY_hediff_Cholera.stages.major.label>剧烈呕吐</NY_hediff_Cholera.stages.major.label>
+
+	<NY_hediff_Cholera.stages.extreme.label>休克</NY_hediff_Cholera.stages.extreme.label>
+</LanguageData>
