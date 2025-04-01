@@ -391,6 +391,7 @@
 		<ingestible>
 			<preferability>RawTasty</preferability>
 			<tasteThought>NY_EatRawGinger</tasteThought>
+			<specialThoughtAsIngredient>NY_GingerIngredient</specialThoughtAsIngredient>
 			<foodType>VegetableOrFruit</foodType>
 		</ingestible>
 		<comps>

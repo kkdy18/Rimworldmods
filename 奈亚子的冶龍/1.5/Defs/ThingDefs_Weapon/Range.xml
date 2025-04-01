@@ -85,7 +85,8 @@
 			<li>RangedLight</li>
 		</weaponClasses>
 		<costList>
-			<NY_GreenGlaze>40</NY_GreenGlaze>
+			<Woody>20</Woody>
+			<NY_GreenGlaze>20</NY_GreenGlaze>
 		</costList>
 		<recipeMaker>
 			<recipeUsers>

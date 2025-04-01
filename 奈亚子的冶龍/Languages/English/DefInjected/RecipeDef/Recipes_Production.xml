@@ -4,7 +4,7 @@
 	<!-- EN: 提炼精血 -->
 	<NY_MakeBloodEssence.label>extract blood essence</NY_MakeBloodEssence.label>
 	<!-- EN: 从冶龍的血肉中提炼出生命的精华。\n\n使用冶龍的血肉恐怕不利于殖民者的心理健康，我们有必要寻找更合适的替代品。 -->
-	<NY_MakeBloodEssence.description>Extracting loong blood essence from loong flesh. \n\nDoing so can be mentally taxing.</NY_MakeBloodEssence.description>
+	<NY_MakeBloodEssence.description>Extracting blood essence from fresh blood. </NY_MakeBloodEssence.description>
 	<!-- EN: 提炼中。 -->
 	<NY_MakeBloodEssence.jobString>extracting blood essence</NY_MakeBloodEssence.jobString>
 

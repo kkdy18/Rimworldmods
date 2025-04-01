@@ -67,7 +67,8 @@
 		<defName>NY_TableFurnace</defName>
 		<label>冶龍柴火灶</label>
 		<description>以木柴为燃料的灶台，冶龍们坚信只有用这样的柴火灶才能做出最正宗的冶龍菜。</description>
-		<thingClass>Building_WorkTable</thingClass>
+		<thingClass>Building_WorkTable_HeatPush</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
 			<texPath>Things/Building/NY_TableFurnace/NY_TableFurnace</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -107,8 +108,10 @@
 			<li>ITab_Bills</li>
 		</inspectorTabs>
 		<building>
-			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
 			<paintable>false</paintable>
+			<isMealSource>true</isMealSource>
+			<heatPerTickWhileWorking>0.2</heatPerTickWhileWorking>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
 		</building>
 		<comps>
 			<li Class="CompProperties_Refuelable">
@@ -122,17 +125,16 @@
 				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 			</li>
-			<li Class="CompProperties_AffectedByFacilities">
-				<linkableFacilities>
-					<li>ToolCabinet</li>
-				</linkableFacilities>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>4</heatPerSecond>
 			</li>
 		</comps>
 		<researchPrerequisites>
 			<li>ForgingDragonStarting</li>
 		</researchPrerequisites>
 		<placeWorkers>
-			<li>PlaceWorker_ShowFacilitiesConnections</li>
+			<!--<li>PlaceWorker_ShowFacilitiesConnections</li>-->
 			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
 	</ThingDef>

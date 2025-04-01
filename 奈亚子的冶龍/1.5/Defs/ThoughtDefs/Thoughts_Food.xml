@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThoughtDef>
+	<ThoughtDef Name="NY_EatThought" Abstract="True">
+		<stackLimit>1</stackLimit>
+		<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+		<nullifyingHediffs>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">Inhumanized</li>
+		</nullifyingHediffs>
+	</ThoughtDef>
+	
+	<ThoughtDef ParentName="NY_EatThought">
 		<defName>NY_DrinkDragonMilk</defName>
 		<durationDays>0.5</durationDays>
-		<stackLimit>1</stackLimit>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
 		<stages>
 			<li>
 				<label>喝了龙涎香</label>
@@ -13,7 +21,7 @@
 		</stages>
 	</ThoughtDef>
 
-	<ThoughtDef>
+	<ThoughtDef ParentName="NY_EatThought">
 		<defName>NY_AteForgingDragonMeat</defName>
 		<showBubble>true</showBubble>
 		<icon>Things/Mote/ThoughtSymbol/Food</icon>
@@ -21,9 +29,6 @@
 		<nullifyingTraits>
 			<li>Cannibal</li>
 		</nullifyingTraits>
-		<nullifyingHediffs>
-			<li MayRequire="Ludeon.RimWorld.Anomaly">Inhumanized</li>
-		</nullifyingHediffs>
 		<stages>
 			<li>
 				<label>吃了冶龍肉</label>
@@ -33,14 +38,14 @@
 		</stages>
 	</ThoughtDef>
 	
-	<ThoughtDef>
+	<ThoughtDef ParentName="NY_EatThought">
 		<defName>NY_ForgingDragonMeatIngredient</defName>
 		<showBubble>true</showBubble>
 		<icon>Things/Mote/ThoughtSymbol/Food</icon>
 		<durationDays>3</durationDays>
-		<nullifyingHediffs>
-			<li MayRequire="Ludeon.RimWorld.Anomaly">Inhumanized</li>
-		</nullifyingHediffs>
+		<nullifyingTraits>
+			<li>Cannibal</li>
+		</nullifyingTraits>
 		<stages>
 			<li>
 				<label>吃了烹饪过的冶龍肉</label>
@@ -50,10 +55,9 @@
 		</stages>
 	</ThoughtDef>
 
-	<ThoughtDef>
+	<ThoughtDef ParentName="NY_EatThought">
 		<defName>NY_EatRawPlum</defName>
 		<durationDays>0.1</durationDays>
-		<stackLimit>1</stackLimit>
 		<stages>
 			<li>
 				<label>吃了新鲜梅子</label>
@@ -63,10 +67,9 @@
 		</stages>
 	</ThoughtDef>
 
-	<ThoughtDef>
+	<ThoughtDef ParentName="NY_EatThought">
 		<defName>NY_EatPreservedPlum</defName>
 		<durationDays>0.5</durationDays>
-		<stackLimit>1</stackLimit>
 		<stages>
 			<li>
 				<label>吃了话梅</label>
@@ -76,10 +79,9 @@
 		</stages>
 	</ThoughtDef>
 
-	<ThoughtDef>
+	<ThoughtDef ParentName="NY_EatThought">
 		<defName>NY_EatRawGinger</defName>
 		<durationDays>0.1</durationDays>
-		<stackLimit>1</stackLimit>
 		<stages>
 			<li>
 				<label>吃了生姜</label>
@@ -88,11 +90,27 @@
 			</li>
 		</stages>
 	</ThoughtDef>
+	
+	<ThoughtDef ParentName="NY_EatThought">
+		<defName>NY_GingerIngredient</defName>
+		<durationDays>0.5</durationDays>
+		<stackLimit>10</stackLimit>
+		<nullifyingHediffs>
+			<li>NY_hediff_RandomShreds</li>
+			<li>NY_hediff_ChickenwithMushroom</li>
+		</nullifyingHediffs>
+		<stages>
+			<li>
+				<label>吃了烹饪过的姜</label>
+				<description>我真是艹了，我们已经没有任何不是姜的正常食材了吗？</description>
+				<baseMoodEffect>-10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
 
-	<ThoughtDef>
+	<ThoughtDef ParentName="NY_EatThought">
 		<defName>NY_RandomMood_Potato</defName>
 		<workerClass>ThoughtWorker_HediffThoughtRandom</workerClass>
-		<developmentalStageFilter>Child, Adult</developmentalStageFilter>
 		<hediff>NY_hediff_RandomShreds</hediff>
 		<labelInBracketsExtraForHediff>土豆丝</labelInBracketsExtraForHediff>
 		<validWhileDespawned>true</validWhileDespawned>
@@ -105,10 +123,9 @@
 		</stages>
 	</ThoughtDef>
 
-	<ThoughtDef>
+	<ThoughtDef ParentName="NY_EatThought">
 		<defName>NY_RandomMood_Both</defName>
 		<workerClass>ThoughtWorker_HediffThoughtRandom</workerClass>
-		<developmentalStageFilter>Child, Adult</developmentalStageFilter>
 		<hediff>NY_hediff_RandomShreds</hediff>
 		<labelInBracketsExtraForHediff>双丝</labelInBracketsExtraForHediff>
 		<validWhileDespawned>true</validWhileDespawned>
@@ -121,10 +138,9 @@
 		</stages>
 	</ThoughtDef>
 
-	<ThoughtDef>
+	<ThoughtDef ParentName="NY_EatThought">
 		<defName>NY_RandomMood_Ginger</defName>
 		<workerClass>ThoughtWorker_HediffThoughtRandom</workerClass>
-		<developmentalStageFilter>Child, Adult</developmentalStageFilter>
 		<hediff>NY_hediff_RandomShreds</hediff>
 		<labelInBracketsExtraForHediff>姜丝</labelInBracketsExtraForHediff>
 		<validWhileDespawned>true</validWhileDespawned>
@@ -137,12 +153,11 @@
 		</stages>
 	</ThoughtDef>
 
-	<ThoughtDef>
+	<ThoughtDef ParentName="NY_EatThought">
 		<defName>NY_EatMapoTofu</defName>
 		<workerClass>ThoughtWorker_Hediff</workerClass>
 		<hediff>NY_hediff_MapoTofu</hediff>
 		<validWhileDespawned>true</validWhileDespawned>
-		<developmentalStageFilter>Child, Adult</developmentalStageFilter>
 		<stages>
 			<li>
 				<label>吃了麻婆豆腐</label>
@@ -152,7 +167,7 @@
 		</stages>
 	</ThoughtDef>
 
-	<ThoughtDef>
+	<ThoughtDef ParentName="NY_EatThought">
 		<defName>NY_DrinkPlumJuice</defName>
 		<workerClass>ThoughtWorker_Hediff</workerClass>
 		<hediff>NY_hediff_PlumJuice</hediff>
@@ -167,7 +182,7 @@
 		</stages>
 	</ThoughtDef>
 
-	<ThoughtDef>
+	<ThoughtDef ParentName="NY_EatThought">
 		<defName>NY_DrinkPlumGingerTea</defName>
 		<workerClass>ThoughtWorker_Hediff</workerClass>
 		<hediff>NY_hediff_PlumGingerTea</hediff>

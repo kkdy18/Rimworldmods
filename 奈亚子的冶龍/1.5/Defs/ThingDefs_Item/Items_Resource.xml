@@ -13,7 +13,7 @@
 		<soundInteract>Metal_Drop</soundInteract>
 		<soundDrop>Metal_Drop</soundDrop>
 		<statBases>
-			<MarketValue>3.6</MarketValue>
+			<MarketValue>4</MarketValue>
 			<Mass>0.5</Mass>
 			<StuffPower_Armor_Sharp>1</StuffPower_Armor_Sharp>
 			<StuffPower_Armor_Blunt>0.5</StuffPower_Armor_Blunt>
@@ -47,6 +47,7 @@
 				<Beauty>1</Beauty>
 				<Flammability>0</Flammability>
 				<DoorOpenSpeed>1.5</DoorOpenSpeed>
+				<BedRestEffectiveness>0.5</BedRestEffectiveness>
 			</statFactors>
 		</stuffProps>
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
@@ -66,7 +67,7 @@
 		<soundInteract>Metal_Drop</soundInteract>
 		<soundDrop>Metal_Drop</soundDrop>
 		<statBases>
-			<MarketValue>4.5</MarketValue>
+			<MarketValue>8</MarketValue>
 			<Mass>0.5</Mass>
 			<StuffPower_Armor_Sharp>1</StuffPower_Armor_Sharp>
 			<StuffPower_Armor_Blunt>0.5</StuffPower_Armor_Blunt>
@@ -100,7 +101,7 @@
 				<Beauty>1</Beauty>
 				<Flammability>0</Flammability>
 				<DoorOpenSpeed>1.5</DoorOpenSpeed>
-				<BedRestEffectiveness>0.6</BedRestEffectiveness>
+				<BedRestEffectiveness>0.5</BedRestEffectiveness>
 				<MeleeWeapon_CooldownMultiplier>0.9</MeleeWeapon_CooldownMultiplier>
 			</statFactors>
 		</stuffProps>
@@ -121,7 +122,7 @@
 		<soundInteract>Metal_Drop</soundInteract>
 		<soundDrop>Metal_Drop</soundDrop>
 		<statBases>
-			<MarketValue>36</MarketValue>
+			<MarketValue>180</MarketValue>
 			<Mass>5</Mass>
 			<StuffPower_Armor_Sharp>2</StuffPower_Armor_Sharp>
 			<StuffPower_Armor_Blunt>2</StuffPower_Armor_Blunt>
@@ -151,7 +152,7 @@
 			<soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Metal</soundImpactMelee>
 			<statFactors>
 				<MaxHitPoints>100</MaxHitPoints>
-				<Beauty>100</Beauty>
+				<Beauty>10</Beauty>
 				<WorkToMake>10</WorkToMake>
 				<WorkToBuild>10</WorkToBuild>
 				<Flammability>0</Flammability>
@@ -166,7 +167,7 @@
 	<ThingDef ParentName="ResourceBase">
 		<defName>NY_GreenGlaze</defName>
 		<label>碧琉璃</label>
-		<description>以翡翠为原料，由冶龍技术高温烧制而成的一种稀有装饰品，色彩流云漓彩，质地晶莹剔透，对冶龍来说是那不是宝石但胜过一切宝石的珍宝。</description>
+		<description>以翡翠为原料，由冶龍技术高温烧制而成的一种稀有装饰品，色彩流云漓彩，质地晶莹剔透，对冶龍来说是并非宝石但胜过一切宝石的珍宝。</description>
 		<graphicData>
 			<texPath>Things/Item/NY_GreenGlaze</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -272,8 +273,8 @@
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
-			<Nutrition>0.5</Nutrition>
-			<MarketValue>2.7</MarketValue>
+			<Nutrition>0.1</Nutrition>
+			<MarketValue>8</MarketValue>
 			<Flammability>0.5</Flammability>
 			<FoodPoisonChanceFixedHuman>1</FoodPoisonChanceFixedHuman>
 		</statBases>
@@ -288,7 +289,9 @@
 		</thingCategories>
 		<ingestible>
 			<foodType>Fluid</foodType>
-			<preferability>NeverForNutrition</preferability>
+			<preferability>DesperateOnly</preferability>
+			<ingestSound>HemogenPack_Consume</ingestSound>
+			<specialThoughtDirect></specialThoughtDirect>
 			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
 		</ingestible>
 	</ThingDef>
