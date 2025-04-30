@@ -80,13 +80,13 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
-			<MaxHitPoints>300</MaxHitPoints>
+			<MaxHitPoints>450</MaxHitPoints>
 			<WorkToMake>6000</WorkToMake>
 			<Mass>2</Mass>
 			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.8</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.8</StuffEffectMultiplierInsulation_Heat>
-			<EquipDelay>3</EquipDelay>
+			<EquipDelay>2</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
 		</equippedStatOffsets>
@@ -101,10 +101,6 @@
 			<layers>
 				<li>OnSkin</li>
 			</layers>
-			<defaultOutfitTags>
-				<li>Worker</li>
-				<li>Soldier</li>
-			</defaultOutfitTags>
 			<tags>
 				<li>NY_DragonCloth</li>
 			</tags>
@@ -161,13 +157,13 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
-			<MaxHitPoints>300</MaxHitPoints>
+			<MaxHitPoints>450</MaxHitPoints>
 			<WorkToMake>6000</WorkToMake>
 			<Mass>2</Mass>
 			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.8</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.8</StuffEffectMultiplierInsulation_Heat>
-			<EquipDelay>3</EquipDelay>
+			<EquipDelay>2</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
 		</equippedStatOffsets>
@@ -182,10 +178,6 @@
 			<layers>
 				<li>OnSkin</li>
 			</layers>
-			<defaultOutfitTags>
-				<li>Worker</li>
-				<li>Soldier</li>
-			</defaultOutfitTags>
 			<tags>
 				<li>NY_DragonCloth</li>
 			</tags>
@@ -228,22 +220,21 @@
 	<ThingDef ParentName="NY_DragonApparelBase">
 		<defName>NY_ForgingDragonSkirtC</defName>
 		<label>冶龍风薄纱旗袍</label>
-		<description>冶龍的创新服饰，为了使服装呈现出薄雾般的质感对面料的要求较为苛刻，保温效果也自然略有欠缺。\n\n蝉翼薄纱，轻若云烟，旗袍风韵，典雅飘逸。</description>
+		<description>冶龍的创新服饰，为了使服装呈现出薄雾般的质感对面料的要求较为苛刻，材料的浪费也相当严重。\n\n蝉翼薄纱，轻若云烟，旗袍风韵，典雅飘逸。</description>
 		<graphicData>
 			<texPath>Things/Apparel/DragonCloth</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
-			<MaxHitPoints>300</MaxHitPoints>
-			<WorkToMake>6000</WorkToMake>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>9000</WorkToMake>
 			<Mass>1</Mass>
-			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.6</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>1</StuffEffectMultiplierInsulation_Heat>
-			<EquipDelay>3</EquipDelay>
+			<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>1.5</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>1.5</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>4</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<PawnBeauty>1</PawnBeauty>
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
@@ -256,15 +247,12 @@
 			<layers>
 				<li>OnSkin</li>
 			</layers>
-			<defaultOutfitTags>
-				<li>Worker</li>
-			</defaultOutfitTags>
 			<tags>
-				<li>NY_DragonCloth</li>
 			</tags>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<wornGraphicPath>Things/Apparel/NY_DragonSkirtC/NY_DragonSkirtC</wornGraphicPath>
 		</apparel>
-		<costStuffCount>60</costStuffCount>
+		<costStuffCount>90</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
 		</stuffCategories>
@@ -302,7 +290,7 @@
 			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.6</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>1</StuffEffectMultiplierInsulation_Heat>
-			<EquipDelay>3</EquipDelay>
+			<EquipDelay>2</EquipDelay>
 		</statBases>
 		<apparel>
 			<bodyPartGroups>

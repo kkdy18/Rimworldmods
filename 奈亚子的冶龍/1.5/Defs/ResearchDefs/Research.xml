@@ -21,9 +21,13 @@
 		<researchViewY>3</researchViewY>
 		<generalRules>
 			<rulesStrings>
-				<li>subject->冶龍珍材</li>
+				<li>subject->冶龍基础技术</li>
 				<li>subject_story->窃取了冶龍的生产工艺与配方，后被四只穿着很少布的冶龍强者抓走，消失在一片热带雨林中</li>
+				<li>subject_story->在冶龍的废弃据点发现了一些奇特的植株</li>
+				<li>subject_story->被冶龍奴役，但爱上了吃冶龍剩饭</li>
 				<li>subject_gerund->加工冶龍珍材</li>
+				<li>subject_gerund->培育冶龍作物</li>
+				<li>subject_gerund->烹饪冶龍美食</li>
 			</rulesStrings>
 		</generalRules>
 	</ResearchProjectDef>
@@ -39,7 +43,7 @@
 		</prerequisites>
 		<tab>ForgingDragonResearchTab</tab>
 		<researchViewX>1</researchViewX>
-		<researchViewY>1.5</researchViewY>
+		<researchViewY>1</researchViewY>
 		<generalRules>
 			<rulesStrings>
 				<li>subject->凡品兵器</li>
@@ -60,7 +64,7 @@
 		</prerequisites>
 		<tab>ForgingDragonResearchTab</tab>
 		<researchViewX>2</researchViewX>
-		<researchViewY>1.5</researchViewY>
+		<researchViewY>1</researchViewY>
 		<generalRules>
 			<rulesStrings>
 				<li>subject->上品兵器</li>
@@ -74,14 +78,17 @@
 		<defName>ForgingDragonImmortalWeapon</defName>
 		<label>仙品兵器</label>
 		<description>解锁锻造冶龍仙品兵器的技术，解密名为“神珍铁”的神秘金属与堪比闪耀科技造物的冶龍神兵，冶龍工匠以铸造神兵为毕生追求，只是摸一下神珍铁的机会就足够让她们打到头破血流。</description>
-		<baseCost>1200</baseCost>
-		<techLevel>Industrial</techLevel>
+		<baseCost>2000</baseCost>
+		<techLevel>Spacer</techLevel>
 		<prerequisites>
 			<li>ForgingDragonSuperiorWeapon</li>
 		</prerequisites>
+		<requiredAnalyzed>
+			<li>NY_ImmortalIron</li>
+		</requiredAnalyzed>
 		<tab>ForgingDragonResearchTab</tab>
 		<researchViewX>3</researchViewX>
-		<researchViewY>1.5</researchViewY>
+		<researchViewY>0.5</researchViewY>
 		<generalRules>
 			<rulesStrings>
 				<li>subject->仙品兵器</li>
@@ -103,8 +110,8 @@
 			<li>ForgingDragonStarting</li>
 		</prerequisites>
 		<tab>ForgingDragonResearchTab</tab>
-		<researchViewX>1</researchViewX>
-		<researchViewY>4.5</researchViewY>
+		<researchViewX>2</researchViewX>
+		<researchViewY>2</researchViewY>
 		<generalRules>
 			<rulesStrings>
 				<li>subject->冶龍兵甲</li>
@@ -125,13 +132,109 @@
 			<li>ForgingDragonStarting</li>
 		</prerequisites>
 		<tab>ForgingDragonResearchTab</tab>
-		<researchViewX>2</researchViewX>
-		<researchViewY>4.8</researchViewY>
+		<researchViewX>1</researchViewX>
+		<researchViewY>2</researchViewY>
 		<generalRules>
 			<rulesStrings>
 				<li>subject->冶龍华饰</li>
 				<li>subject_story->沉迷于冶龍制作的华丽饰品，不辞辛苦向冶龍工匠请教</li>
 				<li>subject_gerund->制作冶龍华饰</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>ForgingDragonLavishMeal</defName>
+		<label>冶龍珍肴</label>
+		<description>解锁烹饪冶龍著名菜肴的技术，它们都曾深受冶龍皇室的喜爱，如今也是冶龍民间宴席上的佳品。</description>
+		<baseCost>600</baseCost>
+		<techLevel>Medieval</techLevel>
+		<prerequisites>
+			<li>ForgingDragonStarting</li>
+		</prerequisites>
+		<tab>ForgingDragonResearchTab</tab>
+		<researchViewX>1</researchViewX>
+		<researchViewY>4</researchViewY>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->冶龍珍肴</li>
+				<li>subject_story->因为喜爱美食不惜给冶龍大厨打下手三年疯狂偷吃</li>
+				<li>subject_gerund->烹饪冶龍珍肴</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>ForgingDragonClassicMedicine</defName>
+		<label>冶龍古方良药</label>
+		<description>解锁制作冶龍传统药方的技术应对烈性传染病，身在异乡，瘟疫横行也是常事，冶龍医师调配的药方仍在保护着天南地北的染疫者。</description>
+		<baseCost>600</baseCost>
+		<techLevel>Medieval</techLevel>
+		<prerequisites>
+			<li>ForgingDragonStarting</li>
+		</prerequisites>
+		<tab>ForgingDragonResearchTab</tab>
+		<researchViewX>2</researchViewX>
+		<researchViewY>4</researchViewY>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->冶龍恶疫良药</li>
+				<li>subject_story->于一场可怕的瘟疫中被冶龍医师救治，励志拯救更多的生命</li>
+				<li>subject_gerund->调配药方</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>ForgingDragonMealCanned</defName>
+		<label>冶龍装罐术</label>
+		<description>解锁加工冶龍罐头的技术，结合异乡的工艺，冶龍工匠们成功将故乡的味道装进了罐头，让美味能够长久保存。</description>
+		<baseCost>500</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>ForgingDragonStarting</li>
+			<li>PackagedSurvivalMeal</li>
+		</prerequisites>
+		<tab>ForgingDragonResearchTab</tab>
+		<researchViewX>3</researchViewX>
+		<researchViewY>4</researchViewY>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->冶龍罐头</li>
+				<li>subject_story->与冶龍合作办了一座罐头厂，实现了白银自由</li>
+				<li>subject_gerund->加工冶龍罐头</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>ForgingDragonBlackbirdGuard</defName>
+		<label>玄鸟卫禁军武装</label>
+		<description>解锁锻造冶龍皇家禁军“玄鸟卫”武器与护甲的技术，玄鸟卫是真龙最为迅捷的锋刃，她们为真龙巡视着无尽的深空，撕碎一切真龙之敌。</description>
+		<baseCost>5000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>ForgingDragonSuperiorWeapon</li>
+			<li>ForgingDragonSoldierApparel</li>
+		</prerequisites>
+		<hiddenPrerequisites>
+			<li>Fabrication</li>
+		</hiddenPrerequisites>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredAnalyzed>
+			<li>NY_SLBB_Blueprint</li>
+		</requiredAnalyzed>
+		<tab>ForgingDragonResearchTab</tab>
+		<researchViewX>3</researchViewX>
+		<researchViewY>1.5</researchViewY>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->玄鸟卫禁军武装</li>
+				<li>subject_story->以间谍罪被禁军处决。就如黑色的飞鸟融入夜幕，玄鸟卫注视着你，你只见夜色苍茫</li>
+				<li>subject_gerund->锻造玄鸟卫禁军武装</li>
 			</rulesStrings>
 		</generalRules>
 	</ResearchProjectDef>

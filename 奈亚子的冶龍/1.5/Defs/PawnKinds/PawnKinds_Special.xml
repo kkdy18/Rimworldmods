@@ -150,4 +150,30 @@
 			</xenotypeChances>
 		</xenotypeSet>
 	</PawnKindDef>
+
+	<PawnKindDef ParentName="NY_DragonVillager">
+		<defName>NY_DragonHermit</defName>
+		<label>避世冶龍</label>
+		<labelPlural>避世冶龍</labelPlural>
+		<combatPower>30</combatPower>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<forcedTraits>
+			<Gay />
+		</forcedTraits>
+		<weaponTags Inherit="False">
+			<li>NY_DragonWeaponMelee_Special</li>
+		</weaponTags>
+		<xenotypeSet>
+			<xenotypeChances>
+				<NY_ForgingDragonMC>1</NY_ForgingDragonMC>
+			</xenotypeChances>
+		</xenotypeSet>
+		<startingHediffs>
+			<li>
+				<def>NY_hediff_RaidComing_Insect</def>
+			</li>
+		</startingHediffs>
+		<inventoryOptions Inherit="False">
+		</inventoryOptions>
+	</PawnKindDef>
 </Defs>

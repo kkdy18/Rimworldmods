@@ -22,17 +22,35 @@
 			</li>
 			<li Class="StockGenerator_SingleDef">
 				<thingDef>MedicineHerbal</thingDef>
-				<countRange>25~50</countRange>
+				<countRange>10~50</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>NY_MealCannedFish</thingDef>
+				<countRange>40~100</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>NY_ClassicMedicine_Smallpox</thingDef>
+				<countRange>5~30</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>NY_ClassicMedicine_Cholera</thingDef>
+				<countRange>5~30</countRange>
 			</li>
 			<li Class="StockGenerator_SingleDef">
 				<thingDef>NY_ImmortalIron</thingDef>
 				<price>Exorbitant</price>
 				<countRange>1~2</countRange>
 			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>NY_SLBB_Blueprint</thingDef>
+				<price>Cheap</price>
+				<countRange>-1~1</countRange>
+			</li>
 			<li Class="StockGenerator_Category">
 				<categoryDef>NY_Resources</categoryDef>
 				<excludedThingDefs>
 					<li>NY_ImmortalIron</li>
+					<li>NY_SLBB_Blueprint</li>
 				</excludedThingDefs>
 				<thingDefCountRange>2~3</thingDefCountRange>
 				<totalPriceRange>200~600</totalPriceRange>
@@ -69,6 +87,10 @@
 			</li>
 			<li Class="StockGenerator_Category">
 				<categoryDef>NY_DragonFood</categoryDef>
+				<excludedThingDefs>
+					<li>NY_MealGingerCongee</li>
+					<li>NY_WhiteAngelicaPoriaSoup</li>
+				</excludedThingDefs>
 				<thingDefCountRange>4~5</thingDefCountRange>
 				<totalPriceRange>800~1600</totalPriceRange>
 			</li>

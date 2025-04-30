@@ -10,12 +10,8 @@
 				<countRange>750~1200</countRange>
 			</li>
 			<li Class="StockGenerator_SingleDef">
-				<thingDef>Pemmican</thingDef>
-				<countRange>250~300</countRange>
-			</li>
-			<li Class="StockGenerator_SingleDef">
-				<thingDef>MedicineHerbal</thingDef>
-				<countRange>10~50</countRange>
+				<thingDef>NY_MealCannedFish</thingDef>
+				<countRange>25~50</countRange>
 			</li>
 			<li Class="StockGenerator_SingleDef">
 				<thingDef>Dye</thingDef>
@@ -28,13 +24,21 @@
 			</li>
 			<li Class="StockGenerator_Category">
 				<categoryDef>NY_DragonFood</categoryDef>
+				<excludedThingDefs>
+					<li>NY_MealGingerCongee</li>
+					<li>NY_WhiteAngelicaPoriaSoup</li>
+				</excludedThingDefs>
 				<thingDefCountRange>2~5</thingDefCountRange>
 				<totalPriceRange>400~800</totalPriceRange>
 			</li>
 			<!-- Drugs -->
-			<li Class="StockGenerator_Category">
-				<categoryDef>Drugs</categoryDef>
-				<maxTechLevelGenerate>Neolithic</maxTechLevelGenerate>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>NY_ClassicMedicine_Smallpox</thingDef>
+				<countRange>5~20</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>NY_ClassicMedicine_Cholera</thingDef>
+				<countRange>5~20</countRange>
 			</li>
 			<!-- Weapons -->
 			<li Class="StockGenerator_MarketValue">
@@ -129,6 +133,10 @@
 			</li>
 			<li Class="StockGenerator_Category">
 				<categoryDef>NY_DragonFood</categoryDef>
+				<excludedThingDefs>
+					<li>NY_MealGingerCongee</li>
+					<li>NY_WhiteAngelicaPoriaSoup</li>
+				</excludedThingDefs>
 				<thingDefCountRange>1~2</thingDefCountRange>
 				<totalPriceRange>100~200</totalPriceRange>
 			</li>
@@ -168,17 +176,21 @@
 				<countRange>750~1200</countRange>
 			</li>
 			<li Class="StockGenerator_SingleDef">
-				<thingDef>Pemmican</thingDef>
-				<countRange>250~300</countRange>
+				<thingDef>NY_MealCannedFish</thingDef>
+				<countRange>25~30</countRange>
 			</li>
 			<li Class="StockGenerator_SingleDef">
 				<thingDef>MedicineHerbal</thingDef>
 				<countRange>10~50</countRange>
 			</li>
 			<!-- Drugs -->
-			<li Class="StockGenerator_Category">
-				<categoryDef>Drugs</categoryDef>
-				<maxTechLevelGenerate>Neolithic</maxTechLevelGenerate>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>NY_ClassicMedicine_Smallpox</thingDef>
+				<countRange>5~20</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>NY_ClassicMedicine_Cholera</thingDef>
+				<countRange>5~20</countRange>
 			</li>
 			<!-- Slaves -->
 			<li Class="ForgingDragon.StockGenerator_SlavesofDragon">

@@ -10,7 +10,7 @@
 		<workSpeedStat>SmeltingSpeed</workSpeedStat>
 		<soundWorking>Recipe_Smelt</soundWorking>
 	</RecipeDef>
-	
+
 	<RecipeDef Name="NY_MakeRefinedIron" ParentName="NY_ProducedBase">
 		<defName>NY_MakeRefinedIron</defName>
 		<label>冶炼精炼铁</label>
@@ -192,9 +192,57 @@
 		</skillRequirements>
 	</RecipeDef>
 
+	<RecipeDef Name="NY_MakeBlackbirdIron" ParentName="NY_ProducedBase">
+		<defName>NY_MakeBlackbirdIron</defName>
+		<label>冶炼玄羽铁</label>
+		<description>以玄鸟卫的全新冶炼技术将多种金属融合，制成玄羽铁。</description>
+		<jobString>冶炼中。</jobString>
+		<workAmount>1500</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>75</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Uranium</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>Uranium</li>
+				<li>Plasteel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<NY_BlackbirdIron>25</NY_BlackbirdIron>
+		</products>
+		<skillRequirements>
+			<Crafting>10</Crafting>
+		</skillRequirements>
+		<researchPrerequisite>ForgingDragonBlackbirdGuard</researchPrerequisite>
+	</RecipeDef>
+
 	<RecipeDef ParentName="NY_MakeRefinedIron">
 		<defName>NY_MakeRefinedIronTen</defName>
-		<label>冶炼精炼铁 x10</label>
+		<label>十倍冶炼精炼铁</label>
 		<workAmount>5000</workAmount>
 		<ingredients Inherit="False">
 			<li>
@@ -221,7 +269,7 @@
 
 	<RecipeDef ParentName="NY_MakeRedIron">
 		<defName>NY_MakeRedIronTen</defName>
-		<label>冶炼赤炼铁 x10</label>
+		<label>十倍冶炼赤炼铁</label>
 		<workAmount>5000</workAmount>
 		<ingredients Inherit="False">
 			<li>
@@ -243,6 +291,41 @@
 		</ingredients>
 		<products>
 			<NY_RedIron>250</NY_RedIron>
+		</products>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="NY_MakeBlackbirdIron">
+		<defName>NY_MakeBlackbirdIronTen</defName>
+		<label>十倍冶炼玄羽铁</label>
+		<workAmount>15000</workAmount>
+		<ingredients Inherit="False">
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>750</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Uranium</li>
+					</thingDefs>
+				</filter>
+				<count>250</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>250</count>
+			</li>
+		</ingredients>
+		<products>
+			<NY_BlackbirdIron>250</NY_BlackbirdIron>
 		</products>
 	</RecipeDef>
 </Defs>

@@ -11,11 +11,11 @@
 		<targetTags>
 			<li>Map_PlayerHome</li>
 		</targetTags>
-		<workerClass>IncidentWorker_HeatWave</workerClass>
+		<workerClass>IncidentWorker_MakeGameCondition</workerClass>
 		<gameCondition>NY_ForgingDragon_HotRain</gameCondition>
 		<letterLabel>龙王煮雨</letterLabel>
 		<letterDef>NegativeEvent</letterDef>
-		<baseChance>1.5</baseChance>
+		<baseChance>0.9</baseChance>
 		<earliestDay>1</earliestDay>
 		<minRefireDays>1</minRefireDays>
 		<disabledWhen>
@@ -31,13 +31,13 @@
 		<targetTags>
 			<li>Map_PlayerHome</li>
 		</targetTags>
-		<workerClass>IncidentWorker_HeatWave</workerClass>
+		<workerClass>IncidentWorker_MakeGameCondition</workerClass>
 		<gameCondition>NY_ForgingDragon_Drought</gameCondition>
 		<letterLabel>旱灾</letterLabel>
 		<letterDef>NegativeEvent</letterDef>
 		<baseChance>0.5</baseChance>
 		<earliestDay>1</earliestDay>
-		<minRefireDays>1</minRefireDays>
+		<minRefireDays>5</minRefireDays>
 		<disabledWhen>
 			<extremeWeatherIncidentsDisabled>true</extremeWeatherIncidentsDisabled>
 		</disabledWhen>
@@ -51,7 +51,7 @@
 		<targetTags>
 			<li>Map_PlayerHome</li>
 		</targetTags>
-		<workerClass>IncidentWorker_HeatWave</workerClass>
+		<workerClass>IncidentWorker_MakeGameCondition</workerClass>
 		<gameCondition>NY_ForgingDragon_Sandstorm</gameCondition>
 		<letterLabel>龙王扫尘</letterLabel>
 		<letterDef>NegativeEvent</letterDef>
@@ -75,7 +75,7 @@
 		<gameCondition>NY_ForgingDragon_ColdSnap</gameCondition>
 		<letterLabel>风霜过境</letterLabel>
 		<letterDef>NegativeEvent</letterDef>
-		<baseChance>1.5</baseChance>
+		<baseChance>0.9</baseChance>
 		<earliestDay>1</earliestDay>
 		<minRefireDays>1</minRefireDays>
 		<disabledWhen>
@@ -137,10 +137,10 @@
 		<letterDef>NegativeEvent</letterDef>
 		<baseChance>0.2</baseChance>
 		<earliestDay>1</earliestDay>
-		<minRefireDays>1</minRefireDays>
+		<minRefireDays>5</minRefireDays>
 		<disabledWhen>
 			<extremeWeatherIncidentsDisabled>true</extremeWeatherIncidentsDisabled>
 		</disabledWhen>
-		<durationDays>1~7</durationDays>
+		<durationDays>1~2</durationDays>
 	</IncidentDef>
 </Defs>

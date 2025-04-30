@@ -13,6 +13,7 @@
 				<severity>0.1</severity>
 			</li>
 		</startingHediffs>
+		<inventoryOptions Inherit="False"></inventoryOptions>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="NY_DragonSoldierMelee">
@@ -28,6 +29,7 @@
 				<severity>0.1</severity>
 			</li>
 		</startingHediffs>
+		<inventoryOptions Inherit="False"></inventoryOptions>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="NY_DragonPowerFighter" Name="NY_DragonInfectedFighter" Abstract="True">
@@ -67,6 +69,7 @@
 				<NY_ForgingDragonMC>0.5</NY_ForgingDragonMC>
 			</xenotypeChances>
 		</xenotypeSet>
+		<inventoryOptions Inherit="False"></inventoryOptions>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="NY_DragonInfectedFighter">

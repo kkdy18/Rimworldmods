@@ -20,6 +20,30 @@
 		</removeOnRedressChanceByDaysCurve>
 	</HediffDef>
 
+	<HediffDef ParentName="NY_HediffBase">
+		<defName>NY_hediff_ImmunityGain</defName>
+		<label>获得性免疫</label>
+		<description>患者在康复后获得了暂时的免疫能力提升。</description>
+		<defaultLabelColor>(251,255,205)</defaultLabelColor>
+		<stages>
+			<li>
+				<statOffsets>
+					<ImmunityGainSpeed>1</ImmunityGainSpeed>
+				</statOffsets>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>True</showRemainingTime>
+				<disappearsAfterTicks>
+					<min>60000</min>
+					<max>300000</max>
+				</disappearsAfterTicks>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+	</HediffDef>
+
 	<HediffDef ParentName="NY_ContagionBase">
 		<defName>NY_hediff_Smallpox</defName>
 		<label>天花</label>
@@ -39,6 +63,7 @@
 			</li>
 			<li Class="ForgingDragon.HCP_Contagion">
 				<Infectivity>2.1</Infectivity>
+				<leftHediff>NY_hediff_ImmunityGain</leftHediff>
 			</li>
 		</comps>
 		<stages>
@@ -173,6 +198,7 @@
 			</li>
 			<li Class="ForgingDragon.HCP_Contagion">
 				<Infectivity>2.5</Infectivity>
+				<leftHediff>NY_hediff_ImmunityGain</leftHediff>
 			</li>
 		</comps>
 		<stages>
@@ -291,6 +317,7 @@
 			</li>
 			<li Class="ForgingDragon.HCP_Contagion">
 				<Infectivity>2.5</Infectivity>
+				<leftHediff>NY_hediff_ImmunityGain</leftHediff>
 			</li>
 		</comps>
 		<stages>

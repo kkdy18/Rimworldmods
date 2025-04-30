@@ -4,7 +4,7 @@
 		<race>Human</race>
 		<defaultFactionType>NY_ForgingDragonUnion</defaultFactionType>
 		<initialWillRange>60~100</initialWillRange>
-		<invNutrition>2.55</invNutrition>
+		<invNutrition>0</invNutrition>
 		<maxGenerationAge>84</maxGenerationAge>
 		<minGenerationAge>14</minGenerationAge>
 		<biocodeWeaponChance>0</biocodeWeaponChance>
@@ -53,6 +53,10 @@
 				<li>
 					<thingDef>NY_MealMapoTofu</thingDef>
 					<countRange>1</countRange>
+				</li>
+				<li>
+					<thingDef>NY_MealCannedYellowPeach</thingDef>
+					<countRange>3</countRange>
 				</li>
 			</subOptionsChooseOne>
 		</inventoryOptions>
@@ -181,6 +185,26 @@
 			<li>Advanced</li>
 			<li>ImplantEmpireCommon</li>
 		</techHediffsTags>
+		<inventoryOptions Inherit="False">
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>NY_MealLavish_Meat</thingDef>
+					<countRange>1</countRange>
+				</li>
+				<li>
+					<thingDef>NY_MealDumpling</thingDef>
+					<countRange>1</countRange>
+				</li>
+				<li>
+					<thingDef>NY_MealChickenwithMushroom</thingDef>
+					<countRange>1</countRange>
+				</li>
+				<li>
+					<thingDef>NY_WhiteAngelicaPoriaSoup</thingDef>
+					<countRange>1</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="NY_DragonPowerFighter">
@@ -349,6 +373,30 @@
 				<NY_ForgingDragonPC>1</NY_ForgingDragonPC>
 			</xenotypeChances>
 		</xenotypeSet>
+		<inventoryOptions Inherit="False">
+			<subOptionsChooseOne>
+				<li>
+					<choiceChance>30</choiceChance>
+					<thingDef>NY_MealDumpling</thingDef>
+					<countRange>1</countRange>
+				</li>
+				<li>
+					<choiceChance>30</choiceChance>
+					<thingDef>NY_MealChickenwithMushroom</thingDef>
+					<countRange>1</countRange>
+				</li>
+				<li>
+					<choiceChance>25</choiceChance>
+					<thingDef>NY_WhiteAngelicaPoriaSoup</thingDef>
+					<countRange>1</countRange>
+				</li>
+				<li>
+					<choiceChance>15</choiceChance>
+					<thingDef>NY_SLBB_Blueprint</thingDef>
+					<countRange>1</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="NY_DragonPowerFighter">
@@ -406,5 +454,29 @@
 				<NY_ForgingDragonWJ>1</NY_ForgingDragonWJ>
 			</xenotypeChances>
 		</xenotypeSet>
+		<inventoryOptions Inherit="False">
+			<subOptionsChooseOne>
+				<li>
+					<choiceChance>30</choiceChance>
+					<thingDef>NY_MealDumpling</thingDef>
+					<countRange>1</countRange>
+				</li>
+				<li>
+					<choiceChance>30</choiceChance>
+					<thingDef>NY_MealChickenwithMushroom</thingDef>
+					<countRange>1</countRange>
+				</li>
+				<li>
+					<choiceChance>25</choiceChance>
+					<thingDef>NY_WhiteAngelicaPoriaSoup</thingDef>
+					<countRange>1</countRange>
+				</li>
+				<li>
+					<choiceChance>15</choiceChance>
+					<thingDef>NY_SLBB_Blueprint</thingDef>
+					<countRange>1</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
 	</PawnKindDef>
 </Defs>

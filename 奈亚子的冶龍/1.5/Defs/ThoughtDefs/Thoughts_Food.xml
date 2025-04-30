@@ -57,7 +57,7 @@
 
 	<ThoughtDef ParentName="NY_EatThought">
 		<defName>NY_EatRawPlum</defName>
-		<durationDays>0.1</durationDays>
+		<durationDays>0.2</durationDays>
 		<stages>
 			<li>
 				<label>吃了新鲜梅子</label>
@@ -81,7 +81,7 @@
 
 	<ThoughtDef ParentName="NY_EatThought">
 		<defName>NY_EatRawGinger</defName>
-		<durationDays>0.1</durationDays>
+		<durationDays>0.2</durationDays>
 		<stages>
 			<li>
 				<label>吃了生姜</label>
@@ -93,11 +93,12 @@
 	
 	<ThoughtDef ParentName="NY_EatThought">
 		<defName>NY_GingerIngredient</defName>
-		<durationDays>0.5</durationDays>
-		<stackLimit>10</stackLimit>
+		<durationDays>0.3</durationDays>
+		<stackLimit>3</stackLimit>
 		<nullifyingHediffs>
 			<li>NY_hediff_RandomShreds</li>
 			<li>NY_hediff_ChickenwithMushroom</li>
+			<li>NY_hediff_MealLavishHighSuperB</li>
 		</nullifyingHediffs>
 		<stages>
 			<li>
@@ -193,6 +194,30 @@
 				<label>喝了话梅姜奶</label>
 				<description>全身都热乎起来了！</description>
 				<baseMoodEffect>12</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef ParentName="NY_EatThought">
+		<defName>NY_EatCannedYellowPeach</defName>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>吃了黄桃罐头</label>
+				<description>罐头很甜很好吃，不过黄桃是什么？</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef ParentName="NY_EatThought">
+		<defName>NY_EatClassicMedicine</defName>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>服用方剂</label>
+				<description>满嘴的苦味，这就是健康的味道吗？</description>
+				<baseMoodEffect>-3</baseMoodEffect>
 			</li>
 		</stages>
 	</ThoughtDef>

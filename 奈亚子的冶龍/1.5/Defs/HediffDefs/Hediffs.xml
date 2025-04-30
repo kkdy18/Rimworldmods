@@ -141,6 +141,31 @@
 		</comps>
 	</HediffDef>
 
+	<HediffDef ParentName="NY_HediffBase">
+		<defName>NY_hediff_RaidComing_Insect</defName>
+		<label>风雨欲来</label>
+		<description>desc</description>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+			</li>
+		</stages>
+		<comps>
+			<li Class="ForgingDragon.HCP_RaidComing">
+				<raid>Infestation</raid>
+				<text>“请救救我的朋友，还有……小心虫族。”一个浑身是血的冶龍抱着另一个冶龍从地洞中爬出，说完她便陷入了昏迷。</text>
+			</li>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+				<disappearsAfterTicks>
+					<min>500</min>
+					<max>500</max>
+				</disappearsAfterTicks>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+	</HediffDef>
+
 	<!--技能类-->
 	<HediffDef ParentName="NY_HediffBase">
 		<defName>NY_hediff_LoongFrenzy</defName>
@@ -154,9 +179,16 @@
 					<MoveSpeed>1.5</MoveSpeed>
 					<MeleeCooldownFactor>0.75</MeleeCooldownFactor>
 				</statFactors>
-				<statOffsets>
-					<MoveSpeed>2</MoveSpeed>
-				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.1</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<postFactor>1.5</postFactor>
+					</li>
+				</capMods>
 			</li>
 		</stages>
 		<comps>
@@ -224,7 +256,7 @@
 			</li>
 			<li Class="HediffCompProperties_DisappearsOnDeath"/>
 			<li Class="HediffCompProperties_Effecter">
-				<stateEffecter></stateEffecter>
+				<stateEffecter>NY_effecter_LoongCraft</stateEffecter>
 			</li>
 		</comps>
 	</HediffDef>
@@ -321,8 +353,9 @@
 			</li>
 			<li Class="ForgingDragon.HCP_RangeHediffOnce">
 				<range>4.9</range>
-				<hediff>NY_hediff_LoongArmor</hediff>
 				<duration>12500</duration>
+				<hediff>NY_hediff_LoongArmor</hediff>
+				<mote>Mote_NewbornBecomeChildGlow</mote>
 				<targetingParameters>
 					<canTargetSelf>true</canTargetSelf>
 					<canTargetMechs>false</canTargetMechs>
@@ -359,7 +392,7 @@
 		<renderNodeProperties>
 			<li>
 				<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
-				<texPath>Things/Projectile/NY_LoongArmor</texPath>
+				<texPath>Things/Mote/NY_LoongArmor</texPath>
 				<drawSize>0.5</drawSize>
 				<parentTagDef>Body</parentTagDef>
 				<useSkinShader>false</useSkinShader>
@@ -386,6 +419,63 @@
 			<li Class="HediffCompProperties_DisappearsOnDeath"/>
 			<li Class="ForgingDragon.HCP_DamageConsume">
 				<hitSound>NY_ArmorBroken</hitSound>
+				<hitEffect>NY_effect_BrokenArmor</hitEffect>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="NY_HediffBase">
+		<defName>NY_hediff_InvisibleOwl</defName>
+		<label>鸮隐于林</label>
+		<description>那鸮隐卫侧身一躲，便消失在两片落叶的夹缝间，不知来处的飞矢仿佛老天洒下的一场大雨，将众贼人钉死在地上。</description>
+		<defaultLabelColor>(0.6, 0.6, 0.6)</defaultLabelColor>
+		<stages>
+			<li>
+				<statFactors>
+					<AimingDelayFactor>0.1</AimingDelayFactor>
+					<RangedCooldownFactor>0.1</RangedCooldownFactor>
+				</statFactors>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Invisibility">
+				<visibleToPlayer>true</visibleToPlayer>
+			</li>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<li Class="HediffCompProperties_Effecter">
+				<stateEffecter>NY_effecter_InvisibleOwl</stateEffecter>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="NY_HediffBase">
+		<defName>NY_hediff_SmokeGyrfalcon</defName>
+		<label>烟披鹘袭</label>
+		<description>贼人占了坚壁高墙，妄言要做城中王，却见鹘袭卫化作浊烟遮天蔽日，半响便摘了贼人脑袋提在手中。</description>
+		<defaultLabelColor>(0.6, 0.6, 0.6)</defaultLabelColor>
+		<stages>
+			<li>
+				<statOffsets>
+					<MoveSpeed>2</MoveSpeed>
+				</statOffsets>
+			</li>
+		</stages>
+		<comps>
+			<li Class="ForgingDragon.HCP_DamageExplode">
+				<interval>300</interval>
+				<radius>4.9</radius>
+				<gas>BlindSmoke</gas>
+				<damageType>Extinguish</damageType>
+			</li>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<li Class="HediffCompProperties_Effecter">
+				<stateEffecter>NY_effecter_SmokeReleasing</stateEffecter>
 			</li>
 		</comps>
 	</HediffDef>

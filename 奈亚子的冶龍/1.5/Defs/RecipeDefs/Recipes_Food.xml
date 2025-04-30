@@ -164,6 +164,15 @@
 		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
 	</RecipeDef>
 
+	<RecipeDef Name="NY_CookMealWithRiceBase" ParentName="NY_CookMealBase" Abstract="True">
+		<workAmount>1000</workAmount>
+		<jobString>正在炒菜煮饭。</jobString>
+		<skillRequirements>
+			<Cooking>12</Cooking>
+		</skillRequirements>
+		<researchPrerequisite>ForgingDragonLavishMeal</researchPrerequisite>
+	</RecipeDef>
+
 	<RecipeDef Name="NY_CookMealLavish_Veg" ParentName="NY_CookMealBase">
 		<defName>NY_CookMealLavish_Veg</defName>
 		<label>烹饪翻翠玉</label>
@@ -192,12 +201,13 @@
 			<Cooking>10</Cooking>
 		</skillRequirements>
 		<displayPriority>1270.02</displayPriority>
+		<researchPrerequisite>ForgingDragonLavishMeal</researchPrerequisite>
 	</RecipeDef>
 
 	<RecipeDef ParentName="NY_CookMealLavish_Veg">
 		<defName>NY_CookMealLavish_VegTen</defName>
 		<label>烹饪翻翠玉 x10</label>
-		<workAmount>3200</workAmount>
+		<workAmount>6400</workAmount>
 		<ingredients Inherit="False">
 			<li>
 				<filter>
@@ -241,12 +251,13 @@
 			<Cooking>10</Cooking>
 		</skillRequirements>
 		<displayPriority>1270.03</displayPriority>
+		<researchPrerequisite>ForgingDragonLavishMeal</researchPrerequisite>
 	</RecipeDef>
 
 	<RecipeDef ParentName="NY_CookMealLavish_Meat">
 		<defName>NY_CookMealLavish_MeatTen</defName>
 		<label>烹饪炖血金 x10</label>
-		<workAmount>3200</workAmount>
+		<workAmount>6400</workAmount>
 		<ingredients Inherit="False">
 			<li>
 				<filter>
@@ -310,12 +321,13 @@
 			<Cooking>10</Cooking>
 		</skillRequirements>
 		<displayPriority>1270.04</displayPriority>
+		<researchPrerequisite>ForgingDragonLavishMeal</researchPrerequisite>
 	</RecipeDef>
 
 	<RecipeDef ParentName="NY_CookMealChickenwithMushroom">
 		<defName>NY_CookMealChickenwithMushroomTen</defName>
 		<label>烹饪凤栖木 x10</label>
-		<workAmount>3200</workAmount>
+		<workAmount>6400</workAmount>
 		<ingredients Inherit="False">
 			<li>
 				<filter>
@@ -384,7 +396,7 @@
 	<RecipeDef ParentName="NY_CookMealDumpling">
 		<defName>NY_CookMealDumplingTen</defName>
 		<label>烹饪冶龍饺子 x10</label>
-		<workAmount>3200</workAmount>
+		<workAmount>6400</workAmount>
 		<ingredients Inherit="False">
 			<li>
 				<filter>
@@ -443,7 +455,7 @@
 	<RecipeDef ParentName="NY_CookMealLotusRootSlices">
 		<defName>NY_CookMealLotusRootSlicesTen</defName>
 		<label>烹饪凉拌藕片 x10</label>
-		<workAmount>1200</workAmount>
+		<workAmount>2400</workAmount>
 		<ingredients Inherit="False">
 			<li>
 				<filter>
@@ -497,4 +509,61 @@
 		</skillRequirements>
 		<displayPriority>1270.07</displayPriority>
 	</RecipeDef>
+
+	<RecipeDef Name="NY_CookMealCannedFish" ParentName="NY_CookMealBase">
+		<defName>NY_CookMealCannedFish</defName>
+		<label>制作冶龍鱼罐头</label>
+		<description>制作一份冶龍鱼罐头。</description>
+		<jobString>正在烹调与装罐。</jobString>
+		<workAmount>450</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+					</categories>
+				</filter>
+				<count>0.6</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<disallowedCategories>
+				<li>PlantFoodRaw</li>
+				<li>AnimalProductRaw</li>
+			</disallowedCategories>
+		</fixedIngredientFilter>
+		<products>
+			<NY_MealCannedFish>1</NY_MealCannedFish>
+		</products>
+		<recipeUsers Inherit="False">
+			<li>ElectricStove</li>
+			<li>FueledStove</li>
+		</recipeUsers>
+		<skillRequirements>
+			<Cooking>8</Cooking>
+		</skillRequirements>
+		<displayPriority>1270.01</displayPriority>
+		<researchPrerequisite>ForgingDragonMealCanned</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef ParentName="NY_CookMealCannedFish">
+		<defName>NY_CookMealCannedFishTen</defName>
+		<label>制作冶龍鱼罐头 x10</label>
+		<description>制作十份冶龍鱼罐头。</description>
+		<workAmount>3600</workAmount>
+		<ingredients Inherit="False">
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+					</categories>
+				</filter>
+				<count>6</count>
+			</li>
+		</ingredients>
+		<products>
+			<NY_MealCannedFish>10</NY_MealCannedFish>
+		</products>
+	</RecipeDef>
+
 </Defs>

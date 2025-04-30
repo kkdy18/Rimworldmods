@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!--饮品-->
-
 	<ThingDef Name="NY_DrinkableBase" Abstract="True">
 		<thingClass>ThingWithComps</thingClass>
 		<category>Item</category>
@@ -12,8 +11,8 @@
 		<techLevel>Neolithic</techLevel>
 		<statBases>
 			<Beauty>0</Beauty>
-			<MaxHitPoints>100</MaxHitPoints>
 			<Flammability>0</Flammability>
+			<MaxHitPoints>100</MaxHitPoints>
 			<DeteriorationRate>2</DeteriorationRate>
 			<FoodPoisonChanceFixedHuman>0</FoodPoisonChanceFixedHuman>
 		</statBases>
@@ -38,6 +37,7 @@
 		<resourceReadoutPriority>Last</resourceReadoutPriority>
 		<drawGUIOverlay>true</drawGUIOverlay>
 		<allowedArchonexusCount>-1</allowedArchonexusCount>
+		<socialPropernessMatters>true</socialPropernessMatters>
 		<ingestible>
 			<nurseable>true</nurseable>
 			<tableDesired>false</tableDesired>
@@ -157,7 +157,6 @@
 	</ThingDef>
 
 	<!--藕-->
-
 	<ThingDef ParentName="PlantBase">
 		<defName>NY_plant_Lotus</defName>
 		<label>冶龍莲</label>
@@ -224,7 +223,6 @@
 	</ThingDef>
 
 	<!--梅子-->
-
 	<ThingDef ParentName="PlantBase">
 		<defName>NY_plant_PlumTree</defName>
 		<label>冶龍梅树</label>
@@ -334,7 +332,6 @@
 	</ThingDef>
 
 	<!--姜-->
-
 	<ThingDef ParentName="PlantBase">
 		<defName>NY_plant_Ginger</defName>
 		<label>冶龍姜</label>
@@ -398,6 +395,224 @@
 			<li Class="CompProperties_Rottable">
 				<daysToRotStart>60</daysToRotStart>
 				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+
+<!--罐头-->
+	<ThingDef ParentName="MealBase">
+		<defName>NY_MealCannedFish</defName>
+		<label>冶龍鱼罐头</label>
+		<description>封装着来自冶龍故乡的传统风味——豆豉鲮鱼的罐头，原料不一定是鱼肉但冶龍总能做出鱼香味。精铁打造的容器坚固耐磨，罐中的肉块经过熏制与焖煮，酥软多汁，入口即化。</description>
+		<graphicData>
+			<texPath>Things/Item/NY_CannedFish</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.3</Mass>
+			<Nutrition>0.8</Nutrition>
+			<MarketValue>24</MarketValue>
+			<Flammability>0</Flammability>
+			<MaxHitPoints>500</MaxHitPoints>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+		<ingestible>
+			<preferability>MealSimple</preferability>
+			<optimalityOffsetHumanlikes>-5</optimalityOffsetHumanlikes>
+			<optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+		</ingestible>
+		<allowedArchonexusCount>40</allowedArchonexusCount>
+	</ThingDef>
+
+	<ThingDef ParentName="MealBase">
+		<defName>NY_MealCannedYellowPeach</defName>
+		<label>冶龍黄桃罐头</label>
+		<description>泡在糖水中的水果，封装在坚固耐磨的玻璃罐中，冶龍相信这种食品可以为病人补充营养，加快康复，对风寒病人尤其有效。在冶龍的故乡她们会取新鲜的黄桃制作这种食品，而在没有黄桃的异乡她们只能努力发挥自己的想象力了。</description>
+		<graphicData>
+			<texPath>Things/Item/NY_CannedYellowPeach</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.1</Mass>
+			<Nutrition>0.5</Nutrition>
+			<WorkToMake>360</WorkToMake>
+			<MarketValue>24</MarketValue>
+			<Flammability>0</Flammability>
+			<MaxHitPoints>500</MaxHitPoints>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+		<ingestible>
+			<preferability>MealFine</preferability>
+			<tasteThought>NY_EatCannedYellowPeach</tasteThought>
+			<optimalityOffsetHumanlikes>-5</optimalityOffsetHumanlikes>
+			<optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+			<outcomeDoers>
+				<li Class="ForgingDragon.IngestionOutcomeDoer_MakeImmune">
+					<disease>NY_hediff_Cold</disease>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<recipeMaker>
+			<bulkRecipeCount>10</bulkRecipeCount>
+			<recipeUsers>
+				<li>ElectricStove</li>
+				<li>FueledStove</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Cooking>8</Cooking>
+			</skillRequirements>
+			<workSkill>Cooking</workSkill>
+			<effectWorking>Cook</effectWorking>
+			<workSpeedStat>CookSpeed</workSpeedStat>
+			<soundWorking>Recipe_CookMeal</soundWorking>
+			<researchPrerequisite>ForgingDragonMealCanned</researchPrerequisite>
+			<displayPriority>1270.01</displayPriority>
+		</recipeMaker>
+		<costList>
+			<RawBerries>6</RawBerries>
+		</costList>
+	</ThingDef>
+	
+	<!--中药-->
+	<ThingDef Name="NY_ClassicMedicineBase" Abstract="True">
+		<thingClass>ThingWithComps</thingClass>
+		<category>Item</category>
+		<drawerType>MapMeshOnly</drawerType>
+		<useHitPoints>true</useHitPoints>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<selectable>true</selectable>
+		<techLevel>Neolithic</techLevel>
+		<statBases>
+			<Mass>0.05</Mass>
+			<Beauty>0</Beauty>
+			<WorkToMake>600</WorkToMake>
+			<MarketValue>18</MarketValue>
+			<Flammability>1</Flammability>
+			<MaxHitPoints>100</MaxHitPoints>
+			<DeteriorationRate>2</DeteriorationRate>
+			<FoodPoisonChanceFixedHuman>0</FoodPoisonChanceFixedHuman>
+		</statBases>
+		<altitudeLayer>Item</altitudeLayer>
+		<stackLimit>150</stackLimit>
+		<tickerType>Rare</tickerType>
+		<thingCategories>
+			<li>Drugs</li>
+		</thingCategories>
+		<tradeTags>
+			<li>Drugs</li>
+		</tradeTags>
+		<alwaysHaulable>true</alwaysHaulable>
+		<comps>
+			<li Class="CompProperties_Forbiddable" />
+		</comps>
+		<pathCost>14</pathCost>
+		<burnableByRecipe>true</burnableByRecipe>
+		<resourceReadoutPriority>Last</resourceReadoutPriority>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<allowedArchonexusCount>-1</allowedArchonexusCount>
+		<socialPropernessMatters>false</socialPropernessMatters>
+		<ingestible>
+			<nurseable>true</nurseable>
+			<foodType>Processed</foodType>
+			<tableDesired>false</tableDesired>
+			<drugCategory>Medical</drugCategory>
+			<ingestSound>Ingest_Pill</ingestSound>
+			<baseIngestTicks>300</baseIngestTicks>
+			<chairSearchRadius>0</chairSearchRadius>
+			<ingestHoldUsesTable>false</ingestHoldUsesTable>
+			<ingestCommandString>服用{0}</ingestCommandString>
+			<ingestReportString>正在服用{0}。</ingestReportString>
+			<tasteThought>NY_EatClassicMedicine</tasteThought>
+			<preferability>NeverForNutrition</preferability>
+			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+			<defaultNumToIngestAtOnce>1</defaultNumToIngestAtOnce>
+			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+		</ingestible>
+		<recipeMaker>
+			<bulkRecipeCount>10</bulkRecipeCount>
+			<recipeUsers>
+				<li>NY_TableFurnace</li>
+			</recipeUsers>
+			<workSkill>Cooking</workSkill>
+			<effectWorking>Cook</effectWorking>
+			<workSpeedStat>CookSpeed</workSpeedStat>
+			<soundWorking>Recipe_CookMeal</soundWorking>
+			<researchPrerequisite>ForgingDragonClassicMedicine</researchPrerequisite>
+		</recipeMaker>
+		<storedConceptLearnOpportunity>DrugPolicies</storedConceptLearnOpportunity>
+		<orderedTakeGroup>Drug</orderedTakeGroup>
+	</ThingDef>
+
+	<ThingDef ParentName="NY_ClassicMedicineBase">
+		<defName>NY_ClassicMedicine_Smallpox</defName>
+		<label>透疹解毒散</label>
+		<description>能够治疗天花的冶龍古方，是药三分毒，用药需慎重。</description>
+		<descriptionHyperlinks>
+			<HediffDef>NY_hediff_Smallpox</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Drug/NY_Smallpox</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+		</statBases>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="ForgingDragon.IngestionOutcomeDoer_MakeImmune">
+					<disease>NY_hediff_Smallpox</disease>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<recipeMaker>
+			<displayPriority>1272.01</displayPriority>
+		</recipeMaker>
+		<costList>
+			<NY_RawGinger>3</NY_RawGinger>
+			<MedicineHerbal>1</MedicineHerbal>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<listOrder>1271.01</listOrder>
+				<overdoseSeverityOffset>0.18~0.35</overdoseSeverityOffset>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="NY_ClassicMedicineBase">
+		<defName>NY_ClassicMedicine_Cholera</defName>
+		<label>辟秽正气散</label>
+		<description>能够治疗霍乱的冶龍古方，是药三分毒，用药需慎重。</description>
+		<descriptionHyperlinks>
+			<HediffDef>NY_hediff_Cholera</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Drug/NY_Cholera</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+		</statBases>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="ForgingDragon.IngestionOutcomeDoer_Remove">
+					<hediff>NY_hediff_Cholera</hediff>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<recipeMaker>
+			<displayPriority>1272.02</displayPriority>
+		</recipeMaker>
+		<costList>
+			<NY_RawGinger>3</NY_RawGinger>
+			<MedicineHerbal>1</MedicineHerbal>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<listOrder>1271.02</listOrder>
+				<overdoseSeverityOffset>0.18~0.35</overdoseSeverityOffset>
 			</li>
 		</comps>
 	</ThingDef>

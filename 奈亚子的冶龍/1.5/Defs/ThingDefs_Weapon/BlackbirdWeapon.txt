@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef Name="NY_BlackbirdWeaponRanged" Abstract="True" ParentName="NY_BaseDragonWeaponRanged">
+		<techLevel>Spacer</techLevel>
+		<graphicData>
+		</graphicData>
+		<rotateInShelves>false</rotateInShelves>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<recipeMaker>
+			<researchPrerequisite>ForgingDragonBlackbirdGuard</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>10</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+	
+	<ThingDef ParentName="NY_BlackbirdWeaponRanged">
+		<defName>NY_LoongIronFan</defName>
+		<label>玄羽铁扇</label>
+		<description>玄羽铁扇.</description>
+		<graphicData>
+			<texPath>Things/Weapon/NY_LoongIronFan</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>1</Mass>
+			<WorkToMake>6000</WorkToMake>
+			<AccuracyTouch>0.9</AccuracyTouch>
+			<AccuracyShort>0.9</AccuracyShort>
+			<AccuracyMedium>0.7</AccuracyMedium>
+			<AccuracyLong>0.6</AccuracyLong>
+			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+		</weaponTags>
+		<weaponClasses>
+			<li>RangedLight</li>
+		</weaponClasses>
+		<costList>
+			<NY_BlackbirdIron>10</NY_BlackbirdIron>
+			<NY_RefinedIron>30</NY_RefinedIron>
+		</costList>
+		<recipeMaker>
+			<displayPriority>1272.01</displayPriority>
+		</recipeMaker>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>NY_LoongIronFanWind</defaultProjectile>
+				<warmupTime>1</warmupTime>
+				<range>15.9</range>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+				<soundCast>Pawn_Melee_SmallScratch_Miss</soundCast>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>铁骨</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1.5</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>NY_LoongIronFanWind</defName>
+		<label>玄风</label>
+		<graphicData>
+			<texPath>Things/Projectile/NY_PipaWave</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(1.2,1.2)</drawSize>
+			<color>(100,100,100)</color>
+		</graphicData>
+		<projectile>
+			<damageDef>NY_damage_WindCut</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<stoppingPower>3</stoppingPower>
+			<speed>55</speed>
+		</projectile>
+	</ThingDef>
+</Defs>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IncidentCategoryDef>
+		<defName>NY_ForgingDragon_Misc</defName>
+	</IncidentCategoryDef>
+
+	<IncidentDef>
+		<defName>NY_ImmortalIronImpact</defName>
+		<label>immortal iron impact</label>
+		<category>NY_ForgingDragon_Misc</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>ForgingDragon.IncidentWorker_ImmortalIronImpact</workerClass>
+		<baseChance>0</baseChance>
+		<letterLabel>immortal iron impact</letterLabel>
+		<letterText>A fireball flew across the sky, hitting the ground in this area, and astonishing energy poured out in all directions. After the smoke and heat dissipated, only a strange piece of metal remained in the pit.</letterText>
+		<!--<tale>MeteoriteImpact</tale>-->
+	</IncidentDef>
+
+	<IncidentDef>
+		<defName>NY_DigSurvival</defName>
+		<label>digging for survival</label>
+		<category>NY_ForgingDragon_Misc</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>ForgingDragon.IncidentWorker_DigSurvival</workerClass>
+		<baseChance>0</baseChance>
+		<letterLabel>digging for survival</letterLabel>
+		<letterText>The sound of hurried excavation came from underground, something was trying to break through the ground. Is that Giant insects? </letterText>
+	</IncidentDef>
+
+	<ThingDef ParentName="EtherealThingBase">
+		<defName>NY_LoongGroundSpawner</defName>
+		<label>隧道</label>
+		<thingClass>ForgingDragon.LoongGroundSpawner</thingClass>
+		<tickerType>Normal</tickerType>
+		<drawerType>RealtimeOnly</drawerType>
+		<alwaysFlee>true</alwaysFlee>
+		<building>
+			<groundSpawnerSustainedEffecter>EmergencePointSustained2X2</groundSpawnerSustainedEffecter>
+			<groundSpawnerCompleteEffecter>EmergencePointComplete2X2</groundSpawnerCompleteEffecter>
+		</building>
+	</ThingDef>
+</Defs>

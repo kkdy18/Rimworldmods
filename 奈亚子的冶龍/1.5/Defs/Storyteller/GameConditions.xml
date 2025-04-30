@@ -12,6 +12,7 @@
 		<weatherDef>Rain</weatherDef><!--这里填指定天气-->
 		<temperatureOffset>20</temperatureOffset><!--这里填变化的温度,不用就填0-->
 		<exclusiveConditions>
+			<li>ColdSnap</li>
 			<li>NY_ForgingDragon_Drought</li>
 			<li>NY_ForgingDragon_ColdSnap</li>
 			<li>NY_ForgingDragon_ColdFreeze</li>
@@ -32,6 +33,7 @@
 		<weatherDef>NY_DroughtClear</weatherDef>
 		<temperatureOffset>20</temperatureOffset>
 		<exclusiveConditions>
+			<li>ColdSnap</li>
 			<li>NY_ForgingDragon_HotRain</li>
 			<li>NY_ForgingDragon_ColdSnap</li>
 			<li>NY_ForgingDragon_ColdFreeze</li>

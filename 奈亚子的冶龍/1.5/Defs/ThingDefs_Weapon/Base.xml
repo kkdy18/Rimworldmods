@@ -25,28 +25,6 @@
 		</tradeTags>
 	</ThingDef>
 
-	<ThingDef Name="NY_DragonWeaponIndustrial" Abstract="True" ParentName="BaseWeapon">
-		<techLevel>Industrial</techLevel>
-		<smeltable>true</smeltable>
-		<burnableByRecipe>true</burnableByRecipe>
-		<relicChance>0</relicChance>
-		<statBases>
-		</statBases>
-		<inspectorTabs>
-			<li>ITab_Art</li>
-		</inspectorTabs>
-		<recipeMaker>
-			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-			<workSkill>Crafting</workSkill>
-			<effectWorking>Smith</effectWorking>
-			<soundWorking>Recipe_Smith</soundWorking>
-			<recipeUsers>
-				<li>NY_TableCrafting</li>
-			</recipeUsers>
-			<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
-		</recipeMaker>
-	</ThingDef>
-
 	<ThingDef Name="NY_BaseDragonWeaponMelee" Abstract="True" ParentName="NY_DragonWeaponMedieval">
 		<thingCategories>
 			<li>NY_DragonWeaponMelee</li>

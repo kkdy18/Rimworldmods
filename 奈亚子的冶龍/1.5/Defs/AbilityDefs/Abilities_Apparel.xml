@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<AbilityDef ParentName="NY_AI_AbilityBase">
+		<defName>NY_ability_InvisibleOwl</defName>
+		<label>鸮隐于林</label>
+		<description>催动甲胄铭文在短时间内隐去身形并显著强化射术。</description>
+		<iconPath>UI/Abilities/NY_Empty</iconPath>
+		<cooldownTicksRange>60000</cooldownTicksRange>
+		<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+		<statBases>
+			<Ability_Duration>15</Ability_Duration>
+		</statBases>
+		<verbProperties>
+			<warmupTime>0.5</warmupTime>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>NY_hediff_InvisibleOwl</hediffDef>
+				<onlyApplyToSelf>True</onlyApplyToSelf>
+				<replaceExisting>true</replaceExisting>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<EffecterDef>
+		<defName>NY_effecter_InvisibleOwl</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+				<fleckDef>NY_InvisibleOwl</fleckDef>
+				<burstCount>1</burstCount>
+				<chancePeriodTicks>120</chancePeriodTicks>
+				<chancePerTick>1</chancePerTick>
+				<rotation>-150~150</rotation>
+				<rotationRate>0</rotationRate>
+				<positionRadius>0.04</positionRadius>
+				<positionOffset>(0, 0, -0.15)</positionOffset>
+				<useTargetABodyAngle>true</useTargetABodyAngle>
+				<scale>0.25~0.4</scale>
+				<color>(1, 1, 1)</color>
+				<fleckUsesAngleForVelocity>false</fleckUsesAngleForVelocity>
+				<spawnLocType>OnSource</spawnLocType>
+			</li>
+		</children>
+	</EffecterDef>
+
+	<FleckDef ParentName="FleckBase_Thrown">
+		<defName>NY_InvisibleOwl</defName>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<fadeInTime>0.1</fadeInTime>
+		<solidTime>1</solidTime>
+		<fadeOutTime>0.1</fadeOutTime>
+		<growthRate>0</growthRate>
+		<useAttachLink>True</useAttachLink>
+		<attachedToHead>True</attachedToHead>
+		<graphicData>
+			<texPath>Things/Mote/NY_LoongGlow</texPath>
+			<graphicClass>Graphic_Fleck</graphicClass>
+			<shaderType>MoteGlow</shaderType>
+			<shaderParameters>
+				<_Color2>(1, 0.3, 0.3, 0.5)</_Color2>
+				<_Interval>0.1</_Interval>
+			</shaderParameters>
+			<drawSize>(3, 3)</drawSize>
+		</graphicData>
+	</FleckDef>
+
+	<AbilityDef ParentName="NY_AI_AbilityBase">
+		<defName>NY_ability_SmokeGyrfalcon</defName>
+		<label>烟披鹘袭</label>
+		<description>催动甲胄铭文在短时间内强化行动能力，激活的甲片会在受到打击时迸发烟雾掩护。</description>
+		<iconPath>UI/Abilities/NY_Empty</iconPath>
+		<cooldownTicksRange>60000</cooldownTicksRange>
+		<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+		<statBases>
+			<Ability_Duration>30</Ability_Duration>
+		</statBases>
+		<verbProperties>
+			<warmupTime>0.5</warmupTime>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>NY_hediff_SmokeGyrfalcon</hediffDef>
+				<onlyApplyToSelf>True</onlyApplyToSelf>
+				<replaceExisting>true</replaceExisting>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<ThingDef ParentName="MoteBase">
+		<defName>NY_mote_SmokeGyrfalcon</defName>
+		<thingClass>MoteAttached</thingClass>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<fadeInTime>0.1</fadeInTime>
+			<solidTime>1</solidTime>
+			<fadeOutTime>0.5</fadeOutTime>
+		</mote>
+		<graphicData>
+			<graphicClass>Graphic_PawnBodySilhouette</graphicClass>
+			<color>(0.3, 0.3, 0.3, 0.35)</color>
+			<shaderType>MotePawnBodyColor</shaderType>
+			<texPath>Things/Mote/Transparent</texPath>
+		</graphicData>
+	</ThingDef>
+</Defs>

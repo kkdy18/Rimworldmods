@@ -18,7 +18,7 @@
 
 	<ThingDef Name="NY_LavishMealBase" ParentName="MealCookedIngredientless" Abstract="True">
 		<statBases>
-			<MarketValue>50</MarketValue>
+			<MarketValue>45</MarketValue>
 			<Nutrition>1</Nutrition>
 		</statBases>
 		<thingCategories Inherit="False">
@@ -30,6 +30,13 @@
 			<ingestEffect>EatVegetarian</ingestEffect>
 			<ingestSound>Meal_Eat</ingestSound>
 		</ingestible>
+	</ThingDef>
+
+	<ThingDef Name="NY_LavishMealWithRiceBase" ParentName="NY_LavishMealBase" Abstract="True">
+		<statBases>
+			<MarketValue>60</MarketValue>
+			<Nutrition>1.2</Nutrition>
+		</statBases>
 	</ThingDef>
 
 	<ThingDef ParentName="NY_LavishMealBase">
@@ -230,7 +237,7 @@
 	<ThingDef ParentName="NY_FineMealBase">
 		<defName>NY_MealMapoTofu</defName>
 		<label>冶龍菜•麻婆豆腐</label>
-		<description>加入豆瓣酱、肉末烹制的烫口豆腐，麻辣鲜香的豆腐入口即化，令人直呼畅快。由于加入了冶龍的秘制调料，这道菜甚至会直接融化食客的精神，让他们沉浸在无尽的幸福之中，而能够面不改色地吃完这一盘麻婆豆腐的人被冶龍尊称为“麻辣仙人”。\n\n这道菜肴据说烹饪略有难度，但在冶龍们的印象中母亲总是会做麻婆豆腐。（话说冶龍的文化里真的会有父亲这个概念吗）\n\n这道菜肴仍在冶龍的保密配方列表中，私自烹饪将遭到严厉的处罚。</description>
+		<description>加入豆瓣酱、肉末烹制的烫口豆腐，麻辣鲜香的豆腐入口即化，令人直呼畅快。由于加入了冶龍的秘制调料，这道菜甚至会直接融化食客的精神，让他们沉浸在无尽的幸福之中，而能够面不改色地吃完这一盘麻婆豆腐的人被冶龍尊称为“麻辣仙人”。\n\n这道菜肴据说烹饪略有难度，但在冶龍们的印象中母亲总是会做麻婆豆腐。（编者：话说冶龍的文化里真的会有父亲这个概念吗）\n\n这道菜肴仍在冶龍的保密配方列表中，私自烹饪将遭到严厉的处罚。</description>
 		<descriptionHyperlinks>
 			<HediffDef>NY_hediff_MapoTofu</HediffDef>
 		</descriptionHyperlinks>
@@ -245,5 +252,80 @@
 				</li>
 			</outcomeDoers>
 		</ingestible>
+	</ThingDef>
+
+	<ThingDef ParentName="MealBaseIngredientless">
+		<defName>NY_WhiteAngelicaPoriaSoup</defName>
+		<label>枸杞白芷茯苓汤</label>
+		<description>一剂深褐色的药汤，由冶龍医师采用多种药材精心熬制而成。虽不能包治百病，但对大多数已知疫症确有奇效，在冶龍的故乡挽救了许多的生命。\n\n这道汤剂具体的配方被冶龍严密保守着，无数刺探者都已人间蒸发。</description>
+		<statBases>
+			<MarketValue>100</MarketValue>
+			<Nutrition>0.5</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Item/Meal/NY_WhiteAngelicaPoriaSoup</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="ForgingDragon.IngestionOutcomeDoer_MakeImmune" />
+			</outcomeDoers>
+			<preferability>NeverForNutrition</preferability>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+		</ingestible>
+		<thingCategories Inherit="False">
+			<li>NY_DragonFood</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef ParentName="MealBaseIngredientless">
+		<defName>NY_MealGingerCongee</defName>
+		<label>姜丝白粥</label>
+		<description>用大米熬煮而成的白粥，放了姜丝驱寒，味道寡淡但至少能填饱肚子，温暖身体。在冶龍的记忆里，小时候染上风寒，总要喝上这样的一碗白粥。</description>
+		<descriptionHyperlinks>
+			<HediffDef>NY_hediff_Cold</HediffDef>
+		</descriptionHyperlinks>
+		<statBases>
+			<Nutrition>0.9</Nutrition>
+			<WorkToMake>360</WorkToMake>
+			<MarketValue>15</MarketValue>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Item/Meal/NY_GingerCongee</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="ForgingDragon.IngestionOutcomeDoer_MakeImmune">
+					<disease>NY_hediff_Cold</disease>
+				</li>
+			</outcomeDoers>
+			<preferability>MealSimple</preferability>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+		</ingestible>
+		<thingCategories Inherit="False">
+			<li>NY_DragonFood</li>
+		</thingCategories>
+		<recipeMaker>
+			<bulkRecipeCount>10</bulkRecipeCount>
+			<recipeUsers>
+				<li>Campfire</li>
+				<li>ElectricStove</li>
+				<li>FueledStove</li>
+				<li>NY_TableFurnace</li>
+			</recipeUsers>
+			<workSkill>Cooking</workSkill>
+			<effectWorking>Cook</effectWorking>
+			<workSpeedStat>CookSpeed</workSpeedStat>
+			<soundWorking>Recipe_CookMeal</soundWorking>
+			<researchPrerequisite>ForgingDragonStarting</researchPrerequisite>
+			<displayPriority>1270.015</displayPriority>
+		</recipeMaker>
+		<costList>
+			<RawRice>8</RawRice>
+			<NY_RawGinger>2</NY_RawGinger>
+		</costList>
 	</ThingDef>
 </Defs>

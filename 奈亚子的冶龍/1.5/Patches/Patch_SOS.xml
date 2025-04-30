@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Save Our Ship 2</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[@Name = "NY_BlackBirdArmorBase"]/comps</xpath>
+					<value>
+						<li>
+							<compClass>SaveOurShip2.CompEVA</compClass>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[@Name = "NY_BlackBirdArmorBase"]</xpath>
+					<value>
+						<equippedStatOffsets>
+							<VacuumSpeedMultiplier>4</VacuumSpeedMultiplier>
+							<DecompressionResistance>0.75</DecompressionResistance>
+						</equippedStatOffsets>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[@Name = "NY_BlackBirdHelmetBase"]/comps</xpath>
+					<value>
+						<li>
+							<compClass>SaveOurShip2.CompEVA</compClass>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[@Name = "NY_BlackBirdHelmetBase"]</xpath>
+					<value>
+						<equippedStatOffsets>
+							<HypoxiaResistance>1</HypoxiaResistance>
+							<DecompressionResistance>0.25</DecompressionResistance>
+						</equippedStatOffsets>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

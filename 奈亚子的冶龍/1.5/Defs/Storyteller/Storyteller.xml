@@ -3,7 +3,7 @@
 	<StorytellerDef ParentName="BaseStoryteller">
 		<defName>NY_ForgingDragonOne</defName>
 		<label>龍嗣—绿烟萝</label>
-		<description>冶龍绿烟萝来自真龙后代的一个分支，她的性格嚣张跋扈，无论是天灾、战争或是瘟疫，在她眼里没有什么是她不能掌控的。如果由她来讲述故事，永不间断的恶劣天气与自然灾害就会在你的坟前肆虐不止。</description>
+		<description>冶龍绿烟萝来自真龙后代的一个分支，她的性格嚣张跋扈，无论是天灾、战争或是瘟疫，在她眼里没有什么是她不能掌控的。如果由她来讲述故事，永不间断的恶劣天气与自然灾害就会在你的坟前肆虐不止。\n（该叙述者拥有一系列专属负面事件，难度较高，请玩家谨慎选择）</description>
 		<portraitLarge>UI/Storytellers/Dragon</portraitLarge>
 		<portraitTiny>UI/Storytellers/DragonTiny</portraitTiny>
 		<listOrder>50</listOrder>
@@ -12,7 +12,7 @@
 			<li Class="StorytellerCompProperties_ClassicIntro"/>
 			<!-- Home threats -->
 			<li Class="StorytellerCompProperties_CategoryMTB">
-				<category>NY_ForgingDragon_Weather</category>
+				<category>NY_ForgingDragon_Weather</category><!--天灾-->
 				<allowedTargetTags>
 					<li>Map_PlayerHome</li>
 				</allowedTargetTags>
@@ -20,13 +20,27 @@
 				<mtbDays>4</mtbDays>
 			</li>
 			<li Class="StorytellerCompProperties_CategoryMTB">
-				<category>NY_ForgingDragon_Disease</category>
+				<category>NY_ForgingDragon_Disease</category><!--瘟疫-->
 				<allowedTargetTags>
 					<li>Caravan</li>
 					<li>Map_PlayerHome</li>
 				</allowedTargetTags>
 				<minDaysPassed>9</minDaysPassed>
 				<mtbDays>4</mtbDays>
+			</li>
+			<li Class="StorytellerCompProperties_SingleOnceFixed">
+				<incident>NY_ImmortalIronImpact</incident><!--送神铁-->
+				<fireAfterDaysPassed>15</fireAfterDaysPassed>
+				<allowedTargetTags>
+					<li>Map_PlayerHome</li>
+				</allowedTargetTags>
+			</li>
+			<li Class="StorytellerCompProperties_SingleOnceFixed">
+				<incident>NY_DigSurvival</incident><!--送双龙-->
+				<fireAfterDaysPassed>30</fireAfterDaysPassed>
+				<allowedTargetTags>
+					<li>Map_PlayerHome</li>
+				</allowedTargetTags>
 			</li>
 			<li Class="StorytellerCompProperties_OnOffCycle">
 				<category>ThreatBig</category>

@@ -38,7 +38,6 @@
 			<li>BodyType</li>
 			<li>EyeColor</li>
 			<li>HairStyle</li>
-			<li>SkinColor</li>
 			<li>SkinColorOverride</li>
 		</exclusionTags>
 	</GeneDef>
@@ -80,7 +79,7 @@
 		<biostatCpx>3</biostatCpx>
 		<biostatMet>4</biostatMet>
 		<statOffsets>
-			<ComfyTemperatureMin>-18</ComfyTemperatureMin>
+			<ComfyTemperatureMin>-21</ComfyTemperatureMin>
 			<ComfyTemperatureMax>174</ComfyTemperatureMax>
 		</statOffsets>
 		<forcedHeadTypes>

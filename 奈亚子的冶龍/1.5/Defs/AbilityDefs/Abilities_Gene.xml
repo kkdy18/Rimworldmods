@@ -1,31 +1,36 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<AbilityDef>
-		<defName>NY_ability_LoongFrenzy</defName>
-		<label>龙脊穿心</label>
-		<description>纯种冶龍所掌握的特殊战斗技巧，通过刺激脊髓神经与加速血液流动激发潜能，在短时间内获得狂暴的力量。</description>
-		<iconPath>UI/Abilities/NY_LoongFrenzy</iconPath>
-		<cooldownTicksRange>60000</cooldownTicksRange>
+	<AbilityDef Name="NY_AI_AbilityBase" Abstract="True">
 		<hostile>false</hostile>
 		<aiCanUse>true</aiCanUse>
 		<groupAbility>true</groupAbility>
 		<ai_IsOffensive>true</ai_IsOffensive>
 		<targetRequired>false</targetRequired>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+			</targetParams>
+			<targetable>false</targetable>
+			<drawAimPie>false</drawAimPie>
+			<requireLineOfSight>false</requireLineOfSight>
+			<nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+		</verbProperties>
+	</AbilityDef>
+	
+	<AbilityDef ParentName="NY_AI_AbilityBase">
+		<defName>NY_ability_LoongFrenzy</defName>
+		<label>龙脊穿心</label>
+		<description>纯种冶龍所掌握的特殊战斗技巧，通过刺激脊髓神经与加速血液流动激发潜能，在短时间内获得狂暴的力量。</description>
+		<iconPath>UI/Abilities/NY_LoongFrenzy</iconPath>
+		<cooldownTicksRange>60000</cooldownTicksRange>
 		<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
 		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
 		<statBases>
 			<Ability_Duration>30</Ability_Duration>
 		</statBases>
 		<verbProperties>
-			<verbClass>Verb_CastAbility</verbClass>
 			<warmupTime>1</warmupTime>
-			<targetable>false</targetable>
-			<drawAimPie>false</drawAimPie>
-			<requireLineOfSight>false</requireLineOfSight>
-			<nonInterruptingSelfCast>true</nonInterruptingSelfCast>
-			<targetParams>
-				<canTargetSelf>true</canTargetSelf>
-			</targetParams>
 		</verbProperties>
 		<comps>
 			<li Class="CompProperties_AbilityGiveHediff">
@@ -150,17 +155,13 @@
 		</scalers>
 	</FleckDef>
 
-	<AbilityDef>
+	<AbilityDef ParentName="NY_AI_AbilityBase">
 		<defName>NY_ability_LoongCraft</defName>
 		<label>青花神工</label>
 		<description>青花瓷种冶龍所掌握的天赋神通，通过某种古老的仪式激发自身潜能从而在一定时间内获得超凡的行动力与无尽的精力。</description>
 		<iconPath>UI/Abilities/NY_LoongCraft</iconPath>
 		<cooldownTicksRange>300000</cooldownTicksRange>
-		<hostile>false</hostile>
 		<aiCanUse>false</aiCanUse>
-		<groupAbility>true</groupAbility>
-		<ai_IsOffensive>true</ai_IsOffensive>
-		<targetRequired>false</targetRequired>
 		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
 		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
 		<sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
@@ -169,15 +170,7 @@
 			<Ability_Duration>1000</Ability_Duration>
 		</statBases>
 		<verbProperties>
-			<verbClass>Verb_CastAbility</verbClass>
 			<warmupTime>2</warmupTime>
-			<targetable>false</targetable>
-			<drawAimPie>false</drawAimPie>
-			<requireLineOfSight>false</requireLineOfSight>
-			<nonInterruptingSelfCast>true</nonInterruptingSelfCast>
-			<targetParams>
-				<canTargetSelf>true</canTargetSelf>
-			</targetParams>
 		</verbProperties>
 		<comps>
 			<li Class="CompProperties_AbilityGiveHediff">
@@ -189,33 +182,63 @@
 		</comps>
 	</AbilityDef>
 
-	<AbilityDef>
+	<EffecterDef>
+		<defName>NY_effecter_LoongCraft</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+				<fleckDef>NY_LoongCraft</fleckDef>
+				<burstCount>1</burstCount>
+				<chancePeriodTicks>120</chancePeriodTicks>
+				<chancePerTick>1</chancePerTick>
+				<rotation>-150~150</rotation>
+				<rotationRate>0</rotationRate>
+				<positionRadius>0.04</positionRadius>
+				<positionOffset>(0, 0, -0.15)</positionOffset>
+				<useTargetABodyAngle>true</useTargetABodyAngle>
+				<scale>0.25~0.4</scale>
+				<color>(1, 1, 1)</color>
+				<fleckUsesAngleForVelocity>false</fleckUsesAngleForVelocity>
+				<spawnLocType>OnSource</spawnLocType>
+			</li>
+		</children>
+	</EffecterDef>
+
+	<FleckDef ParentName="FleckBase_Thrown">
+		<defName>NY_LoongCraft</defName>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<fadeInTime>1</fadeInTime>
+		<solidTime>0</solidTime>
+		<fadeOutTime>1</fadeOutTime>
+		<growthRate>0</growthRate>
+		<useAttachLink>True</useAttachLink>
+		<attachedToHead>True</attachedToHead>
+		<graphicData>
+			<texPath>Things/Mote/NY_LoongGlow</texPath>
+			<graphicClass>Graphic_Fleck</graphicClass>
+			<shaderType>MoteGlow</shaderType>
+			<shaderParameters>
+				<_Color2>(0.5, 0.5, 1, 0.5)</_Color2>
+				<_Interval>0.1</_Interval>
+			</shaderParameters>
+			<drawSize>(6, 6)</drawSize>
+		</graphicData>
+	</FleckDef>
+
+	<AbilityDef ParentName="NY_AI_AbilityBase">
 		<defName>NY_ability_LoongSmoke</defName>
 		<label>玉龙生烟</label>
 		<description>白玉种冶龍所掌握的天赋神通，可以在行动的同时释放大量烟雾遮蔽身形。</description>
 		<iconPath>UI/Abilities/NY_LoongSmoke</iconPath>
 		<cooldownTicksRange>120000</cooldownTicksRange>
 		<!-- 两天 -->
-		<hostile>false</hostile>
-		<aiCanUse>true</aiCanUse>
-		<groupAbility>true</groupAbility>
-		<ai_IsOffensive>true</ai_IsOffensive>
-		<targetRequired>false</targetRequired>
 		<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
 		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
 		<statBases>
 			<Ability_Duration>15</Ability_Duration>
 		</statBases>
 		<verbProperties>
-			<verbClass>Verb_CastAbility</verbClass>
 			<warmupTime>0.5</warmupTime>
-			<targetable>false</targetable>
-			<drawAimPie>false</drawAimPie>
-			<requireLineOfSight>false</requireLineOfSight>
-			<nonInterruptingSelfCast>true</nonInterruptingSelfCast>
-			<targetParams>
-				<canTargetSelf>true</canTargetSelf>
-			</targetParams>
 		</verbProperties>
 		<comps>
 			<li Class="CompProperties_AbilityGiveHediff">
@@ -231,8 +254,8 @@
 		<defName>NY_effecter_SmokeReleasing</defName>
 		<children>
 			<!-- <li> -->
-				<!-- <subEffecterClass>SubEffecter_Sustainer</subEffecterClass> -->
-				<!-- <soundDef>GasReleasing</soundDef> -->
+			<!-- <subEffecterClass>SubEffecter_Sustainer</subEffecterClass> -->
+			<!-- <soundDef>GasReleasing</soundDef> -->
 			<!-- </li> -->
 			<li>
 				<subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
@@ -543,17 +566,13 @@
 		</scalers>
 	</FleckDef>
 
-	<AbilityDef>
+	<AbilityDef ParentName="NY_AI_AbilityBase">
 		<defName>NY_ability_LoongMine</defName>
 		<label>岩龙搬山</label>
 		<description>孔雀石种冶龍通过模仿学习其他冶龍开发出了相似的潜能激发技巧，不过她们把狂暴的力量与无尽的精力都用在了挖矿上。</description>
 		<iconPath>UI/Abilities/NY_LoongMine</iconPath>
 		<cooldownTicksRange>420000</cooldownTicksRange>
-		<hostile>false</hostile>
 		<aiCanUse>false</aiCanUse>
-		<groupAbility>true</groupAbility>
-		<ai_IsOffensive>true</ai_IsOffensive>
-		<targetRequired>false</targetRequired>
 		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
 		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
 		<sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
@@ -562,15 +581,7 @@
 			<Ability_Duration>1000</Ability_Duration>
 		</statBases>
 		<verbProperties>
-			<verbClass>Verb_CastAbility</verbClass>
 			<warmupTime>2</warmupTime>
-			<targetable>false</targetable>
-			<drawAimPie>false</drawAimPie>
-			<requireLineOfSight>false</requireLineOfSight>
-			<nonInterruptingSelfCast>true</nonInterruptingSelfCast>
-			<targetParams>
-				<canTargetSelf>true</canTargetSelf>
-			</targetParams>
 		</verbProperties>
 		<comps>
 			<li Class="CompProperties_AbilityGiveHediff">
@@ -657,32 +668,20 @@
 		</scalers>
 	</FleckDef>
 
-	<AbilityDef>
+	<AbilityDef ParentName="NY_AI_AbilityBase">
 		<defName>NY_ability_LoongGroupArmor</defName>
 		<label>积甲山齐</label>
 		<description>孔雀石种冶龍所掌握的天赋神通，能操控矿物质在自己与周围同伴的身上构造出轻便坚固的临时护甲。</description>
 		<iconPath>UI/Abilities/NY_LoongGroupArmor</iconPath>
 		<cooldownTicksRange>180000</cooldownTicksRange>
-		<hostile>false</hostile>
-		<aiCanUse>true</aiCanUse>
-		<groupAbility>true</groupAbility>
-		<ai_IsOffensive>true</ai_IsOffensive>
-		<targetRequired>false</targetRequired>
 		<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
 		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
 		<statBases>
 			<Ability_EffectRadius>4.9</Ability_EffectRadius>
 		</statBases>
 		<verbProperties>
-			<verbClass>Verb_CastAbility</verbClass>
 			<range>4.9</range>
 			<warmupTime>0.5</warmupTime>
-			<drawAimPie>false</drawAimPie>
-			<requireLineOfSight>false</requireLineOfSight>
-			<nonInterruptingSelfCast>true</nonInterruptingSelfCast>
-			<targetParams>
-				<canTargetSelf>true</canTargetSelf>
-			</targetParams>
 		</verbProperties>
 		<comps>
 			<li Class="CompProperties_AbilityGiveHediff">
@@ -693,4 +692,56 @@
 			</li>
 		</comps>
 	</AbilityDef>
+
+	<EffecterDef>
+		<defName>NY_effect_BrokenArmor</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+				<moteDef>NY_mote_BrokenArmorA</moteDef>
+				<positionRadius>0</positionRadius>
+				<burstCount>3~5</burstCount>
+				<scale>0.1~0.3</scale>
+				<spawnLocType>OnSource</spawnLocType>
+				<speed>1.5</speed>
+				<angle>0~359</angle>
+				<rotationRate>-5~40</rotationRate>
+			</li>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+				<moteDef>NY_mote_BrokenArmorB</moteDef>
+				<positionRadius>0</positionRadius>
+				<burstCount>1~3</burstCount>
+				<scale>0.1~0.3</scale>
+				<spawnLocType>OnSource</spawnLocType>
+				<speed>1.25</speed>
+				<angle>0~359</angle>
+				<rotationRate>-5~40</rotationRate>
+			</li>
+		</children>
+	</EffecterDef>
+
+	<ThingDef ParentName="NY_MoteGlow">
+		<defName>NY_mote_BrokenArmorA</defName>
+		<graphicData>
+			<texPath>Things/Mote/NY_BrokenArmorA</texPath>
+		</graphicData>
+		<mote>
+			<solidTime>0</solidTime>
+			<fadeInTime>0.2</fadeInTime>
+			<fadeOutTime>1.2</fadeOutTime>
+		</mote>
+	</ThingDef>
+
+	<ThingDef ParentName="NY_MoteGlow">
+		<defName>NY_mote_BrokenArmorB</defName>
+		<graphicData>
+			<texPath>Things/Mote/NY_BrokenArmorB</texPath>
+		</graphicData>
+		<mote>
+			<solidTime>0</solidTime>
+			<fadeInTime>0.2</fadeInTime>
+			<fadeOutTime>1.2</fadeOutTime>
+		</mote>
+	</ThingDef>
 </Defs>

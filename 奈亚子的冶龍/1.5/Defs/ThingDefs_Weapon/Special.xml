@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef ParentName="NY_DragonWeaponIndustrial">
+	<ThingDef ParentName="NY_DragonWeaponMedieval">
 		<defName>NY_GrenadeLightning</defName>
 		<label>雷符</label>
 		<description>用精血绘制了引雷咒的符纸，掷出后片刻可以引来天雷轰击，杀伤力有限但大量投掷也有可观的威力。\n\n雷符不用时务必妥善保管，符咒引发的雷击能够穿透建筑，存在火灾隐患。</description>

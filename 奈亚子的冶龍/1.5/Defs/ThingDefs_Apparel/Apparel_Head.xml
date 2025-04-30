@@ -95,9 +95,6 @@
 			<tags>
 				<li>NY_DragonCloth_Soldier</li>
 			</tags>
-			<defaultOutfitTags>
-				<li>Soldier</li>
-			</defaultOutfitTags>
 		</apparel>
 		<costList>
 			<NY_RefinedIron>50</NY_RefinedIron>
@@ -156,9 +153,6 @@
 			</layers>
 			<tags>
 			</tags>
-			<defaultOutfitTags>
-				<li>Soldier</li>
-			</defaultOutfitTags>
 		</apparel>
 		<costList>
 			<NY_RefinedIron>20</NY_RefinedIron>

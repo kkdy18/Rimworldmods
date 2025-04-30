@@ -133,6 +133,8 @@
 			</li>
 			<li Class="ForgingDragon.TCP_JoinPawn">
 				<pawnKind>NY_DragonAlone</pawnKind>
+				<quest>NY_LoongWandererJoins</quest>
+				<!--<ticks>1000</ticks>-->
 			</li>
 			<li Class="CompProperties_FireOverlay">
 				<fireSize>0.4</fireSize>

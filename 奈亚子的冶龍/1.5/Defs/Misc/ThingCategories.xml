@@ -3,7 +3,7 @@
 	<ThingCategoryDef>
 		<defName>NY_Resources</defName>
 		<label>冶龍珍材</label>
-		<parent>Root</parent>
+		<parent>ResourcesRaw</parent>
 		<resourceReadoutRoot>true</resourceReadoutRoot>
 		<iconPath>UI/ThingCategories/NY_Resources</iconPath>
 	</ThingCategoryDef>
@@ -16,13 +16,19 @@
 
 	<ThingCategoryDef>
 		<defName>NY_DragonWeaponMelee</defName>
-		<label>金铁破敌</label>
+		<label>近战兵器</label>
 		<parent>NY_DragonWeapon</parent>
 	</ThingCategoryDef>
 
 	<ThingCategoryDef>
 		<defName>NY_DragonWeaponRanged</defName>
-		<label>制胜百里</label>
+		<label>远程兵器</label>
+		<parent>NY_DragonWeapon</parent>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>NY_DragonWeaponImmortal</defName>
+		<label>神珍兵器</label>
 		<parent>NY_DragonWeapon</parent>
 	</ThingCategoryDef>
 
