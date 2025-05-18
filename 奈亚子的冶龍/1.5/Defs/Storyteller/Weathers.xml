@@ -223,7 +223,7 @@
 		</overlayClasses>
 		<eventMakers>
 			<li>
-				<averageInterval>180</averageInterval>
+				<averageInterval>600</averageInterval>
 				<eventClass>WeatherEvent_LightningFlash</eventClass>
 			</li>
 			<li>

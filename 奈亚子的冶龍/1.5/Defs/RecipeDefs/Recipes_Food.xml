@@ -158,6 +158,7 @@
 				<li>InsectJelly</li>
 				<li MayRequire="Ludeon.RimWorld.Anomaly">Meat_Twisted</li>
 				<li>Meat_ForgingDragon</li>
+				<li>NY_RawGinger</li>
 			</disallowedThingDefs>
 		</defaultIngredientFilter>
 		<allowMixingIngredients>true</allowMixingIngredients>

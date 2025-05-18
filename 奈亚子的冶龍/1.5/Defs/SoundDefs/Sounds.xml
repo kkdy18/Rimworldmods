@@ -93,4 +93,19 @@
 			</li>
 		</subSounds>
 	</SoundDef>
+
+	<SoundDef>
+		<defName>NY_Fan</defName>
+		<context>MapOnly</context>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>NY_Loong/NY_Fan</clipPath>
+					</li>
+				</grains>
+				<volumeRange>40~60</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
 </Defs>

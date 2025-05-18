@@ -1,0 +1,13 @@
+{
+  "TextureModID": "ny.smeltedloong",
+  "ItemDefName": "NY_BrassIronSwordA",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.398684442,
+  "OffY": -0.0355260745,
+  "Rotation": 30.0,
+  "HandsMode": 1,
+  "BladeStart": 0.148684457,
+  "BladeEnd": 0.967105269,
+  "MeleeWeaponType": 58
+}

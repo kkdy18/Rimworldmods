@@ -3,7 +3,7 @@
 	<ThingDef Name="NY_LoongResourceBase" ParentName="ResourceBase" Abstract="True">
 		<useHitPoints>false</useHitPoints>
 		<healthAffectsPrice>false</healthAffectsPrice>
-		<thingCategories>
+		<thingCategories Inherit="False">
 			<li>NY_Resources</li>
 		</thingCategories>
 	</ThingDef>
@@ -101,6 +101,7 @@
 		<defName>NY_ImmortalIron</defName>
 		<label>神珍铁</label>
 		<description>被冶龍严密保管的奇特金属，是名为“神兵”的战略武器的核心素材。神珍铁的物理性质与寻常金属相差极大，一般情况下无法用于神兵以外的物品的制作。</description>
+		<techLevel>Spacer</techLevel>
 		<graphicData>
 			<texPath>Things/Item/NY_ImmortalIron</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -284,11 +285,12 @@
 	</ThingDef>
 
 	<ThingDef ParentName="NY_LoongResourceBase">
-		<defName>NY_SLBB_Blueprint</defName>
+		<defName>NY_BlackbirdRoll</defName>
 		<label>玄鸟卫锻铸密卷</label>
 		<description>来自冶龍的神秘技术图纸，记录着远超冶龍现有科技水平的锻造技术与武装原型，即使最为年长的冶龍工匠也只能望图兴叹，其根源可以追溯到传说中的真龙之爪牙“玄鸟卫”。\n\n密卷被设下了特殊的保护措施防止外人窥探冶龍的机密，常态不怕刀砍火烧，但强行打开只会得到一抹飞灰。有研究者认为延缓保护措施的生效并非不可能，一个不长的窗口期足以吸干图纸中的所有知识。\n\n对于普通冶龍来说，不朽不坏的密卷本身或许比其中记录的知识更有价值，外人拿真金白银换了这“无用”的密卷，必然被此神物震撼，她们得了金银又扬了冶龍威望，岂不美哉。</description>
+		<techLevel>Spacer</techLevel>
 		<graphicData>
-			<texPath>Things/Item/Resource/NY_SLBB_Blueprint</texPath>
+			<texPath>Things/Item/Resource/NY_BlackbirdRoll</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -326,7 +328,7 @@
 	
 	<ThingDef ParentName="NY_LoongResourceMetal">
 		<defName>NY_BlackbirdIron</defName>
-		<label>玄羽铁</label>
+		<label>玄羽钢</label>
 		<description>呈现出鸦羽光泽的高强度黑色合金，质地轻盈且易于加工，冶炼技术与原料配比皆来自神秘的冶龍禁军“玄鸟卫”，据说它也是锻造玄鸟卫装备的主材料。</description>
 		<graphicData>
 			<texPath>Things/Item/NY_BlackbirdIron</texPath>

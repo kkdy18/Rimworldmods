@@ -107,10 +107,10 @@
 			<li>
 				<label>刀柄</label>
 				<capacities>
-					<li>Blunt</li>
+					<li>Poke</li>
 				</capacities>
-				<power>10</power>
-				<cooldownTime>1.5</cooldownTime>
+				<power>4</power>
+				<cooldownTime>0.5</cooldownTime>
 				<extraMeleeDamages>
 					<li>
 						<def>Stun</def>
@@ -161,10 +161,10 @@
 			<li>
 				<label>戟柄</label>
 				<capacities>
-					<li>Blunt</li>
+					<li>Poke</li>
 				</capacities>
-				<power>10</power>
-				<cooldownTime>2</cooldownTime>
+				<power>4</power>
+				<cooldownTime>0.5</cooldownTime>
 				<extraMeleeDamages>
 					<li>
 						<def>Stun</def>
@@ -175,10 +175,11 @@
 			</li>
 			<li>
 				<label>戟尖</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
 				<capacities>
 					<li>NY_EvilBreak</li>
 				</capacities>
-				<power>30</power>
+				<power>28</power>
 				<armorPenetration>2</armorPenetration>
 				<cooldownTime>3.5</cooldownTime>
 			</li>
@@ -205,6 +206,8 @@
 		<graphicData>
 			<texPath>Things/Weapon/NY_DragonFeatherSwordGreen</texPath>
 		</graphicData>
+		<soundInteract MayRequire="Ludeon.RimWorld.Royalty">Interact_MonoSword</soundInteract>
+		<meleeHitSound MayRequire="Ludeon.RimWorld.Royalty">MeleeHit_MonoSword</meleeHitSound>
 		<statBases>
 			<WorkToMake>120000</WorkToMake>
 		</statBases>
@@ -218,7 +221,7 @@
 					<li>Blunt</li>
 				</capacities>
 				<power>10</power>
-				<cooldownTime>1</cooldownTime>
+				<cooldownTime>0.5</cooldownTime>
 			</li>
 			<li>
 				<label>凤鸣尖</label>
@@ -261,6 +264,8 @@
 		<graphicData>
 			<texPath>Things/Weapon/NY_DragonFeatherSwordRed</texPath>
 		</graphicData>
+		<soundInteract MayRequire="Ludeon.RimWorld.Royalty">Interact_MonoSword</soundInteract>
+		<meleeHitSound MayRequire="Ludeon.RimWorld.Royalty">MeleeHit_MonoSword</meleeHitSound>
 		<statBases>
 			<WorkToMake>120000</WorkToMake>
 		</statBases>
@@ -268,14 +273,6 @@
 			<NY_RedIron>100</NY_RedIron>
 		</costList>
 		<tools>
-			<li>
-				<label>刀柄</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>10</power>
-				<cooldownTime>1</cooldownTime>
-			</li>
 			<li>
 				<label>赤羽刃</label>
 				<capacities>
@@ -308,6 +305,8 @@
 		<graphicData>
 			<texPath>Things/Weapon/NY_DragonStarSword</texPath>
 		</graphicData>
+		<soundInteract MayRequire="Ludeon.RimWorld.Royalty">Interact_MonoSword</soundInteract>
+		<meleeHitSound MayRequire="Ludeon.RimWorld.Royalty">MeleeHit_MonoSword</meleeHitSound>
 		<statBases>
 			<WorkToMake>120000</WorkToMake>
 		</statBases>
@@ -321,8 +320,8 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>10</power>
-				<cooldownTime>1</cooldownTime>
+				<power>4</power>
+				<cooldownTime>0.5</cooldownTime>
 			</li>
 			<li>
 				<label>剑刃</label>
@@ -437,6 +436,183 @@
 			<explosionEffect>ExtinguisherExplosion</explosionEffect>
 			<soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
 			<soundAmbient>MortarRound_Ambient</soundAmbient>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="NY_DragonWeaponImmortalRanged">
+		<defName>NY_TrueLoongPipa</defName>
+		<label>龍啸琵琶</label>
+		<description>形似乐器的神兵，神珍铁锻造的弦线能将微小的震动放大为强烈的激波，伴随着清脆的琵琶声，巨大的能量将如怒龙呼啸粉碎任何物理结构，驾驭神兵者随性的弹奏将成为敌人的葬歌。\n\n只有冶龍的血脉才能承载这件神兵的力量，外族贸然使用只会被暴乱的龙吟撕碎。</description>
+		<graphicData>
+			<texPath>Things/Weapon/NY_TrueLoongPipa</texPath>
+		</graphicData>
+		<soundInteract>NY_Pipa_A</soundInteract>
+		<statBases>
+			<AccuracyTouch>1</AccuracyTouch>
+			<AccuracyShort>1.2</AccuracyShort>
+			<AccuracyMedium>0.9</AccuracyMedium>
+			<AccuracyLong>0.8</AccuracyLong>
+			<RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li Class="ForgingDragon.VerbProperties_DamageSelf">
+				<verbClass>ForgingDragon.Verb_DamageSelf</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>NY_SuperPipaWave</defaultProjectile>
+				<warmupTime>1</warmupTime>
+				<range>44.9</range>
+				<burstShotCount>16</burstShotCount>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<damageDef>NY_damage_ShockWave</damageDef>
+				<damageAmount>9</damageAmount>
+				<checkGene>true</checkGene>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>龙威拒斥</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>3</cooldownTime>
+				<extraMeleeDamages>
+					<li>
+						<def>Stun</def>
+						<amount>10</amount>
+					</li>
+				</extraMeleeDamages>
+			</li>
+		</tools>
+		<burnableByRecipe>true</burnableByRecipe>
+		<comps>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponGun</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>NY_SuperPipaWave</defName>
+		<label>破灭龙吟</label>
+		<graphicData>
+			<texPath>Things/Projectile/NY_PipaWave</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(1.2,1.2)</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>NY_damage_ShockWave</damageDef>
+			<damageAmountBase>25</damageAmountBase>
+			<stoppingPower>10</stoppingPower>
+			<speed>120</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="NY_DragonWeaponImmortalRanged">
+		<defName>NY_LoongPalmLeafFan</defName>
+		<label>神风芭蕉扇</label>
+		<description>以冶龍神话传说中的法宝为原型设计的神兵，神珍铁的奇异性质将原本汇聚风力释放“神风”的构造进一步强化，挥扇发射的不再是风刃而是由暴风压缩而成的风团，不稳定的风团会在爆发的瞬间切割周遭物体，造成大范围的破坏。\n\n据记载，如果不断挥扇搅动气流却不发射，汇聚的风暴将会产生新的变化。</description>
+		<graphicData>
+			<texPath>Things/Weapon/NY_LoongPalmLeafFan</texPath>
+		</graphicData>
+		<statBases>
+			<AccuracyTouch>0.9</AccuracyTouch>
+			<AccuracyShort>0.9</AccuracyShort>
+			<AccuracyMedium>0.7</AccuracyMedium>
+			<AccuracyLong>0.6</AccuracyLong>
+			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>NY_SuperFanWind</defaultProjectile>
+				<warmupTime>2</warmupTime>
+				<range>23.9</range>
+				<forcedMissRadius>1.9</forcedMissRadius>
+				<soundCast>Pawn_Melee_SmallScratch_Miss</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>呼扇</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>3</cooldownTime>
+				<extraMeleeDamages>
+					<li>
+						<def>Stun</def>
+						<amount>10</amount>
+					</li>
+				</extraMeleeDamages>
+			</li>
+		</tools>
+		<burnableByRecipe>true</burnableByRecipe>
+		<comps>
+			<li Class="CompProperties_EquippableAbility">
+				<abilityDef>NY_ability_SpawnTornado</abilityDef>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponGun</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<AbilityDef>
+		<defName>NY_ability_SpawnTornado</defName>
+		<label>风暴召来</label>
+		<description>以芭蕉扇长时间搅动气流引发龙卷风，这种做法相当危险并且控制风暴的反作用力对神兵造成的损伤需要漫长的时间修复，请谨慎使用。</description>
+		<iconPath>UI/Abilities/NY_SpawnTornado</iconPath>
+		<cooldownTicksRange>900000</cooldownTicksRange>
+		<aiCanUse>true</aiCanUse>
+		<sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<warmupTime>3</warmupTime>
+			<ai_AvoidFriendlyFireRadius>10</ai_AvoidFriendlyFireRadius>
+			<colonyWideTaleDef>TornadoFromItem</colonyWideTaleDef>
+			<range>23.9</range>
+			<useableInPocketMaps>false</useableInPocketMaps>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilitySpawn">
+				<thingDef>Tornado</thingDef>
+				<allowOnBuildings>False</allowOnBuildings>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>NY_SuperFanWind</defName>
+		<label>暴虐阴风</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/NY_PipaWave</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(1.2,1.2)</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>NY_damage_SuperFanWind</damageDef>
+			<explosionRadius>7.9</explosionRadius>
+			<damageAmountBase>20</damageAmountBase>
+			<soundExplode>Explosion_EMP</soundExplode>
+			<explosionEffect>ExtinguisherExplosion</explosionEffect>
+			<soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+			<soundAmbient>MortarRound_Ambient</soundAmbient>
+			<speed>55</speed>
 		</projectile>
 	</ThingDef>
 </Defs>

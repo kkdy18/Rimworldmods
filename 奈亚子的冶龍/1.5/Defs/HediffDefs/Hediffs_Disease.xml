@@ -7,8 +7,6 @@
 		<initialSeverity>0.001</initialSeverity>
 		<makesSickThought>true</makesSickThought>
 		<hediffClass>HediffWithComps</hediffClass>
-		<alwaysAllowMothball>True</alwaysAllowMothball>
-		<alwaysAllowMothballCached>True</alwaysAllowMothballCached>
 		<defaultLabelColor>(0.8, 0.8, 0.35)</defaultLabelColor>
 		<removeOnRedressChanceByDaysCurve>
 			<points>
@@ -59,7 +57,7 @@
 				<severityPerDayNotImmune>0.4</severityPerDayNotImmune>
 				<immunityPerDaySick>0.2</immunityPerDaySick>
 				<severityPerDayImmune>-0.2</severityPerDayImmune>
-				<immunityPerDayNotSick>-0.01</immunityPerDayNotSick>
+				<immunityPerDayNotSick>-0.5</immunityPerDayNotSick>
 			</li>
 			<li Class="ForgingDragon.HCP_Contagion">
 				<Infectivity>2.1</Infectivity>
@@ -162,10 +160,11 @@
 		</stages>
 	</HediffDef>
 
-	<HediffDef ParentName="NY_HediffBase">
+	<HediffDef ParentName="ChronicDiseaseBase">
 		<defName>NY_hediff_SmallpoxBleb</defName>
 		<label>龙鳞疹</label>
 		<description>感染天花后产生的难以痊愈的疱疹，即使疾病治愈也不会完全消失。</description>
+		<cureAllAtOnceIfCuredByItem>true</cureAllAtOnceIfCuredByItem>
 		<stages>
 			<li>
 				<painOffset>0.1</painOffset>

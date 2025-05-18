@@ -9,6 +9,7 @@
 		<everCurableByItem>false</everCurableByItem>
 		<alwaysAllowMothball>True</alwaysAllowMothball>
 		<alwaysAllowMothballCached>True</alwaysAllowMothballCached>
+		<keepOnBodyPartRestoration>true</keepOnBodyPartRestoration>
 	</HediffDef>
 
 	<!--伤害类-->
@@ -67,6 +68,54 @@
 		</comps>
 	</HediffDef>
 
+	<HediffDef ParentName="NY_HediffBase">
+		<defName>NY_hediff_BoneBreak</defName>
+		<label>震骨</label>
+		<description>无序的冲击力在体内横冲直撞，微小的损伤不断累积。</description>
+		<defaultLabelColor>(0.8, 0.8, 0.8)</defaultLabelColor>
+		<keepOnBodyPartRestoration>false</keepOnBodyPartRestoration>
+		<stages>
+			<li>
+				<label>略有不适</label>
+				<painOffset>0.2</painOffset>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<postFactor>0.9</postFactor>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>浑身酸痛</label>
+				<painOffset>0.4</painOffset>
+				<minSeverity>0.3</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<postFactor>0.75</postFactor>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>翻江倒海</label>
+				<painOffset>0.8</painOffset>
+				<minSeverity>0.6</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<postFactor>0.5</postFactor>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-1</severityPerDay>
+				<showDaysToRecover>true</showDaysToRecover>
+			</li>
+		</comps>
+	</HediffDef>
+
 	<!--杂项-->
 	<HediffDef ParentName="NY_HediffBase">
 		<defName>NY_hediff_KidneyOverdraft</defName>
@@ -74,6 +123,7 @@
 		<description>作为奴隶能活到被冶龍贩卖究竟是一种幸运还是不幸？总之这个人的灵魂或者别的什么都已经被榨干了，需要时间来治愈他麻木的精神。</description>
 		<defaultLabelColor>(0.8, 0.8, 0.35)</defaultLabelColor>
 		<everCurableByItem>true</everCurableByItem>
+		<keepOnBodyPartRestoration>false</keepOnBodyPartRestoration>
 		<stages>
 			<li>
 				<opinionOfOthersFactor>0</opinionOfOthersFactor>
@@ -298,7 +348,6 @@
 		<defaultLabelColor>(0.8, 1, 0.8)</defaultLabelColor>
 		<stages>
 			<li>
-				<regeneration>10</regeneration>
 				<totalBleedFactor>0.5</totalBleedFactor>
 				<statOffsets>
 					<ImmunityGainSpeed>1</ImmunityGainSpeed>
@@ -308,6 +357,10 @@
 			</li>
 		</stages>
 		<comps>
+			<li Class="ForgingDragon.HCP_Regeneration">
+				<healPerSecond>0.4</healPerSecond>
+				<showHealAmount>false</showHealAmount>
+			</li>
 			<li Class="HediffCompProperties_Disappears">
 				<showRemainingTime>false</showRemainingTime>
 			</li>

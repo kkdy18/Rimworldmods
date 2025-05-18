@@ -1,0 +1,13 @@
+{
+  "TextureModID": "ny.smeltedloong",
+  "ItemDefName": "NY_DragonEvilKiller",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.417752057,
+  "OffY": 0.06745649,
+  "ScaleX": 2.5,
+  "ScaleY": 2.5,
+  "BladeStart": 0.536095262,
+  "BladeEnd": 1.42130148,
+  "MeleeWeaponType": 6
+}

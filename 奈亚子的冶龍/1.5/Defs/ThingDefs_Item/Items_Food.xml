@@ -50,6 +50,8 @@
 			<preferability>NeverForNutrition</preferability>
 			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
 			<defaultNumToIngestAtOnce>1</defaultNumToIngestAtOnce>
+			<optimalityOffsetHumanlikes>-5</optimalityOffsetHumanlikes>
+			<optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>
 			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
 		</ingestible>
 		<storedConceptLearnOpportunity>DrugPolicies</storedConceptLearnOpportunity>
@@ -426,7 +428,7 @@
 		<allowedArchonexusCount>40</allowedArchonexusCount>
 	</ThingDef>
 
-	<ThingDef ParentName="MealBase">
+	<ThingDef ParentName="NY_DrinkableBase">
 		<defName>NY_MealCannedYellowPeach</defName>
 		<label>冶龍黄桃罐头</label>
 		<description>泡在糖水中的水果，封装在坚固耐磨的玻璃罐中，冶龍相信这种食品可以为病人补充营养，加快康复，对风寒病人尤其有效。在冶龍的故乡她们会取新鲜的黄桃制作这种食品，而在没有黄桃的异乡她们只能努力发挥自己的想象力了。</description>
@@ -439,17 +441,16 @@
 			<Nutrition>0.5</Nutrition>
 			<WorkToMake>360</WorkToMake>
 			<MarketValue>24</MarketValue>
-			<Flammability>0</Flammability>
 			<MaxHitPoints>500</MaxHitPoints>
 			<DeteriorationRate>0</DeteriorationRate>
 		</statBases>
 		<ingestible>
-			<preferability>MealFine</preferability>
-			<tasteThought>NY_EatCannedYellowPeach</tasteThought>
-			<optimalityOffsetHumanlikes>-5</optimalityOffsetHumanlikes>
-			<optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>
-			<ingestEffect>EatVegetarian</ingestEffect>
+			<foodType>Meal</foodType>
 			<ingestSound>Meal_Eat</ingestSound>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestCommandString>享用{0}</ingestCommandString>
+			<ingestReportString>正在享用{0}。</ingestReportString>
+			<tasteThought>NY_EatCannedYellowPeach</tasteThought>
 			<outcomeDoers>
 				<li Class="ForgingDragon.IngestionOutcomeDoer_MakeImmune">
 					<disease>NY_hediff_Cold</disease>
@@ -475,6 +476,15 @@
 		<costList>
 			<RawBerries>6</RawBerries>
 		</costList>
+		<comps Inherit="False">
+			<li Class="CompProperties_Drug">
+				<listOrder>1270.4</listOrder>
+			</li>
+			<li Class="CompProperties_Forbiddable" />
+			<li Class="CompProperties_Ingredients">
+				<splitTransferableFoodKind>true</splitTransferableFoodKind>
+			</li>
+		</comps>
 	</ThingDef>
 	
 	<!--中药-->

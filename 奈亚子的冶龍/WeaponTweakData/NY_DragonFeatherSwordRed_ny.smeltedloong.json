@@ -1,0 +1,15 @@
+{
+  "TextureModID": "ny.smeltedloong",
+  "ItemDefName": "NY_DragonFeatherSwordRed",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.223026469,
+  "OffY": -0.09539474,
+  "Rotation": 33.0,
+  "ScaleX": 2.0,
+  "ScaleY": 2.0,
+  "HandsMode": 1,
+  "BladeStart": 0.165131822,
+  "BladeEnd": 1.24671054,
+  "MeleeWeaponType": 7
+}

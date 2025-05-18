@@ -225,7 +225,7 @@
 		</requiredResearchFacilities>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
 		<requiredAnalyzed>
-			<li>NY_SLBB_Blueprint</li>
+			<li>NY_BlackbirdRoll</li>
 		</requiredAnalyzed>
 		<tab>ForgingDragonResearchTab</tab>
 		<researchViewX>3</researchViewX>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "MNS_HeatspikeGun"]/verbs/li[1]/verbClass</xpath>
+		<value>
+			<verbClass>ForgingDragon.Verb_FateShoot</verbClass>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "MNS_HeatspikeTurret"]/verbs/li[1]/verbClass</xpath>
+		<value>
+			<verbClass>ForgingDragon.Verb_FateShoot</verbClass>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName = "MNS_bullet_Heatspike"]</xpath>
+		<value>
+			<thingClass>ForgingDragon.Bullet_SmartTrace</thingClass>
+		</value>
+	</Operation>
+</Patch>

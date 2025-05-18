@@ -3,6 +3,7 @@
 	<!--玄鸟卫禁军武装-->
 	<ThingDef Name="NY_BlackBirdArmorBase" ParentName="NY_ApparelBase" Abstract="True">
 		<techLevel>Spacer</techLevel>
+		<tradeability>Sellable</tradeability>
 		<thingCategories Inherit="false">
 			<li>NY_BlackBirdArmor</li>
 		</thingCategories>
@@ -87,6 +88,7 @@
 
 	<ThingDef Name="NY_BlackBirdHelmetBase" ParentName="NY_ApparelBase" Abstract="True">
 		<techLevel>Spacer</techLevel>
+		<tradeability>Sellable</tradeability>
 		<thingCategories Inherit="false">
 			<li>NY_BlackBirdArmor</li>
 		</thingCategories>
@@ -310,6 +312,9 @@
 		<defName>NY_SLBB_GyrfalconArmor</defName>
 		<label>矛隼营禁卫甲</label>
 		<description>玄鸟卫矛隼营所配备的制式护甲。\n\n鹘袭卫，也称矛隼营禁卫，她们的防御力略逊于犀盔卫，但对恶劣环境有着更强的抵抗力，在战斗中她们装备着辅助发动迅捷打击的破障重刃，高速突袭撕裂敌方阵线并扬起烟幕掩护队友。</description>
+		<descriptionHyperlinks>
+			<AbilityDef>NY_ability_SmokeGyrfalcon</AbilityDef>
+		</descriptionHyperlinks>
 		<graphicData>
 			<texPath>Things/Apparel/NY_GyrfalconArmor/NY_GyrfalconArmor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -355,6 +360,9 @@
 		<defName>NY_SLBB_OwlArmor</defName>
 		<label>林鸮营禁卫甲</label>
 		<description>玄鸟卫林鸮营所配备的制式护甲。\n\n鸮隐卫，也称林鸮营禁卫，她们是精锐的神射手，擅长以精准射击和快速反应支援队友或执行斩首任务，较为脆弱的她们在战斗中往往需要依赖队友的保护。鸮隐卫能够利用装甲释放幻光隐去身形与操使御物术法补给箭矢弹药，也可短时间进入专注射击状态发起凶猛的火力打击。</description>
+		<descriptionHyperlinks>
+			<AbilityDef>NY_ability_InvisibleOwl</AbilityDef>
+		</descriptionHyperlinks>
 		<graphicData>
 			<texPath>Things/Apparel/NY_OwlArmor/NY_OwlArmor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

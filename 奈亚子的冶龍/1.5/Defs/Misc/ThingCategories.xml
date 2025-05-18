@@ -3,7 +3,7 @@
 	<ThingCategoryDef>
 		<defName>NY_Resources</defName>
 		<label>冶龍珍材</label>
-		<parent>ResourcesRaw</parent>
+		<parent>Root</parent>
 		<resourceReadoutRoot>true</resourceReadoutRoot>
 		<iconPath>UI/ThingCategories/NY_Resources</iconPath>
 	</ThingCategoryDef>

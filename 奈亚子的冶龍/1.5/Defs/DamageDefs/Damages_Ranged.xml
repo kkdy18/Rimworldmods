@@ -133,15 +133,15 @@
 		<buildingDamageFactorPassable>7.5</buildingDamageFactorPassable>
 		<isRanged>true</isRanged>
 		<makesAnimalsFlee>true</makesAnimalsFlee>
-		<damageEffecter>NY_effect_ShockCut</damageEffecter>
+		<damageEffecter>NY_effect_ShockCutA</damageEffecter>
 	</DamageDef>
 
 	<EffecterDef>
-		<defName>NY_effect_ShockCut</defName>
+		<defName>NY_effect_ShockCutA</defName>
 		<children>
 			<li>
 				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
-				<moteDef>NY_mote_ShockCut</moteDef>
+				<moteDef>NY_mote_ShockCutA</moteDef>
 				<positionRadius>0</positionRadius>
 				<burstCount>1</burstCount>
 				<scale>1~1.5</scale>
@@ -152,10 +152,11 @@
 		</children>
 	</EffecterDef>
 
-	<ThingDef ParentName="MoteBase">
-		<defName>NY_mote_ShockCut</defName>
+	<ThingDef ParentName="MoteBase" Name="NY_ShockCutMote">
+		<defName>NY_mote_ShockCutA</defName>
 		<graphicData>
-			<texPath>Things/Mote/NY_ShockCut</texPath>
+			<texPath>Things/Mote/NY_ShockCut/NY_ShockCutA</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>Mote</shaderType>
 			<drawSize>1</drawSize>
 		</graphicData>
@@ -167,12 +168,12 @@
 		</mote>
 	</ThingDef>
 
-	<DamageDef>
+	<DamageDef Name="NY_WindDamageBase">
 		<defName>NY_damage_WindCut</defName>
 		<label>风刃</label>
 		<workerClass>DamageWorker_AddInjury</workerClass>
 		<externalViolence>true</externalViolence>
-		<deathMessage>狂乱的疾风将{0}斩杀。</deathMessage>
+		<deathMessage>狂乱的疾风将{0}撕裂。</deathMessage>
 		<hediff>Cut</hediff>
 		<hediffSolid>Crack</hediffSolid>
 		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
@@ -182,6 +183,34 @@
 		<isRanged>true</isRanged>
 		<makesAnimalsFlee>true</makesAnimalsFlee>
 	</DamageDef>
+
+	<DamageDef ParentName="NY_WindDamageBase">
+		<defName>NY_damage_WindCutBlack</defName>
+		<damageEffecter>NY_effect_ShockCutB</damageEffecter>
+	</DamageDef>
+
+	<EffecterDef>
+		<defName>NY_effect_ShockCutB</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+				<moteDef>NY_mote_ShockCutB</moteDef>
+				<positionRadius>0</positionRadius>
+				<burstCount>1</burstCount>
+				<scale>1~1.5</scale>
+				<spawnLocType>OnSource</spawnLocType>
+				<speed>0</speed>
+				<angle>0~359</angle>
+			</li>
+		</children>
+	</EffecterDef>
+
+	<ThingDef ParentName="NY_ShockCutMote">
+		<defName>NY_mote_ShockCutB</defName>
+		<graphicData>
+			<texPath>Things/Mote/NY_ShockCut/NY_ShockCutB</texPath>
+		</graphicData>
+	</ThingDef>
 
 	<DamageDef>
 		<defName>NY_damage_SuperFanWind</defName>
@@ -206,7 +235,7 @@
 		<explosionCellFleck></explosionCellFleck>
 		<soundExplosion></soundExplosion>
 		<combatLogRules>Damage_Bomb</combatLogRules>
-		<damageEffecter>NY_effect_ShockCut</damageEffecter>
+		<damageEffecter>NY_effect_ShockCutB</damageEffecter>
 	</DamageDef>
 
 	<DamageDef>

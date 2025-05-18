@@ -8,9 +8,11 @@
 		</descriptionHyperlinks>
 		<biostatCpx>0</biostatCpx>
 		<biostatMet>0</biostatMet>
+		<statOffsets>
+			<RoyalFavorValue>3</RoyalFavorValue>
+		</statOffsets>
 		<statFactors>
 			<Fertility>0.02</Fertility>
-			<LifespanFactor>6.25</LifespanFactor>
 		</statFactors>
 		<selectionWeight>0</selectionWeight>
 		<tattoosVisible>false</tattoosVisible>
@@ -88,6 +90,13 @@
 			<li>ForgingDragonHeadBW_B</li>
 			<li>ForgingDragonHeadBW_C</li>
 		</forcedHeadTypes>
+		<hediffGiversCannotGive>
+			<li>Frail</li>
+			<li>Asthma</li>
+			<li>BadBack</li>
+			<li>Carcinoma</li>
+			<li>HeartArteryBlockage</li>
+		</hediffGiversCannotGive>
 		<forcedTraits>
 			<li>
 				<def>NY_trait_SkinBW</def>
@@ -106,6 +115,7 @@
 				<forcedBodyTypeBaby>ForgingDragonBodyBaby</forcedBodyTypeBaby>
 				<forcedBodyTypeChild>ForgingDragonBodyBW_Child</forcedBodyTypeChild>
 				<forcedBodyType>ForgingDragonBodyBW</forcedBodyType>
+				<lifeExpectancy>500</lifeExpectancy>
 			</li>
 		</modExtensions>
 	</GeneDef>
@@ -162,6 +172,11 @@
 			<li>ForgingDragonHeadCB_B</li>
 			<li>ForgingDragonHeadCB_C</li>
 		</forcedHeadTypes>
+		<hediffGiversCannotGive>
+			<li>Frail</li>
+			<li>BadBack</li>
+			<li>Carcinoma</li>
+		</hediffGiversCannotGive>
 		<forcedTraits>
 			<li>
 				<def>Tough</def>
@@ -194,6 +209,7 @@
 				<forcedBodyTypeBaby>ForgingDragonBodyBaby</forcedBodyTypeBaby>
 				<forcedBodyTypeChild>ForgingDragonBodyCB_Child</forcedBodyTypeChild>
 				<forcedBodyType>ForgingDragonBodyCB</forcedBodyType>
+				<lifeExpectancy>500</lifeExpectancy>
 			</li>
 		</modExtensions>
 	</GeneDef>
@@ -248,6 +264,14 @@
 			<li>ForgingDragonHeadWJ_B</li>
 			<li>ForgingDragonHeadWJ_C</li>
 		</forcedHeadTypes>
+		<hediffGiversCannotGive>
+			<li>Frail</li>
+			<li>Asthma</li>
+			<li>Dementia</li>
+			<li>Alzheimers</li>
+			<li>HeartArteryBlockage</li>
+			<li>Cataract</li>
+		</hediffGiversCannotGive>
 		<forcedTraits>
 			<li>
 				<def>NY_trait_EyeWJ</def>
@@ -266,6 +290,7 @@
 				<forcedBodyTypeBaby>ForgingDragonBodyBaby</forcedBodyTypeBaby>
 				<forcedBodyTypeChild>ForgingDragonBodyWJ_Child</forcedBodyTypeChild>
 				<forcedBodyType>ForgingDragonBodyWJ</forcedBodyType>
+				<lifeExpectancy>500</lifeExpectancy>
 			</li>
 		</modExtensions>
 	</GeneDef>
@@ -319,6 +344,13 @@
 			<li>ForgingDragonHeadPC_B</li>
 			<li>ForgingDragonHeadPC_C</li>
 		</forcedHeadTypes>
+		<hediffGiversCannotGive>
+			<li>Frail</li>
+			<li>Asthma</li>
+			<li>Dementia</li>
+			<li>Alzheimers</li>
+			<li>HeartArteryBlockage</li>
+		</hediffGiversCannotGive>
 		<forcedTraits>
 			<li>
 				<def>NY_trait_BeautyPC</def>
@@ -334,6 +366,7 @@
 				<forcedBodyTypeBaby>ForgingDragonBodyBaby</forcedBodyTypeBaby>
 				<forcedBodyTypeChild>ForgingDragonBodyPC_Child</forcedBodyTypeChild>
 				<forcedBodyType>ForgingDragonBodyPC</forcedBodyType>
+				<lifeExpectancy>500</lifeExpectancy>
 			</li>
 		</modExtensions>
 	</GeneDef>
@@ -389,6 +422,14 @@
 			<li>ForgingDragonHeadGP_B</li>
 			<li>ForgingDragonHeadGP_C</li>
 		</forcedHeadTypes>
+		<hediffGiversCannotGive>
+			<li>Frail</li>
+			<li>Asthma</li>
+			<li>BadBack</li>
+			<li>Cataract</li>
+			<li>Carcinoma</li>
+			<li>HeartArteryBlockage</li>
+		</hediffGiversCannotGive>
 		<forcedTraits>
 			<li>
 				<def>NY_trait_ToughGP</def>
@@ -408,6 +449,7 @@
 				<forcedBodyTypeBaby>ForgingDragonBodyBaby</forcedBodyTypeBaby>
 				<forcedBodyTypeChild>ForgingDragonBodyCB_Child</forcedBodyTypeChild>
 				<forcedBodyType>ForgingDragonBodyCB</forcedBodyType>
+				<lifeExpectancy>500</lifeExpectancy>
 			</li>
 		</modExtensions>
 	</GeneDef>
@@ -462,6 +504,14 @@
 			<li>ForgingDragonHeadMC_B</li>
 			<li>ForgingDragonHeadMC_C</li>
 		</forcedHeadTypes>
+		<hediffGiversCannotGive>
+			<li>Frail</li>
+			<li>BadBack</li>
+			<li>Dementia</li>
+			<li>Alzheimers</li>
+			<li>HeartArteryBlockage</li>
+			<li>Cataract</li>
+		</hediffGiversCannotGive>
 		<forcedTraits>
 			<li>
 				<def>NY_trait_ToughMC</def>
@@ -481,6 +531,7 @@
 				<forcedBodyTypeBaby>ForgingDragonBodyBaby</forcedBodyTypeBaby>
 				<forcedBodyTypeChild>ForgingDragonBodyWJ_Child</forcedBodyTypeChild>
 				<forcedBodyType>ForgingDragonBodyWJ</forcedBodyType>
+				<lifeExpectancy>500</lifeExpectancy>
 			</li>
 		</modExtensions>
 	</GeneDef>

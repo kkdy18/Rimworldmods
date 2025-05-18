@@ -41,6 +41,37 @@
 		<combatLogRulesDodge>Maneuver_Stab_MeleeDodge</combatLogRulesDodge>
 	</ManeuverDef>
 
+	<DamageDef ParentName="CutBase">
+		<defName>NY_damage_BoneBreak</defName>
+		<label>裂骨斩</label>
+		<additionalHediffs>
+			<li>
+				<hediff>NY_hediff_BoneBreak</hediff>
+				<severityPerDamageDealt>0.015</severityPerDamageDealt>
+				<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+			</li>
+		</additionalHediffs>
+	</DamageDef>
+
+	<ToolCapacityDef>
+		<defName>NY_BoneBreak</defName>
+		<label>裂骨斩</label>
+	</ToolCapacityDef>
+
+	<ManeuverDef>
+		<defName>NY_BoneBreak</defName>
+		<requiredCapacity>NY_BoneBreak</requiredCapacity>
+		<verb>
+			<verbClass>Verb_MeleeAttackDamage</verbClass>
+			<meleeDamageDef>NY_damage_BoneBreak</meleeDamageDef>
+		</verb>
+		<logEntryDef>MeleeAttack</logEntryDef>
+		<combatLogRulesHit>Maneuver_Slash_MeleeHit</combatLogRulesHit>
+		<combatLogRulesDeflect>Maneuver_Slash_MeleeDeflect</combatLogRulesDeflect>
+		<combatLogRulesMiss>Maneuver_Slash_MeleeMiss</combatLogRulesMiss>
+		<combatLogRulesDodge>Maneuver_Slash_MeleeDodge</combatLogRulesDodge>
+	</ManeuverDef>
+
 	<!--剑闪1-->
 	<DamageDef ParentName="CutBase">
 		<defName>NY_SlashCut</defName>
@@ -283,6 +314,100 @@
 		<graphicData>
 			<texPath>Things/Mote/NY_StarC</texPath>
 		</graphicData>
+		<mote>
+			<solidTime>0</solidTime>
+			<fadeInTime>0.2</fadeInTime>
+			<fadeOutTime>1.2</fadeOutTime>
+		</mote>
+	</ThingDef>
+
+	<!--剑闪3-->
+	<DamageDef ParentName="CutBase">
+		<defName>NY_BlackFeatherCut</defName>
+		<label>玄羽斩</label>
+		<damageEffecter>NY_effect_FeatherSwordBlack</damageEffecter>
+	</DamageDef>
+
+	<ToolCapacityDef>
+		<defName>NY_BlackFeatherCut</defName>
+		<label>玄羽斩</label>
+	</ToolCapacityDef>
+
+	<ManeuverDef>
+		<defName>NY_BlackFeatherCut</defName>
+		<requiredCapacity>NY_BlackFeatherCut</requiredCapacity>
+		<verb>
+			<verbClass>Verb_MeleeAttackDamage</verbClass>
+			<meleeDamageDef>NY_BlackFeatherCut</meleeDamageDef>
+		</verb>
+		<logEntryDef>MeleeAttack</logEntryDef>
+		<combatLogRulesHit>Maneuver_Slash_MeleeHit</combatLogRulesHit>
+		<combatLogRulesDeflect>Maneuver_Slash_MeleeDeflect</combatLogRulesDeflect>
+		<combatLogRulesMiss>Maneuver_Slash_MeleeMiss</combatLogRulesMiss>
+		<combatLogRulesDodge>Maneuver_Slash_MeleeDodge</combatLogRulesDodge>
+	</ManeuverDef>
+
+	<EffecterDef>
+		<defName>NY_effect_FeatherSwordBlack</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+				<moteDef>NY_mote_BlackFeatherOne</moteDef>
+				<positionRadius>0</positionRadius>
+				<burstCount>3~5</burstCount>
+				<scale>0.5~1</scale>
+				<spawnLocType>OnSource</spawnLocType>
+				<speed>1.55</speed>
+				<angle>0~359</angle>
+				<rotationRate>-5~40</rotationRate>
+			</li>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+				<moteDef>NY_mote_BlackFeatherTwo</moteDef>
+				<positionRadius>0</positionRadius>
+				<burstCount>1~3</burstCount>
+				<scale>0.25~0.45</scale>
+				<spawnLocType>OnSource</spawnLocType>
+				<speed>1.55</speed>
+				<angle>0~359</angle>
+				<rotationRate>-5~40</rotationRate>
+			</li>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+				<moteDef>NY_mote_SwordSlashRed</moteDef>
+				<positionRadius>0</positionRadius>
+				<burstCount>1</burstCount>
+				<scale>1~1.5</scale>
+				<spawnLocType>OnSource</spawnLocType>
+				<speed>0</speed>
+				<angle>0~359</angle>
+			</li>
+		</children>
+	</EffecterDef>
+
+	<ThingDef ParentName="MoteBase">
+		<defName>NY_mote_BlackFeatherOne</defName>
+		<graphicData>
+			<texPath>Things/Mote/NY_BlackFeatherOne</texPath>
+			<shaderType>Mote</shaderType>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<solidTime>0</solidTime>
+			<fadeInTime>0.2</fadeInTime>
+			<fadeOutTime>1.2</fadeOutTime>
+		</mote>
+	</ThingDef>
+
+	<ThingDef ParentName="MoteBase">
+		<defName>NY_mote_BlackFeatherTwo</defName>
+		<graphicData>
+			<texPath>Things/Mote/NY_BlackFeatherTwo</texPath>
+			<shaderType>Mote</shaderType>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
 		<mote>
 			<solidTime>0</solidTime>
 			<fadeInTime>0.2</fadeInTime>

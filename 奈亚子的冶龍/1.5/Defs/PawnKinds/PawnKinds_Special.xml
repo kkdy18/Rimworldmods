@@ -28,8 +28,8 @@
 		<defName>NY_ForgingDragonSinner</defName>
 		<label>罪身冶龍</label>
 		<defaultFactionType>NY_ForgingDragonUnion</defaultFactionType>
-		<maxGenerationAge>84</maxGenerationAge>
-		<minGenerationAge>24</minGenerationAge>
+		<maxGenerationAge>40</maxGenerationAge>
+		<minGenerationAge>14</minGenerationAge>
 		<backstoryFiltersOverride Inherit="False">
 			<li>
 				<categories>

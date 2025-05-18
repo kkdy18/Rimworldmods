@@ -100,7 +100,6 @@
 		<defName>NY_hediff_DragonHornCB</defName>
 		<label>纯血龙角</label>
 		<description>纯种冶龍会长出各种各样的角，比如绿中透黄的琉璃角，华丽精美的珍珠角，似乎还有一种生姜角，但最好别当着冶龍的面提这个称谓，她们不喜欢，相当不喜欢。</description>
-		<keepOnBodyPartRestoration>true</keepOnBodyPartRestoration>
 		<renderNodeProperties>
 			<li>
 				<texPaths>
@@ -134,14 +133,12 @@
 		<defName>NY_hediff_DragonHornCB_Left</defName>
 		<label>斩断的龙角</label>
 		<description>desc</description>
-		<keepOnBodyPartRestoration>true</keepOnBodyPartRestoration>
 	</HediffDef>
 
 	<HediffDef ParentName="NY_HediffBase">
 		<defName>NY_hediff_DragonTailCB</defName>
 		<label>翠绿龙尾</label>
 		<description>一根粗壮的翠绿色大尾巴，肌肉发达的尾巴如果甩到人身上大概会筋断骨折。</description>
-		<keepOnBodyPartRestoration>true</keepOnBodyPartRestoration>
 		<renderNodeProperties>
 			<li>
 				<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
@@ -173,7 +170,6 @@
 		<defName>NY_hediff_DragonHornBW</defName>
 		<label>青花龙角</label>
 		<description>有着陶瓷质感的青蓝色龙角。</description>
-		<keepOnBodyPartRestoration>true</keepOnBodyPartRestoration>
 		<renderNodeProperties>
 			<li>
 				<texPath>Things/Pawn/HeadAttachments/ForgingDragonHornBW</texPath>
@@ -203,14 +199,12 @@
 		<defName>NY_hediff_DragonHornBW_Left</defName>
 		<label>砸碎的龙角</label>
 		<description>desc</description>
-		<keepOnBodyPartRestoration>true</keepOnBodyPartRestoration>
 	</HediffDef>
 
 	<HediffDef ParentName="NY_HediffBase">
 		<defName>NY_hediff_DragonTailBW</defName>
 		<label>青蓝龙尾</label>
 		<description>一根柔中带刚的青蓝色大尾巴，摸起来冰冰的，夏天可以抱着睡觉。</description>
-		<keepOnBodyPartRestoration>true</keepOnBodyPartRestoration>
 		<renderNodeProperties>
 			<li>
 				<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
@@ -242,7 +236,6 @@
 		<defName>NY_hediff_GhoulDragonTail</defName>
 		<label>鬼龙尾</label>
 		<description>鬼魅般的灰色长尾，如泥鳅一般滑溜。</description>
-		<keepOnBodyPartRestoration>true</keepOnBodyPartRestoration>
 		<stages>
 			<li>
 				<statOffsets>
@@ -286,7 +279,6 @@
 		<defName>NY_hediff_DragonHornWJ</defName>
 		<label>白玉龙角</label>
 		<description>有着玉石质感的龙角，白里透青，摸起来冰冰凉凉。</description>
-		<keepOnBodyPartRestoration>true</keepOnBodyPartRestoration>
 		<renderNodeProperties>
 			<li>
 				<texPath>Things/Pawn/HeadAttachments/ForgingDragonHornWJ</texPath>
@@ -316,7 +308,6 @@
 		<defName>NY_hediff_DragonTailWJ</defName>
 		<label>玉润龙尾</label>
 		<description>一根白里透青的玉色大尾巴，尾巴末端有一撮白毛，白玉种冶龍们非常看重这个地方，最柔顺最洁白的毛甚至可以让面相普通的冶龍评上最美小姐。</description>
-		<keepOnBodyPartRestoration>true</keepOnBodyPartRestoration>
 		<renderNodeProperties>
 			<li>
 				<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
@@ -348,7 +339,6 @@
 		<defName>NY_hediff_DragonHornPC</defName>
 		<label>红烛龙角</label>
 		<description>有着淡淡的花纹的漂亮龙角，像两根喜庆的红蜡烛。</description>
-		<keepOnBodyPartRestoration>true</keepOnBodyPartRestoration>
 		<renderNodeProperties>
 			<li>
 				<texPath>Things/Pawn/HeadAttachments/ForgingDragonHornPC</texPath>
@@ -380,7 +370,6 @@
 		<defName>NY_hediff_DragonTailPC</defName>
 		<label>纸艺龙尾</label>
 		<description>一根极具观赏性的红色大尾巴，尾巴末端的薄膜和人类的指甲一样可以修剪，剪纸种冶龍们会经常修剪自己的尾巴，用于彰显自己的美丽。</description>
-		<keepOnBodyPartRestoration>true</keepOnBodyPartRestoration>
 		<renderNodeProperties>
 			<li>
 				<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
@@ -412,7 +401,6 @@
 		<defName>NY_hediff_DragonHornGP</defName>
 		<label>芽叶龙角</label>
 		<description>长出了嫩芽与绿叶的龙角，角的根部偏白而末端偏绿，看上去像一对大葱。</description>
-		<keepOnBodyPartRestoration>true</keepOnBodyPartRestoration>
 		<renderNodeProperties>
 			<li>
 				<texPath>Things/Pawn/HeadAttachments/ForgingDragonHornGP</texPath>
@@ -444,7 +432,6 @@
 		<defName>NY_hediff_DragonTailGP</defName>
 		<label>芽叶龙尾</label>
 		<description>一根长出了嫩芽与绿叶的大尾巴，尾巴的根部偏白而末端偏绿，看上去像根大葱。</description>
-		<keepOnBodyPartRestoration>true</keepOnBodyPartRestoration>
 		<renderNodeProperties>
 			<li>
 				<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
@@ -476,7 +463,6 @@
 		<defName>NY_hediff_DragonHornMC</defName>
 		<label>石绿龙角</label>
 		<description>有着玉石质感的巨大龙角，相当坚硬且棱角分明，即使对冶龍来说也是不小的负担。</description>
-		<keepOnBodyPartRestoration>true</keepOnBodyPartRestoration>
 		<stages>
 			<li>
 				<statOffsets>
@@ -514,7 +500,6 @@
 		<defName>NY_hediff_DragonTailMC</defName>
 		<label>石绿龙尾</label>
 		<description>一根覆盖着坚硬的玉质化鳞片的大尾巴，尾巴末端拖着一颗巨大的锥形玉石，即使对冶龍来说也是不小的负担。</description>
-		<keepOnBodyPartRestoration>true</keepOnBodyPartRestoration>
 		<stages>
 			<li>
 				<statOffsets>

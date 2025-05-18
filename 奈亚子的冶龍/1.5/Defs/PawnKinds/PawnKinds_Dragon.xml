@@ -5,7 +5,7 @@
 		<defaultFactionType>NY_ForgingDragonUnion</defaultFactionType>
 		<initialWillRange>60~100</initialWillRange>
 		<invNutrition>0</invNutrition>
-		<maxGenerationAge>84</maxGenerationAge>
+		<maxGenerationAge>114</maxGenerationAge>
 		<minGenerationAge>14</minGenerationAge>
 		<biocodeWeaponChance>0</biocodeWeaponChance>
 		<humanPregnancyChance>0</humanPregnancyChance>
@@ -392,7 +392,7 @@
 				</li>
 				<li>
 					<choiceChance>15</choiceChance>
-					<thingDef>NY_SLBB_Blueprint</thingDef>
+					<thingDef>NY_BlackbirdRoll</thingDef>
 					<countRange>1</countRange>
 				</li>
 			</subOptionsChooseOne>
@@ -473,7 +473,7 @@
 				</li>
 				<li>
 					<choiceChance>15</choiceChance>
-					<thingDef>NY_SLBB_Blueprint</thingDef>
+					<thingDef>NY_BlackbirdRoll</thingDef>
 					<countRange>1</countRange>
 				</li>
 			</subOptionsChooseOne>

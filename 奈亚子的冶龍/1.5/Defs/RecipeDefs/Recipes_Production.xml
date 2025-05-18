@@ -194,8 +194,8 @@
 
 	<RecipeDef Name="NY_MakeBlackbirdIron" ParentName="NY_ProducedBase">
 		<defName>NY_MakeBlackbirdIron</defName>
-		<label>冶炼玄羽铁</label>
-		<description>以玄鸟卫的全新冶炼技术将多种金属融合，制成玄羽铁。</description>
+		<label>冶炼玄羽钢</label>
+		<description>以玄鸟卫的全新冶炼技术将多种金属融合，炼成玄羽钢。</description>
 		<jobString>冶炼中。</jobString>
 		<workAmount>1500</workAmount>
 		<ingredients>
@@ -296,7 +296,7 @@
 	
 	<RecipeDef ParentName="NY_MakeBlackbirdIron">
 		<defName>NY_MakeBlackbirdIronTen</defName>
-		<label>十倍冶炼玄羽铁</label>
+		<label>十倍冶炼玄羽钢</label>
 		<workAmount>15000</workAmount>
 		<ingredients Inherit="False">
 			<li>

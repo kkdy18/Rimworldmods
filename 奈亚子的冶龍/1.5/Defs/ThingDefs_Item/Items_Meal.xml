@@ -327,5 +327,11 @@
 			<RawRice>8</RawRice>
 			<NY_RawGinger>2</NY_RawGinger>
 		</costList>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>1.5</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
 	</ThingDef>
 </Defs>

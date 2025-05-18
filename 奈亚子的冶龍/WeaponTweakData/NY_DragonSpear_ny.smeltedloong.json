@@ -1,0 +1,14 @@
+{
+  "TextureModID": "ny.smeltedloong",
+  "ItemDefName": "NY_DragonSpear",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.209210441,
+  "OffY": -0.143420979,
+  "Rotation": 25.0,
+  "ScaleX": 1.75,
+  "ScaleY": 1.75,
+  "BladeStart": 0.532894731,
+  "BladeEnd": 1.19342124,
+  "MeleeWeaponType": 4
+}

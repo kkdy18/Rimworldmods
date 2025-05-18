@@ -42,7 +42,7 @@
 				<countRange>1~2</countRange>
 			</li>
 			<li Class="StockGenerator_SingleDef">
-				<thingDef>NY_SLBB_Blueprint</thingDef>
+				<thingDef>NY_BlackbirdRoll</thingDef>
 				<price>Cheap</price>
 				<countRange>-1~1</countRange>
 			</li>
@@ -50,7 +50,7 @@
 				<categoryDef>NY_Resources</categoryDef>
 				<excludedThingDefs>
 					<li>NY_ImmortalIron</li>
-					<li>NY_SLBB_Blueprint</li>
+					<li>NY_BlackbirdRoll</li>
 				</excludedThingDefs>
 				<thingDefCountRange>2~3</thingDefCountRange>
 				<totalPriceRange>200~600</totalPriceRange>

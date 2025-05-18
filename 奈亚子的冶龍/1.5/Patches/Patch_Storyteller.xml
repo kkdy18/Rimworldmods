@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/StorytellerDef[@Name="BaseStoryteller"]/comps</xpath>
+		<value>
+			<li Class="StorytellerCompProperties_SingleOnceFixed">
+				<incident>NY_ImmortalIronImpact</incident>
+				<!--送神铁-->
+				<fireAfterDaysPassed>7</fireAfterDaysPassed>
+				<skipIfOnExtremeBiome>false</skipIfOnExtremeBiome>
+				<minColonistCount>1</minColonistCount>
+				<allowedTargetTags>
+					<li>Map_PlayerHome</li>
+				</allowedTargetTags>
+			</li>
+			<li Class="StorytellerCompProperties_SingleOnceFixed">
+				<incident>NY_DigSurvival</incident>
+				<!--送双龙-->
+				<fireAfterDaysPassed>30</fireAfterDaysPassed>
+				<skipIfOnExtremeBiome>false</skipIfOnExtremeBiome>
+				<minColonistCount>1</minColonistCount>
+				<allowedTargetTags>
+					<li>Map_PlayerHome</li>
+				</allowedTargetTags>
+			</li>
+		</value>
+	</Operation>
+</Patch>
