@@ -5,7 +5,7 @@
 		<label>破邪</label>
 		<workerClass>DamageWorker_Stab</workerClass>
 		<externalViolence>true</externalViolence>
-		<deathMessage>{0}被刺死。</deathMessage>
+		<deathMessage>{0}被破邪神兵刺杀。</deathMessage>
 		<hediff>Stab</hediff>
 		<hediffSolid>Crack</hediffSolid>
 		<impactSoundType>Slice</impactSoundType>

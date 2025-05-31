@@ -4,7 +4,7 @@
 		<thingClass>ForgingDragon.ThingOnFloorGraphic</thingClass>
 		<useHitPoints>False</useHitPoints>
 		<tradeability>None</tradeability>
-		<techLevel>Spacer</techLevel>
+		<techLevel>Ultra</techLevel>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>

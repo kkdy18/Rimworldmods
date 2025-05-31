@@ -25,7 +25,7 @@
 		</comps>
 	</ThingDef>
 
-	<ThingDef Name="NY_DragonApparelBase" ParentName="NY_ApparelBase" Abstract="True">
+	<ThingDef Name="NY_LoongApparelBase" ParentName="NY_ApparelBase" Abstract="True">
 		<graphicData>
 			<onGroundRandomRotateAngle>0</onGroundRandomRotateAngle>
 		</graphicData>
@@ -33,14 +33,14 @@
 			<li>NY_DragonCloth</li>
 		</thingCategories>
 		<recipeMaker>
-			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
 			<effectWorking>Tailor</effectWorking>
 			<soundWorking>Recipe_Tailor</soundWorking>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
 			<recipeUsers>
 				<li>NY_TableWeaving</li>
 			</recipeUsers>
-			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
 			<defaultIngredientFilter>
 				<categories>
 					<li>Root</li>
@@ -71,7 +71,7 @@
 		</modExtensions>
 	</ThingDef>
 
-	<ThingDef ParentName="NY_DragonApparelBase">
+	<ThingDef ParentName="NY_LoongApparelBase">
 		<defName>NY_ForgingDragonSkirtA</defName>
 		<label>冶龍风马面裙</label>
 		<description>冶龍的经典服饰，素雅的贴身衣裙。\n\n轻纱飘逸，马面风姿，裙舞飞扬，优雅尽显。</description>
@@ -148,7 +148,7 @@
 		</tradeTags>
 	</ThingDef>
 
-	<ThingDef ParentName="NY_DragonApparelBase">
+	<ThingDef ParentName="NY_LoongApparelBase">
 		<defName>NY_ForgingDragonSkirtB</defName>
 		<label>冶龍风旗袍</label>
 		<description>冶龍的经典服饰，绣有鳞纹的华美旗袍。\n\n鱼鳞珍锦，旗袍流光，细腻华美，东方神韵。</description>
@@ -217,7 +217,7 @@
 		</tradeTags>
 	</ThingDef>
 
-	<ThingDef ParentName="NY_DragonApparelBase">
+	<ThingDef ParentName="NY_LoongApparelBase">
 		<defName>NY_ForgingDragonSkirtC</defName>
 		<label>冶龍风薄纱旗袍</label>
 		<description>冶龍的创新服饰，为了使服装呈现出薄雾般的质感对面料的要求较为苛刻，材料的浪费也相当严重。\n\n蝉翼薄纱，轻若云烟，旗袍风韵，典雅飘逸。</description>
@@ -274,7 +274,7 @@
 		</tradeTags>
 	</ThingDef>
 
-	<ThingDef ParentName="NY_DragonApparelBase">
+	<ThingDef ParentName="NY_LoongApparelBase">
 		<defName>NY_ForgingDragonSkirtChild</defName>
 		<label>冶龍风儿童薄纱裙</label>
 		<description>冶龍儿童的经典服饰，贴心的匠人会为不同种族的小冶龍绣上不同的花纹。</description>

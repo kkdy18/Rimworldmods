@@ -2,7 +2,7 @@
 <Defs>
 	<!--作战服装-->	
 
-	<ThingDef ParentName="NY_DragonApparelBase">
+	<ThingDef ParentName="NY_LoongApparelBase">
 		<defName>NY_ForgingDragonSoldierCloth</defName>
 		<label>冶龍风兵士服</label>
 		<description>缝入了精铁甲片的兵士服，是冶龍民兵的制式服装，轻便的服装不会影响行动且能提供可观的防护。\n\n玄铁嵌甲，护身如盾，战无不胜，勇冠三军。</description>
@@ -67,7 +67,7 @@
 		</tradeTags>
 	</ThingDef>
 
-	<ThingDef ParentName="NY_DragonApparelBase">
+	<ThingDef ParentName="NY_LoongApparelBase">
 		<defName>NY_ForgingDragonSoldierClothPlus</defName>
 		<label>冶龍风护心兵士服</label>
 		<description>添加了厚重的护心甲的兵士服，能提高战士的生还率，这种服装一般会配置给擅长射击的冶龍战士。冶龍多出勇武之士，拿起刀剑即可上阵杀敌，能够沉下心来射击的人才总是比较珍贵的。</description>
@@ -133,7 +133,7 @@
 		</tradeTags>
 	</ThingDef>
 
-	<ThingDef ParentName="NY_DragonApparelBase">
+	<ThingDef ParentName="NY_LoongApparelBase">
 		<defName>NY_ForgingDragonCloakGreen</defName>
 		<label>藕丝翡翠颈绒袄</label>
 		<description>华贵的冶龍披风，颈部有保暖的细绒，匠人设计了不同的款式来陪衬各种族的冶龍。\n\n藕丝细织，翡翠柔锦。</description>
@@ -198,7 +198,7 @@
 		</tradeTags>
 	</ThingDef>
 
-	<ThingDef ParentName="NY_DragonApparelBase">
+	<ThingDef ParentName="NY_LoongApparelBase">
 		<defName>NY_ForgingDragonCloakGray</defName>
 		<label>乌锦云纹避尘披</label>
 		<description>为长途行者设计的披风，具有一定防护性的同时能有效隔绝高温，面料与缝纫技法的奇妙结合让这件服饰不易沾染尘土污物，能时刻保持衣物洁净。\n\n乌锦云纹，避尘如云。</description>
@@ -266,7 +266,7 @@
 	
 	<!--工作服-->
 
-	<ThingDef ParentName="NY_DragonApparelBase">
+	<ThingDef ParentName="NY_LoongApparelBase">
 		<defName>NY_ForgingDragonDoctorCoat</defName>
 		<label>冶龍医师服</label>
 		<description>为冶龍医师专门设计的服饰，偏重对医护工作的辅助性，缝制了方便存放药物与器械的口袋与腰包，面料中缝入了消毒的银线与安神的草药包。\n\n散草药香，挡顽疾病。</description>
@@ -287,7 +287,7 @@
 		</statBases>
 		<equippedStatOffsets>
 			<FilthRate>-2</FilthRate>
-			<ToxicResistance>0.8</ToxicResistance>
+			<ToxicEnvironmentResistance>0.8</ToxicEnvironmentResistance>
 			<MedicalTendSpeed>0.5</MedicalTendSpeed>
 			<MedicalTendQuality>0.1</MedicalTendQuality>
 			<MedicalSurgerySuccessChance>0.25</MedicalSurgerySuccessChance>
@@ -336,7 +336,7 @@
 		</tradeTags>
 	</ThingDef>
 
-	<ThingDef ParentName="NY_DragonApparelBase">
+	<ThingDef ParentName="NY_LoongApparelBase">
 		<defName>NY_ForgingDragonMusicianCoat</defName>
 		<label>冶龍乐师服</label>
 		<description>冶龍之中名为乐师的秘密部队的统一服装，防护性能薄弱但能最大程度地发挥乐师的行动能力，使乐师尽可能在残酷的战斗中保全自身。服装配备的腰包装有琴弦、簧片之类的乐器配件并在腰带上插入数支小刀，可以快速拆解并更换武器上损坏的配件。作为工具的小刀在必要时可送入自己的心脏。\n\n据说冶龍乐师能以乐声振奋精神，维持自己的战斗意志，搭配乱人心神的“魔音”她们能在战场上展现出惊人的战斗力。</description>

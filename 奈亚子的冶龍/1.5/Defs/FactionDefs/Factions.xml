@@ -66,7 +66,7 @@
 			<li>
 				<!--疫病袭击-天花-->
 				<kindDef>Combat</kindDef>
-				<commonality>20</commonality>
+				<commonality>10</commonality>
 				<maxTotalPoints>4000</maxTotalPoints>
 				<disallowedStrategies>
 					<li>ImmediateAttackFriendly</li>
@@ -79,7 +79,7 @@
 			<li>
 				<!--疫病袭击-风寒-->
 				<kindDef>Combat</kindDef>
-				<commonality>20</commonality>
+				<commonality>10</commonality>
 				<maxTotalPoints>4000</maxTotalPoints>
 				<disallowedStrategies>
 					<li>ImmediateAttackFriendly</li>
@@ -152,7 +152,7 @@
 		<settlementGenerationWeight>1</settlementGenerationWeight>
 		<maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
 		<configurationListOrderPriority>70</configurationListOrderPriority>
-		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<settlementNameMaker>NY_LoongNamerSettlement</settlementNameMaker>
 		<hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
 		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
 		<allowedArrivalTemperatureRange>-80~90</allowedArrivalTemperatureRange>
@@ -253,7 +253,7 @@
 		<pawnsPlural>拓乡者们</pawnsPlural>
 		<techLevel>Industrial</techLevel>
 		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
-		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<settlementNameMaker>NY_LoongNamerSettlement</settlementNameMaker>
 		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
 		<allowedCultures>
 			<li>NY_ForgingDragonCulture</li>

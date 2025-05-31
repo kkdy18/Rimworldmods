@@ -34,8 +34,8 @@
 			<li Class="HediffCompProperties_Disappears">
 				<showRemainingTime>True</showRemainingTime>
 				<disappearsAfterTicks>
-					<min>60000</min>
-					<max>300000</max>
+					<min>300000</min>
+					<max>600000</max>
 				</disappearsAfterTicks>
 			</li>
 			<li Class="HediffCompProperties_DisappearsOnDeath"/>
@@ -46,7 +46,7 @@
 		<defName>NY_hediff_Smallpox</defName>
 		<label>天花</label>
 		<description>冶龍从故乡带来的病毒在边缘世界发生突变后，造成的一种烈性传染病。患者初期会出现发烧、反胃等症状，并在全身长出伴随剧烈疼痛的疱疹。\n\n该传染病有概率在接触感染者时传播给健康个体，提高免疫能力与有毒环境抗性有助于预防疾病传染（双属性总和不小于传染性可不受传染）。</description>
-		<descriptionShort>一种烈性传染病，患者初期会出现发烧、反胃等症状，并在全身长出伴随剧烈疼痛的疱疹。\n\n传染性：2.1\n严重性：2</descriptionShort>
+		<descriptionShort>一种烈性传染病，患者初期会出现发烧、反胃等症状，并在全身长出伴随剧烈疼痛的疱疹。\n\n传染性：2.1\n严重性：3</descriptionShort>
 		<lethalSeverity>1</lethalSeverity>
 		<comps>
 			<li Class="HediffCompProperties_TendDuration">
@@ -56,11 +56,12 @@
 			<li Class="HediffCompProperties_Immunizable">
 				<severityPerDayNotImmune>0.4</severityPerDayNotImmune>
 				<immunityPerDaySick>0.2</immunityPerDaySick>
-				<severityPerDayImmune>-0.2</severityPerDayImmune>
-				<immunityPerDayNotSick>-0.5</immunityPerDayNotSick>
+				<severityPerDayImmune>-0.5</severityPerDayImmune>
+				<immunityPerDayNotSick>-0.05</immunityPerDayNotSick>
 			</li>
 			<li Class="ForgingDragon.HCP_Contagion">
 				<Infectivity>2.1</Infectivity>
+				<excludeGene>PerfectImmunity</excludeGene>
 				<leftHediff>NY_hediff_ImmunityGain</leftHediff>
 			</li>
 		</comps>
@@ -109,8 +110,10 @@
 						<partsToAffect>
 							<li>Leg</li>
 							<li>Arm</li>
+							<li>Hand</li>
 							<li>Head</li>
 							<li>Torso</li>
+							<li>Waist</li>
 							<li>Shoulder</li>
 						</partsToAffect>
 					</li>
@@ -150,8 +153,10 @@
 						<partsToAffect>
 							<li>Leg</li>
 							<li>Arm</li>
+							<li>Hand</li>
 							<li>Head</li>
 							<li>Torso</li>
+							<li>Waist</li>
 							<li>Shoulder</li>
 						</partsToAffect>
 					</li>
@@ -197,6 +202,7 @@
 			</li>
 			<li Class="ForgingDragon.HCP_Contagion">
 				<Infectivity>2.5</Infectivity>
+				<excludeGene>PerfectImmunity</excludeGene>
 				<leftHediff>NY_hediff_ImmunityGain</leftHediff>
 			</li>
 		</comps>
@@ -303,19 +309,21 @@
 		<defName>NY_hediff_Cholera</defName>
 		<label>霍乱</label>
 		<description>冶龍从故乡带来的病毒在边缘世界发生突变后，造成的一种烈性传染病，病情恶化极快但及时治疗能有效控制，疗程较短。主要症状包括呕吐与脱水，重症患者可出现意识障碍、休克甚至死亡。\n\n该传染病有概率在接触感染者时传播给健康个体，提高免疫能力与有毒环境抗性有助于预防疾病传染（双属性总和不小于传染性可不受传染）。</description>
-		<descriptionShort>一种烈性传染病，病情恶化极快但及时治疗能有效控制，疗程较短。主要症状包括呕吐与脱水，重症患者可出现意识障碍、休克甚至死亡。\n\n传染性：2.5\n严重性：1</descriptionShort>
+		<descriptionShort>一种烈性传染病，病情恶化极快但及时治疗能有效控制，疗程较短。主要症状包括呕吐与脱水，重症患者可出现意识障碍、休克甚至死亡。\n\n传染性：2.5\n严重性：2</descriptionShort>
 		<lethalSeverity>1</lethalSeverity>
+		<minSeverity>0.001</minSeverity>
 		<comps>
 			<li Class="HediffCompProperties_TendDuration">
-				<baseTendDurationHours>12</baseTendDurationHours>
-				<severityPerDayTended>-2.5</severityPerDayTended>
+				<baseTendDurationHours>8</baseTendDurationHours>
+				<severityPerDayTended>-3</severityPerDayTended>
 				<disappearsAtTotalTendQuality>4</disappearsAtTotalTendQuality>
 			</li>
 			<li Class="HediffCompProperties_Immunizable">
-				<severityPerDayNotImmune>2</severityPerDayNotImmune>
+				<severityPerDayNotImmune>1.5</severityPerDayNotImmune>
 			</li>
 			<li Class="ForgingDragon.HCP_Contagion">
 				<Infectivity>2.5</Infectivity>
+				<excludeGene>PerfectImmunity</excludeGene>
 				<leftHediff>NY_hediff_ImmunityGain</leftHediff>
 			</li>
 		</comps>

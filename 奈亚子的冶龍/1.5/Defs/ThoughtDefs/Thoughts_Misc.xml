@@ -33,4 +33,19 @@
 			</li>
 		</stages>
 	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>NY_thought_BloodExtracter</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>NY_techhediff_BloodExtracter</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+		<stages>
+			<li>
+				<label>血液抽离</label>
+				<description>我的生命在枯萎，我的身体就像一块冰冷的石头。</description>
+				<baseMoodEffect>-10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
 </Defs>

@@ -1,18 +1,82 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef Name="NY_DragonHelmetBase" ParentName="NY_ApparelBase" Abstract="True">
+	<ThingDef Name="NY_LoongHelmetBase" ParentName="NY_ApparelBase" Abstract="True">
 		<thingCategories Inherit="false">
 			<li>NY_DragonArmor</li>
 		</thingCategories>
 		<recipeMaker>
-			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
 			<effectWorking>Smith</effectWorking>
 			<soundWorking>Recipe_Smith</soundWorking>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<recipeUsers>
 				<li>NY_TableCrafting</li>
 			</recipeUsers>
-			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+			<defaultIngredientFilter>
+				<categories>
+					<li>Root</li>
+				</categories>
+				<disallowedThingDefs>
+					<li>Gold</li>
+					<li>Silver</li>
+					<li>Plasteel</li>
+					<li>Jade</li>
+					<li>Uranium</li>
+					<li MayRequire="Ludeon.RimWorld.Anomaly">Bioferrite</li>
+				</disallowedThingDefs>
+			</defaultIngredientFilter>
+		</recipeMaker>
+		<apparel>
+			<parentTagDef>ApparelHead</parentTagDef>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+		</apparel>
+		<modExtensions>
+			<li Class="ForgingDragon.DragonGeneApparel">
+				<allowedHeadTypes>
+					<li>ForgingDragonHeadBW</li>
+					<li>ForgingDragonHeadBW_A</li>
+					<li>ForgingDragonHeadBW_B</li>
+					<li>ForgingDragonHeadBW_C</li>
+					<li>ForgingDragonHeadCB</li>
+					<li>ForgingDragonHeadCB_A</li>
+					<li>ForgingDragonHeadCB_B</li>
+					<li>ForgingDragonHeadCB_C</li>
+					<li>ForgingDragonHeadWJ</li>
+					<li>ForgingDragonHeadWJ_A</li>
+					<li>ForgingDragonHeadWJ_B</li>
+					<li>ForgingDragonHeadWJ_C</li>
+					<li>ForgingDragonHeadPC</li>
+					<li>ForgingDragonHeadPC_A</li>
+					<li>ForgingDragonHeadPC_B</li>
+					<li>ForgingDragonHeadPC_C</li>
+					<li>ForgingDragonHeadGP</li>
+					<li>ForgingDragonHeadGP_A</li>
+					<li>ForgingDragonHeadGP_B</li>
+					<li>ForgingDragonHeadGP_C</li>
+					<li>ForgingDragonHeadMC</li>
+					<li>ForgingDragonHeadMC_A</li>
+					<li>ForgingDragonHeadMC_B</li>
+					<li>ForgingDragonHeadMC_C</li>
+					<li>ForgingDragonHeadSkull</li>
+				</allowedHeadTypes>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef Name="NY_LoongHatBase" ParentName="NY_ApparelBase" Abstract="True">
+		<thingCategories Inherit="false">
+			<li>NY_DragonCloth</li>
+		</thingCategories>
+		<recipeMaker>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Tailor</effectWorking>
+			<soundWorking>Recipe_Tailor</soundWorking>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+			<recipeUsers>
+				<li>NY_TableWeaving</li>
+			</recipeUsers>
 			<defaultIngredientFilter>
 				<categories>
 					<li>Root</li>
@@ -64,7 +128,7 @@
 		</modExtensions>
 	</ThingDef>
 	
-	<ThingDef ParentName="NY_DragonHelmetBase">
+	<ThingDef ParentName="NY_LoongHelmetBase">
 		<defName>NY_ForgingDragonIronHat</defName>
 		<label>征战铁锥帽</label>
 		<description>精炼铁打制的冶龍专用头盔，为冶龍的角留出了空间，宽大坚硬的帽檐能有效保护战士们的脑袋。\n\n玄铁铸就，坚不可摧，护各将士，征战四方。</description>
@@ -117,7 +181,7 @@
 		</tradeTags>
 	</ThingDef>
 
-	<ThingDef ParentName="NY_DragonHelmetBase">
+	<ThingDef ParentName="NY_LoongHelmetBase">
 		<defName>NY_ForgingDragonIconMask</defName>
 		<label>征战铁兽面</label>
 		<description>精炼铁打造的兽形面具，进一步保护了冶龍战士的面部，同时狰狞的兽面能够威吓敌人。</description>

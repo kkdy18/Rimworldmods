@@ -29,19 +29,4 @@
 		</fixedIngredientFilter>
 	</RecipeDef>
 
-	<HediffDef ParentName="NY_HediffBase">
-		<defName>NY_hediff_LoongSurgery</defName>
-		<label>LoongSurgery</label>
-		<description>desc</description>
-		<stages>
-			<li>
-				<becomeVisible>false</becomeVisible>
-			</li>
-		</stages>
-		<comps>
-			<li Class="ForgingDragon.HCP_CheckGene" />
-		</comps>
-	</HediffDef>
-	
-	
 </Defs>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<StatDef>
+		<defName>NY_RegenerationHealAmount</defName>
+		<label>额外再生愈伤值</label>
+		<description>每秒额外恢复的耐久点数。</description>
+		<category>BasicsPawn</category>
+		<minValue>0</minValue>
+		<hideAtValue>0</hideAtValue>
+		<defaultBaseValue>0</defaultBaseValue>
+		<toStringStyle>FloatTwo</toStringStyle>
+		<displayPriorityInCategory>1270</displayPriorityInCategory>
+	</StatDef>
+</Defs>

@@ -190,7 +190,7 @@
 					<li>Stab</li>
 				</capacities>
 				<power>20</power>
-				<armorPenetration>0.5</armorPenetration>
+				<armorPenetration>0.7</armorPenetration>
 				<cooldownTime>1.8</cooldownTime>
 				<extraMeleeDamages>
 					<li>
@@ -252,7 +252,7 @@
 					<li>Stab</li>
 				</capacities>
 				<power>25</power>
-				<armorPenetration>0.6</armorPenetration>
+				<armorPenetration>0.8</armorPenetration>
 				<cooldownTime>2</cooldownTime>
 				<extraMeleeDamages>
 					<li>
@@ -295,7 +295,7 @@
 					<li>Cut</li>
 				</capacities>
 				<power>16</power>
-				<armorPenetration>0.4</armorPenetration>
+				<armorPenetration>0.6</armorPenetration>
 				<cooldownTime>1.8</cooldownTime>
 				<extraMeleeDamages>
 					<li>

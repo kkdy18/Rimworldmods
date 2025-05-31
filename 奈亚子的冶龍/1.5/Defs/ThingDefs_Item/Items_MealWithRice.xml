@@ -383,7 +383,7 @@
 			</disallowedCategories>
 		</fixedIngredientFilter>
 		<products>
-			<NY_MealGingerChickenRice>1</NY_MealGingerChickenRice>
+			<NY_MealBraisedPorkEggRice>1</NY_MealBraisedPorkEggRice>
 		</products>
 		<displayPriority>1271.04</displayPriority>
 	</RecipeDef>
@@ -419,7 +419,7 @@
 			</li>
 		</ingredients>
 		<products>
-			<NY_MealGingerChickenRice>10</NY_MealGingerChickenRice>
+			<NY_MealBraisedPorkEggRice>10</NY_MealBraisedPorkEggRice>
 		</products>
 	</RecipeDef>
 </Defs>

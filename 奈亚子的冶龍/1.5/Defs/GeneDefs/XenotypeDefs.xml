@@ -12,7 +12,7 @@
 		<descriptionShort>冶龍是一种拥有传说中名为龙的生物的生物特征的人类分支，她们在遥远的故乡发展出了冶龍特色的帝制文明与冶炼铸造技术，她们的族群中只有女性，因此需要和其他种族的男性结合来繁育后代。\n\n靛角银发蔚蓝眼，白瓷塑身气血娇，温婉流转贤妻样，庖厨针线过常人。</descriptionShort>
 		<iconPath>UI/Xenos/NY_ForgingDragon</iconPath>
 		<displayPriority>-1270.01</displayPriority>
-		<nameMaker>ForgingDragonNamerPerson</nameMaker>
+		<nameMaker>NY_LoongNamerPerson</nameMaker>
 		<chanceToUseNameMaker>99</chanceToUseNameMaker>
 		<factionlessGenerationWeight>0</factionlessGenerationWeight>
 		<inheritable>true</inheritable>
@@ -43,7 +43,7 @@
 		<iconPath>UI/Xenos/NY_ForgingDragon</iconPath>
 		<displayPriority>-1270</displayPriority>
 		<combatPowerFactor>1.5</combatPowerFactor>
-		<nameMaker>ForgingDragonNamerPerson</nameMaker>
+		<nameMaker>NY_LoongNamerPerson</nameMaker>
 		<chanceToUseNameMaker>99</chanceToUseNameMaker>
 		<factionlessGenerationWeight>0</factionlessGenerationWeight>
 		<inheritable>true</inheritable>
@@ -83,7 +83,7 @@
 		<iconPath>UI/Xenos/NY_ForgingDragon</iconPath>
 		<displayPriority>-1270.02</displayPriority>
 		<combatPowerFactor>1.5</combatPowerFactor>
-		<nameMaker>ForgingDragonNamerPerson</nameMaker>
+		<nameMaker>NY_LoongNamerPerson</nameMaker>
 		<chanceToUseNameMaker>99</chanceToUseNameMaker>
 		<factionlessGenerationWeight>0</factionlessGenerationWeight>
 		<inheritable>true</inheritable>
@@ -119,7 +119,7 @@
 		<descriptionShort>冶龍是一种拥有传说中名为龙的生物的生物特征的人类分支，她们在遥远的故乡发展出了冶龍特色的帝制文明与冶炼铸造技术，她们的族群中只有女性，因此需要和其他种族的男性结合来繁育后代。\n\n红角红瞳剪纸裳，妙语如珠韵悠扬。艺绘丹青惊四座，纸龍绝色舞霓裳。</descriptionShort>
 		<iconPath>UI/Xenos/NY_ForgingDragon</iconPath>
 		<displayPriority>-1270.03</displayPriority>
-		<nameMaker>ForgingDragonNamerPerson</nameMaker>
+		<nameMaker>NY_LoongNamerPerson</nameMaker>
 		<chanceToUseNameMaker>99</chanceToUseNameMaker>
 		<factionlessGenerationWeight>0</factionlessGenerationWeight>
 		<inheritable>true</inheritable>
@@ -154,7 +154,7 @@
 		<descriptionShort>冶龍是一种拥有传说中名为龙的生物的生物特征的人类分支，她们在遥远的故乡发展出了冶龍特色的帝制文明与冶炼铸造技术，她们的族群中只有女性，因此需要和其他种族的男性结合来繁育后代。\n\n枝角叶尾芊芊手，青植盖土养灵根。春风犹愈疮痍痛，从此悬壶济世尘。</descriptionShort>
 		<iconPath>UI/Xenos/NY_ForgingDragon</iconPath>
 		<displayPriority>-1270.04</displayPriority>
-		<nameMaker>ForgingDragonNamerPerson</nameMaker>
+		<nameMaker>NY_LoongNamerPerson</nameMaker>
 		<chanceToUseNameMaker>99</chanceToUseNameMaker>
 		<factionlessGenerationWeight>0</factionlessGenerationWeight>
 		<inheritable>true</inheritable>
@@ -191,7 +191,7 @@
 		<iconPath>UI/Xenos/NY_ForgingDragon</iconPath>
 		<displayPriority>-1270.05</displayPriority>
 		<combatPowerFactor>1.5</combatPowerFactor>
-		<nameMaker>ForgingDragonNamerPerson</nameMaker>
+		<nameMaker>NY_LoongNamerPerson</nameMaker>
 		<chanceToUseNameMaker>99</chanceToUseNameMaker>
 		<factionlessGenerationWeight>0</factionlessGenerationWeight>
 		<inheritable>true</inheritable>

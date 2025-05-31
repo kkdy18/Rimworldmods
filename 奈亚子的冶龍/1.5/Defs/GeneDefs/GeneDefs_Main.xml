@@ -13,6 +13,7 @@
 		</statOffsets>
 		<statFactors>
 			<Fertility>0.02</Fertility>
+			<LifespanFactor>8</LifespanFactor>
 		</statFactors>
 		<selectionWeight>0</selectionWeight>
 		<tattoosVisible>false</tattoosVisible>
@@ -108,14 +109,12 @@
 		<modExtensions>
 			<li Class="ForgingDragon.DragonGene">
 				<forceFemale>true</forceFemale>
-				<GhoulDragon>true</GhoulDragon>
 				<hediff>NY_hediff_ForgingDragonBW</hediff>
 				<customMeat>Meat_ForgingDragon</customMeat>
 				<customLeather>Leather_ForgingDragon</customLeather>
 				<forcedBodyTypeBaby>ForgingDragonBodyBaby</forcedBodyTypeBaby>
 				<forcedBodyTypeChild>ForgingDragonBodyBW_Child</forcedBodyTypeChild>
 				<forcedBodyType>ForgingDragonBodyBW</forcedBodyType>
-				<lifeExpectancy>500</lifeExpectancy>
 			</li>
 		</modExtensions>
 	</GeneDef>
@@ -129,7 +128,6 @@
 		<modExtensions>
 			<li Class="ForgingDragon.DragonGene">
 				<hediff>NY_hediff_DragonHornBW</hediff>
-				<leftHediff>NY_hediff_DragonHornBW_Left</leftHediff>
 				<bodyPart>Head</bodyPart>
 			</li>
 		</modExtensions>
@@ -202,14 +200,12 @@
 		<modExtensions>
 			<li Class="ForgingDragon.DragonGene">
 				<forceFemale>true</forceFemale>
-				<GhoulDragon>true</GhoulDragon>
 				<hediff>NY_hediff_ForgingDragonCB</hediff>
 				<customMeat>Meat_ForgingDragon</customMeat>
 				<customLeather>Leather_ForgingDragon</customLeather>
 				<forcedBodyTypeBaby>ForgingDragonBodyBaby</forcedBodyTypeBaby>
 				<forcedBodyTypeChild>ForgingDragonBodyCB_Child</forcedBodyTypeChild>
 				<forcedBodyType>ForgingDragonBodyCB</forcedBodyType>
-				<lifeExpectancy>500</lifeExpectancy>
 			</li>
 		</modExtensions>
 	</GeneDef>
@@ -223,7 +219,6 @@
 		<modExtensions>
 			<li Class="ForgingDragon.DragonGene">
 				<hediff>NY_hediff_DragonHornCB</hediff>
-				<leftHediff>NY_hediff_DragonHornCB_Left</leftHediff>
 				<bodyPart>Head</bodyPart>
 			</li>
 		</modExtensions>
@@ -283,14 +278,12 @@
 		<modExtensions>
 			<li Class="ForgingDragon.DragonGene">
 				<forceFemale>true</forceFemale>
-				<GhoulDragon>true</GhoulDragon>
 				<hediff>NY_hediff_ForgingDragonWJ</hediff>
 				<customMeat>Meat_ForgingDragon</customMeat>
 				<customLeather>Leather_ForgingDragon</customLeather>
 				<forcedBodyTypeBaby>ForgingDragonBodyBaby</forcedBodyTypeBaby>
 				<forcedBodyTypeChild>ForgingDragonBodyWJ_Child</forcedBodyTypeChild>
 				<forcedBodyType>ForgingDragonBodyWJ</forcedBodyType>
-				<lifeExpectancy>500</lifeExpectancy>
 			</li>
 		</modExtensions>
 	</GeneDef>
@@ -359,14 +352,12 @@
 		<modExtensions>
 			<li Class="ForgingDragon.DragonGene">
 				<forceFemale>true</forceFemale>
-				<GhoulDragon>true</GhoulDragon>
 				<hediff>NY_hediff_ForgingDragonPC</hediff>
 				<customMeat>Meat_ForgingDragon</customMeat>
 				<customLeather>Leather_ForgingDragon</customLeather>
 				<forcedBodyTypeBaby>ForgingDragonBodyBaby</forcedBodyTypeBaby>
 				<forcedBodyTypeChild>ForgingDragonBodyPC_Child</forcedBodyTypeChild>
 				<forcedBodyType>ForgingDragonBodyPC</forcedBodyType>
-				<lifeExpectancy>500</lifeExpectancy>
 			</li>
 		</modExtensions>
 	</GeneDef>
@@ -442,14 +433,12 @@
 		<modExtensions>
 			<li Class="ForgingDragon.DragonGene">
 				<forceFemale>true</forceFemale>
-				<GhoulDragon>true</GhoulDragon>
 				<hediff>NY_hediff_ForgingDragonGP</hediff>
 				<customMeat>Meat_ForgingDragon</customMeat>
 				<customLeather>Leather_ForgingDragon</customLeather>
 				<forcedBodyTypeBaby>ForgingDragonBodyBaby</forcedBodyTypeBaby>
 				<forcedBodyTypeChild>ForgingDragonBodyCB_Child</forcedBodyTypeChild>
 				<forcedBodyType>ForgingDragonBodyCB</forcedBodyType>
-				<lifeExpectancy>500</lifeExpectancy>
 			</li>
 		</modExtensions>
 	</GeneDef>
@@ -524,14 +513,12 @@
 		<modExtensions>
 			<li Class="ForgingDragon.DragonGene">
 				<forceFemale>true</forceFemale>
-				<GhoulDragon>true</GhoulDragon>
 				<hediff>NY_hediff_ForgingDragonMC</hediff>
 				<customMeat>Meat_ForgingDragon</customMeat>
 				<customLeather>Leather_ForgingDragon</customLeather>
 				<forcedBodyTypeBaby>ForgingDragonBodyBaby</forcedBodyTypeBaby>
 				<forcedBodyTypeChild>ForgingDragonBodyWJ_Child</forcedBodyTypeChild>
 				<forcedBodyType>ForgingDragonBodyWJ</forcedBodyType>
-				<lifeExpectancy>500</lifeExpectancy>
 			</li>
 		</modExtensions>
 	</GeneDef>
@@ -623,9 +610,7 @@
 		<biostatMet>0</biostatMet>
 		<renderNodeProperties>
 			<li>
-				<texPaths>
-					<li>Things/Pawn/HeadAttachments/ForgingDragonHornGhoul</li>
-				</texPaths>
+				<texPath>Things/Pawn/HeadAttachments/ForgingDragonHornGhoul</texPath>
 				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
 				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
 				<parentTagDef>Head</parentTagDef>
@@ -650,6 +635,9 @@
 			<li>Horn</li>
 			<li>Tail</li>
 		</exclusionTags>
+		<abilities>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">NY_ability_GhoulLoongBite</li>
+		</abilities>
 		<modExtensions>
 			<li Class="ForgingDragon.DragonGene">
 				<hediff MayRequire="Ludeon.RimWorld.Anomaly">NY_hediff_GhoulDragon</hediff>

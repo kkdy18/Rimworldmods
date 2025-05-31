@@ -22,6 +22,7 @@
 			<li Class="ForgingDragon.HCP_ForeverGene">
 				<VIGene>NY_gene_ForgingDragonBW</VIGene>
 			</li>
+			<li Class="ForgingDragon.HCP_CheckGeneBody" />
 		</comps>
 	</HediffDef>
 
@@ -36,6 +37,7 @@
 			<li Class="ForgingDragon.HCP_ForeverGene">
 				<VIGene>NY_gene_ForgingDragonCB</VIGene>
 			</li>
+			<li Class="ForgingDragon.HCP_CheckGeneBody" />
 		</comps>
 	</HediffDef>
 
@@ -50,6 +52,7 @@
 			<li Class="ForgingDragon.HCP_ForeverGene">
 				<VIGene>NY_gene_ForgingDragonWJ</VIGene>
 			</li>
+			<li Class="ForgingDragon.HCP_CheckGeneBody" />
 		</comps>
 	</HediffDef>
 
@@ -64,7 +67,10 @@
 			<li Class="ForgingDragon.HCP_ForeverGene">
 				<VIGene>NY_gene_ForgingDragonPC</VIGene>
 			</li>
-			<li Class="ForgingDragon.HCP_ThoughtBeauty" />
+			<li Class="ForgingDragon.HCP_ThoughtBeauty">
+				<giveThought>NY_thought_BeautyLookPC</giveThought>
+			</li>
+			<li Class="ForgingDragon.HCP_CheckGeneBody" />
 		</comps>
 	</HediffDef>
 
@@ -79,6 +85,7 @@
 			<li Class="ForgingDragon.HCP_ForeverGene">
 				<VIGene>NY_gene_ForgingDragonGP</VIGene>
 			</li>
+			<li Class="ForgingDragon.HCP_CheckGeneBody" />
 		</comps>
 	</HediffDef>
 
@@ -93,6 +100,7 @@
 			<li Class="ForgingDragon.HCP_ForeverGene">
 				<VIGene>NY_gene_ForgingDragonMC</VIGene>
 			</li>
+			<li Class="ForgingDragon.HCP_CheckGeneBody" />
 		</comps>
 	</HediffDef>
 	
@@ -127,12 +135,6 @@
 				</drawData>
 			</li>
 		</renderNodeProperties>
-	</HediffDef>
-
-	<HediffDef ParentName="NY_HediffBase">
-		<defName>NY_hediff_DragonHornCB_Left</defName>
-		<label>斩断的龙角</label>
-		<description>desc</description>
 	</HediffDef>
 
 	<HediffDef ParentName="NY_HediffBase">
@@ -196,12 +198,6 @@
 	</HediffDef>
 
 	<HediffDef ParentName="NY_HediffBase">
-		<defName>NY_hediff_DragonHornBW_Left</defName>
-		<label>砸碎的龙角</label>
-		<description>desc</description>
-	</HediffDef>
-
-	<HediffDef ParentName="NY_HediffBase">
 		<defName>NY_hediff_DragonTailBW</defName>
 		<label>青蓝龙尾</label>
 		<description>一根柔中带刚的青蓝色大尾巴，摸起来冰冰的，夏天可以抱着睡觉。</description>
@@ -239,12 +235,12 @@
 		<stages>
 			<li>
 				<statOffsets>
-					<MeleeDodgeChance>10</MeleeDodgeChance>
+					<MeleeDodgeChance>5</MeleeDodgeChance>
 				</statOffsets>
 				<capMods>
 					<li>
 						<capacity>Moving</capacity>
-						<offset>0.25</offset>
+						<offset>0.1</offset>
 					</li>
 				</capMods>
 			</li>
@@ -516,6 +512,7 @@
 				<parentTagDef>Body</parentTagDef>
 				<useSkinShader>true</useSkinShader>
 				<useRottenColor>true</useRottenColor>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
 				<visibleFacing>
 					<li>East</li>
 					<li>North</li>

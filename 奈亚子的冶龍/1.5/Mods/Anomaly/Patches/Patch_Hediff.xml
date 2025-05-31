@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HediffDef[defName="BlissLobotomy"]/comps</xpath>
+		<value>
+			<li Class="ForgingDragon.HCP_AddThing">
+				<thingDef>NY_GhoulBrainLobe</thingDef>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HediffDef[defName="BlissLobotomy"]</xpath>
+		<value>
+			<descriptionHyperlinks>
+				<ThingDef>NY_GhoulBrainLobe</ThingDef>
+			</descriptionHyperlinks>
+		</value>
+	</Operation>
+</Patch>

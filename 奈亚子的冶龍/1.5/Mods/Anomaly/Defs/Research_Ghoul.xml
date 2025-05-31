@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ResearchProjectDef>
+		<defName>ForgingDragonGhoulLoong</defName>
+		<label>原铸鬼龙</label>
+		<description>诅咒所造就的鬼龙仍是尚待锤炼的原胚，以暗黑虚空为炉，以扭曲实体为薪，铸造冶龍真正的梦魇吧。\n\n若祂降生二度，应令真龙悲哭。</description>
+		<baseCost>2000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>GhoulEnhancements</li>
+			<li>ForgingDragonStarting</li>
+		</prerequisites>
+		<tab>ForgingDragonResearchTab</tab>
+		<researchViewX>1.5</researchViewX>
+		<researchViewY>3</researchViewY>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->鬼龙强化手术</li>
+				<li>subject_story->梦见了一个紫鳞灰皮的冶龍</li>
+				<li>subject_gerund->创造究极的鬼龙</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+</Defs>

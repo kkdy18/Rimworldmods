@@ -4,6 +4,7 @@
 	<NY_AllowOriginalAppearl_Title>允许冶龍穿原版衣物（可能会出现贴图错位与少量红字）</NY_AllowOriginalAppearl_Title>
 	<NY_AllowLoongJoin_Title>允许燃烧的柴火灶召来流浪冶龍</NY_AllowLoongJoin_Title>
 	<NY_ForbidContagion_Title>禁止传染病通过密切接触传播</NY_ForbidContagion_Title>
+	<NY_AllowGhoulLoongKillSelf_Title>允许完全形态鬼龙在解除倒地状态失败后自灭</NY_AllowGhoulLoongKillSelf_Title>
 	
 	<NY_UseEmoticons_Title>启用冶龍动态表情（该功能已失效）</NY_UseEmoticons_Title>
 	<NY_OnlyPlayerUseEmoticons_Title>仅限玩家阵营加载动态表情</NY_OnlyPlayerUseEmoticons_Title>

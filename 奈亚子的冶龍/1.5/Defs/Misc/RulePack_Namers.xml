@@ -1,22 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<RulePackDef>
-		<defName>ForgingDragonNamerPerson</defName>
+		<defName>NY_LoongNamerPerson</defName>
 		<rulePack>
 			<rulesStrings>
 				<li>r_name->[firstName] [lastName]</li>
 				<li>r_name->[firstName] '[nickName]' [lastName]</li>
 
-				<li>firstName->[firstname]</li>
+				<li>firstName->[firstname_1]</li>
+				<li>firstname->[firstname_2]</li>
 
 				<li>nickName->[nickname]</li>
 
 				<li>lastName->[lastname]</li>
 			</rulesStrings>
 			<rulesFiles>
-				<li>firstname->Names_ForgingDragon/ForgingDragon_First</li>
-				<li>lastname->Names_ForgingDragon/ForgingDragon_Last</li>
-				<li>nickname->Names_ForgingDragon/ForgingDragon_Nick</li>
+				<li>firstname_1->Names_Loong/LoongPerson_First_1</li>
+				<li>firstname_2->Names_Loong/LoongPerson_First_2</li>
+				<li>lastname->Names_Loong/LoongPerson_Last</li>
+				<li>nickname->Names_Loong/LoongPerson_Nick</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>NY_LoongNamerSettlement</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[name]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>name->Names_Loong/Loong_Settlement</li>
 			</rulesFiles>
 		</rulePack>
 	</RulePackDef>

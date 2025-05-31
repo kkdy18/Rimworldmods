@@ -286,7 +286,7 @@
 		<equippedStatOffsets>
 			<MoveSpeed>-0.4</MoveSpeed>
 			<Flammability>-1</Flammability>
-			<ToxicResistance>1</ToxicResistance>
+			<ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
 			<PsychicSensitivity>-1</PsychicSensitivity>
 			<PainShockThreshold>0.4</PainShockThreshold>
 			<IncomingDamageFactor>-0.25</IncomingDamageFactor>
@@ -328,7 +328,7 @@
 		<equippedStatOffsets>
 			<MoveSpeed>-0.2</MoveSpeed>
 			<Flammability>-1</Flammability>
-			<ToxicResistance>1</ToxicResistance>
+			<ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
 			<PsychicSensitivity>-1</PsychicSensitivity>
 			<PainShockThreshold>0.4</PainShockThreshold>
 			<MeleeCooldownFactor>-0.4</MeleeCooldownFactor>
@@ -372,7 +372,7 @@
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>0.4</MoveSpeed>
-			<ToxicResistance>1</ToxicResistance>
+			<ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
 			<RangedCooldownFactor>-0.4</RangedCooldownFactor>
 		</equippedStatOffsets>
 		<apparel>

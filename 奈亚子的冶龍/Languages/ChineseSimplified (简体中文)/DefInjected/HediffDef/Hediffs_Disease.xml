@@ -19,4 +19,8 @@
 	<NY_hediff_Cholera.stages.major.label>剧烈呕吐</NY_hediff_Cholera.stages.major.label>
 
 	<NY_hediff_Cholera.stages.extreme.label>休克</NY_hediff_Cholera.stages.extreme.label>
+
+	<NY_hediff_TurningGhoul.stages.minor.label>亢奋</NY_hediff_TurningGhoul.stages.minor.label>
+
+	<NY_hediff_TurningGhoul.stages.major.label>血肉重组</NY_hediff_TurningGhoul.stages.major.label>
 </LanguageData>

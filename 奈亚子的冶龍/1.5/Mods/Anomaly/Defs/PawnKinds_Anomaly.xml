@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<PawnKindDef ParentName="NY_LoongPowerFighter">
+		<defName>NY_LoongFighterTurningGhoul</defName>
+		<label>冶龍百战精锐</label>
+		<labelPlural>冶龍百战精锐</labelPlural>
+		<gearHealthRange>0.4~0.6</gearHealthRange>
+		<techHediffsChance>0.65</techHediffsChance>
+		<techHediffsMoney>2000~2700</techHediffsMoney>
+		<initialResistanceRange>10~20</initialResistanceRange>
+		<combatPower>240</combatPower>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>NY_LoongCivilian</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelTags>
+			<li>NY_DragonCloth_Soldier</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>NY_ForgingDragonCloakGray</li>
+			<li>NY_ForgingDragonIronHat</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>NY_DragonWeaponMelee_Long</li>
+		</weaponTags>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>9~15</range>
+			</li>
+		</skills>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<xenotypeSet>
+			<xenotypeChances>
+				<NY_ForgingDragonCB>1</NY_ForgingDragonCB>
+			</xenotypeChances>
+		</xenotypeSet>
+		<startingHediffs>
+			<li>
+				<def>NY_hediff_TurningGhoul</def>
+				<severity>0.1</severity>
+			</li>
+		</startingHediffs>
+		<inventoryOptions Inherit="False"></inventoryOptions>
+	</PawnKindDef>
+</Defs>

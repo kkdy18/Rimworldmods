@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<PawnKindDef ParentName="NY_DragonSoldierMelee">
+	<PawnKindDef ParentName="NY_LoongSoldierMelee">
 		<defName>NY_DragonSoldierMelee_Smallpox</defName>
 		<label>染疫冶龍步兵</label>
 		<labelPlural>染疫冶龍步兵</labelPlural>
@@ -16,7 +16,7 @@
 		<inventoryOptions Inherit="False"></inventoryOptions>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="NY_DragonSoldierMelee">
+	<PawnKindDef ParentName="NY_LoongSoldierMelee">
 		<defName>NY_DragonSoldierMelee_Cold</defName>
 		<label>染疫冶龍步兵</label>
 		<labelPlural>染疫冶龍步兵</labelPlural>
@@ -32,7 +32,7 @@
 		<inventoryOptions Inherit="False"></inventoryOptions>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="NY_DragonPowerFighter" Name="NY_DragonInfectedFighter" Abstract="True">
+	<PawnKindDef ParentName="NY_LoongPowerFighter" Name="NY_LoongInfectedFighter" Abstract="True">
 		<combatPower>120</combatPower>
 		<gearHealthRange>0.6~1</gearHealthRange>
 		<forceDeathOnDowned>true</forceDeathOnDowned>
@@ -72,7 +72,7 @@
 		<inventoryOptions Inherit="False"></inventoryOptions>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="NY_DragonInfectedFighter">
+	<PawnKindDef ParentName="NY_LoongInfectedFighter">
 		<defName>NY_DragonInfectedFighter_Smallpox</defName>
 		<label>冶龍天花疫鬼</label>
 		<labelPlural>冶龍天花疫鬼</labelPlural>
@@ -84,7 +84,7 @@
 		</startingHediffs>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="NY_DragonInfectedFighter">
+	<PawnKindDef ParentName="NY_LoongInfectedFighter">
 		<defName>NY_DragonInfectedFighter_Cold</defName>
 		<label>冶龍风寒疫鬼</label>
 		<labelPlural>冶龍风寒疫鬼</labelPlural>

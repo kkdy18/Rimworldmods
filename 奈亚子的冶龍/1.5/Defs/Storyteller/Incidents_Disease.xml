@@ -48,4 +48,19 @@
 		<earliestDay>40</earliestDay>
 		<minRefireDays>8</minRefireDays>
 	</IncidentDef>
+
+	<!--<IncidentDef>
+		<defName>NY_disease_RatBlackDeath</defName>
+		<label>鼠疫</label>
+		<category>NY_ForgingDragon_Disease</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>ForgingDragon.IncidentWorker_RatBlackDeath</workerClass>
+		<baseChance>0.3</baseChance>
+		<earliestDay>40</earliestDay>
+		<minRefireDays>8</minRefireDays>
+		<letterLabel>不详的鼠群</letterLabel>
+		<letterText>混乱的挖掘声伴随着老鼠的尖叫从地下传来，一处坍陷正在迅速形成，鼠群即将冲出地表！</letterText>
+	</IncidentDef>-->
 </Defs>

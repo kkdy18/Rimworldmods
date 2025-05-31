@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IncidentDef>
+		<defName>NY_TurningGhoulTransportPod</defName>
+		<label>驱逐孽龙</label>
+		<category>NY_ForgingDragon_Disease</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>ForgingDragon.IncidentWorker_TurningGhoulPod</workerClass>
+		<baseChance>0.1</baseChance>
+		<earliestDay>15</earliestDay>
+		<minRefireDays>15</minRefireDays>
+		<letterLabel>被驱逐的孽龙</letterLabel>
+		<letterText>一个刻有寻圣盟标志的运输舱坠毁在附近，一个看上去有些奇怪的冶龍爬了出来，她似乎陷入了狂暴状态不断发出骇人的叫声。\n\n“为何……为何弃我……啊啊啊，真龙……无慈悲！”</letterText>
+	</IncidentDef>
+</Defs>

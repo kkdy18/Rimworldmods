@@ -24,8 +24,7 @@
 					<IncomingDamageFactor>1</IncomingDamageFactor>
 				</statOffsets>
 				<damageFactors>
-					<Flame>2</Flame>
-					<Burn>2</Burn>
+					<NY_damage_EvilBreak>2</NY_damage_EvilBreak>
 				</damageFactors>
 			</li>
 		</stages>
@@ -54,7 +53,7 @@
 		</stages>
 		<comps>
 			<li Class="HediffCompProperties_Disappears">
-				<showRemainingTime>True</showRemainingTime>
+				<showRemainingTime>true</showRemainingTime>
 				<disappearsAfterTicks>
 					<min>5000</min>
 					<max>10000</max>
@@ -241,6 +240,27 @@
 				</capMods>
 			</li>
 		</stages>
+		<renderNodeProperties>
+			<li>
+				<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+				<texPath>Things/Pawn/HeadAttachments/NY_LoongRedEyes/NY_LoongRedEyes</texPath>
+				<parentTagDef>Head</parentTagDef>
+				<color>(1,1,1,0.8)</color>
+				<visibleFacing>
+					<li>East</li>
+					<li>West</li>
+					<li>South</li>
+				</visibleFacing>
+				<drawData>
+					<defaultData>
+						<layer>60</layer>
+					</defaultData>
+					<dataWest>
+						<flip>true</flip>
+					</dataWest>
+				</drawData>
+			</li>
+		</renderNodeProperties>
 		<comps>
 			<li Class="HediffCompProperties_Disappears">
 				<showRemainingTime>true</showRemainingTime>
@@ -359,7 +379,7 @@
 		<comps>
 			<li Class="ForgingDragon.HCP_Regeneration">
 				<healPerSecond>0.4</healPerSecond>
-				<showHealAmount>false</showHealAmount>
+				<showHealAmount>true</showHealAmount>
 			</li>
 			<li Class="HediffCompProperties_Disappears">
 				<showRemainingTime>false</showRemainingTime>
@@ -470,7 +490,7 @@
 				<showRemainingTime>true</showRemainingTime>
 			</li>
 			<li Class="HediffCompProperties_DisappearsOnDeath"/>
-			<li Class="ForgingDragon.HCP_DamageConsume">
+			<li Class="ForgingDragon.HCP_HurtConsume">
 				<hitSound>NY_ArmorBroken</hitSound>
 				<hitEffect>NY_effect_BrokenArmor</hitEffect>
 			</li>
@@ -493,6 +513,7 @@
 		<comps>
 			<li Class="HediffCompProperties_Invisibility">
 				<visibleToPlayer>true</visibleToPlayer>
+				<fadeDurationTicks>60</fadeDurationTicks>
 			</li>
 			<li Class="HediffCompProperties_Disappears">
 				<showRemainingTime>true</showRemainingTime>

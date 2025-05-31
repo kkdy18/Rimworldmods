@@ -8,7 +8,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName="Wall"]/stuffCategories</xpath>
+		<xpath>/Defs/ThingDef[@Name="Wall"]/stuffCategories</xpath>
 		<value>
 			<li>NY_RaceMetal</li>
 		</value>

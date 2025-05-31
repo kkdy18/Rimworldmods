@@ -91,7 +91,7 @@
 		</xenotypeSet>
 	</PawnKindDef>
 
-	<PawnKindDef Name="NY_DragonVillager" ParentName="NY_BaseDragon" Abstract="True">
+	<PawnKindDef Name="NY_LoongVillager" ParentName="NY_BaseLoong" Abstract="True">
 		<isFighter>false</isFighter>
 		<itemQuality>Good</itemQuality>
 		<backstoryFiltersOverride>
@@ -125,7 +125,7 @@
 		</techHediffsTags>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="NY_DragonVillager">
+	<PawnKindDef ParentName="NY_LoongVillager">
 		<defName>NY_DragonFarmer</defName>
 		<label>冶龍农官</label>
 		<labelPlural>冶龍农官</labelPlural>
@@ -138,7 +138,7 @@
 		</xenotypeSet>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="NY_DragonVillager">
+	<PawnKindDef ParentName="NY_LoongVillager">
 		<defName>NY_DragonCrafter</defName>
 		<label>冶龍工匠</label>
 		<labelPlural>冶龍工匠</labelPlural>
@@ -151,7 +151,7 @@
 		</xenotypeSet>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="NY_DragonVillager">
+	<PawnKindDef ParentName="NY_LoongVillager">
 		<defName>NY_DragonHermit</defName>
 		<label>避世冶龍</label>
 		<labelPlural>避世冶龍</labelPlural>
