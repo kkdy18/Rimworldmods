@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[@Name="DoorBase"]/stuffCategories</xpath>
+		<value>
+			<li>NY_RaceMetal</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[@Name="Wall"]/stuffCategories</xpath>
+		<value>
+			<li>NY_RaceMetal</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="Fence"]/stuffCategories</xpath>
+		<value>
+			<li>NY_RaceMetal</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="Column"]/stuffCategories</xpath>
+		<value>
+			<li>NY_RaceMetal</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="Barricade"]/stuffCategories</xpath>
+		<value>
+			<li>NY_RaceMetal</li>
+		</value>
+	</Operation>
+</Patch>

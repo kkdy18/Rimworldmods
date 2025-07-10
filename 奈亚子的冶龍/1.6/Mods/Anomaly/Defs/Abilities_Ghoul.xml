@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<AbilityDef ParentName="AbilityTouchBase">
+		<defName>NY_ability_GhoulLoongBite</defName>
+		<label>撕肉饮血</label>
+		<description>撕咬，敌人，吞咽，血肉。</description>
+		<iconPath>UI/Abilities/NY_GhoulLoongBite</iconPath>
+		<warmupEffecter>Bloodfeed_Warmup</warmupEffecter>
+		<warmupStartSound>Bloodfeed_Cast</warmupStartSound>
+		<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+		<casterMustBeCapableOfViolence>true</casterMustBeCapableOfViolence>
+		<cooldownTicksRange>180</cooldownTicksRange>
+		<hostile>true</hostile>
+		<verbProperties>
+			<verbClass>Verb_CastAbilityTouch</verbClass>
+			<drawAimPie>false</drawAimPie>
+			<range>-1</range>
+			<warmupTime>2</warmupTime>
+			<targetParams>
+				<canTargetSelf>false</canTargetSelf>
+				<canTargetBuildings>false</canTargetBuildings>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="SmeltedLoong.ACP_GhoulLoongBite" />
+			<li Class="CompProperties_AbilityRequiresCapacity">
+				<capacity>Eating</capacity>
+			</li>
+		</comps>
+	</AbilityDef>
+	
+	<AbilityDef ParentName="NY_AI_AbilityBase">
+		<defName>NY_ability_GhoulDeadlifeDust</defName>
+		<label>冥龙吹息</label>
+		<description>持续喷出死尘肺中存储的超凡微械，将周围的尸体转化为蹒跚怪。</description>
+		<iconPath>UI/Abilities/ReleaseDeadlifeDust</iconPath>
+		<cooldownTicksRange>60000</cooldownTicksRange>
+		<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+		<statBases>
+			<Ability_Duration>15</Ability_Duration>
+		</statBases>
+		<verbProperties>
+			<warmupTime>0.5</warmupTime>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>NY_hediff_GhoulDeadlifeDust</hediffDef>
+				<onlyApplyToSelf>True</onlyApplyToSelf>
+				<replaceExisting>true</replaceExisting>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<HediffDef ParentName="NY_HediffBase">
+		<defName>NY_hediff_GhoulDeadlifeDust</defName>
+		<label>冥龙吹息</label>
+		<description>敕令亡者，与吾同行。</description>
+		<defaultLabelColor>(0.8, 0.5, 0.5)</defaultLabelColor>
+		<comps>
+			<li Class="SmeltedLoong.HCP_ReleaseGas">
+				<gasType>BlindSmoke</gasType>
+				<cellsToFill>30</cellsToFill>
+				<durationSeconds>15</durationSeconds>
+				<mixDeadlifeDust>true</mixDeadlifeDust>
+			</li>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<li Class="HediffCompProperties_Effecter">
+				<stateEffecter>NY_effecter_SmokeReleasing</stateEffecter>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<AbilityDef ParentName="LongJump">
+		<defName>NY_ability_GhoulDevourerLeap</defName>
+		<label>饿龙暴跃</label>
+		<description>全力蹬地，跳向远处，纯粹的力量，纯粹的数值。</description>
+		<aiCanUse>true</aiCanUse>
+		<verbProperties>
+			<verbClass>SmeltedLoong.Verb_LoongJump</verbClass>
+			<range>9.9</range>
+			<warmupTime>0.25</warmupTime>
+			<soundCast>Pawn_Devourer_Jump</soundCast>
+			<soundLanding>Pawn_Devourer_Land</soundLanding>
+		</verbProperties>
+		<comps Inherit="false">
+			<li Class="SmeltedLoong.ACP_PawnFoodCost">
+				<foodCost>0.1</foodCost>
+			</li>
+			<li Class="SmeltedLoong.ACP_TargetForAI" />
+		</comps>
+	</AbilityDef>
+
+	<AbilityDef ParentName="NY_AI_AbilityBase">
+		<defName>NY_ability_GhoulRevenantMode</defName>
+		<label>幽龙诡袭</label>
+		<description>调动源自幽魂的暗黑心灵能量暂时隐去身形或改变身躯构造，切换模式以决定技能效果。</description>
+		<iconPath>UI/Abilities/RevenantInvisibility</iconPath>
+		<cooldownTicksRange>3600</cooldownTicksRange>
+		<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+		<statBases>
+			<Ability_Duration>30</Ability_Duration>
+		</statBases>
+		<verbProperties>
+			<warmupTime>0.5</warmupTime>
+		</verbProperties>
+		<comps>
+			<li Class="SmeltedLoong.ACP_GiveHediffDual">
+				<hediff1>NY_hediff_GhoulLoongInvisible</hediff1>
+				<hediff2>NY_hediff_GhoulLoongUnbreakable</hediff2>
+			</li>
+			<li Class="SmeltedLoong.ACP_PawnFoodCost">
+				<foodCost>0.2</foodCost>
+			</li>
+			<li Class="CompProperties_AbilityEffecterOnTarget">
+				<effecterDef>VoidTerror_Target</effecterDef>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<HediffDef ParentName="NY_HediffBase">
+		<defName>NY_hediff_GhoulLoongInvisible</defName>
+		<label>潜影</label>
+		<description>暗黑心灵能量正在使个体隐形。</description>
+		<defaultLabelColor>(0.6, 0.6, 0.6)</defaultLabelColor>
+		<keepOnBodyPartRestoration>false</keepOnBodyPartRestoration>
+		<comps>
+			<li Class="HediffCompProperties_Invisibility">
+				<visibleToPlayer>true</visibleToPlayer>
+				<fadeDurationTicks>60</fadeDurationTicks>
+			</li>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="NY_HediffBase">
+		<defName>NY_hediff_GhoulLoongUnbreakable</defName>
+		<label>散形</label>
+		<description>暗黑心灵能量正在改变躯体构造。</description>
+		<defaultLabelColor>(0.6, 0.6, 0.6)</defaultLabelColor>
+		<keepOnBodyPartRestoration>false</keepOnBodyPartRestoration>
+		<stages>
+			<li>
+				<statFactors>
+					<IncomingDamageFactor>0</IncomingDamageFactor>
+				</statFactors>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<li Class="HediffCompProperties_Effecter">
+				<stateEffecter>NY_effecter_GhoulLoongUnbreakable</stateEffecter>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<AbilityDef>
+		<defName>NY_ability_GhoulDeathRefusal</defName>
+		<label>亡龙庇佑</label>
+		<description>调动暗黑心灵能量分离目标的意识与肉体，使其即使身体被严重破坏意识也不会彻底消亡。</description>
+		<iconPath>UI/Icons/Genes/Gene_Deathless</iconPath>
+		<cooldownTicksRange>7500</cooldownTicksRange>
+		<hostile>false</hostile>
+		<aiCanUse>true</aiCanUse>
+		<warmupEffecter>HoraxianSpellLight_Warmup</warmupEffecter>
+		<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+		<statBases>
+			<Ability_Duration>125</Ability_Duration>
+		</statBases>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>9.9</range>
+			<warmupTime>1</warmupTime>
+			<ai_IsWeapon>false</ai_IsWeapon>
+			<soundCast>AgonyPulse_Cast</soundCast>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+				<canTargetBuildings>false</canTargetBuildings>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="SmeltedLoong.ACP_GiveHediffLinkable">
+				<hediff1>NY_hediff_GhoulLoongDeathRefusal</hediff1>
+				<hediff2>NY_hediff_DeathRefusalFromGhoulLoong</hediff2>
+			</li>
+			<li Class="SmeltedLoong.ACP_PawnFoodCost">
+				<foodCost>0.4</foodCost>
+			</li>
+			<li Class="CompProperties_AbilityEffecterOnTarget">
+				<effecterDef>AgonyPulseExplosion</effecterDef>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<HediffDef ParentName="NY_HediffBase" Name="NY_GhoulLoongDeathRefusal">
+		<defName>NY_hediff_GhoulLoongDeathRefusal</defName>
+		<label>死而不朽</label>
+		<description>暗黑心灵能量正在维持着个体的意识不灭。</description>
+		<defaultLabelColor>(0, 1, 0.8)</defaultLabelColor>
+		<keepOnBodyPartRestoration>false</keepOnBodyPartRestoration>
+		<preventsDeath>true</preventsDeath>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_Effecter">
+				<stateEffecter>DeathRefusalAvailable</stateEffecter>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="NY_GhoulLoongDeathRefusal">
+		<defName>NY_hediff_DeathRefusalFromGhoulLoong</defName>
+		<label>死生联结</label>
+		<description>由暗黑心灵能量建立的链接，持续保护个体的心智并修复肉体。</description>
+		<comps>
+			<li Class="SmeltedLoong.HCP_HurtShare"/>
+			<li Class="SmeltedLoong.HCP_Regeneration">
+				<healPerSecond>4</healPerSecond>
+				<showHealAmount>true</showHealAmount>
+			</li>
+			<li Class="HediffCompProperties_Link">
+				<requireLinkOnOtherPawn>false</requireLinkOnOtherPawn>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<EffecterDef>
+		<defName>NY_effecter_GhoulLoongUnbreakable</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+				<positionRadius>0.3</positionRadius>
+				<fleckDef>NY_fleck_GhoulLoongUnbreakable</fleckDef>
+				<chancePerTick>0.1</chancePerTick>
+				<scale>0.5~1</scale>
+				<spawnLocType>OnSource</spawnLocType>
+			</li>
+		</children>
+	</EffecterDef>
+
+	<FleckDef ParentName="FleckBase_Thrown">
+		<defName>NY_fleck_GhoulLoongUnbreakable</defName>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<fadeInTime>0.3</fadeInTime>
+		<solidTime>0</solidTime>
+		<fadeOutTime>0.3</fadeOutTime>
+		<growthRate>0.8</growthRate>
+		<acceleration>(0, 0, 2)</acceleration>
+		<graphicData>
+			<texPath>Things/Mote/BerserkBit</texPath>
+			<shaderType>TransparentPostLight</shaderType>
+			<color>(0.1, 0.1, 0.1)</color>
+		</graphicData>
+	</FleckDef>
+
+	<EffecterDef>
+		<defName>NY_effecter_GhoulLoongPump</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+				<moteDef>Mote_MeatExplosionMist</moteDef>
+				<rotation>-150~150</rotation>
+				<burstCount>1</burstCount>
+				<scale>0.1</scale>
+				<chancePerTick>0.025</chancePerTick>
+				<spawnLocType>RandomDrawPosOnTarget</spawnLocType>
+				<attachToSpawnThing>true</attachToSpawnThing>
+			</li>
+		</children>
+	</EffecterDef>
+</Defs>

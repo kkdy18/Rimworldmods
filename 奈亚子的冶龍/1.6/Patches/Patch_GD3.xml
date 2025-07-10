@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Glitterworld Destroyer 4 - Mechanoid Addon</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/HediffDef[defName = "NY_hediff_SmokeGyrfalcon"]/comps</xpath>
+					<value>
+						<li Class="SmeltedLoong.HCP_ReleaseGas">
+							<gasType>BlindSmoke</gasType>
+							<cellsToFill>90</cellsToFill>
+							<durationSeconds>30</durationSeconds>
+							<period>5</period>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/AbilityDef[defName = "NY_ability_SmokeGyrfalcon"]/cooldownTicksRange</xpath>
+					<value>
+						<cooldownTicksRange>6000</cooldownTicksRange>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/AbilityDef[defName = "NY_ability_InvisibleOwl"]/cooldownTicksRange</xpath>
+					<value>
+						<cooldownTicksRange>6000</cooldownTicksRange>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

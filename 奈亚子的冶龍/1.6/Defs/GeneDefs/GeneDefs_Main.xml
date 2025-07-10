@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--基础模板-->
+	<GeneDef Name="NY_LoongBodyGene" Abstract="True">
+		<descriptionHyperlinks>
+			<ThingDef>Meat_SmeltedLoong</ThingDef>
+			<ThingDef>Leather_SmeltedLoong</ThingDef>
+		</descriptionHyperlinks>
+		<biostatCpx>0</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<statOffsets>
+			<RoyalFavorValue>3</RoyalFavorValue>
+		</statOffsets>
+		<statFactors>
+			<Fertility>0.02</Fertility>
+			<LifespanFactor>8</LifespanFactor>
+		</statFactors>
+		<selectionWeight>0</selectionWeight>
+		<tattoosVisible>false</tattoosVisible>
+		<displayOrderInCategory>1</displayOrderInCategory>
+		<displayCategory>NY_SmeltedLoongGene</displayCategory>
+		<skinColorOverride>(250, 250, 250)</skinColorOverride>
+		<bodyType>Standard</bodyType>
+		<beardTagFilter>
+			<whitelist>true</whitelist>
+			<tags>
+				<li>NoBeard</li>
+			</tags>
+		</beardTagFilter>
+		<hairTagFilter>
+			<whitelist>true</whitelist>
+			<tags>
+				<li>NY_SmeltedLoongHair</li>
+			</tags>
+		</hairTagFilter>
+		<exclusionTags>
+			<li>Jaw</li>
+			<li>Fur</li>
+			<li>Nose</li>
+			<li>HeadType</li>
+			<li>BodyType</li>
+			<li>EyeColor</li>
+			<li>HairStyle</li>
+			<li>SkinColorOverride</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef ParentName="GeneHeadboneBase" Name="NY_LoongHornGene" Abstract="True">
+		<biostatCpx>0</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<selectionWeight>0</selectionWeight>
+		<displayOrderInCategory>2</displayOrderInCategory>
+		<displayCategory>NY_SmeltedLoongGene</displayCategory>
+		<randomChosen>true</randomChosen>
+		<exclusionTags>
+			<li>Horn</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef Name="NY_LoongTailGene" Abstract="True">
+		<biostatCpx>0</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<selectionWeight>0</selectionWeight>
+		<displayOrderInCategory>3</displayOrderInCategory>
+		<displayCategory>NY_SmeltedLoongGene</displayCategory>
+		<randomChosen>true</randomChosen>
+		<exclusionTags>
+			<li>Tail</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<!--冶龍基因-->
+
+	<GeneDef ParentName="NY_LoongBodyGene">
+		<defName>NY_gene_SmeltedLoongBW</defName>
+		<label>青花瓷龙</label>
+		<description>决定冶龍亚种青花瓷种的性状的核心基因。\n\n冶龍的体内有着一类独特的生长发育调控基因，它们也导致了冶龍的单性别族群以及冶龍后代会完全遗传母亲基因等现象的形成，该基因在冶龍漫长的演化中不断迭代，最终变得极度稳定，任何与其相斥的基因都会被其无效化。</description>
+		<descriptionHyperlinks>
+			<AbilityDef>NY_ability_LoongCraft</AbilityDef>
+		</descriptionHyperlinks>
+		<iconPath>UI/Genes/NY_SmeltedLoong</iconPath>
+		<biostatCpx>3</biostatCpx>
+		<biostatMet>4</biostatMet>
+		<statOffsets>
+			<ComfyTemperatureMin>-21</ComfyTemperatureMin>
+			<ComfyTemperatureMax>174</ComfyTemperatureMax>
+		</statOffsets>
+		<forcedHeadTypes>
+			<li>SmeltedLoongHeadBW</li>
+			<li>SmeltedLoongHeadBW_A</li>
+			<li>SmeltedLoongHeadBW_B</li>
+			<li>SmeltedLoongHeadBW_C</li>
+		</forcedHeadTypes>
+		<hediffGiversCannotGive>
+			<li>Frail</li>
+			<li>Asthma</li>
+			<li>BadBack</li>
+			<li>Carcinoma</li>
+			<li>HeartArteryBlockage</li>
+		</hediffGiversCannotGive>
+		<forcedTraits>
+			<li>
+				<def>NY_trait_SkinBW</def>
+			</li>
+		</forcedTraits>
+		<abilities>
+			<li>NY_ability_LoongCraft</li>
+		</abilities>
+		<modExtensions>
+			<li Class="SmeltedLoong.SmeltedLoongGene">
+				<forceFemale>true</forceFemale>
+				<hediff>NY_hediff_SmeltedLoongBW</hediff>
+				<customMeat>Meat_SmeltedLoong</customMeat>
+				<customLeather>Leather_SmeltedLoong</customLeather>
+				<forcedBodyTypeBaby>SmeltedLoongBodyBaby</forcedBodyTypeBaby>
+				<forcedBodyTypeChild>SmeltedLoongBodyBW_Child</forcedBodyTypeChild>
+				<forcedBodyType>SmeltedLoongBodyBW</forcedBodyType>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="NY_LoongHornGene">
+		<defName>NY_gene_SmeltedLoongHornBW</defName>
+		<label>龙角青</label>
+		<description>青花瓷种冶龍会长出宛如青色陶瓷的龙角，由于青花瓷种冶龍的基因丰富度较低这种角几乎不存在变种。</description>
+		<iconPath>UI/Genes/NY_LoongHorn</iconPath>
+		<prerequisite>NY_gene_SmeltedLoongBW</prerequisite>
+		<modExtensions>
+			<li Class="SmeltedLoong.SmeltedLoongGene">
+				<hediff>NY_hediff_LoongHornBW</hediff>
+				<bodyPart>Head</bodyPart>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="NY_LoongTailGene">
+		<defName>NY_gene_SmeltedLoongTailBW</defName>
+		<label>龙尾青</label>
+		<description>青花瓷种冶龍会长出一根柔中带刚的青蓝色大尾巴，摸起来冰冰的，夏天可以抱着睡觉。</description>
+		<iconPath>UI/Genes/NY_LoongTail</iconPath>
+		<prerequisite>NY_gene_SmeltedLoongBW</prerequisite>
+		<minAgeActive>3</minAgeActive>
+		<modExtensions>
+			<li Class="SmeltedLoong.SmeltedLoongGene">
+				<hediff>NY_hediff_LoongTailBW</hediff>
+				<bodyPart>Spine</bodyPart>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="NY_LoongBodyGene">
+		<defName>NY_gene_SmeltedLoongCB</defName>
+		<label>纯种龙</label>
+		<description>决定冶龍纯种的性状的核心基因。\n\n冶龍的体内有着一类独特的生长发育调控基因，它们也导致了冶龍的单性别族群以及冶龍后代会完全遗传母亲基因等现象的形成，该基因在冶龍漫长的演化中不断迭代，最终变得极度稳定，任何与其相斥的基因都会被其无效化。</description>
+		<descriptionHyperlinks>
+			<AbilityDef>NY_ability_LoongFireSpew</AbilityDef>
+			<AbilityDef>NY_ability_LoongFrenzy</AbilityDef>
+		</descriptionHyperlinks>
+		<iconPath>UI/Genes/NY_SmeltedLoong</iconPath>
+		<biostatCpx>3</biostatCpx>
+		<biostatMet>4</biostatMet>
+		<lovinMTBFactor>0.5</lovinMTBFactor>
+		<statOffsets>
+			<ComfyTemperatureMin>-26</ComfyTemperatureMin>
+			<ComfyTemperatureMax>14</ComfyTemperatureMax>
+			<MaxNutrition>0.5</MaxNutrition>
+		</statOffsets>
+		<forcedHeadTypes>
+			<li>SmeltedLoongHeadCB</li>
+			<li>SmeltedLoongHeadCB_A</li>
+			<li>SmeltedLoongHeadCB_B</li>
+			<li>SmeltedLoongHeadCB_C</li>
+		</forcedHeadTypes>
+		<hediffGiversCannotGive>
+			<li>Frail</li>
+			<li>BadBack</li>
+			<li>Carcinoma</li>
+		</hediffGiversCannotGive>
+		<forcedTraits>
+			<li>
+				<def>Tough</def>
+			</li>
+		</forcedTraits>
+		<abilities>
+			<li>NY_ability_LoongFireSpew</li>
+			<li>NY_ability_LoongFrenzy</li>
+		</abilities>
+		<modExtensions>
+			<li Class="SmeltedLoong.SmeltedLoongGene">
+				<forceFemale>true</forceFemale>
+				<hediff>NY_hediff_SmeltedLoongCB</hediff>
+				<customMeat>Meat_SmeltedLoong</customMeat>
+				<customLeather>Leather_SmeltedLoong</customLeather>
+				<forcedBodyTypeBaby>SmeltedLoongBodyBaby</forcedBodyTypeBaby>
+				<forcedBodyTypeChild>SmeltedLoongBodyCB_Child</forcedBodyTypeChild>
+				<forcedBodyType>SmeltedLoongBodyCB</forcedBodyType>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="NY_LoongHornGene">
+		<defName>NY_gene_SmeltedLoongHornCB</defName>
+		<label>龙角翠</label>
+		<description>纯种冶龍会长出各种各样的角，比如绿中透黄的琉璃角，华丽精美的珍珠角，似乎还有一种生姜角，但最好别当着冶龍的面提这个称谓，她们不喜欢，相当不喜欢。</description>
+		<iconPath>UI/Genes/NY_LoongHorn</iconPath>
+		<prerequisite>NY_gene_SmeltedLoongCB</prerequisite>
+		<modExtensions>
+			<li Class="SmeltedLoong.SmeltedLoongGene">
+				<hediff>NY_hediff_LoongHornCB</hediff>
+				<bodyPart>Head</bodyPart>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="NY_LoongTailGene">
+		<defName>NY_gene_SmeltedLoongTailCB</defName>
+		<label>龙尾翠</label>
+		<description>纯种冶龍会长出一根粗壮的翠绿色大尾巴，肌肉发达的尾巴如果甩到人身上大概会筋断骨折。</description>
+		<iconPath>UI/Genes/NY_LoongTail</iconPath>
+		<prerequisite>NY_gene_SmeltedLoongCB</prerequisite>
+		<minAgeActive>3</minAgeActive>
+		<modExtensions>
+			<li Class="SmeltedLoong.SmeltedLoongGene">
+				<hediff>NY_hediff_LoongTailCB</hediff>
+				<bodyPart>Spine</bodyPart>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="NY_LoongBodyGene">
+		<defName>NY_gene_SmeltedLoongWJ</defName>
+		<label>白玉龙</label>
+		<description>决定冶龍亚种白玉种的性状的核心基因。\n\n冶龍的体内有着一类独特的生长发育调控基因，它们也导致了冶龍的单性别族群以及冶龍后代会完全遗传母亲基因等现象的形成，该基因在冶龍漫长的演化中不断迭代，最终变得极度稳定，任何与其相斥的基因都会被其无效化。</description>
+		<descriptionHyperlinks>
+			<AbilityDef>NY_ability_LoongSmoke</AbilityDef>
+		</descriptionHyperlinks>
+		<iconPath>UI/Genes/NY_SmeltedLoong</iconPath>
+		<biostatCpx>3</biostatCpx>
+		<biostatMet>4</biostatMet>
+		<statOffsets>
+			<ComfyTemperatureMin>-21</ComfyTemperatureMin>
+			<ComfyTemperatureMax>14</ComfyTemperatureMax>
+		</statOffsets>
+		<forcedHeadTypes>
+			<li>SmeltedLoongHeadWJ</li>
+			<li>SmeltedLoongHeadWJ_A</li>
+			<li>SmeltedLoongHeadWJ_B</li>
+			<li>SmeltedLoongHeadWJ_C</li>
+		</forcedHeadTypes>
+		<hediffGiversCannotGive>
+			<li>Frail</li>
+			<li>Asthma</li>
+			<li>Dementia</li>
+			<li>Alzheimers</li>
+			<li>HeartArteryBlockage</li>
+			<li>Cataract</li>
+		</hediffGiversCannotGive>
+		<forcedTraits>
+			<li>
+				<def>NY_trait_EyeWJ</def>
+			</li>
+		</forcedTraits>
+		<abilities>
+			<li>NY_ability_LoongSmoke</li>
+		</abilities>
+		<modExtensions>
+			<li Class="SmeltedLoong.SmeltedLoongGene">
+				<forceFemale>true</forceFemale>
+				<hediff>NY_hediff_SmeltedLoongWJ</hediff>
+				<customMeat>Meat_SmeltedLoong</customMeat>
+				<customLeather>Leather_SmeltedLoong</customLeather>
+				<forcedBodyTypeBaby>SmeltedLoongBodyBaby</forcedBodyTypeBaby>
+				<forcedBodyTypeChild>SmeltedLoongBodyWJ_Child</forcedBodyTypeChild>
+				<forcedBodyType>SmeltedLoongBodyWJ</forcedBodyType>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="NY_LoongHornGene">
+		<defName>NY_gene_SmeltedLoongHornWJ</defName>
+		<label>龙角玉</label>
+		<description>白玉种冶龍的角摸起来冰冰的，质感与色泽如玉石一般，不像寻常的角质。</description>
+		<iconPath>UI/Genes/NY_LoongHorn</iconPath>
+		<prerequisite>NY_gene_SmeltedLoongWJ</prerequisite>
+		<modExtensions>
+			<li Class="SmeltedLoong.SmeltedLoongGene">
+				<hediff>NY_hediff_LoongHornWJ</hediff>
+				<bodyPart>Head</bodyPart>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="NY_LoongTailGene">
+		<defName>NY_gene_SmeltedLoongTailWJ</defName>
+		<label>龙尾玉</label>
+		<description>白玉种冶龍的尾巴与纯种冶龍的尾巴相似，但尾巴的鳞片颜色偏白并且长着洁白的毛。</description>
+		<iconPath>UI/Genes/NY_LoongTail</iconPath>
+		<prerequisite>NY_gene_SmeltedLoongWJ</prerequisite>
+		<minAgeActive>3</minAgeActive>
+		<modExtensions>
+			<li Class="SmeltedLoong.SmeltedLoongGene">
+				<hediff>NY_hediff_LoongTailWJ</hediff>
+				<bodyPart>Spine</bodyPart>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="NY_LoongBodyGene">
+		<defName>NY_gene_SmeltedLoongPC</defName>
+		<label>剪纸龙</label>
+		<description>决定冶龍亚种剪纸种的性状的核心基因。\n\n冶龍的体内有着一类独特的生长发育调控基因，它们也导致了冶龍的单性别族群以及冶龍后代会完全遗传母亲基因等现象的形成，该基因在冶龍漫长的演化中不断迭代，最终变得极度稳定，任何与其相斥的基因都会被其无效化。</description>
+		<descriptionHyperlinks>
+		</descriptionHyperlinks>
+		<iconPath>UI/Genes/NY_SmeltedLoong</iconPath>
+		<biostatCpx>3</biostatCpx>
+		<biostatMet>4</biostatMet>
+		<preventPermanentWounds>true</preventPermanentWounds>
+		<lovinMTBFactor>0.2</lovinMTBFactor>
+		<statOffsets>
+			<ComfyTemperatureMin>-36</ComfyTemperatureMin>
+			<ComfyTemperatureMax>14</ComfyTemperatureMax>
+		</statOffsets>
+		<forcedHeadTypes>
+			<li>SmeltedLoongHeadPC</li>
+			<li>SmeltedLoongHeadPC_A</li>
+			<li>SmeltedLoongHeadPC_B</li>
+			<li>SmeltedLoongHeadPC_C</li>
+		</forcedHeadTypes>
+		<hediffGiversCannotGive>
+			<li>Frail</li>
+			<li>Asthma</li>
+			<li>Dementia</li>
+			<li>Alzheimers</li>
+			<li>HeartArteryBlockage</li>
+		</hediffGiversCannotGive>
+		<forcedTraits>
+			<li>
+				<def>NY_trait_BeautyPC</def>
+			</li>
+		</forcedTraits>
+		<modExtensions>
+			<li Class="SmeltedLoong.SmeltedLoongGene">
+				<forceFemale>true</forceFemale>
+				<hediff>NY_hediff_SmeltedLoongPC</hediff>
+				<customMeat>Meat_SmeltedLoong</customMeat>
+				<customLeather>Leather_SmeltedLoong</customLeather>
+				<forcedBodyTypeBaby>SmeltedLoongBodyBaby</forcedBodyTypeBaby>
+				<forcedBodyTypeChild>SmeltedLoongBodyPC_Child</forcedBodyTypeChild>
+				<forcedBodyType>SmeltedLoongBodyPC</forcedBodyType>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="NY_LoongHornGene">
+		<defName>NY_gene_SmeltedLoongHornPC</defName>
+		<label>龙角红</label>
+		<description>剪纸种冶龍的角细看有淡淡的花纹，非常漂亮，虽然变种不多，但也是冶龍的龙角选美中的有力竞争者。</description>
+		<iconPath>UI/Genes/NY_LoongHorn</iconPath>
+		<prerequisite>NY_gene_SmeltedLoongPC</prerequisite>
+		<modExtensions>
+			<li Class="SmeltedLoong.SmeltedLoongGene">
+				<hediff>NY_hediff_LoongHornPC</hediff>
+				<bodyPart>Head</bodyPart>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="NY_LoongTailGene">
+		<defName>NY_gene_SmeltedLoongTailPC</defName>
+		<label>龙尾红</label>
+		<description>剪纸种冶龍会长出生有薄膜状组织的红色尾巴，尾巴上类似剪纸的结构是人为修剪的结果，据说在冶龍的故乡存在和理发师类似的职业剪尾师。</description>
+		<iconPath>UI/Genes/NY_LoongTail</iconPath>
+		<prerequisite>NY_gene_SmeltedLoongPC</prerequisite>
+		<minAgeActive>3</minAgeActive>
+		<modExtensions>
+			<li Class="SmeltedLoong.SmeltedLoongGene">
+				<hediff>NY_hediff_LoongTailPC</hediff>
+				<bodyPart>Spine</bodyPart>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="NY_LoongBodyGene">
+		<defName>NY_gene_SmeltedLoongGP</defName>
+		<label>青植龙</label>
+		<description>决定冶龍亚种青植种的性状的核心基因。\n\n冶龍的体内有着一类独特的生长发育调控基因，它们也导致了冶龍的单性别族群以及冶龍后代会完全遗传母亲基因等现象的形成，该基因在冶龍漫长的演化中不断迭代，最终变得极度稳定，任何与其相斥的基因都会被其无效化。</description>
+		<descriptionHyperlinks>
+			<AbilityDef>NY_ability_LoongTend</AbilityDef>
+			<AbilityDef>NY_ability_LoongMature</AbilityDef>
+		</descriptionHyperlinks>
+		<iconPath>UI/Genes/NY_SmeltedLoong</iconPath>
+		<biostatCpx>3</biostatCpx>
+		<biostatMet>4</biostatMet>
+		<statOffsets>
+			<ComfyTemperatureMin>-21</ComfyTemperatureMin>
+			<ComfyTemperatureMax>24</ComfyTemperatureMax>
+			<MaxNutrition>0.5</MaxNutrition>
+		</statOffsets>
+		<forcedHeadTypes>
+			<li>SmeltedLoongHeadGP</li>
+			<li>SmeltedLoongHeadGP_A</li>
+			<li>SmeltedLoongHeadGP_B</li>
+			<li>SmeltedLoongHeadGP_C</li>
+		</forcedHeadTypes>
+		<hediffGiversCannotGive>
+			<li>Frail</li>
+			<li>Asthma</li>
+			<li>BadBack</li>
+			<li>Cataract</li>
+			<li>Carcinoma</li>
+			<li>HeartArteryBlockage</li>
+		</hediffGiversCannotGive>
+		<forcedTraits>
+			<li>
+				<def>NY_trait_ToughGP</def>
+			</li>
+		</forcedTraits>
+		<abilities>
+			<li>NY_ability_LoongTend</li>
+			<li>NY_ability_LoongMature</li>
+		</abilities>
+		<modExtensions>
+			<li Class="SmeltedLoong.SmeltedLoongGene">
+				<forceFemale>true</forceFemale>
+				<hediff>NY_hediff_SmeltedLoongGP</hediff>
+				<customMeat>Meat_SmeltedLoong</customMeat>
+				<customLeather>Leather_SmeltedLoong</customLeather>
+				<forcedBodyTypeBaby>SmeltedLoongBodyBaby</forcedBodyTypeBaby>
+				<forcedBodyTypeChild>SmeltedLoongBodyCB_Child</forcedBodyTypeChild>
+				<forcedBodyType>SmeltedLoongBodyCB</forcedBodyType>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="NY_LoongHornGene">
+		<defName>NY_gene_SmeltedLoongHornGP</defName>
+		<label>龙角叶</label>
+		<description>青植种冶龍除了头顶的角之外，还会在耳前长出额外的角质，这些部位都能生出翠绿的叶芽。</description>
+		<iconPath>UI/Genes/NY_LoongHorn</iconPath>
+		<prerequisite>NY_gene_SmeltedLoongGP</prerequisite>
+		<modExtensions>
+			<li Class="SmeltedLoong.SmeltedLoongGene">
+				<hediff>NY_hediff_LoongHornGP</hediff>
+				<bodyPart>Head</bodyPart>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="NY_LoongTailGene">
+		<defName>NY_gene_SmeltedLoongTailGP</defName>
+		<label>龙尾叶</label>
+		<description>青植种冶龍的尾巴较短并由于鳞片的退化变得更加光滑，而靠近末端地方因为角质的堆积呈现出树皮的质感，此处会生长出叶芽而非毛发。</description>
+		<iconPath>UI/Genes/NY_LoongTail</iconPath>
+		<prerequisite>NY_gene_SmeltedLoongGP</prerequisite>
+		<minAgeActive>3</minAgeActive>
+		<modExtensions>
+			<li Class="SmeltedLoong.SmeltedLoongGene">
+				<hediff>NY_hediff_LoongTailGP</hediff>
+				<bodyPart>Spine</bodyPart>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="NY_LoongBodyGene">
+		<defName>NY_gene_SmeltedLoongMC</defName>
+		<label>孔雀石龙</label>
+		<description>决定冶龍亚种孔雀石种的性状的核心基因。\n\n冶龍的体内有着一类独特的生长发育调控基因，它们也导致了冶龍的单性别族群以及冶龍后代会完全遗传母亲基因等现象的形成，该基因在冶龍漫长的演化中不断迭代，最终变得极度稳定，任何与其相斥的基因都会被其无效化。</description>
+		<descriptionHyperlinks>
+			<AbilityDef>NY_ability_LoongMine</AbilityDef>
+			<AbilityDef>NY_ability_LoongGroupArmor</AbilityDef>
+		</descriptionHyperlinks>
+		<iconPath>UI/Genes/NY_SmeltedLoong</iconPath>
+		<biostatCpx>3</biostatCpx>
+		<biostatMet>4</biostatMet>
+		<statOffsets>
+			<ComfyTemperatureMin>-26</ComfyTemperatureMin>
+			<ComfyTemperatureMax>24</ComfyTemperatureMax>
+		</statOffsets>
+		<forcedHeadTypes>
+			<li>SmeltedLoongHeadMC</li>
+			<li>SmeltedLoongHeadMC_A</li>
+			<li>SmeltedLoongHeadMC_B</li>
+			<li>SmeltedLoongHeadMC_C</li>
+		</forcedHeadTypes>
+		<hediffGiversCannotGive>
+			<li>Frail</li>
+			<li>BadBack</li>
+			<li>Dementia</li>
+			<li>Alzheimers</li>
+			<li>HeartArteryBlockage</li>
+			<li>Cataract</li>
+		</hediffGiversCannotGive>
+		<forcedTraits>
+			<li>
+				<def>NY_trait_ToughMC</def>
+			</li>
+		</forcedTraits>
+		<abilities>
+			<li>NY_ability_LoongMine</li>
+			<li>NY_ability_LoongGroupArmor</li>
+		</abilities>
+		<modExtensions>
+			<li Class="SmeltedLoong.SmeltedLoongGene">
+				<forceFemale>true</forceFemale>
+				<hediff>NY_hediff_SmeltedLoongMC</hediff>
+				<customMeat>Meat_SmeltedLoong</customMeat>
+				<customLeather>Leather_SmeltedLoong</customLeather>
+				<forcedBodyTypeBaby>SmeltedLoongBodyBaby</forcedBodyTypeBaby>
+				<forcedBodyTypeChild>SmeltedLoongBodyWJ_Child</forcedBodyTypeChild>
+				<forcedBodyType>SmeltedLoongBodyWJ</forcedBodyType>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="NY_LoongHornGene">
+		<defName>NY_gene_SmeltedLoongHornMC</defName>
+		<label>龙角石</label>
+		<description>孔雀石种冶龍的角与白玉龙的角一样，有着玉石般的质感，但她们的角看上去有些过度生长，变得庞大坚硬且棱角分明，而且在耳前也长出了额外的角质。</description>
+		<iconPath>UI/Genes/NY_LoongHorn</iconPath>
+		<prerequisite>NY_gene_SmeltedLoongMC</prerequisite>
+		<modExtensions>
+			<li Class="SmeltedLoong.SmeltedLoongGene">
+				<hediff>NY_hediff_LoongHornMC</hediff>
+				<bodyPart>Head</bodyPart>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="NY_LoongTailGene">
+		<defName>NY_gene_SmeltedLoongTailMC</defName>
+		<label>龙尾石</label>
+		<description>孔雀石种冶龍的尾巴上不再长出毛发，鳞片间偶尔会长出尖锐的玉石，末端更是形成了沉重的大块玉石。</description>
+		<iconPath>UI/Genes/NY_LoongTail</iconPath>
+		<prerequisite>NY_gene_SmeltedLoongMC</prerequisite>
+		<minAgeActive>3</minAgeActive>
+		<modExtensions>
+			<li Class="SmeltedLoong.SmeltedLoongGene">
+				<hediff>NY_hediff_LoongTailMC</hediff>
+				<bodyPart>Spine</bodyPart>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<!--杂项-->
+	<GeneDef>
+		<defName>NY_gene_SmeltedLoongMilk</defName>
+		<label>龙涎香</label>
+		<description>成年冶龍会分泌一种名为龙涎香的乳汁，据说有着特殊的香气，是世间少有的珍馐。</description>
+		<iconPath>Things/Item/NY_LoongMilk/NY_LoongMilk_c</iconPath>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<displayOrderInCategory>4</displayOrderInCategory>
+		<displayCategory>NY_SmeltedLoongGene</displayCategory>
+		<minAgeActive>13</minAgeActive>
+		<exclusionTags>
+		</exclusionTags>
+		<modExtensions>
+			<li Class="SmeltedLoong.SmeltedLoongGene">
+				<hediff>NY_hediff_SmeltedLoongMilk</hediff>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>NY_gene_LoongFireResistant</defName>
+		<label>避火龙鳞</label>
+		<description>据说纯种冶龍的皮肤表面覆盖着细密的透明鳞片，隔热效果良好的龙鳞结合特殊的阻燃分泌物保护着冶龍的身体免受火焰伤害。</description>
+		<iconPath>UI/Genes/NY_LoongFireResistant</iconPath>
+		<biostatCpx>3</biostatCpx>
+		<biostatMet>-4</biostatMet>
+		<displayOrderInCategory>4</displayOrderInCategory>
+		<displayCategory>NY_SmeltedLoongGene</displayCategory>
+		<statFactors>
+			<Flammability>0</Flammability>
+		</statFactors>
+		<statOffsets>
+			<ArmorRating_Heat>2</ArmorRating_Heat>
+		</statOffsets>
+		<exclusionTags>
+			<li>FireDamage</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<!--食尸鬼基因-->
+	<GeneDef>
+		<defName>NY_gene_SmeltedLoongGhoul</defName>
+		<label>鬼龙身</label>
+		<description>冶龍被转化为食尸鬼后激活的隐性基因。</description>
+		<descriptionHyperlinks>
+			<HediffDef MayRequire="Ludeon.RimWorld.Anomaly">NY_hediff_GhoulLoong</HediffDef>
+		</descriptionHyperlinks>
+		<iconPath>UI/Genes/NY_GhoulLoong</iconPath>
+		<displayOrderInCategory>100</displayOrderInCategory>
+		<displayCategory>NY_SmeltedLoongGene</displayCategory>
+		<canGenerateInGeneSet>false</canGenerateInGeneSet>
+		<passOnDirectly>false</passOnDirectly>
+		<selectionWeight>0</selectionWeight>
+		<biostatCpx>0</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<renderNodeProperties>
+			<li>
+				<texPath>Things/Pawn/HeadAttachments/SmeltedLoongHornGhoul</texPath>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<parentTagDef>Head</parentTagDef>
+				<color>(255, 255, 255)</color>
+				<visibleFacing>
+					<li>East</li>
+					<li>South</li>
+					<li>West</li>
+					<li>North</li>
+				</visibleFacing>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+		<exclusionTags>
+			<li>Horn</li>
+			<li>Tail</li>
+		</exclusionTags>
+		<abilities>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">NY_ability_GhoulLoongBite</li>
+		</abilities>
+		<modExtensions>
+			<li Class="SmeltedLoong.SmeltedLoongGene">
+				<hediff MayRequire="Ludeon.RimWorld.Anomaly">NY_hediff_GhoulLoong</hediff>
+			</li>
+		</modExtensions>
+	</GeneDef>
+</Defs>

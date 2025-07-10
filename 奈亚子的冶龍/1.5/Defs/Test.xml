@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RoyalTitlePermitDef>
+		<defName>NY_CallOrbitalStrikeA</defName>
+		<label>轰炸1</label>
+		<description>Call a single-impact aerodrone strike at a target position.</description>
+		<workerClass>ForgingDragon.BlackBirdPermitWorker_Offensive</workerClass>
+		<minTitle>Acolyte</minTitle>
+		<faction>Empire</faction>
+		<permitPointCost>1</permitPointCost>
+		<cooldownDays>45</cooldownDays>
+		<uiPosition>(0,9)</uiPosition>
+		<royalAid>
+			<favorCost>6</favorCost>
+			<targetingRange>44.9</targetingRange>
+			<radius>2.9</radius>
+			<explosionRadiusRange>7.9</explosionRadiusRange>
+			<explosionCount>1</explosionCount>
+			<intervalTicks>60</intervalTicks>
+			<warmupTicks>120</warmupTicks>
+		</royalAid>
+	</RoyalTitlePermitDef>
+
+	<RoyalTitlePermitDef>
+		<defName>NY_CallOrbitalStrikeB</defName>
+		<label>轰炸2</label>
+		<description>Call a single-impact aerodrone strike at a target position.</description>
+		<workerClass>ForgingDragon.BlackBirdPermitWorker_Offensive2</workerClass>
+		<minTitle>Acolyte</minTitle>
+		<faction>Empire</faction>
+		<permitPointCost>1</permitPointCost>
+		<cooldownDays>45</cooldownDays>
+		<uiPosition>(0.5,9)</uiPosition>
+		<royalAid>
+			<favorCost>6</favorCost>
+			<targetingRange>44.9</targetingRange>
+			<radius>2.9</radius>
+			<explosionRadiusRange>7.9</explosionRadiusRange>
+			<explosionCount>1</explosionCount>
+			<intervalTicks>60</intervalTicks>
+			<warmupTicks>120</warmupTicks>
+		</royalAid>
+	</RoyalTitlePermitDef>
+
+	<RoyalTitlePermitDef>
+		<defName>NY_AutoMiniTurretDrop</defName>
+		<label>支援1</label>
+		<description>Call for a drop of 250 steel.</description>
+		<workerClass>ForgingDragon.BlackBirdPermitWorker_Defensive</workerClass>
+		<minTitle>Acolyte</minTitle>
+		<faction>Empire</faction>
+		<permitPointCost>1</permitPointCost>
+		<cooldownDays>45</cooldownDays>
+		<uiPosition>(1,9)</uiPosition>
+		<royalAid>
+			<itemsToDrop>
+				<Turret_AutoMiniTurret>1</Turret_AutoMiniTurret>
+			</itemsToDrop>
+			<favorCost>4</favorCost>
+			<targetingRange>44.9</targetingRange>
+		</royalAid>
+	</RoyalTitlePermitDef>
+
+	<RoyalTitlePermitDef>
+		<defName>NY_AntigrainWarheadDrop</defName>
+		<label>支援2</label>
+		<description>Call for a drop of 250 steel.</description>
+		<workerClass>ForgingDragon.BlackBirdPermitWorker_Defensive</workerClass>
+		<minTitle>Acolyte</minTitle>
+		<faction>Empire</faction>
+		<permitPointCost>1</permitPointCost>
+		<cooldownDays>45</cooldownDays>
+		<uiPosition>(1.5,9)</uiPosition>
+		<royalAid>
+			<itemsToDrop>
+				<TrapIED_AntigrainWarhead>1</TrapIED_AntigrainWarhead>
+			</itemsToDrop>
+			<favorCost>4</favorCost>
+			<targetingRange>44.9</targetingRange>
+		</royalAid>
+	</RoyalTitlePermitDef>
+</Defs>

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<FactionDef ParentName="FactionBase">
+		<defName>NY_SmeltedLoongUnion</defName>
+		<label>冶龍寻圣盟</label>
+		<description>为寻找所谓“圣旨”来到边缘世界的冶龍所组成的松散联盟，对外态度并不友好，虽然组织混乱，科技落后，但冶龍优秀的个体素质与生产能力结合冶龍文明的深厚底蕴依然支撑起了一个不可轻视的庞然大物。</description>
+		<factionIconPath>UI/World/NY_SmeltedLoongUnion</factionIconPath>
+		<techLevel>Industrial</techLevel>
+		<pawnSingular>冶龍</pawnSingular>
+		<pawnsPlural>冶龍</pawnsPlural>
+		<leaderTitle>盟主</leaderTitle>
+		<fixedName>寻圣盟</fixedName>
+		<allowedCultures Inherit="False">
+			<li>NY_SmeltedLoongCulture</li>
+		</allowedCultures>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">MaleSupremacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">HighLife</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Animist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+		</disallowedMemes>
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<NY_SmeltedLoongCleanBred>0.5</NY_SmeltedLoongCleanBred>
+				<NY_SmeltedLoongWhiteJade>0.4</NY_SmeltedLoongWhiteJade>
+				<NY_SmeltedLoongMalachite>0.1</NY_SmeltedLoongMalachite>
+			</xenotypeChances>
+		</xenotypeSet>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>NY_LoongCivilian</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<caravanTraderKinds>
+			<li>NY_Caravan_SmeltedLoong_Anything</li>
+			<li>NY_Caravan_SmeltedLoong_Slaver</li>
+		</caravanTraderKinds>
+		<visitorTraderKinds>
+			<li>NY_Visitor_SmeltedLoong</li>
+		</visitorTraderKinds>
+		<baseTraderKinds>
+			<li>NY_Base_SmeltedLoong</li>
+		</baseTraderKinds>
+		<raidLootMaker>NY_SmeltedLoongRaidLootMaker</raidLootMaker>
+		<pawnGroupMakers Inherit="False">
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<NY_LoongLeader>5</NY_LoongLeader>
+					<NY_LoongMusician>5</NY_LoongMusician>
+					<NY_LoongGroupHealer>20</NY_LoongGroupHealer>
+					<NY_LoongSoldierMelee>30</NY_LoongSoldierMelee>
+					<NY_LoongSoldierShoot>30</NY_LoongSoldierShoot>
+					<NY_LoongSoldierHeavy>10</NY_LoongSoldierHeavy>
+					<NY_LoongSoldierFire>5</NY_LoongSoldierFire>
+					<NY_animal_TaoWu>2.5</NY_animal_TaoWu>
+				</options>
+			</li>
+			<li>
+				<!--疫病袭击-天花-->
+				<kindDef>Combat</kindDef>
+				<commonality>10</commonality>
+				<maxTotalPoints>4000</maxTotalPoints>
+				<disallowedStrategies>
+					<li>ImmediateAttackFriendly</li>
+				</disallowedStrategies>
+				<options>
+					<NY_LoongSoldierMelee_Smallpox>50</NY_LoongSoldierMelee_Smallpox>
+					<NY_LoongInfectedFighter_Smallpox>10</NY_LoongInfectedFighter_Smallpox>
+				</options>
+			</li>
+			<li>
+				<!--疫病袭击-风寒-->
+				<kindDef>Combat</kindDef>
+				<commonality>10</commonality>
+				<maxTotalPoints>4000</maxTotalPoints>
+				<disallowedStrategies>
+					<li>ImmediateAttackFriendly</li>
+				</disallowedStrategies>
+				<options>
+					<NY_LoongSoldierMelee_Cold>50</NY_LoongSoldierMelee_Cold>
+					<NY_LoongInfectedFighter_Cold>10</NY_LoongInfectedFighter_Cold>
+				</options>
+			</li>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<NY_LoongFarmer>10</NY_LoongFarmer>
+					<NY_LoongCrafter>10</NY_LoongCrafter>
+					<NY_LoongSoldierMelee>30</NY_LoongSoldierMelee>
+					<NY_LoongSoldierShoot>30</NY_LoongSoldierShoot>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<NY_LoongTrader>1</NY_LoongTrader>
+				</traders>
+				<carriers>
+					<NY_animal_TaoWu>5</NY_animal_TaoWu>
+				</carriers>
+				<guards>
+					<NY_LoongFarmer>10</NY_LoongFarmer>
+					<NY_LoongCrafter>10</NY_LoongCrafter>
+					<NY_LoongGroupHealer>10</NY_LoongGroupHealer>
+					<NY_LoongSoldierMelee>20</NY_LoongSoldierMelee>
+					<NY_LoongSoldierShoot>20</NY_LoongSoldierShoot>
+					<NY_LoongSoldierHeavy>10</NY_LoongSoldierHeavy>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<NY_LoongLeader>10</NY_LoongLeader>
+					<NY_LoongMusician>20</NY_LoongMusician>
+					<NY_LoongGroupHealer>20</NY_LoongGroupHealer>
+					<NY_LoongSoldierMelee>40</NY_LoongSoldierMelee>
+					<NY_LoongSoldierShoot>50</NY_LoongSoldierShoot>
+					<NY_LoongSoldierHeavy>40</NY_LoongSoldierHeavy>
+				</options>
+			</li>
+		</pawnGroupMakers>
+		<colorSpectrum>
+			<li>(104, 153, 130)</li>
+		</colorSpectrum>
+		<disallowedRaidAgeRestrictions>
+			<li>Children</li>
+		</disallowedRaidAgeRestrictions>
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(0, 100)</li>
+				<li>(1000, 200)</li>
+				<li>(2500, 300)</li>
+				<li>(5000, 500)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+		<canSiege>false</canSiege>
+		<naturalEnemy>true</naturalEnemy>
+		<canStageAttacks>true</canStageAttacks>
+		<canMakeRandomly>true</canMakeRandomly>
+		<canUseAvoidGrid>true</canUseAvoidGrid>
+		<humanlikeFaction>true</humanlikeFaction>
+		<listOrderPriority>27</listOrderPriority>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<settlementGenerationWeight>1</settlementGenerationWeight>
+		<maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>70</configurationListOrderPriority>
+		<settlementNameMaker>NY_LoongNamerSettlement</settlementNameMaker>
+		<hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
+		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+		<allowedArrivalTemperatureRange>-80~90</allowedArrivalTemperatureRange>
+		<fixedIdeo>true</fixedIdeo>
+		<ideoName>真龙永存</ideoName>
+		<ideoDescription>
+			在遥远的过去最初的真龙&lt;color=#D09B61FF&gt;陈梓&lt;/color&gt;诞下了九个子嗣，她们各自为政，建立了自己的国家，但是孩子们分到的土地各不相同，有的贫瘠有的富饶。
+			争斗便开始了&lt;color=#D09B61FF&gt;陈梓&lt;/color&gt;不忍心看见孩子们自相残杀，出面阻止。九子之首向母亲索求力量以平息姐妹们的争斗，慈悲的母神允许了，遂强大的纯种龙降世，恐怖的压制能力很快就平息姐妹们的战争。
+			再后来，姐妹们都像大姐一样和母亲&lt;color=#D09B61FF&gt;陈梓&lt;/color&gt;索取力量，但是最初的真龙以及累了，她回到了远在另一个星系的母星去见爱人。将自己的力量交给了执政的大姐。
+			大姐即位了真龙之后，也给予了姐妹们子嗣的力量，但是也付出了相应的限制，心灵手巧的青花瓷将永远无法上战场，能说会道的剪纸将会一辈子不能靠近火焰。
+		</ideoDescription>
+		<deityPresets>
+			<li>
+				<nameType>
+					<name>陈梓</name>
+					<type>第一真龙</type>
+				</nameType>
+				<gender>Female</gender>
+				<iconPath>UI/Deities/DeityGeneric</iconPath>
+			</li>
+			<li>
+				<nameType>
+					<name>灰风</name>
+					<type>帷幕后的造物主</type>
+				</nameType>
+				<iconPath>UI/Deities/DeityGeneric</iconPath>
+			</li>
+		</deityPresets>
+		<forcedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_TheistEmbodied</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+		</forcedMemes>
+		<requiredPreceptsOnly>true</requiredPreceptsOnly>
+	</FactionDef>
+
+	<CultureDef Name="NY_LoongCultureBase">
+		<defName>NY_SmeltedLoongCulture</defName>
+		<label>冶龍</label>
+		<description>冶龍的文化形态。</description>
+		<ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoAstropolitan</ideoNameMaker>
+		<deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeityAstropolitan</deityNameMaker>
+		<deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerAstropolitan</deityTypeMaker>
+		<leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">LeaderTitleMaker_Astropolitan</leaderTitleMaker>
+		<festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalAstropolitan</festivalNameMaker>
+		<allowedPlaceTags>
+			<li>OriginSpacer</li>
+		</allowedPlaceTags>
+		<iconPath>UI/World/NY_SmeltedLoongUnion</iconPath>
+		<styleItemTags>
+			<li>
+				<tag>NY_SmeltedLoongHair</tag>
+				<baseWeight>10</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoBeard</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoTattoo</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+		</styleItemTags>
+	</CultureDef>
+
+	<ThingSetMakerDef>
+		<defName>NY_SmeltedLoongRaidLootMaker</defName>
+		<root Class="ThingSetMaker_MarketValue">
+			<fixedParams>
+				<filter>
+					<thingDefs>
+						<li>NY_RefinedIron</li>
+						<li>NY_RedIron</li>
+						<li>NY_GreenGlaze</li>
+						<li>NY_LotusRootSilk</li>
+						<li>NY_SmeltedLoongMilk</li>
+						<li>NY_PlumJuice</li>
+						<li>NY_PlumGingerTea</li>
+						<li>NY_PreservedPlum</li>
+					</thingDefs>
+				</filter>
+			</fixedParams>
+		</root>
+	</ThingSetMakerDef>
+
+	<FactionDef ParentName="FactionBase">
+		<defName>NY_SmeltedLoongPlayer</defName>
+		<label>冶龍新家园</label>
+		<description>因种种原因脱离了族群寻找新生活的冶龍们。</description>
+		<isPlayer>true</isPlayer>
+		<basicMemberKind>NY_LoongAlone</basicMemberKind>
+		<pawnSingular>拓乡者</pawnSingular>
+		<pawnsPlural>拓乡者们</pawnsPlural>
+		<techLevel>Industrial</techLevel>
+		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+		<settlementNameMaker>NY_LoongNamerSettlement</settlementNameMaker>
+		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+		<allowedCultures>
+			<li>NY_SmeltedLoongCulture</li>
+		</allowedCultures>
+		<factionIconPath>UI/World/NY_SmeltedLoongUnion</factionIconPath>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>NY_LoongCivilian</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<startingResearchTags>
+			<li>ClassicStart</li>
+		</startingResearchTags>
+		<startingTechprintsResearchTags>
+			<li>ClassicStart</li>
+			<li>ClassicStartTechprints</li>
+		</startingTechprintsResearchTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Cloth</li>
+			</thingDefs>
+		</apparelStuffFilter>
+	</FactionDef>
+</Defs>

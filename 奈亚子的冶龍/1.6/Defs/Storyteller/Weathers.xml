@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<WeatherDef>
+		<defName>NY_DroughtClear</defName>
+		<label>晴燥天</label>
+		<isBad>true</isBad>
+		<description>高温、干燥的天气，让人精神不振。</description>
+		<accuracyMultiplier>0.8</accuracyMultiplier>
+		<moveSpeedMultiplier>0.8</moveSpeedMultiplier>
+		<weatherThought>NY_thougth_Drought</weatherThought>
+		<favorability>Bad</favorability>
+		<perceivePriority>2</perceivePriority>
+		<temperatureRange>0~0</temperatureRange>
+		<ambientSounds>
+			<li>Ambient_Wind_Clear</li>
+		</ambientSounds>
+		<skyColorsDay>
+			<sky>(0.95,0.82,0.65)</sky>
+			<!-- 褪色沙黄色，强烈日照 -->
+			<shadow>(0.88,0.78,0.68)</shadow>
+			<!-- 干燥土地投影 -->
+			<overlay>(0.85,0.70,0.55)</overlay>
+			<!-- 沙尘覆盖效果 -->
+			<saturation>0.75</saturation>
+			<!-- 降低饱和度表现褪色 -->
+		</skyColorsDay>
+		<skyColorsDusk>
+			<sky>(1.00,0.55,0.35)</sky>
+			<!-- 灼烧橙红色 -->
+			<shadow>(0.90,0.65,0.50)</shadow>
+			<!-- 长阴影加强炎热感 -->
+			<overlay>(0.75,0.50,0.40)</overlay>
+			<!-- 悬浮沙尘效果 -->
+			<saturation>0.85</saturation>
+			<!-- 增强黄昏对比 -->
+		</skyColorsDusk>
+		<skyColorsNightEdge>
+			<sky>(0.35,0.40,0.45)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.5,0.5,0.5)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsNightEdge>
+		<skyColorsNightMid>
+			<sky>(0.35,0.40,0.45)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.5,0.5,0.5)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsNightMid>
+	</WeatherDef>
+
+	<WeatherDef>
+		<defName>NY_Sandstorm</defName>
+		<label>沙暴天</label>
+		<isBad>false</isBad>
+		<description>裹挟着尘沙的风暴使能见度降低，任何生物在这种天气下行动都会感到困难。</description>
+		<windSpeedFactor>1.5</windSpeedFactor>
+		<windSpeedOffset>1.25</windSpeedOffset>
+		<accuracyMultiplier>0.25</accuracyMultiplier>
+		<moveSpeedMultiplier>0.25</moveSpeedMultiplier>
+		<weatherThought>NY_thougth_Sandstorm</weatherThought>
+		<favorability>VeryBad</favorability>
+		<perceivePriority>1</perceivePriority>
+		<temperatureRange>0~0</temperatureRange>
+		<ambientSounds>
+			<li>Ambient_Wind_Storm</li>
+		</ambientSounds>
+		<overlayClasses>
+			<li>WeatherOverlay_SandHard</li>
+		</overlayClasses>
+		<skyColorsDay>
+			<sky>(0.7, 0.6, 0.4)</sky>
+			<!-- 浑浊的黄褐色 -->
+			<shadow>(0.8, 0.7, 0.5)</shadow>
+			<!-- 稍亮的沙尘阴影 -->
+			<overlay>(0.6, 0.5, 0.3)</overlay>
+			<!-- 深褐色覆盖层 -->
+			<saturation>0.7</saturation>
+			<!-- 降低饱和度，增强浑浊感 -->
+		</skyColorsDay>
+		<skyColorsDusk>
+			<sky>(0.65, 0.5, 0.35)</sky>
+			<!-- 深橙黄色 -->
+			<shadow>(0.75, 0.6, 0.45)</shadow>
+			<overlay>(0.55, 0.4, 0.25)</overlay>
+			<saturation>0.6</saturation>
+			<!-- 进一步降低饱和度 -->
+		</skyColorsDusk>
+		<skyColorsNightEdge>
+			<sky>(0.35,0.40,0.45)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.5, 0.5, 0.5)</overlay>
+			<saturation>0.5</saturation>
+		</skyColorsNightEdge>
+		<skyColorsNightMid>
+			<sky>(0.35,0.40,0.45)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.5, 0.5, 0.5)</overlay>
+			<saturation>0.5</saturation>
+		</skyColorsNightMid>
+	</WeatherDef>
+
+	<WeatherDef>
+		<defName>NY_ColdWindy</defName>
+		<label>风寒天</label>
+		<isBad>true</isBad>
+		<description>阴沉的大风天气，带来阵阵寒意。</description>
+		<windSpeedFactor>1.5</windSpeedFactor>
+		<accuracyMultiplier>0.8</accuracyMultiplier>
+		<moveSpeedMultiplier>0.8</moveSpeedMultiplier>
+		<weatherThought>NY_thougth_ColdWind</weatherThought>
+		<favorability>Bad</favorability>
+		<perceivePriority>2</perceivePriority>
+		<temperatureRange>0~0</temperatureRange>
+		<ambientSounds>
+			<li>Ambient_Wind_Fog</li>
+		</ambientSounds>
+		<!-- Colors are Overcast -->
+		<skyColorsDay>
+			<sky>(0.8,0.8,0.8)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.7,0.7,0.7)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsDay>
+		<skyColorsDusk>
+			<sky>(1,1,1)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.6,0.6,0.6)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsDusk>
+		<skyColorsNightEdge>
+			<sky>(0.35,0.40,0.45)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.5,0.5,0.5)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsNightEdge>
+		<skyColorsNightMid>
+			<sky>(0.35,0.40,0.45)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.5,0.5,0.5)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsNightMid>
+	</WeatherDef>
+
+	<WeatherDef>
+		<defName>NY_Snowstorm</defName>
+		<label>雪暴天</label>
+		<isBad>false</isBad>
+		<description>裹挟着冰雪的风暴使能见度降低，任何生物在这种天气下行动都会感到困难。</description>
+		<windSpeedFactor>1.5</windSpeedFactor>
+		<windSpeedOffset>1.25</windSpeedOffset>
+		<accuracyMultiplier>0.25</accuracyMultiplier>
+		<moveSpeedMultiplier>0.25</moveSpeedMultiplier>
+		<weatherThought>NY_thougth_Snowstorm</weatherThought>
+		<favorability>VeryBad</favorability>
+		<perceivePriority>1</perceivePriority>
+		<temperatureRange>0~0</temperatureRange>
+		<snowRate>1.5</snowRate>
+		<rainRate>1</rainRate>
+		<ambientSounds>
+			<li>Ambient_Wind_Storm</li>
+		</ambientSounds>
+		<overlayClasses>
+			<!-- <li>WeatherOverlay_SnowHard</li> -->
+			<li>WeatherOverlay_SnowBlizzard</li>
+		</overlayClasses>
+		<skyColorsDay>
+			<sky>(0.6, 0.7, 0.8)</sky>
+			<!-- 冷灰蓝色 -->
+			<shadow>(0.9, 0.9, 0.9)</shadow>
+			<!-- 明亮的雪地反光 -->
+			<overlay>(0.8, 0.85, 0.9)</overlay>
+			<!-- 浅灰覆盖层 -->
+			<saturation>0.8</saturation>
+			<!-- 冷色调保持一定饱和度 -->
+		</skyColorsDay>
+		<skyColorsDusk>
+			<sky>(0.5, 0.6, 0.7)</sky>
+			<!-- 深蓝灰色 -->
+			<shadow>(0.85, 0.85, 0.85)</shadow>
+			<overlay>(0.7, 0.75, 0.8)</overlay>
+			<saturation>0.7</saturation>
+		</skyColorsDusk>
+		<skyColorsNightEdge>
+			<sky>(0.35,0.40,0.45)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.5, 0.5, 0.5)</overlay>
+			<saturation>0.6</saturation>
+		</skyColorsNightEdge>
+		<skyColorsNightMid>
+			<sky>(0.35,0.40,0.45)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.5, 0.5, 0.5)</overlay>
+			<saturation>0.6</saturation>
+		</skyColorsNightMid>
+		<commonalityRainfallFactor>
+			<points>
+				<li>(0, 0)</li>
+				<li>(300,0.5)</li>
+				<li>(1300, 1)</li>
+			</points>
+		</commonalityRainfallFactor>
+	</WeatherDef>
+
+	<WeatherDef>
+		<defName>NY_Thunderstorm</defName>
+		<label>雷暴天</label>
+		<isBad>false</isBad>
+		<description>暴雨中夹杂着猛烈的雷击，在这种天气外出将是一件危险的事情。</description>
+		<windSpeedFactor>1.5</windSpeedFactor>
+		<accuracyMultiplier>0.5</accuracyMultiplier>
+		<moveSpeedMultiplier>0.75</moveSpeedMultiplier>
+		<weatherThought>SoakingWet</weatherThought>
+		<favorability>VeryBad</favorability>
+		<perceivePriority>1</perceivePriority>
+		<temperatureRange>0~0</temperatureRange>
+		<rainRate>1</rainRate>
+		<ambientSounds>
+			<li>Ambient_Rain</li>
+			<li>Ambient_Wind_Storm</li>
+		</ambientSounds>
+		<overlayClasses>
+			<li>WeatherOverlay_Rain</li>
+		</overlayClasses>
+		<eventMakers>
+			<li>
+				<averageInterval>600</averageInterval>
+				<eventClass>WeatherEvent_LightningFlash</eventClass>
+			</li>
+			<li>
+				<averageInterval>180</averageInterval>
+				<eventClass>WeatherEvent_LightningStrike</eventClass>
+			</li>
+		</eventMakers>
+		<!-- Colors are Overcast -->
+		<skyColorsDay>
+			<sky>(0.8,0.8,0.8)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.7,0.7,0.7)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsDay>
+		<skyColorsDusk>
+			<sky>(1,1,1)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.6,0.6,0.6)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsDusk>
+		<skyColorsNightEdge>
+			<sky>(0.35,0.40,0.45)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.5,0.5,0.5)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsNightEdge>
+		<skyColorsNightMid>
+			<sky>(0.35,0.40,0.45)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.5,0.5,0.5)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsNightMid>
+		<commonalityRainfallFactor>
+			<points>
+				<li>(0, 0)</li>
+				<li>(1300, 1)</li>
+				<li>(4000, 2.0)</li>
+			</points>
+		</commonalityRainfallFactor>
+	</WeatherDef>
+</Defs>

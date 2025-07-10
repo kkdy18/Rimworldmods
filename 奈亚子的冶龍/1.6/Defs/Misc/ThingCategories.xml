@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingCategoryDef>
+		<defName>NY_LoongResources</defName>
+		<label>冶龍珍材</label>
+		<parent>Root</parent>
+		<resourceReadoutRoot>true</resourceReadoutRoot>
+		<iconPath>UI/ThingCategories/NY_Resources</iconPath>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>NY_LoongWeapon</defName>
+		<label>冶龍百兵</label>
+		<parent>Weapons</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>NY_LoongWeaponMelee</defName>
+		<label>近战兵器</label>
+		<parent>NY_LoongWeapon</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>NY_LoongWeaponRanged</defName>
+		<label>远程兵器</label>
+		<parent>NY_LoongWeapon</parent>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>NY_LoongWeaponImmortal</defName>
+		<label>神珍兵器</label>
+		<parent>NY_LoongWeapon</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>NY_LoongApparel</defName>
+		<label>冶龍盔袍</label>
+		<parent>Apparel</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>NY_LoongCloth</defName>
+		<label>冶龍常服</label>
+		<parent>NY_LoongApparel</parent>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>NY_LoongArmor</defName>
+		<label>冶龍甲胄</label>
+		<parent>NY_LoongApparel</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>NY_BlackBirdArmor</defName>
+		<label>玄鸟卫禁军甲胄</label>
+		<parent>NY_LoongArmor</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>NY_LoongDress</defName>
+		<label>冶龍华饰</label>
+		<parent>NY_LoongApparel</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>NY_LoongFood</defName>
+		<label>冶龍饮食</label>
+		<parent>Foods</parent>
+		<resourceReadoutRoot>true</resourceReadoutRoot>
+		<iconPath>UI/ThingCategories/NY_LoongFood</iconPath>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>NY_LoongPlantRaw</defName>
+		<label>冶龍果蔬</label>
+		<parent>PlantFoodRaw</parent>
+		<iconPath>UI/ThingCategories/NY_LoongPlantRaw</iconPath>
+	</ThingCategoryDef>
+</Defs>

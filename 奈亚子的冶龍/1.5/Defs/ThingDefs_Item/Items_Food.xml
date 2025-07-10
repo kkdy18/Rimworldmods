@@ -63,7 +63,7 @@
 		<label>龙涎香</label>
 		<description>拥有特殊香味的冶龍乳汁，收集了满满一瓶。龙涎香蕴含着丰富的营养成分，直接饮用或当作配料都很合适。</description>
 		<graphicData>
-			<texPath>Things/Item/NY_DragonMilk</texPath>
+			<texPath>Things/Item/NY_LoongMilk</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -212,6 +212,7 @@
 		</thingCategories>
 		<statBases>
 			<MarketValue>1.5</MarketValue>
+			<RoyalFavorValue>0.002</RoyalFavorValue>
 		</statBases>
 		<ingestible>
 			<foodType>VegetableOrFruit</foodType>
@@ -283,6 +284,7 @@
 		</thingCategories>
 		<statBases>
 			<MarketValue>1.5</MarketValue>
+			<RoyalFavorValue>0.002</RoyalFavorValue>
 		</statBases>
 		<ingestible>
 			<preferability>RawTasty</preferability>
@@ -386,6 +388,7 @@
 		</thingCategories>
 		<statBases>
 			<MarketValue>1.5</MarketValue>
+			<RoyalFavorValue>0.002</RoyalFavorValue>
 		</statBases>
 		<ingestible>
 			<preferability>RawTasty</preferability>
@@ -442,6 +445,7 @@
 			<WorkToMake>360</WorkToMake>
 			<MarketValue>24</MarketValue>
 			<MaxHitPoints>500</MaxHitPoints>
+			<RoyalFavorValue>0.015</RoyalFavorValue>
 			<DeteriorationRate>0</DeteriorationRate>
 		</statBases>
 		<ingestible>

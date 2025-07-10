@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<TraderKindDef>
+		<defName>NY_Caravan_SmeltedLoong_Anything</defName>
+		<label>寻圣采买商</label>
+		<stockGenerators>
+			<!-- Resources -->
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Silver</thingDef>
+				<countRange>750~1200</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>NY_MealCannedFish</thingDef>
+				<countRange>25~50</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Dye</thingDef>
+				<countRange>20~30</countRange>
+			</li>
+			<li Class="StockGenerator_Category">
+				<categoryDef>Textiles</categoryDef>
+				<thingDefCountRange>2~2</thingDefCountRange>
+				<totalPriceRange>200~600</totalPriceRange>
+			</li>
+			<li Class="StockGenerator_Category">
+				<categoryDef>NY_LoongFood</categoryDef>
+				<excludedThingDefs>
+					<li>NY_MealGingerCongee</li>
+					<li>NY_WhiteAngelicaPoriaSoup</li>
+				</excludedThingDefs>
+				<thingDefCountRange>2~5</thingDefCountRange>
+				<totalPriceRange>400~800</totalPriceRange>
+			</li>
+			<!-- Drugs -->
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>NY_ClassicMedicine_Smallpox</thingDef>
+				<countRange>5~20</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>NY_ClassicMedicine_Cholera</thingDef>
+				<countRange>5~20</countRange>
+			</li>
+			<!-- Weapons -->
+			<li Class="StockGenerator_MarketValue">
+				<tradeTag>WeaponRanged</tradeTag>
+				<countRange>4~4</countRange>
+			</li>
+			<li Class="StockGenerator_Category">
+				<categoryDef>WeaponsMelee</categoryDef>
+				<thingDefCountRange>4~4</thingDefCountRange>
+				<countRange>1~1</countRange>
+			</li>
+			<!-- Apparel -->
+			<li Class="StockGenerator_MarketValue">
+				<tradeTag>Armor</tradeTag>
+				<countRange>5~5</countRange>
+			</li>
+			<!-- Animals -->
+			<li Class="StockGenerator_Animals">
+				<tradeTagsSell>
+					<li>NY_LoongAnimalFighter</li>
+				</tradeTagsSell>
+				<kindCountRange>1~1</kindCountRange>
+				<countRange>1~2</countRange>
+			</li>
+			<!-- Genepacks -->
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Genepack</thingDef>
+				<countRange>2~4</countRange>
+			</li>
+			<!-- Buying -->
+			<li Class="StockGenerator_BuyExpensiveSimple" />
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>Art</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>HiTechArmor</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>MusicalInstrument</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>Drugs</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>HoraxWeapon</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>ImplantEmpireCommon</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>ImplantEmpireRoyal</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>PsylinkNeuroformer</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>ExoticBuilding</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>UtilitySpecial</tag>
+			</li>
+			<li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly">
+				<thingDef>Shell_Deadlife</thingDef>
+			</li>
+			<li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly">
+				<thingDef>VoidSculpture</thingDef>
+			</li>
+			<li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly">
+				<thingDef>Shard</thingDef>
+			</li>
+			<li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly">
+				<thingDef>Bioferrite</thingDef>
+			</li>
+			<li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly">
+				<thingDef>RevenantSpine</thingDef>
+			</li>
+		</stockGenerators>
+	</TraderKindDef>
+
+	<TraderKindDef>
+		<defName>NY_Visitor_SmeltedLoong</defName>
+		<label>游商货郎</label>
+		<stockGenerators>
+			<!-- Resources -->
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Silver</thingDef>
+				<countRange>100~300</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>ComponentIndustrial</thingDef>
+				<countRange>-2~5</countRange>
+			</li>
+			<li Class="StockGenerator_Category">
+				<categoryDef>NY_LoongFood</categoryDef>
+				<excludedThingDefs>
+					<li>NY_MealGingerCongee</li>
+					<li>NY_WhiteAngelicaPoriaSoup</li>
+				</excludedThingDefs>
+				<thingDefCountRange>1~2</thingDefCountRange>
+				<totalPriceRange>100~200</totalPriceRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>NY_SmeltedLoongMilk</thingDef>
+				<countRange>3~6</countRange>
+			</li>
+			<!-- Drugs -->
+			<li Class="StockGenerator_Category">
+				<categoryDef>Drugs</categoryDef>
+				<thingDefCountRange>0~2</thingDefCountRange>
+				<totalPriceRange>100~300</totalPriceRange>
+			</li>
+			<!-- Weapons -->
+			<li Class="StockGenerator_MarketValue">
+				<tradeTag>SmeltedLoongWeapon</tradeTag>
+				<countRange>0~1</countRange>
+			</li>
+			<!-- Buying -->
+			<li Class="StockGenerator_BuyExpensiveSimple" />
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>Art</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>MusicalInstrument</tag>
+			</li>
+		</stockGenerators>
+	</TraderKindDef>
+
+	<TraderKindDef>
+		<defName>NY_Caravan_SmeltedLoong_Slaver</defName>
+		<label>贩羊人</label>
+		<stockGenerators>
+			<!-- Resources -->
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Silver</thingDef>
+				<countRange>750~1200</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>NY_MealCannedFish</thingDef>
+				<countRange>25~30</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>MedicineHerbal</thingDef>
+				<countRange>10~50</countRange>
+			</li>
+			<!-- Drugs -->
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>NY_ClassicMedicine_Smallpox</thingDef>
+				<countRange>5~20</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>NY_ClassicMedicine_Cholera</thingDef>
+				<countRange>5~20</countRange>
+			</li>
+			<!-- Slaves -->
+			<li Class="SmeltedLoong.StockGenerator_SlavesofLoong">
+				<countRange>3~6</countRange>
+				<slaveKindDef>NY_LoongSlaveHuman</slaveKindDef>
+			</li>
+			<li Class="SmeltedLoong.StockGenerator_SlavesofLoong">
+				<countRange>2~4</countRange>
+				<slaveKindDef>NY_LoongSinner</slaveKindDef>
+			</li>
+		
+			<!-- Buying -->
+			<li Class="StockGenerator_BuyExpensiveSimple" />
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>Art</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>HiTechArmor</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>MusicalInstrument</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>Drugs</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>HoraxWeapon</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>ImplantEmpireCommon</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>ImplantEmpireRoyal</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>PsylinkNeuroformer</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>ExoticBuilding</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>UtilitySpecial</tag>
+			</li>
+			<li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly">
+				<thingDef>Shell_Deadlife</thingDef>
+			</li>
+			<li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly">
+				<thingDef>VoidSculpture</thingDef>
+			</li>
+			<li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly">
+				<thingDef>Shard</thingDef>
+			</li>
+			<li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly">
+				<thingDef>Bioferrite</thingDef>
+			</li>
+			<li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly">
+				<thingDef>RevenantSpine</thingDef>
+			</li>
+		</stockGenerators>
+	</TraderKindDef>
+</Defs>

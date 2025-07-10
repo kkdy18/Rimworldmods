@@ -1,0 +1,14 @@
+{
+  "TextureModID": "ny.smeltedloong",
+  "ItemDefName": "NY_LoongThreePoint",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.454149961,
+  "OffY": 0.0209508464,
+  "Rotation": 16.0,
+  "ScaleX": 2.0,
+  "ScaleY": 2.0,
+  "BladeStart": 0.7713136,
+  "BladeEnd": 1.48041916,
+  "MeleeWeaponType": 6
+}

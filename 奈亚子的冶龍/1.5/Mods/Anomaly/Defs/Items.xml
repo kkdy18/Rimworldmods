@@ -8,7 +8,7 @@
 			<Mass>1</Mass>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Apparel/DragonCloth</texPath>
+			<texPath>Things/Apparel/NY_LoongCloth</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<color>(1, 1, 1)</color>
 		</graphicData>
@@ -245,7 +245,7 @@
 	<ThingDef ParentName="ResourceBase">
 		<defName>NY_GhoulLoongRoll</defName>
 		<label>鬼龙密卷</label>
-		<description>“你好，我永不相见的同行者，在你阅读这段记载之前，你应该已经对鬼龙有所了解，并且聆听了祂的启示——如果没有，你得先拥有一只忠于你的鬼龙，然后认真注视她。（健康状态“鬼龙化”的详细介绍中有更多信息，请仔细阅读）\n\n“鬼龙与孽龙相，皆是祂的诅咒在冶龍的身躯上的显化。祂曾是真龙之子，却被自己的姐妹忌惮放逐，但流放与死亡都无法将祂从尘世剥离，祂的诅咒已经浸透了冶龍的每一支血脉，祂虽绝嗣，然凡流真龙之血者皆是祂尚未降生之子。\n\n“我曾在绝望中得到祂的启示，如今我将我所知的十一道赐福分享于你，去寻找那超然世外的深邃心智，无尽黑暗炽热翻腾之渊是其居所，埋没于尘埃中的巨石是其门扉，将其投入尘世的力量铸成鬼龙的骨血，鬼龙将向着祂所希冀的姿态不断成长。”</description>
+		<description>“你好，我永不相见的同行者，在你阅读这段记载之前，你应该已经对鬼龙有所了解，并且聆听了祂的启示——如果没有，你得先拥有一只忠于你的鬼龙，然后认真注视她。（健康状态“鬼龙化”的详细介绍中有更多信息，请仔细阅读）\n\n“鬼龙与孽龙相，皆是祂的诅咒在冶龍的身躯上的显化。祂曾是真龙之子，却被自己的姐妹忌惮放逐，但流放与死亡都无法将祂从尘世剥离，祂的诅咒已经浸透了冶龍的每一支血脉，祂虽绝嗣，然凡流真龙之血者皆是祂尚未降生之子。\n\n“我曾在绝望中得到祂的启示，如今我将我所知的十一道赐福分享于你——去寻找那超然世外的深邃心智，无尽黑暗炽热翻腾之渊是其居所，埋没于尘埃中的巨石是其门扉，将其投入尘世的力量铸成鬼龙的骨血，这些铸物不会如凡物一般朽坏，与鬼龙的血肉融合之后它们将与鬼龙一同长存。以赐福纳入躯壳，鬼龙将向着祂所希冀的姿态不断成长，直至容纳九道赐福，鬼龙的灵与肉皆会蜕变至全新的境界。”</description>
 		<descriptionHyperlinks>
 			<RecipeDef>NY_InstallGhoulHarbinger</RecipeDef>
 			<RecipeDef>NY_InstallGhoulDeadlifeLung</RecipeDef>

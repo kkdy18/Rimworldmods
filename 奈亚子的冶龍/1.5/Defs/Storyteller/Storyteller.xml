@@ -4,8 +4,8 @@
 		<defName>NY_ForgingDragonOne</defName>
 		<label>龍嗣—绿烟萝</label>
 		<description>冶龍绿烟萝来自真龙后代的一个分支，她的性格嚣张跋扈，无论是天灾、战争或是瘟疫，在她眼里没有什么是她不能掌控的。如果由她来讲述故事，永不间断的恶劣天气与自然灾害就会在你的坟前肆虐不止。\n\n&lt;color=#FF3030&gt;该叙述者拥有一系列专属负面事件，难度较高，请玩家谨慎选择。&lt;/color&gt;</description>
-		<portraitLarge>UI/Storytellers/Dragon</portraitLarge>
-		<portraitTiny>UI/Storytellers/DragonTiny</portraitTiny>
+		<portraitLarge>UI/Storytellers/NY_SmeltedLoongTellerOne</portraitLarge>
+		<portraitTiny>UI/Storytellers/NY_SmeltedLoongTellerOneTiny</portraitTiny>
 		<listOrder>50</listOrder>
 		<comps>
 			<!-- Intro -->

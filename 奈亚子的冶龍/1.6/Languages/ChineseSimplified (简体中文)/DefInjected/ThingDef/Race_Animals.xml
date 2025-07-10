@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<NY_animal_TaoWu.tools.left_claw.label>左爪</NY_animal_TaoWu.tools.left_claw.label>
+
+	<NY_animal_TaoWu.tools.left_claw.labelNoLocation>凶爪</NY_animal_TaoWu.tools.left_claw.labelNoLocation>
+
+	<NY_animal_TaoWu.tools.right_claw.label>右爪</NY_animal_TaoWu.tools.right_claw.label>
+
+	<NY_animal_TaoWu.tools.right_claw.labelNoLocation>凶爪</NY_animal_TaoWu.tools.right_claw.labelNoLocation>
+
+	<NY_animal_TaoWu.tools.fangs.label>碎铁牙</NY_animal_TaoWu.tools.fangs.label>
+
+	<NY_animal_TaoWu.tools.head.label>顽石脑壳</NY_animal_TaoWu.tools.head.label>
+</LanguageData>

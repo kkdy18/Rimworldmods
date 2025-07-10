@@ -11,7 +11,7 @@
 		<humanPregnancyChance>0</humanPregnancyChance>
 		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
 		<apparelTags>
-			<li>NY_DragonCloth</li>
+			<li>NY_LoongCloth</li>
 		</apparelTags>
 		<apparelDisallowTags>
 		</apparelDisallowTags>
@@ -93,7 +93,7 @@
 		<labelPlural>冶龍步兵</labelPlural>
 		<combatPower>80</combatPower>
 		<apparelTags Inherit="false">
-			<li>NY_DragonCloth_Soldier</li>
+			<li>NY_LoongCloth_Soldier</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>NY_ForgingDragonSoldierCloth</li>
@@ -117,7 +117,7 @@
 		<combatPower>95</combatPower>
 		<apparelTags>
 			<li>BeltDefensePop</li>
-			<li>NY_DragonCloth_Soldier</li>
+			<li>NY_LoongCloth_Soldier</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>NY_ForgingDragonSoldierClothPlus</li>
@@ -148,8 +148,8 @@
 		<combatPower>120</combatPower>
 		<maxPerGroup>3</maxPerGroup>
 		<apparelTags>
-			<li>NY_DragonCloth_Soldier</li>
-			<li>NY_DragonCloth_CloakGray</li>
+			<li>NY_LoongCloth_Soldier</li>
+			<li>NY_LoongCloth_CloakGray</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>Apparel_ShieldBelt</li>
@@ -226,7 +226,7 @@
 		</apparelRequired>
 		<apparelTags>
 			<li>BeltDefensePop</li>
-			<li>NY_DragonCloth_CloakGray</li>
+			<li>NY_LoongCloth_CloakGray</li>
 		</apparelTags>
 		<weaponTags>
 			<li>NY_DragonWeaponRanged_Musician</li>
@@ -296,7 +296,7 @@
 			</li>
 		</backstoryFiltersOverride>
 		<apparelTags>
-			<li>NY_DragonCloth_Soldier</li>
+			<li>NY_LoongCloth_Soldier</li>
 			<li>BeltDefense</li>
 		</apparelTags>
 		<apparelRequired>
@@ -410,8 +410,8 @@
 		<apparelTags>
 			<li>BeltDefensePop</li>
 			<li>NY_DragonHeadDress</li>
-			<li>NY_DragonCloth_Soldier</li>
-			<li>NY_DragonCloth_CloakGray</li>
+			<li>NY_LoongCloth_Soldier</li>
+			<li>NY_LoongCloth_CloakGray</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>NY_ForgingDragonSoldierClothPlus</li>

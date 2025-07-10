@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<PawnKindDef ParentName="SlaveBase">
+		<defName>NY_LoongSlaveHuman</defName>
+		<label>两脚阉羊</label>
+		<fixedGender>Male</fixedGender>
+		<maxGenerationAge>40</maxGenerationAge>
+		<minGenerationAge>14</minGenerationAge>
+		<apparelRequired>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Apparel_Collar</li>
+		</apparelRequired>
+		<startingHediffs>
+			<li>
+				<def>NY_hediff_KidneyOverdraft</def>
+			</li>
+		</startingHediffs>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<Impid>0.1</Impid>
+				<Highmate>0.1</Highmate>
+				<Sanguophage>0.1</Sanguophage>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="SlaveBase">
+		<defName>NY_LoongSinner</defName>
+		<label>罪身冶龍</label>
+		<defaultFactionDef>NY_SmeltedLoongUnion</defaultFactionDef>
+		<maxGenerationAge>40</maxGenerationAge>
+		<minGenerationAge>14</minGenerationAge>
+		<backstoryFiltersOverride Inherit="False">
+			<li>
+				<categories>
+					<li>NY_LoongCivilian</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelRequired>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Apparel_Collar</li>
+		</apparelRequired>
+		<startingHediffs>
+			<li>
+				<def>NY_hediff_SmeltedLoongSinner</def>
+			</li>
+		</startingHediffs>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<NY_SmeltedLoongCleanBred>0.4</NY_SmeltedLoongCleanBred>
+				<NY_SmeltedLoongBlueWhite>0.3</NY_SmeltedLoongBlueWhite>
+				<NY_SmeltedLoongPaperCut>0.3</NY_SmeltedLoongPaperCut>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef>
+		<defName>NY_LoongAlone</defName>
+		<label>离群冶龍</label>
+		<defaultFactionDef>NY_SmeltedLoongPlayer</defaultFactionDef>
+		<race>Human</race>
+		<combatPower>30</combatPower>
+		<isFighter>false</isFighter>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<apparelIgnorePollution>true</apparelIgnorePollution>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
+		<initialWillRange>0~0</initialWillRange>
+		<initialResistanceRange>9~15</initialResistanceRange>
+		<humanPregnancyChance>0</humanPregnancyChance>
+		<chemicalAddictionChance>0.05</chemicalAddictionChance>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<apparelMoney>500~1000</apparelMoney>
+		<apparelTags>
+			<li>NY_LoongCloth</li>
+		</apparelTags>
+		<techHediffsChance>0.03</techHediffsChance>
+		<techHediffsMoney>50~800</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+		</techHediffsTags>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<xenotypeSet>
+			<xenotypeChances>
+				<NY_SmeltedLoongCleanBred>0.3</NY_SmeltedLoongCleanBred>
+				<NY_SmeltedLoongBlueWhite>0.3</NY_SmeltedLoongBlueWhite>
+				<NY_SmeltedLoongWhiteJade>0.2</NY_SmeltedLoongWhiteJade>
+				<NY_SmeltedLoongPaperCut>0.2</NY_SmeltedLoongPaperCut>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef Name="NY_LoongVillager" ParentName="NY_BaseLoong" Abstract="True">
+		<isFighter>false</isFighter>
+		<itemQuality>Good</itemQuality>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>NY_LoongCivilian</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<initialResistanceRange>5~15</initialResistanceRange>
+		<chemicalAddictionChance>0</chemicalAddictionChance>
+		<combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
+		<combatEnhancingDrugsCount>0</combatEnhancingDrugsCount>
+		<gearHealthRange>0.6~1</gearHealthRange>
+		<weaponMoney>500~1200</weaponMoney>
+		<weaponTags>
+			<li>NY_LoongWeaponRanged</li>
+		</weaponTags>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelMoney>700~1500</apparelMoney>
+		<apparelTags>
+			<li>NY_LoongDress</li>
+			<li>BeltDefensePop</li>
+		</apparelTags>
+		<techHediffsChance>0.15</techHediffsChance>
+		<techHediffsMoney>700~1200</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+			<li>ImplantEmpireCommon</li>
+		</techHediffsTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="NY_LoongVillager">
+		<defName>NY_LoongFarmer</defName>
+		<label>冶龍农官</label>
+		<labelPlural>冶龍农官</labelPlural>
+		<combatPower>30</combatPower>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<xenotypeSet>
+			<xenotypeChances>
+				<NY_SmeltedLoongGreenPlant>1</NY_SmeltedLoongGreenPlant>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="NY_LoongVillager">
+		<defName>NY_LoongCrafter</defName>
+		<label>冶龍工匠</label>
+		<labelPlural>冶龍工匠</labelPlural>
+		<combatPower>30</combatPower>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<xenotypeSet>
+			<xenotypeChances>
+				<NY_SmeltedLoongBlueWhite>1</NY_SmeltedLoongBlueWhite>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="NY_LoongVillager">
+		<defName>NY_LoongHermit</defName>
+		<label>避世冶龍</label>
+		<labelPlural>避世冶龍</labelPlural>
+		<combatPower>30</combatPower>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<forcedTraits>
+			<Gay />
+		</forcedTraits>
+		<weaponTags Inherit="False">
+			<li>NY_LoongWeaponMelee_Special</li>
+		</weaponTags>
+		<xenotypeSet>
+			<xenotypeChances>
+				<NY_SmeltedLoongMalachite>1</NY_SmeltedLoongMalachite>
+			</xenotypeChances>
+		</xenotypeSet>
+		<startingHediffs>
+			<li>
+				<def>NY_hediff_RaidComing_Insect</def>
+			</li>
+		</startingHediffs>
+		<inventoryOptions Inherit="False">
+		</inventoryOptions>
+	</PawnKindDef>
+</Defs>

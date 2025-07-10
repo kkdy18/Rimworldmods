@@ -76,7 +76,7 @@
 		<label>冶龍风马面裙</label>
 		<description>冶龍的经典服饰，素雅的贴身衣裙。\n\n轻纱飘逸，马面风姿，裙舞飞扬，优雅尽显。</description>
 		<graphicData>
-			<texPath>Things/Apparel/DragonCloth</texPath>
+			<texPath>Things/Apparel/NY_LoongCloth</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -102,9 +102,9 @@
 				<li>OnSkin</li>
 			</layers>
 			<tags>
-				<li>NY_DragonCloth</li>
+				<li>NY_LoongCloth</li>
 			</tags>
-			<wornGraphicPath>Things/Apparel/NY_DragonSkirtA/NY_DragonSkirtA</wornGraphicPath>
+			<wornGraphicPath>Things/Apparel/NY_LoongSkirtA/NY_LoongSkirtA</wornGraphicPath>
 		</apparel>
 		<costStuffCount>60</costStuffCount>
 		<stuffCategories>
@@ -153,7 +153,7 @@
 		<label>冶龍风旗袍</label>
 		<description>冶龍的经典服饰，绣有鳞纹的华美旗袍。\n\n鱼鳞珍锦，旗袍流光，细腻华美，东方神韵。</description>
 		<graphicData>
-			<texPath>Things/Apparel/DragonCloth</texPath>
+			<texPath>Things/Apparel/NY_LoongCloth</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -179,9 +179,9 @@
 				<li>OnSkin</li>
 			</layers>
 			<tags>
-				<li>NY_DragonCloth</li>
+				<li>NY_LoongCloth</li>
 			</tags>
-			<wornGraphicPath>Things/Apparel/NY_DragonSkirtB/NY_DragonSkirtB</wornGraphicPath>
+			<wornGraphicPath>Things/Apparel/NY_LoongSkirtB/NY_LoongSkirtB</wornGraphicPath>
 		</apparel>
 		<costStuffCount>60</costStuffCount>
 		<stuffCategories>
@@ -222,7 +222,7 @@
 		<label>冶龍风薄纱旗袍</label>
 		<description>冶龍的创新服饰，为了使服装呈现出薄雾般的质感对面料的要求较为苛刻，材料的浪费也相当严重。\n\n蝉翼薄纱，轻若云烟，旗袍风韵，典雅飘逸。</description>
 		<graphicData>
-			<texPath>Things/Apparel/DragonCloth</texPath>
+			<texPath>Things/Apparel/NY_LoongCloth</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -250,7 +250,7 @@
 			<tags>
 			</tags>
 			<countsAsClothingForNudity>false</countsAsClothingForNudity>
-			<wornGraphicPath>Things/Apparel/NY_DragonSkirtC/NY_DragonSkirtC</wornGraphicPath>
+			<wornGraphicPath>Things/Apparel/NY_LoongSkirtC/NY_LoongSkirtC</wornGraphicPath>
 		</apparel>
 		<costStuffCount>90</costStuffCount>
 		<stuffCategories>
@@ -279,7 +279,7 @@
 		<label>冶龍风儿童薄纱裙</label>
 		<description>冶龍儿童的经典服饰，贴心的匠人会为不同种族的小冶龍绣上不同的花纹。</description>
 		<graphicData>
-			<texPath>Things/Apparel/DragonCloth</texPath>
+			<texPath>Things/Apparel/NY_LoongCloth</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.8</drawSize>
 		</graphicData>
@@ -304,10 +304,10 @@
 				<li>OnSkin</li>
 			</layers>
 			<tags>
-				<li>NY_DragonCloth</li>
+				<li>NY_LoongCloth</li>
 			</tags>
 			<developmentalStageFilter Inherit="False">Child</developmentalStageFilter>
-			<wornGraphicPath>Things/Apparel/NY_DragonSkirtChild/NY_DragonSkirtChild</wornGraphicPath>
+			<wornGraphicPath>Things/Apparel/NY_LoongSkirtChild/NY_LoongSkirtChild</wornGraphicPath>
 		</apparel>
 		<costStuffCount>30</costStuffCount>
 		<stuffCategories>

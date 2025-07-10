@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef ParentName="NY_DragonWeaponMedieval">
+	<ThingDef ParentName="NY_LoongWeaponMedieval">
 		<defName>NY_GrenadeLightning</defName>
 		<label>雷符</label>
 		<description>用精血绘制了引雷咒的符纸，掷出后片刻可以引来天雷轰击，杀伤力有限但大量投掷也有可观的威力。\n\n雷符不用时务必妥善保管，符咒引发的雷击能够穿透建筑，存在火灾隐患。</description>
 		<graphicData>
-			<texPath>Things/Weapon/NY_GrenadeLightning</texPath>
+			<texPath>Things/Weapon/NY_LightningSymbol</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<uiIconScale>1.3</uiIconScale>
@@ -64,7 +64,7 @@
 		<label>雷符</label>
 		<thingClass>ForgingDragon.Projectile_LightningBomb</thingClass>
 		<graphicData>
-			<texPath>Things/Projectile/NY_grenadeLightning</texPath>
+			<texPath>Things/Projectile/NY_LightningSymbol</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile>
@@ -74,13 +74,13 @@
 		</projectile>
 	</ThingDef>
 	
-	<ThingDef ParentName="NY_BaseDragonWeaponRanged">
+	<ThingDef ParentName="NY_BaseLoongWeaponRanged">
 		<defName>NY_DragonGourd</defName>
 		<label>赤檀焱葫芦</label>
 		<description>装满火油的特制葫芦，冶龍工匠精心设计的战场杀器，它能从葫芦口喷出熊熊烈火焚烧一切，亦可将大量火油一气猛然喷出，点燃火海逼退敌人。\n\n葫芦不用时务必妥善保管，一时走水伤人亦伤己。</description>
 		<tickerType>Normal</tickerType>
 		<graphicData>
-			<texPath>Things/Weapon/NY_DragonGourd</texPath>
+			<texPath>Things/Weapon/NY_LoongGourd</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>Shot_MiniFlameblaster</soundInteract>

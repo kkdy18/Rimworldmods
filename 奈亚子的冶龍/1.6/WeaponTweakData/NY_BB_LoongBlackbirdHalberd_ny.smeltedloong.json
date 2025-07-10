@@ -1,0 +1,13 @@
+{
+  "TextureModID": "ny.smeltedloong",
+  "ItemDefName": "NY_BB_LoongBlackbirdHalberd",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.420628518,
+  "OffY": 0.008058018,
+  "ScaleX": 2.0,
+  "ScaleY": 2.0,
+  "BladeStart": 0.6862209,
+  "BladeEnd": 1.41337633,
+  "MeleeWeaponType": 7
+}

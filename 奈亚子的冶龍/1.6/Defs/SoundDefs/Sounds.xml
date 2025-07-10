@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<SoundDef>
+		<defName>NY_Pipa_A</defName>
+		<context>MapOnly</context>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>NY_Loong/NY_Pipa_A</clipPath>
+					</li>
+				</grains>
+				<volumeRange>40~60</volumeRange>
+				<pitchRange>0.45~1</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>NY_Pipa_B</defName>
+		<context>MapOnly</context>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>NY_Loong/NY_Pipa_B</clipPath>
+					</li>
+				</grains>
+				<volumeRange>40~60</volumeRange>
+				<pitchRange>0.45~1</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>NY_Flute_A</defName>
+		<context>MapOnly</context>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>NY_Loong/NY_Flute_A</clipPath>
+					</li>
+				</grains>
+				<volumeRange>80~90</volumeRange>
+				<pitchRange>0.45~1</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>NY_Flute_B</defName>
+		<context>MapOnly</context>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>NY_Loong/NY_Flute_B</clipPath>
+					</li>
+				</grains>
+				<volumeRange>80~90</volumeRange>
+				<pitchRange>0.45~1</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>NY_Bell</defName>
+		<context>MapOnly</context>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>NY_Loong/NY_Bell</clipPath>
+					</li>
+				</grains>
+				<volumeRange>20~30</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>NY_ArmorBroken</defName>
+		<context>MapOnly</context>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>NY_Loong/NY_ArmorBroken</clipPath>
+					</li>
+				</grains>
+				<volumeRange>180~200</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>NY_Fan</defName>
+		<context>MapOnly</context>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>NY_Loong/NY_Fan</clipPath>
+					</li>
+				</grains>
+				<volumeRange>40~60</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+</Defs>

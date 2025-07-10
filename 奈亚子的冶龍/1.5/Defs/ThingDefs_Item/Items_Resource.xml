@@ -365,7 +365,7 @@
 		<label>冶龍鳞</label>
 		<description>冶龍的软鳞，处理过后可以当作皮革使用。</description>
 		<graphicData>
-			<texPath>Things/Item/NY_DragonLeather</texPath>
+			<texPath>Things/Item/NY_LoongLeather</texPath>
 		</graphicData>
 		<possessionCount>20</possessionCount>
 		<statBases>
@@ -391,7 +391,7 @@
 		<label>冶龍肉</label>
 		<description>冶龍的血肉，它最好不要出现在餐桌上。\n\n冶龍仍是人类的一支，但她们的生物特性确实已经与智人相去甚远，对于人类，她们究竟是陌路相逢的同胞还是似曾相识的异类。</description>
 		<graphicData>
-			<texPath>Things/Item/NY_DragonMeat</texPath>
+			<texPath>Things/Item/NY_LoongMeat</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<socialPropernessMatters>true</socialPropernessMatters>

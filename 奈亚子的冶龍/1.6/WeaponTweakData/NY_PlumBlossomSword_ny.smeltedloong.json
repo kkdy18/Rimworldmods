@@ -1,0 +1,14 @@
+{
+  "TextureModID": "ny.smeltedloong",
+  "ItemDefName": "NY_PlumBlossomSword",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.390789628,
+  "OffY": 0.0171055049,
+  "Rotation": 225.0,
+  "ScaleX": 1.25,
+  "ScaleY": 1.25,
+  "BladeStart": 0.09078939,
+  "BladeEnd": 1.101316,
+  "MeleeWeaponType": 6
+}

@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HeadTypeDef>
+		<defName>SmeltedLoongHeadBW</defName>
+		<label>青花瓷01</label>
+		<requiredGenes>
+			<li>NY_gene_SmeltedLoongBW</li>
+		</requiredGenes>
+		<graphicPath>Things/Pawn/Heads/BlueWhite/SmeltedLoongHeadBW</graphicPath>
+		<gender>None</gender>
+		<modExtensions>
+			<li Class="SmeltedLoong.SmeltedLoongGeneBody" />
+		</modExtensions>
+	</HeadTypeDef>
+
+	<HeadTypeDef>
+		<defName>SmeltedLoongHeadBW_A</defName>
+		<label>青花瓷02</label>
+		<requiredGenes>
+			<li>NY_gene_SmeltedLoongBW</li>
+		</requiredGenes>
+		<graphicPath>Things/Pawn/Heads/BlueWhite/SmeltedLoongHeadBW1</graphicPath>
+		<gender>None</gender>
+		<modExtensions>
+			<li Class="SmeltedLoong.SmeltedLoongGeneBody" />
+		</modExtensions>
+	</HeadTypeDef>
+
+	<HeadTypeDef>
+		<defName>SmeltedLoongHeadBW_B</defName>
+		<label>青花瓷03</label>
+		<requiredGenes>
+			<li>NY_gene_SmeltedLoongBW</li>
+		</requiredGenes>
+		<graphicPath>Things/Pawn/Heads/BlueWhite/SmeltedLoongHeadBW2</graphicPath>
+		<gender>None</gender>
+		<modExtensions>
+			<li Class="SmeltedLoong.SmeltedLoongGeneBody" />
+		</modExtensions>
+	</HeadTypeDef>
+
+	<HeadTypeDef>
+		<defName>SmeltedLoongHeadBW_C</defName>
+		<label>青花瓷04</label>
+		<requiredGenes>
+			<li>NY_gene_SmeltedLoongBW</li>
+		</requiredGenes>
+		<graphicPath>Things/Pawn/Heads/BlueWhite/SmeltedLoongHeadBW3</graphicPath>
+		<gender>None</gender>
+		<modExtensions>
+			<li Class="SmeltedLoong.SmeltedLoongGeneBody" />
+		</modExtensions>
+	</HeadTypeDef>
+
+	<HeadTypeDef>
+		<defName>SmeltedLoongHeadCB</defName>
+		<label>纯种01</label>
+		<requiredGenes>
+			<li>NY_gene_SmeltedLoongCB</li>
+		</requiredGenes>
+		<graphicPath>Things/Pawn/Heads/CleanBred/SmeltedLoongHeadCB</graphicPath>
+		<gender>None</gender>
+		<modExtensions>
+			<li Class="SmeltedLoong.SmeltedLoongGeneBody" />
+		</modExtensions>
+	</HeadTypeDef>
+
+	<HeadTypeDef>
+		<defName>SmeltedLoongHeadCB_A</defName>
+		<label>纯种02</label>
+		<requiredGenes>
+			<li>NY_gene_SmeltedLoongCB</li>
+		</requiredGenes>
+		<graphicPath>Things/Pawn/Heads/CleanBred/SmeltedLoongHeadCB1</graphicPath>
+		<gender>None</gender>
+		<modExtensions>
+			<li Class="SmeltedLoong.SmeltedLoongGeneBody" />
+		</modExtensions>
+	</HeadTypeDef>
+
+	<HeadTypeDef>
+		<defName>SmeltedLoongHeadCB_B</defName>
+		<label>纯种03</label>
+		<requiredGenes>
+			<li>NY_gene_SmeltedLoongCB</li>
+		</requiredGenes>
+		<graphicPath>Things/Pawn/Heads/CleanBred/SmeltedLoongHeadCB2</graphicPath>
+		<gender>None</gender>
+		<modExtensions>
+			<li Class="SmeltedLoong.SmeltedLoongGeneBody" />
+		</modExtensions>
+	</HeadTypeDef>
+
+	<HeadTypeDef>
+		<defName>SmeltedLoongHeadCB_C</defName>
+		<label>纯种04</label>
+		<requiredGenes>
+			<li>NY_gene_SmeltedLoongCB</li>
+		</requiredGenes>
+		<graphicPath>Things/Pawn/Heads/CleanBred/SmeltedLoongHeadCB3</graphicPath>
+		<gender>None</gender>
+		<modExtensions>
+			<li Class="SmeltedLoong.SmeltedLoongGeneBody" />
+		</modExtensions>
+	</HeadTypeDef>
+
+	<HeadTypeDef>
+		<defName>SmeltedLoongHeadWJ</defName>
+		<label>白玉01</label>
+		<requiredGenes>
+			<li>NY_gene_SmeltedLoongWJ</li>
+		</requiredGenes>
+		<graphicPath>Things/Pawn/Heads/WhiteJade/SmeltedLoongHeadWJ</graphicPath>
+		<gender>None</gender>
+		<modExtensions>
+			<li Class="SmeltedLoong.SmeltedLoongGeneBody" />
+		</modExtensions>
+	</HeadTypeDef>
+
+	<HeadTypeDef>
+		<defName>SmeltedLoongHeadWJ_A</defName>
+		<label>白玉02</label>
+		<requiredGenes>
+			<li>NY_gene_SmeltedLoongWJ</li>
+		</requiredGenes>
+		<graphicPath>Things/Pawn/Heads/WhiteJade/SmeltedLoongHeadWJ1</graphicPath>
+		<gender>None</gender>
+		<modExtensions>
+			<li Class="SmeltedLoong.SmeltedLoongGeneBody" />
+		</modExtensions>
+	</HeadTypeDef>
+
+	<HeadTypeDef>
+		<defName>SmeltedLoongHeadWJ_B</defName>
+		<label>白玉03</label>
+		<requiredGenes>
+			<li>NY_gene_SmeltedLoongWJ</li>
+		</requiredGenes>
+		<graphicPath>Things/Pawn/Heads/WhiteJade/SmeltedLoongHeadWJ2</graphicPath>
+		<gender>None</gender>
+		<modExtensions>
+			<li Class="SmeltedLoong.SmeltedLoongGeneBody" />
+		</modExtensions>
+	</HeadTypeDef>
+
+	<HeadTypeDef>
+		<defName>SmeltedLoongHeadWJ_C</defName>
+		<label>白玉04</label>
+		<requiredGenes>
+			<li>NY_gene_SmeltedLoongWJ</li>
+		</requiredGenes>
+		<graphicPath>Things/Pawn/Heads/WhiteJade/SmeltedLoongHeadWJ3</graphicPath>
+		<gender>None</gender>
+		<modExtensions>
+			<li Class="SmeltedLoong.SmeltedLoongGeneBody" />
+		</modExtensions>
+	</HeadTypeDef>
+
+	<HeadTypeDef>
+		<defName>SmeltedLoongHeadPC</defName>
+		<label>剪纸01</label>
+		<requiredGenes>
+			<li>NY_gene_SmeltedLoongPC</li>
+		</requiredGenes>
+		<graphicPath>Things/Pawn/Heads/PaperCut/SmeltedLoongHeadPC</graphicPath>
+		<gender>None</gender>
+		<modExtensions>
+			<li Class="SmeltedLoong.SmeltedLoongGeneBody" />
+		</modExtensions>
+	</HeadTypeDef>
+
+	<HeadTypeDef>
+		<defName>SmeltedLoongHeadPC_A</defName>
+		<label>剪纸02</label>
+		<requiredGenes>
+			<li>NY_gene_SmeltedLoongPC</li>
+		</requiredGenes>
+		<graphicPath>Things/Pawn/Heads/PaperCut/SmeltedLoongHeadPC1</graphicPath>
+		<gender>None</gender>
+		<modExtensions>
+			<li Class="SmeltedLoong.SmeltedLoongGeneBody" />
+		</modExtensions>
+	</HeadTypeDef>
+
+	<HeadTypeDef>
+		<defName>SmeltedLoongHeadPC_B</defName>
+		<label>剪纸03</label>
+		<requiredGenes>
+			<li>NY_gene_SmeltedLoongPC</li>
+		</requiredGenes>
+		<graphicPath>Things/Pawn/Heads/PaperCut/SmeltedLoongHeadPC2</graphicPath>
+		<gender>None</gender>
+		<modExtensions>
+			<li Class="SmeltedLoong.SmeltedLoongGeneBody" />
+		</modExtensions>
+	</HeadTypeDef>
+
+	<HeadTypeDef>
+		<defName>SmeltedLoongHeadPC_C</defName>
+		<label>剪纸04</label>
+		<requiredGenes>
+			<li>NY_gene_SmeltedLoongPC</li>
+		</requiredGenes>
+		<graphicPath>Things/Pawn/Heads/PaperCut/SmeltedLoongHeadPC3</graphicPath>
+		<gender>None</gender>
+		<modExtensions>
+			<li Class="SmeltedLoong.SmeltedLoongGeneBody" />
+		</modExtensions>
+	</HeadTypeDef>
+
+	<HeadTypeDef>
+		<defName>SmeltedLoongHeadGP</defName>
+		<label>青植01</label>
+		<requiredGenes>
+			<li>NY_gene_SmeltedLoongGP</li>
+		</requiredGenes>
+		<graphicPath>Things/Pawn/Heads/CleanBred/SmeltedLoongHeadCB</graphicPath>
+		<gender>None</gender>
+		<modExtensions>
+			<li Class="SmeltedLoong.SmeltedLoongGeneBody" />
+		</modExtensions>
+	</HeadTypeDef>
+
+	<HeadTypeDef>
+		<defName>SmeltedLoongHeadGP_A</defName>
+		<label>青植02</label>
+		<requiredGenes>
+			<li>NY_gene_SmeltedLoongGP</li>
+		</requiredGenes>
+		<graphicPath>Things/Pawn/Heads/CleanBred/SmeltedLoongHeadCB1</graphicPath>
+		<gender>None</gender>
+		<modExtensions>
+			<li Class="SmeltedLoong.SmeltedLoongGeneBody" />
+		</modExtensions>
+	</HeadTypeDef>
+
+	<HeadTypeDef>
+		<defName>SmeltedLoongHeadGP_B</defName>
+		<label>青植03</label>
+		<requiredGenes>
+			<li>NY_gene_SmeltedLoongGP</li>
+		</requiredGenes>
+		<graphicPath>Things/Pawn/Heads/CleanBred/SmeltedLoongHeadCB2</graphicPath>
+		<gender>None</gender>
+		<modExtensions>
+			<li Class="SmeltedLoong.SmeltedLoongGeneBody" />
+		</modExtensions>
+	</HeadTypeDef>
+
+	<HeadTypeDef>
+		<defName>SmeltedLoongHeadGP_C</defName>
+		<label>青植04</label>
+		<requiredGenes>
+			<li>NY_gene_SmeltedLoongGP</li>
+		</requiredGenes>
+		<graphicPath>Things/Pawn/Heads/CleanBred/SmeltedLoongHeadCB3</graphicPath>
+		<gender>None</gender>
+		<modExtensions>
+			<li Class="SmeltedLoong.SmeltedLoongGeneBody" />
+		</modExtensions>
+	</HeadTypeDef>
+
+	<HeadTypeDef>
+		<defName>SmeltedLoongHeadMC</defName>
+		<label>孔雀石01</label>
+		<requiredGenes>
+			<li>NY_gene_SmeltedLoongMC</li>
+		</requiredGenes>
+		<graphicPath>Things/Pawn/Heads/WhiteJade/SmeltedLoongHeadWJ</graphicPath>
+		<gender>None</gender>
+		<modExtensions>
+			<li Class="SmeltedLoong.SmeltedLoongGeneBody" />
+		</modExtensions>
+	</HeadTypeDef>
+
+	<HeadTypeDef>
+		<defName>SmeltedLoongHeadMC_A</defName>
+		<label>孔雀石02</label>
+		<requiredGenes>
+			<li>NY_gene_SmeltedLoongMC</li>
+		</requiredGenes>
+		<graphicPath>Things/Pawn/Heads/WhiteJade/SmeltedLoongHeadWJ1</graphicPath>
+		<gender>None</gender>
+		<modExtensions>
+			<li Class="SmeltedLoong.SmeltedLoongGeneBody" />
+		</modExtensions>
+	</HeadTypeDef>
+
+	<HeadTypeDef>
+		<defName>SmeltedLoongHeadMC_B</defName>
+		<label>孔雀石03</label>
+		<requiredGenes>
+			<li>NY_gene_SmeltedLoongMC</li>
+		</requiredGenes>
+		<graphicPath>Things/Pawn/Heads/WhiteJade/SmeltedLoongHeadWJ2</graphicPath>
+		<gender>None</gender>
+		<modExtensions>
+			<li Class="SmeltedLoong.SmeltedLoongGeneBody" />
+		</modExtensions>
+	</HeadTypeDef>
+
+	<HeadTypeDef>
+		<defName>SmeltedLoongHeadMC_C</defName>
+		<label>孔雀石04</label>
+		<requiredGenes>
+			<li>NY_gene_SmeltedLoongMC</li>
+		</requiredGenes>
+		<graphicPath>Things/Pawn/Heads/WhiteJade/SmeltedLoongHeadWJ3</graphicPath>
+		<gender>None</gender>
+		<modExtensions>
+			<li Class="SmeltedLoong.SmeltedLoongGeneBody" />
+		</modExtensions>
+	</HeadTypeDef>
+	
+	<!--特殊-->
+	<HeadTypeDef>
+		<defName>SmeltedLoongHeadSkull</defName>
+		<label>冶龍头骨</label>
+		<graphicPath>Things/Pawn/Heads/SmeltedLoongHead_Dead</graphicPath>
+		<selectionWeight>0</selectionWeight>
+		<randomChosen>false</randomChosen>
+		<gender>None</gender>
+		<modExtensions>
+			<li Class="SmeltedLoong.SmeltedLoongGeneBody" />
+		</modExtensions>
+	</HeadTypeDef>
+
+	<HeadTypeDef>
+		<defName>SmeltedLoongHeadGhoul</defName>
+		<label>鬼龙</label>
+		<graphicPath>Things/Pawn/Heads/SmeltedLoongHead_Ghoul</graphicPath>
+		<selectionWeight>0</selectionWeight>
+		<randomChosen>false</randomChosen>
+		<gender>None</gender>
+		<modExtensions>
+			<li Class="SmeltedLoong.SmeltedLoongGeneBody" />
+		</modExtensions>
+	</HeadTypeDef>
+</Defs>

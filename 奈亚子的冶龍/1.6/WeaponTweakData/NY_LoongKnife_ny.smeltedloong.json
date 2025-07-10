@@ -1,0 +1,14 @@
+{
+  "TextureModID": "ny.smeltedloong",
+  "ItemDefName": "NY_LoongKnife",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.199342027,
+  "OffY": 0.0177632384,
+  "ScaleX": 1.25,
+  "ScaleY": 1.25,
+  "HandsMode": 1,
+  "BladeStart": 0.112500243,
+  "BladeEnd": 0.5519738,
+  "MeleeWeaponType": 56
+}

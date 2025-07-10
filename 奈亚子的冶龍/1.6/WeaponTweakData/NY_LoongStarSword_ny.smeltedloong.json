@@ -1,0 +1,14 @@
+{
+  "TextureModID": "ny.smeltedloong",
+  "ItemDefName": "NY_LoongStarSword",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.241447449,
+  "OffY": -0.190131336,
+  "Rotation": 30.0,
+  "ScaleX": 2.0,
+  "ScaleY": 2.0,
+  "BladeStart": 0.13618429,
+  "BladeEnd": 1.19144726,
+  "MeleeWeaponType": 6
+}

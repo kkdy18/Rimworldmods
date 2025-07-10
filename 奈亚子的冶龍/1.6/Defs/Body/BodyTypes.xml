@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<BodyTypeDef Name="NY_SmeltedLoongBodyBase" Abstract="True">
+		<headOffset>(0.07, 0.42)</headOffset>
+		<woundAnchors>
+			<li>
+				<rotation>South</rotation>
+				<group>Torso</group>
+				<offset>(0,0,-0.06)</offset>
+				<range>0.2</range>
+				<debugColor>(1,0,0,1)</debugColor>
+			</li>
+			<li>
+				<rotation>South</rotation>
+				<tag>LeftLeg</tag>
+				<offset>(0.12,0,-0.34)</offset>
+				<range>0.125</range>
+				<debugColor>(0,1,0,1)</debugColor>
+			</li>
+			<li>
+				<rotation>South</rotation>
+				<tag>RightLeg</tag>
+				<offset>(-0.12,0,-0.34)</offset>
+				<range>0.125</range>
+				<debugColor>(0,0,1,1)</debugColor>
+			</li>
+			<li>
+				<rotation>South</rotation>
+				<tag>LeftShoulder</tag>
+				<offset>(0.12,0,0.01)</offset>
+				<range>0.125</range>
+				<debugColor>(1,1,0,1)</debugColor>
+			</li>
+			<li>
+				<rotation>South</rotation>
+				<tag>RightShoulder</tag>
+				<offset>(-0.12,0,0.01)</offset>
+				<range>0.125</range>
+				<debugColor>(1,0,1,1)</debugColor>
+			</li>
+			<li>
+				<rotation>South</rotation>
+				<group>FullHead</group>
+				<offset>(0, 0, 0)</offset>
+				<range>0.18</range>
+				<layer>Head</layer>
+				<debugColor>(0,1,1,1)</debugColor>
+			</li>
+			<li>
+				<rotation>South</rotation>
+				<tag>RightEye</tag>
+				<canMirror>false</canMirror>
+				<offset>(-0.09, 0, 0.15)</offset>
+				<range>0</range>
+				<layer>Head</layer>
+				<debugColor>(1,1,1,1)</debugColor>
+			</li>
+			<li>
+				<rotation>South</rotation>
+				<tag>LeftEye</tag>
+				<canMirror>false</canMirror>
+				<offset>(0.09, 0, 0.15)</offset>
+				<range>0</range>
+				<layer>Head</layer>
+				<debugColor>(0,0,0,1)</debugColor>
+			</li>
+			<li>
+				<rotation>West</rotation>
+				<group>FullHead</group>
+				<offset>(0, 0, 0)</offset>
+				<range>0.2</range>
+				<layer>Head</layer>
+				<debugColor>(0,1,1,1)</debugColor>
+			</li>
+			<li>
+				<rotation>West</rotation>
+				<group>Torso</group>
+				<offset>(0,0,-0.13)</offset>
+				<range>0.2</range>
+				<debugColor>(1,0,0,1)</debugColor>
+			</li>
+			<li>
+				<rotation>West</rotation>
+				<tag>LeftShoulder</tag>
+				<offset>(-0.05,0,0.1)</offset>
+				<range>0.15</range>
+				<canMirror>false</canMirror>
+				<debugColor>(1,1,0,1)</debugColor>
+			</li>
+			<li>
+				<rotation>East</rotation>
+				<tag>LeftLeg</tag>
+				<offset>(-0.05,0,-0.35)</offset>
+				<range>0.15</range>
+				<canMirror>false</canMirror>
+				<debugColor>(0,1,0,1)</debugColor>
+			</li>
+			<li>
+				<rotation>East</rotation>
+				<tag>RightShoulder</tag>
+				<offset>(0.05,0,0.1)</offset>
+				<range>0.15</range>
+				<canMirror>false</canMirror>
+				<debugColor>(1,0,1,1)</debugColor>
+			</li>
+			<li>
+				<rotation>West</rotation>
+				<tag>RightLeg</tag>
+				<offset>(0.05,0,-0.35)</offset>
+				<range>0.15</range>
+				<canMirror>false</canMirror>
+				<debugColor>(0,0,1,1)</debugColor>
+			</li>
+			<li>
+				<rotation>East</rotation>
+				<tag>RightEye</tag>
+				<canMirror>false</canMirror>
+				<offset>(0.04, 0, 0.2)</offset>
+				<range>0</range>
+				<layer>Head</layer>
+				<debugColor>(1,1,1,1)</debugColor>
+			</li>
+			<li>
+				<rotation>West</rotation>
+				<tag>LeftEye</tag>
+				<canMirror>false</canMirror>
+				<offset>(-0.04, 0, 0.2)</offset>
+				<range>0</range>
+				<layer>Head</layer>
+				<debugColor>(0,0,0,1)</debugColor>
+			</li>
+		</woundAnchors>
+		<attachPoints>
+			<li>
+				<offset>(-0.2, 0, 0.1)</offset>
+				<type>PlatformRestraint0</type>
+			</li>
+			<li>
+				<offset>(0.2, 0, 0.1)</offset>
+				<type>PlatformRestraint1</type>
+			</li>
+			<li>
+				<offset>(0.2, 0, -0.5)</offset>
+				<type>PlatformRestraint2</type>
+			</li>
+			<li>
+				<offset>(-0.2, 0, -0.5)</offset>
+				<type>PlatformRestraint3</type>
+			</li>
+		</attachPoints>
+		<attachPointsDessicated>
+			<li>
+				<offset>(-0.2, 0, 0.1)</offset>
+				<type>PlatformRestraint0</type>
+			</li>
+			<li>
+				<offset>(0.2, 0, 0.1)</offset>
+				<type>PlatformRestraint1</type>
+			</li>
+			<li>
+				<offset>(0.2, 0, -0.5)</offset>
+				<type>PlatformRestraint2</type>
+			</li>
+			<li>
+				<offset>(-0.2, 0, -0.5)</offset>
+				<type>PlatformRestraint3</type>
+			</li>
+		</attachPointsDessicated>
+	</BodyTypeDef>
+
+	<BodyTypeDef ParentName="NY_SmeltedLoongBodyBase">
+		<defName>SmeltedLoongBodyBW</defName>
+		<label>青花瓷</label>
+		<bodyNakedGraphicPath>Things/Pawn/Bodies/SmeltedLoongBodyBW</bodyNakedGraphicPath>
+		<bodyDessicatedGraphicPath>Things/Pawn/Bodies/SmeltedLoongBody_Dead</bodyDessicatedGraphicPath>
+		<modExtensions>
+			<li Class="SmeltedLoong.SmeltedLoongGeneBody" />
+		</modExtensions>
+	</BodyTypeDef>
+	
+	<BodyTypeDef ParentName="NY_SmeltedLoongBodyBase">
+		<defName>SmeltedLoongBodyBW_Child</defName>
+		<label>幼年青花瓷</label>
+		<headOffset>(0.07, 0.36)</headOffset>
+		<woundScale>0.7</woundScale>
+		<bodyGraphicScale>(0.6, 0.55)</bodyGraphicScale>
+		<bodyNakedGraphicPath>Things/Pawn/Bodies/SmeltedLoongBodyBW_Child</bodyNakedGraphicPath>
+		<bodyDessicatedGraphicPath>Things/Pawn/Bodies/SmeltedLoongBody_Dead</bodyDessicatedGraphicPath>
+		<modExtensions>
+			<li Class="SmeltedLoong.SmeltedLoongGeneBody" />
+		</modExtensions>
+	</BodyTypeDef>
+
+	<BodyTypeDef ParentName="NY_SmeltedLoongBodyBase">
+		<defName>SmeltedLoongBodyCB</defName>
+		<label>纯种</label>
+		<bodyNakedGraphicPath>Things/Pawn/Bodies/SmeltedLoongBodyCB</bodyNakedGraphicPath>
+		<bodyDessicatedGraphicPath>Things/Pawn/Bodies/SmeltedLoongBody_Dead</bodyDessicatedGraphicPath>
+		<modExtensions>
+			<li Class="SmeltedLoong.SmeltedLoongGeneBody" />
+		</modExtensions>
+	</BodyTypeDef>
+
+	<BodyTypeDef ParentName="NY_SmeltedLoongBodyBase">
+		<defName>SmeltedLoongBodyCB_Child</defName>
+		<label>幼年纯种</label>
+		<headOffset>(0.07, 0.36)</headOffset>
+		<woundScale>0.7</woundScale>
+		<bodyGraphicScale>(0.6, 0.55)</bodyGraphicScale>
+		<bodyNakedGraphicPath>Things/Pawn/Bodies/SmeltedLoongBodyCB_Child</bodyNakedGraphicPath>
+		<bodyDessicatedGraphicPath>Things/Pawn/Bodies/SmeltedLoongBody_Dead</bodyDessicatedGraphicPath>
+		<modExtensions>
+			<li Class="SmeltedLoong.SmeltedLoongGeneBody" />
+		</modExtensions>
+	</BodyTypeDef>
+
+	<BodyTypeDef ParentName="NY_SmeltedLoongBodyBase">
+		<defName>SmeltedLoongBodyWJ</defName>
+		<label>白玉</label>
+		<bodyNakedGraphicPath>Things/Pawn/Bodies/SmeltedLoongBodyWJ</bodyNakedGraphicPath>
+		<bodyDessicatedGraphicPath>Things/Pawn/Bodies/SmeltedLoongBody_Dead</bodyDessicatedGraphicPath>
+		<modExtensions>
+			<li Class="SmeltedLoong.SmeltedLoongGeneBody" />
+		</modExtensions>
+	</BodyTypeDef>
+	
+	<BodyTypeDef ParentName="NY_SmeltedLoongBodyBase">
+		<defName>SmeltedLoongBodyWJ_Child</defName>
+		<label>幼年白玉</label>
+		<headOffset>(0.07, 0.36)</headOffset>
+		<woundScale>0.7</woundScale>
+		<bodyGraphicScale>(0.6, 0.55)</bodyGraphicScale>
+		<bodyNakedGraphicPath>Things/Pawn/Bodies/SmeltedLoongBodyWJ_Child</bodyNakedGraphicPath>
+		<bodyDessicatedGraphicPath>Things/Pawn/Bodies/SmeltedLoongBody_Dead</bodyDessicatedGraphicPath>
+		<modExtensions>
+			<li Class="SmeltedLoong.SmeltedLoongGeneBody" />
+		</modExtensions>
+	</BodyTypeDef>
+
+	<BodyTypeDef ParentName="NY_SmeltedLoongBodyBase">
+		<defName>SmeltedLoongBodyPC</defName>
+		<label>剪纸</label>
+		<bodyNakedGraphicPath>Things/Pawn/Bodies/SmeltedLoongBodyPC</bodyNakedGraphicPath>
+		<bodyDessicatedGraphicPath>Things/Pawn/Bodies/SmeltedLoongBody_Dead</bodyDessicatedGraphicPath>
+		<modExtensions>
+			<li Class="SmeltedLoong.SmeltedLoongGeneBody" />
+		</modExtensions>
+	</BodyTypeDef>
+	
+	<BodyTypeDef ParentName="NY_SmeltedLoongBodyBase">
+		<defName>SmeltedLoongBodyPC_Child</defName>
+		<label>幼年剪纸</label>
+		<headOffset>(0.07, 0.36)</headOffset>
+		<woundScale>0.7</woundScale>
+		<bodyGraphicScale>(0.6, 0.55)</bodyGraphicScale>
+		<bodyNakedGraphicPath>Things/Pawn/Bodies/SmeltedLoongBodyPC_Child</bodyNakedGraphicPath>
+		<bodyDessicatedGraphicPath>Things/Pawn/Bodies/SmeltedLoongBody_Dead</bodyDessicatedGraphicPath>
+		<modExtensions>
+			<li Class="SmeltedLoong.SmeltedLoongGeneBody" />
+		</modExtensions>
+	</BodyTypeDef>
+	
+	<!--特殊-->
+	<BodyTypeDef ParentName="NY_SmeltedLoongBodyBase">
+		<defName>SmeltedLoongBodyGhoul</defName>
+		<label>食尸鬼</label>
+		<bodyNakedGraphicPath>Things/Pawn/Bodies/SmeltedLoongBody_Ghoul</bodyNakedGraphicPath>
+		<bodyDessicatedGraphicPath>Things/Pawn/Bodies/SmeltedLoongBody_Dead</bodyDessicatedGraphicPath>
+		<modExtensions>
+			<li Class="SmeltedLoong.SmeltedLoongGeneBody" />
+		</modExtensions>
+	</BodyTypeDef>
+	
+	<BodyTypeDef>
+		<defName>SmeltedLoongBodyBaby</defName>
+		<label>冶龍婴儿</label>
+		<headOffset>(0.09, 0.28)</headOffset>
+		<woundScale>0.5</woundScale>
+		<bodyGraphicScale>(0.5, 0.5)</bodyGraphicScale>
+		<bodyNakedGraphicPath>Things/Pawn/Bodies/Swaddled_Child</bodyNakedGraphicPath>
+		<bodyDessicatedGraphicPath>Things/Pawn/Bodies/SmeltedLoongBody_Dead</bodyDessicatedGraphicPath>
+		<woundAnchors>
+			<li>
+				<rotation>South</rotation>
+				<group>Torso</group>
+				<offset>(0,0,-0.04)</offset>
+				<range>0.1</range>
+				<debugColor>(1,0,0,1)</debugColor>
+			</li>
+			<li>
+				<rotation>South</rotation>
+				<tag>LeftLeg</tag>
+				<offset>(0.04,0,-0.08)</offset>
+				<range>0.02</range>
+				<debugColor>(0,1,0,1)</debugColor>
+			</li>
+			<li>
+				<rotation>South</rotation>
+				<tag>RightLeg</tag>
+				<offset>(-0.04,0,-0.08)</offset>
+				<range>0.02</range>
+				<debugColor>(0,0,1,1)</debugColor>
+			</li>
+			<li>
+				<rotation>South</rotation>
+				<tag>LeftShoulder</tag>
+				<offset>(0.04,0,0.075)</offset>
+				<range>0.06</range>
+				<debugColor>(1,1,0,1)</debugColor>
+			</li>
+			<li>
+				<rotation>South</rotation>
+				<tag>RightShoulder</tag>
+				<offset>(-0.04,0,0.075)</offset>
+				<range>0.06</range>
+				<debugColor>(1,0,1,1)</debugColor>
+			</li>
+			<li>
+				<rotation>South</rotation>
+				<group>FullHead</group>
+				<offset>(0, 0, 0.15)</offset>
+				<range>0.07</range>
+				<layer>Head</layer>
+				<debugColor>(0,1,1,1)</debugColor>
+			</li>
+			<li>
+				<rotation>West</rotation>
+				<group>FullHead</group>
+				<offset>(-0.025, 0, 0.18)</offset>
+				<range>0.06</range>
+				<layer>Head</layer>
+				<debugColor>(0,1,1,1)</debugColor>
+			</li>
+			<li>
+				<rotation>West</rotation>
+				<group>Torso</group>
+				<offset>(0,0,-0.07)</offset>
+				<range>0.1</range>
+				<debugColor>(1,0,0,1)</debugColor>
+			</li>
+			<li>
+				<rotation>West</rotation>
+				<tag>LeftShoulder</tag>
+				<offset>(-0.03,0,0.065)</offset>
+				<range>0.03</range>
+				<canMirror>false</canMirror>
+				<debugColor>(1,1,0,1)</debugColor>
+			</li>
+			<li>
+				<rotation>East</rotation>
+				<tag>LeftLeg</tag>
+				<offset>(-0.03,0,-0.1)</offset>
+				<range>0.03</range>
+				<canMirror>false</canMirror>
+				<debugColor>(0,1,0,1)</debugColor>
+			</li>
+			<li>
+				<rotation>East</rotation>
+				<tag>RightShoulder</tag>
+				<offset>(0.03,0,0.065)</offset>
+				<range>0.03</range>
+				<canMirror>false</canMirror>
+				<debugColor>(1,0,1,1)</debugColor>
+			</li>
+			<li>
+				<rotation>West</rotation>
+				<tag>RightLeg</tag>
+				<offset>(0.05,0,-0.1)</offset>
+				<range>0.03</range>
+				<canMirror>false</canMirror>
+				<debugColor>(0,0,1,1)</debugColor>
+			</li>
+		</woundAnchors>
+		<modExtensions>
+			<li Class="SmeltedLoong.SmeltedLoongGeneBody" />
+		</modExtensions>
+	</BodyTypeDef>
+</Defs>

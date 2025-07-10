@@ -78,7 +78,7 @@
 		<descriptionHyperlinks>
 			<AbilityDef>NY_ability_LoongCraft</AbilityDef>
 		</descriptionHyperlinks>
-		<iconPath>UI/Genes/NY_ForgingDragon</iconPath>
+		<iconPath>UI/Genes/NY_SmeltedLoong</iconPath>
 		<biostatCpx>3</biostatCpx>
 		<biostatMet>4</biostatMet>
 		<statOffsets>
@@ -123,7 +123,7 @@
 		<defName>NY_gene_ForgingDragonHornBW</defName>
 		<label>龙角青</label>
 		<description>青花瓷种冶龍会长出宛如青色陶瓷的龙角，由于青花瓷种冶龍的基因丰富度较低这种角几乎不存在变种。</description>
-		<iconPath>UI/Genes/NY_DragonHorn</iconPath>
+		<iconPath>UI/Genes/NY_LoongHorn</iconPath>
 		<prerequisite>NY_gene_ForgingDragonBW</prerequisite>
 		<modExtensions>
 			<li Class="ForgingDragon.DragonGene">
@@ -137,7 +137,7 @@
 		<defName>NY_gene_ForgingDragonTailBW</defName>
 		<label>龙尾青</label>
 		<description>青花瓷种冶龍会长出一根柔中带刚的青蓝色大尾巴，摸起来冰冰的，夏天可以抱着睡觉。</description>
-		<iconPath>UI/Genes/NY_DragonTail</iconPath>
+		<iconPath>UI/Genes/NY_LoongTail</iconPath>
 		<prerequisite>NY_gene_ForgingDragonBW</prerequisite>
 		<minAgeActive>3</minAgeActive>
 		<modExtensions>
@@ -156,9 +156,10 @@
 			<AbilityDef>NY_ability_LoongFireSpew</AbilityDef>
 			<AbilityDef>NY_ability_LoongFrenzy</AbilityDef>
 		</descriptionHyperlinks>
-		<iconPath>UI/Genes/NY_ForgingDragon</iconPath>
+		<iconPath>UI/Genes/NY_SmeltedLoong</iconPath>
 		<biostatCpx>3</biostatCpx>
 		<biostatMet>4</biostatMet>
+		<lovinMTBFactor>0.5</lovinMTBFactor>
 		<statOffsets>
 			<ComfyTemperatureMin>-26</ComfyTemperatureMin>
 			<ComfyTemperatureMax>14</ComfyTemperatureMax>
@@ -214,7 +215,7 @@
 		<defName>NY_gene_ForgingDragonHornCB</defName>
 		<label>龙角翠</label>
 		<description>纯种冶龍会长出各种各样的角，比如绿中透黄的琉璃角，华丽精美的珍珠角，似乎还有一种生姜角，但最好别当着冶龍的面提这个称谓，她们不喜欢，相当不喜欢。</description>
-		<iconPath>UI/Genes/NY_DragonHorn</iconPath>
+		<iconPath>UI/Genes/NY_LoongHorn</iconPath>
 		<prerequisite>NY_gene_ForgingDragonCB</prerequisite>
 		<modExtensions>
 			<li Class="ForgingDragon.DragonGene">
@@ -228,7 +229,7 @@
 		<defName>NY_gene_ForgingDragonTailCB</defName>
 		<label>龙尾翠</label>
 		<description>纯种冶龍会长出一根粗壮的翠绿色大尾巴，肌肉发达的尾巴如果甩到人身上大概会筋断骨折。</description>
-		<iconPath>UI/Genes/NY_DragonTail</iconPath>
+		<iconPath>UI/Genes/NY_LoongTail</iconPath>
 		<prerequisite>NY_gene_ForgingDragonCB</prerequisite>
 		<minAgeActive>3</minAgeActive>
 		<modExtensions>
@@ -246,7 +247,7 @@
 		<descriptionHyperlinks>
 			<AbilityDef>NY_ability_LoongSmoke</AbilityDef>
 		</descriptionHyperlinks>
-		<iconPath>UI/Genes/NY_ForgingDragon</iconPath>
+		<iconPath>UI/Genes/NY_SmeltedLoong</iconPath>
 		<biostatCpx>3</biostatCpx>
 		<biostatMet>4</biostatMet>
 		<statOffsets>
@@ -292,7 +293,7 @@
 		<defName>NY_gene_ForgingDragonHornWJ</defName>
 		<label>龙角玉</label>
 		<description>白玉种冶龍的角摸起来冰冰的，质感与色泽如玉石一般，不像寻常的角质。</description>
-		<iconPath>UI/Genes/NY_DragonHorn</iconPath>
+		<iconPath>UI/Genes/NY_LoongHorn</iconPath>
 		<prerequisite>NY_gene_ForgingDragonWJ</prerequisite>
 		<modExtensions>
 			<li Class="ForgingDragon.DragonGene">
@@ -306,7 +307,7 @@
 		<defName>NY_gene_ForgingDragonTailWJ</defName>
 		<label>龙尾玉</label>
 		<description>白玉种冶龍的尾巴与纯种冶龍的尾巴相似，但尾巴的鳞片颜色偏白并且长着洁白的毛。</description>
-		<iconPath>UI/Genes/NY_DragonTail</iconPath>
+		<iconPath>UI/Genes/NY_LoongTail</iconPath>
 		<prerequisite>NY_gene_ForgingDragonWJ</prerequisite>
 		<minAgeActive>3</minAgeActive>
 		<modExtensions>
@@ -323,10 +324,11 @@
 		<description>决定冶龍亚种剪纸种的性状的核心基因。\n\n冶龍的体内有着一类独特的生长发育调控基因，它们也导致了冶龍的单性别族群以及冶龍后代会完全遗传母亲基因等现象的形成，该基因在冶龍漫长的演化中不断迭代，最终变得极度稳定，任何与其相斥的基因都会被其无效化。</description>
 		<descriptionHyperlinks>
 		</descriptionHyperlinks>
-		<iconPath>UI/Genes/NY_ForgingDragon</iconPath>
+		<iconPath>UI/Genes/NY_SmeltedLoong</iconPath>
 		<biostatCpx>3</biostatCpx>
 		<biostatMet>4</biostatMet>
 		<preventPermanentWounds>true</preventPermanentWounds>
+		<lovinMTBFactor>0.2</lovinMTBFactor>
 		<statOffsets>
 			<ComfyTemperatureMin>-36</ComfyTemperatureMin>
 			<ComfyTemperatureMax>14</ComfyTemperatureMax>
@@ -366,7 +368,7 @@
 		<defName>NY_gene_ForgingDragonHornPC</defName>
 		<label>龙角红</label>
 		<description>剪纸种冶龍的角细看有淡淡的花纹，非常漂亮，虽然变种不多，但也是冶龍的龙角选美中的有力竞争者。</description>
-		<iconPath>UI/Genes/NY_DragonHorn</iconPath>
+		<iconPath>UI/Genes/NY_LoongHorn</iconPath>
 		<prerequisite>NY_gene_ForgingDragonPC</prerequisite>
 		<modExtensions>
 			<li Class="ForgingDragon.DragonGene">
@@ -380,7 +382,7 @@
 		<defName>NY_gene_ForgingDragonTailPC</defName>
 		<label>龙尾红</label>
 		<description>剪纸种冶龍会长出生有薄膜状组织的红色尾巴，尾巴上类似剪纸的结构是人为修剪的结果，据说在冶龍的故乡存在和理发师类似的职业剪尾师。</description>
-		<iconPath>UI/Genes/NY_DragonTail</iconPath>
+		<iconPath>UI/Genes/NY_LoongTail</iconPath>
 		<prerequisite>NY_gene_ForgingDragonPC</prerequisite>
 		<minAgeActive>3</minAgeActive>
 		<modExtensions>
@@ -399,7 +401,7 @@
 			<AbilityDef>NY_ability_LoongTend</AbilityDef>
 			<AbilityDef>NY_ability_LoongMature</AbilityDef>
 		</descriptionHyperlinks>
-		<iconPath>UI/Genes/NY_ForgingDragon</iconPath>
+		<iconPath>UI/Genes/NY_SmeltedLoong</iconPath>
 		<biostatCpx>3</biostatCpx>
 		<biostatMet>4</biostatMet>
 		<statOffsets>
@@ -447,7 +449,7 @@
 		<defName>NY_gene_ForgingDragonHornGP</defName>
 		<label>龙角叶</label>
 		<description>青植种冶龍除了头顶的角之外，还会在耳前长出额外的角质，这些部位都能生出翠绿的叶芽。</description>
-		<iconPath>UI/Genes/NY_DragonHorn</iconPath>
+		<iconPath>UI/Genes/NY_LoongHorn</iconPath>
 		<prerequisite>NY_gene_ForgingDragonGP</prerequisite>
 		<modExtensions>
 			<li Class="ForgingDragon.DragonGene">
@@ -461,7 +463,7 @@
 		<defName>NY_gene_ForgingDragonTailGP</defName>
 		<label>龙尾叶</label>
 		<description>青植种冶龍的尾巴较短并由于鳞片的退化变得更加光滑，而靠近末端地方因为角质的堆积呈现出树皮的质感，此处会生长出叶芽而非毛发。</description>
-		<iconPath>UI/Genes/NY_DragonTail</iconPath>
+		<iconPath>UI/Genes/NY_LoongTail</iconPath>
 		<prerequisite>NY_gene_ForgingDragonGP</prerequisite>
 		<minAgeActive>3</minAgeActive>
 		<modExtensions>
@@ -480,7 +482,7 @@
 			<AbilityDef>NY_ability_LoongMine</AbilityDef>
 			<AbilityDef>NY_ability_LoongGroupArmor</AbilityDef>
 		</descriptionHyperlinks>
-		<iconPath>UI/Genes/NY_ForgingDragon</iconPath>
+		<iconPath>UI/Genes/NY_SmeltedLoong</iconPath>
 		<biostatCpx>3</biostatCpx>
 		<biostatMet>4</biostatMet>
 		<statOffsets>
@@ -527,7 +529,7 @@
 		<defName>NY_gene_ForgingDragonHornMC</defName>
 		<label>龙角石</label>
 		<description>孔雀石种冶龍的角与白玉龙的角一样，有着玉石般的质感，但她们的角看上去有些过度生长，变得庞大坚硬且棱角分明，而且在耳前也长出了额外的角质。</description>
-		<iconPath>UI/Genes/NY_DragonHorn</iconPath>
+		<iconPath>UI/Genes/NY_LoongHorn</iconPath>
 		<prerequisite>NY_gene_ForgingDragonMC</prerequisite>
 		<modExtensions>
 			<li Class="ForgingDragon.DragonGene">
@@ -541,7 +543,7 @@
 		<defName>NY_gene_ForgingDragonTailMC</defName>
 		<label>龙尾石</label>
 		<description>孔雀石种冶龍的尾巴上不再长出毛发，鳞片间偶尔会长出尖锐的玉石，末端更是形成了沉重的大块玉石。</description>
-		<iconPath>UI/Genes/NY_DragonTail</iconPath>
+		<iconPath>UI/Genes/NY_LoongTail</iconPath>
 		<prerequisite>NY_gene_ForgingDragonMC</prerequisite>
 		<minAgeActive>3</minAgeActive>
 		<modExtensions>
@@ -557,7 +559,7 @@
 		<defName>NY_gene_ForgingDragonMilk</defName>
 		<label>龙涎香</label>
 		<description>成年冶龍会分泌一种名为龙涎香的乳汁，据说有着特殊的香气，是世间少有的珍馐。</description>
-		<iconPath>Things/Item/NY_DragonMilk/NY_DragonMilk_c</iconPath>
+		<iconPath>Things/Item/NY_LoongMilk/NY_LoongMilk_c</iconPath>
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>-1</biostatMet>
 		<displayOrderInCategory>4</displayOrderInCategory>
@@ -600,7 +602,7 @@
 		<descriptionHyperlinks>
 			<HediffDef MayRequire="Ludeon.RimWorld.Anomaly">NY_hediff_GhoulDragon</HediffDef>
 		</descriptionHyperlinks>
-		<iconPath>UI/Genes/NY_GhoulDragon</iconPath>
+		<iconPath>UI/Genes/NY_GhoulLoong</iconPath>
 		<displayOrderInCategory>100</displayOrderInCategory>
 		<displayCategory>ForgingDragonGene</displayCategory>
 		<canGenerateInGeneSet>false</canGenerateInGeneSet>
@@ -610,7 +612,7 @@
 		<biostatMet>0</biostatMet>
 		<renderNodeProperties>
 			<li>
-				<texPath>Things/Pawn/HeadAttachments/ForgingDragonHornGhoul</texPath>
+				<texPath>Things/Pawn/HeadAttachments/SmeltedLoongHornGhoul</texPath>
 				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
 				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
 				<parentTagDef>Head</parentTagDef>

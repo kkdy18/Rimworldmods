@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HediffDef Name="NY_HediffBase" Abstract="True">
+		<hediffClass>HediffWithComps</hediffClass>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<maxSeverity>1</maxSeverity>
+		<initialSeverity>1</initialSeverity>
+		<everCurableByItem>false</everCurableByItem>
+		<alwaysAllowMothball>True</alwaysAllowMothball>
+		<alwaysAllowMothballCached>True</alwaysAllowMothballCached>
+		<keepOnBodyPartRestoration>true</keepOnBodyPartRestoration>
+	</HediffDef>
+
+	<!--伤害类-->
+	<HediffDef ParentName="NY_HediffBase">
+		<defName>NY_hediff_EvilBreak</defName>
+		<label>破邪</label>
+		<description>该生物被神兵判定为非人，神兵的力量正在使其变得脆弱。</description>
+		<defaultLabelColor>(251,255,205)</defaultLabelColor>
+		<stages>
+			<li>
+				<statOffsets>
+					<IncomingDamageFactor>1</IncomingDamageFactor>
+				</statOffsets>
+				<damageFactors>
+					<NY_damage_EvilBreak>2</NY_damage_EvilBreak>
+				</damageFactors>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>false</showRemainingTime>
+				<disappearsAfterTicks>60000</disappearsAfterTicks>
+			</li>
+			<li Class="SmeltedLoong.HCP_HumanImmune" />
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="NY_HediffBase">
+		<defName>NY_hediff_EvilTone</defName>
+		<label>魔音乱魂</label>
+		<description>诡异的魔音在脑海中回荡，试图撬开精神意志的缝隙。</description>
+		<hediffClass>SmeltedLoong.Hediff_SeverityNum</hediffClass>
+		<defaultLabelColor>(0.8, 0.8, 0.8)</defaultLabelColor>
+		<minSeverity>0</minSeverity>
+		<maxSeverity>9</maxSeverity>
+		<stages>
+			<li>
+				<statFactors>
+					<MoveSpeed>0.75</MoveSpeed>
+				</statFactors>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+				<disappearsAfterTicks>
+					<min>5000</min>
+					<max>10000</max>
+				</disappearsAfterTicks>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<li Class="HediffCompProperties_Effecter">
+				<stateEffecter>NY_effecter_EvilTone</stateEffecter>
+			</li>
+			<li Class="SmeltedLoong.HCP_MentalBreak" />
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="NY_HediffBase">
+		<defName>NY_hediff_BoneBreak</defName>
+		<label>震骨</label>
+		<description>无序的冲击力在体内横冲直撞，微小的损伤不断累积。</description>
+		<defaultLabelColor>(0.8, 0.8, 0.8)</defaultLabelColor>
+		<keepOnBodyPartRestoration>false</keepOnBodyPartRestoration>
+		<stages>
+			<li>
+				<label>略有不适</label>
+				<painOffset>0.2</painOffset>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<postFactor>0.9</postFactor>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>浑身酸痛</label>
+				<painOffset>0.4</painOffset>
+				<minSeverity>0.3</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<postFactor>0.75</postFactor>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>翻江倒海</label>
+				<painOffset>0.8</painOffset>
+				<minSeverity>0.6</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<postFactor>0.5</postFactor>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-1</severityPerDay>
+				<showDaysToRecover>true</showDaysToRecover>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<!--杂项-->
+	<HediffDef ParentName="NY_HediffBase">
+		<defName>NY_hediff_KidneyOverdraft</defName>
+		<label>肾透支</label>
+		<description>作为奴隶能活到被冶龍贩卖究竟是一种幸运还是不幸？总之这个人的灵魂或者别的什么都已经被榨干了，需要时间来治愈他麻木的精神。</description>
+		<defaultLabelColor>(0.8, 0.8, 0.35)</defaultLabelColor>
+		<everCurableByItem>true</everCurableByItem>
+		<keepOnBodyPartRestoration>false</keepOnBodyPartRestoration>
+		<stages>
+			<li>
+				<opinionOfOthersFactor>0</opinionOfOthersFactor>
+				<statOffsets>
+					<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">1</SlaveSuppressionOffset>
+					<MentalBreakThreshold>0.2</MentalBreakThreshold>
+				</statOffsets>
+				<statFactors>
+					<Fertility>0</Fertility>
+				</statFactors>
+				<mentalStateGivers>
+					<li>
+						<mentalState>Wander_OwnRoom</mentalState>
+						<mtbDays>5</mtbDays>
+					</li>
+				</mentalStateGivers>
+				<disablesNeeds>
+					<li>Outdoors</li>
+				</disablesNeeds>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.1</severityPerDay>
+				<showDaysToRecover>true</showDaysToRecover>
+			</li>
+			<li Class="SmeltedLoong.HCP_AddInjury">
+				<bodyPart>Pelvis</bodyPart>
+				<damage>Crush</damage>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="NY_HediffBase">
+		<defName>NY_hediff_SmeltedLoongSinner</defName>
+		<label>罪不可恕</label>
+		<description>这个冶龍大概是背上了不可饶恕的罪责，最后被迫放弃了自己的一切，沦为同胞售卖的商品。</description>
+		<defaultLabelColor>(0.8, 0, 0)</defaultLabelColor>
+		<priceOffset>1000</priceOffset>
+		<aptitudes>
+			<Melee>-12</Melee>
+			<Shooting>-12</Shooting>
+			<Social>-12</Social>
+			<Crafting>-12</Crafting>
+		</aptitudes>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>True</showRemainingTime>
+				<disappearsAfterTicks>
+					<min>120000</min>
+					<max>120000</max>
+				</disappearsAfterTicks>
+			</li>
+			<li Class="SmeltedLoong.HCP_SinnerTraits">
+				<traits>
+					<li>Gay</li>
+					<li>Wimp</li>
+					<li>Asexual</li>
+					<li>Gourmand</li>
+					<li>Pyromaniac</li>
+					<li>BodyPurist</li>
+					<li>CreepyBreathing</li>
+				</traits>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="NY_HediffBase">
+		<defName>NY_hediff_RaidComing_Insect</defName>
+		<label>风雨欲来</label>
+		<description>desc</description>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+			</li>
+		</stages>
+		<comps>
+			<li Class="SmeltedLoong.HCP_RaidComing">
+				<raid>Infestation</raid>
+				<text>“请救救我的朋友，还有……小心虫族。”一个浑身是血的冶龍抱着另一个冶龍从地洞中爬出，说完她便陷入了昏迷。</text>
+			</li>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+				<disappearsAfterTicks>
+					<min>500</min>
+					<max>500</max>
+				</disappearsAfterTicks>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+	</HediffDef>
+
+	<!--技能类-->
+	<HediffDef ParentName="NY_HediffBase">
+		<defName>NY_hediff_LoongFrenzy</defName>
+		<label>龙血迸发</label>
+		<description>狂暴的血流使身体素质显著提升，但这种状态下心脏的负荷极高，为保护生命安全无法长时间维持。</description>
+		<defaultLabelColor>(0.8, 0.3, 0.3)</defaultLabelColor>
+		<stages>
+			<li>
+				<painFactor>0.5</painFactor>
+				<statFactors>
+					<MoveSpeed>1.5</MoveSpeed>
+					<MeleeCooldownFactor>0.75</MeleeCooldownFactor>
+				</statFactors>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.1</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<postFactor>1.5</postFactor>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<renderNodeProperties>
+			<li>
+				<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+				<texPath>Things/Pawn/HeadAttachments/NY_LoongRedEyes/NY_LoongRedEyes</texPath>
+				<parentTagDef>Head</parentTagDef>
+				<color>(1,1,1,0.8)</color>
+				<visibleFacing>
+					<li>East</li>
+					<li>West</li>
+					<li>South</li>
+				</visibleFacing>
+				<drawData>
+					<defaultData>
+						<layer>60</layer>
+					</defaultData>
+					<dataWest>
+						<flip>true</flip>
+					</dataWest>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<li Class="HediffCompProperties_Effecter">
+				<stateEffecter>NY_effecter_LoongFrenzy</stateEffecter>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="NY_HediffBase">
+		<defName>NY_hediff_LoongSmoke</defName>
+		<label>吞云吐雾</label>
+		<description>烟雾释放中。</description>
+		<defaultLabelColor>(0.5, 0.8, 0.7)</defaultLabelColor>
+		<comps>
+			<li Class="SmeltedLoong.HCP_ReleaseGas">
+				<gasType>BlindSmoke</gasType>
+				<cellsToFill>15</cellsToFill>
+				<durationSeconds>15</durationSeconds>
+				<period>5</period>
+			</li>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<li Class="HediffCompProperties_Effecter">
+				<stateEffecter>NY_effecter_SmokeReleasing</stateEffecter>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="NY_HediffBase">
+		<defName>NY_hediff_LoongCraft</defName>
+		<label>青花神工</label>
+		<description>叩拜真龙，拜请祖宗，青花身空，欲成天工。</description>
+		<defaultLabelColor>(0.5, 0.5, 1)</defaultLabelColor>
+		<stages>
+			<li>
+				<statOffsets>
+					<WorkSpeedGlobal>2</WorkSpeedGlobal>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.1</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.1</offset>
+					</li>
+				</capMods>
+				<disablesNeeds>
+					<li>Joy</li>
+					<li>Rest</li>
+				</disablesNeeds>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<li Class="HediffCompProperties_Effecter">
+				<stateEffecter>NY_effecter_LoongCraft</stateEffecter>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="NY_HediffBase">
+		<defName>NY_hediff_LoongGroupHeal</defName>
+		<label>春风济世</label>
+		<description>愿以我身化春风，救此尘世苦寒人。</description>
+		<defaultLabelColor>(0.8, 1, 0.8)</defaultLabelColor>
+		<stages>
+			<li>
+				<statFactors>
+					<MoveSpeed>0.75</MoveSpeed>
+					<MedicalTendSpeed>1.5</MedicalTendSpeed>
+				</statFactors>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<li Class="SmeltedLoong.HCP_RangeHediff">
+				<range>7.9</range>
+				<mote>NY_mote_LoongGroupHeal</mote>
+				<hediff>NY_hediff_LoongGroupHealB</hediff>
+				<targetingParameters>
+					<canTargetBuildings>false</canTargetBuildings>
+					<canTargetMechs>false</canTargetMechs>
+				</targetingParameters>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="NY_HediffBase">
+		<defName>NY_hediff_LoongGroupHealB</defName>
+		<label>青植之疗愈</label>
+		<description>来自青植龙的疗愈，不知为何能闻到一股令人安心的韭菜香。</description>
+		<defaultLabelColor>(0.8, 1, 0.8)</defaultLabelColor>
+		<stages>
+			<li>
+				<totalBleedFactor>0.5</totalBleedFactor>
+				<statOffsets>
+					<ImmunityGainSpeed>1</ImmunityGainSpeed>
+					<InjuryHealingFactor>1</InjuryHealingFactor>
+					<ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
+				</statOffsets>
+			</li>
+		</stages>
+		<comps>
+			<li Class="SmeltedLoong.HCP_Regeneration">
+				<healPerSecond>0.4</healPerSecond>
+				<showHealAmount>true</showHealAmount>
+			</li>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>false</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="NY_HediffBase">
+		<defName>NY_hediff_LoongMine</defName>
+		<label>岩龙搬山</label>
+		<description>太快了，比挖掘臂还要快！</description>
+		<defaultLabelColor>(1, 0.8, 0)</defaultLabelColor>
+		<stages>
+			<li>
+				<statFactors>
+					<MiningSpeed>4</MiningSpeed>
+					<DeepDrillingSpeed>3</DeepDrillingSpeed>
+				</statFactors>
+				<disablesNeeds>
+					<li>Joy</li>
+					<li>Rest</li>
+				</disablesNeeds>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<li Class="HediffCompProperties_Effecter">
+				<stateEffecter>NY_effecter_LoongMine</stateEffecter>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="NY_HediffBase">
+		<defName>NY_hediff_LoongGroupArmor</defName>
+		<label>积甲山齐</label>
+		<description>desc</description>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>false</showRemainingTime>
+			</li>
+			<li Class="SmeltedLoong.HCP_RangeHediffOnce">
+				<range>4.9</range>
+				<duration>12500</duration>
+				<hediff>NY_hediff_LoongArmor</hediff>
+				<mote>Mote_NewbornBecomeChildGlow</mote>
+				<targetingParameters>
+					<canTargetSelf>true</canTargetSelf>
+					<canTargetMechs>false</canTargetMechs>
+					<canTargetAnimals>true</canTargetAnimals>
+					<canTargetBuildings>false</canTargetBuildings>
+				</targetingParameters>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="NY_HediffBase">
+		<defName>NY_hediff_LoongArmor</defName>
+		<label>琉璃甲片</label>
+		<description>宛如琉璃的结晶甲片保护着全身，孔雀石龙精心设计的瓦片状结构使甲片受到较大力度的冲击时只会部分碎裂而不会整体剥落。</description>
+		<hediffClass>SmeltedLoong.Hediff_SeverityNum</hediffClass>
+		<maxSeverity>9</maxSeverity>
+		<initialSeverity>9</initialSeverity>
+		<defaultLabelColor>(0.8, 1, 0.8)</defaultLabelColor>
+		<stages>
+			<li>
+				<multiplyStatChangesBySeverity>true</multiplyStatChangesBySeverity>
+				<painFactor>0.5</painFactor>
+				<statFactors>
+					<Flammability>0</Flammability>
+					<IncomingDamageFactor>0.95</IncomingDamageFactor>
+				</statFactors>
+				<statOffsets>
+					<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.2</ArmorRating_Heat>
+				</statOffsets>
+			</li>
+		</stages>
+		<renderNodeProperties>
+			<li>
+				<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+				<texPath>Things/Mote/NY_LoongArmor</texPath>
+				<drawSize>0.5</drawSize>
+				<parentTagDef>Body</parentTagDef>
+				<useSkinShader>false</useSkinShader>
+				<useRottenColor>false</useRottenColor>
+				<shaderTypeDef>CutoutComplex</shaderTypeDef>
+				<visibleFacing>
+					<li>East</li>
+					<li>North</li>
+					<li>West</li>
+					<li>South</li>
+				</visibleFacing>
+				<drawData>
+					<scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+					<defaultData>
+						<layer>95</layer>
+					</defaultData>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<li Class="SmeltedLoong.HCP_HurtConsume">
+				<hitSound>NY_ArmorBroken</hitSound>
+				<hitEffect>NY_effect_BrokenArmor</hitEffect>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="NY_HediffBase">
+		<defName>NY_hediff_InvisibleOwl</defName>
+		<label>鸮隐于林</label>
+		<description>那鸮隐卫侧身一躲，便消失在两片落叶的夹缝间，不知来处的飞矢仿佛老天洒下的一场大雨，将众贼人钉死在地上。</description>
+		<defaultLabelColor>(0.6, 0.6, 0.6)</defaultLabelColor>
+		<stages>
+			<li>
+				<statFactors>
+					<AimingDelayFactor>0.1</AimingDelayFactor>
+					<RangedCooldownFactor>0.1</RangedCooldownFactor>
+				</statFactors>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Invisibility">
+				<visibleToPlayer>true</visibleToPlayer>
+				<fadeDurationTicks>60</fadeDurationTicks>
+			</li>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<li Class="HediffCompProperties_Effecter">
+				<stateEffecter>NY_effecter_InvisibleOwl</stateEffecter>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="NY_HediffBase">
+		<defName>NY_hediff_SmokeGyrfalcon</defName>
+		<label>烟披鹘袭</label>
+		<description>贼人占了坚壁高墙，妄言要做城中王，却见鹘袭卫化作浊烟遮天蔽日，半响便摘了贼人脑袋提在手中。</description>
+		<defaultLabelColor>(0.6, 0.6, 0.6)</defaultLabelColor>
+		<stages>
+			<li>
+				<statOffsets>
+					<MoveSpeed>2</MoveSpeed>
+				</statOffsets>
+			</li>
+		</stages>
+		<comps>
+			<li Class="SmeltedLoong.HCP_DamageExplode">
+				<interval>300</interval>
+				<radius>4.9</radius>
+				<gas>BlindSmoke</gas>
+				<damageType>Extinguish</damageType>
+			</li>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<li Class="HediffCompProperties_Effecter">
+				<stateEffecter>NY_effecter_SmokeReleasing</stateEffecter>
+			</li>
+		</comps>
+	</HediffDef>
+</Defs>

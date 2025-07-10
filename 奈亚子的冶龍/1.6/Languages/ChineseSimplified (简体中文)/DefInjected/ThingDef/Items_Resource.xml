@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<NY_ImmortalIron.comps.CompAnalyzableUnlockResearch.activateLabelString>破坏性分析</NY_ImmortalIron.comps.CompAnalyzableUnlockResearch.activateLabelString>
+	<NY_ImmortalIron.comps.CompAnalyzableUnlockResearch.activateDescString>对神珍铁进行彻底地分析，掌握其结构与特性，该过程将对神珍铁造成不可逆的破坏。</NY_ImmortalIron.comps.CompAnalyzableUnlockResearch.activateDescString>
+	<NY_ImmortalIron.comps.CompAnalyzableUnlockResearch.jobString>分析神珍铁</NY_ImmortalIron.comps.CompAnalyzableUnlockResearch.jobString>
+	<NY_ImmortalIron.comps.CompAnalyzableUnlockResearch.inspectString>可由一名殖民者进行分析。</NY_ImmortalIron.comps.CompAnalyzableUnlockResearch.inspectString>
+	<NY_ImmortalIron.comps.CompAnalyzableUnlockResearch.guiLabelString>选择分析者</NY_ImmortalIron.comps.CompAnalyzableUnlockResearch.guiLabelString>
+
+	<NY_ImmortalIron.comps.CompAnalyzableUnlockResearch.completedLetterLabel>物质分析完毕：解锁{RESEARCH}</NY_ImmortalIron.comps.CompAnalyzableUnlockResearch.completedLetterLabel>
+	<NY_ImmortalIron.comps.CompAnalyzableUnlockResearch.completedLetter>通过对神珍铁的破坏性分析，{PAWN_labelShort}理解了加工这种金属所必要的知识，根据殖民地目前掌握的情报，想要获取更多神珍铁，必须与冶龍的势力建立良好的关系。\n\n你的研究者现在可以使用研究台开始学习如何实际应用这项技术。</NY_ImmortalIron.comps.CompAnalyzableUnlockResearch.completedLetter>
+</LanguageData>

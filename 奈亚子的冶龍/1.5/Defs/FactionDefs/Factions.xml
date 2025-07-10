@@ -4,7 +4,7 @@
 		<defName>NY_ForgingDragonUnion</defName>
 		<label>冶龍寻圣盟</label>
 		<description>为寻找所谓“圣旨”来到边缘世界的冶龍所组成的松散联盟，对外态度并不友好，虽然组织混乱，科技落后，但冶龍优秀的个体素质与生产能力结合冶龍文明的深厚底蕴依然支撑起了一个不可轻视的庞然大物。</description>
-		<factionIconPath>UI/World/NY_ForgingDragonUnion</factionIconPath>
+		<factionIconPath>UI/World/NY_SmeltedLoongUnion</factionIconPath>
 		<techLevel>Industrial</techLevel>
 		<pawnSingular>冶龍</pawnSingular>
 		<pawnsPlural>冶龍</pawnsPlural>
@@ -191,7 +191,7 @@
 		<requiredPreceptsOnly>true</requiredPreceptsOnly>
 	</FactionDef>
 
-	<CultureDef Name="ForgingDragon">
+	<CultureDef Name="NY_LoongCultureBase">
 		<defName>NY_ForgingDragonCulture</defName>
 		<label>冶龍</label>
 		<description>冶龍的文化形态。</description>
@@ -203,7 +203,7 @@
 		<allowedPlaceTags>
 			<li>OriginSpacer</li>
 		</allowedPlaceTags>
-		<iconPath>UI/World/NY_ForgingDragonUnion</iconPath>
+		<iconPath>UI/World/NY_SmeltedLoongUnion</iconPath>
 		<styleItemTags>
 			<li>
 				<tag>ForgingDragonHair</tag>
@@ -258,7 +258,7 @@
 		<allowedCultures>
 			<li>NY_ForgingDragonCulture</li>
 		</allowedCultures>
-		<factionIconPath>UI/World/NY_ForgingDragonUnion</factionIconPath>
+		<factionIconPath>UI/World/NY_SmeltedLoongUnion</factionIconPath>
 		<backstoryFilters>
 			<li>
 				<categories>

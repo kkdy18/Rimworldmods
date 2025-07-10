@@ -40,7 +40,7 @@
 				<li>Middle</li>
 			</layers>
 			<tags>
-				<li>NY_DragonCloth_Soldier</li>
+				<li>NY_LoongCloth_Soldier</li>
 			</tags>
 			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
 			<wornGraphicPath>Things/Apparel/NY_SoldierCloth/NY_SoldierCloth</wornGraphicPath>
@@ -106,7 +106,7 @@
 				<li>Middle</li>
 			</layers>
 			<tags>
-				<li>NY_DragonCloth_Soldier</li>
+				<li>NY_LoongCloth_Soldier</li>
 			</tags>
 			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
 			<wornGraphicPath>Things/Apparel/NY_SoldierClothPlus/NY_SoldierClothPlus</wornGraphicPath>
@@ -169,11 +169,11 @@
 				<li>Shell</li>
 			</layers>
 			<tags>
-				<li>NY_DragonCloth</li>
+				<li>NY_LoongCloth</li>
 			</tags>
 			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
 			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
-			<wornGraphicPath>Things/Apparel/NY_CloakGreen/NY_CloakGreen</wornGraphicPath>
+			<wornGraphicPath>Things/Apparel/NY_CloakGreen/Old/NY_CloakGreen</wornGraphicPath>
 		</apparel>
 		<costList>
 			<Cloth>60</Cloth>
@@ -194,8 +194,21 @@
 				</li>
 			</options>
 		</colorGenerator>
-		<tradeTags>
-		</tradeTags>
+		<modExtensions Inherit="false">
+			<li Class="ForgingDragon.DragonGeneApparel">
+				<allowedBodyTypes>
+					<li>ForgingDragonBodyBW</li>
+					<li>ForgingDragonBodyBW_Child</li>
+					<li>ForgingDragonBodyCB</li>
+					<li>ForgingDragonBodyCB_Child</li>
+					<li>ForgingDragonBodyWJ</li>
+					<li>ForgingDragonBodyWJ_Child</li>
+					<li>ForgingDragonBodyPC</li>
+					<li>ForgingDragonBodyPC_Child</li>
+				</allowedBodyTypes>
+				<differentWornGraphic>true</differentWornGraphic>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<ThingDef ParentName="NY_LoongApparelBase">
@@ -236,7 +249,7 @@
 				<li>Shell</li>
 			</layers>
 			<tags>
-				<li>NY_DragonCloth_CloakGray</li>
+				<li>NY_LoongCloth_CloakGray</li>
 			</tags>
 			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
 			<wornGraphicPath>Things/Apparel/NY_CloakGray/NY_CloakGray</wornGraphicPath>
@@ -307,7 +320,7 @@
 				<li>OnSkin</li>
 			</layers>
 			<tags>
-				<li>NY_DragonCloth_Uniform</li>
+				<li>NY_LoongCloth_Uniform</li>
 			</tags>
 			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
 			<wornGraphicPath>Things/Apparel/NY_DoctorCoat/NY_DoctorCoat</wornGraphicPath>
@@ -377,7 +390,7 @@
 				<li>OnSkin</li>
 			</layers>
 			<tags>
-				<li>NY_DragonCloth_Musician</li>
+				<li>NY_LoongCloth_Musician</li>
 			</tags>
 			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
 			<wornGraphicPath>Things/Apparel/NY_MusicianCoat/NY_MusicianCoat</wornGraphicPath>

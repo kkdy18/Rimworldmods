@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!--食尸鬼自定义技能树-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/MutantDef[defName="Ghoul"]/abilityWhitelist</xpath>
+		<value>
+			<li>NY_ability_GhoulLoongBite</li>
+			<li>NY_ability_GhoulDeadlifeDust</li>
+			<li>NY_ability_GhoulDevourerLeap</li>
+			<li>NY_ability_GhoulRevenantMode</li>
+			<li>NY_ability_GhoulDeathRefusal</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/MutantDef[defName="Ghoul"]</xpath>
+		<value>
+			<removesHediffs>
+				<li>NY_hediff_GhoulOvercome</li>
+			</removesHediffs>
+		</value>
+	</Operation>
+</Patch>

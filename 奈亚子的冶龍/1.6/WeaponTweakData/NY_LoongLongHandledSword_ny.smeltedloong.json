@@ -1,0 +1,14 @@
+{
+  "TextureModID": "ny.smeltedloong",
+  "ItemDefName": "NY_LoongLongHandledSword",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.311184138,
+  "OffY": -0.03355247,
+  "Rotation": 10.0,
+  "ScaleX": 2.0,
+  "ScaleY": 2.0,
+  "BladeStart": 0.6309212,
+  "BladeEnd": 1.33355308,
+  "MeleeWeaponType": 6
+}

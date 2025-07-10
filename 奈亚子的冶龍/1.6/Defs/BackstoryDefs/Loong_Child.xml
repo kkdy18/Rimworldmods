@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--幼年背景，技能点限3-->
+	<BackstoryDef ParentName="NY_BaseLoongBackStory">
+		<defName>NY_LoongSmithChild</defName>
+		<title>铁匠铺的孩子</title>
+		<titleShort>铁匠之子</titleShort>
+		<description>[PAWN_nameDef]出生在小镇的铁匠铺，父母是铁匠。[PAWN_pronoun]从小在铁炉边帮忙，学会了打铁的基础技巧。</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Melee>2</Melee>
+			<Crafting>2</Crafting>
+			<Intellectual>-1</Intellectual>
+		</skillGains>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="NY_BaseLoongBackStory">
+		<defName>NY_LoongTeaFarmerChild</defName>
+		<title>茶农的孩子</title>
+		<titleShort>茶农之子</titleShort>
+		<description>[PAWN_nameDef]出生在山区的村庄，父母是种茶的农民。[PAWN_pronoun]从小参与采茶和制茶，掌握了基本的茶艺。</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Plants>2</Plants>
+			<Crafting>2</Crafting>
+			<Intellectual>-1</Intellectual>
+		</skillGains>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="NY_BaseLoongBackStory">
+		<defName>NY_LoongSnackBarChild</defName>
+		<title>小吃摊帮手</title>
+		<titleShort>小吃摊帮手</titleShort>
+		<description>[PAWN_nameDef]的父母经营着一个街头小吃摊，[PAWN_pronoun]从小帮忙准备食材和售卖小吃。</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Social>2</Social>
+			<Cooking>1</Cooking>
+		</skillGains>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="NY_BaseLoongBackStory">
+		<defName>NY_LoongCityChild</defName>
+		<title>市井的孩子</title>
+		<titleShort>市井的孩子</titleShort>
+		<description>[PAWN_nameDef]在城中长大，曾上过几日学堂，但还是早早回到家中帮衬父母，补贴家用。</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Crafting>2</Crafting>
+			<Intellectual>1</Intellectual>
+		</skillGains>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="NY_BaseLoongBackStory">
+		<defName>NY_LoongMountainChild</defName>
+		<title>山村的孩子</title>
+		<titleShort>山村的孩子</titleShort>
+		<description>[PAWN_nameDef]在山中的村落长大，从小便熟识周围山岭草木，热爱自然。</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Plants>2</Plants>
+			<Animals>1</Animals>
+		</skillGains>
+		<spawnCategories>
+			<li>Tribal</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="NY_BaseLoongBackStory">
+		<defName>NY_LoongWanderChild</defName>
+		<title>街头流浪的孩子</title>
+		<titleShort>流浪儿</titleShort>
+		<description>[PAWN_nameDef]自幼在街头流浪，靠捡垃圾和偷窃为生，与其他流浪儿争夺食物和住处。</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Melee>4</Melee>
+			<Crafting>2</Crafting>
+			<Intellectual>-3</Intellectual>
+		</skillGains>
+		<forcedTraits>
+			<Jealous>0</Jealous>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="NY_BaseLoongBackStory">
+		<defName>NY_LoongAbandonChild</defName>
+		<title>被遗弃的孩子</title>
+		<titleShort>被遗弃的孩子</titleShort>
+		<description>[PAWN_nameDef]被遗弃在一家破旧的孤儿院门前，从小与其他孤儿一起生活。孤儿院条件恶劣，孩子们经常挨饿受冻，[PAWN_pronoun]年纪轻轻就要学着照顾年纪更小的孩子。</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Cooking>3</Cooking>
+			<Medicine>3</Medicine>
+			<Intellectual>-3</Intellectual>
+		</skillGains>
+		<forcedTraits>
+			<Ascetic>0</Ascetic>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="NY_BaseLoongBackStory">
+		<defName>NY_LoongEarlyChild</defName>
+		<title>被催熟的孩子</title>
+		<titleShort>被催熟的孩子</titleShort>
+		<description>[PAWN_nameDef]在童年就被母亲严格管教，希望[PAWN_pronoun]能成长为一名出色的人才。[PAWN_nameDef]或许实现了这个目标，但[PAWN_pronoun]付出的代价不只有[PAWN_objective]童年时光。就像某位古老的青植龙所说的那样——拔苗助长，非徒无益，而又害之。</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Social>-4</Social>
+			<Artistic>-3</Artistic>
+			<Crafting>-3</Crafting>
+			<Intellectual>10</Intellectual>
+		</skillGains>
+		<workDisables>
+			<li>ManualDumb</li>
+			<li>Caring</li>
+		</workDisables>
+		<forcedTraits>
+			<Nerves>2</Nerves>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="NY_BaseLoongBackStory">
+		<defName>NY_LoongMasterChild</defName>
+		<title>向往天师的孩子</title>
+		<titleShort>未来天师</titleShort>
+		<description>[PAWN_nameDef]听着冶龍天师的故事长大，梦想着成为天师的一员，或造福万民，或拯救苍生，[PAWN_pronoun]为这个目标刻苦学习。</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Intellectual>3</Intellectual>
+		</skillGains>
+	</BackstoryDef>
+
+	<!--贵族-->
+	<BackstoryDef ParentName="NY_BetterLoongBackStory">
+		<defName>NY_LoongRichChild</defName>
+		<title>豪门的孩子</title>
+		<titleShort>豪门的孩子</titleShort>
+		<description>[PAWN_nameDef]出生在豪门大族，儿时每日便是听先生教书，不时也与其他大族的孩子作伴玩耍，早早步入了上层阶级的世界。</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Social>2</Social>
+			<Cooking>-3</Cooking>
+			<Intellectual>4</Intellectual>
+		</skillGains>
+		<shuffleable>False</shuffleable>
+	</BackstoryDef>
+</Defs>

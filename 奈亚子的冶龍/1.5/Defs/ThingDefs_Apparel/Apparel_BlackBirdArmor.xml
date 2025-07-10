@@ -45,6 +45,7 @@
 			<effectWorking>Smith</effectWorking>
 			<soundWorking>Recipe_Machining</soundWorking>
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<useIngredientsForColor>false</useIngredientsForColor>
 			<researchPrerequisite>ForgingDragonBlackbirdGuard</researchPrerequisite>
 			<unfinishedThingDef>NY_UnfinishedBlackBirdArmor</unfinishedThingDef>
 			<recipeUsers>

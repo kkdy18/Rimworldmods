@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<StuffCategoryDef>
+		<defName>NY_RaceMetal</defName>
+		<label>奇金异铁</label>
+		<noun>奇金异铁</noun>
+		<destroySoundSmall>BuildingDestroyed_Metal_Small</destroySoundSmall>
+		<destroySoundMedium>BuildingDestroyed_Metal_Medium</destroySoundMedium>
+		<destroySoundLarge>BuildingDestroyed_Metal_Big</destroySoundLarge>
+	</StuffCategoryDef>
+</Defs>

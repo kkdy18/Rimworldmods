@@ -6,7 +6,7 @@
 		<requiredGenes>
 			<li>NY_gene_ForgingDragonBW</li>
 		</requiredGenes>
-		<graphicPath>Things/Pawn/Heads/QingHuaCi/ForgingDragonHeadBW</graphicPath>
+		<graphicPath>Things/Pawn/Heads/BlueWhite/SmeltedLoongHeadBW</graphicPath>
 		<gender>None</gender>
 		<modExtensions>
 			<li Class="ForgingDragon.DragonGeneBody" />
@@ -19,7 +19,7 @@
 		<requiredGenes>
 			<li>NY_gene_ForgingDragonBW</li>
 		</requiredGenes>
-		<graphicPath>Things/Pawn/Heads/QingHuaCi/ForgingDragonHeadBW1</graphicPath>
+		<graphicPath>Things/Pawn/Heads/BlueWhite/SmeltedLoongHeadBW1</graphicPath>
 		<gender>None</gender>
 		<modExtensions>
 			<li Class="ForgingDragon.DragonGeneBody" />
@@ -32,7 +32,7 @@
 		<requiredGenes>
 			<li>NY_gene_ForgingDragonBW</li>
 		</requiredGenes>
-		<graphicPath>Things/Pawn/Heads/QingHuaCi/ForgingDragonHeadBW2</graphicPath>
+		<graphicPath>Things/Pawn/Heads/BlueWhite/SmeltedLoongHeadBW2</graphicPath>
 		<gender>None</gender>
 		<modExtensions>
 			<li Class="ForgingDragon.DragonGeneBody" />
@@ -45,7 +45,7 @@
 		<requiredGenes>
 			<li>NY_gene_ForgingDragonBW</li>
 		</requiredGenes>
-		<graphicPath>Things/Pawn/Heads/QingHuaCi/ForgingDragonHeadBW3</graphicPath>
+		<graphicPath>Things/Pawn/Heads/BlueWhite/SmeltedLoongHeadBW3</graphicPath>
 		<gender>None</gender>
 		<modExtensions>
 			<li Class="ForgingDragon.DragonGeneBody" />
@@ -58,7 +58,7 @@
 		<requiredGenes>
 			<li>NY_gene_ForgingDragonCB</li>
 		</requiredGenes>
-		<graphicPath>Things/Pawn/Heads/ChunZhong/ForgingDragonHeadCB</graphicPath>
+		<graphicPath>Things/Pawn/Heads/CleanBred/SmeltedLoongHeadCB</graphicPath>
 		<gender>None</gender>
 		<modExtensions>
 			<li Class="ForgingDragon.DragonGeneBody" />
@@ -71,7 +71,7 @@
 		<requiredGenes>
 			<li>NY_gene_ForgingDragonCB</li>
 		</requiredGenes>
-		<graphicPath>Things/Pawn/Heads/ChunZhong/ForgingDragonHeadCB1</graphicPath>
+		<graphicPath>Things/Pawn/Heads/CleanBred/SmeltedLoongHeadCB1</graphicPath>
 		<gender>None</gender>
 		<modExtensions>
 			<li Class="ForgingDragon.DragonGeneBody" />
@@ -84,7 +84,7 @@
 		<requiredGenes>
 			<li>NY_gene_ForgingDragonCB</li>
 		</requiredGenes>
-		<graphicPath>Things/Pawn/Heads/ChunZhong/ForgingDragonHeadCB2</graphicPath>
+		<graphicPath>Things/Pawn/Heads/CleanBred/SmeltedLoongHeadCB2</graphicPath>
 		<gender>None</gender>
 		<modExtensions>
 			<li Class="ForgingDragon.DragonGeneBody" />
@@ -97,7 +97,7 @@
 		<requiredGenes>
 			<li>NY_gene_ForgingDragonCB</li>
 		</requiredGenes>
-		<graphicPath>Things/Pawn/Heads/ChunZhong/ForgingDragonHeadCB3</graphicPath>
+		<graphicPath>Things/Pawn/Heads/CleanBred/SmeltedLoongHeadCB3</graphicPath>
 		<gender>None</gender>
 		<modExtensions>
 			<li Class="ForgingDragon.DragonGeneBody" />
@@ -110,7 +110,7 @@
 		<requiredGenes>
 			<li>NY_gene_ForgingDragonWJ</li>
 		</requiredGenes>
-		<graphicPath>Things/Pawn/Heads/BaiYu/ForgingDragonHeadWJ</graphicPath>
+		<graphicPath>Things/Pawn/Heads/WhiteJade/SmeltedLoongHeadWJ</graphicPath>
 		<gender>None</gender>
 		<modExtensions>
 			<li Class="ForgingDragon.DragonGeneBody" />
@@ -123,7 +123,7 @@
 		<requiredGenes>
 			<li>NY_gene_ForgingDragonWJ</li>
 		</requiredGenes>
-		<graphicPath>Things/Pawn/Heads/BaiYu/ForgingDragonHeadWJ1</graphicPath>
+		<graphicPath>Things/Pawn/Heads/WhiteJade/SmeltedLoongHeadWJ1</graphicPath>
 		<gender>None</gender>
 		<modExtensions>
 			<li Class="ForgingDragon.DragonGeneBody" />
@@ -136,7 +136,7 @@
 		<requiredGenes>
 			<li>NY_gene_ForgingDragonWJ</li>
 		</requiredGenes>
-		<graphicPath>Things/Pawn/Heads/BaiYu/ForgingDragonHeadWJ2</graphicPath>
+		<graphicPath>Things/Pawn/Heads/WhiteJade/SmeltedLoongHeadWJ2</graphicPath>
 		<gender>None</gender>
 		<modExtensions>
 			<li Class="ForgingDragon.DragonGeneBody" />
@@ -149,7 +149,7 @@
 		<requiredGenes>
 			<li>NY_gene_ForgingDragonWJ</li>
 		</requiredGenes>
-		<graphicPath>Things/Pawn/Heads/BaiYu/ForgingDragonHeadWJ3</graphicPath>
+		<graphicPath>Things/Pawn/Heads/WhiteJade/SmeltedLoongHeadWJ3</graphicPath>
 		<gender>None</gender>
 		<modExtensions>
 			<li Class="ForgingDragon.DragonGeneBody" />
@@ -162,7 +162,7 @@
 		<requiredGenes>
 			<li>NY_gene_ForgingDragonPC</li>
 		</requiredGenes>
-		<graphicPath>Things/Pawn/Heads/JianZhi/ForgingDragonHeadPC</graphicPath>
+		<graphicPath>Things/Pawn/Heads/PaperCut/SmeltedLoongHeadPC</graphicPath>
 		<gender>None</gender>
 		<modExtensions>
 			<li Class="ForgingDragon.DragonGeneBody" />
@@ -175,7 +175,7 @@
 		<requiredGenes>
 			<li>NY_gene_ForgingDragonPC</li>
 		</requiredGenes>
-		<graphicPath>Things/Pawn/Heads/JianZhi/ForgingDragonHeadPC1</graphicPath>
+		<graphicPath>Things/Pawn/Heads/PaperCut/SmeltedLoongHeadPC1</graphicPath>
 		<gender>None</gender>
 		<modExtensions>
 			<li Class="ForgingDragon.DragonGeneBody" />
@@ -188,7 +188,7 @@
 		<requiredGenes>
 			<li>NY_gene_ForgingDragonPC</li>
 		</requiredGenes>
-		<graphicPath>Things/Pawn/Heads/JianZhi/ForgingDragonHeadPC2</graphicPath>
+		<graphicPath>Things/Pawn/Heads/PaperCut/SmeltedLoongHeadPC2</graphicPath>
 		<gender>None</gender>
 		<modExtensions>
 			<li Class="ForgingDragon.DragonGeneBody" />
@@ -201,7 +201,7 @@
 		<requiredGenes>
 			<li>NY_gene_ForgingDragonPC</li>
 		</requiredGenes>
-		<graphicPath>Things/Pawn/Heads/JianZhi/ForgingDragonHeadPC3</graphicPath>
+		<graphicPath>Things/Pawn/Heads/PaperCut/SmeltedLoongHeadPC3</graphicPath>
 		<gender>None</gender>
 		<modExtensions>
 			<li Class="ForgingDragon.DragonGeneBody" />
@@ -214,7 +214,7 @@
 		<requiredGenes>
 			<li>NY_gene_ForgingDragonGP</li>
 		</requiredGenes>
-		<graphicPath>Things/Pawn/Heads/ChunZhong/ForgingDragonHeadCB</graphicPath>
+		<graphicPath>Things/Pawn/Heads/CleanBred/SmeltedLoongHeadCB</graphicPath>
 		<gender>None</gender>
 		<modExtensions>
 			<li Class="ForgingDragon.DragonGeneBody" />
@@ -227,7 +227,7 @@
 		<requiredGenes>
 			<li>NY_gene_ForgingDragonGP</li>
 		</requiredGenes>
-		<graphicPath>Things/Pawn/Heads/ChunZhong/ForgingDragonHeadCB1</graphicPath>
+		<graphicPath>Things/Pawn/Heads/CleanBred/SmeltedLoongHeadCB1</graphicPath>
 		<gender>None</gender>
 		<modExtensions>
 			<li Class="ForgingDragon.DragonGeneBody" />
@@ -240,7 +240,7 @@
 		<requiredGenes>
 			<li>NY_gene_ForgingDragonGP</li>
 		</requiredGenes>
-		<graphicPath>Things/Pawn/Heads/ChunZhong/ForgingDragonHeadCB2</graphicPath>
+		<graphicPath>Things/Pawn/Heads/CleanBred/SmeltedLoongHeadCB2</graphicPath>
 		<gender>None</gender>
 		<modExtensions>
 			<li Class="ForgingDragon.DragonGeneBody" />
@@ -253,7 +253,7 @@
 		<requiredGenes>
 			<li>NY_gene_ForgingDragonGP</li>
 		</requiredGenes>
-		<graphicPath>Things/Pawn/Heads/ChunZhong/ForgingDragonHeadCB3</graphicPath>
+		<graphicPath>Things/Pawn/Heads/CleanBred/SmeltedLoongHeadCB3</graphicPath>
 		<gender>None</gender>
 		<modExtensions>
 			<li Class="ForgingDragon.DragonGeneBody" />
@@ -266,7 +266,7 @@
 		<requiredGenes>
 			<li>NY_gene_ForgingDragonMC</li>
 		</requiredGenes>
-		<graphicPath>Things/Pawn/Heads/BaiYu/ForgingDragonHeadWJ</graphicPath>
+		<graphicPath>Things/Pawn/Heads/WhiteJade/SmeltedLoongHeadWJ</graphicPath>
 		<gender>None</gender>
 		<modExtensions>
 			<li Class="ForgingDragon.DragonGeneBody" />
@@ -279,7 +279,7 @@
 		<requiredGenes>
 			<li>NY_gene_ForgingDragonMC</li>
 		</requiredGenes>
-		<graphicPath>Things/Pawn/Heads/BaiYu/ForgingDragonHeadWJ1</graphicPath>
+		<graphicPath>Things/Pawn/Heads/WhiteJade/SmeltedLoongHeadWJ1</graphicPath>
 		<gender>None</gender>
 		<modExtensions>
 			<li Class="ForgingDragon.DragonGeneBody" />
@@ -292,7 +292,7 @@
 		<requiredGenes>
 			<li>NY_gene_ForgingDragonMC</li>
 		</requiredGenes>
-		<graphicPath>Things/Pawn/Heads/BaiYu/ForgingDragonHeadWJ2</graphicPath>
+		<graphicPath>Things/Pawn/Heads/WhiteJade/SmeltedLoongHeadWJ2</graphicPath>
 		<gender>None</gender>
 		<modExtensions>
 			<li Class="ForgingDragon.DragonGeneBody" />
@@ -305,7 +305,7 @@
 		<requiredGenes>
 			<li>NY_gene_ForgingDragonMC</li>
 		</requiredGenes>
-		<graphicPath>Things/Pawn/Heads/BaiYu/ForgingDragonHeadWJ3</graphicPath>
+		<graphicPath>Things/Pawn/Heads/WhiteJade/SmeltedLoongHeadWJ3</graphicPath>
 		<gender>None</gender>
 		<modExtensions>
 			<li Class="ForgingDragon.DragonGeneBody" />
@@ -316,7 +316,7 @@
 	<HeadTypeDef>
 		<defName>ForgingDragonHeadSkull</defName>
 		<label>冶龍头骨</label>
-		<graphicPath>Things/Pawn/Heads/NY_DragonHead_Dead</graphicPath>
+		<graphicPath>Things/Pawn/Heads/SmeltedLoongHead_Dead</graphicPath>
 		<selectionWeight>0</selectionWeight>
 		<randomChosen>false</randomChosen>
 		<gender>None</gender>
@@ -328,7 +328,7 @@
 	<HeadTypeDef>
 		<defName>ForgingDragonHeadGhoul</defName>
 		<label>食尸鬼</label>
-		<graphicPath>Things/Pawn/Heads/NY_DragonHead_Ghoul</graphicPath>
+		<graphicPath>Things/Pawn/Heads/SmeltedLoongHead_Ghoul</graphicPath>
 		<selectionWeight>0</selectionWeight>
 		<randomChosen>false</randomChosen>
 		<gender>None</gender>

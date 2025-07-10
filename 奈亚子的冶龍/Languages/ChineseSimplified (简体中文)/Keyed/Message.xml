@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LanguageData>
-	<NY_MessagePlantDiedOfDrought>{0}因干旱而死亡。</NY_MessagePlantDiedOfDrought>
-
-	<NY_LoongWeathersRaid>传说真龙会为出征的将士唤来天灾，风霜能磨砺勇士的刀斧，尘沙能泯灭敌人的战意，真龙相信她所钟爱的子嗣们终会越过天灾的洗练带回胜利。而此刻，传说正在人们眼前重现。</NY_LoongWeathersRaid>
-
-	<NY_MessageContagionColony>密切接触导致{0}的{2}传染给了{1}。</NY_MessageContagionColony>
-</LanguageData>

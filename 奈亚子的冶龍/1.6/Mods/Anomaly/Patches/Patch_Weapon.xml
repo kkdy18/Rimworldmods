@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="NY_LoongGourd"]/verbs/li[1]/verbClass</xpath>
+		<value>
+			<verbClass>Verb_ArcSprayIncinerator</verbClass>
+		</value>
+	</Operation>
+</Patch>

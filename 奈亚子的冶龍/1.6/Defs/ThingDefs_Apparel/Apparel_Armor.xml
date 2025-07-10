@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef Name="NY_LoongArmorBase" ParentName="ApparelBase" Abstract="True">
+		<thingCategories Inherit="false">
+			<li>NY_LoongArmor</li>
+		</thingCategories>
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers>
+				<li>NY_TableCrafting</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+			<defaultIngredientFilter>
+				<categories>
+					<li>Root</li>
+				</categories>
+				<disallowedThingDefs>
+					<li>Gold</li>
+					<li>Silver</li>
+					<li>Plasteel</li>
+					<li>Jade</li>
+					<li>Uranium</li>
+					<li MayRequire="Ludeon.RimWorld.Anomaly">Bioferrite</li>
+				</disallowedThingDefs>
+			</defaultIngredientFilter>
+		</recipeMaker>
+		<apparel>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<modExtensions>
+			<li Class="SmeltedLoong.SmeltedLoongApparel">
+				<allowedBodyTypes>
+					<li>SmeltedLoongBodyBW</li>
+					<li>SmeltedLoongBodyCB</li>
+					<li>SmeltedLoongBodyWJ</li>
+					<li>SmeltedLoongBodyPC</li>
+				</allowedBodyTypes>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="NY_LoongArmorBase">
+		<defName>NY_SmeltedLoongCicadaArmor</defName>
+		<label>蝉翼杌首甲</label>
+		<description>为冶龍精锐量身打造的重甲，装饰有威风的飘带，虽然只是相当平凡的盔甲，但只要穿上就能给人带来无惧死亡的决心。\n\n玄铁蝉翼，轻盈如风，杌首护身，坚不可摧。</description>
+		<graphicData>
+			<texPath>Things/Apparel/NY_CicadaArmor/NY_CicadaArmor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<WorkToMake>11000</WorkToMake>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Mass>9</Mass>
+			<Flammability>0.4</Flammability>
+			<ArmorRating_Sharp>0.9</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.5</ArmorRating_Heat>
+			<Insulation_Cold>20</Insulation_Cold>
+			<Insulation_Heat>5</Insulation_Heat>
+			<EquipDelay>9</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.6</MoveSpeed>
+			<PainShockThreshold>0.2</PainShockThreshold>
+			<MentalBreakThreshold>-0.1</MentalBreakThreshold>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Middle</li>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>NY_LoongArmor</li>
+			</tags>
+			<wornGraphicPath>Things/Apparel/NY_CicadaArmor/NY_CicadaArmor</wornGraphicPath>
+		</apparel>
+		<costList>
+			<Cloth>40</Cloth>
+			<NY_RefinedIron>120</NY_RefinedIron>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>SmeltedLoongSoldierApparel</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<displayPriority>1271.2</displayPriority>
+		</recipeMaker>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<only>(1,1,1)</only>
+				</li>
+			</options>
+		</colorGenerator>
+		<tradeTags>
+		</tradeTags>
+	</ThingDef>
+</Defs>

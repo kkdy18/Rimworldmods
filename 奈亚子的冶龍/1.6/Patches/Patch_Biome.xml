@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!--让自然生态中可以长出冶龍作物-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/BiomeDef[defName="BorealForest"]/wildPlants</xpath>
+		<value>
+			<NY_plant_PlumTree>0.16</NY_plant_PlumTree>
+			<NY_plant_Ginger>0.16</NY_plant_Ginger>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/BiomeDef[defName="Tundra"]/wildPlants</xpath>
+		<value>
+			<NY_plant_PlumTree>0.05</NY_plant_PlumTree>
+			<NY_plant_Ginger>0.05</NY_plant_Ginger>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/BiomeDef[defName="ColdBog"]/wildPlants</xpath>
+		<value>
+			<NY_plant_PlumTree>0.05</NY_plant_PlumTree>
+			<NY_plant_Ginger>0.05</NY_plant_Ginger>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/BiomeDef[defName="TemperateForest"]/wildPlants</xpath>
+		<value>
+			<NY_plant_PlumTree>0.05</NY_plant_PlumTree>
+			<NY_plant_Ginger>0.05</NY_plant_Ginger>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/BiomeDef[defName="TemperateSwamp"]/wildPlants</xpath>
+		<value>
+			<NY_plant_PlumTree>0.05</NY_plant_PlumTree>
+			<NY_plant_Ginger>0.05</NY_plant_Ginger>
+		</value>
+	</Operation>
+
+	<!--让梼杌能随商队进入地图-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<success>Invert</success>
+				<xpath>Defs/BiomeDef/allowedPackAnimals</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/BiomeDef</xpath>
+				<value>
+					<allowedPackAnimals>
+					</allowedPackAnimals>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/BiomeDef/allowedPackAnimals</xpath>
+				<value>
+					<li>NY_animal_TaoWu</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

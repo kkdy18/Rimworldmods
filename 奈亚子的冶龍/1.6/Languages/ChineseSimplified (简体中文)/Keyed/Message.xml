@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<NY_RemoveOverriddenGene>有基因与{PAWN}的冶龍基因发生冲突而被分解：</NY_RemoveOverriddenGene>
+
+	<NY_MessagePlantDiedOfDrought>{0}因干旱而死亡。</NY_MessagePlantDiedOfDrought>
+
+	<NY_LoongWeathersRaid>传说真龙会为出征的将士唤来天灾，风霜能磨砺勇士的刀斧，尘沙能泯灭敌人的战意，真龙相信她所钟爱的子嗣们终会越过天灾的洗练带回胜利。而此刻，传说正在人们眼前重现。</NY_LoongWeathersRaid>
+
+	<NY_MessageContagionColony>密切接触导致{0}的{2}传染给了{1}。</NY_MessageContagionColony>
+
+	<NY_MessageMakeMilk>{PAWN}分泌并收集了一些龙涎香。</NY_MessageMakeMilk>
+	<NY_MessageMakeBloodEssence>{PAWN}身上的精血提炼器产出了一批精血。</NY_MessageMakeBloodEssence>
+
+	<NY_RemoveFromGhoulLoong>{HEDIFF} 受排异反应影响从{PAWN}的血肉中剥离。</NY_RemoveFromGhoulLoong>
+	<NY_GhoulLoongKillSelf>{0}未能解除自身的倒地状态，于是自灭生机。</NY_GhoulLoongKillSelf>
+	<NY_GhoulLoongTeleportCorpse_Colonist>{0}将自己的尸身挪移到了{1}脚下。</NY_GhoulLoongTeleportCorpse_Colonist>
+	<NY_GhoulLoongTeleportCorpse_Random>{0}将自己的尸身挪移到了她觉得安全的地方。</NY_GhoulLoongTeleportCorpse_Random>
+	<NY_RemovePartByTaoWu>{PAWN}死前体内的梼杌凶魂爆发，削去了{ENEMY}的{2}。</NY_RemovePartByTaoWu>
+</LanguageData>

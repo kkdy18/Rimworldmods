@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<AbilityDef>
+		<defName>NY_ability_LoongGroupHeal</defName>
+		<label>春风济世</label>
+		<description>冶龍中的特殊传承“春风使”的独门秘技，掌握此技能的青植种冶龍可以将自己的充盈的生命力分享给同伴，消除伤痛与毒害。</description>
+		<iconPath>UI/Abilities/NY_GroupHeal</iconPath>
+		<cooldownTicksRange>180000</cooldownTicksRange>
+		<hostile>false</hostile>
+		<aiCanUse>true</aiCanUse>
+		<groupAbility>true</groupAbility>
+		<ai_IsOffensive>true</ai_IsOffensive>
+		<targetRequired>false</targetRequired>
+		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+		<statBases>
+			<Ability_Duration>125</Ability_Duration>
+			<Ability_EffectRadius>7.9</Ability_EffectRadius>
+		</statBases>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>7.9</range>
+			<warmupTime>1</warmupTime>
+			<drawAimPie>false</drawAimPie>
+			<requireLineOfSight>false</requireLineOfSight>
+			<nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>NY_hediff_LoongGroupHeal</hediffDef>
+				<onlyApplyToSelf>True</onlyApplyToSelf>
+				<replaceExisting>true</replaceExisting>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<ThingDef ParentName="MoteBase">
+		<defName>NY_mote_LoongGroupHeal</defName>
+		<thingClass>MoteAttached</thingClass>
+		<altitudeLayer>LightingOverlay</altitudeLayer>
+		<drawOffscreen>true</drawOffscreen>
+		<mote>
+			<solidTime>99</solidTime>
+			<needsMaintenance>true</needsMaintenance>
+		</mote>
+		<graphicData>
+			<graphicClass>Graphic_Mote</graphicClass>
+			<texPath>Things/Mote/FlashHollow</texPath>
+			<shaderType>MoteGlow</shaderType>
+			<color>(0.5, 1, 0.5)</color>
+			<drawSize>20</drawSize>
+		</graphicData>
+	</ThingDef>
+</Defs>

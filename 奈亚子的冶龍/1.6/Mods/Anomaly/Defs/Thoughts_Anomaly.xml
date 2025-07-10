@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThoughtDef>
+		<defName>NY_thought_BrainLobe</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>NY_ghoulhediff_BrainLobe</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<nullifyingHediffs>
+			<li>Inhumanized</li>
+		</nullifyingHediffs>
+		<nullifyingTraits>
+			<li>Psychopath</li>
+		</nullifyingTraits>
+		<stages>
+			<li>
+				<label>失控之脑</label>
+				<description>我的脑海里偶尔会闯入杂音与奇怪的念头，我的大脑有一部分不再属于我……</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>NY_thought_GoldenGhoulLoong</defName>
+		<showBubble>true</showBubble>
+		<durationDays>1</durationDays>
+		<icon>Things/Item/Special/GoldenCube</icon>
+		<stages>
+			<li>
+				<label>金色的狂喜</label>
+				<description>如此完美的肉体，如此璀璨的造物！</description>
+				<baseMoodEffect>66</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

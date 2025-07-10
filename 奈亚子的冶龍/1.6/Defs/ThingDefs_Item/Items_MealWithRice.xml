@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HediffDef ParentName="NY_MealHediffBase" Name="NY_hediff_MealLavishHighSuper">
+		<defName>NY_hediff_MealLavishHighSuper</defName>
+		<label>超级饱腹振奋</label>
+		<description>身体倍棒，吃嘛嘛香。</description>
+		<stages>
+			<li>
+				<statFactors>
+					<RestFallRateFactor>0.8</RestFallRateFactor>
+				</statFactors>
+				<statOffsets>
+					<ImmunityGainSpeed>1</ImmunityGainSpeed>
+					<ComfyTemperatureMax>10</ComfyTemperatureMax>
+					<ComfyTemperatureMin>-10</ComfyTemperatureMin>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.25</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.25</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="NY_hediff_MealLavishHighSuper">
+		<defName>NY_hediff_MealLavishHighSuperB</defName>
+	</HediffDef>
+	
+	<ThingDef ParentName="NY_LavishMealWithRiceBase">
+		<defName>NY_MealLavish_VegWithRice</defName>
+		<label>冶龍翻翠玉配饭</label>
+		<description>色泽鲜亮，口感爽脆的清炒绿叶菜，曾是冶龍的皇家名菜，如果用动物油脂炒制会风味更佳。\n\n冶龍相信生病时吃顿好的能让人更快痊愈，或许这就是爱与美食的力量。</description>
+		<descriptionHyperlinks>
+			<HediffDef>NY_hediff_MealLavishHighSuper</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Meal/NY_LavishVegWithRice</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>NY_hediff_MealLavishHighSuper</hediffDef>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Ingredients">
+				<noIngredientsFoodKind>NonMeat</noIngredientsFoodKind>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<RecipeDef Name="NY_CookMealLavish_VegWithRice" ParentName="NY_CookMealWithRiceBase">
+		<defName>NY_CookMealLavish_VegWithRice</defName>
+		<label>烹饪翻翠玉配饭</label>
+		<description>虽然按常理这道菜必须用绿叶菜制作，但实际操作中烹饪者的就地取材与即兴发挥也值得期待，“翻土豆”“翻草莓”大家也不是没有品鉴过。</description>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+				<count>0.75</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawRice</li>
+					</thingDefs>
+				</filter>
+				<count>0.5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawRice</li>
+			</thingDefs>
+			<disallowedCategories>
+				<li>MeatRaw</li>
+				<li>AnimalProductRaw</li>
+			</disallowedCategories>
+		</fixedIngredientFilter>
+		<products>
+			<NY_MealLavish_VegWithRice>1</NY_MealLavish_VegWithRice>
+		</products>
+		<displayPriority>1271.01</displayPriority>
+	</RecipeDef>
+
+	<RecipeDef ParentName="NY_CookMealLavish_VegWithRice">
+		<defName>NY_CookMealLavish_VegWithRiceTen</defName>
+		<label>烹饪翻翠玉配饭 x10</label>
+		<workAmount>8000</workAmount>
+		<ingredients Inherit="False">
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+				<count>7.5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawRice</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<products>
+			<NY_MealLavish_VegWithRice>10</NY_MealLavish_VegWithRice>
+		</products>
+	</RecipeDef>
+
+	<ThingDef ParentName="NY_LavishMealWithRiceBase">
+		<defName>NY_MealLavish_MeatWithRice</defName>
+		<label>冶龍炖血金配饭</label>
+		<description>肥而不腻，香甜可口的红烧五花肉，曾是冶龍的皇家名菜，搭配刚蒸好的大米饭是慰藉肉体与灵魂的绝世佳肴。据说是冶龍家乡的一位著名诗人发明的菜肴。\n\n冶龍相信生病时吃顿好的能让人更快痊愈，或许这就是爱与美食的力量。</description>
+		<descriptionHyperlinks>
+			<HediffDef>NY_hediff_MealLavishHighSuper</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Meal/NY_LavishMeatWithRice</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>NY_hediff_MealLavishHighSuper</hediffDef>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Ingredients">
+				<noIngredientsFoodKind>Meat</noIngredientsFoodKind>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<RecipeDef Name="NY_CookMealLavish_MeatWithRice" ParentName="NY_CookMealWithRiceBase">
+		<defName>NY_CookMealLavish_MeatWithRice</defName>
+		<label>烹饪炖血金配饭</label>
+		<description>只有素食者才会拒绝一碗世间极品的红烧肉，当然，这碗红烧肉的原料最好是正经肉。肉总是千篇一律的蛋白质与脂肪的结合，如果在取材上即兴发挥恐怕成果会一路奔向深渊。</description>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+					</categories>
+				</filter>
+				<count>0.75</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawRice</li>
+					</thingDefs>
+				</filter>
+				<count>0.5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawRice</li>
+			</thingDefs>
+			<disallowedCategories>
+				<li>PlantFoodRaw</li>
+				<li>AnimalProductRaw</li>
+			</disallowedCategories>
+		</fixedIngredientFilter>
+		<products>
+			<NY_MealLavish_MeatWithRice>1</NY_MealLavish_MeatWithRice>
+		</products>
+		<displayPriority>1271.02</displayPriority>
+	</RecipeDef>
+
+	<RecipeDef ParentName="NY_CookMealLavish_MeatWithRice">
+		<defName>NY_CookMealLavish_MeatWithRiceTen</defName>
+		<label>烹饪炖血金配饭 x10</label>
+		<workAmount>8000</workAmount>
+		<ingredients Inherit="False">
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+					</categories>
+				</filter>
+				<count>7.5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawRice</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<products>
+			<NY_MealLavish_MeatWithRice>10</NY_MealLavish_MeatWithRice>
+		</products>
+	</RecipeDef>
+
+	<ThingDef ParentName="NY_LavishMealWithRiceBase">
+		<defName>NY_MealGingerChickenRice</defName>
+		<label>冶龍葱姜鸡腿饭</label>
+		<description>一份香气扑鼻的鸡腿饭，嫩滑的鸡肉裹着浓郁的姜葱酱汁，搭配热腾腾的白米饭，每一口都充满温暖的味道。\n\n冶龍相信生病时吃顿好的能让人更快痊愈，或许这就是爱与美食的力量。</description>
+		<descriptionHyperlinks>
+			<HediffDef>NY_hediff_MealLavishHighSuperB</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Meal/NY_GingerChickenRice</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>NY_hediff_MealLavishHighSuperB</hediffDef>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Ingredients">
+				<noIngredientsFoodKind>Meat</noIngredientsFoodKind>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<RecipeDef Name="NY_CookMealGingerChickenRice" ParentName="NY_CookMealWithRiceBase">
+		<defName>NY_CookMealGingerChickenRice</defName>
+		<label>烹饪葱姜鸡腿饭</label>
+		<description>看似简单的家常料理，姜葱的辛香使鸡腿肉格外开胃，据说曾是某位亲王的最爱。</description>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+					</categories>
+				</filter>
+				<count>0.65</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawRice</li>
+					</thingDefs>
+				</filter>
+				<count>0.5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>NY_RawGinger</li>
+					</thingDefs>
+				</filter>
+				<count>0.15</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawRice</li>
+				<li>NY_RawGinger</li>
+			</thingDefs>
+			<disallowedCategories>
+				<li>PlantFoodRaw</li>
+				<li>AnimalProductRaw</li>
+			</disallowedCategories>
+		</fixedIngredientFilter>
+		<products>
+			<NY_MealGingerChickenRice>1</NY_MealGingerChickenRice>
+		</products>
+		<displayPriority>1271.03</displayPriority>
+	</RecipeDef>
+
+	<RecipeDef ParentName="NY_CookMealGingerChickenRice">
+		<defName>NY_CookMealGingerChickenRiceTen</defName>
+		<label>烹饪葱姜鸡腿饭 x10</label>
+		<workAmount>8000</workAmount>
+		<ingredients Inherit="False">
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+					</categories>
+				</filter>
+				<count>6.5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawRice</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>NY_RawGinger</li>
+					</thingDefs>
+				</filter>
+				<count>1.5</count>
+			</li>
+		</ingredients>
+		<products>
+			<NY_MealGingerChickenRice>10</NY_MealGingerChickenRice>
+		</products>
+	</RecipeDef>
+
+	<ThingDef ParentName="NY_LavishMealWithRiceBase">
+		<defName>NY_MealBraisedPorkEggRice</defName>
+		<label>冶龍卤蛋猪脚饭</label>
+		<description>一份香气扑鼻的猪脚饭，猪脚炖得软糯入味，水煮蛋吸饱了醇厚的卤汁，搭配热腾腾的白米饭，能给疲劳的人们带来些许慰藉。\n\n冶龍相信生病时吃顿好的能让人更快痊愈，或许这就是爱与美食的力量。</description>
+		<descriptionHyperlinks>
+			<HediffDef>NY_hediff_MealLavishHighSuper</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Meal/NY_BraisedPorkEggRice</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>NY_hediff_MealLavishHighSuper</hediffDef>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Ingredients">
+				<noIngredientsFoodKind>Meat</noIngredientsFoodKind>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<RecipeDef Name="NY_CookMealBraisedPorkEggRice" ParentName="NY_CookMealWithRiceBase">
+		<defName>NY_CookMealBraisedPorkEggRice</defName>
+		<label>烹饪卤蛋猪脚饭</label>
+		<description>看似简单的家常料理，某位御厨曾说看似简单的卤蛋才是猪脚饭的灵魂所在，猪脚其实并不重要，但反对者认为这只是猪脚供不应求，皇家也吃不到正宗猪脚饭的托辞罢了。</description>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+					</categories>
+				</filter>
+				<count>0.65</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawRice</li>
+					</thingDefs>
+				</filter>
+				<count>0.5</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>EggsUnfertilized</li>
+					</categories>
+				</filter>
+				<count>0.1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawRice</li>
+			</thingDefs>
+			<categories>
+				<li>EggsUnfertilized</li>
+			</categories>
+			<disallowedCategories>
+				<li>PlantFoodRaw</li>
+			</disallowedCategories>
+		</fixedIngredientFilter>
+		<products>
+			<NY_MealBraisedPorkEggRice>1</NY_MealBraisedPorkEggRice>
+		</products>
+		<displayPriority>1271.04</displayPriority>
+	</RecipeDef>
+
+	<RecipeDef ParentName="NY_CookMealBraisedPorkEggRice">
+		<defName>NY_CookMealBraisedPorkEggRiceTen</defName>
+		<label>烹饪卤蛋猪脚饭 x10</label>
+		<workAmount>8000</workAmount>
+		<ingredients Inherit="False">
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+					</categories>
+				</filter>
+				<count>6.5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawRice</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>EggsUnfertilized</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<NY_MealBraisedPorkEggRice>10</NY_MealBraisedPorkEggRice>
+		</products>
+	</RecipeDef>
+</Defs>

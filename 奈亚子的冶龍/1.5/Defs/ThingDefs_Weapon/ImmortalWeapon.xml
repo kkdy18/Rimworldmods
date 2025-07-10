@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef Name="NY_DragonWeaponImmortalMelee" Abstract="True" ParentName="NY_DragonWeaponMedieval">
+	<ThingDef Name="NY_DragonWeaponImmortalMelee" Abstract="True" ParentName="NY_LoongWeaponMedieval">
 		<thingClass>ForgingDragon.ThingOnFloorGraphic</thingClass>
 		<useHitPoints>False</useHitPoints>
 		<tradeability>None</tradeability>
@@ -48,7 +48,7 @@
 		</comps>
 	</ThingDef>
 
-	<ThingDef Name="NY_DragonWeaponImmortalRanged" Abstract="True" ParentName="NY_DragonWeaponMedieval">
+	<ThingDef Name="NY_DragonWeaponImmortalRanged" Abstract="True" ParentName="NY_LoongWeaponMedieval">
 		<useHitPoints>False</useHitPoints>
 		<tradeability>None</tradeability>
 		<techLevel>Spacer</techLevel>
@@ -99,7 +99,7 @@
 		<label>三尖两刃刀</label>
 		<description>以冶龍神话传说中的二郎神将所持兵刃为原型而铸造的神兵，蕴含破邪除祟之威能。\n\n宝刀本是仙家兵，三界往来任纵横。\n体按阴阳分天地，光夺魂魄欺日星。\n劈开桃岭三千丈，奠定周基八百冬。\n老君当日炉中锻，号作三尖两刃锋。</description>
 		<graphicData>
-			<texPath>Things/Weapon/NY_DragonThreePoint</texPath>
+			<texPath>Things/Weapon/NY_LoongThreePoint</texPath>
 		</graphicData>
 		<statBases>
 		</statBases>
@@ -136,7 +136,7 @@
 			<li Class="ForgingDragon.DragonFloorGraphic">
 				<graphicData>
 					<graphicClass>Graphic_Single</graphicClass>
-					<texPath>Things/Weapon/FloorGraphic/NY_DragonThreePoint</texPath>
+					<texPath>Things/Weapon/FloorGraphic/NY_LoongThreePoint</texPath>
 					<onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
 					<drawSize>1</drawSize>
 				</graphicData>
@@ -149,7 +149,7 @@
 		<label>琉璃诛邪戟</label>
 		<description>传说古时常有铁甲邪祟、铜皮恶兽横行，伤人性命，毁人钱粮，有奇人以异铁铸神兵，扫净邪祟恶兽，使万民得以安居乐业。冶龍工匠们根据记载重铸了那件诛邪利器，希望邪祟恶兽归来之日，仍有勇士能执此神兵保卫一方。\n\n琉璃光寒诛邪戟，玄铁铸就白刃利。\n斩尽世间腌臜事，一扫不公立正气。</description>
 		<graphicData>
-			<texPath>Things/Weapon/NY_DragonEvilKiller</texPath>
+			<texPath>Things/Weapon/NY_LoongEvilKiller</texPath>
 			<drawSize>(2.5,2.5)</drawSize>
 		</graphicData>
 		<uiIconScale>0.8</uiIconScale>
@@ -191,7 +191,7 @@
 			<li Class="ForgingDragon.DragonFloorGraphic">
 				<graphicData>
 					<graphicClass>Graphic_Single</graphicClass>
-					<texPath>Things/Weapon/FloorGraphic/NY_DragonEvilKiller</texPath>
+					<texPath>Things/Weapon/FloorGraphic/NY_LoongEvilKiller</texPath>
 					<onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
 					<drawSize>1</drawSize>
 				</graphicData>
@@ -204,7 +204,7 @@
 		<label>凤翎碧璃切</label>
 		<description>碧血铸剑凤翎扬，削铁如泥刃寒光。\n琉璃碧刃映日月，透骨锋芒胜冰霜。</description>
 		<graphicData>
-			<texPath>Things/Weapon/NY_DragonFeatherSwordGreen</texPath>
+			<texPath>Things/Weapon/NY_LoongFeatherSwordGreen</texPath>
 		</graphicData>
 		<soundInteract MayRequire="Ludeon.RimWorld.Royalty">Interact_MonoSword</soundInteract>
 		<meleeHitSound MayRequire="Ludeon.RimWorld.Royalty">MeleeHit_MonoSword</meleeHitSound>
@@ -249,7 +249,7 @@
 			<li Class="ForgingDragon.DragonFloorGraphic">
 				<graphicData>
 					<graphicClass>Graphic_Single</graphicClass>
-					<texPath>Things/Weapon/FloorGraphic/NY_DragonFeatherSwordGreen</texPath>
+					<texPath>Things/Weapon/FloorGraphic/NY_LoongFeatherSwordGreen</texPath>
 					<onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
 					<drawSize>1</drawSize>
 				</graphicData>
@@ -262,7 +262,7 @@
 		<label>凰羽赤铁斩</label>
 		<description>赤铁铸剑凰羽名，挥舞凤鸣震天庭。\n斩敌血溅化羽飞，赤光映羽舞翩跹。</description>
 		<graphicData>
-			<texPath>Things/Weapon/NY_DragonFeatherSwordRed</texPath>
+			<texPath>Things/Weapon/NY_LoongFeatherSwordRed</texPath>
 		</graphicData>
 		<soundInteract MayRequire="Ludeon.RimWorld.Royalty">Interact_MonoSword</soundInteract>
 		<meleeHitSound MayRequire="Ludeon.RimWorld.Royalty">MeleeHit_MonoSword</meleeHitSound>
@@ -290,7 +290,7 @@
 			<li Class="ForgingDragon.DragonFloorGraphic">
 				<graphicData>
 					<graphicClass>Graphic_Single</graphicClass>
-					<texPath>Things/Weapon/FloorGraphic/NY_DragonFeatherSwordRed</texPath>
+					<texPath>Things/Weapon/FloorGraphic/NY_LoongFeatherSwordRed</texPath>
 					<onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
 					<drawSize>1</drawSize>
 				</graphicData>
@@ -303,7 +303,7 @@
 		<label>揽星截月</label>
 		<description>依据冶龍神话传说中关于星宿的记载而铸造的神兵，挥剑可唤出星芒剑气镇杀纠结成群之敌。\n\n二十八宿铸神剑，星缀月染剑光藏。\n出鞘星河闪耀时，剑气恢弘断云空。\n星宿神力凝月刃，月华流转映星芒。\n挥剑可揽天上月，众星随舞灿苍穹。</description>
 		<graphicData>
-			<texPath>Things/Weapon/NY_DragonStarSword</texPath>
+			<texPath>Things/Weapon/NY_LoongStarSword</texPath>
 		</graphicData>
 		<soundInteract MayRequire="Ludeon.RimWorld.Royalty">Interact_MonoSword</soundInteract>
 		<meleeHitSound MayRequire="Ludeon.RimWorld.Royalty">MeleeHit_MonoSword</meleeHitSound>
@@ -349,7 +349,7 @@
 			<li Class="ForgingDragon.DragonFloorGraphic">
 				<graphicData>
 					<graphicClass>Graphic_Single</graphicClass>
-					<texPath>Things/Weapon/FloorGraphic/NY_DragonStarSword</texPath>
+					<texPath>Things/Weapon/FloorGraphic/NY_LoongStarSword</texPath>
 					<onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
 					<drawSize>1</drawSize>
 				</graphicData>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<NY_NotFitBody>不适合当前身型。</NY_NotFitBody>
+	
+	<NY_DaysLeft>{0}天后产出{1}</NY_DaysLeft>
+	<NY_NoMilk>龙涎香停止分泌。</NY_NoMilk>
+
+	<NY_GhoulLoongHediffStringExtra>定三魂：鬼龙被击晕与陷入精神失控状态后会迅速自行恢复。\n呼吸法：鬼龙在倒地时会试图消除自身异常状态，失败后会自灭生机以待复还。\n冥阴渡：鬼龙死后会折叠空间将尸身挪移。</NY_GhoulLoongHediffStringExtra>
+	
+	<NY_HealAmount>再生愈伤：{0}点/秒</NY_HealAmount>
+
+	<NY_AbilityFoodCost>营养消耗</NY_AbilityFoodCost>
+	<NY_AbilityDisabledNoFood>{0_labelShort}的营养储备不足以支持消耗。</NY_AbilityDisabledNoFood>
+
+	<NY_AbilityDisabledBecauseFull>吃不下</NY_AbilityDisabledBecauseFull>
+	<NY_DeliciousThis>好吃</NY_DeliciousThis>
+	<NY_IsItFood>允许食用？</NY_IsItFood>
+	<NY_NoMeatForFood>缺乏可食用部分</NY_NoMeatForFood>
+
+	<NY_CommandInvisibleMode>隐形模式</NY_CommandInvisibleMode>
+	<NY_CommandUnbreakableMode>重构模式</NY_CommandUnbreakableMode>
+
+	<NY_CommandAddGeneMode>插入异种基因</NY_CommandAddGeneMode>
+	<NY_CommandRemoveGeneMode>剪除系谱基因</NY_CommandRemoveGeneMode>
+</LanguageData>

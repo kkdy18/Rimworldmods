@@ -171,8 +171,8 @@
 	<BodyTypeDef ParentName="NY_BaseDragonBody">
 		<defName>ForgingDragonBodyBW</defName>
 		<label>青花瓷</label>
-		<bodyNakedGraphicPath>Things/Pawn/Bodies/NY_DragonBodyBW</bodyNakedGraphicPath>
-		<bodyDessicatedGraphicPath>Things/Pawn/Bodies/NY_DragonBody_Dead</bodyDessicatedGraphicPath>
+		<bodyNakedGraphicPath>Things/Pawn/Bodies/SmeltedLoongBodyBW</bodyNakedGraphicPath>
+		<bodyDessicatedGraphicPath>Things/Pawn/Bodies/SmeltedLoongBody_Dead</bodyDessicatedGraphicPath>
 		<modExtensions>
 			<li Class="ForgingDragon.DragonGeneBody" />
 		</modExtensions>
@@ -184,8 +184,8 @@
 		<headOffset>(0.07, 0.36)</headOffset>
 		<woundScale>0.7</woundScale>
 		<bodyGraphicScale>(0.6, 0.55)</bodyGraphicScale>
-		<bodyNakedGraphicPath>Things/Pawn/Bodies/NY_DragonBodyBW_Child</bodyNakedGraphicPath>
-		<bodyDessicatedGraphicPath>Things/Pawn/Bodies/NY_DragonBody_Dead</bodyDessicatedGraphicPath>
+		<bodyNakedGraphicPath>Things/Pawn/Bodies/SmeltedLoongBodyBW_Child</bodyNakedGraphicPath>
+		<bodyDessicatedGraphicPath>Things/Pawn/Bodies/SmeltedLoongBody_Dead</bodyDessicatedGraphicPath>
 		<modExtensions>
 			<li Class="ForgingDragon.DragonGeneBody" />
 		</modExtensions>
@@ -194,8 +194,8 @@
 	<BodyTypeDef ParentName="NY_BaseDragonBody">
 		<defName>ForgingDragonBodyCB</defName>
 		<label>纯种</label>
-		<bodyNakedGraphicPath>Things/Pawn/Bodies/NY_DragonBodyCB</bodyNakedGraphicPath>
-		<bodyDessicatedGraphicPath>Things/Pawn/Bodies/NY_DragonBody_Dead</bodyDessicatedGraphicPath>
+		<bodyNakedGraphicPath>Things/Pawn/Bodies/SmeltedLoongBodyCB</bodyNakedGraphicPath>
+		<bodyDessicatedGraphicPath>Things/Pawn/Bodies/SmeltedLoongBody_Dead</bodyDessicatedGraphicPath>
 		<modExtensions>
 			<li Class="ForgingDragon.DragonGeneBody" />
 		</modExtensions>
@@ -207,8 +207,8 @@
 		<headOffset>(0.07, 0.36)</headOffset>
 		<woundScale>0.7</woundScale>
 		<bodyGraphicScale>(0.6, 0.55)</bodyGraphicScale>
-		<bodyNakedGraphicPath>Things/Pawn/Bodies/NY_DragonBodyCB_Child</bodyNakedGraphicPath>
-		<bodyDessicatedGraphicPath>Things/Pawn/Bodies/NY_DragonBody_Dead</bodyDessicatedGraphicPath>
+		<bodyNakedGraphicPath>Things/Pawn/Bodies/SmeltedLoongBodyCB_Child</bodyNakedGraphicPath>
+		<bodyDessicatedGraphicPath>Things/Pawn/Bodies/SmeltedLoongBody_Dead</bodyDessicatedGraphicPath>
 		<modExtensions>
 			<li Class="ForgingDragon.DragonGeneBody" />
 		</modExtensions>
@@ -217,8 +217,8 @@
 	<BodyTypeDef ParentName="NY_BaseDragonBody">
 		<defName>ForgingDragonBodyWJ</defName>
 		<label>白玉</label>
-		<bodyNakedGraphicPath>Things/Pawn/Bodies/NY_DragonBodyWJ</bodyNakedGraphicPath>
-		<bodyDessicatedGraphicPath>Things/Pawn/Bodies/NY_DragonBody_Dead</bodyDessicatedGraphicPath>
+		<bodyNakedGraphicPath>Things/Pawn/Bodies/SmeltedLoongBodyWJ</bodyNakedGraphicPath>
+		<bodyDessicatedGraphicPath>Things/Pawn/Bodies/SmeltedLoongBody_Dead</bodyDessicatedGraphicPath>
 		<modExtensions>
 			<li Class="ForgingDragon.DragonGeneBody" />
 		</modExtensions>
@@ -230,8 +230,8 @@
 		<headOffset>(0.07, 0.36)</headOffset>
 		<woundScale>0.7</woundScale>
 		<bodyGraphicScale>(0.6, 0.55)</bodyGraphicScale>
-		<bodyNakedGraphicPath>Things/Pawn/Bodies/NY_DragonBodyWJ_Child</bodyNakedGraphicPath>
-		<bodyDessicatedGraphicPath>Things/Pawn/Bodies/NY_DragonBody_Dead</bodyDessicatedGraphicPath>
+		<bodyNakedGraphicPath>Things/Pawn/Bodies/SmeltedLoongBodyWJ_Child</bodyNakedGraphicPath>
+		<bodyDessicatedGraphicPath>Things/Pawn/Bodies/SmeltedLoongBody_Dead</bodyDessicatedGraphicPath>
 		<modExtensions>
 			<li Class="ForgingDragon.DragonGeneBody" />
 		</modExtensions>
@@ -240,8 +240,8 @@
 	<BodyTypeDef ParentName="NY_BaseDragonBody">
 		<defName>ForgingDragonBodyPC</defName>
 		<label>剪纸</label>
-		<bodyNakedGraphicPath>Things/Pawn/Bodies/NY_DragonBodyPC</bodyNakedGraphicPath>
-		<bodyDessicatedGraphicPath>Things/Pawn/Bodies/NY_DragonBody_Dead</bodyDessicatedGraphicPath>
+		<bodyNakedGraphicPath>Things/Pawn/Bodies/SmeltedLoongBodyPC</bodyNakedGraphicPath>
+		<bodyDessicatedGraphicPath>Things/Pawn/Bodies/SmeltedLoongBody_Dead</bodyDessicatedGraphicPath>
 		<modExtensions>
 			<li Class="ForgingDragon.DragonGeneBody" />
 		</modExtensions>
@@ -253,8 +253,8 @@
 		<headOffset>(0.07, 0.36)</headOffset>
 		<woundScale>0.7</woundScale>
 		<bodyGraphicScale>(0.6, 0.55)</bodyGraphicScale>
-		<bodyNakedGraphicPath>Things/Pawn/Bodies/NY_DragonBodyPC_Child</bodyNakedGraphicPath>
-		<bodyDessicatedGraphicPath>Things/Pawn/Bodies/NY_DragonBody_Dead</bodyDessicatedGraphicPath>
+		<bodyNakedGraphicPath>Things/Pawn/Bodies/SmeltedLoongBodyPC_Child</bodyNakedGraphicPath>
+		<bodyDessicatedGraphicPath>Things/Pawn/Bodies/SmeltedLoongBody_Dead</bodyDessicatedGraphicPath>
 		<modExtensions>
 			<li Class="ForgingDragon.DragonGeneBody" />
 		</modExtensions>
@@ -264,8 +264,8 @@
 	<BodyTypeDef ParentName="NY_BaseDragonBody">
 		<defName>ForgingDragonBodyGhoul</defName>
 		<label>食尸鬼</label>
-		<bodyNakedGraphicPath>Things/Pawn/Bodies/NY_DragonBody_Ghoul</bodyNakedGraphicPath>
-		<bodyDessicatedGraphicPath>Things/Pawn/Bodies/NY_DragonBody_Dead</bodyDessicatedGraphicPath>
+		<bodyNakedGraphicPath>Things/Pawn/Bodies/SmeltedLoongBody_Ghoul</bodyNakedGraphicPath>
+		<bodyDessicatedGraphicPath>Things/Pawn/Bodies/SmeltedLoongBody_Dead</bodyDessicatedGraphicPath>
 		<modExtensions>
 			<li Class="ForgingDragon.DragonGeneBody" />
 		</modExtensions>
@@ -278,7 +278,7 @@
 		<woundScale>0.5</woundScale>
 		<bodyGraphicScale>(0.5, 0.5)</bodyGraphicScale>
 		<bodyNakedGraphicPath>Things/Pawn/Bodies/Swaddled_Child</bodyNakedGraphicPath>
-		<bodyDessicatedGraphicPath>Things/Pawn/Bodies/NY_DragonBody_Dead</bodyDessicatedGraphicPath>
+		<bodyDessicatedGraphicPath>Things/Pawn/Bodies/SmeltedLoongBody_Dead</bodyDessicatedGraphicPath>
 		<woundAnchors>
 			<li>
 				<rotation>South</rotation>

@@ -4,7 +4,7 @@
 		<defName>NY_ability_InvisibleOwl</defName>
 		<label>鸮隐于林</label>
 		<description>催动甲胄铭文在短时间内隐去身形并显著强化射术。</description>
-		<iconPath>UI/Abilities/NY_Empty</iconPath>
+		<iconPath>UI/Abilities/NY_InvisibleOwl</iconPath>
 		<cooldownTicksRange>60000</cooldownTicksRange>
 		<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
 		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
@@ -71,7 +71,7 @@
 		<defName>NY_ability_SmokeGyrfalcon</defName>
 		<label>烟披鹘袭</label>
 		<description>催动甲胄铭文在短时间内强化行动能力，激活的甲片会在受到打击时迸发烟雾掩护。</description>
-		<iconPath>UI/Abilities/NY_Empty</iconPath>
+		<iconPath>UI/Abilities/NY_SmokeGyrfalcon</iconPath>
 		<cooldownTicksRange>60000</cooldownTicksRange>
 		<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
 		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
@@ -107,4 +107,33 @@
 			<texPath>Things/Mote/Transparent</texPath>
 		</graphicData>
 	</ThingDef>
+
+	<AbilityDef ParentName="AbilityTouchBase">
+		<defName>NY_ability_LoongGeneEditing</defName>
+		<label>改脉化龙</label>
+		<description>消耗异种胚芽将其中的基因加入现有的异种基因序列或从系谱基因序列中去除对应基因。</description>
+		<iconPath>UI/Gizmos/ImplantGenes</iconPath>
+		<warmupEffecter>Implant_Xenogerm</warmupEffecter>
+		<warmupStartSound>ReimplantXenogerm_Cast</warmupStartSound>
+		<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<cooldownTicksRange>5000</cooldownTicksRange>
+		<verbProperties>
+			<verbClass>Verb_CastAbilityTouch</verbClass>
+			<drawAimPie>false</drawAimPie>
+			<range>-1</range>
+			<warmupTime>4</warmupTime>
+			<targetParams>
+				<thingCategory>Item</thingCategory>
+				<canTargetItems>true</canTargetItems>
+				<canTargetPawns>false</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+				<mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="ForgingDragon.ACP_GeneEditing" />
+		</comps>
+	</AbilityDef>
 </Defs>

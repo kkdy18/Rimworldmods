@@ -1,0 +1,14 @@
+{
+  "TextureModID": "ny.smeltedloong",
+  "ItemDefName": "NY_LoongPoleaxe",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.451571226,
+  "OffY": 0.06736511,
+  "Rotation": 13.0,
+  "ScaleX": 2.0,
+  "ScaleY": 2.0,
+  "BladeStart": 0.9182918,
+  "BladeEnd": 1.39790511,
+  "MeleeWeaponType": 3
+}

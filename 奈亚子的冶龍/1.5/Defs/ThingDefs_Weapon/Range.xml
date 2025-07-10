@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef ParentName="NY_BaseDragonWeaponRanged">
+	<ThingDef ParentName="NY_BaseLoongWeaponRanged">
 		<defName>NY_DragonFlyNeedle</defName>
 		<label>冶龍飞针</label>
 		<description>精炼铁打制的长针，运用恰当的手法投掷就能成为伤敌的利器，全力投出甚至足以击穿甲胄。</description>
 		<graphicData>
-			<texPath>Things/Weapon/NY_DragonFlyNeedle</texPath>
+			<texPath>Things/Weapon/NY_LoongFlyNeedle</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(0.75,0.75)</drawSize>
 		</graphicData>
@@ -61,12 +61,12 @@
 		</tools>
 	</ThingDef>
 
-	<ThingDef ParentName="NY_BaseDragonWeaponRanged">
+	<ThingDef ParentName="NY_BaseLoongWeaponRanged">
 		<defName>NY_DragonBow</defName>
 		<label>翡翠琉璃弓</label>
 		<description>以碧琉璃装饰的长弓，强韧的弓身弓弦足以承受冶龍射手在一瞬射出三箭，传说有射艺精湛者能使三箭齐中一点，以后者之箭头劈入前者之箭尾。</description>
 		<graphicData>
-			<texPath>Things/Weapon/NY_DragonBow</texPath>
+			<texPath>Things/Weapon/NY_LoongBow</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>Bow_Recurve</soundInteract>
@@ -137,7 +137,7 @@
 	</ThingDef>
 	
 	<!--乐器类-->
-	<ThingDef ParentName="NY_BaseDragonWeaponRanged">
+	<ThingDef ParentName="NY_BaseLoongWeaponRanged">
 		<defName>NY_LoongBell</defName>
 		<label>追魂铃</label>
 		<description>冶龍之中名为乐师的秘密部队所使用的武器，外观像一串铃铛，发射能够引起物体共振破坏其结构的定向音波杀伤目标，这件武器特化了攻击频率。\n\n冶龍乐师的武器内部存在着用冶龍工艺加工出的微小共鸣结构，能在攻击时释放次声波干扰敌人，通过扰乱神经系统之类的途径削弱敌人的行动能力，严重时可以引发精神失常，冶龍们将这种攻击手段称为“魔音”。</description>
@@ -207,7 +207,7 @@
 		</comps>
 	</ThingDef>
 
-	<ThingDef ParentName="NY_BaseDragonWeaponRanged">
+	<ThingDef ParentName="NY_BaseLoongWeaponRanged">
 		<defName>NY_LoongFlute</defName>
 		<label>断魂笛</label>
 		<description>冶龍之中名为乐师的秘密部队所使用的武器，外观像一根长笛，发射能够引起物体共振破坏其结构的定向音波杀伤目标，这件武器特化了射程与杀伤力。\n\n冶龍乐师的武器内部存在着用冶龍工艺加工出的微小共鸣结构，能在攻击时释放次声波干扰敌人，通过扰乱神经系统之类的途径削弱敌人的行动能力，严重时可以引发精神失常，冶龍们将这种攻击手段称为“魔音”。</description>
@@ -276,12 +276,12 @@
 		</comps>
 	</ThingDef>
 	
-	<ThingDef ParentName="NY_BaseDragonWeaponRanged">
+	<ThingDef ParentName="NY_BaseLoongWeaponRanged">
 		<defName>NY_DragonPipa</defName>
 		<label>跃音阮</label>
 		<description>看上去平平无奇的乐器，一旦拨动丝弦就能激发断水裂石的慷慨之音。它并非乐器，并非武器，而是“龙之喉舌”所持的身份凭证，这些冶龍肩负着为族群发声的职责，游走于战场与谈判场之上。</description>
 		<graphicData>
-			<texPath>Things/Weapon/NY_DragonPipa</texPath>
+			<texPath>Things/Weapon/NY_LoongPipa</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>NY_Pipa_A</soundInteract>
@@ -348,13 +348,13 @@
 	</ThingDef>
 	
 	<!--风类-->
-	<ThingDef ParentName="NY_BaseDragonWeaponRanged">
+	<ThingDef ParentName="NY_BaseLoongWeaponRanged">
 		<defName>NY_DragonFan</defName>
 		<label>黄金丝绸扇</label>
 		<description>饰以黄金与碧琉璃的巨扇，冶龍工匠的巧妙设计使其能够汇聚风力释放宛如无形之刃的“神风”撕裂敌人，不过若是被敌人近身就算是所谓神风也是难以施展。</description>
 		<soundInteract>NY_Fan</soundInteract>
 		<graphicData>
-			<texPath>Things/Weapon/NY_DragonFan</texPath>
+			<texPath>Things/Weapon/NY_LoongFan</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -438,7 +438,7 @@
 		<defName>NY_DragonNeedle</defName>
 		<label>精钢长针</label>
 		<graphicData>
-			<texPath>Things/Projectile/NY_DragonNeedle</texPath>
+			<texPath>Things/Projectile/NY_LoongNeedle</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile>

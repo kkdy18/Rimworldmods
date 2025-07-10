@@ -9,7 +9,7 @@
 		<defName>NY_ForgingDragonHair01</defName>
 		<label>ForgingDragon01</label>
 		<styleGender>Female</styleGender>
-		<texPath>Things/Pawn/Hairs/DragonHair01</texPath>
+		<texPath>Things/Pawn/Hairs/NY_LoongHair01</texPath>
 		<category>NY_ForgingDragonHair</category>
 		<styleTags>
 			<li>ForgingDragonHair</li>
@@ -20,7 +20,7 @@
 		<defName>NY_ForgingDragonHair02</defName>
 		<label>ForgingDragon02</label>
 		<styleGender>Female</styleGender>
-		<texPath>Things/Pawn/Hairs/DragonHair02</texPath>
+		<texPath>Things/Pawn/Hairs/NY_LoongHair02</texPath>
 		<category>NY_ForgingDragonHair</category>
 		<styleTags>
 			<li>ForgingDragonHair</li>
@@ -31,7 +31,7 @@
 		<defName>NY_ForgingDragonHair03</defName>
 		<label>ForgingDragon03</label>
 		<styleGender>Female</styleGender>
-		<texPath>Things/Pawn/Hairs/DragonHair03</texPath>
+		<texPath>Things/Pawn/Hairs/NY_LoongHair03</texPath>
 		<category>NY_ForgingDragonHair</category>
 		<styleTags>
 			<li>ForgingDragonHair</li>
@@ -42,7 +42,7 @@
 		<defName>NY_ForgingDragonHair04</defName>
 		<label>ForgingDragon04</label>
 		<styleGender>Female</styleGender>
-		<texPath>Things/Pawn/Hairs/DragonHair04</texPath>
+		<texPath>Things/Pawn/Hairs/NY_LoongHair04</texPath>
 		<category>NY_ForgingDragonHair</category>
 		<styleTags>
 			<li>ForgingDragonHair</li>
@@ -53,7 +53,7 @@
 		<defName>NY_ForgingDragonHair05</defName>
 		<label>ForgingDragon05</label>
 		<styleGender>Female</styleGender>
-		<texPath>Things/Pawn/Hairs/DragonHair05</texPath>
+		<texPath>Things/Pawn/Hairs/NY_LoongHair05</texPath>
 		<category>NY_ForgingDragonHair</category>
 		<styleTags>
 			<li>ForgingDragonHair</li>
@@ -64,7 +64,7 @@
 		<defName>NY_ForgingDragonHair06</defName>
 		<label>ForgingDragon06</label>
 		<styleGender>Female</styleGender>
-		<texPath>Things/Pawn/Hairs/DragonHair06</texPath>
+		<texPath>Things/Pawn/Hairs/NY_LoongHair06</texPath>
 		<category>NY_ForgingDragonHair</category>
 		<styleTags>
 			<li>ForgingDragonHair</li>
@@ -75,7 +75,7 @@
 		<defName>NY_ForgingDragonHair07</defName>
 		<label>ForgingDragon07</label>
 		<styleGender>Female</styleGender>
-		<texPath>Things/Pawn/Hairs/DragonHair07</texPath>
+		<texPath>Things/Pawn/Hairs/NY_LoongHair07</texPath>
 		<category>NY_ForgingDragonHair</category>
 		<styleTags>
 			<li>ForgingDragonHair</li>
@@ -86,7 +86,7 @@
 		<defName>NY_ForgingDragonHair08</defName>
 		<label>ForgingDragon08</label>
 		<styleGender>Female</styleGender>
-		<texPath>Things/Pawn/Hairs/DragonHair08</texPath>
+		<texPath>Things/Pawn/Hairs/NY_LoongHair08</texPath>
 		<category>NY_ForgingDragonHair</category>
 		<styleTags>
 			<li>ForgingDragonHair</li>
@@ -97,7 +97,7 @@
 		<defName>NY_ForgingDragonHair09</defName>
 		<label>ForgingDragon09</label>
 		<styleGender>Female</styleGender>
-		<texPath>Things/Pawn/Hairs/DragonHair09</texPath>
+		<texPath>Things/Pawn/Hairs/NY_LoongHair09</texPath>
 		<category>NY_ForgingDragonHair</category>
 		<styleTags>
 			<li>ForgingDragonHair</li>
@@ -108,7 +108,7 @@
 		<defName>NY_ForgingDragonHair10</defName>
 		<label>ForgingDragon10</label>
 		<styleGender>Female</styleGender>
-		<texPath>Things/Pawn/Hairs/DragonHair10</texPath>
+		<texPath>Things/Pawn/Hairs/NY_LoongHair10</texPath>
 		<category>NY_ForgingDragonHair</category>
 		<styleTags>
 			<li>ForgingDragonHair</li>

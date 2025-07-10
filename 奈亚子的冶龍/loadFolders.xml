@@ -4,10 +4,20 @@
 		<li>/</li>
 		<li>1.5</li>
 		<li IfModActive="Ludeon.RimWorld.Anomaly">1.5/Mods/Anomaly</li>
+		<li IfModActive="Ludeon.RimWorld.Royalty">1.5/Mods/Royalty</li>
 		<li IfModActive="erdelf.HumanoidAlienRaces">1.5/Mods/sbHAR</li>
 		<li IfModActive="stm.ShellaBackgrounds">1.5/Mods/ShellaBackgrounds</li>
 		<li IfModActive="Nals.FacialAnimation">1.5/Mods/sbFA</li>
 	</v1.5>
+	<v1.6>
+		<li>/</li>
+		<li>1.6</li>
+		<li IfModActive="Ludeon.RimWorld.Anomaly">1.6/Mods/Anomaly</li>
+		<li IfModActive="Ludeon.RimWorld.Royalty">1.6/Mods/Royalty</li>
+		<li IfModActive="erdelf.HumanoidAlienRaces">1.6/Mods/sbHAR</li>
+		<li IfModActive="stm.ShellaBackgrounds">1.6/Mods/ShellaBackgrounds</li>
+		<li IfModActive="Nals.FacialAnimation">1.6/Mods/sbFA</li>
+	</v1.6>
 </loadFolders>
 
 

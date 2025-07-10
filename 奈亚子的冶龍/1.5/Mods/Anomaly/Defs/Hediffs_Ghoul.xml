@@ -50,6 +50,7 @@
 				<label>完备之躯</label>
 				<minSeverity>3.9</minSeverity>
 				<statFactors>
+					<FilthRate>0</FilthRate>
 					<MoveSpeed>2</MoveSpeed>
 					<EatingSpeed>2</EatingSpeed>
 					<MeleeHitChance>2</MeleeHitChance>
@@ -57,7 +58,7 @@
 					<AimingDelayFactor>0.1</AimingDelayFactor>
 					<MeleeCooldownFactor>0.5</MeleeCooldownFactor>
 					<MeleeArmorPenetration>2</MeleeArmorPenetration>
-					<IncomingDamageFactor>0.25</IncomingDamageFactor>
+					<IncomingDamageFactor>0.5</IncomingDamageFactor>
 				</statFactors>
 				<capMods>
 					<li>
@@ -230,7 +231,7 @@
 		<stages>
 			<li>
 				<statOffsets>
-					<SharpDamageMultiplier>0.5</SharpDamageMultiplier>
+					<MeleeArmorPenetration>0.3</MeleeArmorPenetration>
 				</statOffsets>
 			</li>
 		</stages>
@@ -240,13 +241,14 @@
 					<li>
 						<label>爪刃</label>
 						<capacities>
-							<li>Cut</li>
+							<li>NY_SlashCut</li>
 						</capacities>
-						<power>10</power>
+						<power>15</power>
 						<cooldownTime>1</cooldownTime>
-						<armorPenetration>1.1</armorPenetration>
-						<chanceFactor>1.5</chanceFactor>
+						<armorPenetration>0.9</armorPenetration>
 						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+						<labelUsedInLogging>false</labelUsedInLogging>
+						<chanceFactor>1.5</chanceFactor>
 					</li>
 				</tools>
 			</li>
@@ -437,7 +439,7 @@
 		<stages>
 			<li>
 				<statOffsets>
-					<MeleeArmorPenetration>0.3</MeleeArmorPenetration>
+					<IncomingDamageFactor>-0.2</IncomingDamageFactor>
 				</statOffsets>
 			</li>
 		</stages>
@@ -447,12 +449,14 @@
 					<li>
 						<label>铁拳</label>
 						<capacities>
-							<li>Blunt</li>
+							<li>Demolish</li>
 						</capacities>
-						<power>10</power>
-						<cooldownTime>1.8</cooldownTime>
-						<chanceFactor>1.5</chanceFactor>
+						<power>25</power>
+						<cooldownTime>1.6</cooldownTime>
+						<armorPenetration>0.6</armorPenetration>
 						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+						<labelUsedInLogging>false</labelUsedInLogging>
+						<chanceFactor>1.5</chanceFactor>
 					</li>
 				</tools>
 			</li>
@@ -575,6 +579,7 @@
 				</statOffsets>
 				<statFactors>
 					<RawNutritionFactor>2</RawNutritionFactor>
+					<IncomingDamageFactor>0.8</IncomingDamageFactor>
 				</statFactors>
 			</li>
 		</stages>
@@ -1478,8 +1483,8 @@
 			<li>
 				<painOffset>1</painOffset>
 				<statFactors>
+					<MeleeDamageFactor>1.2</MeleeDamageFactor>
 					<IncomingDamageFactor>0.6</IncomingDamageFactor>
-					<MeleeArmorPenetration>1.2</MeleeArmorPenetration>
 				</statFactors>
 				<statOffsets>
 					<ArmorRating_Blunt>0.65</ArmorRating_Blunt>
@@ -1752,9 +1757,6 @@
 		<priceImpact>true</priceImpact>
 		<stages>
 			<li>
-				<statFactors>
-					<IncomingDamageFactor>0.8</IncomingDamageFactor>
-				</statFactors>
 				<statOffsets>
 					<ArmorRating_Blunt>0.7</ArmorRating_Blunt>
 					<ArmorRating_Sharp>0.9</ArmorRating_Sharp>
@@ -1792,6 +1794,7 @@
 		</techHediffsTags>
 		<costList>
 			<Bioferrite>100</Bioferrite>
+			<NY_ImmortalIron>1</NY_ImmortalIron>
 			<NY_BloodEssence>20</NY_BloodEssence>
 			<Corpse_NY_animal_TaoWu>1</Corpse_NY_animal_TaoWu>
 		</costList>

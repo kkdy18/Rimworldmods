@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <FacialAnimation.MouthShapeDef>
+  	<defName>normal</defName>
+  </FacialAnimation.MouthShapeDef>
+
+  <FacialAnimation.MouthShapeDef>
+    <defName>open</defName>
+  </FacialAnimation.MouthShapeDef>
+
+  <FacialAnimation.MouthShapeDef>
+    <defName>smile</defName>
+  </FacialAnimation.MouthShapeDef>
+  
+  <FacialAnimation.MouthShapeDef>
+    <defName>mesugaki</defName>
+  </FacialAnimation.MouthShapeDef>
+</Defs>

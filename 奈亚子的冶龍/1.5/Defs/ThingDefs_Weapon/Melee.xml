@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef ParentName="NY_BaseDragonWeaponMelee">
+	<ThingDef ParentName="NY_BaseLoongWeaponMelee">
 		<defName>NY_DragonKnife</defName>
 		<label>八斩刀</label>
 		<description>来自冶龍家乡的护手短刀，乃是防身与近身搏杀的利器。</description>
 		<graphicData>
-			<texPath>Things/Weapon/NY_DragonKnife</texPath>
+			<texPath>Things/Weapon/NY_LoongKnife</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -59,12 +59,12 @@
 		</recipeMaker>
 	</ThingDef>
 
-	<ThingDef ParentName="NY_BaseDragonWeaponMelee">
+	<ThingDef ParentName="NY_BaseLoongWeaponMelee">
 		<defName>NY_DragonSword</defName>
 		<label>陌刀</label>
 		<description>来自冶龍家乡的长刀，形制更适合劈砍而非刺击，是冶龍民兵常用的兵器。</description>
 		<graphicData>
-			<texPath>Things/Weapon/NY_DragonSword</texPath>
+			<texPath>Things/Weapon/NY_LoongSword</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -106,7 +106,7 @@
 		</recipeMaker>
 	</ThingDef>
 
-	<ThingDef Name="NY_DragonLongWeaponMelee" Abstract="True" ParentName="NY_BaseDragonWeaponMelee">
+	<ThingDef Name="NY_DragonLongWeaponMelee" Abstract="True" ParentName="NY_BaseLoongWeaponMelee">
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
@@ -136,7 +136,7 @@
 		<label>大刀</label>
 		<description>由冶龍工匠精心设计的长柄大刀，劈砍时气势惊人，传说中的大将善使此刀将身披重甲的敌将一刀两断。</description>
 		<graphicData>
-			<texPath>Things/Weapon/NY_DragonLongHandledSword</texPath>
+			<texPath>Things/Weapon/NY_LoongLongHandledSword</texPath>
 		</graphicData>
 		<statBases>
 			<WorkToMake>18000</WorkToMake>
@@ -179,7 +179,7 @@
 		<label>戟</label>
 		<description>由冶龍工匠精心设计的长柄三刃兵器，头部由直刃与两个侧刃组成，即可直刺也可横砍，因其用法多变且外形独特常被冶龍战士青睐。</description>
 		<graphicData>
-			<texPath>Things/Weapon/NY_DragonHalberd</texPath>
+			<texPath>Things/Weapon/NY_LoongHalberd</texPath>
 		</graphicData>
 		<statBases>
 			<WorkToMake>18000</WorkToMake>
@@ -229,7 +229,7 @@
 		<label>长柄斧</label>
 		<description>由冶龍工匠精心设计的长柄大斧，武器本身较为沉重难以灵活使用，但斧刃的杀伤力不可小觑。</description>
 		<graphicData>
-			<texPath>Things/Weapon/NY_DragonPoleaxe</texPath>
+			<texPath>Things/Weapon/NY_LoongPoleaxe</texPath>
 		</graphicData>
 		<statBases>
 			<WorkToMake>16000</WorkToMake>
@@ -271,7 +271,7 @@
 		<label>槊</label>
 		<description>由冶龍工匠精心设计的长柄矛，只适合用于刺击，因为训练与维护相对方便所以经常列装于军队。</description>
 		<graphicData>
-			<texPath>Things/Weapon/NY_DragonSpear</texPath>
+			<texPath>Things/Weapon/NY_LoongSpear</texPath>
 		</graphicData>
 		<statBases>
 			<WorkToMake>16000</WorkToMake>
@@ -309,7 +309,7 @@
 		</recipeMaker>
 	</ThingDef>
 
-	<ThingDef ParentName="NY_BaseDragonWeaponMelee">
+	<ThingDef ParentName="NY_BaseLoongWeaponMelee">
 		<defName>NY_BrassIronSwordA</defName>
 		<label>黄铜白铁剑</label>
 		<description>冶龍工匠自民间传说中复现的奇特兵器，兵器本身并不存在什么超凡的力量，但使用者似乎能从中悟出一套提高行动能力的步法。</description>
@@ -369,7 +369,7 @@
 		</recipeMaker>
 	</ThingDef>
 
-	<ThingDef ParentName="NY_BaseDragonWeaponMelee">
+	<ThingDef ParentName="NY_BaseLoongWeaponMelee">
 		<defName>NY_BrassIronSwordB</defName>
 		<label>黄铜白铁斩刀</label>
 		<description>冶龍工匠自民间传说中复现的奇特兵器，兵器本身并不存在什么超凡的力量，但使用者似乎能从中悟出一套提高行动能力的步法。</description>

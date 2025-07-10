@@ -1,0 +1,14 @@
+{
+  "TextureModID": "ny.smeltedloong",
+  "ItemDefName": "NY_LoongHalberd",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.351315945,
+  "OffY": -0.07499976,
+  "Rotation": 15.0,
+  "ScaleX": 2.0,
+  "ScaleY": 2.0,
+  "BladeStart": 0.7144739,
+  "BladeEnd": 1.375,
+  "MeleeWeaponType": 6
+}

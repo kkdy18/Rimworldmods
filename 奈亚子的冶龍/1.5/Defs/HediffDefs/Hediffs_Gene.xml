@@ -111,9 +111,9 @@
 		<renderNodeProperties>
 			<li>
 				<texPaths>
-					<li>Things/Pawn/HeadAttachments/NY_LoongHornCB/ForgingDragonHornCB</li>
-					<li>Things/Pawn/HeadAttachments/NY_LoongHornCB/ForgingDragonHornCB1</li>
-					<li>Things/Pawn/HeadAttachments/NY_LoongHornCB/ForgingDragonHornCB2</li>
+					<li>Things/Pawn/HeadAttachments/NY_LoongHornCB/SmeltedLoongHornCB</li>
+					<li>Things/Pawn/HeadAttachments/NY_LoongHornCB/SmeltedLoongHornCB1</li>
+					<li>Things/Pawn/HeadAttachments/NY_LoongHornCB/SmeltedLoongHornCB2</li>
 				</texPaths>
 				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
 				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
@@ -144,7 +144,7 @@
 		<renderNodeProperties>
 			<li>
 				<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
-				<texPath>Things/Pawn/BodyAttachments/ForgingDragonTailCB</texPath>
+				<texPath>Things/Pawn/BodyAttachments/SmeltedLoongTailCB</texPath>
 				<colorType>Skin</colorType>
 				<parentTagDef>Body</parentTagDef>
 				<useSkinShader>true</useSkinShader>
@@ -174,7 +174,7 @@
 		<description>有着陶瓷质感的青蓝色龙角。</description>
 		<renderNodeProperties>
 			<li>
-				<texPath>Things/Pawn/HeadAttachments/ForgingDragonHornBW</texPath>
+				<texPath>Things/Pawn/HeadAttachments/SmeltedLoongHornBW</texPath>
 				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
 				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
 				<parentTagDef>Head</parentTagDef>
@@ -204,7 +204,7 @@
 		<renderNodeProperties>
 			<li>
 				<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
-				<texPath>Things/Pawn/BodyAttachments/ForgingDragonTailBW</texPath>
+				<texPath>Things/Pawn/BodyAttachments/SmeltedLoongTailBW</texPath>
 				<colorType>Skin</colorType>
 				<parentTagDef>Body</parentTagDef>
 				<useSkinShader>true</useSkinShader>
@@ -248,7 +248,7 @@
 		<renderNodeProperties>
 			<li>
 				<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
-				<texPath>Things/Pawn/BodyAttachments/ForgingDragonTailGhoul</texPath>
+				<texPath>Things/Pawn/BodyAttachments/SmeltedLoongTailGhoul</texPath>
 				<parentTagDef>Body</parentTagDef>
 				<useSkinShader>true</useSkinShader>
 				<useRottenColor>true</useRottenColor>
@@ -277,7 +277,7 @@
 		<description>有着玉石质感的龙角，白里透青，摸起来冰冰凉凉。</description>
 		<renderNodeProperties>
 			<li>
-				<texPath>Things/Pawn/HeadAttachments/ForgingDragonHornWJ</texPath>
+				<texPath>Things/Pawn/HeadAttachments/SmeltedLoongHornWJ</texPath>
 				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
 				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
 				<parentTagDef>Head</parentTagDef>
@@ -307,7 +307,7 @@
 		<renderNodeProperties>
 			<li>
 				<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
-				<texPath>Things/Pawn/BodyAttachments/ForgingDragonTailWJ</texPath>
+				<texPath>Things/Pawn/BodyAttachments/SmeltedLoongTailWJ</texPath>
 				<colorType>Skin</colorType>
 				<parentTagDef>Body</parentTagDef>
 				<useSkinShader>true</useSkinShader>
@@ -337,7 +337,7 @@
 		<description>有着淡淡的花纹的漂亮龙角，像两根喜庆的红蜡烛。</description>
 		<renderNodeProperties>
 			<li>
-				<texPath>Things/Pawn/HeadAttachments/ForgingDragonHornPC</texPath>
+				<texPath>Things/Pawn/HeadAttachments/SmeltedLoongHornPC</texPath>
 				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
 				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
 				<colorType>Skin</colorType>
@@ -369,7 +369,7 @@
 		<renderNodeProperties>
 			<li>
 				<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
-				<texPath>Things/Pawn/BodyAttachments/ForgingDragonTailPC</texPath>
+				<texPath>Things/Pawn/BodyAttachments/SmeltedLoongTailPC</texPath>
 				<colorType>Skin</colorType>
 				<parentTagDef>Body</parentTagDef>
 				<useSkinShader>true</useSkinShader>
@@ -399,7 +399,7 @@
 		<description>长出了嫩芽与绿叶的龙角，角的根部偏白而末端偏绿，看上去像一对大葱。</description>
 		<renderNodeProperties>
 			<li>
-				<texPath>Things/Pawn/HeadAttachments/ForgingDragonHornGP</texPath>
+				<texPath>Things/Pawn/HeadAttachments/SmeltedLoongHornGP</texPath>
 				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
 				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
 				<colorType>Skin</colorType>
@@ -431,7 +431,7 @@
 		<renderNodeProperties>
 			<li>
 				<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
-				<texPath>Things/Pawn/BodyAttachments/ForgingDragonTailGP</texPath>
+				<texPath>Things/Pawn/BodyAttachments/SmeltedLoongTailGP</texPath>
 				<colorType>Skin</colorType>
 				<parentTagDef>Body</parentTagDef>
 				<useSkinShader>true</useSkinShader>
@@ -469,7 +469,7 @@
 		</stages>
 		<renderNodeProperties>
 			<li>
-				<texPath>Things/Pawn/HeadAttachments/ForgingDragonHornMC</texPath>
+				<texPath>Things/Pawn/HeadAttachments/SmeltedLoongHornMC</texPath>
 				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
 				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
 				<parentTagDef>Head</parentTagDef>
@@ -507,7 +507,7 @@
 		<renderNodeProperties>
 			<li>
 				<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
-				<texPath>Things/Pawn/BodyAttachments/ForgingDragonTailMC</texPath>
+				<texPath>Things/Pawn/BodyAttachments/SmeltedLoongTailMC</texPath>
 				<colorType>Skin</colorType>
 				<parentTagDef>Body</parentTagDef>
 				<useSkinShader>true</useSkinShader>

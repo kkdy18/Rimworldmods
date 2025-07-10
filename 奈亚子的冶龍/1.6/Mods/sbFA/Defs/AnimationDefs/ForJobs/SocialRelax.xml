@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<FacialAnimation.FaceAnimationDef>
+		<defName>SocialRelax_SmeltedLoong</defName>
+		<raceName>SmeltedLoong</raceName>
+		<animationFrames>
+			<li>
+				<duration>1</duration>
+				<browShapeDef>normal</browShapeDef>
+				<lidShapeDef>close</lidShapeDef>
+			</li>
+		</animationFrames>
+		<targetJobs>
+			<li>SocialRelax</li>
+			<!-- 一般社交娛樂 -->
+			<li>Play_GameOfUr</li>
+			<!-- 下皇家博弈棋 -->
+			<li>Play_Chess</li>
+			<!-- 下棋 -->
+			<li>Play_Poker</li>
+			<!-- 牌桌 -->
+			<li>Play_Billiards</li>
+			<!-- 撞球桌 -->
+		</targetJobs>
+		<priority>10200</priority>
+		<roopIntervalMin>500</roopIntervalMin>
+		<roopIntervalMax>1000</roopIntervalMax>
+	</FacialAnimation.FaceAnimationDef>
+
+	<FacialAnimation.FaceAnimationDef>
+		<defName>SocialRelax_SmeltedLoong_mesugaki</defName>
+		<!-- 增加雌小鬼臉孔 -->
+		<raceName>SmeltedLoong</raceName>
+		<animationFrames>
+			<li>
+				<duration>15</duration>
+				<browShapeDef>normal</browShapeDef>
+			</li>
+			<li>
+				<duration>4</duration>
+				<browOffset>(0,0,-0.00375)</browOffset>
+				<browShapeDef>flat</browShapeDef>
+				<lidShapeDef>normal</lidShapeDef>
+				<lidOffset>(0,0,-0.0025)</lidOffset>
+				<headOffset>(0,0,-0.00625)</headOffset>
+				<!-- <mouthShapeDef>open</mouthShapeDef> -->
+			</li>
+			<li>
+				<duration>65</duration>
+				<!-- 原本45 -->
+				<browOffset>(0,0,-0.01)</browOffset>
+				<browShapeDef>mesugaki</browShapeDef>
+				<lidShapeDef>normal</lidShapeDef>
+				<lidOffset>(0,0,-0.005)</lidOffset>
+				<headOffset>(0,0,-0.0175)</headOffset>
+				<mouthShapeDef>smile</mouthShapeDef>
+				<mouthOffset>(0,0,-0.005)</mouthOffset>
+			</li>
+			<li>
+				<duration>100</duration>
+				<!-- 原本30 -->
+				<browOffset>(0,0,-0.01)</browOffset>
+				<browShapeDef>mesugaki</browShapeDef>
+				<lidShapeDef>normal</lidShapeDef>
+				<lidOffset>(0,0,-0.005)</lidOffset>
+				<headOffset>(0,0,-0.015)</headOffset>
+				<mouthShapeDef>mesugaki</mouthShapeDef>
+				<mouthOffset>(0,0,-0.005)</mouthOffset>
+			</li>
+			<li>
+				<duration>45</duration>
+				<!-- 原本30 -->
+				<browOffset>(0,0,-0.01)</browOffset>
+				<browShapeDef>mesugaki</browShapeDef>
+				<lidShapeDef>normal</lidShapeDef>
+				<lidOffset>(0,0,-0.005)</lidOffset>
+				<headOffset>(0,0,-0.015)</headOffset>
+				<mouthShapeDef>smile</mouthShapeDef>
+				<mouthOffset>(0,0,-0.005)</mouthOffset>
+			</li>
+			<li>
+				<duration>7</duration>
+				<!-- 原本7 -->
+				<browOffset>(0,0,-0.00375)</browOffset>
+				<browShapeDef>normal</browShapeDef>
+				<lidShapeDef>normal</lidShapeDef>
+				<lidOffset>(0,0,-0.0025)</lidOffset>
+				<headOffset>(0,0,-0.0085)</headOffset>
+				<mouthShapeDef>smile</mouthShapeDef>
+			</li>
+			<li>
+				<duration>4</duration>
+				<!-- 原本4 -->
+				<browShapeDef>normal</browShapeDef>
+				<lidShapeDef>normal</lidShapeDef>
+				<mouthShapeDef>normal</mouthShapeDef>
+			</li>
+			<li>
+				<duration>30</duration>
+				<browShapeDef>normal</browShapeDef>
+			</li>
+		</animationFrames>
+		<targetJobs>
+			<li>SocialRelax</li>
+			<!-- 一般社交娛樂 -->
+			<li>Play_GameOfUr</li>
+			<!-- 下皇家博弈棋 -->
+			<li>Play_Chess</li>
+			<!-- 下棋 -->
+			<li>Play_Poker</li>
+			<!-- 牌桌 -->
+			<li>Play_Billiards</li>
+			<!-- 撞球桌 -->
+		</targetJobs>
+		<priority>10201</priority>
+		<roopIntervalMin>100</roopIntervalMin>
+		<roopIntervalMax>300</roopIntervalMax>
+	</FacialAnimation.FaceAnimationDef>
+</Defs>

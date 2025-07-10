@@ -144,4 +144,79 @@
 			<wornGraphicPath>Things/Apparel/NY_GhoulLoongCloth_B/NY_GhoulLoongCloth_B</wornGraphicPath>
 		</apparel>
 	</ThingDef>
+
+	<ThingDef ParentName="ApparelNoQualityBase">
+		<defName>NY_LoongNotchedJadeRing</defName>
+		<label>化龙玉玦</label>
+		<description>搭载有逆转录系统的半生物质芯片，设计成了龙形玉玦的模样，原型为冶龍故乡的秘术“天工改脉化龙决”施展所必需法宝“化龙玉玦”，两者皆是失传已久。使用时需将玉玦插入腰椎与胸椎之间并等待芯片与人体结合，结合完成后即可调整芯片的工作模式再直接插入异种胚芽，异种胚芽内的基因会由芯片插入使用者的异种基因序列或以其为模板剪除使用者已有的系谱基因，该过程不会产生任何负面影响。\n\n通过解析冶龍的生物特性，我们在冶龍顽固且不可撼动的核心基因的基础上逆向研发出了可以将基因变为凡人手中的橡皮泥的技术，或许在久远的年代，冶龍们也曾掌握着这种改脉洗髓的神力，直到某时她们感到满足或是厌倦或是我们无法得知的原因，她们放弃了这种力量，将自己不变的血脉永远传承下去。</description>
+		<techLevel>Spacer</techLevel>
+		<tradeability>None</tradeability>
+		<useHitPoints>False</useHitPoints>
+		<uiIconScale>1.5</uiIconScale>
+		<relicChance>0</relicChance>
+		<graphicData>
+			<texPath>Things/Apparel/NY_LoongNotchedJadeRing</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.1</Mass>
+			<Beauty>10</Beauty>
+			<WorkToMake>18000</WorkToMake>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Flammability>0</Flammability>
+			<EquipDelay>6</EquipDelay>
+		</statBases>
+		<costList>
+			<NY_GreenGlaze>5</NY_GreenGlaze>
+			<NY_BloodEssence>10</NY_BloodEssence>
+			<ComponentSpacer>3</ComponentSpacer>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>ForgingDragonStarting</researchPrerequisite>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Machining</soundWorking>
+			<recipeUsers>
+				<li>NY_TableCrafting</li>
+			</recipeUsers>
+			<useIngredientsForColor>false</useIngredientsForColor>
+			<skillRequirements>
+				<Crafting>10</Crafting>
+			</skillRequirements>
+			<displayPriority>1271.1</displayPriority>
+		</recipeMaker>
+		<thingCategories>
+			<li>NY_DragonApparel</li>
+		</thingCategories>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
+			<careIfDamaged>false</careIfDamaged>
+			<wearPerDay>0</wearPerDay>
+			<bodyPartGroups>
+				<li>Waist</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Belt</li>
+			</layers>
+			<tags>
+			</tags>
+			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+		</apparel>
+		<comps>
+			<li Class="ForgingDragon.TCP_ApparelAbility">
+				<abilityDef>NY_ability_LoongGeneEditing</abilityDef>
+			</li>
+		</comps>
+		<tradeTags>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<only>(1,1,1)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
 </Defs>

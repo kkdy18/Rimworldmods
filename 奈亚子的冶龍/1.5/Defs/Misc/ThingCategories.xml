@@ -67,13 +67,13 @@
 		<label>冶龍饮食</label>
 		<parent>Foods</parent>
 		<resourceReadoutRoot>true</resourceReadoutRoot>
-		<iconPath>UI/ThingCategories/NY_DragonFood</iconPath>
+		<iconPath>UI/ThingCategories/NY_LoongFood</iconPath>
 	</ThingCategoryDef>
 
 	<ThingCategoryDef>
 		<defName>NY_DragonPlantRaw</defName>
 		<label>冶龍果蔬</label>
 		<parent>PlantFoodRaw</parent>
-		<iconPath>UI/ThingCategories/NY_DragonPlantRaw</iconPath>
+		<iconPath>UI/ThingCategories/NY_LoongPlantRaw</iconPath>
 	</ThingCategoryDef>
 </Defs>

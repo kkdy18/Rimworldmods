@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef Name="NY_DragonWeaponMedieval" Abstract="True" ParentName="BaseWeapon">
+	<ThingDef Name="NY_LoongWeaponMedieval" Abstract="True" ParentName="BaseWeapon">
 		<techLevel>Medieval</techLevel>
 		<smeltable>true</smeltable>
 		<burnableByRecipe>true</burnableByRecipe>
@@ -25,7 +25,7 @@
 		</tradeTags>
 	</ThingDef>
 
-	<ThingDef Name="NY_BaseDragonWeaponMelee" Abstract="True" ParentName="NY_DragonWeaponMedieval">
+	<ThingDef Name="NY_BaseLoongWeaponMelee" Abstract="True" ParentName="NY_LoongWeaponMedieval">
 		<thingCategories>
 			<li>NY_DragonWeaponMelee</li>
 		</thingCategories>
@@ -60,7 +60,7 @@
 		</comps>
 	</ThingDef>
 
-	<ThingDef Name="NY_BaseDragonWeaponRanged" Abstract="True" ParentName="NY_DragonWeaponMedieval">
+	<ThingDef Name="NY_BaseLoongWeaponRanged" Abstract="True" ParentName="NY_LoongWeaponMedieval">
 		<thingCategories>
 			<li>NY_DragonWeaponRanged</li>
 		</thingCategories>

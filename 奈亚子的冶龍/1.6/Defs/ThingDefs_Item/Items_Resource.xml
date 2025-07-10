@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef Name="NY_LoongResourceBase" ParentName="ResourceBase" Abstract="True">
+		<useHitPoints>false</useHitPoints>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<thingCategories Inherit="False">
+			<li>NY_LoongResources</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef Name="NY_LoongResourceMetal" ParentName="NY_LoongResourceBase" Abstract="True">
+		<soundDrop>Metal_Drop</soundDrop>
+		<soundInteract>Metal_Drop</soundInteract>
+		<statBases>
+			<StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+		</statBases>
+		<smeltable>true</smeltable>
+		<deepCommonality>0</deepCommonality>
+		<burnableByRecipe>false</burnableByRecipe>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<stuffProps>
+			<categories>
+				<li>Metallic</li>
+			</categories>
+			<appearance>Metal</appearance>
+			<constructEffect>ConstructMetal</constructEffect>
+			<soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
+			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			<soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Metal</soundImpactMelee>
+		</stuffProps>
+	</ThingDef>
+	
+	<ThingDef ParentName="NY_LoongResourceMetal">
+		<defName>NY_RefinedIron</defName>
+		<label>精炼铁</label>
+		<description>寻常钢铁经过冶龍技术冶炼后所得到的性能更加优秀的金属材料。冶龍将边缘世界常用的钢铁材料称为凡铁，她们一般不屑于直接使用凡铁锻造。</description>
+		<graphicData>
+			<texPath>Things/Item/NY_RefinedIron</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.5</Mass>
+			<MarketValue>4</MarketValue>
+			<StuffPower_Armor_Sharp>1</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.5</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>0.6</StuffPower_Armor_Heat>
+			<SharpDamageMultiplier>1</SharpDamageMultiplier>
+			<BluntDamageMultiplier>1.2</BluntDamageMultiplier>
+		</statBases>
+		<stuffProps>
+			<color>(220,220,220)</color>
+			<commonality>0.05</commonality>
+			<statFactors>
+				<Beauty>1</Beauty>
+				<Flammability>0</Flammability>
+				<MaxHitPoints>1.5</MaxHitPoints>
+				<DoorOpenSpeed>1.5</DoorOpenSpeed>
+				<BedRestEffectiveness>0.5</BedRestEffectiveness>
+			</statFactors>
+		</stuffProps>
+		<minRewardCount>50</minRewardCount>
+		<allowedArchonexusCount>80</allowedArchonexusCount>
+	</ThingDef>
+
+	<ThingDef ParentName="NY_LoongResourceMetal">
+		<defName>NY_RedIron</defName>
+		<label>赤炼铁</label>
+		<description>使用冶龍技术冶炼出的奇特红色金属。采用冶龍的说法，这种金属蕴含杀伐之气，用来锻造武器能让武器的刃更加锋利。</description>
+		<graphicData>
+			<texPath>Things/Item/NY_RedIron</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.5</Mass>
+			<MarketValue>8</MarketValue>
+			<StuffPower_Armor_Sharp>1</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.5</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>0.6</StuffPower_Armor_Heat>
+			<SharpDamageMultiplier>1.3</SharpDamageMultiplier>
+			<BluntDamageMultiplier>1</BluntDamageMultiplier>
+		</statBases>
+		<stuffProps>
+			<color>(238,100,73)</color>
+			<commonality>0.05</commonality>
+			<statFactors>
+				<Beauty>1</Beauty>
+				<Flammability>0</Flammability>
+				<MaxHitPoints>1.5</MaxHitPoints>
+				<DoorOpenSpeed>1.5</DoorOpenSpeed>
+				<BedRestEffectiveness>0.5</BedRestEffectiveness>
+				<MeleeWeapon_CooldownMultiplier>0.9</MeleeWeapon_CooldownMultiplier>
+			</statFactors>
+		</stuffProps>
+		<minRewardCount>10</minRewardCount>
+		<allowedArchonexusCount>80</allowedArchonexusCount>
+	</ThingDef>
+
+	<ThingDef ParentName="NY_LoongResourceMetal">
+		<defName>NY_ImmortalIron</defName>
+		<label>神珍铁</label>
+		<description>被冶龍严密保管的奇特金属，是名为“神兵”的战略武器的核心素材。神珍铁的物理性质与寻常金属相差极大，一般情况下无法用于神兵以外的物品的制作。</description>
+		<techLevel>Spacer</techLevel>
+		<graphicData>
+			<texPath>Things/Item/NY_ImmortalIron</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>5</Mass>
+			<MarketValue>180</MarketValue>
+			<StuffPower_Armor_Sharp>2</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>2</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>3</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>50</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>50</StuffPower_Insulation_Heat>
+			<SharpDamageMultiplier>1.5</SharpDamageMultiplier>
+			<BluntDamageMultiplier>1.5</BluntDamageMultiplier>
+		</statBases>
+		<stuffProps>
+			<categories Inherit="false">
+				<li>NY_RaceMetal</li>
+			</categories>
+			<color>(251,255,205)</color>
+			<commonality>0</commonality>
+			<statFactors>
+				<Beauty>10</Beauty>
+				<WorkToMake>10</WorkToMake>
+				<WorkToBuild>10</WorkToBuild>
+				<Flammability>0</Flammability>
+				<MaxHitPoints>100</MaxHitPoints>
+				<DoorOpenSpeed>0.1</DoorOpenSpeed>
+				<MeleeWeapon_CooldownMultiplier>0.5</MeleeWeapon_CooldownMultiplier>
+			</statFactors>
+		</stuffProps>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<allowedArchonexusCount>80</allowedArchonexusCount>
+		<comps>
+			<li Class="CompProperties_CompAnalyzableUnlockResearch">
+				<analysisID>713245202</analysisID>
+				<!-- Analyzable -->
+				<destroyedOnAnalyzed>true</destroyedOnAnalyzed>
+				<analysisDurationHours>0.5</analysisDurationHours>
+				<completedLetterLabel>immortal iron studied: {RESEARCH} unlocked</completedLetterLabel>
+				<completedLetter>By studying the immortal iron, {PAWN_labelShort} has understood the necessary knowledge for processing this metal. Based on the intelligence currently held by the colony, in order to obtain more immortal iron, it is necessary to establish a good relationship with the power of the smelted loong.\n\nYour researchers can now use research benches to begin researching how to actually use the technology.</completedLetter>
+				<completedLetterDef>PositiveEvent</completedLetterDef>
+				<!-- Interactable -->
+				<activateTexPath>UI/Icons/Study</activateTexPath>
+				<activateLabelString>Destructively analyze</activateLabelString>
+				<activateDescString>Thoroughly analyzing immortal iron and mastering its structure and characteristics. It will cause irreversible damage to the immortal iron.</activateDescString>
+				<jobString>Analyze immortal iron</jobString>
+				<inspectString>Can be analyzed by a colonist.</inspectString>
+				<guiLabelString>Choose who should analyze this</guiLabelString>
+				<targetingParameters>
+					<canTargetBuildings>false</canTargetBuildings>
+					<canTargetAnimals>false</canTargetAnimals>
+					<canTargetMechs>false</canTargetMechs>
+					<onlyTargetControlledPawns>true</onlyTargetControlledPawns>
+				</targetingParameters>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="NY_LoongResourceBase">
+		<defName>NY_GreenGlaze</defName>
+		<label>碧琉璃</label>
+		<description>以翡翠为原料，由冶龍技术高温烧制而成的一种稀有装饰品，色彩流云漓彩，质地晶莹剔透，对冶龍来说是并非宝石但胜过一切宝石的珍宝。</description>
+		<graphicData>
+			<texPath>Things/Item/NY_GreenGlaze</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<soundInteract>ChunkRock_Drop</soundInteract>
+		<soundDrop>ChunkRock_Drop</soundDrop>
+		<statBases>
+			<Mass>0.5</Mass>
+			<MarketValue>20</MarketValue>
+			<StuffPower_Armor_Sharp>0.9</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.45</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>0.54</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>0</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+		</statBases>
+		<deepCommonality>0</deepCommonality>
+		<burnableByRecipe>false</burnableByRecipe>
+		<smeltable>true</smeltable>
+		<minRewardCount>10</minRewardCount>
+		<stuffProps>
+			<categories>
+				<li>Stony</li>
+			</categories>
+			<commonality>0.05</commonality>
+			<color>(200,230,203)</color>
+			<constructEffect>ConstructMetal</constructEffect>
+			<soundImpactBullet>BulletImpact_Ground</soundImpactBullet>
+			<soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Stone</soundImpactMelee>
+			<soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+			<statOffsets>
+				<Beauty>30</Beauty>
+			</statOffsets>
+			<statFactors>
+				<Beauty>5</Beauty>
+				<Flammability>0</Flammability>
+				<MaxHitPoints>0.5</MaxHitPoints>
+				<DoorOpenSpeed>2</DoorOpenSpeed>
+			</statFactors>
+		</stuffProps>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<allowedArchonexusCount>80</allowedArchonexusCount>
+	</ThingDef>
+
+	<ThingDef ParentName="NY_LoongResourceBase">
+		<defName>NY_LotusRootSilk</defName>
+		<label>藕丝绢</label>
+		<description>以冶龍莲藕中的特殊纤维为原料织成的洁白织物，质地坚韧且有冬暖夏凉，水火不侵的神奇特性。\n\n藕丝绢的产量始终是供不应求，冶龍们在留下种植粮食作物的土地后渴望在触手可及的一切土地种满冶龍莲，有智者曾预言这种狂热终会孕育出毁灭大地的灾厄“藕丝之灾”，千年之前匠人在藕丝绢中掺入棉丝制出了更多的藕丝绢抑制了这份狂热，百年之前开拓者揭示了大地之外星辰的本质，希望用无限的土地将那灾厄推延至无穷远的未来。</description>
+		<graphicData>
+			<texPath>Things/Item/NY_LotusRootSilk</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.02</Mass>
+			<MarketValue>6</MarketValue>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Flammability>0.1</Flammability>
+			<DeteriorationRate>3</DeteriorationRate>
+			<StuffPower_Armor_Sharp>1.8</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.6</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>3</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>30</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>30</StuffPower_Insulation_Heat>
+		</statBases>
+		<useHitPoints>true</useHitPoints>
+		<burnableByRecipe>true</burnableByRecipe>
+		<minRewardCount>30</minRewardCount>
+		<stuffProps>
+			<categories>
+				<li>Fabric</li>
+			</categories>
+			<commonality>0.1</commonality>
+			<color>(240,240,240)</color>
+			<statFactors>
+				<Beauty>4.5</Beauty>
+				<Flammability>0.1</Flammability>
+				<MaxHitPoints>1.5</MaxHitPoints>
+			</statFactors>
+		</stuffProps>
+		<comps>
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>
+		</comps>
+		<allowedArchonexusCount>80</allowedArchonexusCount>
+	</ThingDef>
+
+	<ThingDef ParentName="OrganicProductBase">
+		<defName>NY_BloodEssence</defName>
+		<label>精血</label>
+		<description>血本源于先天之精，而生成于后天饮食水谷，在冶龍的理论中，精血是一切血肉生物的生命精华，可用于成就不可思议的功业，但精血的获取必然伴随生命的衰亡，难道大功业与血海杀孽必然是一体两面？</description>
+		<graphicData>
+			<texPath>Things/Item/NY_BloodEssence</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Nutrition>0.1</Nutrition>
+			<MarketValue>8</MarketValue>
+			<Flammability>0.5</Flammability>
+			<FoodPoisonChanceFixedHuman>1</FoodPoisonChanceFixedHuman>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>30</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>NY_LoongResources</li>
+		</thingCategories>
+		<ingestible>
+			<foodType>Fluid</foodType>
+			<preferability>DesperateOnly</preferability>
+			<ingestSound>HemogenPack_Consume</ingestSound>
+			<specialThoughtDirect></specialThoughtDirect>
+			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+		</ingestible>
+	</ThingDef>
+
+	<ThingDef ParentName="NY_LoongResourceBase">
+		<defName>NY_BlackbirdRoll</defName>
+		<label>玄鸟卫锻铸密卷</label>
+		<description>来自冶龍的神秘技术图纸，记录着远超冶龍现有科技水平的锻造技术与武装原型，即使最为年长的冶龍工匠也只能望图兴叹，其根源可以追溯到传说中的真龙之爪牙“玄鸟卫”。\n\n密卷被设下了特殊的保护措施防止外人窥探冶龍的机密，常态不怕刀砍火烧，但强行打开只会得到一抹飞灰。有研究者认为延缓保护措施的生效并非不可能，一个不长的窗口期足以吸干图纸中的所有知识。\n\n对于普通冶龍来说，不朽不坏的密卷本身或许比其中记录的知识更有价值，外人拿真金白银换了这“无用”的密卷，必然被此神物震撼，她们得了金银又扬了冶龍威望，岂不美哉。</description>
+		<techLevel>Spacer</techLevel>
+		<graphicData>
+			<texPath>Things/Item/Resource/NY_BlackbirdRoll</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>1</Mass>
+			<MarketValue>10000</MarketValue>
+		</statBases>
+		<stackLimit>10</stackLimit>
+		<intricate>true</intricate>
+		<isTechHediff>true</isTechHediff>
+		<comps>
+			<li Class="CompProperties_CompAnalyzableUnlockResearch">
+				<analysisID>128245202</analysisID>
+				<!-- Analyzable -->
+				<destroyedOnAnalyzed>true</destroyedOnAnalyzed>
+				<analysisDurationHours>0.5</analysisDurationHours>
+				<completedLetterLabel>密卷分析完毕：解锁{RESEARCH}</completedLetterLabel>
+				<completedLetter>通过对玄鸟卫锻铸密卷的抢救性分析，{PAWN_labelShort}理解了锻造玄鸟卫装备所必要的知识，完成这项技术的研究后，你的殖民地或许将先于世界上的其他势力掌握属于自己的禁军武装。</completedLetter>
+				<completedLetterDef>PositiveEvent</completedLetterDef>
+				<!-- Interactable -->
+				<activateTexPath>UI/Icons/Study</activateTexPath>
+				<activateLabelString>破解密卷</activateLabelString>
+				<activateDescString>强行破解玄鸟卫在密卷上设下的保护措施，并在密卷自行销毁前完成对玄鸟卫锻造技术与武装原型的分析。</activateDescString>
+				<jobString>分析密卷</jobString>
+				<inspectString>可由一名殖民者进行分析。</inspectString>
+				<guiLabelString>选择分析者</guiLabelString>
+				<targetingParameters>
+					<canTargetBuildings>false</canTargetBuildings>
+					<canTargetAnimals>false</canTargetAnimals>
+					<canTargetMechs>false</canTargetMechs>
+					<onlyTargetControlledPawns>true</onlyTargetControlledPawns>
+				</targetingParameters>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="NY_LoongResourceMetal">
+		<defName>NY_BlackbirdIron</defName>
+		<label>玄羽钢</label>
+		<description>呈现出鸦羽光泽的高强度黑色合金，质地轻盈且易于加工，冶炼技术与原料配比皆来自神秘的冶龍禁军“玄鸟卫”，据说它也是锻造玄鸟卫装备的主材料。</description>
+		<graphicData>
+			<texPath>Things/Item/NY_BlackbirdIron</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.25</Mass>
+			<MarketValue>18</MarketValue>
+			<StuffPower_Armor_Sharp>1.2</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>1</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>1</StuffPower_Armor_Heat>
+			<SharpDamageMultiplier>1.2</SharpDamageMultiplier>
+			<BluntDamageMultiplier>0.8</BluntDamageMultiplier>
+		</statBases>
+		<stuffProps>
+			<color>(86,86,86)</color>
+			<commonality>0</commonality>
+			<statFactors>
+				<Beauty>5</Beauty>
+				<Flammability>0</Flammability>
+				<MaxHitPoints>5</MaxHitPoints>
+				<DoorOpenSpeed>2.5</DoorOpenSpeed>
+				<MeleeWeapon_CooldownMultiplier>0.75</MeleeWeapon_CooldownMultiplier>
+			</statFactors>
+		</stuffProps>
+		<minRewardCount>10</minRewardCount>
+		<allowedArchonexusCount>80</allowedArchonexusCount>
+	</ThingDef>
+	
+	<!--以人为本-->
+	
+	<ThingDef ParentName="LeatherBase">
+		<defName>Leather_SmeltedLoong</defName>
+		<label>冶龍鳞</label>
+		<description>冶龍的软鳞，处理过后可以当作皮革使用。</description>
+		<graphicData>
+			<texPath>Things/Item/NY_LoongLeather</texPath>
+		</graphicData>
+		<possessionCount>20</possessionCount>
+		<statBases>
+			<MarketValue>5</MarketValue>
+			<StuffPower_Armor_Sharp>1.2</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.5</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>1.5</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>20</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>20</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			<color>(82,98,102)</color>
+			<commonality>0.0025</commonality>
+			<statFactors>
+				<MaxHitPoints>1.2</MaxHitPoints>
+				<Beauty>3</Beauty>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+	
+	<ThingDef ParentName="OrganicProductBase" >
+		<defName>Meat_SmeltedLoong</defName>
+		<label>冶龍肉</label>
+		<description>冶龍的血肉，它最好不要出现在餐桌上。\n\n冶龍仍是人类的一支，但她们的生物特性确实已经与智人相去甚远，对于人类，她们究竟是陌路相逢的同胞还是似曾相识的异类。</description>
+		<graphicData>
+			<texPath>Things/Item/NY_LoongMeat</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<possessionCount>5</possessionCount>
+		<statBases>
+			<Mass>0.03</Mass>
+			<MaxHitPoints>60</MaxHitPoints>
+			<DeteriorationRate>6</DeteriorationRate>
+			<Flammability>0.5</Flammability>
+			<Nutrition>0.05</Nutrition>
+			<FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
+		</statBases>
+		<thingCategories>
+			<li>MeatRaw</li>
+		</thingCategories>
+		<ingestible>
+			<foodType>Meat</foodType>
+			<preferability>RawBad</preferability>
+			<ingestEffect>EatMeat</ingestEffect>
+			<ingestSound>RawMeat_Eat</ingestSound>
+			<specialThoughtDirect>NY_AteSmeltedLoongMeat</specialThoughtDirect>
+			<specialThoughtAsIngredient>NY_SmeltedLoongMeatIngredient</specialThoughtAsIngredient>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>2</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+			<li>
+				<compClass>CompHarbingerTreeConsumable</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<FacialAnimation.FaceAnimationDef>
+		<defName>AttackStatic_SmeltedLoong</defName>
+		<raceName>SmeltedLoong</raceName>
+		<animationFrames>
+			<li>
+				<duration>1</duration>
+				<emotionShapeDef>angry</emotionShapeDef>
+				<mouthShapeDef>open</mouthShapeDef>
+				<browOffset>(0,0,-0.00875)</browOffset>
+				<lidOffset>(0.0,0,-0.005)</lidOffset>
+			</li>
+		</animationFrames>
+		<targetJobs>
+			<li>AttackStatic</li>
+		</targetJobs>
+		<priority>10200</priority>
+	</FacialAnimation.FaceAnimationDef>
+
+	<FacialAnimation.FaceAnimationDef>
+		<defName>AttackStatic2_SmeltedLoong</defName>
+		<raceName>SmeltedLoong</raceName>
+		<animationFrames>
+			<li>
+				<duration>1</duration>
+				<emotionShapeDef>angry</emotionShapeDef>
+				<mouthShapeDef>normal</mouthShapeDef>
+			</li>
+		</animationFrames>
+		<targetJobs>
+			<li>AttackStatic</li>
+		</targetJobs>
+		<priority>10201</priority>
+		<applyWhenStandingOnly>true</applyWhenStandingOnly>
+	</FacialAnimation.FaceAnimationDef>
+</Defs>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef Name="NY_LoongWeaponMedieval" Abstract="True" ParentName="BaseWeapon">
+		<techLevel>Medieval</techLevel>
+		<smeltable>true</smeltable>
+		<burnableByRecipe>true</burnableByRecipe>
+		<relicChance>0</relicChance>
+		<statBases>
+		</statBases>
+		<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers>
+				<li>NY_TableCrafting</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+		</recipeMaker>
+		<tradeTags>
+			<li>SmeltedLoongWeapon</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef Name="NY_BaseLoongWeaponMelee" Abstract="True" ParentName="NY_LoongWeaponMedieval">
+		<thingCategories>
+			<li>NY_LoongWeaponMelee</li>
+		</thingCategories>
+		<weaponClasses>
+			<li>Melee</li>
+			<li>MeleePiercer</li>
+		</weaponClasses>
+		<recipeMaker>
+			<defaultIngredientFilter>
+				<categories>
+					<li>Root</li>
+				</categories>
+				<disallowedThingDefs>
+					<li>Silver</li>
+					<li>Gold</li>
+					<li>WoodLog</li>
+				</disallowedThingDefs>
+			</defaultIngredientFilter>
+		</recipeMaker>
+		<tradeTags>
+			<li>NY_LoongWeaponMelee</li>
+		</tradeTags>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponMelee</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef Name="NY_BaseLoongWeaponRanged" Abstract="True" ParentName="NY_LoongWeaponMedieval">
+		<thingCategories>
+			<li>NY_LoongWeaponRanged</li>
+		</thingCategories>
+		<weaponClasses>
+			<li>Ranged</li>
+		</weaponClasses>
+		<tradeTags>
+			<li>NY_LoongWeaponRanged</li>
+		</tradeTags>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+
+<!--测试武装-->
+
+	<ThingDef ParentName="BaseWeapon">
+		<defName>NY_PlumBlossomSword</defName>
+		<label>梅花白刃</label>
+		<description>desc</description>
+		<useHitPoints>False</useHitPoints>
+		<techLevel>Ultra</techLevel>
+		<smeltable>false</smeltable>
+		<burnableByRecipe>true</burnableByRecipe>
+		<tradeability>None</tradeability>
+		<relicChance>0</relicChance>
+		<graphicData>
+			<texPath>Things/Weapon/NY_PlumBlossomSword</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<statBases>
+			<Mass>6</Mass>
+			<Beauty>15</Beauty>
+			<Flammability>0</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+		<weaponClasses>
+			<li>Melee</li>
+		</weaponClasses>
+		<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<costStuffCount>999</costStuffCount>
+		<stuffCategories>
+			<li>NY_RaceMetal</li>
+		</stuffCategories>
+		<tools>
+			<li>
+				<label>白梅斩</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>50</power>
+				<armorPenetration>0.9</armorPenetration>
+				<cooldownTime>0.3</cooldownTime>
+			</li>
+		</tools>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

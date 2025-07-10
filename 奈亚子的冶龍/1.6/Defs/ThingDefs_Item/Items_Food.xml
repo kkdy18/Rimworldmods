@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--饮品-->
+	<ThingDef Name="NY_DrinkableBase" Abstract="True">
+		<thingClass>ThingWithComps</thingClass>
+		<category>Item</category>
+		<drawerType>MapMeshOnly</drawerType>
+		<useHitPoints>true</useHitPoints>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<selectable>true</selectable>
+		<techLevel>Neolithic</techLevel>
+		<statBases>
+			<Beauty>0</Beauty>
+			<Flammability>0</Flammability>
+			<MaxHitPoints>100</MaxHitPoints>
+			<DeteriorationRate>2</DeteriorationRate>
+			<FoodPoisonChanceFixedHuman>0</FoodPoisonChanceFixedHuman>
+		</statBases>
+		<altitudeLayer>Item</altitudeLayer>
+		<stackLimit>150</stackLimit>
+		<tickerType>Rare</tickerType>
+		<thingCategories>
+			<li>NY_LoongFood</li>
+		</thingCategories>
+		<tradeTags>
+		</tradeTags>
+		<alwaysHaulable>true</alwaysHaulable>
+		<comps>
+			<li Class="CompProperties_Forbiddable" />
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>30</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<pathCost>14</pathCost>
+		<burnableByRecipe>true</burnableByRecipe>
+		<resourceReadoutPriority>Last</resourceReadoutPriority>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<allowedArchonexusCount>-1</allowedArchonexusCount>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<ingestible>
+			<nurseable>true</nurseable>
+			<tableDesired>false</tableDesired>
+			<drugCategory>Social</drugCategory>
+			<ingestSound>Ingest_Drink</ingestSound>
+			<baseIngestTicks>200</baseIngestTicks>
+			<chairSearchRadius>25</chairSearchRadius>
+			<ingestCommandString>饮用{0}</ingestCommandString>
+			<ingestReportString>正在饮用{0}。</ingestReportString>
+			<preferability>NeverForNutrition</preferability>
+			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+			<defaultNumToIngestAtOnce>1</defaultNumToIngestAtOnce>
+			<optimalityOffsetHumanlikes>-5</optimalityOffsetHumanlikes>
+			<optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>
+			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+		</ingestible>
+		<storedConceptLearnOpportunity>DrugPolicies</storedConceptLearnOpportunity>
+		<orderedTakeGroup>Drug</orderedTakeGroup>
+	</ThingDef>
+
+	<ThingDef ParentName="NY_DrinkableBase">
+		<defName>NY_SmeltedLoongMilk</defName>
+		<label>龙涎香</label>
+		<description>拥有特殊香味的冶龍乳汁，收集了满满一瓶。龙涎香蕴含着丰富的营养成分，直接饮用或当作配料都很合适。</description>
+		<graphicData>
+			<texPath>Things/Item/NY_LoongMilk</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.25</Mass>
+			<Nutrition>0.5</Nutrition>
+			<MarketValue>100</MarketValue>
+		</statBases>
+		<stackLimit>25</stackLimit>
+		<ingestible>
+			<joy>0.3</joy>
+			<joyKind>Gluttonous</joyKind>
+			<foodType>AnimalProduct, Fluid</foodType>
+			<tasteThought>NY_DrinkLoongMilk</tasteThought>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_OffsetNeed">
+					<need>Rest</need>
+					<offset>0.3</offset>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<listOrder>1270.1</listOrder>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="NY_DrinkableBase">
+		<defName>NY_PlumJuice</defName>
+		<label>酸梅汤</label>
+		<description>用冶龍话梅搭配莓果煮制而成的清凉饮品，酸甜可口，炎炎夏日喝上一杯便能消解暑气与疲劳，当然天气不热也可以喝。</description>
+		<descriptionHyperlinks>
+			<HediffDef>NY_hediff_PlumJuice</HediffDef>
+			<RecipeDef>NY_CookPlumJuice</RecipeDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/NY_PlumJuice</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.05</Mass>
+			<MarketValue>18</MarketValue>
+		</statBases>
+		<ingestible>
+			<joy>0.4</joy>
+			<joyKind>Gluttonous</joyKind>
+			<foodType>Fluid, Processed</foodType>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>NY_hediff_PlumJuice</hediffDef>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<listOrder>1270.2</listOrder>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="NY_DrinkableBase">
+		<defName>NY_PlumGingerTea</defName>
+		<label>话梅姜奶</label>
+		<description>在冶龍奶中加入话梅与姜汁煮制而成的香醇饮品，风味独特且有暖胃养颜的功效，是冶龍们冬日的最爱。</description>
+		<descriptionHyperlinks>
+			<HediffDef>NY_hediff_PlumGingerTea</HediffDef>
+			<RecipeDef>NY_CookPlumGingerTea</RecipeDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/NY_PlumGingerTea</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.05</Mass>
+			<Nutrition>0.2</Nutrition>
+			<MarketValue>25</MarketValue>
+		</statBases>
+		<ingestible>
+			<joy>0.4</joy>
+			<joyKind>Gluttonous</joyKind>
+			<foodType>Fluid, Processed</foodType>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>NY_hediff_PlumGingerTea</hediffDef>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<listOrder>1270.3</listOrder>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!--藕-->
+	<ThingDef ParentName="PlantBase">
+		<defName>NY_plant_Lotus</defName>
+		<label>冶龍莲</label>
+		<description>从冶龍家乡带至边缘世界的品种，基因似乎被修改过，能够在陆地上生长，其根茎富含淀粉和某种特殊纤维，而冶龍掌握着大量提取这种纤维并编织成名为“藕丝绢”的优质织物的技术。</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.25</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/NY_Lotus</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<ingestible />
+		<plant>
+			<fertilityMin>0.8</fertilityMin>
+			<immatureGraphicPath>Things/Plant/NY_Lotus_Immature</immatureGraphicPath>
+			<dieIfLeafless>true</dieIfLeafless>
+			<maxMeshCount>4</maxMeshCount>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>NY_RawLotusRoot</harvestedThingDef>
+			<harvestYield>24</harvestYield>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			</sowTags>
+			<sowMinSkill>6</sowMinSkill>
+			<sowResearchPrerequisites>
+				<li>SmeltedLoongStarting</li>
+			</sowResearchPrerequisites>
+			<topWindExposure>0</topWindExposure>
+			<growDays>6</growDays>
+			<visualSizeRange>0.5~0.8</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+		</plant>
+	</ThingDef>
+
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>NY_RawLotusRoot</defName>
+		<label>冶龍藕</label>
+		<description>冶龍莲的根茎，富含淀粉，口感很脆，不过冶龍们更多用它来生产藕丝绢。</description>
+		<possessionCount>10</possessionCount>
+		<graphicData>
+			<texPath>Things/Item/NY_RawLotusRoot</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<thingCategories Inherit="False">
+			<li>NY_LoongPlantRaw</li>
+		</thingCategories>
+		<statBases>
+			<MarketValue>1.5</MarketValue>
+			<RoyalFavorValue>0.002</RoyalFavorValue>
+		</statBases>
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>14</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!--梅子-->
+	<ThingDef ParentName="PlantBase">
+		<defName>NY_plant_PlumTree</defName>
+		<label>冶龍梅树</label>
+		<description>从冶龍家乡带至边缘世界的品种，它能结出酸甜的果实并且采摘过后依然能继续结果，因此深受冶龍喜爱，远行者总是会在新家园种下一棵梅树，期望它能成为美好生活的起点。</description>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Nutrition>0.5</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/NY_PlumTree</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<neverMultiSelect>false</neverMultiSelect>
+		<fillPercent>0.20</fillPercent>
+		<pathCost>30</pathCost>
+		<ingestible />
+		<plant>
+			<growDays>12</growDays>
+			<fertilityMin>0.5</fertilityMin>
+			<fertilitySensitivity>0.5</fertilitySensitivity>
+			<dieIfLeafless>false</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>NY_RawPlum</harvestedThingDef>
+			<harvestAfterGrowth>0.5</harvestAfterGrowth>
+			<harvestYield>10</harvestYield>
+			<harvestWork>250</harvestWork>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<sowMinSkill>8</sowMinSkill>
+			<sowResearchPrerequisites>
+				<li>SmeltedLoongStarting</li>
+			</sowResearchPrerequisites>
+			<topWindExposure>0.3</topWindExposure>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>80</wildClusterWeight>
+			<immatureGraphicPath>Things/Plant/NY_PlumTree_Immature</immatureGraphicPath>
+			<visualSizeRange>1~1.8</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+		</plant>
+	</ThingDef>
+
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>NY_RawPlum</defName>
+		<label>冶龍梅</label>
+		<description>冶龍梅树的果实，生吃就很美味，也可以腌制成冶龍喜爱的小零食冶龍话梅，进一步制成多种饮料。</description>
+		<possessionCount>10</possessionCount>
+		<graphicData>
+			<texPath>Things/Item/NY_RawPlum</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<thingCategories Inherit="False">
+			<li>NY_LoongPlantRaw</li>
+		</thingCategories>
+		<statBases>
+			<MarketValue>1.5</MarketValue>
+			<RoyalFavorValue>0.002</RoyalFavorValue>
+		</statBases>
+		<ingestible>
+			<preferability>RawTasty</preferability>
+			<tasteThought>NY_EatRawPlum</tasteThought>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>7</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="OrganicProductBase">
+		<defName>NY_PreservedPlum</defName>
+		<label>冶龍话梅</label>
+		<description>用盐与糖腌制而成的干梅果，风味极佳且可以储存很久，据说名字的由来是古时冶龍指挥官长期说话口干舌燥，不便饮水就在舌下含一颗干梅，如今远行在外的冶龍也喜欢揣上几颗打发平淡的旅途。</description>
+		<thingClass>ThingWithComps</thingClass>
+		<thingCategories>
+			<li>NY_LoongFood</li>
+		</thingCategories>
+		<graphicData>
+			<texPath>Things/Item/NY_PreservedPlum</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<statBases>
+			<MarketValue>3</MarketValue>
+			<DeteriorationRate>2</DeteriorationRate>
+			<Nutrition>0.05</Nutrition>
+		</statBases>
+		<ingestible>
+			<joy>0.025</joy>
+			<joyKind>Gluttonous</joyKind>
+			<foodType>Processed</foodType>
+			<preferability>DesperateOnly</preferability>
+			<tasteThought>NY_EatPreservedPlum</tasteThought>
+			<maxNumToIngestAtOnce>4</maxNumToIngestAtOnce>
+			<defaultNumToIngestAtOnce>4</defaultNumToIngestAtOnce>
+			<ingestSound>Meal_Eat</ingestSound>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>70</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!--姜-->
+	<ThingDef ParentName="PlantBase">
+		<defName>NY_plant_Ginger</defName>
+		<label>冶龍姜</label>
+		<description>从冶龍家乡带至边缘世界的品种，不适合作为主食但肥厚的根茎有刺激性的香味，可以作为烹饪配料。</description>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Nutrition>0.2</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/NY_Ginger</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<ingestible />
+		<plant>
+			<growDays>8</growDays>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>NY_RawGinger</harvestedThingDef>
+			<harvestYield>10</harvestYield>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			</sowTags>
+			<sowResearchPrerequisites>
+				<li>SmeltedLoongStarting</li>
+			</sowResearchPrerequisites>
+			<topWindExposure>0</topWindExposure>
+			<wildClusterRadius>8</wildClusterRadius>
+			<wildClusterWeight>300</wildClusterWeight>
+			<immatureGraphicPath>Things/Plant/NY_Ginger_Immature</immatureGraphicPath>
+			<visualSizeRange>0.6~1</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+		</plant>
+	</ThingDef>
+
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>NY_RawGinger</defName>
+		<label>冶龍生姜</label>
+		<description>冶龍姜成熟的根茎，有芳香及辛辣味，是冶龍烹饪常用的配料，不包括土豆丝炒姜丝，那个不是给正常人吃的。</description>
+		<possessionCount>10</possessionCount>
+		<graphicData>
+			<texPath>Things/Item/NY_RawGinger</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<thingCategories Inherit="False">
+			<li>NY_LoongPlantRaw</li>
+		</thingCategories>
+		<statBases>
+			<MarketValue>1.5</MarketValue>
+			<RoyalFavorValue>0.002</RoyalFavorValue>
+		</statBases>
+		<ingestible>
+			<preferability>RawTasty</preferability>
+			<tasteThought>NY_EatRawGinger</tasteThought>
+			<specialThoughtAsIngredient>NY_GingerIngredient</specialThoughtAsIngredient>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>60</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+
+<!--罐头-->
+	<ThingDef ParentName="MealBase">
+		<defName>NY_MealCannedFish</defName>
+		<label>冶龍鱼罐头</label>
+		<description>封装着来自冶龍故乡的传统风味——豆豉鲮鱼的罐头，原料不一定是鱼肉但冶龍总能做出鱼香味。精铁打造的容器坚固耐磨，罐中的肉块经过熏制与焖煮，酥软多汁，入口即化。</description>
+		<graphicData>
+			<texPath>Things/Item/NY_CannedFish</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.3</Mass>
+			<Nutrition>0.8</Nutrition>
+			<MarketValue>24</MarketValue>
+			<Flammability>0</Flammability>
+			<MaxHitPoints>500</MaxHitPoints>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+		<ingestible>
+			<preferability>MealSimple</preferability>
+			<optimalityOffsetHumanlikes>-5</optimalityOffsetHumanlikes>
+			<optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+		</ingestible>
+		<allowedArchonexusCount>40</allowedArchonexusCount>
+	</ThingDef>
+
+	<ThingDef ParentName="NY_DrinkableBase">
+		<defName>NY_MealCannedYellowPeach</defName>
+		<label>冶龍黄桃罐头</label>
+		<description>泡在糖水中的水果，封装在坚固耐磨的玻璃罐中，冶龍相信这种食品可以为病人补充营养，加快康复，对风寒病人尤其有效。在冶龍的故乡她们会取新鲜的黄桃制作这种食品，而在没有黄桃的异乡她们只能努力发挥自己的想象力了。</description>
+		<graphicData>
+			<texPath>Things/Item/NY_CannedYellowPeach</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.1</Mass>
+			<Nutrition>0.5</Nutrition>
+			<WorkToMake>360</WorkToMake>
+			<MarketValue>24</MarketValue>
+			<MaxHitPoints>500</MaxHitPoints>
+			<RoyalFavorValue>0.015</RoyalFavorValue>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+		<ingestible>
+			<foodType>Meal</foodType>
+			<ingestSound>Meal_Eat</ingestSound>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestCommandString>享用{0}</ingestCommandString>
+			<ingestReportString>正在享用{0}。</ingestReportString>
+			<tasteThought>NY_EatCannedYellowPeach</tasteThought>
+			<outcomeDoers>
+				<li Class="SmeltedLoong.IngestionOutcomeDoer_MakeImmune">
+					<disease>NY_hediff_Cold</disease>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<recipeMaker>
+			<bulkRecipeCount>10</bulkRecipeCount>
+			<recipeUsers>
+				<li>ElectricStove</li>
+				<li>FueledStove</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Cooking>8</Cooking>
+			</skillRequirements>
+			<workSkill>Cooking</workSkill>
+			<effectWorking>Cook</effectWorking>
+			<workSpeedStat>CookSpeed</workSpeedStat>
+			<soundWorking>Recipe_CookMeal</soundWorking>
+			<researchPrerequisite>SmeltedLoongMealCanned</researchPrerequisite>
+			<displayPriority>1270.01</displayPriority>
+		</recipeMaker>
+		<costList>
+			<RawBerries>6</RawBerries>
+		</costList>
+		<comps Inherit="False">
+			<li Class="CompProperties_Drug">
+				<listOrder>1270.4</listOrder>
+			</li>
+			<li Class="CompProperties_Forbiddable" />
+			<li Class="CompProperties_Ingredients">
+				<splitTransferableFoodKind>true</splitTransferableFoodKind>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!--中药-->
+	<ThingDef Name="NY_ClassicMedicineBase" Abstract="True">
+		<thingClass>ThingWithComps</thingClass>
+		<category>Item</category>
+		<drawerType>MapMeshOnly</drawerType>
+		<useHitPoints>true</useHitPoints>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<selectable>true</selectable>
+		<techLevel>Neolithic</techLevel>
+		<statBases>
+			<Mass>0.05</Mass>
+			<Beauty>0</Beauty>
+			<WorkToMake>600</WorkToMake>
+			<MarketValue>18</MarketValue>
+			<Flammability>1</Flammability>
+			<MaxHitPoints>100</MaxHitPoints>
+			<DeteriorationRate>2</DeteriorationRate>
+			<FoodPoisonChanceFixedHuman>0</FoodPoisonChanceFixedHuman>
+		</statBases>
+		<altitudeLayer>Item</altitudeLayer>
+		<stackLimit>150</stackLimit>
+		<tickerType>Rare</tickerType>
+		<thingCategories>
+			<li>Drugs</li>
+		</thingCategories>
+		<tradeTags>
+			<li>Drugs</li>
+		</tradeTags>
+		<alwaysHaulable>true</alwaysHaulable>
+		<comps>
+			<li Class="CompProperties_Forbiddable" />
+		</comps>
+		<pathCost>14</pathCost>
+		<burnableByRecipe>true</burnableByRecipe>
+		<resourceReadoutPriority>Last</resourceReadoutPriority>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<allowedArchonexusCount>-1</allowedArchonexusCount>
+		<socialPropernessMatters>false</socialPropernessMatters>
+		<ingestible>
+			<nurseable>true</nurseable>
+			<foodType>Processed</foodType>
+			<tableDesired>false</tableDesired>
+			<drugCategory>Medical</drugCategory>
+			<ingestSound>Ingest_Pill</ingestSound>
+			<baseIngestTicks>300</baseIngestTicks>
+			<chairSearchRadius>0</chairSearchRadius>
+			<ingestHoldUsesTable>false</ingestHoldUsesTable>
+			<ingestCommandString>服用{0}</ingestCommandString>
+			<ingestReportString>正在服用{0}。</ingestReportString>
+			<tasteThought>NY_EatClassicMedicine</tasteThought>
+			<preferability>NeverForNutrition</preferability>
+			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+			<defaultNumToIngestAtOnce>1</defaultNumToIngestAtOnce>
+			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+		</ingestible>
+		<recipeMaker>
+			<bulkRecipeCount>10</bulkRecipeCount>
+			<recipeUsers>
+				<li>NY_TableFurnace</li>
+			</recipeUsers>
+			<workSkill>Cooking</workSkill>
+			<effectWorking>Cook</effectWorking>
+			<workSpeedStat>CookSpeed</workSpeedStat>
+			<soundWorking>Recipe_CookMeal</soundWorking>
+			<researchPrerequisite>SmeltedLoongClassicMedicine</researchPrerequisite>
+		</recipeMaker>
+		<storedConceptLearnOpportunity>DrugPolicies</storedConceptLearnOpportunity>
+		<orderedTakeGroup>Drug</orderedTakeGroup>
+	</ThingDef>
+
+	<ThingDef ParentName="NY_ClassicMedicineBase">
+		<defName>NY_ClassicMedicine_Smallpox</defName>
+		<label>透疹解毒散</label>
+		<description>能够治疗天花的冶龍古方，是药三分毒，用药需慎重。</description>
+		<descriptionHyperlinks>
+			<HediffDef>NY_hediff_Smallpox</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Drug/NY_Smallpox</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+		</statBases>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="SmeltedLoong.IngestionOutcomeDoer_MakeImmune">
+					<disease>NY_hediff_Smallpox</disease>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<recipeMaker>
+			<displayPriority>1272.01</displayPriority>
+		</recipeMaker>
+		<costList>
+			<NY_RawGinger>3</NY_RawGinger>
+			<MedicineHerbal>1</MedicineHerbal>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<listOrder>1271.01</listOrder>
+				<overdoseSeverityOffset>0.18~0.35</overdoseSeverityOffset>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="NY_ClassicMedicineBase">
+		<defName>NY_ClassicMedicine_Cholera</defName>
+		<label>辟秽正气散</label>
+		<description>能够治疗霍乱的冶龍古方，是药三分毒，用药需慎重。</description>
+		<descriptionHyperlinks>
+			<HediffDef>NY_hediff_Cholera</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Drug/NY_Cholera</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+		</statBases>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="SmeltedLoong.IngestionOutcomeDoer_Remove">
+					<hediff>NY_hediff_Cholera</hediff>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<recipeMaker>
+			<displayPriority>1272.02</displayPriority>
+		</recipeMaker>
+		<costList>
+			<NY_RawGinger>3</NY_RawGinger>
+			<MedicineHerbal>1</MedicineHerbal>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<listOrder>1271.02</listOrder>
+				<overdoseSeverityOffset>0.18~0.35</overdoseSeverityOffset>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

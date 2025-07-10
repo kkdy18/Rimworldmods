@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RecipeDef Name="NY_CookBase" Abstract="True">
+		<researchPrerequisite>SmeltedLoongStarting</researchPrerequisite>
+		<recipeUsers>
+			<li>Campfire</li>
+			<li>ElectricStove</li>
+			<li>FueledStove</li>
+			<li>NY_TableFurnace</li>
+		</recipeUsers>
+		<workSkill>Cooking</workSkill>
+		<effectWorking>Cook</effectWorking>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+	</RecipeDef>
+
+	<RecipeDef ParentName="NY_CookBase">
+		<defName>NY_CookPreservedPlum</defName>
+		<label>腌制冶龍话梅</label>
+		<description>用盐与糖将新鲜梅果腌制成干果。</description>
+		<jobString>正在腌制话梅。</jobString>
+		<workAmount>8000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>NY_RawPlum</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>NY_RawPlum</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<NY_PreservedPlum>20</NY_PreservedPlum>
+		</products>
+		<skillRequirements>
+			<Cooking>6</Cooking>
+		</skillRequirements>
+		<displayPriority>1270.01</displayPriority>
+	</RecipeDef>
+
+	<RecipeDef ParentName="NY_CookBase">
+		<defName>NY_CookPlumJuice</defName>
+		<label>制作酸梅汤 x10</label>
+		<description>制作十份酸梅汤。</description>
+		<jobString>正在煮酸梅汤。</jobString>
+		<workAmount>4000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawBerries</li>
+					</thingDefs>
+				</filter>
+				<count>30</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>NY_PreservedPlum</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawBerries</li>
+				<li>NY_PreservedPlum</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<NY_PlumJuice>10</NY_PlumJuice>
+		</products>
+		<skillRequirements>
+			<Cooking>6</Cooking>
+		</skillRequirements>
+		<displayPriority>1270.01</displayPriority>
+	</RecipeDef>
+
+	<RecipeDef ParentName="NY_CookBase">
+		<defName>NY_CookPlumGingerTea</defName>
+		<label>制作话梅姜奶 x10</label>
+		<description>制作十份话梅姜奶。</description>
+		<jobString>正在煮话梅姜奶。</jobString>
+		<workAmount>5000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>NY_PreservedPlum</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>NY_RawGinger</li>
+					</thingDefs>
+				</filter>
+				<count>30</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>NY_SmeltedLoongMilk</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>NY_PreservedPlum</li>
+				<li>NY_RawGinger</li>
+				<li>NY_SmeltedLoongMilk</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<NY_PlumGingerTea>10</NY_PlumGingerTea>
+		</products>
+		<skillRequirements>
+			<Cooking>6</Cooking>
+		</skillRequirements>
+		<displayPriority>1270.01</displayPriority>
+	</RecipeDef>
+
+	<RecipeDef Name="NY_CookMealBase" ParentName="NY_CookBase" Abstract="True">
+		<workAmount>800</workAmount>
+		<recipeUsers Inherit="False">
+			<li>NY_TableFurnace</li>
+		</recipeUsers>
+		<fixedIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+			<specialFiltersToDisallow>
+				<li>AllowPlantFood</li>
+			</specialFiltersToDisallow>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+			<disallowedCategories>
+				<li>EggsFertilized</li>
+			</disallowedCategories>
+			<disallowedThingDefs>
+				<li>Meat_Human</li>
+				<li>Meat_Megaspider</li>
+				<li>InsectJelly</li>
+				<li MayRequire="Ludeon.RimWorld.Anomaly">Meat_Twisted</li>
+				<li>Meat_SmeltedLoong</li>
+				<li>NY_RawGinger</li>
+			</disallowedThingDefs>
+		</defaultIngredientFilter>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+	</RecipeDef>
+
+	<RecipeDef Name="NY_CookMealWithRiceBase" ParentName="NY_CookMealBase" Abstract="True">
+		<workAmount>1000</workAmount>
+		<jobString>正在炒菜煮饭。</jobString>
+		<skillRequirements>
+			<Cooking>12</Cooking>
+		</skillRequirements>
+		<researchPrerequisite>SmeltedLoongLavishMeal</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef Name="NY_CookMealLavish_Veg" ParentName="NY_CookMealBase">
+		<defName>NY_CookMealLavish_Veg</defName>
+		<label>烹饪翻翠玉</label>
+		<description>虽然按常理这道菜必须用绿叶菜制作，但实际操作中烹饪者的就地取材与即兴发挥也值得期待，“翻土豆”“翻草莓”大家也不是没有品鉴过。</description>
+		<jobString>正在翻炒菜蔬。</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+				<count>1.25</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<disallowedCategories>
+				<li>MeatRaw</li>
+				<li>AnimalProductRaw</li>
+			</disallowedCategories>
+		</fixedIngredientFilter>
+		<products>
+			<NY_MealLavish_Veg>1</NY_MealLavish_Veg>
+		</products>
+		<skillRequirements>
+			<Cooking>10</Cooking>
+		</skillRequirements>
+		<displayPriority>1270.02</displayPriority>
+		<researchPrerequisite>SmeltedLoongLavishMeal</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef ParentName="NY_CookMealLavish_Veg">
+		<defName>NY_CookMealLavish_VegTen</defName>
+		<label>烹饪翻翠玉 x10</label>
+		<workAmount>6400</workAmount>
+		<ingredients Inherit="False">
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+				<count>12.5</count>
+			</li>
+		</ingredients>
+		<products>
+			<NY_MealLavish_Veg>10</NY_MealLavish_Veg>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef Name="NY_CookMealLavish_Meat" ParentName="NY_CookMealBase">
+		<defName>NY_CookMealLavish_Meat</defName>
+		<label>烹饪炖血金</label>
+		<description>只有素食者才会拒绝一碗世间极品的红烧肉，当然，这碗红烧肉的原料最好是正经肉。肉总是千篇一律的蛋白质与脂肪的结合，如果在取材上即兴发挥恐怕成果会一路奔向深渊。</description>
+		<jobString>正在炖煮肉块。</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+					</categories>
+				</filter>
+				<count>1.25</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<disallowedCategories>
+				<li>PlantFoodRaw</li>
+				<li>AnimalProductRaw</li>
+			</disallowedCategories>
+		</fixedIngredientFilter>
+		<products>
+			<NY_MealLavish_Meat>1</NY_MealLavish_Meat>
+		</products>
+		<skillRequirements>
+			<Cooking>10</Cooking>
+		</skillRequirements>
+		<displayPriority>1270.03</displayPriority>
+		<researchPrerequisite>SmeltedLoongLavishMeal</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef ParentName="NY_CookMealLavish_Meat">
+		<defName>NY_CookMealLavish_MeatTen</defName>
+		<label>烹饪炖血金 x10</label>
+		<workAmount>6400</workAmount>
+		<ingredients Inherit="False">
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+					</categories>
+				</filter>
+				<count>12.5</count>
+			</li>
+		</ingredients>
+		<products>
+			<NY_MealLavish_Meat>10</NY_MealLavish_Meat>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef Name="NY_CookMealChickenwithMushroom" ParentName="NY_CookMealBase">
+		<defName>NY_CookMealChickenwithMushroom</defName>
+		<label>烹饪凤栖木</label>
+		<description>小鸡炖蘑菇就是这道菜的本质，虽然肉不一定是鸡肉，菇不一定是香菇，但食材与名字会变，人们对美食的热爱不变。</description>
+		<jobString>正在炖煮肉与菌菇。</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+					</categories>
+				</filter>
+				<count>0.5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawFungus</li>
+					</thingDefs>
+				</filter>
+				<count>0.5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>NY_RawGinger</li>
+					</thingDefs>
+				</filter>
+				<count>0.25</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawFungus</li>
+				<li>NY_RawGinger</li>
+			</thingDefs>
+			<disallowedCategories>
+				<li>PlantFoodRaw</li>
+				<li>AnimalProductRaw</li>
+			</disallowedCategories>
+		</fixedIngredientFilter>
+		<products>
+			<NY_MealChickenwithMushroom>1</NY_MealChickenwithMushroom>
+		</products>
+		<skillRequirements>
+			<Cooking>10</Cooking>
+		</skillRequirements>
+		<displayPriority>1270.04</displayPriority>
+		<researchPrerequisite>SmeltedLoongLavishMeal</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef ParentName="NY_CookMealChickenwithMushroom">
+		<defName>NY_CookMealChickenwithMushroomTen</defName>
+		<label>烹饪凤栖木 x10</label>
+		<workAmount>6400</workAmount>
+		<ingredients Inherit="False">
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+					</categories>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawFungus</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>NY_RawGinger</li>
+					</thingDefs>
+				</filter>
+				<count>2.5</count>
+			</li>
+		</ingredients>
+		<products>
+			<NY_MealChickenwithMushroom>10</NY_MealChickenwithMushroom>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef Name="NY_CookMealDumpling" ParentName="NY_CookMealBase">
+		<defName>NY_CookMealDumpling</defName>
+		<label>烹饪冶龍饺子</label>
+		<description>冶龍饺子的创始人坚信荤与素的平衡才能创造出最美味的饺子，因此纯素馅和纯肉馅的饺子目前是不存在了。</description>
+		<jobString>正在包饺子煮饺子。</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<customSummary>动物蛋白与脂肪</customSummary>
+					<categories>
+						<li>MeatRaw</li>
+						<li>AnimalProductRaw</li>
+					</categories>
+				</filter>
+				<count>0.5</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+				<count>0.5</count>
+			</li>
+		</ingredients>
+		<products>
+			<NY_MealDumpling>1</NY_MealDumpling>
+		</products>
+		<skillRequirements>
+			<Cooking>10</Cooking>
+		</skillRequirements>
+		<displayPriority>1270.05</displayPriority>
+	</RecipeDef>
+
+	<RecipeDef ParentName="NY_CookMealDumpling">
+		<defName>NY_CookMealDumplingTen</defName>
+		<label>烹饪冶龍饺子 x10</label>
+		<workAmount>6400</workAmount>
+		<ingredients Inherit="False">
+			<li>
+				<filter>
+					<customSummary>动物蛋白与脂肪</customSummary>
+					<categories>
+						<li>MeatRaw</li>
+						<li>AnimalProductRaw</li>
+					</categories>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<products>
+			<NY_MealDumpling>10</NY_MealDumpling>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef Name="NY_CookMealLotusRootSlices" ParentName="NY_CookMealBase">
+		<defName>NY_CookMealLotusRootSlices</defName>
+		<label>烹饪凉拌藕片</label>
+		<description>做法简单，材料也很简单的凉拌菜，吃腻了莲藕味的营养膏的冶龍种莲人创造了它。</description>
+		<jobString>正在将莲藕切片焯水。</jobString>
+		<workAmount>300</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>NY_RawLotusRoot</li>
+					</thingDefs>
+				</filter>
+				<count>0.5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>NY_RawLotusRoot</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<NY_MealLotusRootSlices>1</NY_MealLotusRootSlices>
+		</products>
+		<skillRequirements>
+			<Cooking>6</Cooking>
+		</skillRequirements>
+		<displayPriority>1270.06</displayPriority>
+	</RecipeDef>
+
+	<RecipeDef ParentName="NY_CookMealLotusRootSlices">
+		<defName>NY_CookMealLotusRootSlicesTen</defName>
+		<label>烹饪凉拌藕片 x10</label>
+		<workAmount>2400</workAmount>
+		<ingredients Inherit="False">
+			<li>
+				<filter>
+					<thingDefs>
+						<li>NY_RawLotusRoot</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<products>
+			<NY_MealLotusRootSlices>10</NY_MealLotusRootSlices>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="NY_CookMealBase">
+		<defName>NY_CookMealRandomShreds</defName>
+		<label>烹饪土豆丝炒姜丝 x10</label>
+		<description>土豆与生姜切丝再下锅翻炒，做法非常简单但骇人听闻，无法想象这道菜肴要怀抱着何种心情去制作。\n\n为了进一步增加这道菜的随机性，烹饪者现在会一次性烹饪十份的量的食材，出锅再分作十份，土豆丝与姜丝的分布将出现更加鲜明的差异，食客也将要面临更大的挑战。</description>
+		<jobString>正在切丝与翻炒。</jobString>
+		<workAmount>5000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawPotatoes</li>
+					</thingDefs>
+				</filter>
+				<count>2.5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>NY_RawGinger</li>
+					</thingDefs>
+				</filter>
+				<count>2.5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawPotatoes</li>
+				<li>NY_RawGinger</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<NY_MealRandomShreds>10</NY_MealRandomShreds>
+		</products>
+		<skillRequirements>
+			<Cooking>6</Cooking>
+		</skillRequirements>
+		<displayPriority>1270.07</displayPriority>
+	</RecipeDef>
+
+	<RecipeDef Name="NY_CookMealCannedFish" ParentName="NY_CookMealBase">
+		<defName>NY_CookMealCannedFish</defName>
+		<label>制作冶龍鱼罐头</label>
+		<description>制作一份冶龍鱼罐头。</description>
+		<jobString>正在烹调与装罐。</jobString>
+		<workAmount>450</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+					</categories>
+				</filter>
+				<count>0.6</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<disallowedCategories>
+				<li>PlantFoodRaw</li>
+				<li>AnimalProductRaw</li>
+			</disallowedCategories>
+		</fixedIngredientFilter>
+		<products>
+			<NY_MealCannedFish>1</NY_MealCannedFish>
+		</products>
+		<recipeUsers Inherit="False">
+			<li>ElectricStove</li>
+			<li>FueledStove</li>
+		</recipeUsers>
+		<skillRequirements>
+			<Cooking>8</Cooking>
+		</skillRequirements>
+		<displayPriority>1270.01</displayPriority>
+		<researchPrerequisite>SmeltedLoongMealCanned</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef ParentName="NY_CookMealCannedFish">
+		<defName>NY_CookMealCannedFishTen</defName>
+		<label>制作冶龍鱼罐头 x10</label>
+		<description>制作十份冶龍鱼罐头。</description>
+		<workAmount>3600</workAmount>
+		<ingredients Inherit="False">
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+					</categories>
+				</filter>
+				<count>6</count>
+			</li>
+		</ingredients>
+		<products>
+			<NY_MealCannedFish>10</NY_MealCannedFish>
+		</products>
+	</RecipeDef>
+
+</Defs>

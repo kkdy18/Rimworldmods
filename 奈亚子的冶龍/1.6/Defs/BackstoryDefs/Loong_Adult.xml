@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--平民背景，技能点限6-->
+	<BackstoryDef ParentName="NY_BaseLoongBackStory">
+		<defName>NY_LoongSmith</defName>
+		<title>冶龍铁匠</title>
+		<titleShort>冶龍铁匠</titleShort>
+		<description>[PAWN_nameDef]曾在小镇里开着一家属于自己的铁匠铺，但随着战争爆发，[PAWN_objective]铁匠铺被军阀强行征用，[PAWN_pronoun]也被赶出小镇。听说圣旨失落于异星的传闻后，[PAWN_pronoun]带着仅剩的家当加入冒险者们的行列，乘上远离家园的航船。</description>
+		<slot>Adulthood</slot>
+		<requiredWorkTags>
+			<li>ManualDumb</li>
+			<li>ManualSkilled</li>
+		</requiredWorkTags>
+		<skillGains>
+			<Melee>5</Melee>
+			<Crafting>6</Crafting>
+			<Shooting>-5</Shooting>
+		</skillGains>
+		<possessions>
+			<NY_SmeltedLoongIronHat>1</NY_SmeltedLoongIronHat>
+		</possessions>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="NY_BaseLoongBackStory">
+		<defName>NY_LoongTeaFarmer</defName>
+		<title>冶龍茶农</title>
+		<titleShort>冶龍茶农</titleShort>
+		<description>[PAWN_nameDef]以种茶制茶为生，经过多年努力[PAWN_pronoun]拥有了一座茶园。但受天气和战争的影响茶园连年亏损，最终被更大的茶商收购。听说圣旨失落于异星的传闻后，[PAWN_pronoun]加入冒险者们的行列，乘上远离家园的航船。</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Plants>5</Plants>
+			<Crafting>4</Crafting>
+			<Intellectual>-3</Intellectual>
+		</skillGains>
+		<possessions>
+			<PsychiteTea>10</PsychiteTea>
+		</possessions>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="NY_BaseLoongBackStory">
+		<defName>NY_LoongSnackBar</defName>
+		<title>开小吃摊的冶龍</title>
+		<titleShort>小吃摊冶龍</titleShort>
+		<description>[PAWN_nameDef]曾是一个推着小车在街头贩卖小吃的小贩，[PAWN_objective]手艺在当地广受好评，直到城市被某位军阀攻陷，侥幸逃生的[PAWN_nameDef]失去了[PAWN_objective]小车与平静的生活。听说圣旨失落于异星的传闻后，[PAWN_pronoun]带着仅剩的家当加入冒险者们的行列，乘上远离家园的航船。</description>
+		<slot>Adulthood</slot>
+		<requiredWorkTags>
+			<li>Cooking</li>
+		</requiredWorkTags>
+		<skillGains>
+			<Melee>-4</Melee>
+			<Social>5</Social>
+			<Cooking>5</Cooking>
+		</skillGains>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="NY_BaseLoongBackStory">
+		<defName>NY_loongDocker</defName>
+		<title>码头工作的冶龍</title>
+		<titleShort>码头工冶龍</titleShort>
+		<description>[PAWN_nameDef]曾在码头上干着搬运货物的体力活，收入微薄，生活简单。但蔓延的战火与码头上越发紧张的气氛让[PAWN_pronoun]最终决定放弃这份工作。听说圣旨失落于异星的传闻后，[PAWN_pronoun]带着仅剩的家当加入冒险者们的行列，乘上远离家园的航船。</description>
+		<slot>Adulthood</slot>
+		<requiredWorkTags>
+			<li>Hauling</li>
+		</requiredWorkTags>
+		<skillGains>
+			<Melee>5</Melee>
+			<Social>-4</Social>
+			<Construction>5</Construction>
+		</skillGains>
+		<forcedTraits>
+			<Industriousness>1</Industriousness>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="NY_BaseLoongBackStory">
+		<defName>NY_LoongTailor</defName>
+		<title>冶龍裁缝</title>
+		<titleShort>冶龍裁缝</titleShort>
+		<description>[PAWN_nameDef]曾是家乡最好的裁缝，[PAWN_pronoun]对时代潮流有着敏锐的嗅觉，制出的华丽服饰在当地相当流行。但随着战争爆发，人们不再购买[PAWN_objective]服装，军阀也只需要能大量缝制棉衣布甲的匠人，[PAWN_nameDef]失去了工作。听说圣旨失落于异星的传闻后，[PAWN_pronoun]带着仅剩的家当加入冒险者们的行列，乘上远离家园的航船。</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Social>-2</Social>
+			<Artistic>3</Artistic>
+			<Crafting>5</Crafting>
+		</skillGains>
+		<possessions>
+			<NY_LotusRootSilk>20</NY_LotusRootSilk>
+		</possessions>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="NY_BaseLoongBackStory">
+		<defName>NY_LoongPeople</defName>
+		<title>冶龍市井民</title>
+		<titleShort>冶龍市井民</titleShort>
+		<description>[PAWN_nameDef]只是个平凡的日子人，会几门手艺能在城中谋个生路，日出日落，如此生活，直到战争爆发。逃难的路上[PAWN_pronoun]偶然混入出发寻找圣旨的人群，坐上航船“神奇浆果号”来到了遥远的异星。</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Social>2</Social>
+			<Cooking>2</Cooking>
+			<Crafting>2</Crafting>
+			<Shooting>-1</Shooting>
+			<Construction>2</Construction>
+			<Intellectual>-1</Intellectual>
+		</skillGains>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="NY_BaseLoongBackStory">
+		<defName>NY_loongHealer</defName>
+		<title>冶龍行医</title>
+		<titleShort>冶龍行医</titleShort>
+		<description>[PAWN_nameDef]行于大地之上，进行着自己的旅途，[PAWN_pronoun]走遍各地村落，为人看病解忧，凭医术换取物资与歇脚之处。但军阀纷争不止，各地生灵涂炭、民不聊生，[PAWN_pronoun]越发感到自己的无力。听说圣旨失落于异星的传闻后，[PAWN_nameDef]本着拯救苍生的想法加入冒险者们的行列，坐上航船“神奇浆果号”来到了遥远的异星。</description>
+		<slot>Adulthood</slot>
+		<requiredWorkTags>
+			<li>Caring</li>
+		</requiredWorkTags>
+		<skillGains>
+			<Melee>3</Melee>
+			<Plants>3</Plants>
+			<Medicine>6</Medicine>
+			<Crafting>-6</Crafting>
+		</skillGains>
+		<possessions>
+			<MedicineHerbal>10</MedicineHerbal>
+		</possessions>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="NY_BaseLoongBackStory">
+		<defName>NY_LoongZealot</defName>
+		<title>真龙的狂热寻迹者</title>
+		<titleShort>冶龍狂信者</titleShort>
+		<description>[PAWN_nameDef]成年后一度陷入对真龙狂热的崇拜，真龙的陨落使[PAWN_pronoun]悲痛欲绝。听说圣旨失落于异星的传闻后，[PAWN_pronoun]义无反顾地乘上航船“尉官豌豆号”，向着真龙与圣旨的所在进发。“我能感受到……祂就在那里……哈哈哈，我一定能找到祂！”</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Melee>5</Melee>
+			<Social>8</Social>
+		</skillGains>
+		<workDisables>
+			<li>Intellectual</li>
+			<li>ManualDumb</li>
+			<li>ManualSkilled</li>
+			<li>Caring</li>
+		</workDisables>
+		<forcedTraits>
+			<Abrasive>0</Abrasive>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="NY_BaseLoongBackStory">
+		<defName>NY_LoongPrisonerA</defName>
+		<title>冶龍囚徒</title>
+		<titleShort>冶龍囚徒</titleShort>
+		<description>[PAWN_nameDef]曾因殴打贵族被打入大牢，虽然未被判处死刑，但仍要背上漫长且艰苦的劳役。在一场战争中，被命令搬运守城器械的[PAWN_pronoun]趁乱逃脱，之后加入了寻找圣旨的冒险者们，去往异星开始新的生活。</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Melee>8</Melee>
+			<Social>-6</Social>
+			<Crafting>5</Crafting>
+			<Construction>5</Construction>
+			<Intellectual>-6</Intellectual>
+		</skillGains>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="NY_BaseLoongBackStory">
+		<defName>NY_LoongPrisonerB</defName>
+		<title>冶龍囚徒</title>
+		<titleShort>冶龍囚徒</titleShort>
+		<description>[PAWN_nameDef]曾因绑架豪门男眷被打入大牢，虽然未被判处死刑，但仍要背上漫长且艰苦的劳役。在一场战争中，被命令修补城墙的[PAWN_pronoun]趁乱逃脱，之后加入了寻找圣旨的冒险者们，去往异星开始新的生活。</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Melee>8</Melee>
+			<Social>-6</Social>
+			<Crafting>5</Crafting>
+			<Construction>5</Construction>
+			<Intellectual>-6</Intellectual>
+		</skillGains>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="NY_BaseLoongBackStory">
+		<defName>NY_LoongPrisonerC</defName>
+		<title>冶龍囚徒</title>
+		<titleShort>冶龍囚徒</titleShort>
+		<description>[PAWN_nameDef]曾因失手玷污真龙画像被判处死刑，但行刑前某位军阀的军队攻陷了[PAWN_pronoun]所在的城市，一片混乱中[PAWN_nameDef]举着真龙的画像平安逃出，而后加入了寻找圣旨的冒险者们，去往异星开始新的生活。</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Melee>2</Melee>
+			<Social>-3</Social>
+			<Artistic>5</Artistic>
+			<Crafting>5</Crafting>
+			<Intellectual>-3</Intellectual>
+		</skillGains>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="NY_BaseLoongBackStory">
+		<defName>NY_LoongDeserter</defName>
+		<title>冶龍逃兵</title>
+		<titleShort>冶龍逃兵</titleShort>
+		<description>[PAWN_nameDef]曾经安于平淡的生活，在家乡耕田为生，但一场霜灾让田地颗粒无收，饥寒交迫之下[PAWN_pronoun]响应征兵令成为了某位军阀的士兵。在一次战争中身受重伤的[PAWN_nameDef]被军队抛下，濒死之际被一伙准备去往异星寻找圣旨的冒险者救起，伤愈后[PAWN_pronoun]与冒险者们一同乘上了远离家园的航船。</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Melee>6</Melee>
+			<Plants>5</Plants>
+			<Intellectual>-5</Intellectual>
+		</skillGains>
+		<workDisables>
+			<li>Social</li>
+			<li>Caring</li>
+		</workDisables>
+	</BackstoryDef>
+
+	<!--天师背景，技能点限10-->
+	<BackstoryDef ParentName="NY_BaseLoongBackStory">
+		<defName>NY_LoongMasterNothing</defName>
+		<title>冶龍无业天师</title>
+		<titleShort>无业冶龍</titleShort>
+		<description>[PAWN_nameDef]经历多年苦读顺利从天师府毕业，但不幸的是，[PAWN_pronoun]没有被分配到任何岗位，直接变成了无业人士，并且没过多久真龙陨落的消息传遍各地，战火四起，[PAWN_pronoun]不得不放弃求职过上颠沛流离的生活。直到一日众天师合谋远赴异星迎回圣旨，一位念及旧情的同窗找到了[PAWN_nameDef]。</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Melee>2</Melee>
+			<Social>2</Social>
+			<Crafting>2</Crafting>
+			<Construction>2</Construction>
+			<Intellectual>2</Intellectual>
+		</skillGains>
+		<forcedTraits>
+			<NaturalMood>-1</NaturalMood>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="NY_BaseLoongBackStory">
+		<defName>NY_LoongMasterFight</defName>
+		<title>冶龍征伐天师</title>
+		<titleShort>冶龍征伐天师</titleShort>
+		<description>[PAWN_nameDef]经历多年苦读从天师府毕业，成为了一名征伐天师，[PAWN_objective]工作是配合军部进行武器的研发与测试。战争爆发后[PAWN_pronoun]不愿做屠戮同胞的帮凶，加入了计划寻回圣旨的天师团体为其保驾护航。</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Melee>2</Melee>
+			<Crafting>3</Crafting>
+			<Shooting>5</Shooting>
+			<Medicine>-5</Medicine>
+			<Intellectual>5</Intellectual>
+		</skillGains>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="NY_BaseLoongBackStory">
+		<defName>NY_LoongMasterPlant</defName>
+		<title>冶龍农耕天师</title>
+		<titleShort>冶龍农耕天师</titleShort>
+		<description>[PAWN_nameDef]经历多年苦读从天师府毕业，成为了一名农耕天师，冶龍民间常见的各种优秀作物便是[PAWN_objective]前辈的工作成果。在战争的威胁下农耕天师们被迫停止了作物育种与改良的工作，于是[PAWN_pronoun]加入了计划寻回圣旨的天师团体为冒险者们提供粮草补给。</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Melee>3</Melee>
+			<Plants>7</Plants>
+			<Crafting>-5</Crafting>
+			<Intellectual>5</Intellectual>
+		</skillGains>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="NY_BaseLoongBackStory">
+		<defName>NY_LoongMasterBuild</defName>
+		<title>冶龍土木天师</title>
+		<titleShort>冶龍土木天师</titleShort>
+		<description>[PAWN_nameDef]经历多年苦读从天师府毕业，成为了一名土木天师，官府的修建、皇宫的维护皆在[PAWN_objective]工作范围中，无论刮风下雨，[PAWN_pronoun]总是在工地上忙碌着。战争爆发后，想到自己可能被军阀抓去挖战壕修碉堡，[PAWN_pronoun]果断加入了计划寻回圣旨的天师团体前往异星继续打灰。</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Melee>5</Melee>
+			<Artistic>-4</Artistic>
+			<Crafting>-4</Crafting>
+			<Construction>8</Construction>
+			<Intellectual>5</Intellectual>
+		</skillGains>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="NY_BaseLoongBackStory">
+		<defName>NY_LoongMasterBanish</defName>
+		<title>被流放的冶龍天师</title>
+		<titleShort>放逐天师</titleShort>
+		<description>[PAWN_nameDef]以优异的成绩毕业于天师府，本该有大好前程的[PAWN_pronoun]却因牵连一场大案被打入大牢，最终被判处流放异星。侥幸在边缘世界活下来的[PAWN_pronoun]一天偶然看见了停泊的航船“繁星鼠鼠号”与从船上下来的同胞，[PAWN_pronoun]意识到改变命运的机会近在眼前。</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Melee>6</Melee>
+			<Social>-10</Social>
+			<Crafting>6</Crafting>
+			<Intellectual>8</Intellectual>
+		</skillGains>
+		<forcedTraits>
+			<Psychopath>0</Psychopath>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<!--贵族-->
+	<BackstoryDef ParentName="NY_BetterLoongBackStory">
+		<defName>NY_LoongPoetry</defName>
+		<title>冶龍采诗官</title>
+		<titleShort>冶龍采诗官</titleShort>
+		<description>[PAWN_nameDef]是一位采诗官，[PAWN_objective]工作是到各地采集民间歌谣与史诗，以此了解民情。真龙陨落后天下大乱，各方军阀割据混战，既为避祸也为寻找遥远星辰里的史诗，[PAWN_nameDef]搭上航船“繁星鼠鼠号”离开了故乡。</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Melee>3</Melee>
+			<Social>3</Social>
+			<Artistic>5</Artistic>
+		</skillGains>
+	</BackstoryDef>
+</Defs>

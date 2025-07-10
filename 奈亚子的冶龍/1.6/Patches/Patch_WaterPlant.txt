@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!--让浅水可种植-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/TerrainDef[defName="WaterShallow"]</xpath>
+		<value>
+			<fertility>0.9</fertility>
+		</value>
+	</Operation>
+</Patch>

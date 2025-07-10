@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <StyleItemCategoryDef>
+    <defName>NY_SmeltedLoongHair</defName>
+    <label>冶龍</label>
+  </StyleItemCategoryDef>
+
+	<HairDef Name="NY_SmeltedLoongHairBase" Abstract="True">
+		<styleGender>Female</styleGender>
+		<category>NY_SmeltedLoongHair</category>
+		<styleTags>
+			<li>NY_SmeltedLoongHair</li>
+		</styleTags>
+	</HairDef>
+
+	<HairDef ParentName="NY_SmeltedLoongHairBase">
+		<defName>NY_SmeltedLoongHair01</defName>
+		<label>SmeltedLoong01</label>
+		<texPath>Things/Pawn/Hairs/NY_LoongHair01</texPath>
+	</HairDef>
+
+	<HairDef ParentName="NY_SmeltedLoongHairBase">
+		<defName>NY_SmeltedLoongHair02</defName>
+		<label>SmeltedLoong02</label>
+		<texPath>Things/Pawn/Hairs/NY_LoongHair02</texPath>
+	</HairDef>
+
+	<HairDef ParentName="NY_SmeltedLoongHairBase">
+		<defName>NY_SmeltedLoongHair03</defName>
+		<label>SmeltedLoong03</label>
+		<texPath>Things/Pawn/Hairs/NY_LoongHair03</texPath>
+	</HairDef>
+
+	<HairDef ParentName="NY_SmeltedLoongHairBase">
+		<defName>NY_SmeltedLoongHair04</defName>
+		<label>SmeltedLoong04</label>
+		<texPath>Things/Pawn/Hairs/NY_LoongHair04</texPath>
+	</HairDef>
+
+	<HairDef ParentName="NY_SmeltedLoongHairBase">
+		<defName>NY_SmeltedLoongHair05</defName>
+		<label>SmeltedLoong05</label>
+		<texPath>Things/Pawn/Hairs/NY_LoongHair05</texPath>
+	</HairDef>
+
+	<HairDef ParentName="NY_SmeltedLoongHairBase">
+		<defName>NY_SmeltedLoongHair06</defName>
+		<label>SmeltedLoong06</label>
+		<texPath>Things/Pawn/Hairs/NY_LoongHair06</texPath>
+	</HairDef>
+
+	<HairDef ParentName="NY_SmeltedLoongHairBase">
+		<defName>NY_SmeltedLoongHair07</defName>
+		<label>SmeltedLoong07</label>
+		<texPath>Things/Pawn/Hairs/NY_LoongHair07</texPath>
+	</HairDef>
+
+	<HairDef ParentName="NY_SmeltedLoongHairBase">
+		<defName>NY_SmeltedLoongHair08</defName>
+		<label>SmeltedLoong08</label>
+		<texPath>Things/Pawn/Hairs/NY_LoongHair08</texPath>
+	</HairDef>
+
+	<HairDef ParentName="NY_SmeltedLoongHairBase">
+		<defName>NY_SmeltedLoongHair09</defName>
+		<label>SmeltedLoong09</label>
+		<texPath>Things/Pawn/Hairs/NY_LoongHair09</texPath>
+	</HairDef>
+
+	<HairDef ParentName="NY_SmeltedLoongHairBase">
+		<defName>NY_SmeltedLoongHair10</defName>
+		<label>SmeltedLoong10</label>
+		<texPath>Things/Pawn/Hairs/NY_LoongHair10</texPath>
+	</HairDef>
+</Defs>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef Name="NY_BlackbirdWeaponMelee" ParentName="NY_BaseDragonWeaponMelee"  Abstract="True">
+	<ThingDef Name="NY_BlackbirdWeaponMelee" ParentName="NY_BaseLoongWeaponMelee"  Abstract="True">
 		<techLevel>Spacer</techLevel>
 		<tradeability>Sellable</tradeability>
 		<statBases>
@@ -40,7 +40,7 @@
 		</costList>
 	</ThingDef>
 	
-	<ThingDef Name="NY_BlackbirdWeaponRanged" ParentName="NY_BaseDragonWeaponRanged"  Abstract="True">
+	<ThingDef Name="NY_BlackbirdWeaponRanged" ParentName="NY_BaseLoongWeaponRanged"  Abstract="True">
 		<techLevel>Spacer</techLevel>
 		<tradeability>Sellable</tradeability>
 		<statBases>
@@ -60,13 +60,18 @@
 
 	<ThingDef ParentName="NY_BlackbirdWeaponMelee">
 		<defName>NY_BB_LoongBlackIronSword</defName>
-		<label>玄铁重刃</label>
-		<description>玄鸟卫制式武器，刀身沉重，需要一定的技巧才能运转自如，能够用于施展名为“震骨”的武技，在命中时将暗劲灌入目标内部，对生物造成持续性的疼痛与运动障碍。</description>
+		<label>玄骨重刃</label>
+		<description>玄鸟卫制式武器，刀身沉重但未开刃，需要一定的技巧才能运转自如，能够用于施展名为“震骨”的武技，在命中时将暗劲灌入目标内部，对生物造成持续性的疼痛与运动障碍。</description>
 		<graphicData>
 			<texPath>Things/Weapon/NY_LoongBlackIronSword</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 			<drawSize>1.5</drawSize>
 		</graphicData>
+		<weaponClasses Inherit="false">
+			<li>Melee</li>
+			<li>MeleeBlunt</li>
+		</weaponClasses>
 		<weaponTags>
 		</weaponTags>
 		<statBases>
@@ -77,25 +82,21 @@
 		<equippedStatOffsets>
 			<MeleeDodgeChance>-3</MeleeDodgeChance>
 		</equippedStatOffsets>
+		<costStuffCount>60</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
 		<costList>
 			<NY_BlackbirdIron>30</NY_BlackbirdIron>
-			<NY_RefinedIron>60</NY_RefinedIron>
 		</costList>
 		<tools>
 			<li>
 				<label>刀背</label>
 				<capacities>
-					<li>Blunt</li>
+					<li>NY_BoneBreak</li>
 				</capacities>
-				<power>9</power>
-				<cooldownTime>1</cooldownTime>
-				<extraMeleeDamages>
-					<li>
-						<def>Stun</def>
-						<amount>6</amount>
-						<chance>0.5</chance>
-					</li>
-				</extraMeleeDamages>
+				<power>10</power>
+				<cooldownTime>0.9</cooldownTime>
 			</li>
 			<li>
 				<label>刀刃</label>
@@ -103,7 +104,6 @@
 					<li>NY_BoneBreak</li>
 				</capacities>
 				<power>25</power>
-				<armorPenetration>0.2</armorPenetration>
 				<cooldownTime>1.8</cooldownTime>
 			</li>
 		</tools>
@@ -522,6 +522,74 @@
 			<damageDef>ArrowHighVelocity</damageDef>
 			<damageAmountBase>25</damageAmountBase>
 			<armorPenetrationBase>0.15</armorPenetrationBase>
+			<speed>80</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="NY_BlackbirdWeaponRanged">
+		<defName>NY_LoongCrossbowM_Blunt</defName>
+		<label>玄鸟镇暴连弩</label>
+		<description>玄鸟卫制式武器，在玄鸟连弩的基础上进行了改装，削弱了杀伤力，更适用于需要生擒敌人的作战情形。这把武器射出的特制弩箭能够造成类似武技“震骨”的效果，在命中时将暗劲灌入目标内部，对生物造成持续性的疼痛与运动障碍。</description>
+		<graphicData>
+			<texPath>Things/Weapon/NY_LoongCrossbowM</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_ChargeRifle</soundInteract>
+		<statBases>
+			<Mass>2</Mass>
+			<WorkToMake>45000</WorkToMake>
+			<AccuracyTouch>0.9</AccuracyTouch>
+			<AccuracyShort>0.95</AccuracyShort>
+			<AccuracyMedium>0.9</AccuracyMedium>
+			<AccuracyLong>0.8</AccuracyLong>
+			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+		</weaponTags>
+		<costList>
+			<NY_BlackbirdIron>30</NY_BlackbirdIron>
+			<NY_RefinedIron>40</NY_RefinedIron>
+			<NY_LotusRootSilk>30</NY_LotusRootSilk>
+		</costList>
+		<recipeMaker>
+			<displayPriority>1272.131</displayPriority>
+		</recipeMaker>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>NY_LoongCrossbowArrow_Blunt</defaultProjectile>
+				<warmupTime>1</warmupTime>
+				<range>30.9</range>
+				<soundCast>Bow_Recurve</soundCast>
+				<burstShotCount>5</burstShotCount>
+				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1.5</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>NY_LoongCrossbowArrow_Blunt</defName>
+		<label>弩箭</label>
+		<graphicData>
+			<texPath>Things/Projectile/NY_LoongCrossbowArrow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>NY_damage_RangedBoneBreak</damageDef>
+			<damageAmountBase>10</damageAmountBase>
 			<speed>80</speed>
 		</projectile>
 	</ThingDef>

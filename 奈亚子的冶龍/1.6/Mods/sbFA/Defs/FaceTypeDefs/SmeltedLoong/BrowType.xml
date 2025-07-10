@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <FacialAnimation.BrowTypeDef>
+	  <defName>SmeltedLoong_Brow_Normal</defName>
+	  <texPath>Things/Pawn/SmeltedLoong/Brows/Normal</texPath>
+	  <shader>Map/Transparent</shader>
+	  <raceName>SmeltedLoong</raceName> 
+  </FacialAnimation.BrowTypeDef>
+</Defs>

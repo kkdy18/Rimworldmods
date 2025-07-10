@@ -1,0 +1,13 @@
+{
+  "TextureModID": "ny.smeltedloong",
+  "ItemDefName": "NY_BB_LoongBlackbirdSpear",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.27763167,
+  "OffY": -0.00131586974,
+  "ScaleX": 2.0,
+  "ScaleY": 2.0,
+  "BladeStart": 0.6328948,
+  "BladeEnd": 1.24342108,
+  "MeleeWeaponType": 6
+}

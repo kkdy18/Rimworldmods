@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<MutantDef ParentName="BaseMutantEntity">
+		<defName>NY_DeathWalker</defName>
+		<label>魃尸</label>
+		<description>desc</description>
+		<workDisables Inherit="False">
+			<li>AllWork</li>
+		</workDisables>
+		<hediff></hediff>
+		<thinkTree>Ghoul</thinkTree>
+		<namePrefix>魃尸 </namePrefix>
+		<showJobReport>true</showJobReport>
+		<woundColor>(0.3, 0.3, 0, 1)</woundColor>
+		<useCorpseGraphics>true</useCorpseGraphics>
+		<isConsideredCorpse>true</isConsideredCorpse>
+		<deathOnDownedChance>0.25</deathOnDownedChance>
+		<bloodSmearDef>Filth_DarkBloodSmear</bloodSmearDef>
+		<bloodDef>Filth_DarkBlood</bloodDef>
+		<canGainXP>false</canGainXP>
+		<restoreLegs>true</restoreLegs>
+		<removeAllInjuries>true</removeAllInjuries>
+		<clearMutantStatusOnDeath>true</clearMutantStatusOnDeath>
+		<thinkTreeConstant>GhoulConstant</thinkTreeConstant>
+		<standingAnimation>ShamblerSway</standingAnimation>
+		<anomalyKnowledgeOffset>0</anomalyKnowledgeOffset>
+		<knowledgeCategory>Basic</knowledgeCategory>
+		<codexEntry>Shambler</codexEntry>
+		<whitelistedFloatMenuProviders>
+			<li>FloatMenuOptionProvider_DraftedAttack</li>
+			<li>FloatMenuOptionProvider_DraftedMove</li>
+			<li>FloatMenuOptionProvider_EnterMapPortal</li>
+			<li>FloatMenuOptionProvider_DropEquipment</li>
+			<li>FloatMenuOptionProvider_Equip</li>
+			<li>FloatMenuOptionProvider_Wear</li>
+		</whitelistedFloatMenuProviders>
+		<!-- Sounds -->
+		<soundAttackChance>0.25</soundAttackChance>
+		<soundCall>Pawn_Shambler_Call</soundCall>
+		<soundAttack>Pawn_Shambler_Attack</soundAttack>
+		<soundWounded>Pawn_Shambler_Wounded</soundWounded>
+		<soundDeath>Pawn_Shambler_Killed</soundDeath>
+		<!-- Rendering -->
+		<renderNodeProperties>
+			<li Class="PawnRenderNodeProperties_Overlay">
+				<debugLabel>Shambler wounds</debugLabel>
+				<workerClass>PawnRenderNodeWorker_OverlayShambler</workerClass>
+				<overlayLayer>Body</overlayLayer>
+				<baseLayer>20</baseLayer>
+				<pawnType>HumanlikeOnly</pawnType>
+			</li>
+			<li>
+				<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+				<texPath>Things/Pawn/HeadAttachments/NY_FastSymbol/NY_FastSymbol</texPath>
+				<parentTagDef>Head</parentTagDef>
+				<pawnType>HumanlikeOnly</pawnType>
+				<visibleFacing>
+					<li>East</li>
+					<li>West</li>
+					<li>South</li>
+				</visibleFacing>
+				<drawData>
+					<defaultData>
+						<layer>60</layer>
+					</defaultData>
+				</drawData>
+			</li>
+			<li>
+				<debugLabel>Shambler wounds</debugLabel>
+				<nodeClass>PawnRenderNode_AnimalPart</nodeClass>
+				<workerClass>PawnRenderNodeWorker_OverlayShambler</workerClass>
+				<overlayLayer>Body</overlayLayer>
+				<baseLayer>20</baseLayer>
+				<pawnType>NonHumanlikeOnly</pawnType>
+			</li>
+		</renderNodeProperties>
+
+		<tools>
+		</tools>
+	</MutantDef>
+</Defs>

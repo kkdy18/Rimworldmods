@@ -29,8 +29,9 @@
 			</li>
 		</stages>
 		<comps>
-			<li Class="HediffCompProperties_SeverityPerDay">
-				<severityPerDay>-1</severityPerDay>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>false</showRemainingTime>
+				<disappearsAfterTicks>60000</disappearsAfterTicks>
 			</li>
 			<li Class="ForgingDragon.HCP_HumanImmune" />
 		</comps>
