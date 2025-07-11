@@ -5,4 +5,10 @@
 	<NY_disease_Cold.letterText>{0}{1}被检测出了{2}。\n\n传染病可能具有潜伏期，请立即对病人进行隔离并确保殖民地有充足的医疗资源和防护措施到位的医生，不然一场可怕的瘟疫将在殖民地内爆发。隔离中的病人需要得到适当的治疗并尽可能卧床休息。\n\n以下{1}被感染了</NY_disease_Cold.letterText>
 
 	<NY_disease_Cholera.letterText>{0}{1}被检测出了{2}。\n\n传染病可能具有潜伏期，请立即对病人进行隔离并确保殖民地有充足的医疗资源和防护措施到位的医生，不然一场可怕的瘟疫将在殖民地内爆发。隔离中的病人需要得到适当的治疗，不过霍乱的病原体主要集中在消化系统，一个仿生胃能使其彻底失去威胁。\n\n以下{1}被感染了</NY_disease_Cholera.letterText>
+
+	<NY_disease_Dysentery.letterText>{0}{1}被检测出了{2}。\n\n传染病可能具有潜伏期，请立即对病人进行隔离并确保殖民地有充足的医疗资源和防护措施到位的医生，不然一场可怕的瘟疫将在殖民地内爆发。隔离中的病人需要得到适当的治疗并尽可能卧床休息。\n\n以下{1}被感染了</NY_disease_Dysentery.letterText>
+
+	<NY_disease_Tuberculosis.letterText>{0}{1}被检测出了{2}。\n\n传染病可能具有潜伏期，请立即对病人进行隔离并确保殖民地有充足的医疗资源和防护措施到位的医生，不然一场可怕的瘟疫将在殖民地内爆发。隔离中的病人需要得到适当的治疗并尽可能卧床休息。\n\n以下{1}被感染了</NY_disease_Tuberculosis.letterText>
+	
+	<NY_disease_Leprosy.letterText>{0}{1}被检测出了{2}。\n\n传染病可能具有潜伏期，请立即对病人进行隔离并确保殖民地有充足的医疗资源和防护措施到位的医生，不然一场可怕的瘟疫将在殖民地内爆发。隔离中的病人需要得到适当的治疗并尽可能卧床休息。\n\n以下{1}被感染了</NY_disease_Leprosy.letterText>
 </LanguageData>

@@ -2,7 +2,7 @@
 <Defs>
 	<IncidentDef>
 		<defName>NY_TurningGhoulTransportPod</defName>
-		<label>驱逐孽龙</label>
+		<label>空投老兵</label>
 		<category>NY_SmeltedLoong_Disease</category>
 		<targetTags>
 			<li>Map_PlayerHome</li>
@@ -22,11 +22,11 @@
 			<li>Map_PlayerHome</li>
 		</targetTags>
 		<workerClass>SmeltedLoong.IncidentWorker_DeathWalkerRaid</workerClass>
+		<tale>Raid</tale>
 		<baseChance>0</baseChance>
 		<category>ThreatBig</category>
 		<pointsScaleable>true</pointsScaleable>
-		<tale>Raid</tale>
-		<ignoreRecentSelectionWeighting>true</ignoreRecentSelectionWeighting>
 		<canOccurOnAllPlanetLayers>true</canOccurOnAllPlanetLayers>
+		<ignoreRecentSelectionWeighting>true</ignoreRecentSelectionWeighting>
 	</IncidentDef>
 </Defs>

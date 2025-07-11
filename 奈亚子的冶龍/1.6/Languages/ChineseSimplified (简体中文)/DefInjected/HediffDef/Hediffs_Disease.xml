@@ -23,4 +23,32 @@
 	<NY_hediff_TurningGhoul.stages.minor.label>亢奋</NY_hediff_TurningGhoul.stages.minor.label>
 
 	<NY_hediff_TurningGhoul.stages.major.label>血肉重组</NY_hediff_TurningGhoul.stages.major.label>
+
+	<NY_hediff_Dysentery.stages.minor.label>轻微腹泻</NY_hediff_Dysentery.stages.minor.label>
+
+	<NY_hediff_Dysentery.stages.major.label>剧烈腹泻</NY_hediff_Dysentery.stages.major.label>
+
+	<NY_hediff_Dysentery.stages.extreme.label>休克</NY_hediff_Dysentery.stages.extreme.label>
+
+	<NY_hediff_Tuberculosis.stages.minor.label>胸闷</NY_hediff_Tuberculosis.stages.minor.label>
+
+	<NY_hediff_Tuberculosis.stages.major.label>咳嗽气喘</NY_hediff_Tuberculosis.stages.major.label>
+
+	<NY_hediff_Tuberculosis.stages.extreme.label>呼吸困难</NY_hediff_Tuberculosis.stages.extreme.label>
+
+	<NY_hediff_Tubercle.stages.minor.label>形成</NY_hediff_Tubercle.stages.minor.label>
+
+	<NY_hediff_Tubercle.stages.major.label>空洞化</NY_hediff_Tubercle.stages.major.label>
+
+	<NY_hediff_Plague.stages.minor.label>虚弱</NY_hediff_Plague.stages.minor.label>
+
+	<NY_hediff_Plague.stages.major.label>组织出血</NY_hediff_Plague.stages.major.label>
+
+	<NY_hediff_Plague.stages.extreme.label>多器官衰竭</NY_hediff_Plague.stages.extreme.label>
+
+	<NY_hediff_Leprosy.stages.minor.label>皮肤麻木</NY_hediff_Leprosy.stages.minor.label>
+
+	<NY_hediff_Leprosy.stages.major.label>神经损伤</NY_hediff_Leprosy.stages.major.label>
+
+	<NY_hediff_Leprosy.stages.extreme.label>畸形化</NY_hediff_Leprosy.stages.extreme.label>
 </LanguageData>

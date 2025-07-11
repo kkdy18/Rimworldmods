@@ -216,6 +216,69 @@
 		</comps>
 	</HediffDef>
 
+	<HediffDef ParentName="NY_HediffBase">
+		<defName>NY_hediff_PeregrineWings</defName>
+		<label>游隼之翼</label>
+		<description>与甲胄一体的仿生羽翼，即使无法长时间飞行，也能常态分担重量。传说隼击卫集体行动时会模仿候鸟迁徙的排布，凭借群体飞行产生的气流延续飞行状态，从而大幅削减长途行军所需时间。</description>
+		<stages>
+			<li>
+				<statFactors>
+					<Mass>0.5</Mass>
+					<CaravanBonusSpeedFactor>5</CaravanBonusSpeedFactor>
+				</statFactors>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_RemoveIfApparelDropped"/>
+		</comps>
+		<renderNodeProperties>
+			<li>
+				<debugLabel>收翼</debugLabel>
+				<workerClass>SmeltedLoong.PawnRenderNodeWorker_BlackWingsFolded</workerClass>
+				<texPath>Things/Pawn/BodyAttachments/NY_PeregrineWings/NY_PeregrineWingsFolded</texPath>
+				<drawSize>2</drawSize>
+				<parentTagDef>Body</parentTagDef>
+				<drawData>
+					<scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+					<defaultData>
+						<layer>-1</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>89</layer>
+					</dataNorth>
+					<dataEast>
+						<layer>71</layer>
+					</dataEast>
+					<dataWest>
+						<layer>71</layer>
+					</dataWest>
+				</drawData>
+			</li>
+			<li>
+				<debugLabel>展翼</debugLabel>
+				<workerClass>SmeltedLoong.PawnRenderNodeWorker_BlackWings</workerClass>
+				<texPath>Things/Pawn/BodyAttachments/NY_PeregrineWings/NY_PeregrineWings</texPath>
+				<drawSize>2</drawSize>
+				<parentTagDef>Body</parentTagDef>
+				<drawData>
+					<scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+					<defaultData>
+						<layer>-1</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>89</layer>
+					</dataNorth>
+					<dataEast>
+						<layer>71</layer>
+					</dataEast>
+					<dataWest>
+						<layer>71</layer>
+					</dataWest>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</HediffDef>
+
 	<!--技能类-->
 	<HediffDef ParentName="NY_HediffBase">
 		<defName>NY_hediff_LoongFrenzy</defName>
@@ -256,9 +319,6 @@
 					<defaultData>
 						<layer>60</layer>
 					</defaultData>
-					<dataWest>
-						<flip>true</flip>
-					</dataWest>
 				</drawData>
 			</li>
 		</renderNodeProperties>

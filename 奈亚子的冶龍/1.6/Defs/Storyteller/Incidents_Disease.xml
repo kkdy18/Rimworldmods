@@ -21,7 +21,7 @@
 		<label>天花</label>
 		<diseaseIncident>NY_hediff_Smallpox</diseaseIncident>
 		<letterLabel>传染病（天花）</letterLabel>
-		<baseChance>0.6</baseChance>
+		<baseChance>0.8</baseChance>
 		<earliestDay>40</earliestDay>
 		<minRefireDays>8</minRefireDays>
 	</IncidentDef>
@@ -44,13 +44,33 @@
 		<diseasePartsToAffect>
 			<li>Stomach</li>
 		</diseasePartsToAffect>
-		<baseChance>0.6</baseChance>
+		<baseChance>0.8</baseChance>
 		<earliestDay>40</earliestDay>
 		<minRefireDays>8</minRefireDays>
 	</IncidentDef>
 
-	<!--<IncidentDef>
-		<defName>NY_disease_RatBlackDeath</defName>
+	<IncidentDef ParentName="NY_DiseaseIncidentBase">
+		<defName>NY_disease_Dysentery</defName>
+		<label>痢疾</label>
+		<diseaseIncident>NY_hediff_Dysentery</diseaseIncident>
+		<letterLabel>传染病（痢疾）</letterLabel>
+		<baseChance>0.5</baseChance>
+		<earliestDay>40</earliestDay>
+		<minRefireDays>8</minRefireDays>
+	</IncidentDef>
+
+	<IncidentDef ParentName="NY_DiseaseIncidentBase">
+		<defName>NY_disease_Tuberculosis</defName>
+		<label>肺痨</label>
+		<diseaseIncident>NY_hediff_Tuberculosis</diseaseIncident>
+		<letterLabel>传染病（肺痨）</letterLabel>
+		<baseChance>0.4</baseChance>
+		<earliestDay>40</earliestDay>
+		<minRefireDays>16</minRefireDays>
+	</IncidentDef>
+
+	<IncidentDef>
+		<defName>NY_disease_Plague</defName>
 		<label>鼠疫</label>
 		<category>NY_SmeltedLoong_Disease</category>
 		<targetTags>
@@ -59,8 +79,20 @@
 		<workerClass>SmeltedLoong.IncidentWorker_RatBlackDeath</workerClass>
 		<baseChance>0.3</baseChance>
 		<earliestDay>40</earliestDay>
+		<minRefireDays>16</minRefireDays>
+		<letterLabel>黑死之群鼠</letterLabel>
+		<letterText>一群发狂的老鼠进入了这片区域，它们是黑瘟的载体与温床，引导着黑色的死神挥动镰刀收割文明，在文明的残骸上鼠群将建起宏伟的乐园。</letterText>
+		<pawnKind>Rat</pawnKind>
+		<pawnHediff>NY_hediff_Plague</pawnHediff>
+	</IncidentDef>
+
+	<IncidentDef ParentName="NY_DiseaseIncidentBase">
+		<defName>NY_disease_Leprosy</defName>
+		<label>麻风</label>
+		<diseaseIncident>NY_hediff_Leprosy</diseaseIncident>
+		<letterLabel>传染病（麻风）</letterLabel>
+		<baseChance>0.4</baseChance>
+		<earliestDay>40</earliestDay>
 		<minRefireDays>8</minRefireDays>
-		<letterLabel>不详的鼠群</letterLabel>
-		<letterText>混乱的挖掘声伴随着老鼠的尖叫从地下传来，一处坍陷正在迅速形成，鼠群即将冲出地表！</letterText>
-	</IncidentDef>-->
+	</IncidentDef>
 </Defs>

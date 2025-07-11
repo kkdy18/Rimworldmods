@@ -206,7 +206,7 @@
 	<ThingDef ParentName="NY_BlackBirdArmorBase">
 		<defName>NY_SLBB_StarlingArmor</defName>
 		<label>椋鸟营禁卫甲</label>
-		<description>玄鸟卫椋鸟营所配备的制式护甲。\n\n椋云卫，也称椋鸟营禁卫，她们数量庞大，战术灵活，擅长以协同作战压制敌军，轻量化的装甲确保了她们的高效行动与机动配合。\n\n——孤羽易折，群翼蔽天。</description>
+		<description>玄鸟卫椋鸟营所配备的制式护甲，在保证防护性能的同时尽可能减轻护甲的重量，能协助穿戴者高效完成工作与进行高速机动。\n\n椋云卫，也称椋鸟营禁卫，她们数量庞大，战术灵活，是玄鸟卫中最基础的作战单位，包揽玄鸟卫的侦察、值守、工事修筑等职能，擅长协同作战压制敌军。\n\n——「孤羽易折，群翼蔽天」</description>
 		<graphicData>
 			<texPath>Things/Apparel/NY_StarlingArmor/NY_StarlingArmor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -237,7 +237,7 @@
 	<ThingDef ParentName="NY_BlackBirdArmorBase">
 		<defName>NY_SLBB_StarlingPioneerArmor</defName>
 		<label>椋鸟营百夫长禁卫甲</label>
-		<description>为玄鸟卫椋鸟营中的百夫长配备的制式护甲。\n\n椋云卫百夫长统领着椋云卫小队，是战场上一个个关键的指挥节点，相比属下，她们更加经验丰富且更为顽强，也更显眼。\n\n——铁翼成云，众志为城。</description>
+		<description>玄鸟卫椋鸟营所属武官百夫长所配备的制式护甲，护甲的防护性能有所提升，并添加了显眼的令旗。\n\n椋云卫百夫长统领着椋云卫小队，是战场上一个个关键的指挥节点，相比属下，她们的战斗意志更为顽强，作战经验更加丰富，但也背负着更大的风险。即便百夫长可在战时临时提拔，过高的牺牲率仍然使椋鸟营时常在大型战役中出现百夫长空缺的现象。\n\n——「铁翼成云，众志为城」</description>
 		<graphicData>
 			<texPath>Things/Apparel/NY_StarlingPioneerArmor/NY_StarlingPioneerArmor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -274,7 +274,7 @@
 	<ThingDef ParentName="NY_BlackBirdArmorBase">
 		<defName>NY_SLBB_HornbillArmor</defName>
 		<label>犀鸟营禁卫甲</label>
-		<description>玄鸟卫犀鸟营所配备的制式护甲。\n\n犀盔卫，也称犀鸟营禁卫，她们全身覆盖着足以抵御重型火力的厚重铭文装甲，是战斗中的阵型核心，或为队友提供掩体，或强行推进突破敌方防线。\n\n——不动如山，万钧难破。</description>
+		<description>玄鸟卫犀鸟营所配备的制式护甲，采用大量的玄羽钢与精炼铁将防护性能强化至极致，能够在战场上正面抵御火炮轰击，其上冶龍天师所设计的复合铭文可以有效消除或削弱烈火、毒物以及诡异的心灵能量对穿戴者的影响。\n\n犀盔卫，也称犀鸟营禁卫，她们全身覆盖着厚重的铭文甲胄立于战场之上，或为战友提供掩体，或强行推进突破敌方防线。\n\n——「不动如山，万钧难破」</description>
 		<graphicData>
 			<texPath>Things/Apparel/NY_HornbillArmor/NY_HornbillArmor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -287,10 +287,10 @@
 		<equippedStatOffsets>
 			<MoveSpeed>-0.4</MoveSpeed>
 			<Flammability>-1</Flammability>
-			<ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
 			<PsychicSensitivity>-1</PsychicSensitivity>
 			<PainShockThreshold>0.4</PainShockThreshold>
 			<IncomingDamageFactor>-0.25</IncomingDamageFactor>
+			<ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
 		</equippedStatOffsets>
 		<apparel>
 			<tags>
@@ -312,7 +312,7 @@
 	<ThingDef ParentName="NY_BlackBirdArmorBase">
 		<defName>NY_SLBB_GyrfalconArmor</defName>
 		<label>矛隼营禁卫甲</label>
-		<description>玄鸟卫矛隼营所配备的制式护甲。\n\n鹘袭卫，也称矛隼营禁卫，她们的防御力略逊于犀盔卫，但对恶劣环境有着更强的抵抗力，在战斗中她们装备着辅助发动迅捷打击的破障重刃，高速突袭撕裂敌方阵线并扬起烟幕掩护队友。</description>
+		<description>玄鸟卫矛隼营所配备的制式护甲，防护性能优秀，配置有辅助发动迅捷打击的破障重刃，其上冶龍天师所设计的复合铭文可以有效消除或削弱烈火、毒物以及诡异的心灵能量对穿戴者的影响。\n\n鹘袭卫，也称矛隼营禁卫，她们的防御力略逊于犀盔卫，凭借玄鸟卫传承术法短时间强化行动能力，鹘袭卫能在任何恶劣环境中急速行军，在战场上她们擅长高速突袭撕裂敌方阵线并扬起烟幕掩护战友。\n\n——「掠影惊雷，破障无形」</description>
 		<descriptionHyperlinks>
 			<AbilityDef>NY_ability_SmokeGyrfalcon</AbilityDef>
 		</descriptionHyperlinks>
@@ -321,7 +321,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
-			<PackRadius>4.9</PackRadius>
 			<WorkToMake>90000</WorkToMake>
 			<ArmorRating_Sharp>1.5</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.9</ArmorRating_Blunt>
@@ -329,11 +328,11 @@
 		<equippedStatOffsets>
 			<MoveSpeed>-0.2</MoveSpeed>
 			<Flammability>-1</Flammability>
-			<ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
 			<PsychicSensitivity>-1</PsychicSensitivity>
 			<PainShockThreshold>0.4</PainShockThreshold>
 			<MeleeCooldownFactor>-0.4</MeleeCooldownFactor>
 			<IncomingDamageFactor>-0.15</IncomingDamageFactor>
+			<ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
 		</equippedStatOffsets>
 		<apparel>
 			<tags>
@@ -360,7 +359,7 @@
 	<ThingDef ParentName="NY_BlackBirdArmorBase">
 		<defName>NY_SLBB_OwlArmor</defName>
 		<label>林鸮营禁卫甲</label>
-		<description>玄鸟卫林鸮营所配备的制式护甲。\n\n鸮隐卫，也称林鸮营禁卫，她们是精锐的神射手，擅长以精准射击和快速反应支援队友或执行斩首任务，较为脆弱的她们在战斗中往往需要依赖队友的保护。鸮隐卫能够利用装甲释放幻光隐去身形与操使御物术法补给箭矢弹药，也可短时间进入专注射击状态发起凶猛的火力打击。</description>
+		<description>玄鸟卫林鸮营所配备的制式护甲，为保证穿戴者的行动效率与隐蔽性牺牲了部分防护性能，配置有储存箭矢弹药的百纳匣与净化毒物的铭文织物。\n\n鸮隐卫，也称林鸮营禁卫，她们是精锐的神射手，擅长以精准射击和快速反应支援战友或独自执行斩首任务，较为脆弱的她们在战场上往往需要战友掩护。鸮隐卫能够释放幻光隐去身形与操使御物术法补给箭矢弹药，两者结合她们便能短时间进入专注射击状态发起猛烈的火力打击。\n\n——「一息之间，生死已判」</description>
 		<descriptionHyperlinks>
 			<AbilityDef>NY_ability_InvisibleOwl</AbilityDef>
 		</descriptionHyperlinks>
@@ -373,8 +372,8 @@
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>0.4</MoveSpeed>
-			<ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
 			<RangedCooldownFactor>-0.4</RangedCooldownFactor>
+			<ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
 		</equippedStatOffsets>
 		<apparel>
 			<tags>
@@ -396,6 +395,56 @@
 				<abilityDef>NY_ability_InvisibleOwl</abilityDef>
 			</li>
 		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="NY_BlackBirdArmorBase">
+		<defName>NY_SLBB_PeregrineArmor</defName>
+		<label>游隼营禁卫甲</label>
+		<description>玄鸟卫游隼营所配备的制式护甲，在保证防护性能的同时尽可能减轻了重量以适配飞行能力，背部装有一对仿生羽翼，能协助穿戴者进行短时间的近地飞行。\n\n隼击卫，也称游隼营禁卫，她们能够凭借玄鸟卫特制的羽翼深入险境、切入战场，以不同寻常的行动方式与精湛的武艺出色地完成任务。\n\n——「凌空掠袭，九霄追风」</description>
+		<descriptionHyperlinks>
+			<AbilityDef>NY_ability_PeregrineLeap</AbilityDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Apparel/NY_PeregrineArmor/NY_PeregrineArmor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<WorkToMake>90000</WorkToMake>
+			<ArmorRating_Sharp>1.4</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.75</ArmorRating_Blunt>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>0.4</MoveSpeed>
+			<MeleeDodgeChance>10</MeleeDodgeChance>
+			<AimingDelayFactor>-0.4</AimingDelayFactor>
+			<MeleeCooldownFactor>-0.4</MeleeCooldownFactor>
+			<ShootingAccuracyPawn>-10</ShootingAccuracyPawn>
+			<ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
+		</equippedStatOffsets>
+		<apparel>
+			<tags>
+				<li></li>
+			</tags>
+			<wornGraphicPath>Things/Apparel/NY_StarlingArmor/NY_StarlingArmor</wornGraphicPath>
+		</apparel>
+		<costList>
+			<NY_BlackbirdIron>80</NY_BlackbirdIron>
+			<NY_RefinedIron>20</NY_RefinedIron>
+			<NY_LotusRootSilk>50</NY_LotusRootSilk>
+			<NY_GreenGlaze>5</NY_GreenGlaze>
+		</costList>
+		<comps>
+			<li Class="SmeltedLoong.TCP_ApparelAbility">
+				<abilityDef>NY_ability_PeregrineLeap</abilityDef>
+			</li>
+			<li Class="CompProperties_CauseHediff_Apparel">
+				<hediff>NY_hediff_PeregrineWings</hediff>
+				<part>Torso</part>
+			</li>
+		</comps>
+		<recipeMaker>
+			<displayPriority>1275.06</displayPriority>
+		</recipeMaker>
 	</ThingDef>
 
 	<!--头盔-->
@@ -457,7 +506,7 @@
 	<ThingDef ParentName="NY_BlackBirdHelmetBase">
 		<defName>NY_BB_RedEyeHelmet</defName>
 		<label>玄鸟卫赤瞳盔</label>
-		<description>为鸮隐卫设计的战术头盔，因红色的射击辅助目镜而得名“赤瞳”，能辅助鸮隐卫锁定目标并精准射击。</description>
+		<description>专为鸮隐卫设计的战术头盔，因红色的辅助目镜而得名“赤瞳”，能协助穿戴者锁定目标与精准射击。</description>
 		<graphicData>
 			<texPath>Things/Apparel/NY_RedEyeHelmet/NY_RedEyeHelmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

@@ -45,8 +45,8 @@
 	<HediffDef ParentName="NY_ContagionBase">
 		<defName>NY_hediff_Smallpox</defName>
 		<label>天花</label>
-		<description>冶龍从故乡带来的病毒在边缘世界发生突变后，造成的一种烈性传染病。患者初期会出现发烧、反胃等症状，并在全身长出伴随剧烈疼痛的疱疹。\n\n该传染病有概率在接触感染者时传播给健康个体，提高免疫能力与有毒环境抗性有助于预防疾病传染（双属性总和不小于传染性可不受传染）。</description>
-		<descriptionShort>一种烈性传染病，患者初期会出现发烧、反胃等症状，并在全身长出伴随剧烈疼痛的疱疹。\n\n传染性：2.1\n严重性：3</descriptionShort>
+		<description>冶龍从故乡带来的病原体在边缘世界发生突变后，造成的一种烈性传染病。患者初期会出现发烧、反胃等症状，随着病情加剧会在全身长出伴随剧烈疼痛的疱疹。\n\n该传染病有概率在接触感染者时传播给健康个体，提高免疫能力与有毒环境抗性有助于预防疾病传染（双属性总和不小于传染性可不受传染）。</description>
+		<descriptionShort>一种烈性传染病，患者初期会出现发烧、反胃等症状，随着病情加剧会在全身长出伴随剧烈疼痛的疱疹。\n（点击“i”查看详情）\n\n传染性：2.1\n严重性：3</descriptionShort>
 		<lethalSeverity>1</lethalSeverity>
 		<comps>
 			<li Class="HediffCompProperties_TendDuration">
@@ -56,7 +56,7 @@
 			<li Class="HediffCompProperties_Immunizable">
 				<severityPerDayNotImmune>0.4</severityPerDayNotImmune>
 				<immunityPerDaySick>0.2</immunityPerDaySick>
-				<severityPerDayImmune>-0.5</severityPerDayImmune>
+				<severityPerDayImmune>-1</severityPerDayImmune>
 				<immunityPerDayNotSick>-0.05</immunityPerDayNotSick>
 			</li>
 			<li Class="SmeltedLoong.HCP_Contagion">
@@ -178,16 +178,13 @@
 				</statOffsets>
 			</li>
 		</stages>
-		<comps>
-			<li Class="HediffCompProperties_DisappearsOnDeath"/>
-		</comps>
 	</HediffDef>
 
 	<HediffDef ParentName="NY_ContagionBase">
 		<defName>NY_hediff_Cold</defName>
 		<label>风寒</label>
-		<description>冶龍从故乡带来的病毒在边缘世界发生突变后，造成的一种传染病，病情恶化较缓慢但治愈所需时间也较长。患者会出现咳嗽、鼻塞、头疼等症状，还伴随着诡异的生理性抗寒能力下降，如果没有得到及时治疗，患者可能会被活活冻死。\n\n该传染病有概率在接触感染者时传播给健康个体，提高免疫能力与有毒环境抗性有助于预防疾病传染（双属性总和不小于传染性可不受传染）。</description>
-		<descriptionShort>一种传染病，病情恶化较缓慢但治愈所需时间也较长。患者会出现咳嗽、鼻塞、头疼等症状，还伴随着诡异的生理性抗寒能力下降，如果没有得到及时治疗，患者可能会被活活冻死。\n\n传染性：2.5\n严重性：1</descriptionShort>
+		<description>冶龍从故乡带来的病原体在边缘世界发生突变后，造成的一种传染病，病情恶化较缓慢但治愈所需时间也较长。患者会出现咳嗽、鼻塞、头疼等症状，还伴随着诡异的生理性抗寒能力下降，如果没有得到及时治疗，患者可能会被活活冻死。\n\n该传染病有概率在接触感染者时传播给健康个体，提高免疫能力与有毒环境抗性有助于预防疾病传染（双属性总和不小于传染性可不受传染）。</description>
+		<descriptionShort>一种传染病，病情恶化较缓慢但治愈所需时间也较长。患者会出现咳嗽、鼻塞、头疼等症状，还伴随着诡异的生理性抗寒能力下降，如果没有得到及时治疗，患者可能会被活活冻死。\n（点击“i”查看详情）\n\n传染性：2.5\n严重性：1</descriptionShort>
 		<lethalSeverity>1</lethalSeverity>
 		<comps>
 			<li Class="HediffCompProperties_TendDuration">
@@ -308,8 +305,8 @@
 	<HediffDef ParentName="NY_ContagionBase">
 		<defName>NY_hediff_Cholera</defName>
 		<label>霍乱</label>
-		<description>冶龍从故乡带来的病毒在边缘世界发生突变后，造成的一种烈性传染病，病情恶化极快但及时治疗能有效控制，疗程较短。主要症状包括呕吐与脱水，重症患者可出现意识障碍、休克甚至死亡。\n\n该传染病有概率在接触感染者时传播给健康个体，提高免疫能力与有毒环境抗性有助于预防疾病传染（双属性总和不小于传染性可不受传染）。</description>
-		<descriptionShort>一种烈性传染病，病情恶化极快但及时治疗能有效控制，疗程较短。主要症状包括呕吐与脱水，重症患者可出现意识障碍、休克甚至死亡。\n\n传染性：2.5\n严重性：2</descriptionShort>
+		<description>冶龍从故乡带来的病原体在边缘世界发生突变后，造成的一种烈性传染病，病情恶化极快但及时治疗能有效控制，疗程较短。主要症状包括呕吐与脱水，重症患者可出现意识障碍、休克甚至死亡。\n\n该传染病有概率在接触感染者时传播给健康个体，提高免疫能力与有毒环境抗性有助于预防疾病传染（双属性总和不小于传染性可不受传染）。</description>
+		<descriptionShort>一种烈性传染病，病情恶化极快但及时治疗能有效控制，疗程较短。主要症状包括呕吐与脱水，重症患者可出现意识障碍、休克甚至死亡。\n（点击“i”查看详情）\n\n传染性：2.5\n严重性：2</descriptionShort>
 		<lethalSeverity>1</lethalSeverity>
 		<minSeverity>0.001</minSeverity>
 		<comps>
@@ -381,6 +378,491 @@
 						<setMax>0.1</setMax>
 					</li>
 				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="NY_ContagionBase">
+		<defName>NY_hediff_Dysentery</defName>
+		<label>痢疾</label>
+		<description>冶龍从故乡带来的病原体在边缘世界发生突变后，造成的一种烈性传染病。患者的主要症状为腹痛、腹泻，有概率导致精神失常。\n\n该传染病有概率在接触感染者时传播给健康个体，提高免疫能力与有毒环境抗性有助于预防疾病传染（双属性总和不小于传染性可不受传染）。</description>
+		<descriptionShort>一种烈性传染病，患者的主要症状为腹痛、腹泻，有概率导致精神失常。腹泻带来的环境卫生问题同样值得重视。\n（点击“i”查看详情）\n\n传染性：2.5\n严重性：2</descriptionShort>
+		<lethalSeverity>1</lethalSeverity>
+		<comps>
+			<li Class="HediffCompProperties_TendDuration">
+				<baseTendDurationHours>8</baseTendDurationHours>
+				<severityPerDayTended>-0.5</severityPerDayTended>
+			</li>
+			<li Class="HediffCompProperties_Immunizable">
+				<severityPerDayNotImmune>0.5</severityPerDayNotImmune>
+				<immunityPerDaySick>0.25</immunityPerDaySick>
+				<severityPerDayImmune>-0.5</severityPerDayImmune>
+				<immunityPerDayNotSick>-0.05</immunityPerDayNotSick>
+			</li>
+			<li Class="SmeltedLoong.HCP_Contagion">
+				<Infectivity>2.5</Infectivity>
+				<excludeGene>PerfectImmunity</excludeGene>
+				<leftHediff>NY_hediff_ImmunityGain</leftHediff>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+			</li>
+			<li>
+				<label>minor</label>
+				<minSeverity>0.03</minSeverity>
+				<painOffset>0.2</painOffset>
+				<hungerRateFactorOffset>0.2</hungerRateFactorOffset>
+				<statFactors>
+					<FilthRate>10</FilthRate>
+				</statFactors>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<postFactor>0.9</postFactor>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<postFactor>0.9</postFactor>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<postFactor>0.9</postFactor>
+					</li>
+				</capMods>
+				<mentalStateGivers>
+					<li>
+						<mentalState>WanderConfused</mentalState>
+						<mtbDays>3</mtbDays>
+					</li>
+				</mentalStateGivers>
+			</li>
+			<li>
+				<label>major</label>
+				<minSeverity>0.45</minSeverity>
+				<painOffset>0.4</painOffset>
+				<hungerRateFactorOffset>0.5</hungerRateFactorOffset>
+				<statFactors>
+					<FilthRate>50</FilthRate>
+				</statFactors>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<postFactor>0.8</postFactor>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<postFactor>0.8</postFactor>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<postFactor>0.6</postFactor>
+					</li>
+				</capMods>
+				<mentalStateGivers>
+					<li>
+						<mentalState>WanderConfused</mentalState>
+						<mtbDays>1</mtbDays>
+					</li>
+				</mentalStateGivers>
+			</li>
+			<li>
+				<label>extreme</label>
+				<minSeverity>0.9</minSeverity>
+				<lifeThreatening>true</lifeThreatening>
+				<hungerRateFactorOffset>1</hungerRateFactorOffset>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.1</setMax>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="NY_ContagionBase">
+		<defName>NY_hediff_Tuberculosis</defName>
+		<label>肺痨</label>
+		<description>冶龍从故乡带来的病原体在边缘世界发生突变后，造成的一种烈性传染病。病原体主要集中在患者的呼吸系统，会破坏肺组织并形成名为结核的病灶，导致呼吸困难、气喘、咳嗽、胸闷、头晕等症状，病情恶化后结核中的大量病原体将通过血液扩散至全身，造成严重的细菌感染。\n\n该传染病有概率在接触感染者时传播给健康个体，提高免疫能力与有毒环境抗性有助于预防疾病传染（双属性总和不小于传染性可不受传染）。</description>
+		<descriptionShort>一种烈性传染病，病原体主要集中在患者的呼吸系统，会破坏肺组织并形成名为结核的病灶，导致呼吸困难、气喘、咳嗽、胸闷、头晕等症状。\n（点击“i”查看详情）\n\n传染性：2.5\n严重性：2</descriptionShort>
+		<lethalSeverity>1</lethalSeverity>
+		<comps>
+			<li Class="HediffCompProperties_TendDuration">
+				<baseTendDurationHours>12</baseTendDurationHours>
+				<severityPerDayTended>-0.25</severityPerDayTended>
+			</li>
+			<li Class="HediffCompProperties_Immunizable">
+				<severityPerDayNotImmune>0.4</severityPerDayNotImmune>
+				<immunityPerDaySick>0.35</immunityPerDaySick>
+				<severityPerDayImmune>-1</severityPerDayImmune>
+				<immunityPerDayNotSick>-0.05</immunityPerDayNotSick>
+			</li>
+			<li Class="SmeltedLoong.HCP_Contagion">
+				<Infectivity>2.5</Infectivity>
+				<excludeGene>PerfectImmunity</excludeGene>
+				<leftHediff>NY_hediff_ImmunityGain</leftHediff>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+			</li>
+			<li>
+				<label>minor</label>
+				<minSeverity>0.03</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Breathing</capacity>
+						<postFactor>0.9</postFactor>
+					</li>
+				</capMods>
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>NY_hediff_Tubercle</hediff>
+						<mtbDays>2</mtbDays>
+						<partsToAffect>
+							<li>Lung</li>
+						</partsToAffect>
+					</li>
+				</hediffGivers>
+			</li>
+			<li>
+				<label>major</label>
+				<minSeverity>0.4</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<postFactor>0.9</postFactor>
+					</li>
+					<li>
+						<capacity>Breathing</capacity>
+						<postFactor>0.75</postFactor>
+					</li>
+					<li>
+						<capacity>Talking</capacity>
+						<postFactor>0.5</postFactor>
+					</li>
+				</capMods>
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>NY_hediff_Tubercle</hediff>
+						<mtbDays>0.5</mtbDays>
+						<partsToAffect>
+							<li>Lung</li>
+						</partsToAffect>
+					</li>
+				</hediffGivers>
+			</li>
+			<li>
+				<label>extreme</label>
+				<minSeverity>0.8</minSeverity>
+				<lifeThreatening>true</lifeThreatening>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<postFactor>0.5</postFactor>
+					</li>
+					<li>
+						<capacity>Breathing</capacity>
+						<setMax>0.2</setMax>
+					</li>
+					<li>
+						<capacity>Talking</capacity>
+						<postFactor>0</postFactor>
+					</li>
+				</capMods>
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>NY_hediff_Tubercle</hediff>
+						<mtbDays>0.1</mtbDays>
+						<partsToAffect>
+							<li>Lung</li>
+						</partsToAffect>
+					</li>
+				</hediffGivers>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="NY_ContagionBase">
+		<defName>NY_hediff_Tubercle</defName>
+		<label>结核</label>
+		<description>感染肺痨后于肺部形成的病变组织，含有大量病原体，如果不及时治疗，将导致肺器官丧失功能，其中的病原体也将释放至全身，不断造成细菌感染。</description>
+		<alwaysShowSeverity>true</alwaysShowSeverity>
+		<comps>
+			<li Class="HediffCompProperties_TendDuration">
+				<baseTendDurationHours>8</baseTendDurationHours>
+				<disappearsAtTotalTendQuality>5</disappearsAtTotalTendQuality>
+			</li>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>0.25</severityPerDay>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>minor</label>
+				<painOffset>0.1</painOffset>
+				<partEfficiencyOffset>-0.2</partEfficiencyOffset>
+			</li>
+			<li>
+				<label>major</label>
+				<minSeverity>0.4</minSeverity>
+				<painOffset>0.2</painOffset>
+				<partEfficiencyOffset>-0.5</partEfficiencyOffset>
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>WoundInfection</hediff>
+						<mtbDays>1</mtbDays>
+						<canAffectAnyLivePart>true</canAffectAnyLivePart>
+					</li>
+				</hediffGivers>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="NY_ContagionBase">
+		<defName>NY_hediff_Plague</defName>
+		<label>黑瘟</label>
+		<description>冶龍从故乡带来的病原体在边缘世界发生突变后，造成的一种烈性传染病。患者初期会出现肌肉酸痛、极度虚弱等症状，可能伴随恶心呕吐，随着病情恶化，患者的皮肤黏膜广泛出血，血管内凝血使皮肤呈黑色，最终患者将死于内出血与多器官衰竭。\n\n该传染病有概率在接触感染者时传播给健康个体，提高免疫能力与有毒环境抗性有助于预防疾病传染（双属性总和不小于传染性可不受传染）。</description>
+		<descriptionShort>一种烈性传染病，患者初期会出现肌肉酸痛、极度虚弱、恶心呕吐等症状，病情恶化将出现皮肤黏膜广泛出血，最终多器官衰竭。\n（点击“i”查看详情）\n\n传染性：2.1\n严重性：3</descriptionShort>
+		<lethalSeverity>1</lethalSeverity>
+		<comps>
+			<li Class="HediffCompProperties_TendDuration">
+				<baseTendDurationHours>12</baseTendDurationHours>
+				<severityPerDayTended>-0.25</severityPerDayTended>
+			</li>
+			<li Class="HediffCompProperties_Immunizable">
+				<severityPerDayNotImmune>0.4</severityPerDayNotImmune>
+				<immunityPerDaySick>0.2</immunityPerDaySick>
+				<severityPerDayImmune>-1</severityPerDayImmune>
+				<immunityPerDayNotSick>-0.05</immunityPerDayNotSick>
+			</li>
+			<li Class="SmeltedLoong.HCP_Contagion">
+				<Infectivity>2.1</Infectivity>
+				<excludeGene>PerfectImmunity</excludeGene>
+				<leftHediff>NY_hediff_ImmunityGain</leftHediff>
+			</li>
+			<li Class="SmeltedLoong.HCP_Plague">
+				<skinColor>(0.25, 0.25, 0.25)</skinColor>
+			</li>
+		</comps>
+		<stages>
+			<li>
+			</li>
+			<li>
+				<label>minor</label>
+				<minSeverity>0.1</minSeverity>
+				<vomitMtbDays>1</vomitMtbDays>
+				<painOffset>0.2</painOffset>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<postFactor>0.8</postFactor>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<postFactor>0.8</postFactor>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>major</label>
+				<minSeverity>0.4</minSeverity>
+				<totalBleedFactor>1.5</totalBleedFactor>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<postFactor>0.8</postFactor>
+					</li>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<postFactor>0.8</postFactor>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<postFactor>0.8</postFactor>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<postFactor>0.8</postFactor>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>extreme</label>
+				<minSeverity>0.8</minSeverity>
+				<lifeThreatening>true</lifeThreatening>
+				<totalBleedFactor>3</totalBleedFactor>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.1</setMax>
+					</li>
+				</capMods>
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>OrganDecay</hediff>
+						<mtbDays>0.1</mtbDays>
+						<partsToAffect>
+							<li>Heart</li>
+							<li>Lung</li>
+							<li>Kidney</li>
+							<li>Liver</li>
+						</partsToAffect>
+					</li>
+				</hediffGivers>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="NY_ContagionBase">
+		<defName>NY_hediff_Leprosy</defName>
+		<label>麻风</label>
+		<description>冶龍从故乡带来的病原体在边缘世界发生突变后，造成的一种传染病。患者的皮肤会变得干燥易裂，并出现红斑与溃烂，还会因神经损伤逐渐丧失皮肤感觉。随着病情恶化，病原体对组织器官的损害将全面扩散，导致失明、鼻塌陷与肌肉萎缩，留下永久性残疾。\n\n该传染病有概率在接触感染者时传播给健康个体，提高免疫能力与有毒环境抗性有助于预防疾病传染（双属性总和不小于传染性可不受传染）。</description>
+		<descriptionShort>一种烈性传染病，患者的皮肤会变得干燥易裂，逐渐丧失感觉，病情恶化不会致死但会导致永久性残疾。\n（点击“i”查看详情）\n\n传染性：1.8\n严重性：2.5</descriptionShort>
+		<alwaysShowSeverity>true</alwaysShowSeverity>
+		<comps>
+			<li Class="HediffCompProperties_TendDuration">
+				<baseTendDurationHours>12</baseTendDurationHours>
+				<severityPerDayTended>-0.25</severityPerDayTended>
+			</li>
+			<li Class="HediffCompProperties_Immunizable">
+				<severityPerDayNotImmune>0.4</severityPerDayNotImmune>
+				<immunityPerDaySick>0.2</immunityPerDaySick>
+				<severityPerDayImmune>-1</severityPerDayImmune>
+				<immunityPerDayNotSick>-0.05</immunityPerDayNotSick>
+			</li>
+			<li Class="SmeltedLoong.HCP_Contagion">
+				<Infectivity>1.8</Infectivity>
+				<excludeGene>PerfectImmunity</excludeGene>
+				<leftHediff>NY_hediff_ImmunityGain</leftHediff>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+			</li>
+			<li>
+				<label>minor</label>
+				<minSeverity>0.03</minSeverity>
+				<painFactor>0.8</painFactor>
+				<statFactors>
+					<FilthRate>1.2</FilthRate>
+					<Flammability>1.2</Flammability>
+				</statFactors>
+				<statOffsets>
+					<PawnBeauty>-1</PawnBeauty>
+				</statOffsets>
+			</li>
+			<li>
+				<label>major</label>
+				<minSeverity>0.45</minSeverity>
+				<painFactor>0.5</painFactor>
+				<statFactors>
+					<FilthRate>1.5</FilthRate>
+					<Flammability>1.5</Flammability>
+					<IncomingDamageFactor>1.15</IncomingDamageFactor>
+				</statFactors>
+				<statOffsets>
+					<PawnBeauty>-3</PawnBeauty>
+				</statOffsets>
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>Blindness</hediff>
+						<mtbDays>2</mtbDays>
+						<partsToAffect>
+							<li>Eye</li>
+						</partsToAffect>
+					</li>
+					<li Class="HediffGiver_Random">
+						<hediff>NY_hediff_LeprosyNose</hediff>
+						<mtbDays>1</mtbDays>
+						<partsToAffect>
+							<li>Nose</li>
+						</partsToAffect>
+					</li>
+					<li Class="HediffGiver_Random">
+						<hediff>NY_hediff_MuscleAtrophy</hediff>
+						<mtbDays>2</mtbDays>
+						<partsToAffect>
+							<li>Leg</li>
+							<li>Arm</li>
+							<li>Hand</li>
+							<li>Foot</li>
+						</partsToAffect>
+					</li>
+				</hediffGivers>
+			</li>
+			<li>
+				<label>extreme</label>
+				<minSeverity>0.6</minSeverity>
+				<painFactor>0.1</painFactor>
+				<statFactors>
+					<FilthRate>2</FilthRate>
+					<Flammability>2</Flammability>
+					<IncomingDamageFactor>1.45</IncomingDamageFactor>
+				</statFactors>
+				<statOffsets>
+					<PawnBeauty>-5</PawnBeauty>
+				</statOffsets>
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>Blindness</hediff>
+						<mtbDays>0.5</mtbDays>
+						<partsToAffect>
+							<li>Eye</li>
+						</partsToAffect>
+					</li>
+					<li Class="HediffGiver_Random">
+						<hediff>NY_hediff_LeprosyNose</hediff>
+						<mtbDays>0.5</mtbDays>
+						<partsToAffect>
+							<li>Nose</li>
+						</partsToAffect>
+					</li>
+					<li Class="HediffGiver_Random">
+						<hediff>NY_hediff_MuscleAtrophy</hediff>
+						<mtbDays>0.5</mtbDays>
+						<partsToAffect>
+							<li>Leg</li>
+							<li>Arm</li>
+							<li>Hand</li>
+							<li>Foot</li>
+						</partsToAffect>
+					</li>
+				</hediffGivers>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="ChronicDiseaseBase">
+		<defName>NY_hediff_LeprosyNose</defName>
+		<label>鼻塌陷</label>
+		<description>麻风病原体的攻击正在使患者的鼻软骨组织溶解，摧毁鼻腔结构。</description>
+		<maxSeverity>1</maxSeverity>
+		<initialSeverity>0.001</initialSeverity>
+		<alwaysShowSeverity>true</alwaysShowSeverity>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>1</severityPerDay>
+			</li>
+			<li Class="HediffCompProperties_DestroyOrgan">
+				<messageText>{PAWN_labelShort}的{1}毁于麻风病。</messageText>
+				<damageType>Decayed</damageType>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="ChronicDiseaseBase">
+		<defName>NY_hediff_MuscleAtrophy</defName>
+		<label>肌肉萎缩</label>
+		<description>周围神经的损伤导致患者的神经传导功能障碍，四肢的肌肉开始萎缩。</description>
+		<stages>
+			<li>
+				<painOffset>0.1</painOffset>
+				<partEfficiencyOffset>-0.5</partEfficiencyOffset>
 			</li>
 		</stages>
 	</HediffDef>

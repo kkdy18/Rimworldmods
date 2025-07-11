@@ -16,7 +16,7 @@
 		<letterLabel>龙王煮雨</letterLabel>
 		<letterDef>NegativeEvent</letterDef>
 		<baseChance>0.9</baseChance>
-		<earliestDay>1</earliestDay>
+		<earliestDay>15</earliestDay>
 		<minRefireDays>1</minRefireDays>
 		<disabledWhen>
 			<extremeWeatherIncidentsDisabled>true</extremeWeatherIncidentsDisabled>
@@ -36,7 +36,7 @@
 		<letterLabel>旱灾</letterLabel>
 		<letterDef>NegativeEvent</letterDef>
 		<baseChance>0.5</baseChance>
-		<earliestDay>1</earliestDay>
+		<earliestDay>15</earliestDay>
 		<minRefireDays>5</minRefireDays>
 		<disabledWhen>
 			<extremeWeatherIncidentsDisabled>true</extremeWeatherIncidentsDisabled>
@@ -56,8 +56,8 @@
 		<letterLabel>龙王扫尘</letterLabel>
 		<letterDef>NegativeEvent</letterDef>
 		<baseChance>0.5</baseChance>
-		<earliestDay>1</earliestDay>
-		<minRefireDays>1</minRefireDays>
+		<earliestDay>15</earliestDay>
+		<minRefireDays>5</minRefireDays>
 		<disabledWhen>
 			<extremeWeatherIncidentsDisabled>true</extremeWeatherIncidentsDisabled>
 		</disabledWhen>
@@ -76,7 +76,7 @@
 		<letterLabel>风霜过境</letterLabel>
 		<letterDef>NegativeEvent</letterDef>
 		<baseChance>0.9</baseChance>
-		<earliestDay>1</earliestDay>
+		<earliestDay>15</earliestDay>
 		<minRefireDays>1</minRefireDays>
 		<disabledWhen>
 			<extremeWeatherIncidentsDisabled>true</extremeWeatherIncidentsDisabled>
@@ -96,7 +96,7 @@
 		<letterLabel>霜灾</letterLabel>
 		<letterDef>NegativeEvent</letterDef>
 		<baseChance>0.5</baseChance>
-		<earliestDay>1</earliestDay>
+		<earliestDay>15</earliestDay>
 		<minRefireDays>1</minRefireDays>
 		<disabledWhen>
 			<extremeWeatherIncidentsDisabled>true</extremeWeatherIncidentsDisabled>
@@ -116,8 +116,8 @@
 		<letterLabel>雪暴咆哮</letterLabel>
 		<letterDef>NegativeEvent</letterDef>
 		<baseChance>0.5</baseChance>
-		<earliestDay>1</earliestDay>
-		<minRefireDays>1</minRefireDays>
+		<earliestDay>15</earliestDay>
+		<minRefireDays>5</minRefireDays>
 		<disabledWhen>
 			<extremeWeatherIncidentsDisabled>true</extremeWeatherIncidentsDisabled>
 		</disabledWhen>
@@ -136,8 +136,8 @@
 		<letterLabel>龙王震怒</letterLabel>
 		<letterDef>NegativeEvent</letterDef>
 		<baseChance>0.2</baseChance>
-		<earliestDay>1</earliestDay>
-		<minRefireDays>5</minRefireDays>
+		<earliestDay>15</earliestDay>
+		<minRefireDays>10</minRefireDays>
 		<disabledWhen>
 			<extremeWeatherIncidentsDisabled>true</extremeWeatherIncidentsDisabled>
 		</disabledWhen>

@@ -4,7 +4,7 @@
 		<defName>NY_hediff_GhoulLoong</defName>
 		<label>鬼龙化</label>
 		<description>鬼龙表现出了比常规食尸鬼更强大的再生能力，但过强的再生也导致鬼龙肉体的排异反应加剧，除非深埋于体内，否则常规的植入物会被躁动的血肉排除。\n\n食欲对鬼龙表现出的力量有着显著影响，饱餐之后的鬼龙拥有坚韧的肉体与强盛的生命力，但因饥饿而渴求血肉的鬼龙或许会造成更加恐怖的杀伤。\n\n最新的研究表明，鬼龙对其他实体存在着某种“浑然天成”的兼容性，这一发现为实体融合学说的发展提供了新的思路。\n\n&lt;color=#B27CAF&gt;凡工虽拙，然其巧思不泯。今汝既窥吾之宏图一隅，宜速寻他幅残章，待汝获其九章——若能逾之，尤善——吾当示君凌越真龙之造化。&lt;/color&gt;</description>
-		<descriptionShort>转化为食尸鬼的过程激发了某种潜伏在冶龍血脉中的力量，名为“鬼龙”的孽物自冶龍的血肉中诞生。</descriptionShort>
+		<descriptionShort>转化为食尸鬼的过程激发了某种潜伏在冶龍血脉中的力量，名为“鬼龙”的孽物自冶龍的血肉中诞生。\n（点击“i”查看详情）</descriptionShort>
 		<defaultLabelColor>(200,155,190)</defaultLabelColor>
 		<minSeverity>0.1</minSeverity>
 		<maxSeverity>4</maxSeverity>
@@ -156,9 +156,6 @@
 					<defaultData>
 						<layer>60</layer>
 					</defaultData>
-					<dataWest>
-						<flip>true</flip>
-					</dataWest>
 				</drawData>
 			</li>
 		</renderNodeProperties>
@@ -355,9 +352,6 @@
 					<defaultData>
 						<layer>60</layer>
 					</defaultData>
-					<dataWest>
-						<flip>true</flip>
-					</dataWest>
 				</drawData>
 			</li>
 		</renderNodeProperties>
@@ -1158,7 +1152,6 @@
 		<defaultLabelColor>(180,160,180)</defaultLabelColor>
 		<countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
 		<priceImpact>true</priceImpact>
-		<maxSeverity>2</maxSeverity>
 		<stages>
 			<li>
 				<statOffsets>
@@ -1167,29 +1160,45 @@
 					<ArmorRating_Heat>1</ArmorRating_Heat>
 				</statOffsets>
 			</li>
-			<li>
-				<label>黑暗浸润</label>
-				<minSeverity>1.1</minSeverity>
-				<statFactors>
-					<MoveSpeed>1.5</MoveSpeed>
-					<MeleeCooldownFactor>0.75</MeleeCooldownFactor>
-				</statFactors>
-				<statOffsets>
-					<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
-					<ArmorRating_Sharp>0.8</ArmorRating_Sharp>
-					<ArmorRating_Heat>1</ArmorRating_Heat>
-					<NY_RegenerationHealAmount>0.5</NY_RegenerationHealAmount>
-				</statOffsets>
-			</li>
 		</stages>
 		<comps>
-			<li Class="SmeltedLoong.HCP_DarkPower" />
+			<li Class="SmeltedLoong.HCP_DarkPower">
+				<hediff>NY_hediff_GhoulLoongDarkPower</hediff>
+			</li>
 		</comps>
 		<modExtensions>
 			<li Class="SmeltedLoong.LoongGhoulHediff">
 				<corePart>true</corePart>
 			</li>
 		</modExtensions>
+	</HediffDef>
+
+	<HediffDef ParentName="NY_HediffBase">
+		<defName>NY_hediff_GhoulLoongDarkPower</defName>
+		<label>黑暗浸润</label>
+		<description>光芒终会被永夜驱逐，夜魇为黑暗奉上它的猎获。</description>
+		<defaultLabelColor>(0.6, 0.5, 0.6)</defaultLabelColor>
+		<keepOnBodyPartRestoration>false</keepOnBodyPartRestoration>
+		<stages>
+			<li>
+				<statFactors>
+					<MoveSpeed>1.5</MoveSpeed>
+					<MeleeCooldownFactor>0.75</MeleeCooldownFactor>
+				</statFactors>
+				<statOffsets>
+					<NY_RegenerationHealAmount>0.5</NY_RegenerationHealAmount>
+				</statOffsets>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>false</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<li Class="HediffCompProperties_Effecter">
+				<stateEffecter>NY_effect_DarkGhost</stateEffecter>
+			</li>
+		</comps>
 	</HediffDef>
 
 	<ThingDef ParentName="NY_GhoulLoongImplantBase">
@@ -1763,6 +1772,9 @@
 					<ComfyTemperatureMax>100</ComfyTemperatureMax>
 					<ComfyTemperatureMin>-100</ComfyTemperatureMin>
 				</statOffsets>
+				<statFactors>
+					<CaravanBonusSpeedFactor>5</CaravanBonusSpeedFactor>
+				</statFactors>
 			</li>
 		</stages>
 		<addedPartProps>
